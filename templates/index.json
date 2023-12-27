@@ -165,7 +165,7 @@
         "mob_center_text": false,
         "countdown_size": "24",
         "use_custom_colors": false,
-        "count_color": "#fff",
+        "count_color": "#ffffff",
         "bg_color": "#070707",
         "color_scheme": "2",
         "full_width": true,
@@ -362,7 +362,7 @@
         "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.<\/p>",
         "link_url": "\/",
         "button_label": "Optional Button",
-        "color_scheme": "2",
+        "color_scheme": "1",
         "button_style": "btn btn--primary"
       }
     },
@@ -680,7 +680,7 @@
         "enable_video_looping": false,
         "media_width": 50,
         "color_scheme": "1",
-        "border_color": "transparent",
+        "border_color": "rgba(0,0,0,0)",
         "bg_color": "#f4f4f4"
       }
     },
