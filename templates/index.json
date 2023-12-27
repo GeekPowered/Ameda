@@ -97,6 +97,23 @@
     "scrolling-banner": {
       "type": "scrolling-banner",
       "blocks": {
+        "69399623-3cdd-431f-a55e-2e997c84bbc6": {
+          "type": "text",
+          "settings": {
+            "text": "WHO Compliant Technology",
+            "link": "",
+            "font": "heading",
+            "heading_size": "h1"
+          }
+        },
+        "f31e305c-e8b3-4dfa-a550-51d42e5d2f4f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/who-logo.png",
+            "image_height": 48,
+            "link": ""
+          }
+        },
         "scrolling-text-1": {
           "type": "text",
           "settings": {
@@ -106,36 +123,58 @@
             "heading_size": "h1"
           }
         },
-        "scrolling-icon-2": {
-          "type": "icon",
+        "d1ca9935-c69e-495a-9dc5-2de789949cb5": {
+          "type": "image",
           "settings": {
-            "icon": "star",
-            "icon_size": 64
+            "image": "shopify:\/\/shop_images\/fda-approved.png",
+            "image_height": 48,
+            "link": ""
           }
         },
-        "scrolling-text-3": {
+        "d1c63dc0-87cd-42b9-a504-b0ab85e1ab15": {
           "type": "text",
           "settings": {
-            "text": "Grab customers' attention",
+            "text": "Trusted by 100+ Hospitals",
             "link": "",
-            "font": "body",
+            "font": "heading",
             "heading_size": "h1"
           }
         },
-        "scrolling-button-4": {
-          "type": "button",
+        "7662715e-6110-4e48-8fa2-f297a6b563c3": {
+          "type": "image",
           "settings": {
-            "button_label": "Optional Button",
-            "button_link": "\/",
-            "button_style": "btn btn--primary"
+            "image": "shopify:\/\/shop_images\/medical-logo.png",
+            "image_height": 48,
+            "link": ""
+          }
+        },
+        "75529892-7926-4e7a-8740-2fbeca912ac7": {
+          "type": "text",
+          "settings": {
+            "text": "Exceptional Mom Support",
+            "link": "",
+            "font": "heading",
+            "heading_size": "h1"
+          }
+        },
+        "db9e90bb-9f15-4751-8dfd-d47abf8c5371": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mom-support.png",
+            "image_height": 48,
+            "link": ""
           }
         }
       },
       "block_order": [
+        "69399623-3cdd-431f-a55e-2e997c84bbc6",
+        "f31e305c-e8b3-4dfa-a550-51d42e5d2f4f",
         "scrolling-text-1",
-        "scrolling-icon-2",
-        "scrolling-text-3",
-        "scrolling-button-4"
+        "d1ca9935-c69e-495a-9dc5-2de789949cb5",
+        "d1c63dc0-87cd-42b9-a504-b0ab85e1ab15",
+        "7662715e-6110-4e48-8fa2-f297a6b563c3",
+        "75529892-7926-4e7a-8740-2fbeca912ac7",
+        "db9e90bb-9f15-4751-8dfd-d47abf8c5371"
       ],
       "settings": {
         "section_height": "medium",
