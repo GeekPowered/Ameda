@@ -27,17 +27,8 @@
         "heading-0": {
           "type": "heading",
           "settings": {
-            "heading": "Announce a promotion",
+            "heading": "Seasonal promotion text goes here",
             "heading_size": "h6",
-            "show_on_mobile": true,
-            "show_on_desktop": true
-          }
-        },
-        "text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share something special with your customers.<\/p>",
-            "enlarge_text": false,
             "show_on_mobile": true,
             "show_on_desktop": true
           }
@@ -51,8 +42,10 @@
       },
       "block_order": [
         "heading-0",
-        "text-1",
         "discount-2"
+      ],
+      "custom_css": [
+        ".promo-strip__container {justify-content: space-between;}"
       ],
       "settings": {
         "section_height": "xsmall",
@@ -70,7 +63,7 @@
         "logo_text": "",
         "logo_type_scale": "2",
         "logo": "{{ shop.brand.logo }}",
-        "logo_width": 150,
+        "logo_width": 200,
         "logo_h1": false,
         "logo_center": false,
         "enable_search": true,
