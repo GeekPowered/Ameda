@@ -1,5 +1,58 @@
 {
   "sections": {
+    "a2669460-8635-4e2e-b686-0b839f32114c": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Breastfeeding Solutions From Hospital To Home",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mom-Approved & Hospital-Grade Breast Pumps<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-button-1": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Shop Now",
+            "button_1_link": "shopify:\/\/collections",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Get In Touch",
+            "button_2_link": "shopify:\/\/pages\/contact",
+            "button_2_style": "btn btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-heading-1",
+        "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-text-1",
+        "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-button-1"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/breastfeeding-hero.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 600,
+        "fixed_height_mobile": 350,
+        "overlay_position": "justify-start items-center",
+        "overlay_text_align": "text-start",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -191,7 +244,7 @@
             "overlay_position": "justify-start items-start",
             "text_alignment": "text-center",
             "promo_circle": true,
-            "background_color": "#e32b2b",
+            "background_color": "{{ shop.brand.colors.primary[0].background }}",
             "text_color": "#ffffff",
             "subheading": "Subheading with more info",
             "link_text": "Add link text here",
@@ -215,7 +268,7 @@
             "overlay_position": "justify-start items-start",
             "text_alignment": "text-center",
             "promo_circle": false,
-            "background_color": "#e32b2b",
+            "background_color": "{{ shop.brand.colors.primary[0].background }}",
             "text_color": "#ffffff",
             "subheading": "Subheading",
             "link_text": "Add link text here",
@@ -239,7 +292,7 @@
             "overlay_position": "justify-start items-start",
             "text_alignment": "text-center",
             "promo_circle": false,
-            "background_color": "#e32b2b",
+            "background_color": "{{ shop.brand.colors.primary[0].background }}",
             "text_color": "#ffffff",
             "subheading": "Subheading",
             "link_text": "Add link text here",
@@ -263,7 +316,7 @@
             "overlay_position": "justify-start items-start",
             "text_alignment": "text-center",
             "promo_circle": false,
-            "background_color": "#e32b2b",
+            "background_color": "{{ shop.brand.colors.primary[0].background }}",
             "text_color": "#ffffff",
             "subheading": "Subheading with more info",
             "link_text": "Add link text here",
@@ -935,6 +988,7 @@
     }
   },
   "order": [
+    "a2669460-8635-4e2e-b686-0b839f32114c",
     "collection-list",
     "scrolling-banner",
     "countdown-timer",
