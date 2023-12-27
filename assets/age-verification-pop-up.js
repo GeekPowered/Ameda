@@ -17,7 +17,7 @@ function setCookie(name, value, days) {
 }
 
 /**
- * Gets the value of a cookie (if it exists).
+ * Gets value of a cookie (if it exists).
  * @param {string} name - Name of the cookie.
  * @returns {?string}
  */
