@@ -192,6 +192,68 @@
         "prevent_animation": false
       }
     },
+    "d7e1a754-c0f2-42cf-8b40-26636730031a": {
+      "type": "collection-list",
+      "blocks": {
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "breast-pumps"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "breast-care"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "breast-milk-storage"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "cleaning-sanitization"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": "rental-pumps"
+          }
+        }
+      },
+      "block_order": [
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-1",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-2",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-3",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-4",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-5",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-6"
+      ],
+      "settings": {
+        "title": "Shop By Your Needs",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "small",
+        "use_product_image": true,
+        "circle_image": false,
+        "show_border": false,
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "countdown-timer": {
       "type": "countdown-timer",
       "blocks": {
@@ -812,74 +874,13 @@
         "color_scheme": "white",
         "transparent_content_color": "#ffffff"
       }
-    },
-    "d7e1a754-c0f2-42cf-8b40-26636730031a": {
-      "type": "collection-list",
-      "blocks": {
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "breast-pumps"
-          }
-        },
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "breast-care"
-          }
-        },
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories"
-          }
-        },
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "breast-milk-storage"
-          }
-        },
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-5": {
-          "type": "collection",
-          "settings": {
-            "collection": "cleaning-sanitization"
-          }
-        },
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-6": {
-          "type": "collection",
-          "settings": {
-            "collection": "rental-pumps"
-          }
-        }
-      },
-      "block_order": [
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-1",
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-2",
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-3",
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-4",
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-5",
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-6"
-      ],
-      "settings": {
-        "title": "Shop By Your Needs",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "carousel",
-        "card_size": "small",
-        "use_product_image": true,
-        "circle_image": false,
-        "show_border": false,
-        "color_scheme": "none",
-        "full_width": true
-      }
     }
   },
   "order": [
     "a2669460-8635-4e2e-b686-0b839f32114c",
     "collection-list",
     "scrolling-banner",
+    "d7e1a754-c0f2-42cf-8b40-26636730031a",
     "countdown-timer",
     "image-banner",
     "media-with-text",
@@ -889,7 +890,6 @@
     "product-comparison-grid",
     "multi-column",
     "video",
-    "media-grid",
-    "d7e1a754-c0f2-42cf-8b40-26636730031a"
+    "media-grid"
   ]
 }
