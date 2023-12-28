@@ -81,7 +81,7 @@
         "collection-2"
       ],
       "custom_css": [
-        "@media (min-width: 768px) {.slider__grid {grid-auto-columns: calc((100% - var(--column-gap) * 2) \/ 3) !important; } .card__info a.card-link {font-size: 3rem !important;}}",
+        "@media (min-width: 768px) {.slider__grid {grid-auto-columns: calc((100% - var(--column-gap) * 2) \/ 3) !important; } .card__info a.card-link {font-size: 3rem !important; }}",
         ".card__info > a {display: none;}"
       ],
       "settings": {
@@ -245,9 +245,9 @@
         "button_label": "",
         "button_link": "",
         "layout": "carousel",
-        "card_size": "small",
+        "card_size": "medium",
         "use_product_image": false,
-        "circle_image": true,
+        "circle_image": false,
         "show_border": false,
         "color_scheme": "none",
         "full_width": true
