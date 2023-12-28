@@ -375,6 +375,7 @@
     "show_breadcrumbs_collection_list": true,
     "show_breadcrumbs_article": false,
     "show_breadcrumbs_blog": false,
+    "coll_card_image_ratio": "1",
     "coll_border_color": "#f2f2f2",
     "prod_card_image_ratio": "1",
     "prod_card_image_fit": "cover",

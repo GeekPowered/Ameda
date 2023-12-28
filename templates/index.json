@@ -80,13 +80,16 @@
         "collection-1",
         "collection-2"
       ],
+      "custom_css": [
+        ".slider__grid {@media (min-width: 768px) {grid-auto-columns: calc((100% - var(--column-gap) * 2) \/ 3) !important; }}"
+      ],
       "settings": {
         "title": "",
         "heading_align": "text-center",
         "button_label": "",
         "button_link": "",
         "layout": "carousel",
-        "card_size": "large",
+        "card_size": "small",
         "use_product_image": false,
         "circle_image": true,
         "show_border": true,
@@ -775,13 +778,21 @@
             "truncate_description": false,
             "words_to_show": 20
           }
+        },
+        "1a83d42c-21e0-458a-a3af-33a3656d9478": {
+          "type": "metafield",
+          "settings": {
+            "title": "Comparison Label Here",
+            "metafield_key": ""
+          }
         }
       },
       "block_order": [
         "comparison-product-1",
         "comparison-vendor-2",
         "comparison-price-3",
-        "comparison-description-4"
+        "comparison-description-4",
+        "1a83d42c-21e0-458a-a3af-33a3656d9478"
       ],
       "settings": {
         "heading": "Product comparison grid",
@@ -810,8 +821,8 @@
             "media_scale": 100,
             "heading": "Column 1",
             "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "",
-            "button_link": ""
+            "button_label": "For Moms",
+            "button_link": "https:\/\/google.com"
           }
         },
         "multi-column-1": {
@@ -865,7 +876,7 @@
         "media_align": "text-center",
         "image_ratio": "1",
         "color_scheme": "1",
-        "button_style": "btn btn--secondary"
+        "button_style": "btn btn--primary"
       }
     },
     "video": {
