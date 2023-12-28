@@ -71,7 +71,7 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "insurance"
           }
         }
       },
@@ -81,7 +81,9 @@
         "collection-2"
       ],
       "custom_css": [
-        ".slider__grid {@media (min-width: 768px) {grid-auto-columns: calc((100% - var(--column-gap) * 2) \/ 3) !important; }}"
+        ".slider__grid {@media (min-width: 768px) {grid-auto-columns: calc((100% - var(--column-gap) * 2) \/ 3) !important; }}",
+        ".card__info > a {display: none;}",
+        ".card__info a.card-link {font-size: 3rem !important;}"
       ],
       "settings": {
         "title": "",
@@ -92,7 +94,7 @@
         "card_size": "small",
         "use_product_image": false,
         "circle_image": true,
-        "show_border": true,
+        "show_border": false,
         "color_scheme": "none",
         "full_width": false
       }
