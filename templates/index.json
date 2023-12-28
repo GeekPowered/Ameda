@@ -242,126 +242,6 @@
         "tint_opacity": 20
       }
     },
-    "promo-grid": {
-      "type": "promo-grid",
-      "blocks": {
-        "promo-media-0": {
-          "type": "media",
-          "settings": {
-            "link_url": "",
-            "columns": 2,
-            "rows": 2,
-            "line1_text": "Save up to",
-            "line1_text_type_scale": "text-h6",
-            "line2_text": "50%",
-            "line2_text_type_scale": "text-h0",
-            "line3_text": "",
-            "line3_text_type_scale": "text-h6",
-            "overlay_position": "justify-start items-start",
-            "text_alignment": "text-center",
-            "promo_circle": true,
-            "background_color": "{{ shop.brand.colors.primary[0].background }}",
-            "text_color": "#ffffff",
-            "subheading": "Subheading with more info",
-            "link_text": "Add link text here",
-            "text_type_scale": "h6",
-            "tint_color": "#000000",
-            "tint_opacity": 30
-          }
-        },
-        "promo-media-1": {
-          "type": "media",
-          "settings": {
-            "link_url": "",
-            "columns": 1,
-            "rows": 1,
-            "line1_text": "Save",
-            "line1_text_type_scale": "text-h6",
-            "line2_text": "50%",
-            "line2_text_type_scale": "text-h2",
-            "line3_text": "",
-            "line3_text_type_scale": "text-h6",
-            "overlay_position": "justify-start items-start",
-            "text_alignment": "text-center",
-            "promo_circle": false,
-            "background_color": "{{ shop.brand.colors.primary[0].background }}",
-            "text_color": "#ffffff",
-            "subheading": "Subheading",
-            "link_text": "Add link text here",
-            "text_type_scale": "h6",
-            "tint_color": "#000000",
-            "tint_opacity": 30
-          }
-        },
-        "promo-media-2": {
-          "type": "media",
-          "settings": {
-            "link_url": "",
-            "columns": 1,
-            "rows": 1,
-            "line1_text": "Now",
-            "line1_text_type_scale": "text-h6",
-            "line2_text": "$50",
-            "line2_text_type_scale": "text-h2",
-            "line3_text": "",
-            "line3_text_type_scale": "text-h6",
-            "overlay_position": "justify-start items-start",
-            "text_alignment": "text-center",
-            "promo_circle": false,
-            "background_color": "{{ shop.brand.colors.primary[0].background }}",
-            "text_color": "#ffffff",
-            "subheading": "Subheading",
-            "link_text": "Add link text here",
-            "text_type_scale": "h6",
-            "tint_color": "#000000",
-            "tint_opacity": 30
-          }
-        },
-        "promo-media-3": {
-          "type": "media",
-          "settings": {
-            "link_url": "",
-            "columns": 2,
-            "rows": 1,
-            "line1_text": "Save",
-            "line1_text_type_scale": "text-h6",
-            "line2_text": "1\/3",
-            "line2_text_type_scale": "text-h1",
-            "line3_text": "",
-            "line3_text_type_scale": "text-h6",
-            "overlay_position": "justify-start items-start",
-            "text_alignment": "text-center",
-            "promo_circle": false,
-            "background_color": "{{ shop.brand.colors.primary[0].background }}",
-            "text_color": "#ffffff",
-            "subheading": "Subheading with more info",
-            "link_text": "Add link text here",
-            "text_type_scale": "h6",
-            "tint_color": "#000000",
-            "tint_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "promo-media-0",
-        "promo-media-1",
-        "promo-media-2",
-        "promo-media-3"
-      ],
-      "settings": {
-        "title": "Promo grid",
-        "heading_align": "text-start",
-        "button_label": "View All",
-        "button_link": "",
-        "gallery_cols_max": 4,
-        "mobile_carousel": false,
-        "gallery_cols_min": "1",
-        "fixed_height_desktop": 200,
-        "fixed_height_mobile": 280,
-        "text_overlay_font": "body",
-        "color_scheme": "default"
-      }
-    },
     "image-banner": {
       "type": "image-banner",
       "blocks": {
@@ -412,83 +292,6 @@
         "tint_color": "#000000",
         "tint_opacity": 40,
         "prevent_animation": false
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "heading_align": "text-start",
-        "show_view_all": true,
-        "collection": "",
-        "layout": "carousel",
-        "card_size_mobile": "small",
-        "card_size": "small",
-        "products_to_show": 8,
-        "show_promo_info": true,
-        "image_ratio": "fill",
-        "promo_title": "A headline to grab attention",
-        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.<\/p>",
-        "link_url": "\/",
-        "button_label": "Optional Button",
-        "color_scheme": "1",
-        "button_style": "btn btn--primary"
-      }
-    },
-    "product-features": {
-      "type": "product-features",
-      "blocks": {
-        "feature-0": {
-          "type": "feature",
-          "settings": {
-            "heading": "Feature name",
-            "text": "<p>Add some text describing the product feature.<\/p>",
-            "content_align": "text-start",
-            "hotspot_x": 28,
-            "hotspot_y": 38
-          }
-        },
-        "feature-1": {
-          "type": "feature",
-          "settings": {
-            "heading": "Feature name",
-            "text": "<p>Add some text describing the product feature.<\/p>",
-            "content_align": "text-start",
-            "hotspot_x": 60,
-            "hotspot_y": 23
-          }
-        },
-        "feature-2": {
-          "type": "feature",
-          "settings": {
-            "heading": "Feature name",
-            "text": "<p>Add some text describing the product feature.<\/p>",
-            "content_align": "text-start",
-            "hotspot_x": 73,
-            "hotspot_y": 54
-          }
-        }
-      },
-      "block_order": [
-        "feature-0",
-        "feature-1",
-        "feature-2"
-      ],
-      "settings": {
-        "product": "",
-        "show_content": true,
-        "layout": "text_first",
-        "text_align": "text-center",
-        "mob_center_text": false,
-        "heading_size": "h1",
-        "enlarge_text": false,
-        "title": "Product features",
-        "description": "<p>Use this section to highlight specific product features to your customers.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "hotspot_color": "#070707",
-        "color_scheme": "none",
-        "button_style": "btn btn--primary"
       }
     },
     "media-with-text": {
@@ -821,9 +624,9 @@
           "settings": {
             "enable_media": true,
             "media_scale": 100,
-            "heading": "Column 1",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "For Moms",
+            "heading": "",
+            "text": "",
+            "button_label": "Breast Pumps",
             "button_link": "https:\/\/google.com"
           }
         },
@@ -874,10 +677,10 @@
         "button_link": "",
         "layout": "carousel",
         "column_size": "medium",
-        "column_align": "left",
+        "column_align": "center",
         "media_align": "text-center",
-        "image_ratio": "1",
-        "color_scheme": "1",
+        "image_ratio": "1.77",
+        "color_scheme": "none",
         "button_style": "btn btn--primary"
       }
     },
@@ -1009,6 +812,68 @@
         "color_scheme": "white",
         "transparent_content_color": "#ffffff"
       }
+    },
+    "d7e1a754-c0f2-42cf-8b40-26636730031a": {
+      "type": "collection-list",
+      "blocks": {
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "breast-pumps"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "breast-care"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "breast-milk-storage"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "cleaning-sanitization"
+          }
+        },
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-1",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-2",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-3",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-4",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-5",
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-6"
+      ],
+      "settings": {
+        "title": "Shop By Your Needs",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "small",
+        "use_product_image": true,
+        "circle_image": false,
+        "show_border": false,
+        "color_scheme": "none",
+        "full_width": true
+      }
     }
   },
   "order": [
@@ -1016,10 +881,7 @@
     "collection-list",
     "scrolling-banner",
     "countdown-timer",
-    "promo-grid",
     "image-banner",
-    "featured-collection",
-    "product-features",
     "media-with-text",
     "shoppable-image",
     "link-lists",
@@ -1027,6 +889,7 @@
     "product-comparison-grid",
     "multi-column",
     "video",
-    "media-grid"
+    "media-grid",
+    "d7e1a754-c0f2-42cf-8b40-26636730031a"
   ]
 }
