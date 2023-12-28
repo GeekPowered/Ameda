@@ -271,7 +271,7 @@
             "text": "",
             "enlarge_text": false,
             "button_1_label": "Learn More",
-            "button_1_link": "",
+            "button_1_link": "shopify:\/\/products\/ameda®-pearl®-hospital-grade-breast-pump",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -293,7 +293,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/ameda-app.png",
-            "url": "",
+            "url": "https:\/\/play.google.com\/store\/apps\/details?id=com.ameda.app&pcampaignid=web_share",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
@@ -304,7 +304,7 @@
             "text": "",
             "enlarge_text": true,
             "button_1_label": "Learn More",
-            "button_1_link": "",
+            "button_1_link": "https:\/\/play.google.com\/store\/apps\/details?id=com.ameda.app",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -329,7 +329,7 @@
       ],
       "settings": {
         "height_mode": "fixed",
-        "fixed_height_desktop": 600,
+        "fixed_height_desktop": 400,
         "fixed_height_mobile": 350,
         "mobile_stacked": false,
         "nav_style": "slideshow_nav_lines",
@@ -345,6 +345,54 @@
         "tint_opacity": 40,
         "accessibility_info": "",
         "prevent_animation": true
+      }
+    },
+    "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc": {
+      "type": "product-comparison-grid",
+      "blocks": {
+        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-product-1": {
+          "type": "product",
+          "settings": {
+            "show_image": true,
+            "show_title": true,
+            "show_button": true
+          }
+        },
+        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-description-1": {
+          "type": "description",
+          "settings": {
+            "truncate_description": false,
+            "words_to_show": 20
+          }
+        }
+      },
+      "block_order": [
+        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-product-1",
+        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-price-1",
+        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-description-1"
+      ],
+      "settings": {
+        "heading": "Pump Without Compromise",
+        "text": "",
+        "heading_align": "text-center",
+        "view_more_label": "View more",
+        "view_more_link": "",
+        "product_list": [
+          "ameda-mya-joy-hospital-strength-portable-electric-breast-pump",
+          "ameda-mya-joy-plus-rechargeable-quiet-and-portable-double-breast-pump",
+          "ameda®-pearl®-hospital-grade-breast-pump"
+        ],
+        "empty_field_text": "-",
+        "image_ratio": "1",
+        "image_crop": "center",
+        "num_rows": 0,
+        "color_scheme": "1",
+        "highlight_row": false
       }
     },
     "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67": {
@@ -400,8 +448,8 @@
         "text_align": "text-center justify-center",
         "nav_style": "slideshow_nav_lines",
         "transition": "slide-fade",
-        "autoplay": false,
-        "slider_pause": false,
+        "autoplay": true,
+        "slider_pause": true,
         "autoplay_speed": 5,
         "color_scheme": "default",
         "full_width": true
@@ -414,6 +462,7 @@
     "scrolling-banner",
     "d7e1a754-c0f2-42cf-8b40-26636730031a",
     "7dbc7bd2-0a65-4654-9735-26944264824b",
+    "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc",
     "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67"
   ]
 }

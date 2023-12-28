@@ -417,6 +417,7 @@
     "search_input_placeholder_2": "Search Milk 101 Blog",
     "search_input_font": "body",
     "speech_icon_color": "{{ shop.brand.colors.primary[0].background }}",
+    "show_currency_code": false,
     "cart_icon": "bag",
     "cart_type": "drawer",
     "show_recommendations": true,
