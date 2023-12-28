@@ -346,6 +346,66 @@
         "accessibility_info": "",
         "prevent_animation": true
       }
+    },
+    "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67": {
+      "type": "testimonials",
+      "blocks": {
+        "template--21856551764283__ed8d29c9-7aeb-41cd-9313-624ffe2b1c67-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.<\/p>",
+            "author": "Jessie J.",
+            "author_info": "Mya Joy Plus",
+            "author_image": "shopify:\/\/shop_images\/joykit_2_b092f283-97d8-48b7-a97f-d51b6f61b8bc.jpg",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        },
+        "6835264e-1ee5-4511-9bac-7fd8f4fc8b64": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.<\/p>",
+            "author": "Cassandra M.",
+            "author_info": "Pearl",
+            "author_image": "shopify:\/\/shop_images\/AMED_ProductPhoto_1.jpg",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        },
+        "af40b256-9c41-4e1d-885a-d76d313dc1be": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.<\/p>",
+            "author": "Cara D.",
+            "author_info": "Mya Joy",
+            "author_image": "shopify:\/\/shop_images\/joykit_2_b092f283-97d8-48b7-a97f-d51b6f61b8bc.jpg",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "template--21856551764283__ed8d29c9-7aeb-41cd-9313-624ffe2b1c67-testimonial-1",
+        "6835264e-1ee5-4511-9bac-7fd8f4fc8b64",
+        "af40b256-9c41-4e1d-885a-d76d313dc1be"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "show_quotes": true,
+        "testimonial_size": "h4",
+        "text_position": "justify-center",
+        "text_align": "text-center justify-center",
+        "nav_style": "slideshow_nav_lines",
+        "transition": "slide-fade",
+        "autoplay": false,
+        "slider_pause": false,
+        "autoplay_speed": 5,
+        "color_scheme": "default",
+        "full_width": true
+      }
     }
   },
   "order": [
@@ -353,6 +413,7 @@
     "collection-list",
     "scrolling-banner",
     "d7e1a754-c0f2-42cf-8b40-26636730031a",
-    "7dbc7bd2-0a65-4654-9735-26944264824b"
+    "7dbc7bd2-0a65-4654-9735-26944264824b",
+    "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67"
   ]
 }
