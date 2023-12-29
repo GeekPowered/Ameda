@@ -19,11 +19,10 @@
     }
     .helpful-links_item_content.left {
         padding-bottom: 0;
+        width: 100% !important;
     }
     .helpful-links_item_content.right {
         padding-top: 0;
-    }
-    .helpful-links_item_content {
         width: 100% !important;
     }
 }
