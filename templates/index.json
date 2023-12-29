@@ -62,10 +62,10 @@
             "enable_media": true,
             "image": "shopify:\/\/shop_images\/for-moms.jpg",
             "media_scale": 100,
-            "heading": "For Moms",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "",
-            "button_link": ""
+            "heading": "",
+            "text": "",
+            "button_label": "For Moms",
+            "button_link": "\/"
           }
         },
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-2": {
@@ -74,10 +74,10 @@
             "enable_media": true,
             "image": "shopify:\/\/shop_images\/for-hospitals.jpg",
             "media_scale": 100,
-            "heading": "For Hospitals",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "",
-            "button_link": ""
+            "heading": "",
+            "text": "",
+            "button_label": "For Hospitals",
+            "button_link": "\/"
           }
         },
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-3": {
@@ -86,10 +86,10 @@
             "enable_media": true,
             "image": "shopify:\/\/shop_images\/insurance.jpg",
             "media_scale": 100,
-            "heading": "Insurance",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "",
-            "button_link": ""
+            "heading": "",
+            "text": "",
+            "button_label": "Insurance",
+            "button_link": "\/"
           }
         }
       },
@@ -97,6 +97,11 @@
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-1",
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-2",
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-3"
+      ],
+      "custom_css": [
+        ".card {border-radius: 1rem;}",
+        ".card__info > div {margin: 0;}",
+        ".card__info > div a {border: 0; padding: 0; font-size: var(--h2-font-size); font-weight: bold; font-family: var(--heading-font-family);}"
       ],
       "settings": {
         "title": "",
