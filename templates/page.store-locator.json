@@ -6,9 +6,15 @@
         "show_page_title": true,
         "heading_align": "text-center"
       }
+    },
+    "2c8e16d7-9c1c-43eb-bf7b-b8536df9ab8f": {
+      "type": "store-locator",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "2c8e16d7-9c1c-43eb-bf7b-b8536df9ab8f"
   ]
 }
