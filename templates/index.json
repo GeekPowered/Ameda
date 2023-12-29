@@ -53,36 +53,50 @@
         "prevent_animation": false
       }
     },
-    "collection-list": {
-      "type": "collection-list",
+    "99ad067f-b38f-4c8e-873d-dea943226a60": {
+      "type": "multi-column",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-1": {
+          "type": "column",
           "settings": {
-            "collection": "for-moms"
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/for-moms.jpg",
+            "media_scale": 100,
+            "heading": "For Moms",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": ""
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-2": {
+          "type": "column",
           "settings": {
-            "collection": "for-hospitals"
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/for-hospitals.jpg",
+            "media_scale": 100,
+            "heading": "For Hospitals",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": ""
           }
         },
-        "collection-2": {
-          "type": "collection",
+        "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-3": {
+          "type": "column",
           "settings": {
-            "collection": "insurance"
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/insurance.jpg",
+            "media_scale": 100,
+            "heading": "Insurance",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "collection-1",
-        "collection-2"
-      ],
-      "custom_css": [
-        "@media (min-width: 768px) {.slider__grid {grid-auto-columns: calc((100% - var(--column-gap) * 2) \/ 3) !important; } .card__info a.card-link {font-size: 3rem !important; }}",
-        ".card__info > a {display: none;}"
+        "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-1",
+        "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-2",
+        "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-3"
       ],
       "settings": {
         "title": "",
@@ -90,12 +104,12 @@
         "button_label": "",
         "button_link": "",
         "layout": "carousel",
-        "card_size": "small",
-        "use_product_image": false,
-        "circle_image": true,
-        "show_border": false,
-        "color_scheme": "none",
-        "full_width": false
+        "column_size": "medium",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "3",
+        "button_style": "btn btn--secondary"
       }
     },
     "scrolling-banner": {
@@ -284,7 +298,7 @@
             "enlarge_end_text": false,
             "countdown_hide_on_end": false,
             "use_custom_colors": false,
-            "count_color": "#fff",
+            "count_color": "#ffffff",
             "bg_color": "#070707",
             "bg_grad": ""
           }
@@ -317,7 +331,7 @@
             "enlarge_end_text": false,
             "countdown_hide_on_end": false,
             "use_custom_colors": false,
-            "count_color": "#fff",
+            "count_color": "#ffffff",
             "bg_color": "#070707",
             "bg_grad": ""
           }
@@ -458,7 +472,7 @@
   },
   "order": [
     "a2669460-8635-4e2e-b686-0b839f32114c",
-    "collection-list",
+    "99ad067f-b38f-4c8e-873d-dea943226a60",
     "scrolling-banner",
     "d7e1a754-c0f2-42cf-8b40-26636730031a",
     "7dbc7bd2-0a65-4654-9735-26944264824b",

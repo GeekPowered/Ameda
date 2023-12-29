@@ -2,25 +2,6 @@
   "type": "header",
   "name": "Header Group",
   "sections": {
-    "announcement": {
-      "type": "announcement",
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "link1": "",
-        "link1_label": "",
-        "link2": "",
-        "link2_label": "",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "bg_color": "{{ shop.brand.colors.secondary[0].background }}",
-        "text_color": "#ffffff",
-        "text_type_scale": "small",
-        "read_time": 7
-      }
-    },
     "promo-strip": {
       "type": "promo-strip",
       "blocks": {
@@ -85,11 +66,30 @@
         "text_color": "#070707",
         "accent_color": "#ffffff"
       }
+    },
+    "announcement": {
+      "type": "announcement",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "link1": "",
+        "link1_label": "",
+        "link2": "",
+        "link2_label": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "bg_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "text_color": "#ffffff",
+        "text_type_scale": "small",
+        "read_time": 7
+      }
     }
   },
   "order": [
-    "announcement",
     "promo-strip",
-    "header"
+    "header",
+    "announcement"
   ]
 }
