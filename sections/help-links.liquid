@@ -1,35 +1,65 @@
 <link rel="stylesheet" href="{{ 'help-links.css' | asset_url }}" media="print" onload="this.media='all'">
 
-
 <div class="section section--padded helpful-links">
     <div class="container">
         <h2 class="section__heading text-center">We're Here For You</h2>
         <div class="helpful-links_list">
-            <div class="helpful-links_item">
-                <div class="helpful-links_item_content left">
-                    <h3>Help Link Title</h3>
+            {% for link in section.settings.links %}
+                <div class="helpful-links_item">
+                    <div class="helpful-links_item_content left">
+                        <h3>{{ link.title }}</h3>
+                    </div>
+                    <div class="helpful-links_item_content right">
+                        <p>{{ link.content }}</p>
+                        <a href="{{ link.url }}" class="inline-flex card__collection--arrow">
+                            {{ link.link_text }}
+                            <span class="has-ltr-icon flex items-center mis-2">{% render 'icon-arrow-right' %}</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="helpful-links_item_content right">
-                    <p>Help link description text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia fugiat quidem quod reprehenderit, aspernatur consectetur voluptas nesciunt, illum neque reiciendis culpa? Optio necessitatibus fugit nobis!</p>
-                    <a href="#" class="inline-flex card__collection--arrow">
-                        Link Title Here
-                        <span class="has-ltr-icon flex items-center mis-2">{% render 'icon-arrow-right' %}</span>
-                    </a>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
 
-
 {% schema %}
+{
+  "name": "Help Links",
+  "presets": [
     {
       "name": "Help Links",
-      "presets": [
+      "category": "Template"
+    }
+  ],
+  "settings": [
+    {
+      "type": "repeater",
+      "label": "Links",
+      "id": "links",
+      "max": 10,
+      "item": [
         {
-          "name": "Help Links",
-          "category": "Template"
+          "type": "text",
+          "label": "Title",
+          "id": "title"
+        },
+        {
+          "type": "textarea",
+          "label": "Content",
+          "id": "content"
+        },
+        {
+          "type": "text",
+          "label": "Link Text",
+          "id": "link_text"
+        },
+        {
+          "type": "url",
+          "label": "Link URL",
+          "id": "url"
         }
       ]
     }
-  {% endschema %}
+  ]
+}
+{% endschema %}
