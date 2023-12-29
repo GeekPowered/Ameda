@@ -356,6 +356,7 @@
     "panel_heading_color": "#333333",
     "panel_text_color": "#333333",
     "drawer_text_color": "#333333",
+    "blend_product_images": false,
     "blend_bg_color": "#f4f4f4",
     "heading_font": "garamond_n7",
     "heading_uppercase": false,
