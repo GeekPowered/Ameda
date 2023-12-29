@@ -1,3 +1,18 @@
 {% for location in shop.metaobjects.store_locations.values %}
-    <p>{{ store_locations.title }}</p>
+  <p>{{ store_locations.title }}</p>
 {% endfor %}
+
+{% schema %}
+  {
+    "name": "Store Locator",
+    "tag": "section",
+    "class": "store-locator-section",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout"
+      }
+    ]
+  }
+{% endschema %}
