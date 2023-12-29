@@ -9,3 +9,12 @@
     padding: 3rem 0;
     border-bottom: 1px solid #333;
 }
+
+.helpful-links_item_content.left * {
+    color: #333;
+}
+@media (max-width: 767px) {
+    .helpful-links .helpful-links_item {
+        flex-direction: column;
+    }
+}
