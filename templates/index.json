@@ -473,6 +473,14 @@
         "color_scheme": "default",
         "full_width": true
       }
+    },
+    "acd7fd58-c974-46c3-b1be-199a5a00dae3": {
+      "type": "help-links",
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -482,6 +490,7 @@
     "d7e1a754-c0f2-42cf-8b40-26636730031a",
     "7dbc7bd2-0a65-4654-9735-26944264824b",
     "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc",
-    "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67"
+    "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67",
+    "acd7fd58-c974-46c3-b1be-199a5a00dae3"
   ]
 }
