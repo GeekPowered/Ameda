@@ -90,3 +90,16 @@ h3.post-item_title {
         gap: 2rem;
     }
 }
+
+@media (max-width: 450px) {
+    .post-item {
+        flex-direction: column;
+    }
+    .post-item>div {
+        width: 100%;
+    }
+    .post-item_image {
+        aspect-ratio: 3 / 2;
+        height: auto;
+    }
+}
