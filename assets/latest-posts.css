@@ -1,0 +1,14 @@
+.flex-title {
+    display: flex;
+    align-items: flex-end;
+    gap: 10rem;
+}
+
+.flex-title_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-title_button {
+    flex: none;
+}
