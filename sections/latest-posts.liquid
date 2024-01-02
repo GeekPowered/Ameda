@@ -17,7 +17,7 @@
             {% for post in blogs['news'].articles limit:6 %}
                 <div class="post-item">
                     <div class="post-item_image">
-                        <img src="{{ post.image.src | default: 'https://placehold.co/1000' }}" alt="{{ post.image.alt | default: '' }}">
+                        <img src="{{ post.image.featured_src | default: 'https://placehold.co/1000' }}" alt="{{ post.image.alt | default: '' }}">
                     </div>
                     <div class="post-item_content">
                         <div class="post-item_category"><span>{{ post.tags.first }}</span></div>
