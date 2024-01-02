@@ -17,6 +17,7 @@
     display: flex;
     gap: var(--gutter-md);
     margin-top: var(--gutter-md);
+    flex-wrap: wrap;
 }
 
 .post-item {
@@ -25,7 +26,6 @@
     background-color: rgb(var(--color-scheme-1-bg));
     border-radius: 1rem;
     overflow: hidden;
-    flex: 1;
     width: calc(50% - (var(--gutter-md) / 2));
     min-height: 25rem;
 }
