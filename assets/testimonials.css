@@ -35,7 +35,7 @@
 }
 
 .testimonial-stars .rating__stars {
-  --star-color: var(--text-color);
+  --star-color: var(--btn-bg-color);
   letter-spacing: 2px;
 }
 
