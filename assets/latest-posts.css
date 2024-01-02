@@ -1,3 +1,7 @@
+.latest-posts {
+    background: #fff;
+}
+
 .flex-title {
     display: flex;
     align-items: flex-end;
@@ -23,7 +27,7 @@
 .post-item {
     display: flex;
     align-items: center;
-    background-color: rgb(var(--color-scheme-1-bg));
+    background-color: rgb(var(--bg-color));
     border-radius: 1rem;
     overflow: hidden;
     width: calc(50% - (var(--gutter-md) / 2));
@@ -58,6 +62,7 @@
 
 h3.post-item_title {
     margin-bottom: 0;
+    margin-top: 0.5rem;
 }
 
 .post-item_category span {
@@ -67,6 +72,7 @@ h3.post-item_title {
     font-size: 0.75em;
     color: #ef9aa0;
     font-weight: bold;
+    background-color: #fff;;
 }
 
 .two-line-clamp {
