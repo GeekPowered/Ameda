@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="flex-posts">
-            {% for article in blogs['news'].articles limit:4 %}
+            {% for article in blogs['blog'].articles limit:4 %}
                 <div class="post-item">
                     <div class="post-item_image">
                         <a href="{{ article.url }}">
@@ -22,7 +22,7 @@
                         </a>
                     </div>
                     <div class="post-item_content">
-                        <a href="/blog/news/tagged{{ article.tags.first | handle }}" class="post-item_category"><span>{{ article.tags.first }}</span></a>
+                        <a href="/blog/blog/tagged{{ article.tags.first | handle }}" class="post-item_category"><span>{{ article.tags.first }}</span></a>
                         <h3 class="h4 post-item_title two-line-clamp">{{ article.title }}</h3>
                         <p class="post-item_excerpt two-line-clamp m-0">
                             {{ article.excerpt | default: '' }}
