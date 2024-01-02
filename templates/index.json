@@ -99,7 +99,7 @@
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-3"
       ],
       "custom_css": [
-        ".card {border-radius: 1rem;}",
+        ".card {border-radius: 1rem; overflow: hidden;}",
         ".card__info > div {margin: 0;}",
         ".card__info > div a {border: 0; padding: 0; font-size: var(--h2-font-size); font-weight: bold; font-family: var(--heading-font-family);}"
       ],
@@ -414,6 +414,78 @@
         "highlight_row": false
       }
     },
+    "acd7fd58-c974-46c3-b1be-199a5a00dae3": {
+      "type": "help-links",
+      "blocks": {
+        "9c8be2c1-6959-4e6b-9938-6cbf362c3f16": {
+          "type": "link",
+          "settings": {
+            "title": "Choosing the Right Pump",
+            "content": "Your breastfeeding and pumping journey starts with the right pump.",
+            "link_text": "Find Your Pump",
+            "url": "#"
+          }
+        },
+        "c9b11b25-394a-42ea-bbf2-4b2cefef3566": {
+          "type": "link",
+          "settings": {
+            "title": "Breastfeeding Guide",
+            "content": "Breastfeeding is beneficial for you, your baby, and the community.",
+            "link_text": "Breastfeeding Tips",
+            "url": "#"
+          }
+        },
+        "52132ce7-ae43-4c08-af17-206aaf0d6e95": {
+          "type": "link",
+          "settings": {
+            "title": "Usage Instructions",
+            "content": "Learn how to use Ameda pumps, products, accessories, and more!",
+            "link_text": "Product Guides",
+            "url": "#"
+          }
+        },
+        "ceaccd9d-5daf-4e8f-a92b-8c20a7b8283d": {
+          "type": "link",
+          "settings": {
+            "title": "The Milk 101 Blog",
+            "content": "Breastfeeding is beneficial for you, your baby, and the community.",
+            "link_text": "Learn More",
+            "url": ""
+          }
+        },
+        "15ac13ef-b830-45f9-b8fe-e70e38511ce3": {
+          "type": "link",
+          "settings": {
+            "title": "Instructional Videos",
+            "content": "Lorem ipsum dolor sit amet consectetur.",
+            "link_text": "See Videos",
+            "url": "#"
+          }
+        },
+        "1524bde6-43ab-45a5-9d9e-e26750e61795": {
+          "type": "link",
+          "settings": {
+            "title": "24\/7 Mom Support",
+            "content": "Lorem ipsum dolor sit amet consectetur.",
+            "link_text": "Learn More",
+            "url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "9c8be2c1-6959-4e6b-9938-6cbf362c3f16",
+        "c9b11b25-394a-42ea-bbf2-4b2cefef3566",
+        "52132ce7-ae43-4c08-af17-206aaf0d6e95",
+        "ceaccd9d-5daf-4e8f-a92b-8c20a7b8283d",
+        "15ac13ef-b830-45f9-b8fe-e70e38511ce3",
+        "1524bde6-43ab-45a5-9d9e-e26750e61795"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
+    },
     "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67": {
       "type": "testimonials",
       "blocks": {
@@ -474,12 +546,95 @@
         "full_width": true
       }
     },
-    "acd7fd58-c974-46c3-b1be-199a5a00dae3": {
-      "type": "help-links",
-      "custom_css": [
-
+    "c35932f3-e653-4986-a811-3f28d8ce7450": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Ameda",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With a full portfolio of clinically-based solutions, Ameda is in the hospital ensuring moms get started right with products that are trusted by clinicians and lactation experts. Ameda is one of the few companies that is WHO code compliant in the breastfeeding solutions category. Not all major breastfeeding products manufacturing companies abide this voluntary determination of standard.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "About Ameda",
+            "button_link": "#",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-heading-1",
+        "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-text-1",
+        "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-button-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/home-cta.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "3",
+        "only_content_color_scheme": false
+      }
+    },
+    "8d53da5e-9774-4a39-be6d-1a6719422617": {
+      "type": "latest-posts",
+      "settings": {
+        "title": "Latest Posts",
+        "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
+      }
+    },
+    "5f455bc6-23bc-49a4-a914-add018baff10": {
+      "type": "newsletter",
+      "blocks": {
+        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to the Ameda Newsletter",
+            "heading_size": "h2"
+          }
+        },
+        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enjoy motherhood by staying up to date with new product releases, events, and helpful guides.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-form-1": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-heading-1",
+        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-text-1",
+        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-form-1"
+      ],
+      "settings": {
+        "overlay_position": "justify-center",
+        "text_align": "text-center",
+        "color_scheme": "2",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20
       }
     }
   },
@@ -490,7 +645,10 @@
     "d7e1a754-c0f2-42cf-8b40-26636730031a",
     "7dbc7bd2-0a65-4654-9735-26944264824b",
     "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc",
+    "acd7fd58-c974-46c3-b1be-199a5a00dae3",
     "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67",
-    "acd7fd58-c974-46c3-b1be-199a5a00dae3"
+    "c35932f3-e653-4986-a811-3f28d8ce7450",
+    "8d53da5e-9774-4a39-be6d-1a6719422617",
+    "5f455bc6-23bc-49a4-a914-add018baff10"
   ]
 }
