@@ -23,7 +23,7 @@
                     </div>
                     <div class="post-item_content">
                         <a href="/blog/news/tagged{{ article.tags.first | handle }}" class="post-item_category"><span>{{ article.tags.first }}</span></a>
-                        <h3 class="post-item_title two-line-clamp">{{ article.title }}</h3>
+                        <h3 class="h4 post-item_title two-line-clamp">{{ article.title }}</h3>
                         <p class="post-item_excerpt two-line-clamp m-0">
                             {{ article.excerpt | default: '' }}
                         </p>
