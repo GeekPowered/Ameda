@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="flex-posts">
-            {% for post in blogs['your-blog-handle'].articles limit:4 %}
+            {% for post in blogs['news'].articles limit:4 %}
                 <div class="post-item">
                     <div class="post-item_image">
                         <img src="{{ post.image.src | default: 'https://placehold.co/1000' }}" alt="{{ post.image.alt | default: '' }}">
