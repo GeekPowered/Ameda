@@ -62,7 +62,7 @@
         "cta_border_color": "#333333",
         "cta_bg_color": "#333333",
         "cta_text_color": "#ffffff",
-        "bg_color": "#fbf6ef",
+        "bg_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "text_color": "#070707",
         "accent_color": "#ffffff"
       }
