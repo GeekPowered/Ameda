@@ -553,7 +553,7 @@
           "type": "heading",
           "settings": {
             "heading": "About Ameda",
-            "heading_size": "h2",
+            "heading_size": "h1",
             "heading_h1": false
           }
         },
@@ -561,7 +561,7 @@
           "type": "text",
           "settings": {
             "text": "<p>With a full portfolio of clinically-based solutions, Ameda is in the hospital ensuring moms get started right with products that are trusted by clinicians and lactation experts. Ameda is one of the few companies that is WHO code compliant in the breastfeeding solutions category. Not all major breastfeeding products manufacturing companies abide this voluntary determination of standard.<\/p>",
-            "enlarge_text": false
+            "enlarge_text": true
           }
         },
         "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-button-1": {
