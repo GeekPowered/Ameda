@@ -95,11 +95,14 @@ h3.post-item_title {
     .post-item {
         flex-direction: column;
     }
-    .post-item>div {
+    .post-item > div {
         width: 100%;
     }
-    .post-item_image {
+    .post-item .post-item_image {
         aspect-ratio: 3 / 2;
+        height: auto;
+    }
+    .post-item .post-item_content {
         height: auto;
     }
 }
