@@ -3,14 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor-sku": {
-          "type": "vendor-sku",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": true,
-            "show_barcode": false
-          }
-        },
         "product-labels": {
           "type": "product-labels",
           "settings": {
@@ -28,6 +20,14 @@
             "show_as_collapsible_content": false,
             "icon": "none",
             "open": false
+          }
+        },
+        "vendor-sku": {
+          "type": "vendor-sku",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": true,
+            "show_barcode": false
           }
         },
         "price": {
@@ -121,10 +121,10 @@
         }
       },
       "block_order": [
-        "vendor-sku",
         "product-labels",
         "title",
         "9d3c5612-e12c-4f60-bc00-70a90a414745",
+        "vendor-sku",
         "price",
         "divider-0",
         "variant-picker",
