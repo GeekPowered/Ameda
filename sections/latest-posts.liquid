@@ -18,7 +18,7 @@
                 <div class="post-item">
                     <div class="post-item_image">
                         <script>console.log('{{article}}')</script>
-                        <img src="{{ article.featured_image.src | article_img_url: '500x500' }}" alt="{{ article.image.alt | default: '' }}">
+                        <img src="{{ article.image | article_img_url }}" alt="{{ article.image.alt | default: '' }}">
                     </div>
                     <div class="post-item_content">
                         <div class="post-item_category"><span>{{ article.tags.first }}</span></div>
