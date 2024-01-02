@@ -16,10 +16,10 @@
         <div class="flex-posts">
             {% for article in blogs['news'].articles limit:4 %}
                 <div class="post-item">
-                    <div class="post-item_image">
+                    <a href="{{ article.url }}" class="post-item_image">
                         <script>console.log('{{article}}')</script>
                         <img src="{{ article.image | article_img_url: 'medium' }}" alt="{{ article.image.alt | default: '' }}">
-                    </div>
+                    </a>
                     <div class="post-item_content">
                         <div class="post-item_category"><span>{{ article.tags.first }}</span></div>
                         <h3 class="post-item_title two-line-clamp">{{ article.title }}</h3>
