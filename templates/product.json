@@ -22,6 +22,14 @@
             "show_weight": false
           }
         },
+        "9d3c5612-e12c-4f60-bc00-70a90a414745": {
+          "type": "description",
+          "settings": {
+            "show_as_collapsible_content": false,
+            "icon": "none",
+            "open": false
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -89,9 +97,9 @@
         "collapsible-content-2": {
           "type": "collapsible-content",
           "settings": {
-            "heading": "Delivery and Shipping",
-            "icon": "truck",
-            "text": "<p>Add some general information about your delivery and shipping policies.<\/p>",
+            "heading": "Technical Features",
+            "icon": "none",
+            "text": "{{ product.metafields.product.technical_features | metafield_tag }}",
             "page": "",
             "open": false
           }
@@ -100,24 +108,13 @@
           "type": "share",
           "settings": {
           }
-        },
-        "message-3": {
-          "type": "message",
-          "settings": {
-            "icon": "none",
-            "title": "<p>Add a stand out message for your customers<\/p>",
-            "close": "once",
-            "show_over_media": false,
-            "visibility_duration": 7,
-            "bg_color": "#e4edfa",
-            "text_color": "#1a66d2"
-          }
         }
       },
       "block_order": [
         "vendor-sku",
         "product-labels",
         "title",
+        "9d3c5612-e12c-4f60-bc00-70a90a414745",
         "price",
         "divider-0",
         "variant-picker",
@@ -126,8 +123,7 @@
         "message-2",
         "collapsible-content-1",
         "collapsible-content-2",
-        "share",
-        "message-3"
+        "share"
       ],
       "settings": {
         "stick_on_scroll": true,
@@ -155,115 +151,14 @@
     },
     "details": {
       "type": "product-details",
-      "blocks": {
-        "highlight-text": {
-          "type": "highlight-text",
-          "settings": {
-            "title": "Highlight title",
-            "text": "<p>Text to highlight a key feature of your product<\/p>"
-          }
-        },
-        "tabs": {
-          "type": "tabs",
-          "settings": {
-            "style": "collapsible",
-            "open_first": false,
-            "show_description": true,
-            "show_reviews": false,
-            "custom_reviews": "",
-            "show_specification": false,
-            "spec_metafields": "",
-            "spec_right_align": false,
-            "spec_show_empty_metafields": true,
-            "spec_empty_field_text": "-",
-            "tab_1_title": "",
-            "tab_1_text": "",
-            "tab_1_page": "",
-            "tab_2_title": "",
-            "tab_2_text": "",
-            "tab_2_page": "",
-            "tab_3_title": "",
-            "tab_3_text": "",
-            "tab_3_page": ""
-          }
-        },
-        "payment-methods": {
-          "type": "payment-methods",
-          "settings": {
-            "title": "Payment & Security",
-            "title1": "Payment methods",
-            "show_payment_icons": true,
-            "text1": "<p>Your payment information is processed securely. We do not store credit card details nor have access to your credit card information.<\/p>",
-            "title2": "",
-            "text2": ""
-          }
-        }
-      },
-      "block_order": [
-        "highlight-text",
-        "tabs",
-        "payment-methods"
-      ],
       "settings": {
-      }
-    },
-    "image-banner": {
-      "type": "image-banner",
-      "blocks": {
-        "image-banner-heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "heading_h1": false
-          }
-        },
-        "image-banner-text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "enlarge_text": true
-          }
-        },
-        "image-banner-button": {
-          "type": "button",
-          "settings": {
-            "button_1_label": "Optional button",
-            "button_1_link": "",
-            "button_1_style": "btn btn--primary",
-            "button_2_label": "Optional button",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "image-banner-heading",
-        "image-banner-text",
-        "image-banner-button"
-      ],
-      "settings": {
-        "url": "",
-        "height_mode": "fixed",
-        "fixed_height_desktop": 640,
-        "fixed_height_mobile": 480,
-        "overlay_position": "justify-center items-center",
-        "overlay_text_align": "text-center",
-        "mob_center_text": false,
-        "mobile_stacked": false,
-        "color_scheme": "white",
-        "full_width": false,
-        "transparent_content_color": "#ffffff",
-        "tint_color": "#000000",
-        "tint_opacity": 40,
-        "prevent_animation": false
       }
     },
     "recommendations": {
       "type": "product-recommendations",
       "settings": {
         "heading": "You may also like",
-        "heading_align": "text-start",
+        "heading_align": "text-center",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
@@ -274,7 +169,6 @@
   "order": [
     "main",
     "details",
-    "image-banner",
     "recommendations"
   ]
 }
