@@ -4,8 +4,8 @@
     <div class="container">
         <div class="flex-title">
             <div class="flex-title_content">
-                <h2>Latest Posts</h2>
-                <p class="m-0">Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you.</p>
+                <h2>{{ section.settings.title | default: "Latest Posts" }}</h2>
+                <p class="m-0">{{ section.settings.description | default: "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you." }}</p>
             </div>
             <div class="flex-title_button">
                 <a href="/blog" class="btn btn--primary">
@@ -14,49 +14,55 @@
             </div>
         </div>
         <div class="flex-posts">
-            <div class="post-item">
-                <div class="post-item_image">
-                    <img src="https://placehold.co/1000" alt="">
-                </div>
-                <div class="post-item_content">
-                    <div class="post-item_category"><span>Breast Pumping</span></div>
-                    <h3 class="post-item_title two-line-clamp">Test Title</h3>
-                    <p class="two-line-clamp m-0">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates excepturi temporibus eius? Enim quam dicta voluptatibus repellat provident eaque beatae itaque natus laboriosam aliquam quas accusamus, aut debitis, cupiditate ipsum ullam ratione. Exercitationem ipsum sit magni voluptatum rerum? Dicta non velit explicabo possimus saepe in maxime laboriosam numquam ad repudiandae?
-                    </p>
-                    <div class="post-item_button">
-                        <a href="#" class="link">Read More</a>
+            {% for post in blogs[section.settings.blog_handle].articles limit:4 %}
+                <div class="post-item">
+                    <div class="post-item_image">
+                        <img src="{{ post.image.src | default: 'https://placehold.co/1000' }}" alt="{{ post.image.alt | default: '' }}">
+                    </div>
+                    <div class="post-item_content">
+                        <div class="post-item_category"><span>{{ post.tags.first }}</span></div>
+                        <h3 class="post-item_title two-line-clamp">{{ post.title }}</h3>
+                        <p class="post-item_excerpt two-line-clamp m-0">
+                            {{ post.excerpt | default: '' }}
+                        </p>
+                        <div class="post-item_button">
+                            <a href="{{ post.url }}" class="link">Read More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="post-item">
-                <div class="post-item_image">
-                    <img src="https://placehold.co/1000" alt="">
-                </div>
-                <div class="post-item_content">
-                    <div class="post-item_category"><span>Something Else</span></div>
-                    <h3 class="post-item_title two-line-clamp">Test Title 2</h3>
-                    <p class="two-line-clamp m-0">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates excepturi temporibus eius? Enim quam dicta voluptatibus repellat provident eaque beatae itaque natus laboriosam aliquam quas accusamus, aut debitis, cupiditate ipsum ullam ratione. Exercitationem ipsum sit magni voluptatum rerum? Dicta non velit explicabo possimus saepe in maxime laboriosam numquam ad repudiandae?
-                    </p>
-                    <div class="post-item_button">
-                        <a href="#" class="link">Read More</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
 
 {% schema %}
+{
+  "name": "Latest Posts",
+  "presets": [
     {
       "name": "Latest Posts",
-      "presets": [
-        {
-          "name": "Latest Posts",
-          "category": "Template"
-        }
-      ]
+      "category": "Template"
     }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title",
+      "default": "Latest Posts"
+    },
+    {
+      "type": "textarea",
+      "label": "Description",
+      "id": "description",
+      "default": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
+    },
+    {
+      "type": "blogs",
+      "label": "Select Blog",
+      "id": "blog_handle",
+      "default": "your-blog-handle"
+    }
+  ]
+}
 {% endschema %}
-    
