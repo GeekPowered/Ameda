@@ -2,6 +2,7 @@
 
 <div class="section section--padding">
   <div class="container">
+    <p class="text-center h4">E is for Elites, P is for Platinums. Other is everything else.</p>
     <ul class="state-selector" id="stateList">
       {% assign unique_states = "" | split: "," %}
       {% for store_location in shop.metaobjects.store_location.values %}
@@ -17,7 +18,6 @@
 
 <div class="section section--padding">
   <div class="container">
-    <p>E is for Elites, P is for Platinums. Other is everything else.</p>
     <div class="store-locations">
       {% for store_location in shop.metaobjects.store_location.values %}
         <div class="store-location">
