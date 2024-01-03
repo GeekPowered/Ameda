@@ -1,5 +1,18 @@
 <link rel="stylesheet" href="{{ 'store-locator.css' | asset_url }}" media="print" onload="this.media='all'">
 
+<div class="section section--padding">
+  <div class="container">
+    <ul class="state-selector">
+      {% assign unique_states = "" | split: "," %}
+      {% for store_location in shop.metaobjects.store_location.values %}
+        {% unless unique_states contains store_location.state_province %}
+          {% assign unique_states = unique_states | push: store_location.state_province %}
+          <li class="state-link"><a href="#" state="{{ store_location.state_province }}">{{ store_location.state_province }}</a></li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
 
 <div class="section section--padding">
   <div class="container">
