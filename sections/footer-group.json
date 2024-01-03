@@ -22,23 +22,23 @@
         "8d9478b4-a675-49f8-8a50-ad56005aaaa2": {
           "type": "link_list",
           "settings": {
-            "heading": "Footer links",
+            "heading": "Index",
             "menu": "footer"
           }
         },
         "link-list-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Footer links",
-            "menu": "footer"
+            "heading": "Products",
+            "menu": "footer-menu-2"
           }
         },
         "e42c3573-17d8-4422-84bb-e40f7070ecaa": {
           "type": "text",
           "settings": {
             "image_width": 150,
-            "heading": "Talk about your store",
-            "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
+            "heading": "",
+            "text": "<p><strong>Ameda ParentCare<\/strong><\/p><p>1-866-992-6332<\/p><p>parentcare@ameda.com<\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CST<\/p><p><strong>Ameda CustomerCare<\/strong><\/p><p>1-866-992-6332<\/p><p>orders@ameda.com<\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CST<\/p>",
             "button_label": "",
             "button_link": "",
             "enable_follow_on_shop": false,
