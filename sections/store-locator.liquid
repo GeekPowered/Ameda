@@ -68,8 +68,6 @@
     // Sorting the state list alphabetically
     var stateList = document.getElementById('stateList');
     var items = stateList.getElementsByClassName('state-link');
-
-    // Convert HTMLCollection to an array
     var itemsArray = Array.from(items);
 
     itemsArray.sort(function(a, b) {
@@ -95,6 +93,24 @@
     var storeLocationsContainer = document.querySelector('.store-locations');
     storeLocationsArray.forEach(function(item) {
       storeLocationsContainer.appendChild(item);
+    });
+
+    // Click event listener for state links
+    stateList.addEventListener('click', function(event) {
+      if (event.target.tagName === 'A') {
+        event.preventDefault();
+
+        // Get the target state from the clicked link
+        var targetState = event.target.getAttribute('href').substring(1);
+
+        // Find the nearest store-location with a matching state attribute
+        var matchingCard = document.querySelector('.store-location span[state="' + targetState + '"]').closest('.store-location');
+
+        // Scroll to the matching card
+        if (matchingCard) {
+          matchingCard.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     });
   });
 </script>
