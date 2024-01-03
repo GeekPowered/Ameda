@@ -14,27 +14,20 @@
         "template--21925444354363__0fb38072-7134-48f5-b158-64c61836a19c-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Healthcare Professionals",
             "heading_size": "h1",
             "heading_h1": false
-          }
-        },
-        "template--21925444354363__0fb38072-7134-48f5-b158-64c61836a19c-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "enlarge_text": true
           }
         }
       },
       "block_order": [
-        "template--21925444354363__0fb38072-7134-48f5-b158-64c61836a19c-heading-1",
-        "template--21925444354363__0fb38072-7134-48f5-b158-64c61836a19c-text-1"
+        "template--21925444354363__0fb38072-7134-48f5-b158-64c61836a19c-heading-1"
       ],
       "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/healthcare.jpg",
         "url": "",
-        "height_mode": "auto",
-        "fixed_height_desktop": 600,
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
         "fixed_height_mobile": 350,
         "overlay_position": "justify-center items-center",
         "overlay_text_align": "text-center",
@@ -47,10 +40,110 @@
         "tint_opacity": 40,
         "prevent_animation": false
       }
+    },
+    "3b033708-8c4c-417a-838c-b6e6c5af8de2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21925444354363__3b033708-8c4c-417a-838c-b6e6c5af8de2-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "FOR HEALTHCARE PROFESSIONALS"
+          }
+        },
+        "template--21925444354363__3b033708-8c4c-417a-838c-b6e6c5af8de2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "We want to help you care for mothers and their little ones.",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "template--21925444354363__3b033708-8c4c-417a-838c-b6e6c5af8de2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ameda offers the perfect combination of advanced technology and the time-proven benefits of our legacy technology that has set the industry standards, to determine pumping efficiency. We are dedicated to providing customized and efficient solutions for both clinicians and mothers to optimize breastfeeding.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21925444354363__3b033708-8c4c-417a-838c-b6e6c5af8de2-subheading-1",
+        "template--21925444354363__3b033708-8c4c-417a-838c-b6e6c5af8de2-heading-1",
+        "template--21925444354363__3b033708-8c4c-417a-838c-b6e6c5af8de2-text-1"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "38ede330-6dde-49f6-b43f-9314978853d6": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/education-card.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "Education For Moms",
+            "button_link": "\/pages\/education"
+          }
+        },
+        "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/pumps-products-card.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "Pumps & Products",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/clinical-evidence-card.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "Clinical Evidence",
+            "button_link": "\/pages\/the-clinical-evidence"
+          }
+        }
+      },
+      "block_order": [
+        "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-1",
+        "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-2",
+        "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "medium",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1.77",
+        "color_scheme": "none",
+        "button_style": "btn btn--primary"
+      }
     }
   },
   "order": [
     "main",
-    "0fb38072-7134-48f5-b158-64c61836a19c"
+    "0fb38072-7134-48f5-b158-64c61836a19c",
+    "3b033708-8c4c-417a-838c-b6e6c5af8de2",
+    "38ede330-6dde-49f6-b43f-9314978853d6"
   ]
 }
