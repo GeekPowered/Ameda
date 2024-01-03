@@ -1,0 +1,44 @@
+<div class="section section--padded social-posts">
+    <div class="container text-center">
+        <span class="h5">{{ section.settings.subtitle }}</span>
+        <h2>{{ section.settings.title }}</h2>
+        <div>{{ section.settings.embed_code }}</div>
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Social Posts",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Subtitle",
+          "id": "subtitle",
+          "default": "Default Subtitle"
+        },
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "title",
+          "default": "Default Title"
+        },
+        {
+          "type": "textarea",
+          "label": "Embed Code",
+          "id": "embed_code",
+          "default": "<iframe src=''></iframe>"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Social Posts",
+          "category": "Custom",
+          "settings": {
+            "subtitle": "Custom Subtitle",
+            "title": "Custom Title",
+            "embed_code": "<iframe width='560' height='315' src='https://www.youtube.com/embed/dQw4w9WgXcQ?si=XHIzHYHLjn2nTmar' allowfullscreen></iframe>"
+          }
+        }
+      ]
+    }
+{% endschema %}
