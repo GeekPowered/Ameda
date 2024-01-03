@@ -8,14 +8,22 @@
         "text": {
           "type": "text",
           "settings": {
+            "image": "shopify:\/\/shop_images\/ameda-logo.webp",
             "image_width": 150,
-            "heading": "Talk about your store",
-            "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
+            "heading": "",
+            "text": "",
             "button_label": "",
             "button_link": "",
             "enable_follow_on_shop": false,
-            "show_social": false,
+            "show_social": true,
             "text_align": "text-start"
+          }
+        },
+        "8d9478b4-a675-49f8-8a50-ad56005aaaa2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Footer links",
+            "menu": "footer"
           }
         },
         "link-list-1": {
@@ -25,37 +33,35 @@
             "menu": "footer"
           }
         },
-        "link-list-2": {
-          "type": "link_list",
+        "e42c3573-17d8-4422-84bb-e40f7070ecaa": {
+          "type": "text",
           "settings": {
-            "heading": "Footer links",
-            "menu": "footer"
-          }
-        },
-        "newsletter": {
-          "type": "newsletter",
-          "settings": {
-            "heading": "Newsletter",
-            "text": "<p>Sign up for exclusive offers, original stories, events and more.<\/p>",
-            "collapse_mobile": true
+            "image_width": 150,
+            "heading": "Talk about your store",
+            "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enable_follow_on_shop": false,
+            "show_social": false,
+            "text_align": "text-start"
           }
         }
       },
       "block_order": [
         "text",
+        "8d9478b4-a675-49f8-8a50-ad56005aaaa2",
         "link-list-1",
-        "link-list-2",
-        "newsletter"
+        "e42c3573-17d8-4422-84bb-e40f7070ecaa"
       ],
       "settings": {
-        "show_back_to_top": true,
-        "show_payment_icons": true,
-        "show_powered_by": true,
+        "show_back_to_top": false,
+        "show_payment_icons": false,
+        "show_powered_by": false,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "secondary_menu": "",
-        "bg_color": "#f4f4f4",
-        "text_color": "#070707"
+        "bg_color": "{{ shop.brand.colors.primary[1].background }}",
+        "text_color": "{{ shop.brand.colors.secondary[1].background }}"
       }
     }
   },
