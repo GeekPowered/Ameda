@@ -4002,13 +4002,16 @@ body:not(.tab-used) .search__input {
 }
 .social {
   margin: -10px;
+  gap: 1rem;
 }
 
 .social__link {
   width: 44px;
   height: 44px;
   padding: 10px;
-  color: rgb(var(--text-color));
+  color: rgb(var(--btn-bg-color)) !important;
+  background: #fff;
+  border-radius: 50%;
 }
 .social__link > .icon {
   width: auto;
