@@ -122,7 +122,8 @@
       "settings": {
         "wavebgcolor": "#fbf6ef",
         "wavesvgcolor": "#ffffff",
-        "wavetype": "top"
+        "wavetype": "top",
+        "waveposition": ""
       }
     },
     "scrolling-banner": {
@@ -223,7 +224,8 @@
       "settings": {
         "wavebgcolor": "#fbf6ef",
         "wavesvgcolor": "#ffffff",
-        "wavetype": "bottom"
+        "wavetype": "bottom",
+        "waveposition": ""
       }
     },
     "d7e1a754-c0f2-42cf-8b40-26636730031a": {
@@ -624,7 +626,8 @@
       "settings": {
         "wavebgcolor": "#ffffff",
         "wavesvgcolor": "#fbf6ef",
-        "wavetype": "top"
+        "wavetype": "top",
+        "waveposition": "top"
       }
     },
     "1409fdfb-fc91-4faa-8c3a-0dc6db004bf6": {
