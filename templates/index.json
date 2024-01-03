@@ -600,6 +600,9 @@
         "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-text-1",
         "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-button-1"
       ],
+      "custom_css": [
+        ".media-with-text__media {border-radius: 1rem; overflow: hidden;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-cta.jpg",
         "video_external": "",
