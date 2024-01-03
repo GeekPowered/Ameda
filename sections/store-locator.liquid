@@ -3,16 +3,43 @@
     <div class="store-locations">
       {% for store_location in shop.metaobjects.store_location.values %}
         <div class="store-location">
-          <h2>{{ store_location.title }}</h2>  
-          <p><strong>Short Description:</strong> {{ store_location.short_description }}</p>
-          <p><strong>Website:</strong> {{ store_location.website }}</p>
-          <p><strong>Address:</strong> {{ store_location.address }}</p>
-          <p><strong>City:</strong> {{ store_location.city }}</p>
-          <p><strong>State / Province:</strong> {{ store_location.state_province }}</p>
-          <p><strong>Country:</strong> {{ store_location.country }}</p>
-          <p><strong>Zip:</strong> {{ store_location.zip }}</p>
-          <p><a class="btn btn--secondary" href="mailto:{{ store_location.email }}"><strong>Email:</strong> {{ store_location.email }}</a></p>
-          <p><a class="btn btn--primary" href="tel:{{ store_location.phone_number }}"><strong>Phone Number:</strong> {{ store_location.phone_number }}</a></p>
+          <h2>{{ store_location.title }}</h2>
+          
+          {% if store_location.short_description %}
+            <p><strong>Short Description:</strong> {{ store_location.short_description }}</p>
+          {% endif %}
+          
+          {% if store_location.website %}
+            <p><strong>Website:</strong> {{ store_location.website }}</p>
+          {% endif %}
+          
+          {% if store_location.address %}
+            <p><strong>Address:</strong> {{ store_location.address }}</p>
+          {% endif %}
+          
+          {% if store_location.city %}
+            <p><strong>City:</strong> {{ store_location.city }}</p>
+          {% endif %}
+          
+          {% if store_location.state_province %}
+            <p><strong>State / Province:</strong> {{ store_location.state_province }}</p>
+          {% endif %}
+          
+          {% if store_location.country %}
+            <p><strong>Country:</strong> {{ store_location.country }}</p>
+          {% endif %}
+          
+          {% if store_location.zip %}
+            <p><strong>Zip:</strong> {{ store_location.zip }}</p>
+          {% endif %}
+          
+          {% if store_location.email %}
+            <p><a class="btn btn--primary" href="mailto:{{ store_location.email }}">{{ store_location.email }}</a></p>
+          {% endif %}
+          
+          {% if store_location.phone_number %}
+            <p><a class="btn btn--primary" href="tel:{{ store_location.phone_number }}">{{ store_location.phone_number }}</a></p>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
