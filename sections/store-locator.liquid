@@ -11,7 +11,7 @@
     {% endfor %}
     
     <!-- Sort unique_states alphabetically -->
-    {% assign sorted_states = unique_states | sort %}
+    {% assign sorted_states = unique_states | sort_natural %}
     
     <!-- Display sorted and unique state links -->
     <ul class="state-selector">
