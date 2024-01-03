@@ -592,6 +592,16 @@
         "only_content_color_scheme": false
       }
     },
+    "cdd03e78-610d-4439-9a44-84a8cf9a1521": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h2 class=\"text-center\">Join The #Ameda Family!<\/h2>\n<script src=\"https:\/\/static.elfsight.com\/platform\/platform.js\" data-use-service-core defer><\/script>\n<div class=\"elfsight-app-09c01c85-1f70-4ab0-86c9-9a5335555020\" data-elfsight-app-lazy><\/div>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
     "8d53da5e-9774-4a39-be6d-1a6719422617": {
       "type": "latest-posts",
       "settings": {
@@ -648,6 +658,7 @@
     "acd7fd58-c974-46c3-b1be-199a5a00dae3",
     "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67",
     "c35932f3-e653-4986-a811-3f28d8ce7450",
+    "cdd03e78-610d-4439-9a44-84a8cf9a1521",
     "8d53da5e-9774-4a39-be6d-1a6719422617",
     "5f455bc6-23bc-49a4-a914-add018baff10"
   ]
