@@ -1,0 +1,15 @@
+.wave-container {
+    position: relative;
+    overflow: hidden;
+    height: 5rem;
+}
+
+.wave-container svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
