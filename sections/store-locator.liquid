@@ -64,10 +64,12 @@
 </div>
 
 <script>
-  // JavaScript to sort the state list alphabetically
   document.addEventListener('DOMContentLoaded', function() {
+    // Sorting the state list alphabetically
     var stateList = document.getElementById('stateList');
-    var items = stateList.getElementsByTagName('li');
+    var items = stateList.getElementsByClassName('state-link');
+
+    // Convert HTMLCollection to an array
     var itemsArray = Array.from(items);
 
     itemsArray.sort(function(a, b) {
@@ -79,8 +81,24 @@
     itemsArray.forEach(function(item) {
       stateList.appendChild(item);
     });
+
+    // Sorting store locations by state
+    var storeLocations = document.querySelectorAll('.store-location');
+    var storeLocationsArray = Array.from(storeLocations);
+
+    storeLocationsArray.sort(function(a, b) {
+      var stateA = a.querySelector('span[state]').getAttribute('state');
+      var stateB = b.querySelector('span[state]').getAttribute('state');
+      return stateA.localeCompare(stateB);
+    });
+
+    var storeLocationsContainer = document.querySelector('.store-locations');
+    storeLocationsArray.forEach(function(item) {
+      storeLocationsContainer.appendChild(item);
+    });
   });
 </script>
+
 
 {% schema %}
 {
