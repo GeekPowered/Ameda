@@ -11,6 +11,16 @@
     border-radius: 1rem;
 }
 
+ul.state-selector {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
 @media (max-width: 991px) {
     .store-location {
         width: calc(50% - 1rem); 

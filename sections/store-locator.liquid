@@ -2,17 +2,25 @@
 
 <div class="section section--padding">
   <div class="container">
+    <!-- Initialize and sort unique_states alphabetically -->
+    {% assign unique_states = "" | split: "," | sort %}
+    
+    <!-- Loop through store locations to add unique and sorted states -->
+    {% for store_location in shop.metaobjects.store_location.values %}
+      {% unless unique_states contains store_location.state_province %}
+        {% assign unique_states = unique_states | push: store_location.state_province %}
+      {% endunless %}
+    {% endfor %}
+    
+    <!-- Display sorted and unique state links -->
     <ul class="state-selector">
-      {% assign unique_states = "" | split: "," %}
-      {% for store_location in shop.metaobjects.store_location.values %}
-        {% unless unique_states contains store_location.state_province %}
-          {% assign unique_states = unique_states | push: store_location.state_province %}
-          <li class="state-link"><a href="#" state="{{ store_location.state_province }}">{{ store_location.state_province }}</a></li>
-        {% endunless %}
+      {% for state in unique_states %}
+        <li class="state-link"><a href="#" state="{{ state }}">{{ state }}</a></li>
       {% endfor %}
     </ul>
   </div>
 </div>
+
 
 <div class="section section--padding">
   <div class="container">
