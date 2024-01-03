@@ -3,29 +3,17 @@
     <div class="store-locations">
       {% for store_location in shop.metaobjects.store_location.values %}
         <div class="store-location">
-          <h2>{{ store_location.title }}</h2>
-  
-          <p><strong>Display Name:</strong> {{ store_location.display_name }}</p>
-  
-          <p><strong>Description:</strong> {{ store_location.description }}</p>
-  
+          <h2>{{ store_location.title }}</h2>  
           <p><strong>Short Description:</strong> {{ store_location.short_description }}</p>
-  
           <p><strong>Website:</strong> {{ store_location.website }}</p>
-  
           <p><strong>Address:</strong> {{ store_location.address }}</p>
-  
           <p><strong>City:</strong> {{ store_location.city }}</p>
-  
           <p><strong>State / Province:</strong> {{ store_location.state_province }}</p>
-  
           <p><strong>Country:</strong> {{ store_location.country }}</p>
-  
           <p><strong>Zip:</strong> {{ store_location.zip }}</p>
-  
-          <p><strong>Email:</strong> {{ store_location.email }}</p>
-  
-          <p><strong>Phone Number:</strong> {{ store_location.phone_number }}</p>
+          <a href="mailto:{{ store_location.email }}"><strong>Email:</strong> {{ store_location.email }}</a>
+          <a href="tel:{{ store_location.phone_number }}"><strong>Phone Number:</strong> {{ store_location.phone_number }}</a>
+          <a target="_blank" class="btn btn--primary" href="https://www.google.com/maps/search/{{ store_location.address }} {{ store_location.city }} {{ store_location.state_province }} {{ store_location.zip }}">Maps</a>
         </div>
       {% endfor %}
     </div>
