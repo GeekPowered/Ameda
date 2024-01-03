@@ -10,7 +10,7 @@
     {% endfor %}
     
     <!-- Sort unique_states alphabetically -->
-    {% assign sorted_states = unique_states | sort_natural %}
+    {% assign sorted_states = unique_states | sort %}
     
     <!-- Display sorted and unique state links -->
     <ul class="state-selector">
@@ -20,6 +20,7 @@
     </ul>
   </div>
 </div>
+
 
 <div class="section section--padding">
   <div class="container">
