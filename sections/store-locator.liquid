@@ -7,7 +7,7 @@
       {% for store_location in shop.metaobjects.store_location.values %}
         {% unless unique_states contains store_location.state_province %}
           {% assign unique_states = unique_states | push: store_location.state_province %}
-          <li class="state-link"><a href="#">{{ store_location.state_province }}</a></li>
+          <li class="state-link"><a href="#{{ store_location.state_province }}">{{ store_location.state_province }}</a></li>
         {% endunless %}
       {% endfor %}
     </ul>
