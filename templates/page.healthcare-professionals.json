@@ -276,6 +276,52 @@
         "color_scheme": "none",
         "only_content_color_scheme": false
       }
+    },
+    "81edc268-77ee-444d-8faa-e39d442f831b": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Penguin Thermal Warmer™",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Going beyond just warming breast milk, the Penguin Thermal Warmer™ ensures each feeding is always safely delivered within the ideal human physiological temperature range of 98F-100F, regardless of the starting temperature.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Product",
+            "button_link": "#",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-heading-1",
+        "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-text-1",
+        "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/penguin_warmers_500x500_2.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
     }
   },
   "order": [
@@ -285,6 +331,7 @@
     "38ede330-6dde-49f6-b43f-9314978853d6",
     "564f8bcd-98be-4ac7-a197-e4a6d4924ecc",
     "5474ae37-436a-49af-82e6-a7ee2a3573c9",
-    "a477fc8e-3593-4177-886f-c751c483ad0d"
+    "a477fc8e-3593-4177-886f-c751c483ad0d",
+    "81edc268-77ee-444d-8faa-e39d442f831b"
   ]
 }
