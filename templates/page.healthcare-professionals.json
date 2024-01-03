@@ -138,12 +138,153 @@
         "color_scheme": "none",
         "button_style": "btn btn--primary"
       }
+    },
+    "564f8bcd-98be-4ac7-a197-e4a6d4924ecc": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--21925444354363__564f8bcd-98be-4ac7-a197-e4a6d4924ecc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pearl®",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "template--21925444354363__564f8bcd-98be-4ac7-a197-e4a6d4924ecc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pearl® brings powerful pumping from hospital to home. Pearl’s® modern design combines the durability needed for the multi-user\/hospital environment with the lifestyle features moms expect.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21925444354363__564f8bcd-98be-4ac7-a197-e4a6d4924ecc-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Product",
+            "button_link": "shopify:\/\/products\/ameda®-pearl®-hospital-grade-breast-pump",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21925444354363__564f8bcd-98be-4ac7-a197-e4a6d4924ecc-heading-1",
+        "template--21925444354363__564f8bcd-98be-4ac7-a197-e4a6d4924ecc-text-1",
+        "template--21925444354363__564f8bcd-98be-4ac7-a197-e4a6d4924ecc-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AMED_Pearl_Product.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "5474ae37-436a-49af-82e6-a7ee2a3573c9": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Platinum™",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Ameda Platinum™ hospital breast pump has been proven with clinical research to be the most effective breast pump for establishing and maintaining increased milk production for preterm and full term infants.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Product",
+            "button_link": "#",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-heading-1",
+        "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-text-1",
+        "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/platinum-front-bottles-2-simple-1000x1000_2x_4a11065b-d4ed-4ad0-9b3b-0e47dbfd7862.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "a477fc8e-3593-4177-886f-c751c483ad0d": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--21925444354363__a477fc8e-3593-4177-886f-c751c483ad0d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Universal HygieniKit™ Milk Collection System",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "template--21925444354363__a477fc8e-3593-4177-886f-c751c483ad0d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Universal HygieniKit™ Milk Collection System is intended to facilitate the expression and collection of breast milk during a mom's breastfeeding journey.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21925444354363__a477fc8e-3593-4177-886f-c751c483ad0d-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Product",
+            "button_link": "#",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21925444354363__a477fc8e-3593-4177-886f-c751c483ad0d-heading-1",
+        "template--21925444354363__a477fc8e-3593-4177-886f-c751c483ad0d-text-1",
+        "template--21925444354363__a477fc8e-3593-4177-886f-c751c483ad0d-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hygienikit-1000x1000-1_1.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
     }
   },
   "order": [
     "main",
     "0fb38072-7134-48f5-b158-64c61836a19c",
     "3b033708-8c4c-417a-838c-b6e6c5af8de2",
-    "38ede330-6dde-49f6-b43f-9314978853d6"
+    "38ede330-6dde-49f6-b43f-9314978853d6",
+    "564f8bcd-98be-4ac7-a197-e4a6d4924ecc",
+    "5474ae37-436a-49af-82e6-a7ee2a3573c9",
+    "a477fc8e-3593-4177-886f-c751c483ad0d"
   ]
 }
