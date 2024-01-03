@@ -4,6 +4,14 @@
     height: 4rem;
 }
 
+.wave-container.top {
+    margin-bottom: -4rem;
+}
+
+.wave-container.bottom {
+    margin-top: -4rem;
+}
+
 .wave-container svg {
     display: block;
     width: 100%;
