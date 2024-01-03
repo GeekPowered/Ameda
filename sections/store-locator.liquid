@@ -1,10 +1,31 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% for store_location in shop.metaobjects.type.store_locations %}
+      {% for store_location in shop.metaobjects.store_location %}
         <div class="store-location">
           <h2>{{ store_location.title }}</h2>
-
+  
+          <p><strong>Display Name:</strong> {{ store_location.display_name }}</p>
+  
+          <p><strong>Description:</strong> {{ store_location.description }}</p>
+  
+          <p><strong>Short Description:</strong> {{ store_location.short_description }}</p>
+  
+          <p><strong>Website:</strong> {{ store_location.website }}</p>
+  
+          <p><strong>Address:</strong> {{ store_location.address }}</p>
+  
+          <p><strong>City:</strong> {{ store_location.city }}</p>
+  
+          <p><strong>State / Province:</strong> {{ store_location.state_province }}</p>
+  
+          <p><strong>Country:</strong> {{ store_location.country }}</p>
+  
+          <p><strong>Zip:</strong> {{ store_location.zip }}</p>
+  
+          <p><strong>Email:</strong> {{ store_location.email }}</p>
+  
+          <p><strong>Phone Number:</strong> {{ store_location.phone_number }}</p>
         </div>
       {% endfor %}
     </div>
