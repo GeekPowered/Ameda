@@ -106,14 +106,21 @@
         // Find the nearest store-location with a matching state attribute
         var matchingCard = document.querySelector('.store-location span[state="' + targetState + '"]').closest('.store-location');
 
-        // Scroll to the matching card
+        // Scroll to the matching card, accounting for header height
         if (matchingCard) {
-          matchingCard.scrollIntoView({ behavior: 'smooth' });
+          var headerHeight = document.querySelector('.header').offsetHeight;
+          var targetScrollPosition = matchingCard.offsetTop - headerHeight;
+
+          window.scrollTo({
+            top: targetScrollPosition,
+            behavior: 'smooth'
+          });
         }
       }
     });
   });
 </script>
+
 
 
 {% schema %}
