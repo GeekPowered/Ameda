@@ -1,7 +1,7 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% for store_location in shop.metaobjects['store_location'] %}
+      {% for store_location in shop.metaobjects.store_location.values %}
         <div class="store-location">
           <h2>{{ store_location.title }}</h2>
   
