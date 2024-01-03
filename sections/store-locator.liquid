@@ -13,9 +13,6 @@
     <!-- Sort unique_states alphabetically -->
     {% assign sorted_states = unique_states | sort_natural %}
 
-    <script>console.log({{ unique_states }})</script>
-    <script>console.log({{ sorted_states }})</script>
-
     <!-- Display sorted and unique state links -->
     <ul class="state-selector">
       {% for state in sorted_states %}
