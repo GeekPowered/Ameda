@@ -13,7 +13,7 @@
           <p><strong>Zip:</strong> {{ store_location.zip }}</p>
           <p><a href="mailto:{{ store_location.email }}"><strong>Email:</strong> {{ store_location.email }}</a></p>
           <p><a href="tel:{{ store_location.phone_number }}"><strong>Phone Number:</strong> {{ store_location.phone_number }}</a></p>
-          <p><a target="_blank" class="btn btn--primary" href="https://www.google.com/maps/search/{{ store_location.address }} {{ store_location.city }} {{ store_location.state_province }} {{ store_location.zip }}">Maps</a></p>
+          <p><a target="_blank" class="btn btn--primary" href="https://www.google.com/maps/search/{{ store_location.title }} {{ store_location.address }} {{ store_location.city }} {{ store_location.state_province }} {{ store_location.zip }}">Maps</a></p>
         </div>
       {% endfor %}
     </div>
