@@ -139,6 +139,15 @@
         "button_style": "btn btn--primary"
       }
     },
+    "9a29fd92-3d60-4349-8c2e-69774db73454": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "top",
+        "waveposition": "top"
+      }
+    },
     "564f8bcd-98be-4ac7-a197-e4a6d4924ecc": {
       "type": "media-with-text",
       "blocks": {
@@ -180,8 +189,8 @@
         "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "none",
+        "text_align": "text-center",
+        "color_scheme": "1",
         "only_content_color_scheme": false
       }
     },
@@ -226,8 +235,8 @@
         "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "none",
+        "text_align": "text-center",
+        "color_scheme": "1",
         "only_content_color_scheme": false
       }
     },
@@ -272,8 +281,8 @@
         "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "none",
+        "text_align": "text-center",
+        "color_scheme": "1",
         "only_content_color_scheme": false
       }
     },
@@ -318,9 +327,59 @@
         "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "none",
+        "text_align": "text-center",
+        "color_scheme": "1",
         "only_content_color_scheme": false
+      }
+    },
+    "6c43c588-3562-43d7-a23c-855740887428": {
+      "type": "latest-posts",
+      "settings": {
+        "title": "Latest Posts",
+        "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
+      }
+    },
+    "d8cce70e-a0fa-49e3-af4a-6e92df06e86c": {
+      "type": "promo-strip",
+      "blocks": {
+        "template--21925444354363__d8cce70e-a0fa-49e3-af4a-6e92df06e86c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need to rent a pump?",
+            "heading_size": "h0",
+            "show_on_mobile": true,
+            "show_on_desktop": true
+          }
+        },
+        "template--21925444354363__d8cce70e-a0fa-49e3-af4a-6e92df06e86c-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Do you need to rent one of our multi-user breast pumps? The Platinum and Elite breast pumps are both available at select locations.<br\/><br\/><\/p>",
+            "enlarge_text": true,
+            "show_on_mobile": true,
+            "show_on_desktop": true
+          }
+        },
+        "template--21925444354363__d8cce70e-a0fa-49e3-af4a-6e92df06e86c-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find A Location",
+            "button_link": "shopify:\/\/pages\/store-locator",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21925444354363__d8cce70e-a0fa-49e3-af4a-6e92df06e86c-heading-1",
+        "template--21925444354363__d8cce70e-a0fa-49e3-af4a-6e92df06e86c-text-1",
+        "template--21925444354363__d8cce70e-a0fa-49e3-af4a-6e92df06e86c-button-1"
+      ],
+      "settings": {
+        "section_height": "default",
+        "color_scheme": "2",
+        "full_width": true,
+        "dividers": "border-top",
+        "prevent_animation": false
       }
     }
   },
@@ -329,9 +388,12 @@
     "0fb38072-7134-48f5-b158-64c61836a19c",
     "3b033708-8c4c-417a-838c-b6e6c5af8de2",
     "38ede330-6dde-49f6-b43f-9314978853d6",
+    "9a29fd92-3d60-4349-8c2e-69774db73454",
     "564f8bcd-98be-4ac7-a197-e4a6d4924ecc",
     "5474ae37-436a-49af-82e6-a7ee2a3573c9",
     "a477fc8e-3593-4177-886f-c751c483ad0d",
-    "81edc268-77ee-444d-8faa-e39d442f831b"
+    "81edc268-77ee-444d-8faa-e39d442f831b",
+    "6c43c588-3562-43d7-a23c-855740887428",
+    "d8cce70e-a0fa-49e3-af4a-6e92df06e86c"
   ]
 }
