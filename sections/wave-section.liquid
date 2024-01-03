@@ -1,19 +1,18 @@
 <link rel="stylesheet" href="{{ 'wave-section.css' | asset_url }}" media="print" onload="this.media='all'">
 
-
-    {% if section.settings.wavetype == "top" %}
-        <div style="background:{{ section.settings.wavebgcolor }}" class="wave-container top">
-            <svg width="1366" height="73" viewBox="0 0 1366 73" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                <path d="M0 9.69698C0 9.69698 58.274 33.672 131.923 30.935C203.419 28.278 297.992 7.08798 367.549 9.69698C508.924 15.006 496.264 30.935 647.65 30.935C799.036 30.935 789.25 -0.248016 921.424 0.00198351C1053.6 0.251984 1043.36 30.935 1165.08 30.935C1286.8 30.935 1366 9.69698 1366 9.69698V72.997H0V9.69698Z" fill="{{ section.settings.wavesvgcolor }}"/>
-            </svg>
-        </div>
-    {% elsif section.settings.wavetype == "bottom" %}
-        <div style="background:{{ section.settings.wavebgcolor }}" class="wave-container bottom">
-            <svg width="1366" height="73" viewBox="0 0 1366 73" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                <path d="M1366 63.3006C1366 63.3006 1307.73 39.3256 1234.08 42.0626C1162.58 44.7196 1068.01 65.9095 998.451 63.3005C857.076 57.9915 869.736 42.0625 718.35 42.0625C566.964 42.0625 576.75 73.2455 444.576 72.9955C312.402 72.7455 322.644 42.0625 200.92 42.0625C79.196 42.0625 8.47695e-07 63.3005 8.47695e-07 63.3005L6.38156e-06 0.000452785L1366 0.000572205L1366 63.3006Z" fill="{{ section.settings.wavesvgcolor }}"/>
-            </svg>
-        </div>
-    {% endif %}
+{% if section.settings.wavetype == "top" %}
+    <div style="background:{{ section.settings.wavebgcolor }}" class="wave-container {{ section.settings.waveposition }}">
+        <svg width="1366" height="73" viewBox="0 0 1366 73" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 9.69698C0 9.69698 58.274 33.672 131.923 30.935C203.419 28.278 297.992 7.08798 367.549 9.69698C508.924 15.006 496.264 30.935 647.65 30.935C799.036 30.935 789.25 -0.248016 921.424 0.00198351C1053.6 0.251984 1043.36 30.935 1165.08 30.935C1286.8 30.935 1366 9.69698 1366 9.69698V72.997H0V9.69698Z" fill="{{ section.settings.wavesvgcolor }}"/>
+        </svg>
+    </div>
+{% elsif section.settings.wavetype == "bottom" %}
+    <div style="background:{{ section.settings.wavebgcolor }}" class="wave-container {{ section.settings.waveposition }}">
+        <svg width="1366" height="73" viewBox="0 0 1366 73" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M1366 63.3006C1366 63.3006 1307.73 39.3256 1234.08 42.0626C1162.58 44.7196 1068.01 65.9095 998.451 63.3005C857.076 57.9915 869.736 42.0625 718.35 42.0625C566.964 42.0625 576.75 73.2455 444.576 72.9955C312.402 72.7455 322.644 42.0625 200.92 42.0625C79.196 42.0625 8.47695e-07 63.3005 8.47695e-07 63.3005L6.38156e-06 0.000452785L1366 0.000572205L1366 63.3006Z" fill="{{ section.settings.wavesvgcolor }}"/>
+        </svg>
+    </div>
+{% endif %}
 
 {% schema %}
     {
@@ -40,6 +39,17 @@
             {"value": "top", "label": "Top Wave"},
             {"value": "bottom", "label": "Bottom Wave"}
           ]
+        },
+        {
+          "type": "select",
+          "label": "Wave Position",
+          "id": "waveposition",
+          "default": "",
+          "options": [
+            {"value": "", "label": "None"},
+            {"value": "top", "label": "Top"},
+            {"value": "bottom", "label": "Bottom"}
+          ]
         }
       ],
       "presets": [
@@ -49,4 +59,4 @@
         }
       ]
     }
-{% endschema %}
+    {% endschema %}    
