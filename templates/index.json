@@ -599,6 +599,13 @@
         "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
       }
     },
+    "8357ef30-4770-4182-9313-12f1b70af4cd": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#000000"
+      }
+    },
     "1409fdfb-fc91-4faa-8c3a-0dc6db004bf6": {
       "type": "social-posts",
       "settings": {
@@ -657,6 +664,7 @@
     "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67",
     "c35932f3-e653-4986-a811-3f28d8ce7450",
     "8d53da5e-9774-4a39-be6d-1a6719422617",
+    "8357ef30-4770-4182-9313-12f1b70af4cd",
     "1409fdfb-fc91-4faa-8c3a-0dc6db004bf6",
     "5f455bc6-23bc-49a4-a914-add018baff10"
   ]
