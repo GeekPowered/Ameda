@@ -117,6 +117,14 @@
         "button_style": "btn btn--secondary"
       }
     },
+    "02c77f79-19a8-4ef0-83e3-b0409a84e86f": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "top"
+      }
+    },
     "scrolling-banner": {
       "type": "scrolling-banner",
       "blocks": {
@@ -208,6 +216,14 @@
         "color_scheme": "1",
         "dividers": "none",
         "prevent_animation": false
+      }
+    },
+    "baa96221-7cae-47c4-9db3-d5857e55db23": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "bottom"
       }
     },
     "d7e1a754-c0f2-42cf-8b40-26636730031a": {
@@ -603,7 +619,8 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#fbf6ef"
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "top"
       }
     },
     "1409fdfb-fc91-4faa-8c3a-0dc6db004bf6": {
@@ -656,7 +673,9 @@
   "order": [
     "a2669460-8635-4e2e-b686-0b839f32114c",
     "99ad067f-b38f-4c8e-873d-dea943226a60",
+    "02c77f79-19a8-4ef0-83e3-b0409a84e86f",
     "scrolling-banner",
+    "baa96221-7cae-47c4-9db3-d5857e55db23",
     "d7e1a754-c0f2-42cf-8b40-26636730031a",
     "7dbc7bd2-0a65-4654-9735-26944264824b",
     "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc",
