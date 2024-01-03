@@ -1,0 +1,12 @@
+.store-locations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.store-location {
+    width: calc(25% - 1.5rem);
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+}
