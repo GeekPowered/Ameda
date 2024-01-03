@@ -5,6 +5,7 @@
     {% assign unique_states = "" | split: "," | uniq %}
     
     {% for store_location in shop.metaobjects.store_location.values %}
+      <script>console.log({{ store_location.state_province }})</script>
       {% if store_location.state_province %}
         {% unless unique_states contains store_location.state_province %}
           {% assign unique_states = unique_states | push: store_location.state_province %}
