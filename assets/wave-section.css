@@ -1,7 +1,6 @@
 .wave-container {
     position: relative;
     overflow: hidden;
-    height: 5rem;
 }
 
 .wave-container svg {
