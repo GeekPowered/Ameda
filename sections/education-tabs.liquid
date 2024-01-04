@@ -81,9 +81,9 @@
                         <h3 class="h6">{{ education_pdf.name }}</h3>
                         <select name="{{ education_pdf.name }}">
                             <option value="">Select Language</option>
-                            {% if education_pdf.english %}<option value="{{ education_pdf.english }}">English</option>{% endif %}
-                            {% if education_pdf.spanish %}<option value="{{ education_pdf.spanish }}">Spanish</option>{% endif %}
-                            {% if education_pdf.french %}<option value="{{ education_pdf.french }}">French</option>{% endif %}
+                            {% if education_pdf.english %}<option value="{{ education_pdf.english | file_url }}">English</option>{% endif %}
+                            {% if education_pdf.spanish %}<option value="{{ education_pdf.spanish | file_url }}">Spanish</option>{% endif %}
+                            {% if education_pdf.french %}<option value="{{ education_pdf.french | file_url }}">French</option>{% endif %}
                         </select>
                     </div>
                 {% endfor %}
