@@ -51,6 +51,9 @@
     },
     "5d0dea48-f9f2-4b22-ae3b-70f1eb395ed5": {
       "type": "education-tabs",
+      "custom_css": [
+        ".section--padded {margin: 0;}"
+      ],
       "settings": {
       }
     }
