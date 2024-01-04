@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="{{ 'instructions-for-use.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<div class="section section--padded">
+    <div class="container">
+        <div class="instructions-index">
+            {% for instruction in shop.metaobjects.instructions.values %}
+                <div class="instruction-card">
+                    <div class="instruction-image-wrapper">
+                        <img src="{{ instruction.product_image |  image_url }}" />
+                    </div>
+                    <h3 class="h5">{{ instruction.name }}</h3>
+                    <select name="{{ instruction.name }}">
+                        <option value="">Select Download</option>
+                        {% for download in instruction.downloads %}
+                            <option value="{{ download.file }}">{{ download.language }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script src="{{ 'instructions-for-use.js' | asset_url }}" defer="defer"></script>
+
+
+{% schema %}
+    {
+      "name": "Instructions For Use",
+      "presets": [
+        {
+          "name": "Instructions For Use",
+          "category": "Template"
+        }
+      ]
+    }
+{% endschema %}
