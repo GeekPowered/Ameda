@@ -46,6 +46,10 @@
     object-position: center top;
 }
 
+.education-video-link {
+    width: 100%;
+}
+
 .education-item select {
     padding: 0.75em 2em;
     text-align: center;
@@ -88,7 +92,7 @@
             <div class="education-list">
                 {% for education_video in shop.metaobjects.education_video.values %}
                     <div class="education-item">
-                        <a target="_blank" href="https://www.youtube.com/watch?v={{ education_video.you_tube_id }}">
+                        <a class="education-video-link" target="_blank" href="https://www.youtube.com/watch?v={{ education_video.you_tube_id }}">
                             <div class="education-image-wrapper">
                                 <img src="http://i3.ytimg.com/vi/{{ education_video.you_tube_id }}/hqdefault.jpg" />
                             </div>
