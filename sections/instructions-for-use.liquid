@@ -1,10 +1,53 @@
 {% comment %} <link rel="stylesheet" href="{{ 'instructions-for-use.css' | asset_url }}" media="print" onload="this.media='all'"> {% endcomment %}
 
+<style>
+    .instructions-index {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .instructions-item {
+        background: #fff;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 1rem;
+        align-items: center;
+        width: calc(33% - 1.75rem);
+    }
+    .instruction-image-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        margin-bottom: 1rem;
+        border-radius: .75rem;
+        overflow: hidden;
+    }
+
+    .instruction-image-wrapper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    @media (max-width: 991px) {
+        .instructions-item {
+            width: calc(50% - 1.75rem);
+        }
+    }
+</style>
+
 <div class="section section--padded">
     <div class="container">
         <div class="instructions-index">
             {% for instruction in shop.metaobjects.instructions.values %}
-                <div class="instruction-card">
+                <div class="instruction-item">
                     <div class="instruction-image-wrapper">
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
