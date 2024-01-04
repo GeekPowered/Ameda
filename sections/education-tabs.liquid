@@ -11,14 +11,14 @@
     cursor: pointer;
 }
 
-.pdf-list {
+.education-list {
     display: flex;
     gap: 3rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.pdf-item {
+.education-item {
     background: #fff;
     padding: 2rem;
     display: flex;
@@ -30,14 +30,14 @@
     width: calc(33% - 1.75rem);
 }
 
-.pdf-image-wrapper {
+.education-image-wrapper {
     position: relative;
     width: 100%;
     aspect-ratio: 3 / 2;
     margin-bottom: 1rem;
 }
 
-.pdf-image-wrapper img {
+.education-image-wrapper img {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,13 +47,13 @@
     object-position: center top;
 }
 
-.pdf-item select {
+.education-item select {
     padding: 0.75em 2em;
     text-align: center;
 }
 
 @media (max-width: 991px) {
-    .pdf-item {
+    .education-item {
         width: calc(50% - 1.75rem);
         flex: 1;
     }
@@ -68,13 +68,13 @@
             <button class="btn btn--secondary tab-link" onclick="openTab(event, 'HowToVideos')">How To Videos</button>
         </div>
         <div id="EducationPDFs" class="tab-content active">
-            <div class="pdf-list">
+            <div class="education-list">
                 {% for education_pdf in shop.metaobjects.education_pdf.values %}
-                    <div class="pdf-item">
-                        <div class="pdf-image-wrapper">
+                    <div class="education-item">
+                        <div class="education-image-wrapper">
                             <img src="{{ education_pdf.cover_image |  image_url  }}" />
                         </div>
-                        <h3 class="h5">{{ education_pdf.name }}</h3>
+                        <h3 class="h6">{{ education_pdf.name }}</h3>
                         <select name="{{ education_pdf.name }}">
                             {% if education_pdf.english %}<option value="{{ education_pdf.english }}">English</option>{% endif %}
                             {% if education_pdf.spanish %}<option value="{{ education_pdf.spanish }}">Spanish</option>{% endif %}
@@ -86,7 +86,16 @@
         </div>
 
         <div id="HowToVideos" class="tab-content">
-            <p>Content for How To Videos.</p>
+            <div class="education-list">
+                {% for education_video in shop.metaobjects.education_video.values %}
+                    <div class="education-item">
+                        <div class="education-image-wrapper">
+                            <img src="http://i3.ytimg.com/vi/{{ education_video.you_tube_id }}/hqdefault.jpg" />
+                        </div>
+                        <h3 class="h6">{{ education_video.video_title }}</h3>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
