@@ -17,6 +17,12 @@
         align-items: center;
         width: calc(33% - 1.75rem);
     }
+
+    .instruction-item .instruction-dd-label {
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+
     .instruction-image-wrapper {
         position: relative;
         width: 100%;
@@ -57,14 +63,14 @@
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
                     <h3 class="h5">{{ instruction.name }}</h3>
-                    <p>Downloads</p>
+                    <p class="instruction-dd-label">Downloads</p>
                     <select>
                         <option>Select Download</option>
                         {% for download in instruction.downloads.value %}
                             <option value="{{ download.file }}">{{ download.language }}</option>
                         {% endfor %}
                     </select>
-                    <p>Video</p>
+                    <p class="instruction-dd-label">Video</p>
                     <select>
                         <option>Select Video</option>
                         {% for video in instruction.videos.value %}
