@@ -184,6 +184,9 @@
         "template--21925444354363__564f8bcd-98be-4ac7-a197-e4a6d4924ecc-text-1",
         "template--21925444354363__564f8bcd-98be-4ac7-a197-e4a6d4924ecc-button-1"
       ],
+      "custom_css": [
+        ".section--padded {padding-bottom: 0;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/AMED_Pearl_Product.jpg",
         "video_external": "",
@@ -229,6 +232,9 @@
         "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-heading-1",
         "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-text-1",
         "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-button-1"
+      ],
+      "custom_css": [
+        ".section--padded {padding-bottom: 0;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/platinum-front-bottles-2-simple-1000x1000_2x_4a11065b-d4ed-4ad0-9b3b-0e47dbfd7862.jpg",
@@ -276,6 +282,9 @@
         "template--21925444354363__a477fc8e-3593-4177-886f-c751c483ad0d-text-1",
         "template--21925444354363__a477fc8e-3593-4177-886f-c751c483ad0d-button-1"
       ],
+      "custom_css": [
+        ".section--padded {padding-bottom: 0;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/hygienikit-1000x1000-1_1.jpg",
         "video_external": "",
@@ -321,6 +330,9 @@
         "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-heading-1",
         "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-text-1",
         "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-button-1"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/penguin_warmers_500x500_2.jpg",
