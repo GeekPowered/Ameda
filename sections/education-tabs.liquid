@@ -135,7 +135,27 @@
 
         // Show the current tab
         document.getElementById(tabId).classList.add('active');
+
     }
+
+    // Function to open selected option in a new tab
+    function openInNewTab(url) {
+        window.open(url, '_blank');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add change event listeners to all select elements within .tab-content
+        var selects = document.querySelectorAll('.tab-content select');
+        selects.forEach(function(select) {
+            select.addEventListener('change', function() {
+                var url = this.value;
+                if (url) {
+                    openInNewTab(url);
+                }
+            });
+        });
+    });
+
 </script>
 
 {% schema %}
