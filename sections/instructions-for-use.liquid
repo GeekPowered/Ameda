@@ -9,12 +9,15 @@
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
                     <h3 class="h5">{{ instruction.name }}</h3>
-                    <select name="{{ instruction.name }}">
+                    <select>
                         <option value="">Select Download</option>
-                        
-                        <script>console.log('{{ instruction.downloads }}');</script>
                         {% for download in instruction.downloads.value %}
                             <option value="{{ download['file'] }}">{{ download['language'] }}</option>
+                        {% endfor %}
+                    </select>
+                    <select>
+                        {% for video in instruction.videos.value %}
+                            <option value="{{ video['link'] }}">{{ video['title'] }}</option>
                         {% endfor %}
                     </select>
                 </div>
