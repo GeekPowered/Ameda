@@ -1,5 +1,5 @@
 <style>
-.tab-content {
+.tab-content:not(.active) {
     display: none;
 }
 
@@ -12,9 +12,9 @@
     <div class="container">
         <div class="education-tabs flex justify-center gap-theme">
             <button class="btn btn--primary tab-link" onclick="openTab(event, 'EducationPDFs')">Education PDFs</button>
-            <button class="btn btn--primary tab-link" onclick="openTab(event, 'HowToVideos')">How To Videos</button>
+            <button class="btn btn--secondary tab-link" onclick="openTab(event, 'HowToVideos')">How To Videos</button>
 
-            <div id="EducationPDFs" class="tab-content">
+            <div id="EducationPDFs" class="tab-content active">
                 <p>Content for Education PDFs.</p>
             </div>
 
@@ -26,21 +26,34 @@
 </div>
 
 <script>
-    function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
-
-        tabcontent = document.getElementsByClassName("tab-content");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+    function openTab(event, tabId) {
+        // Check if the clicked button is 'btn--secondary'
+        if (!event.currentTarget.classList.contains('btn--secondary')) {
+            return; // Do nothing if it's not a 'btn--secondary' button
         }
 
-        tablinks = document.getElementsByClassName("tab-link");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        // Get all tab links
+        var tabLinks = document.getElementsByClassName('tab-link');
+        
+        // Loop through tab links to switch classes
+        for (var i = 0; i < tabLinks.length; i++) {
+            if (tabLinks[i].classList.contains('btn--primary')) {
+                tabLinks[i].classList.remove('btn--primary');
+                tabLinks[i].classList.add('btn--secondary');
+            } else if (tabLinks[i] === event.currentTarget) {
+                tabLinks[i].classList.remove('btn--secondary');
+                tabLinks[i].classList.add('btn--primary');
+            }
         }
 
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
+        // Hide all tab contents
+        var tabContents = document.getElementsByClassName('tab-content');
+        for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].classList.remove('active');
+        }
+
+        // Show the current tab
+        document.getElementById(tabId).classList.add('active');
     }
 </script>
 
