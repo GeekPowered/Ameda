@@ -11,6 +11,7 @@
                     <h3 class="h5">{{ instruction.name }}</h3>
                     <select name="{{ instruction.name }}">
                         <option value="">Select Download</option>
+                        <script>console.log('{{ instruction.downloads }}');</script>
                         {% for download in instruction.downloads %}
                             <option value="{{ download['file'] }}">{{ download['language'] }}</option>
                         {% endfor %}
