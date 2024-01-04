@@ -2,11 +2,62 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "1273f508-5369-4ad8-8efb-ae6ed7c170fa": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21932023710011__1273f508-5369-4ad8-8efb-ae6ed7c170fa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Education",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "8effb65f-4ccb-497a-a6c6-b913352159cf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Resources for moms<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21932023710011__1273f508-5369-4ad8-8efb-ae6ed7c170fa-heading-1",
+        "8effb65f-4ccb-497a-a6c6-b913352159cf"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/education-hero.jpg",
+        "url": "",
+        "height_mode": "auto",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "5d0dea48-f9f2-4b22-ae3b-70f1eb395ed5": {
+      "type": "education-tabs",
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1273f508-5369-4ad8-8efb-ae6ed7c170fa",
+    "5d0dea48-f9f2-4b22-ae3b-70f1eb395ed5"
   ]
 }
