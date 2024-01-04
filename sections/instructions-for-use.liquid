@@ -64,8 +64,8 @@
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
                     <h3 class="h4 m-0">{{ instruction.name }}</h3>
-                    <script>console.log('putangina','{{ instruction.downloads.values }}');</script>
                     {% if instruction.downloads.value %}
+                        <script>console.log('{{ instruction.downloads.value }}');</script>
                         <p class="instruction-dd-label">Downloads</p>
                         <select>
                             <option>Select Download</option>
