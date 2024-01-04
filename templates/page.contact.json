@@ -218,12 +218,100 @@
         "266d964f-8902-4338-ba31-4b888c762436"
       ],
       "settings": {
-        "heading": "Drop us an email",
+        "heading": "Contact Us",
         "heading_align": "text-center",
         "image_position": "top",
-        "color_scheme": "1",
+        "color_scheme": "none",
         "full_width": false,
         "button_style": "btn btn--primary"
+      }
+    },
+    "3cc7f5aa-4d74-466b-8bd1-283487cccaee": {
+      "type": "rich-text",
+      "blocks": {
+        "cf95b7b5-27c0-48a8-9633-d798ad037f68": {
+          "type": "heading",
+          "settings": {
+            "heading": "Corporate",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "6f035a7c-f4fc-4e0e-a8c9-8e9a251bb067": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Ameda, Inc.<br\/><\/strong>485 Half Day Road, Suite 320<br\/>Buffalo Grove, IL 60089, USA<br\/><br\/><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "21fb109d-2250-4e5b-b6a0-d83c70af55dd": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "+1 (866) 992-6332",
+            "button_1_link": "tel:1-866-992-6332",
+            "button_1_style": "btn--primary",
+            "button_2_label": "Orders@ameda.com",
+            "button_2_link": "mailto:orders@ameda.com",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "cf95b7b5-27c0-48a8-9633-d798ad037f68",
+        "6f035a7c-f4fc-4e0e-a8c9-8e9a251bb067",
+        "21fb109d-2250-4e5b-b6a0-d83c70af55dd"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "2df0cb9e-eb44-4c3c-ab86-357ab4f8972b": {
+      "type": "rich-text",
+      "blocks": {
+        "ee6ffe28-78c9-4f94-aba0-06c3e1489065": {
+          "type": "heading",
+          "settings": {
+            "heading": "International",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "84729553-acde-4c76-a1cd-082c981ca15d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mechelsesteenweg 251<br\/>B-1800 Vilvoorde<br\/>Belgium<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "87ce94b8-a36c-451d-98ba-b73744c01e45": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "+32 2 304 52 79",
+            "button_1_link": "tel:+32 2 304 52 79",
+            "button_1_style": "btn--primary",
+            "button_2_label": "internationalsales@ameda.com",
+            "button_2_link": "mailto:internationalsales@ameda.com",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "ee6ffe28-78c9-4f94-aba0-06c3e1489065",
+        "84729553-acde-4c76-a1cd-082c981ca15d",
+        "87ce94b8-a36c-451d-98ba-b73744c01e45"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
       }
     }
   },
@@ -232,6 +320,8 @@
     "image-banner",
     "7f110c36-d21b-4d2e-a02b-17889f958b35",
     "50a85a9a-0561-4cb0-a5fe-2c20d8e1d76d",
-    "form"
+    "form",
+    "3cc7f5aa-4d74-466b-8bd1-283487cccaee",
+    "2df0cb9e-eb44-4c3c-ab86-357ab4f8972b"
   ]
 }
