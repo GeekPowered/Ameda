@@ -125,6 +125,10 @@
         "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-2",
         "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-3"
       ],
+      "custom_css": [
+        ".card__info {padding-top: 0; position: absolute; bottom: 1rem; left: 0; width: 100%;}",
+        ".card__media {border-radius: 1rem; overflow: hidden;}"
+      ],
       "settings": {
         "title": "",
         "heading_align": "text-start",
