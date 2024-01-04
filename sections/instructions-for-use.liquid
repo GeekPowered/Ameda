@@ -64,7 +64,7 @@
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
                     <h3 class="h4 m-0">{{ instruction.name }}</h3>
-                    {% if instruction.downloads.value %}
+                    {% if instruction.downloads.values %}
                         <p class="instruction-dd-label">Downloads</p>
                         <select>
                             <option>Select Download</option>
@@ -73,7 +73,7 @@
                             {% endfor %}
                         </select>
                     {% end if %}
-                    {% if instruction.videos.value %}
+                    {% if instruction.videos.values %}
                         <p class="instruction-dd-label">Video</p>
                         <select>
                             <option>Select Video</option>
