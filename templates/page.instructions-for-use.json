@@ -40,10 +40,16 @@
         "tint_opacity": 40,
         "prevent_animation": false
       }
+    },
+    "9a671a21-6d71-46f7-902d-086b180f3a21": {
+      "type": "instructions-for-use",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "eb3f6abf-c392-4491-9a38-3f6053638f20"
+    "eb3f6abf-c392-4491-9a38-3f6053638f20",
+    "9a671a21-6d71-46f7-902d-086b180f3a21"
   ]
 }
