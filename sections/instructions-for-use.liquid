@@ -27,7 +27,7 @@
     .instruction-image-wrapper {
         position: relative;
         width: 100%;
-        aspect-ratio: 3 / 2;
+        aspect-ratio: 1 / 1;
         margin-bottom: 1rem;
         border-radius: .75rem;
         overflow: hidden;
@@ -39,7 +39,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
         object-position: center top;
     }
 
@@ -63,26 +63,21 @@
                     <div class="instruction-image-wrapper">
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
-                    <h3 class="h4 m-0">{{ instruction.name }}</h3>
-                    <script>console.log('test');</script>
-                    {% if instruction.downloads.values[0] != blank %}
-                        <p class="instruction-dd-label">Downloads</p>
-                        <select>
-                            <option>Select Download</option>
-                            {% for download in instruction.downloads.value %}
-                                <option value="{{ download.file }}">{{ download.language }}</option>
-                            {% endfor %}
-                        </select>
-                    {% end if %}
-                    {% if instruction.videos.values[0] != blank %}
-                        <p class="instruction-dd-label">Video</p>
-                        <select>
-                            <option>Select Video</option>
-                            {% for video in instruction.videos.value %}
-                                <option value="{{ video.link }}">{{ video.title }}</option>
-                            {% endfor %}
-                        </select>
-                    {% end if %}
+                    <h3 class="h5 m-0">{{ instruction.name }}</h3>
+                    <p class="instruction-dd-label">Downloads</p>
+                    <select>
+                        <option>Select Download</option>
+                        {% for download in instruction.downloads.value %}
+                            <option value="{{ download.file }}">{{ download.language }}</option>
+                        {% endfor %}
+                    </select>
+                    <p class="instruction-dd-label">Video</p>
+                    <select>
+                        <option>Select Video</option>
+                        {% for video in instruction.videos.value %}
+                            <option value="{{ video.link }}">{{ video.title }}</option>
+                        {% endfor %}
+                    </select>
                 </div>
             {% endfor %}
         </div>
