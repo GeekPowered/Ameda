@@ -14,6 +14,8 @@
 .pdf-list {
     display: flex;
     gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pdf-item {
@@ -25,12 +27,37 @@
     text-align: center;
     border-radius: 1rem;
     align-items: center;
+    width: calc(33% - 1.75rem);
+}
+
+.pdf-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    margin-bottom: 1rem;
+}
+
+.pdf-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .pdf-item select {
     padding: 0.75em 2em;
     text-align: center;
 }
+
+@media (max-width: 991px) {
+    .pdf-item {
+        width: calc(50% - 1.75rem);
+    }
+}
+
 </style>
 
 <div class="section section--padded color-scheme">
