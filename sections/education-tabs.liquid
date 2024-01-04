@@ -8,14 +8,28 @@
 }
 </style>
 
-<div class="section section--padded">
+<div class="section section--padded color-scheme">
     <div class="container">
         <div class="education-tabs flex justify-center gap-theme">
             <button class="btn btn--primary tab-link" onclick="openTab(event, 'EducationPDFs')">Education PDFs</button>
             <button class="btn btn--secondary tab-link" onclick="openTab(event, 'HowToVideos')">How To Videos</button>
         </div>
         <div id="EducationPDFs" class="tab-content active">
-            <p>Content for Education PDFs.</p>
+            <div class="pdf-list">
+                {% for education_pdf in shop.metaobjects.education_pdf.values %}
+                    <div class="pdf-item">
+                        <div class="pdf-image-wrapper">
+                            <img src="{{ education_pdf.cover_image |  image_url  }}" />
+                        </div>
+                        <h3 class="h5">{{ education_pdf.name }}</h3>
+                        <select name="{{ education_pdf.name }}">
+                            <option value="{{ store_location.english }}">English</option>
+                            {% if store_location.spanish %}<option value="{{ store_location.spanish }}">Spanish</option>{% endif %}
+                            {% if store_location.french %}<option value="{{ store_location.french }}">French</option>{% endif %}
+                        </select>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
 
         <div id="HowToVideos" class="tab-content">
