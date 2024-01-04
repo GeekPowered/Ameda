@@ -132,9 +132,20 @@
     "form": {
       "type": "contact-form",
       "blocks": {
-        "contact-name-2": {
-          "type": "name",
+        "cfedfff9-e7ad-4879-9007-3ab0c0701ed9": {
+          "type": "custom",
           "settings": {
+            "title": "First Name",
+            "type": "text",
+            "required": true,
+            "half_width": true
+          }
+        },
+        "368b0c46-467c-4c7f-8d54-38b29547b2f6": {
+          "type": "custom",
+          "settings": {
+            "title": "Last Name",
+            "type": "text",
             "required": true,
             "half_width": true
           }
@@ -146,11 +157,36 @@
             "half_width": true
           }
         },
+        "fe4604ec-f2a4-4a39-8e12-4efb29388138": {
+          "type": "phone",
+          "settings": {
+            "required": true,
+            "half_width": true
+          }
+        },
+        "71a7b95b-c024-48c9-9962-1b77e3e0d782": {
+          "type": "custom",
+          "settings": {
+            "title": "City",
+            "type": "text",
+            "required": true,
+            "half_width": true
+          }
+        },
+        "59eba678-4c92-4cb7-b955-de185a321c86": {
+          "type": "custom",
+          "settings": {
+            "title": "State",
+            "type": "text",
+            "required": true,
+            "half_width": true
+          }
+        },
         "contact-dropdown-4": {
           "type": "dropdown",
           "settings": {
-            "title": "How can we help?",
-            "options": "Option 1\nOption 2\nOption 3",
+            "title": "I'm a",
+            "options": "Mom\nDistributer\nOther",
             "half_width": false
           }
         },
@@ -160,13 +196,26 @@
             "required": true,
             "half_width": false
           }
+        },
+        "266d964f-8902-4338-ba31-4b888c762436": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Mailing List",
+            "options": "Yes, sign me up for Ameda marketing and communications\nNo, do not sign me up for Ameda marketing and communications",
+            "half_width": false
+          }
         }
       },
       "block_order": [
-        "contact-name-2",
+        "cfedfff9-e7ad-4879-9007-3ab0c0701ed9",
+        "368b0c46-467c-4c7f-8d54-38b29547b2f6",
         "contact-email-3",
+        "fe4604ec-f2a4-4a39-8e12-4efb29388138",
+        "71a7b95b-c024-48c9-9962-1b77e3e0d782",
+        "59eba678-4c92-4cb7-b955-de185a321c86",
         "contact-dropdown-4",
-        "contact-body-5"
+        "contact-body-5",
+        "266d964f-8902-4338-ba31-4b888c762436"
       ],
       "settings": {
         "heading": "Drop us an email",
