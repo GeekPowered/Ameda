@@ -80,6 +80,7 @@
                         </div>
                         <h3 class="h6">{{ education_pdf.name }}</h3>
                         <select name="{{ education_pdf.name }}">
+                            <option value="">Select Language</option>
                             {% if education_pdf.english %}<option value="{{ education_pdf.english }}">English</option>{% endif %}
                             {% if education_pdf.spanish %}<option value="{{ education_pdf.spanish }}">Spanish</option>{% endif %}
                             {% if education_pdf.french %}<option value="{{ education_pdf.french }}">French</option>{% endif %}
@@ -138,19 +139,21 @@
 
     }
 
-    // Function to open selected option in a new tab
-    function openInNewTab(url) {
-        window.open(url, '_blank');
-    }
-
+    // Function to be executed when the document is fully loaded
     document.addEventListener('DOMContentLoaded', function() {
-        // Add change event listeners to all select elements within .tab-content
+        // Find all <select> elements within elements with the class .tab-content
         var selects = document.querySelectorAll('.tab-content select');
+
+        // Attach a change event listener to each select element
         selects.forEach(function(select) {
             select.addEventListener('change', function() {
-                var url = this.value;
-                if (url) {
-                    openInNewTab(url);
+                // Get the value of the selected option
+                var value = this.value;
+
+                // Check if the value is not empty
+                if (value !== '') {
+                    // Open the value URL in a new tab
+                    window.open(value, '_blank');
                 }
             });
         });
