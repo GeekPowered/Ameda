@@ -23,7 +23,6 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     border-radius: 1rem;
     align-items: center;
@@ -89,9 +88,11 @@
             <div class="education-list">
                 {% for education_video in shop.metaobjects.education_video.values %}
                     <div class="education-item">
-                        <div class="education-image-wrapper">
-                            <img src="http://i3.ytimg.com/vi/{{ education_video.you_tube_id }}/hqdefault.jpg" />
-                        </div>
+                        <a target="_blank" href="https://www.youtube.com/watch?v={{ education_video.you_tube_id }}">
+                            <div class="education-image-wrapper">
+                                <img src="http://i3.ytimg.com/vi/{{ education_video.you_tube_id }}/hqdefault.jpg" />
+                            </div>
+                        </a>
                         <h3 class="h6">{{ education_video.video_title }}</h3>
                     </div>
                 {% endfor %}
