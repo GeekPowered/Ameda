@@ -13,7 +13,7 @@
                         <option value="">Select Download</option>
                         
                         <script>console.log('{{ instruction.downloads }}');</script>
-                        {% for download in instruction.downloads %}
+                        {% for download in instruction.downloads.value %}
                             <option value="{{ download['file'] }}">{{ download['language'] }}</option>
                         {% endfor %}
                     </select>
