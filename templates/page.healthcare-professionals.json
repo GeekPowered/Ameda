@@ -16,7 +16,7 @@
           "settings": {
             "heading": "Healthcare Professionals",
             "heading_size": "h1",
-            "heading_h1": false
+            "heading_h1": true
           }
         }
       },
