@@ -1,0 +1,47 @@
+<div class="section section--padded">
+    <div class="container">
+        <div class="education-tabs">
+            <button class="tab-link" onclick="openTab(event, 'EducationPDFs')">Education PDFs</button>
+            <button class="tab-link" onclick="openTab(event, 'HowToVideos')">How To Videos</button>
+
+            <div id="EducationPDFs" class="tab-content">
+                <p>Content for Education PDFs.</p>
+            </div>
+
+            <div id="HowToVideos" class="tab-content">
+                <p>Content for How To Videos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tab-link");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+{% schema %}
+    {
+      "name": "Education Tabs",
+      "presets": [
+        {
+          "name": "Education Tabs",
+          "category": "Template"
+        }
+      ]
+    }
+{% endschema %}
