@@ -1,1 +1,188 @@
-{"sections":{"main":{"type":"main-contact","disabled":true,"settings":{"show_contact_title":false}},"image-banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Contact Us","heading_size":"h1","heading_h1":true}},"text":{"type":"text","settings":{"text":"<p>Please visit our help pages for answers to some of the most commonly asked questions.<\/p>","enlarge_text":true}}},"block_order":["heading","text"],"settings":{"height_mode":"fixed","fixed_height_desktop":560,"fixed_height_mobile":440,"overlay_position":"justify-start items-center","overlay_text_align":"text-start","mob_center_text":true,"mobile_stacked":false,"color_scheme":"white","full_width":true}},"form":{"type":"contact-form","blocks":{"contact-name-2":{"type":"name","settings":{"required":true,"half_width":true}},"contact-email-3":{"type":"email","settings":{"required":true,"half_width":true}},"contact-dropdown-4":{"type":"dropdown","settings":{"title":"How can we help?","half_width":false}},"contact-body-5":{"type":"body","settings":{"required":true,"half_width":false}}},"block_order":["contact-name-2","contact-email-3","contact-dropdown-4","contact-body-5"],"settings":{"heading":"Drop us an email","heading_align":"text-center","image_position":"top","color_scheme":"1","full_width":false,"button_style":"btn btn--primary"}},"newsletter":{"type":"newsletter","blocks":{"newsletter-heading-0":{"type":"heading","settings":{"heading":"Sign up to our Newsletter","heading_size":"h5"}},"newsletter-text-1":{"type":"text","settings":{"enlarge_text":false}},"newsletter-form-2":{"type":"form","settings":{}}},"block_order":["newsletter-heading-0","newsletter-text-1","newsletter-form-2"],"settings":{"overlay_position":"justify-center","text_align":"text-center","color_scheme":"default","full_width":true}}},"order":["main","image-banner","form","newsletter"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "disabled": true,
+      "settings": {
+        "show_contact_title": false,
+        "heading_align": "text-center"
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "h1",
+            "heading_h1": true
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/contact-page.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-start items-center",
+        "overlay_text_align": "text-start",
+        "mob_center_text": true,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "7f110c36-d21b-4d2e-a02b-17889f958b35": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21856552386875__7f110c36-d21b-4d2e-a02b-17889f958b35-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "ParentCare™",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "template--21856552386875__7f110c36-d21b-4d2e-a02b-17889f958b35-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Hours of Operation:<\/strong><br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CST<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21856552386875__7f110c36-d21b-4d2e-a02b-17889f958b35-button-1": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "+1 (866) 992-6332",
+            "button_1_link": "tel:1-866-992-6332",
+            "button_1_style": "btn--primary",
+            "button_2_label": "ParentCare@ameda.com",
+            "button_2_link": "mailto:ParentCare@ameda.com",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21856552386875__7f110c36-d21b-4d2e-a02b-17889f958b35-heading-1",
+        "template--21856552386875__7f110c36-d21b-4d2e-a02b-17889f958b35-text-1",
+        "template--21856552386875__7f110c36-d21b-4d2e-a02b-17889f958b35-button-1"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "50a85a9a-0561-4cb0-a5fe-2c20d8e1d76d": {
+      "type": "rich-text",
+      "blocks": {
+        "c4589dc5-75ef-4097-956e-73dcfc65792b": {
+          "type": "heading",
+          "settings": {
+            "heading": "CustomerCare™",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "a2de7a20-e4b2-4554-a6f3-a70e9b6b4f77": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Hours of Operation:<\/strong><br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CST<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "cb4b9d73-a366-47e7-8b54-13c0f074d01c": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "+1 (866) 992-6332",
+            "button_1_link": "tel:1-866-992-6332",
+            "button_1_style": "btn--primary",
+            "button_2_label": "Orders@ameda.com",
+            "button_2_link": "mailto:orders@ameda.com",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "c4589dc5-75ef-4097-956e-73dcfc65792b",
+        "a2de7a20-e4b2-4554-a6f3-a70e9b6b4f77",
+        "cb4b9d73-a366-47e7-8b54-13c0f074d01c"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "blocks": {
+        "contact-name-2": {
+          "type": "name",
+          "settings": {
+            "required": true,
+            "half_width": true
+          }
+        },
+        "contact-email-3": {
+          "type": "email",
+          "settings": {
+            "required": true,
+            "half_width": true
+          }
+        },
+        "contact-dropdown-4": {
+          "type": "dropdown",
+          "settings": {
+            "title": "How can we help?",
+            "options": "Option 1\nOption 2\nOption 3",
+            "half_width": false
+          }
+        },
+        "contact-body-5": {
+          "type": "body",
+          "settings": {
+            "required": true,
+            "half_width": false
+          }
+        }
+      },
+      "block_order": [
+        "contact-name-2",
+        "contact-email-3",
+        "contact-dropdown-4",
+        "contact-body-5"
+      ],
+      "settings": {
+        "heading": "Drop us an email",
+        "heading_align": "text-center",
+        "image_position": "top",
+        "color_scheme": "1",
+        "full_width": false,
+        "button_style": "btn btn--primary"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image-banner",
+    "7f110c36-d21b-4d2e-a02b-17889f958b35",
+    "50a85a9a-0561-4cb0-a5fe-2c20d8e1d76d",
+    "form"
+  ]
+}
