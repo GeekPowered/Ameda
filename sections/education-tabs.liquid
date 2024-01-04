@@ -34,6 +34,8 @@
     width: 100%;
     aspect-ratio: 3 / 2;
     margin-bottom: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .education-image-wrapper img {
@@ -97,7 +99,7 @@
                                 <img src="http://i3.ytimg.com/vi/{{ education_video.you_tube_id }}/hqdefault.jpg" />
                             </div>
                         </a>
-                        <h3 class="h6">{{ education_video.video_title }}</h3>
+                        <h3 class="h6 m-0">{{ education_video.video_title }}</h3>
                     </div>
                 {% endfor %}
             </div>
