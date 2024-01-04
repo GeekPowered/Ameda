@@ -8,7 +8,6 @@
 }
 </style>
 
-
 <div class="section section--padded color-scheme">
     <div class="container">
         <div class="education-tabs flex justify-center gap-theme">
@@ -24,9 +23,9 @@
                         </div>
                         <h3 class="h5">{{ education_pdf.name }}</h3>
                         <select name="{{ education_pdf.name }}">
-                            <option value="{{ store_location.english }}">English</option>
-                            {% if store_location.spanish %}<option value="{{ store_location.spanish }}">Spanish</option>{% endif %}
-                            {% if store_location.french %}<option value="{{ store_location.french }}">French</option>{% endif %}
+                            {% if education_pdf.english %}<option value="{{ education_pdf.english }}">English</option>{% endif %}
+                            {% if education_pdf.spanish %}<option value="{{ education_pdf.spanish }}">Spanish</option>{% endif %}
+                            {% if education_pdf.french %}<option value="{{ education_pdf.french }}">French</option>{% endif %}
                         </select>
                     </div>
                 {% endfor %}
