@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ 'instructions-for-use.css' | asset_url }}" media="print" onload="this.media='all'">
+{% comment %} <link rel="stylesheet" href="{{ 'instructions-for-use.css' | asset_url }}" media="print" onload="this.media='all'"> {% endcomment %}
 
 <div class="section section--padded">
     <div class="container">
@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<script src="{{ 'instructions-for-use.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'instructions-for-use.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 
 
 {% schema %}
