@@ -19,6 +19,7 @@
     }
 
     .instruction-item .instruction-dd-label {
+        margin-top: 1rem;    
         margin-bottom: .5rem;
         font-weight: bold;
     }
@@ -62,7 +63,7 @@
                     <div class="instruction-image-wrapper">
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
-                    <h3 class="h5">{{ instruction.name }}</h3>
+                    <h3 class="h5 m-0">{{ instruction.name }}</h3>
                     <p class="instruction-dd-label">Downloads</p>
                     <select>
                         <option>Select Download</option>
