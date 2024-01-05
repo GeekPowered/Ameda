@@ -2,6 +2,20 @@
 
 <div class="section section--padded">
     <div class="container">
+        <div class="tabs-wrapper">
+            {% assign used_tab_names = '' %}
+            {% for instruction in shop.metaobjects.instructions.values %}
+                {% unless used_tab_names contains instruction.tab_name %}
+                    <button class="btn btn--secondary">{{ instruction.tab_name }}</button>
+                    {% capture used_tab_names %}{{ used_tab_names }}{{ instruction.tab_name }},{% endcapture %}
+                {% endunless %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="section section--padded">
+    <div class="container">
         <div class="instructions-index">
             {% for instruction in shop.metaobjects.instructions.values %}
                 <div class="instruction-item">
