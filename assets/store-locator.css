@@ -26,3 +26,9 @@ ul.state-selector {
         width: calc(50% - 1rem); 
     }
 }
+
+@media (max-width: 500px) {
+    .store-location {
+        width: 100% !important;
+    }
+}
