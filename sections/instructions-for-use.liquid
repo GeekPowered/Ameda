@@ -9,7 +9,7 @@
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
                     <h3 class="h5 m-0">{{ instruction.name }}</h3>
-                    {% if instruction.downloads.values != blank %}
+                    {% if instruction.downloads.values.size > 0 %}
                         <p class="instruction-dd-label">Downloads</p>
                         <select>
                             <option>Select Download</option>
@@ -18,7 +18,7 @@
                             {% endfor %}
                         </select>
                     {% end if %}
-                    {% if instruction.videos.values != blank %}
+                    {% if instruction.videos.values.size > 0 %}
                         <p class="instruction-dd-label">Video</p>
                         <select>
                             <option>Select Video</option>
