@@ -29,7 +29,7 @@
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
-        "overlay_position": "justify-start items-center",
+        "overlay_position": "justify-center items-center",
         "overlay_text_align": "text-start",
         "mob_center_text": true,
         "mobile_stacked": false,
