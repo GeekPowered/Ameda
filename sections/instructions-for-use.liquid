@@ -18,7 +18,7 @@
     <div class="container">
         <div class="instructions-index">
             {% for instruction in shop.metaobjects.instructions.values %}
-                <div class="instruction-item">
+                <div class="instruction-item" tabName="{{ instruction.tab_name }}">
                     <div class="instruction-image-wrapper">
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
