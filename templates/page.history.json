@@ -278,8 +278,8 @@
         "a387d620-ee45-433d-8af0-ef3f43fc9330"
       ],
       "settings": {
-        "title": "Multi-column",
-        "heading_align": "text-start",
+        "title": "Ameda Timeline",
+        "heading_align": "text-center",
         "button_label": "",
         "button_link": "",
         "layout": "carousel",
