@@ -253,7 +253,7 @@
     "7af04cf3-e681-4d54-be93-3a0a1cdcb2ed": {
       "type": "custom-liquid",
       "custom_css": [
-        "table {min-width: 70rem; overflow: auto; width: 100%; background: rgb(var(--background)); border: 1px solid rgba(0,0,0,.1);}",
+        "table {min-width: 70rem; overflow: auto; width: 100%; background: rgba(255,255,255,.5); border: 1px solid rgba(0, 0, 0, 0.1);}",
         "table td,table th {border: none;}",
         "table tr td:not(:first-of-type) {text-align: center; font-size: 1.5em; color: rgb(var(--link-color)); font-weight: 900;}",
         "table tr:first-of-type {background: rgb(var(--link-color)); color: #fff;}",
