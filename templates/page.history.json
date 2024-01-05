@@ -122,6 +122,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify:\/\/shop_images\/1970.png",
             "media_scale": 100,
             "heading": "1970",
             "text": "<p>Ameda AG was founded in 1970.<\/p>",
@@ -276,6 +277,9 @@
         "7662dbe0-7dee-4a47-9694-305c28fd95d6",
         "c6cfd747-b788-4ef8-b787-18063a4bb98d",
         "a387d620-ee45-433d-8af0-ef3f43fc9330"
+      ],
+      "custom_css": [
+        ".card__media {width: 10rem; height: 10rem; padding: 0 !important;}"
       ],
       "settings": {
         "title": "Ameda Timeline",
