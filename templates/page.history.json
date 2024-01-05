@@ -96,6 +96,7 @@
       "settings": {
         "video_external": "https:\/\/youtu.be\/2U0s5D8maNk",
         "video_description": "",
+        "poster_image": "shopify:\/\/shop_images\/hqdefault.jpg",
         "video_size": "sm",
         "video_autoplay": false,
         "text_align": "text-center",
