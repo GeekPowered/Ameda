@@ -25,7 +25,7 @@
                     <h3 class="h5 m-0">{{ instruction.name }}</h3>
                     {% if instruction.downloads.value.size > 0 %}
                         <p class="instruction-dd-label">Downloads</p>
-                        <select>
+                        <select name="{{ instruction.name }}-downloads">
                             <option>Select Download</option>
                             {% for download in instruction.downloads.value %}
                                 <option value="{{ download.file }}">{{ download.language }}</option>
@@ -34,7 +34,7 @@
                     {% endif %}
                     {% if instruction.videos.value.size > 0 %}
                         <p class="instruction-dd-label">Video</p>
-                        <select>
+                        <select name="{{ instruction.name }}-videos">
                             <option>Select Video</option>
                             {% for video in instruction.videos.value %}
                                 <option value="{{ video.link }}">{{ video.title }}</option>
