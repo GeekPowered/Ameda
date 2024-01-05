@@ -9,7 +9,7 @@
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
                     <h3 class="h5 m-0">{{ instruction.name }}</h3>
-                    <script>console.log('{{ instruction.downloads }}')</script>
+                    <script>console.log('Downloads: ','{{ instruction.downloads }}');</script>
                     {% if instruction.downloads.values.size > 0 %}
                         <p class="instruction-dd-label">Downloads</p>
                         <select>
