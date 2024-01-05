@@ -2,7 +2,7 @@
 
 <div class="section section--padded color-scheme" style="margin-top: 0; margin-bottom: 0; padding-bottom:0;">
     <div class="container">
-        <div class="tabs-wrapper flex justify-center gap-theme">
+        <div class="tabs-wrapper flex justify-center gap-theme flex-wrap">
             {% assign used_tab_names = '' %}
             {% for instruction in shop.metaobjects.instructions.values %}
                 {% unless used_tab_names contains instruction.tab_name %}
