@@ -236,7 +236,7 @@
         "ebb2d4ab-b6de-40a1-8861-20f6c55a6d90"
       ],
       "custom_css": [
-        ".color-scheme--transparent {padding-top: 0; margin-top: 0;}",
+        ".color-scheme--transparent {padding-top: 0; margin-top: 0; padding-bottom: 0; margin-bottom: 0;}",
         ".color-scheme--transparent > div {padding: 0;}",
         ".max-w-text-overlay {max-width: 100% !important; width: 100%;}",
         ".section__block.reading-width--inline {width: 100%; max-width: 100%;}"
@@ -247,6 +247,19 @@
         "mob_center_text": false,
         "color_scheme": "none",
         "full_width": false,
+        "prevent_animation": false
+      }
+    },
+    "7af04cf3-e681-4d54-be93-3a0a1cdcb2ed": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "table {min-width: 70rem; overflow: auto;}"
+      ],
+      "settings": {
+        "custom_liquid": "<table class=\"comparison-chart-table\">\n<tbody>\n<tr>\n<th class=\"comparision-chart-title\">COMPARISON CHART<\/th>\n<th class=\"comparision-chart-th\">Ameda Penguin Warmer<\/th>\n<th class=\"comparision-chart-th\">Competing Brand<\/th>\n<\/tr>\n<tr>\n<td>Warms based on temperature sensor feedback loop<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Gently mixes while warming, eliminating the need for shaking or rolling<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Multi-directional, surround warming for a more uniform and even outcome<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Feedings safely warmed in closed system bag<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Warm from refrigerator to feeding temperature<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Warm from frozen to thawed temperature<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Warm from frozen to feeding temperature<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Easy to clean with common hospital disinfectant<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Accommodates feeding containers to 27 ml and syringes from 1mL to 100mL<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Compatible with most makes, models, and sizes of breast milk storage bags, syringes, and bottles<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Space-saving four wells for pods or nutritional preparation area\/rooms<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<\/tbody>\n<\/table>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
         "prevent_animation": false
       }
     },
@@ -354,7 +367,7 @@
         "button_label": "",
         "button_link": "",
         "layout": "grid",
-        "column_size": "medium",
+        "column_size": "small",
         "column_align": "left",
         "media_align": "text-center",
         "image_ratio": "1",
@@ -371,6 +384,7 @@
     "2a0ccb02-03d0-42fd-90cb-278c0a8cfddb",
     "d14f5ad7-1999-47e6-ab6c-b67a997565a5",
     "7cad64d1-d256-4722-a49a-996580ae3ace",
+    "7af04cf3-e681-4d54-be93-3a0a1cdcb2ed",
     "8f6b6bee-fcbf-455f-a0ce-acc0612ab6c6",
     "34f9f0fe-b145-4aea-82fd-228bb1949054"
   ]
