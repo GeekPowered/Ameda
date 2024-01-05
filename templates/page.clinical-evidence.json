@@ -2,11 +2,376 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "c81b456e-788a-45c5-be8c-3b9a8f69ff7a": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21939279298875__c81b456e-788a-45c5-be8c-3b9a8f69ff7a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Clinical Evidence",
+            "heading_size": "h0",
+            "heading_h1": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21939279298875__c81b456e-788a-45c5-be8c-3b9a8f69ff7a-heading-1"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/clinical-evidence.png",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "0109c9fa-354d-4652-9201-f064a3ff1360": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21939279298875__0109c9fa-354d-4652-9201-f064a3ff1360-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Behind Our Technology"
+          }
+        },
+        "template--21939279298875__0109c9fa-354d-4652-9201-f064a3ff1360-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Clinical Evidence",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "template--21939279298875__0109c9fa-354d-4652-9201-f064a3ff1360-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ameda offers the perfect combination of advanced technology and the time-proven benefits of our legacy technology that has set the industry standards, to determine pumping efficiency. Ameda is dedicated to providing efficient and customized solutions for both clinicians and mothers to optimize the breastfeeding journey.<br\/><br\/><\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21939279298875__0109c9fa-354d-4652-9201-f064a3ff1360-subheading-1",
+        "template--21939279298875__0109c9fa-354d-4652-9201-f064a3ff1360-heading-1",
+        "template--21939279298875__0109c9fa-354d-4652-9201-f064a3ff1360-text-1"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "96fe1515-e74f-4517-a3b5-ad3b0fecafd8": {
+      "type": "media-with-text",
+      "blocks": {
+        "f9ebe740-d552-44f2-9d3d-5b774e3227a9": {
+          "type": "subheading",
+          "settings": {
+            "text": "Clinical Evidence"
+          }
+        },
+        "template--21939279298875__96fe1515-e74f-4517-a3b5-ad3b0fecafd8-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ameda HygieniKit Milk Collection System",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "template--21939279298875__96fe1515-e74f-4517-a3b5-ad3b0fecafd8-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ameda's HyginieKit milk collection system features the world's only FDA-cleared two-way barrier that protects breastmilk, tubing and pump itself against contaminants like viruses and bacteria. It also prevents milk from back flowing into the tubing preventing dangerous mold growth.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "template--21939279298875__96fe1515-e74f-4517-a3b5-ad3b0fecafd8-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Study",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/Ameda-Mezler-Study-2020.pdf?v=1704490837",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "f9ebe740-d552-44f2-9d3d-5b774e3227a9",
+        "template--21939279298875__96fe1515-e74f-4517-a3b5-ad3b0fecafd8-heading-1",
+        "template--21939279298875__96fe1515-e74f-4517-a3b5-ad3b0fecafd8-text-1",
+        "template--21939279298875__96fe1515-e74f-4517-a3b5-ad3b0fecafd8-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/HygieniKit_Milk_Collection_System.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "2a0ccb02-03d0-42fd-90cb-278c0a8cfddb": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21939279298875__2a0ccb02-03d0-42fd-90cb-278c0a8cfddb-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Ameda Elite™ Breast Pump",
+            "text": "<p>With the Ameda Elite™, milk output exceeds that of breastfeeding mothers by Day 5 and continues to surpass breastfeeding during the critical first 14 days postpartum. Milk output from other pumps either lags behind in the borderline range or barely keeps pace with breastfeeding. When mothers use the Elite, its time-saving features help simplify the clinician's role. These specially designed features equate to a reduced need for valuable staff time throughout the hospital stay.<\/p>",
+            "button_label": "View Study",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/Rosen_et_al_Study_Elite_Breast_Pump.pdf?v=1704490910"
+          }
+        },
+        "template--21939279298875__2a0ccb02-03d0-42fd-90cb-278c0a8cfddb-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Ameda Platinum® Multi-User Breast Pump",
+            "text": "<p>Ameda's Platinum Hospital Breast pump is clinically proven to be the most efficient pump for your most critical patients. OUR Platinum® clinical white paper published in the February, 2013 edition of Advances in Neonatal Care, the official journal of the National Association of Neonatal Nurses (NANN) shares why.<\/p>",
+            "button_label": "View Study",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/Ameda_Platinum_Clinical_White_Paper.pdf?v=1704490958"
+          }
+        }
+      },
+      "block_order": [
+        "template--21939279298875__2a0ccb02-03d0-42fd-90cb-278c0a8cfddb-column-1",
+        "template--21939279298875__2a0ccb02-03d0-42fd-90cb-278c0a8cfddb-column-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "d14f5ad7-1999-47e6-ab6c-b67a997565a5": {
+      "type": "media-with-text",
+      "blocks": {
+        "d6b012a3-3e9c-4d6f-9b3b-04eacc25fc50": {
+          "type": "subheading",
+          "settings": {
+            "text": "Choice Of Hospitals Since 1942"
+          }
+        },
+        "037f1728-e481-48e0-bee8-f986293b9371": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ameda Penguin Warmer",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "3864de95-480c-4f13-a5a3-fb76abcfd48f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>THE ONLY WARMER THAT...<\/p><ul><li>Warms to physiological temperature for proper absorption<\/li><li>Provides continuous gentle mixing throughout warming as recommended by WHO<\/li><li>Operates quietly below the AAP noise level for proper neurodevelopment<\/li><li>Prepares feedings in half the time<\/li><\/ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "d6b012a3-3e9c-4d6f-9b3b-04eacc25fc50",
+        "037f1728-e481-48e0-bee8-f986293b9371",
+        "3864de95-480c-4f13-a5a3-fb76abcfd48f"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/penguin_warmers_500x500_2.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "7cad64d1-d256-4722-a49a-996580ae3ace": {
+      "type": "rich-text",
+      "blocks": {
+        "ebb2d4ab-b6de-40a1-8861-20f6c55a6d90": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>During heating, it is not only the temperature that breast milk may reach that is important for enzyme activity, but the time of exposure to heat is also critical.<\/li><li>The North American Human Milk Banking Association (HMBANA) advocates warming feeds to body temperature for premature infants, particularly those at risk for necrotizing enterocolitis (NEC).<\/li><li>Bransburg-Zabary S, et al, suggests a smarter method to warm breast milk is required to ensure that temperatures not exceed 40° C (104° F), so its unique properties will be better preserved. Possible solutions may include a mechanism by which human milk would be constantly stirred during heating, similar to technology in Ameda Penguin warmers<\/li><li>Bransburg-Zabary S, et al. also showed that it was difficult to determine when milk reaches the desired temperature due to lack of stirring and creates heat zone islets of high temperatures<\/li><li>The World Health Organization (WHO) also recommends constant stirring for a period of 20 minutes<\/li><\/ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "ebb2d4ab-b6de-40a1-8861-20f6c55a6d90"
+      ],
+      "custom_css": [
+        ".color-scheme--transparent {padding-top: 0; margin-top: 0;}",
+        ".color-scheme--transparent > div {padding: 0;}",
+        ".max-w-text-overlay {max-width: 100% !important; width: 100%;}",
+        ".section__block.reading-width--inline {width: 100%; max-width: 100%;}"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-start",
+        "mob_center_text": false,
+        "color_scheme": "none",
+        "full_width": false,
+        "prevent_animation": false
+      }
+    },
+    "8f6b6bee-fcbf-455f-a0ce-acc0612ab6c6": {
+      "type": "multi-column",
+      "blocks": {
+        "acd8a935-4b55-4132-a896-dd70d8be8452": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Human Milk Warming Temperatures",
+            "text": "<p>Human milk handling guidelines are very demanding, based upon solid scientific evidence that handling methods can make a real difference in infant health and nutrition. Indeed, properly stored milk maintains many of its unique qualities and continues to be the second and third best infant feeding alternatives, much superior to artificial feeding. Container type and shape, mode of stirring, amount of air exposure and storage temperature may adversely affect milk stability and composition.<\/p>",
+            "button_label": "View Study",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/Human_Milk_Warming.pdf?v=1704491976"
+          }
+        },
+        "2914391c-c237-4be5-8d25-b014e0518d0f": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Going Beyond Warming Breast Milk",
+            "text": "<p>Ameda's Platinum Hospital Breast pump is clinically proven to be the most efficient pump for your most critical patients. OUR Platinum® clinical white paper published in the February, 2013 edition of Advances in Neonatal Care, the official journal of the National Association of Neonatal Nurses (NANN) shares why.<\/p>",
+            "button_label": "Download Brochure",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/Penguin_Brochure.pdf?v=1704492023"
+          }
+        }
+      },
+      "block_order": [
+        "acd8a935-4b55-4132-a896-dd70d8be8452",
+        "2914391c-c237-4be5-8d25-b014e0518d0f"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "34f9f0fe-b145-4aea-82fd-228bb1949054": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21939279298875__34f9f0fe-b145-4aea-82fd-228bb1949054-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Gentle Multi-Directional Warming",
+            "text": "<p>360° surround, even, gentle warming to ideal temperature range.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21939279298875__34f9f0fe-b145-4aea-82fd-228bb1949054-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Closed System",
+            "text": "<p>Patented \"Bag-in-Bag\" closed system design preventing contamination from<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21939279298875__34f9f0fe-b145-4aea-82fd-228bb1949054-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Efficient Heat Exchange",
+            "text": "<p>Leverages thermal transfer properties of water - the most efficient and controlled method for heat exchange.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "3470cb2e-1468-41d8-9795-b6da368f8b9b": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "No Shaking Needed",
+            "text": "<p>Gentle vibrating technology mixes feedings throughout the warming cycle.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21939279298875__34f9f0fe-b145-4aea-82fd-228bb1949054-column-1",
+        "template--21939279298875__34f9f0fe-b145-4aea-82fd-228bb1949054-column-2",
+        "template--21939279298875__34f9f0fe-b145-4aea-82fd-228bb1949054-column-3",
+        "3470cb2e-1468-41d8-9795-b6da368f8b9b"
+      ],
+      "settings": {
+        "title": "The Ameda Penguin Warmer Advantage",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "c81b456e-788a-45c5-be8c-3b9a8f69ff7a",
+    "0109c9fa-354d-4652-9201-f064a3ff1360",
+    "96fe1515-e74f-4517-a3b5-ad3b0fecafd8",
+    "2a0ccb02-03d0-42fd-90cb-278c0a8cfddb",
+    "d14f5ad7-1999-47e6-ab6c-b67a997565a5",
+    "7cad64d1-d256-4722-a49a-996580ae3ace",
+    "8f6b6bee-fcbf-455f-a0ce-acc0612ab6c6",
+    "34f9f0fe-b145-4aea-82fd-228bb1949054"
   ]
 }
