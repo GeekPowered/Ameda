@@ -51,7 +51,7 @@
 }
 
 @media (max-width: 991px) {
-    .instructions-item {
+    .instruction-item {
         width: calc(50% - 1.75rem);
     }
 }
