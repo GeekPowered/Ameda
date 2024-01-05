@@ -279,7 +279,8 @@
         "a387d620-ee45-433d-8af0-ef3f43fc9330"
       ],
       "custom_css": [
-        ".card__media {width: 10rem; height: 10rem; padding: 0 !important;}"
+        ".card__media {width: 10rem; height: 10rem; padding: 0 !important;}",
+        ".card {align-items: center;}"
       ],
       "settings": {
         "title": "Ameda Timeline",
