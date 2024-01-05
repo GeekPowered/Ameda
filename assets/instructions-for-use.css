@@ -6,14 +6,18 @@
     justify-content: center;
 }
 .instruction-item {
+    display: none;
     background: #fff;
     padding: 2rem;
-    display: flex;
     flex-direction: column;
     text-align: center;
     border-radius: 1rem;
     align-items: center;
     width: calc(33% - 1.75rem);
+}
+
+.instruction-item.active {
+    display: flex;
 }
 
 .instruction-item .instruction-dd-label {
