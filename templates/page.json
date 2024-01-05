@@ -4,7 +4,7 @@
       "type": "main-page",
       "settings": {
         "show_page_title": true,
-        "heading_align": "text-center"
+        "heading_align": "text-start"
       }
     }
   },
