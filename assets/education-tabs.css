@@ -61,3 +61,9 @@
         width: calc(50% - 1.75rem);
     }
 }
+
+@media (max-width: 500px) {
+    .education-item {
+        width: 100% !important;
+    }
+}
