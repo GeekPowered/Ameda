@@ -44,4 +44,23 @@ document.addEventListener('DOMContentLoaded', function() {
     if (tabs.length > 0) {
         tabs[0].click();
     }
+
+    // Find all select elements
+    const selectElements = document.querySelectorAll('select');
+
+    // Function to handle select change
+    function handleSelectChange() {
+        const value = this.value;
+        // Check if the value is not empty and is a valid URL
+        if (value !== "") {
+            // Open the value in a new tab
+            window.open(value, '_blank');
+        }
+    }
+
+    // Add change event listener to each select element
+    selectElements.forEach(select => {
+        select.addEventListener('change', handleSelectChange);
+    });
+    
 });
