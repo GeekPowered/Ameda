@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="{{ 'instructions-for-use.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="section section--padded">
+<div class="section section--padded color-scheme" style="margin-bottom: 0;">
     <div class="container">
-        <div class="tabs-wrapper">
+        <div class="tabs-wrapper flex justify-center">
             {% assign used_tab_names = '' %}
             {% for instruction in shop.metaobjects.instructions.values %}
                 {% unless used_tab_names contains instruction.tab_name %}
