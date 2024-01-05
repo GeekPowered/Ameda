@@ -58,6 +58,6 @@
 
 @media (max-width: 500px) {
     .instruction-item {
-        width: 100%;
+        width: 100% !important;
     }
 }
