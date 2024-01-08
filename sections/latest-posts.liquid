@@ -15,35 +15,40 @@
         </div>
         <div class="flex-posts">
             {% assign tag = section.settings.blog_tag %}
-            {% assign filtered_articles = empty %} <!-- Initializes an empty array -->
+            {% assign articles_count = 0 %}
             {% if tag != blank %}
                 {% for article in blogs['posts'].articles %}
                     {% if article.tags contains tag %}
-                        {% assign filtered_articles = filtered_articles | append: article %}
+                        {% if articles_count < 4 %}
+                            <div class="post-item">
+                                <!-- Your existing article display code here -->
+                                <!-- Replace 'article' with 'blogs['posts'].articles[forloop.index0]' -->
+                            </div>
+                            {% assign articles_count = articles_count | plus: 1 %}
+                        {% endif %}
                     {% endif %}
                 {% endfor %}
             {% else %}
-                {% assign filtered_articles = blogs['posts'].articles %}
-            {% endif %}
-            {% for article in filtered_articles limit:4 %}
-                <div class="post-item">
-                    <div class="post-item_image">
-                        <a href="{{ article.url }}">
-                            <img src="{{ article.image | article_img_url: 'large' }}" alt="{{ article.image.alt | default: '' }}">
-                        </a>
-                    </div>
-                    <div class="post-item_content">
-                        <a href="/blogs/posts/tagged/{{ article.tags.first | handle }}" class="post-item_category"><span>{{ article.tags.first }}</span></a>
-                        <h3 class="h4 post-item_title two-line-clamp">{{ article.title }}</h3>
-                        <p class="post-item_excerpt two-line-clamp m-0">
-                            {{ article.excerpt | default: '' }}
-                        </p>
-                        <div class="post-item_button">
-                            <a href="{{ article.url }}" class="link" style="font-weight:bold;">Read More</a>
+                {% for article in blogs['posts'].articles limit:4 %}
+                    <div class="post-item">
+                        <div class="post-item_image">
+                            <a href="{{ article.url }}">
+                                <img src="{{ article.image | article_img_url: 'large' }}" alt="{{ article.image.alt | default: '' }}">
+                            </a>
+                        </div>
+                        <div class="post-item_content">
+                            <a href="/blogs/posts/tagged/{{ article.tags.first | handle }}" class="post-item_category"><span>{{ article.tags.first }}</span></a>
+                            <h3 class="h4 post-item_title two-line-clamp">{{ article.title }}</h3>
+                            <p class="post-item_excerpt two-line-clamp m-0">
+                                {{ article.excerpt | default: '' }}
+                            </p>
+                            <div class="post-item_button">
+                                <a href="{{ article.url }}" class="link" style="font-weight:bold;">Read More</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 </div>
