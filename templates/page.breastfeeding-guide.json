@@ -328,7 +328,7 @@
     "beed3893-13e5-403a-bc6d-b88cf18d5ece": {
       "type": "latest-posts",
       "custom_css": [
-        ".latest-posts {margin-top: 0; padding-top: 0;}"
+
       ],
       "settings": {
         "title": "Latest Breastfeeding Posts",
