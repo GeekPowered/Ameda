@@ -184,83 +184,6 @@
         "only_content_color_scheme": false
       }
     },
-    "9064ad3d-8ef0-49cd-88a2-f0e079353f22": {
-      "type": "multi-column",
-      "blocks": {
-        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-1": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons-Clutch.png",
-            "media_scale": 100,
-            "heading": "Clutch Hold",
-            "text": "<p>An upright position, holding your baby facing you with his or her feet tucked under your arm.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-2": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons-Cradle.png",
-            "media_scale": 100,
-            "heading": "Cradle or Cross-Cradle",
-            "text": "<p>The front of your baby touches your front, on his or her side, while he or she lays in your lap.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-3": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons-LaidBack.png",
-            "media_scale": 100,
-            "heading": "Laid Back Hold",
-            "text": "<p>Laying down comfortably, your baby will rest on top of your chest while you support him.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "70ef0277-fe5c-4a8f-87f1-45aec4bb3ba2": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons-SideLaying.png",
-            "media_scale": 100,
-            "heading": "Side-Laying Hold",
-            "text": "<p>Laying on your side, facing your baby while supporting your baby with your arm to prevent rolling.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-1",
-        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-2",
-        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-3",
-        "70ef0277-fe5c-4a8f-87f1-45aec4bb3ba2"
-      ],
-      "custom_css": [
-        ".card__media {overflow: visible !important;}",
-        ".card__media img {object-fit: contain; background: #fff; padding: 1rem; aspect-ratio: 1 \/ 1; width: auto; border-radius: 50%; left: 50%; transform: translate(-50%, 0); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);}",
-        "@media (min-width: 769px) {.multi-column {width: calc((100% \/ 3) - var(--column-gap) + 2rem); } .card__media {padding-top: 0 !important; height: 15rem; }}"
-      ],
-      "settings": {
-        "title": "Common Breastfeeding Positions",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "grid",
-        "column_size": "small",
-        "column_align": "center",
-        "media_align": "text-center",
-        "image_ratio": "shortest",
-        "color_scheme": "none",
-        "button_style": "btn btn--secondary"
-      }
-    },
     "e83aa573-9d22-47ba-abd8-c081450e09c9": {
       "type": "wave-section",
       "settings": {
@@ -277,31 +200,76 @@
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "How often should I breastfeed my baby?",
-            "text": "<p>The \u001ffirst several weeks, your baby will breastfeed 8-12x every 24 hours. Feed your baby when she is hungry, she will give you signs called hunger cues. Over time, she will breastfeed less often. More information can be found in the Making Milk For YourBaby Q&A.<\/p>"
+            "heading": "Why should I use a breast pump?",
+            "text": "<p>You may need to use a breast pump to express (take milk from your breasts) and store your breast milk when separated from your baby. This can happen when you return to work or are apart from your baby for other reasons.<\/p>"
           }
         },
         "f1c27362-73bd-47e2-bad5-f67345b0fba9": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "How will I know how much milk my baby is getting if I breastfeed?",
-            "text": "<p>Easy. What goes in must come out! You will know how much your baby is getting by how often he has wet and dirty diapers. Healthy weight gain is also a good sign that your baby is getting what he needs. You don’t need to know exactly how much your baby takes. You only need to know that your baby is thriving. This can simplify life with a newborn.<br\/><\/p>"
+            "heading": "How does a breast pump work?",
+            "text": "<p>A breast pump extracts milk from the breasts by creating a seal around the nipple. Then it applies and releases suction to the nipple, which expresses milk from the breast. This suction is similar to a baby suckling at the breast. Each suction and release combination is called a cycle.<\/p>"
           }
         },
         "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "How Long Should I Breastfeed? New Breastfeeding Guidelines Released by the AAP",
-            "text": "<p>The American Academy of Pediatrics (AAP) released new breastfeeding recommendations in June 2022. These new recommendations support mothers to continue breastfeeding for two years or beyond. The recommendations align with guidelines provided by the World Health Organization (WHO), the American Academy of Family Physicians (AAFP), and the Canadian Pediatric Society.<\/p><h5><strong>Learn more here:<\/strong><\/h5><ul><li><a href=\"https:\/\/www.aap.org\/en\/news-room\/news-releases\/aap\/2022\/american-academy-of-pediatrics-calls-for-more-support-for-breastfeeding-mothers-within-updated-policy-recommendations\/\" target=\"_blank\" title=\"https:\/\/www.aap.org\/en\/news-room\/news-releases\/aap\/2022\/american-academy-of-pediatrics-calls-for-more-support-for-breastfeeding-mothers-within-updated-policy-recommendations\/\">American Academy of Pediatrics Calls for More Support for Breastfeeding Mothers Within Updated Policy Recommendations<\/a><\/li><li><a href=\"https:\/\/www.news-medical.net\/news\/20220630\/AAP-recommends-breastfeeding-for-2-years.aspx\" target=\"_blank\" title=\"https:\/\/www.news-medical.net\/news\/20220630\/AAP-recommends-breastfeeding-for-2-years.aspx\">AAP recommends breastfeeding for 2 years<\/a><\/li><\/ul>"
+            "heading": "How often do I need to pump?",
+            "text": "<p>To establish good milk production, you’ll need to breastfeed or breast pump about eight times every 24 hours. Find times throughout your day that work with your schedule to pump. With that frequency of pumping, you’ll need a pump that is reliable and convenient.<\/p>"
+          }
+        },
+        "f496f0b8-2f60-44c1-8ad9-f04dc5b9bded": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How long should I breastfeed my baby?",
+            "text": "<p>According to guidelines from health officials and reliable organizations, moms should solely breastfeed their babies for at least six months before introducing other foods in addition to breastmilk. The longer a mother breastfeeds, the more protection they have for their overall health.<\/p>"
+          }
+        },
+        "2b3b2336-c8fa-4020-aa6d-bba470877632": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What’s an open system breast pump?",
+            "text": "<p>An open system does not have a barrier between the wet side and dry side. Without a barrier, moisture from the humidity produced by pumping your warm milk can get into the tubing and breast pump motor. Organisms such as mold, bacteria and viruses thrive and grow in moist environments.<\/p>"
+          }
+        },
+        "17217a10-3bc6-48d8-84d1-193ddbb9f37a": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What’s a closed system breast pump?",
+            "text": "<p>A closed system should have a barrier between the wet side and dry side. This barrier helps in preventing moisture from getting in to the tubing and pump motor. So, there should be no need to clean and dry the tubing and your breast milk will stay safe.<\/p>"
+          }
+        },
+        "5ae684cb-9828-4c90-ac53-58b4b30c3585": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How do I use my pump?",
+            "text": "<p>Follow the instructions for use that come with your breast pump. There will be different settings that you can control with your pump to personalize each pumping session. Find the right settings that feel comfortable to you.<\/p><p><a href=\"\/pages\/instructions-for-use\" title=\"Instructions For Use\">Learn More<\/a><\/p>"
+          }
+        },
+        "39314ff0-072d-45af-aa95-e52d6fdaf5fc": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How do I store breast milk?",
+            "text": "<p>The CDC and other health organizations have guidelines for storing breast milk at the proper temperatures and durations. Click below for more information on these recommendations to store breast milk properly.<\/p><p><a href=\"\/blogs\/posts\/how-to-store-breast-milk-safely\/\" title=\"\/blogs\/posts\/how-to-store-breast-milk-safely\/\">Learn More<\/a><\/p>"
           }
         }
       },
       "block_order": [
         "template--21956781867323__ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5-question-4",
         "f1c27362-73bd-47e2-bad5-f67345b0fba9",
-        "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8"
+        "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8",
+        "f496f0b8-2f60-44c1-8ad9-f04dc5b9bded",
+        "2b3b2336-c8fa-4020-aa6d-bba470877632",
+        "17217a10-3bc6-48d8-84d1-193ddbb9f37a",
+        "5ae684cb-9828-4c90-ac53-58b4b30c3585",
+        "39314ff0-072d-45af-aa95-e52d6fdaf5fc"
       ],
       "settings": {
         "heading": "Frequently Asked Questions",
@@ -343,7 +311,6 @@
     "13a235f4-a07a-47c9-a72f-4a2ab4888df2",
     "573619db-0785-4d1f-9f1c-27dc8cc93717",
     "373c50a2-8138-49d8-97b6-e55bb6ee7315",
-    "9064ad3d-8ef0-49cd-88a2-f0e079353f22",
     "e83aa573-9d22-47ba-abd8-c081450e09c9",
     "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5",
     "beed3893-13e5-403a-bc6d-b88cf18d5ece",
