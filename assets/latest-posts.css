@@ -8,6 +8,7 @@
     display: flex;
     align-items: flex-end;
     gap: 10rem;
+    justify-content: space-between;
 }
 
 .flex-title_content {
@@ -96,6 +97,7 @@ h3.post-item_title {
     .flex-title {
         flex-direction: column;
         gap: 2rem;
+        align-items: flex-start;
     }
 }
 
