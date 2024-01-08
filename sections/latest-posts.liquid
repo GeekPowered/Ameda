@@ -14,12 +14,6 @@
             </div>
         </div>
         <div class="flex-posts">
-            {% assign tag = section.settings.blog_tag %}
-            {% if tag %}
-                {% assign articles = blogs['posts'].articles | where_exp: "article", "article.tags contains tag" %}
-            {% else %}
-                {% assign articles = blogs['posts'].articles %}
-            {% endif %}
             {% for article in blogs['posts'].articles limit:4 %}
                 <div class="post-item">
                     <div class="post-item_image">
