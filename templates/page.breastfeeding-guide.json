@@ -325,6 +325,13 @@
         "full_width": true
       }
     },
+    "beed3893-13e5-403a-bc6d-b88cf18d5ece": {
+      "type": "latest-posts",
+      "settings": {
+        "title": "Latest Posts",
+        "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
+      }
+    },
     "75170376-c327-4296-adad-b15a7708d790": {
       "type": "wave-section",
       "settings": {
@@ -345,6 +352,7 @@
     "9064ad3d-8ef0-49cd-88a2-f0e079353f22",
     "e83aa573-9d22-47ba-abd8-c081450e09c9",
     "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5",
+    "beed3893-13e5-403a-bc6d-b88cf18d5ece",
     "75170376-c327-4296-adad-b15a7708d790"
   ]
 }
