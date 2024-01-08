@@ -183,6 +183,9 @@
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1",
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1"
       ],
+      "custom_css": [
+        ".section--padded {margin-bottom: 0; padding-bottom: 0;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/milk-work.jpg",
         "video_external": "",
@@ -272,6 +275,64 @@
         "color_scheme": "none",
         "button_style": "btn btn--secondary"
       }
+    },
+    "e83aa573-9d22-47ba-abd8-c081450e09c9": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5": {
+      "type": "faq",
+      "blocks": {
+        "template--21956781867323__ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5-question-4": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How often should I breastfeed my baby?",
+            "text": "<p>The \u001ffirst several weeks, your baby will breastfeed 8-12x every 24 hours. Feed your baby when she is hungry, she will give you signs called hunger cues. Over time, she will breastfeed less often. More information can be found in the Making Milk For YourBaby Q&A.<\/p>"
+          }
+        },
+        "f1c27362-73bd-47e2-bad5-f67345b0fba9": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How will I know how much milk my baby is getting if I breastfeed?",
+            "text": "<p>Easy. What goes in must come out! You will know how much your baby is getting by how often he has wet and dirty diapers. Healthy weight gain is also a good sign that your baby is getting what he needs. You don’t need to know exactly how much your baby takes. You only need to know that your baby is thriving. This can simplify life with a newborn.<br\/><\/p>"
+          }
+        },
+        "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How Long Should I Breastfeed? New Breastfeeding Guidelines Released by the AAP",
+            "text": "<p>The American Academy of Pediatrics (AAP) released new breastfeeding recommendations in June 2022. These new recommendations support mothers to continue breastfeeding for two years or beyond. The recommendations align with guidelines provided by the World Health Organization (WHO), the American Academy of Family Physicians (AAFP), and the Canadian Pediatric Society.<\/p><h5><strong>Learn more here:<\/strong><\/h5><ul><li><a href=\"https:\/\/www.aap.org\/en\/news-room\/news-releases\/aap\/2022\/american-academy-of-pediatrics-calls-for-more-support-for-breastfeeding-mothers-within-updated-policy-recommendations\/\" target=\"_blank\" title=\"https:\/\/www.aap.org\/en\/news-room\/news-releases\/aap\/2022\/american-academy-of-pediatrics-calls-for-more-support-for-breastfeeding-mothers-within-updated-policy-recommendations\/\">American Academy of Pediatrics Calls for More Support for Breastfeeding Mothers Within Updated Policy Recommendations<\/a><\/li><li><a href=\"https:\/\/www.news-medical.net\/news\/20220630\/AAP-recommends-breastfeeding-for-2-years.aspx\" target=\"_blank\" title=\"https:\/\/www.news-medical.net\/news\/20220630\/AAP-recommends-breastfeeding-for-2-years.aspx\">AAP recommends breastfeeding for 2 years<\/a><\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21956781867323__ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5-question-4",
+        "f1c27362-73bd-47e2-bad5-f67345b0fba9",
+        "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "heading_align": "text-center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "75170376-c327-4296-adad-b15a7708d790": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "top",
+        "waveposition": ""
+      }
     }
   },
   "order": [
@@ -281,6 +342,9 @@
     "e8a8f773-01a4-46e3-9657-9c2de88372b8",
     "13a235f4-a07a-47c9-a72f-4a2ab4888df2",
     "573619db-0785-4d1f-9f1c-27dc8cc93717",
-    "9064ad3d-8ef0-49cd-88a2-f0e079353f22"
+    "9064ad3d-8ef0-49cd-88a2-f0e079353f22",
+    "e83aa573-9d22-47ba-abd8-c081450e09c9",
+    "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5",
+    "75170376-c327-4296-adad-b15a7708d790"
   ]
 }
