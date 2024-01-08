@@ -1,0 +1,511 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "b58f02cc-fabc-4622-acfb-8050bf44f593": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Ameda",
+            "heading_size": "h0",
+            "heading_h1": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/about.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "573619db-0785-4d1f-9f1c-27dc8cc93717": {
+      "type": "media-with-text",
+      "blocks": {
+        "f066c075-e638-41ea-befa-7f79e7d555b0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Our Story"
+          }
+        },
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "The first name in breast pumps.",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>More than 75 years ago, Swedish engineer, Einar Egnell made it his life’s work to help breastfeeding moms. After years of research, Egnell created the first comfortable and effective breast pump that closely mimics the suckling rhythm of nursing infants. In the process, Egnell also created the vacuum and cycling standards that have since become the industry benchmark.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/pages\/history",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "f066c075-e638-41ea-befa-7f79e7d555b0",
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1",
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1",
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-section2_2x_96a1c8f5-e72f-470a-a0b3-67386ad25e10.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "18a98304-eea6-4351-8b16-216e0a96ac0a": {
+      "type": "media-with-text",
+      "blocks": {
+        "6a1daf48-ad4c-43ce-9dec-dd9ab2bec5c6": {
+          "type": "subheading",
+          "settings": {
+            "text": "Who We Are"
+          }
+        },
+        "c42513c3-25bd-4452-a0e1-911e42a9f8bc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ameda is WHO Compliant.",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "7ff6ac9f-6b60-4f2a-b30e-bf9a5db98392": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As part of our ongoing mission to be active in the global breastfeeding community, we at Ameda support and comply with the World Health Organization’s goals, including its International Code of Marketing Breast Milk Substitutes, also known as the WHO Code. Ameda is one of the few companies that is WHO code compliant in the breastfeeding solutions category. Not all major breastfeeding products manufacturing companies abide this voluntary determination of standard.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "175fb035-d4c0-4ac8-b42d-1ba06f25c6f5": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/pages\/who-code-compliant",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "6a1daf48-ad4c-43ce-9dec-dd9ab2bec5c6",
+        "c42513c3-25bd-4452-a0e1-911e42a9f8bc",
+        "7ff6ac9f-6b60-4f2a-b30e-bf9a5db98392",
+        "175fb035-d4c0-4ac8-b42d-1ba06f25c6f5"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-section2.2_2x_ff06b0f3-381c-469a-be50-77f600920b0d.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "785e07b8-ac2a-4dc9-9132-62454674e1e7": {
+      "type": "media-with-text",
+      "blocks": {
+        "148977b6-cecb-4442-aed3-f21d5627c799": {
+          "type": "subheading",
+          "settings": {
+            "text": "Who We Are"
+          }
+        },
+        "f80ed896-30ae-4e2b-a3cc-2b82bb004ef0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Solutions From Hospital to Home",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "f5521d42-4782-4d28-b25c-3436a265af9c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With a full portfolio of clinically-based solutions, Ameda is in the hospital ensuring moms get started right with products that are trusted by clinicians and lactation experts. As moms transition home to begin life with their babies, we’re there with a full range of favorites that include personal breast pumps, breast care items, and breast milk collection & storage options.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "284e3787-acc7-4c7e-bf3c-5380610c360a": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "\/pages\/history\/",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "148977b6-cecb-4442-aed3-f21d5627c799",
+        "f80ed896-30ae-4e2b-a3cc-2b82bb004ef0",
+        "f5521d42-4782-4d28-b25c-3436a265af9c",
+        "284e3787-acc7-4c7e-bf3c-5380610c360a"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/who-we_-are.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "7c2afcd6-707e-4619-8790-89a3b68da3f0": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21939474530619__7c2afcd6-707e-4619-8790-89a3b68da3f0-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_Pearl_Product.jpg",
+            "media_scale": 100,
+            "heading": "Pearl®",
+            "text": "<p>Ameda® launches Pearl® , its most mobile Hospital Grade Pump designed for use in the hospital and at home.<\/p>",
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/products\/ameda®-pearl®-hospital-grade-breast-pump"
+          }
+        },
+        "template--21939474530619__7c2afcd6-707e-4619-8790-89a3b68da3f0-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/platinum-front-bottles-2-simple-1000x1000_2x_4a11065b-d4ed-4ad0-9b3b-0e47dbfd7862.jpg",
+            "media_scale": 100,
+            "heading": "Platinum®",
+            "text": "<p>Take the quality and peace of mind of the hospital home with you by renting the Platinum pump.<\/p>",
+            "button_label": "Learn More",
+            "button_link": ""
+          }
+        },
+        "template--21939474530619__7c2afcd6-707e-4619-8790-89a3b68da3f0-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/hygienikit-1000x1000-1_1.jpg",
+            "media_scale": 100,
+            "heading": "Universal HygieniKit™",
+            "text": "<p>Our milk collection system features the world’s only FDA-cleared patented protective barrier.<\/p>",
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/products\/ameda-hygienikit®-universal-kit"
+          }
+        },
+        "d49aaf1d-368a-4ffb-9080-f6e6c40fa22b": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/penguin_warmers_500x500_2.jpg",
+            "media_scale": 100,
+            "heading": "Deluxe Penguin Warmer",
+            "text": "<p>Safely, effectively, and consistently warm breast milk to mom’s ideal body temperature range every time.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21939474530619__7c2afcd6-707e-4619-8790-89a3b68da3f0-column-1",
+        "template--21939474530619__7c2afcd6-707e-4619-8790-89a3b68da3f0-column-2",
+        "template--21939474530619__7c2afcd6-707e-4619-8790-89a3b68da3f0-column-3",
+        "d49aaf1d-368a-4ffb-9080-f6e6c40fa22b"
+      ],
+      "settings": {
+        "title": "Trusted by Hospitals",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "d35ed043-a14a-4efe-ad13-5bedc54c91b4": {
+      "type": "multi-column",
+      "blocks": {
+        "5bba4961-1a59-4e02-af33-f3259f348a8c": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_ShopCategoryIcons-11.png",
+            "media_scale": 65,
+            "heading": "Breast Pumps",
+            "text": "<p>Browse our hospital-strength breast pumps for truly personalized pumping sessions.<\/p>",
+            "button_label": "Shop All",
+            "button_link": "shopify:\/\/collections\/breast-pumps"
+          }
+        },
+        "1d93f691-31f6-4800-b0e1-e7a54f9bce2b": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_ShopCategoryIcons-13.png",
+            "media_scale": 65,
+            "heading": "Breast Milk Storage",
+            "text": "<p>Prevent spilling or spoiling with our breast milk storage bottles and accessories.<\/p>",
+            "button_label": "Shop All",
+            "button_link": "shopify:\/\/collections\/breast-milk-storage"
+          }
+        },
+        "4649055c-2261-45b7-a140-9bffa49af15e": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_ShopCategoryIcons-14.png",
+            "media_scale": 65,
+            "heading": "Breast Care",
+            "text": "<p>Take care of your nipples and skin with our lanolin cream, breast pads, and other items.<\/p>",
+            "button_label": "Shop All",
+            "button_link": "shopify:\/\/collections\/breast-care"
+          }
+        },
+        "94e85e1a-a445-47fa-95d8-2a04b605e70d": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_ShopCategoryIcons-12.png",
+            "media_scale": 65,
+            "heading": "Accessories",
+            "text": "<p>A wide selection of accessories to ensure mom has the most comfortable breastfeeding experience.<\/p>",
+            "button_label": "Shop All",
+            "button_link": "shopify:\/\/collections\/accessories"
+          }
+        }
+      },
+      "block_order": [
+        "5bba4961-1a59-4e02-af33-f3259f348a8c",
+        "1d93f691-31f6-4800-b0e1-e7a54f9bce2b",
+        "4649055c-2261-45b7-a140-9bffa49af15e",
+        "94e85e1a-a445-47fa-95d8-2a04b605e70d"
+      ],
+      "settings": {
+        "title": "Loved By Moms",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1.77",
+        "color_scheme": "none",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "159402bb-207e-4471-9891-5b1125275e2a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "What We Do"
+          }
+        },
+        "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Ameda Difference",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Ameda, we recognize that each journey is unique, and we dedicate our efforts to providing safe, trusted and accessible solutions for all moms.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "e4b16516-e3a0-4627-8911-62dd6555e6e9": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Careers",
+            "button_1_link": "shopify:\/\/pages\/careers",
+            "button_1_style": "btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-subheading-1",
+        "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-heading-1",
+        "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-text-1",
+        "e4b16516-e3a0-4627-8911-62dd6555e6e9"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "aa56a765-7216-4362-8da6-7254c9eaeabc": {
+      "type": "faq",
+      "blocks": {
+        "template--21939474530619__aa56a765-7216-4362-8da6-7254c9eaeabc-question-1": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Safe",
+            "text": "<p>Ameda’s high quality solutions are designed to keep mom and baby safe and to protect the unique properties of breast milk.<\/p><p>Universal HygieniKit™ is the world’s only collection kit with an FDA-clead barrier designed to protect breast milk and baby from bacteria, mold, and viruses.<\/p><p>Penguin warming systems use Dual Pouch Smart Warming Technology™ to safely warm breast milk and protect the integrity of breastmilk’s valuable nutrients.<\/p><p>Platinum multi-user breast pumps are clinically proven to initiate and maintain breast milk supply. The Mya Joy family of personal pumps feature hospital strength performance designed to maintain milk supply.<\/p>"
+          }
+        },
+        "55486eef-8866-4cb6-8cb5-214f376a0e4d": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Trusted",
+            "text": "<p>Ameda is the first name in breast pumps, offering complete solutions from hospital to home.<\/p><p>Ameda is the first and original name in breast pumps. We introduced the first effective hospital grade pump, the first portable hospital pump, and the first and only FDA-cleared patented milk collection system.<\/p><p>Ameda is a pioneer in new technology. We created breast pumps that mimic infant feeding, collection systems that prevent milk from entering tubing and Vacusense™ technology which optimizes pumping in a wide range of settings.<\/p><p>Ameda is WHO code compliant and actively supports the International Code of Marketing Breast milk substitutes.<\/p>"
+          }
+        },
+        "45383f6f-c868-440c-9b0f-b6251c4c8955": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Accessible",
+            "text": "<p>Ameda supports all moms with approachable service, education, and product solutions.<\/p><p>Ameda products are available around the globe and across a wide range of distribution outlets. Our complete range of solutions are accessible to all moms with diverse needs and circumstances.<\/p><p>Ameda proudly offers Customer Service and ParentCare Support from an experienced team of dedicated professionals.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21939474530619__aa56a765-7216-4362-8da6-7254c9eaeabc-question-1",
+        "55486eef-8866-4cb6-8cb5-214f376a0e4d",
+        "45383f6f-c868-440c-9b0f-b6251c4c8955"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "225748ac-c324-477e-b2dc-1a2714865f85": {
+      "type": "image-banner",
+      "blocks": {
+        "4649bb1b-5595-40f0-946d-e541e09f0d72": {
+          "type": "subheading",
+          "settings": {
+            "text": "Ameda Breast Pumps"
+          }
+        },
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Giving Moms<br>Peace of Mind.",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ameda breast pumps offer moms quality and<br\/>convenience for whatever her day holds.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-button-1": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "4649bb1b-5595-40f0-946d-e541e09f0d72",
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-heading-1",
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-text-1",
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-button-1"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/about-section3.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b58f02cc-fabc-4622-acfb-8050bf44f593",
+    "573619db-0785-4d1f-9f1c-27dc8cc93717",
+    "18a98304-eea6-4351-8b16-216e0a96ac0a",
+    "785e07b8-ac2a-4dc9-9132-62454674e1e7",
+    "7c2afcd6-707e-4619-8790-89a3b68da3f0",
+    "d35ed043-a14a-4efe-ad13-5bedc54c91b4",
+    "159402bb-207e-4471-9891-5b1125275e2a",
+    "aa56a765-7216-4362-8da6-7254c9eaeabc",
+    "225748ac-c324-477e-b2dc-1a2714865f85"
+  ]
+}
