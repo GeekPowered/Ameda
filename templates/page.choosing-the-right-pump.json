@@ -95,7 +95,7 @@
         "table {background: rgba(255, 255, 255, 0.5); border: 1px solid rgba(0, 0, 0, 0.1);}",
         "table td,table th {border: none;}",
         "table thead tr {background: rgb(var(--link-color)); color: #fff;}",
-        "table thead th {font-weight: bold; text-align: center;}",
+        "table thead th {font-weight: 900; text-align: center; text-transform: uppercase;}",
         "table tr:nth-child(even):not(:first-of-type) {background-color: #fff;}",
         "@media (max-width: 768px) {.table-wrapper {overflow: auto; } .table-wrapper table {min-width: 75rem; }}"
       ],
