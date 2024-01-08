@@ -35,6 +35,7 @@
     overflow: hidden;
     width: calc(50% - (var(--gutter-md) / 2));
     min-height: 25rem;
+    flex-grow: 1;
 }
 
 .post-item > div {
