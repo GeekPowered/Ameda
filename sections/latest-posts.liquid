@@ -2,7 +2,7 @@
 
 <div class="section section--padded latest-posts">
     <div class="container">
-        {% if section.settings.show_flex_title %}
+        {% if section.settings.top_content_visible %}
             <div class="flex-title">
                 <div class="flex-title_content">
                     <h2>{{ section.settings.title | default: "Latest Posts" }}</h2>
@@ -93,8 +93,8 @@
         },
         {
             "type": "checkbox",
-            "id": "show_flex_title",
-            "label": "Show Flex Title",
+            "id": "top_content_visible",
+            "label": "Top Content Visible?",
             "default": true
         },
         {
