@@ -2,17 +2,19 @@
 
 <div class="section section--padded latest-posts">
     <div class="container">
-        <div class="flex-title">
-            <div class="flex-title_content">
-                <h2>{{ section.settings.title | default: "Latest Posts" }}</h2>
-                {% if section.settings.description %}<p class="m-0">{{ section.settings.description }}</p>{% endif %}
+        {% if section.settings.show_flex_title %}
+            <div class="flex-title">
+                <div class="flex-title_content">
+                    <h2>{{ section.settings.title | default: "Latest Posts" }}</h2>
+                    {% if section.settings.description %}<p class="m-0">{{ section.settings.description }}</p>{% endif %}
+                </div>
+                <div class="flex-title_button">
+                    <a href="/blogs/posts/" class="btn btn--primary">
+                        All Posts
+                    </a>
+                </div>
             </div>
-            <div class="flex-title_button">
-                <a href="/blogs/posts/" class="btn btn--primary">
-                    All Posts
-                </a>
-            </div>
-        </div>
+        {% endif %}
         <div class="flex-posts">
             {% assign tag = section.settings.blog_tag %}
             {% assign articles_count = 0 %}
@@ -88,6 +90,12 @@
           "label": "Description",
           "id": "description",
           "default": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
+        },
+        {
+            "type": "checkbox",
+            "id": "show_flex_title",
+            "label": "Show Flex Title",
+            "default": true
         },
         {
           "type": "text",
