@@ -265,7 +265,7 @@
         "button_link": "",
         "layout": "grid",
         "column_size": "small",
-        "column_align": "left",
+        "column_align": "center",
         "media_align": "text-center",
         "image_ratio": "1",
         "color_scheme": "none",
@@ -367,12 +367,24 @@
             "text": "<p>At Ameda, we recognize that each journey is unique, and we dedicate our efforts to providing safe, trusted and accessible solutions for all moms.<\/p>",
             "enlarge_text": true
           }
+        },
+        "e4b16516-e3a0-4627-8911-62dd6555e6e9": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Careers",
+            "button_1_link": "shopify:\/\/pages\/careers",
+            "button_1_style": "btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
         }
       },
       "block_order": [
         "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-subheading-1",
         "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-heading-1",
-        "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-text-1"
+        "template--21939474530619__159402bb-207e-4471-9891-5b1125275e2a-text-1",
+        "e4b16516-e3a0-4627-8911-62dd6555e6e9"
       ],
       "settings": {
         "text_position": "justify-center",
