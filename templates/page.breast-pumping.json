@@ -14,7 +14,7 @@
         "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Breastfeeding Guide",
+            "heading": "Breast Pumping Guide",
             "heading_size": "h0",
             "heading_h1": true
           }
@@ -24,7 +24,7 @@
         "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/bf-banner.png",
+        "image_desktop": "shopify:\/\/shop_images\/Breastpumpingguide.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
@@ -47,13 +47,13 @@
         "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-subheading-1": {
           "type": "subheading",
           "settings": {
-            "text": "Your Guide To Breastfeeding"
+            "text": "Your Guide To Breast Pumping"
           }
         },
         "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Breastfeeding is beneficial for you, your baby, and the community.",
+            "heading": "Breast pumping is an important part of your motherhood journey.",
             "heading_size": "h2",
             "heading_h1": false
           }
@@ -61,7 +61,7 @@
         "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Breast milk is the perfect food for your baby, helping to keep your baby healthy and provide essential vitamins and nutrients that only a mother’s body can provide.<\/p>",
+            "text": "<p>At Ameda, it is our mission to help moms through their breastfeeding journey, whether they’re experienced or just beginning. This guide will help answer common questions about breast pumping and more.<\/p>",
             "enlarge_text": true
           }
         }
@@ -80,70 +80,6 @@
         "prevent_animation": false
       }
     },
-    "e8a8f773-01a4-46e3-9657-9c2de88372b8": {
-      "type": "multi-column",
-      "blocks": {
-        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-1": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons_WORKING_Mom.png",
-            "media_scale": 100,
-            "heading": "For Mom",
-            "text": "<p>Reduced risk of postpartum depression, type II diabetes, and breast or ovarian cancer.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-2": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons_WORKING_Baby.png",
-            "media_scale": 100,
-            "heading": "For Baby",
-            "text": "<p>Lower risk of colds, asthma, ear infections, diabetes, obesity, and skin-related conditions.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-3": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons_WORKING_Community.png",
-            "media_scale": 100,
-            "heading": "For the Community",
-            "text": "<p>More cost effective and less wasteful compared to feeding with formula.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-1",
-        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-2",
-        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-3"
-      ],
-      "custom_css": [
-        "#template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8 {background: #fff; margin-top: 0; margin-bottom: 0; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5));}",
-        ".card {flex-direction: row; gap: 2rem;}",
-        ".card__media {padding-top: 0 !important; height: 5rem; width: 5rem; flex-shrink: 0; margin-top: 0.5em;}"
-      ],
-      "settings": {
-        "title": "",
-        "heading_align": "text-start",
-        "button_label": "",
-        "button_link": "",
-        "layout": "grid",
-        "column_size": "small",
-        "column_align": "left",
-        "media_align": "text-left",
-        "image_ratio": "1",
-        "color_scheme": "none",
-        "button_style": "btn btn--secondary"
-      }
-    },
     "13a235f4-a07a-47c9-a72f-4a2ab4888df2": {
       "type": "wave-section",
       "settings": {
@@ -156,16 +92,10 @@
     "573619db-0785-4d1f-9f1c-27dc8cc93717": {
       "type": "media-with-text",
       "blocks": {
-        "f066c075-e638-41ea-befa-7f79e7d555b0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Breastfeeding 101"
-          }
-        },
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "How Milk Production Works",
+            "heading": "Choosing the Right Pump",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -173,15 +103,23 @@
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The more frequently you breastfeed or pump, the more milk you’ll make. Hormones play a key role in milk production. Every time you breastfeed or pump, your body releases the hormone prolactin. With each release, your body makes and stores more milk in the breast. If the level of this hormone gets too low, your milk supply will decrease. This is why it is important to breastfeed or pump right after delivery and then at regular time frames. Initially this is about eight times every 24 hours.<br\/><br\/>It is also very important to drain your breast fully when feeding your baby. A drained breast produces milk quickly, while a full breast produces milk slowly. Most mothers have an average of four milk ejection reflexes during a breastfeeding session.<\/p>",
-            "enlarge_text": false
+            "text": "<p>When it comes to choosing a breast pump, be sure to know what features matter most to you. There are so many options for breast pumps today, and you need to be sure you’re buying the right one for your lifestyle.<\/p><p><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "481b91cc-86ef-4e16-bfb9-b1ba9a9b9571": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "\/pages\/choosing-the-right-pump",
+            "button_style": "btn btn--primary"
           }
         }
       },
       "block_order": [
-        "f066c075-e638-41ea-befa-7f79e7d555b0",
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1",
-        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1"
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1",
+        "481b91cc-86ef-4e16-bfb9-b1ba9a9b9571"
       ],
       "custom_css": [
         ".section--padded {margin-bottom: 0; padding-bottom: 0;}"
@@ -192,6 +130,52 @@
         "video_description": "",
         "video_autoplay": false,
         "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "373c50a2-8138-49d8-97b6-e55bb6ee7315": {
+      "type": "media-with-text",
+      "blocks": {
+        "1c731b52-41e6-40b0-9299-c3eefdea414b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Breast Pumping on Milk 101",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "e18c8bd0-5ba0-439f-a422-41557dd36fc7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We don’t expect you to have all of the answers as a first-time mom (or even an experienced one). Our blog features posts about breastfeeding, breast pumping, and other topics to help you along the way. You aren’t alone in this journey, Mom!<\/p><p><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "36c12609-8906-47fd-8c21-792b6f67f5f1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Our Blog",
+            "button_link": "shopify:\/\/blogs\/posts",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "1c731b52-41e6-40b0-9299-c3eefdea414b",
+        "e18c8bd0-5ba0-439f-a422-41557dd36fc7",
+        "36c12609-8906-47fd-8c21-792b6f67f5f1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/milk-work.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
         "image_fit": "cover",
         "media_width": 50,
         "media_scale": 100,
@@ -356,9 +340,9 @@
     "main",
     "b58f02cc-fabc-4622-acfb-8050bf44f593",
     "df1b65c6-e69c-414d-aefc-7ff949381f08",
-    "e8a8f773-01a4-46e3-9657-9c2de88372b8",
     "13a235f4-a07a-47c9-a72f-4a2ab4888df2",
     "573619db-0785-4d1f-9f1c-27dc8cc93717",
+    "373c50a2-8138-49d8-97b6-e55bb6ee7315",
     "9064ad3d-8ef0-49cd-88a2-f0e079353f22",
     "e83aa573-9d22-47ba-abd8-c081450e09c9",
     "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5",
