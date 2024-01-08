@@ -84,13 +84,16 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": ""
       }
     },
     "594f1d1c-eef1-42cc-aa90-334feaf306cc": {
       "type": "custom-liquid",
+      "custom_css": [
+        "@media (max-width: 768px) {table {overflow: auto; min-width: 75rem; }}"
+      ],
       "settings": {
         "custom_liquid": "<table>\n  <thead>\n    <tr>\n      <th><\/th>\n      <th colspan=\"2\"><strong>Personal Pumps<\/strong><\/th>\n      <th colspan=\"2\"><strong>Hospital Grade Pumps<\/strong><\/th>\n    <\/tr>\n    <tr>\n      <th>PUMP MODEL<\/th>\n      <th>Mya Joy<\/th>\n      <th>Mya Joy Plus<\/th>\n      <th>Pearl<sup>®<\/sup><\/th>\n      <th>Platinum<\/th>\n    <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">TYPE OF PUMP<\/th>\n      <td>Single User<\/td>\n      <td>Single User<\/td>\n      <td>Multi User<\/td>\n      <td>Multi User<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">AVAILABLE TO RENT<\/th>\n      <td>No<\/td>\n      <td>No<\/td>\n      <td>Yes<\/td>\n      <td>Yes<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">IDEAL FOR<\/th>\n      <td colspan=\"2\">Occasional or Daily Pumping, Back to Work<\/td>\n      <td colspan=\"2\">Exclusive or Frequent Pumping, Building and Maintaining Milk Supplies<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">MILK COLLECTION SYSTEM TYPE<\/th>\n      <td>Closed<\/td>\n      <td>Closed<\/td>\n      <td>Closed<\/td>\n      <td>Closed<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">MILK COLLECTION SYSTEM<\/th>\n      <td>Universal HygieniKit<sup>™<\/sup><\/td>\n      <td>Universal HygieniKit<sup>™<\/sup><\/td>\n      <td>Universal HygieniKit<sup>™<\/sup><\/td>\n      <td>Standard or Universal HygieniKit<sup>™<\/sup><\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">SIZE (L x W x H)<\/th>\n      <td>7” x 5.50” x 8”<\/td>\n      <td>7” x 5.50” x 8”<\/td>\n      <td>8.5\" x 7.25\" x 6.5\"<\/td>\n      <td>9.75” x 10.5” x 8”<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">WEIGHT<\/th>\n      <td>.5 Lbs<\/td>\n      <td>.7 Lbs<\/td>\n      <td>3.3 Lbs<\/td>\n      <td>9.75 Lbs<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">PUMPING STYLE<\/th>\n      <td>Single or Double<\/td>\n      <td>Single or Double<\/td>\n      <td>Single or Double<\/td>\n      <td>Single or Double<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">BATTERY TYPE<\/th>\n      <td>4 AA<\/td>\n      <td>Rechargeable with USB-C cord<\/td>\n      <td>Rechargeable<\/td>\n      <td>AC Adaptor Only<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">NOISE LEVEL<\/th>\n      <td>45db<\/td>\n      <td>45db<\/td>\n      <td>45db<\/td>\n      <td>45db<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">PREPROGRAMMED STIMILUATION MODE<\/th>\n      <td>Yes, 6 combinations<\/td>\n      <td>Yes, 6 combinations<\/td>\n      <td>Yes, 6 combinations<\/td>\n      <td>Manual selection - 5000 combinations<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">PREPROGRAMMED EXPRESSION MODE<\/th>\n      <td>Yes, 12 combinations<\/td>\n      <td>Yes, 12 combinations<\/td>\n      <td>Manual Selection - 72 combinations<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">WARRANTY<\/th>\n      <td>2 years<\/td>\n      <td>2 years<\/td>\n      <td>3 years<\/td>\n      <td>3 years<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">SERVICEABLE<\/th>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>Yes<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">LED DISPLAY W\/ PUSH BUTTONS & TIMER<\/th>\n      <td>Yes<\/td>\n      <td>Yes<\/td>\n      <td>Yes<\/td>\n      <td>Yes<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">AUTO POWER OFF<\/th>\n      <td>Yes<\/td>\n      <td>Yes<\/td>\n      <td>Yes<\/td>\n      <td>Yes<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">INTEGRATED CARRY HANDLE<\/th>\n      <td><\/td>\n      <td><\/td>\n      <td>Yes<\/td>\n      <td>Yes<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">INTEGRATED BELT CLIP OR LANYARD<\/th>\n      <td>Yes, Belt Clip<\/td>\n      <td>Yes, Lanyard<\/td>\n      <td>No<\/td>\n      <td>No<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">INTEGRATED BOTTLE HOLDERS<\/th>\n      <td><\/td>\n      <td><\/td>\n      <td>Yes<\/td>\n      <td>Yes<\/td>\n    <\/tr>\n    <tr>\n      <th scope=\"row\">ADJUSTABLE NIGHT LIGHT<\/th>\n      <td><\/td>\n      <td><\/td>\n      <td>Yes<\/td>\n      <td><\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>",
         "section_height": "default",
@@ -103,7 +106,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": ""
       }
@@ -154,7 +157,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": "top"
       }
