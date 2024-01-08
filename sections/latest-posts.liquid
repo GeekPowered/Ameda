@@ -5,7 +5,7 @@
         <div class="flex-title">
             <div class="flex-title_content">
                 <h2>{{ section.settings.title | default: "Latest Posts" }}</h2>
-                <p class="m-0">{{ section.settings.description | default: "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you." }}</p>
+                {% if section.settings.description %}<p class="m-0">{{ section.settings.description | default: "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you." }}</p>{% endif %}
             </div>
             <div class="flex-title_button">
                 <a href="/blogs/posts/" class="btn btn--primary">
