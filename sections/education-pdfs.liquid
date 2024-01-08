@@ -6,8 +6,8 @@
             <h2>Education PDFs</h2>
         </div>
         <div class="education-list">
-            {% for education_pdf in shop.metaobjects.education_pdf.values | limit: 4 %}
-                <a href="/pages/education" class="education-item">
+            {% for education_pdf in shop.metaobjects.education_pdf.values %}
+                <a href="/pages/education/" class="education-item">
                     <div class="education-image-wrapper">
                         <img src="{{ education_pdf.cover_image |  image_url  }}" />
                     </div>

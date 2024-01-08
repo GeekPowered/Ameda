@@ -89,12 +89,61 @@
         "dividers": "none",
         "prevent_animation": false
       }
+    },
+    "d8605b73-ead8-467e-8dcb-0d0815eee53e": {
+      "type": "video",
+      "blocks": {
+        "template--21958283886907__d8605b73-ead8-467e-8dcb-0d0815eee53e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Flange size matters.",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "template--21958283886907__d8605b73-ead8-467e-8dcb-0d0815eee53e-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You wouldn’t buy any bra off the rack without checking the size on the label. But what fewer new moms realize is that the same principle applies to pumping. Your best flange fit might be different from the mom next to you.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "a0e98797-cb93-486f-9775-13e8f59b6765": {
+          "type": "button",
+          "settings": {
+            "button_label": "Milk 101 Blog",
+            "button_link": "shopify:\/\/blogs\/posts",
+            "button_style": "btn btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21958283886907__d8605b73-ead8-467e-8dcb-0d0815eee53e-heading-1",
+        "template--21958283886907__d8605b73-ead8-467e-8dcb-0d0815eee53e-text-1",
+        "a0e98797-cb93-486f-9775-13e8f59b6765"
+      ],
+      "settings": {
+        "video_external": "https:\/\/www.youtube.com\/watch?v=28TlQWd_UPo",
+        "video_description": "",
+        "poster_image": "shopify:\/\/shop_images\/flange-video-thumb.webp",
+        "video_size": "sm",
+        "video_autoplay": false,
+        "text_align": "text-start",
+        "color_scheme": "1"
+      }
+    },
+    "b4ac1ed9-6195-4f5b-bc49-69c3bb239c4c": {
+      "type": "education-pdfs",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "b58f02cc-fabc-4622-acfb-8050bf44f593",
     "df1b65c6-e69c-414d-aefc-7ff949381f08",
-    "594f1d1c-eef1-42cc-aa90-334feaf306cc"
+    "594f1d1c-eef1-42cc-aa90-334feaf306cc",
+    "d8605b73-ead8-467e-8dcb-0d0815eee53e",
+    "b4ac1ed9-6195-4f5b-bc49-69c3bb239c4c"
   ]
 }
