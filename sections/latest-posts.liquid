@@ -21,8 +21,21 @@
                     {% if article.tags contains tag %}
                         {% if articles_count < 4 %}
                             <div class="post-item">
-                                <!-- Your existing article display code here -->
-                                <!-- Replace 'article' with 'blogs['posts'].articles[forloop.index0]' -->
+                                <div class="post-item_image">
+                                    <a href="{{ article.url }}">
+                                        <img src="{{ article.image | article_img_url: 'large' }}" alt="{{ article.image.alt | default: '' }}">
+                                    </a>
+                                </div>
+                                <div class="post-item_content">
+                                    <a href="/blogs/posts/tagged/{{ article.tags.first | handle }}" class="post-item_category"><span>{{ article.tags.first }}</span></a>
+                                    <h3 class="h4 post-item_title two-line-clamp">{{ article.title }}</h3>
+                                    <p class="post-item_excerpt two-line-clamp m-0">
+                                        {{ article.excerpt | default: '' }}
+                                    </p>
+                                    <div class="post-item_button">
+                                        <a href="{{ article.url }}" class="link" style="font-weight:bold;">Read More</a>
+                                    </div>
+                                </div>
                             </div>
                             {% assign articles_count = articles_count | plus: 1 %}
                         {% endif %}
