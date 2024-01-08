@@ -128,7 +128,7 @@
       "custom_css": [
         "#template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8 {background: #fff; margin-top: 0; margin-bottom: 0; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5));}",
         ".card {flex-direction: row; gap: 2rem;}",
-        ".card__media {padding-top: 0 !important; height: 5rem; width: 5rem; flex-shrink: 0;}"
+        ".card__media {padding-top: 0 !important; height: 5rem; width: 5rem; flex-shrink: 0; margin-top: 0.5em;}"
       ],
       "settings": {
         "title": "",
@@ -259,7 +259,8 @@
         "70ef0277-fe5c-4a8f-87f1-45aec4bb3ba2"
       ],
       "custom_css": [
-        ".card__media img {object-fit: contain;}",
+        ".card__media {overflow: visible !important;}",
+        ".card__media img {object-fit: contain; background: #fff; padding: 1rem; aspect-ratio: 1 \/ 1; width: auto; border-radius: 50%; left: 50%; transform: translate(-50%, 0); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);}",
         "@media (min-width: 769px) {.multi-column {width: calc((100% \/ 3) - var(--column-gap) + 2rem); } .card__media {padding-top: 0 !important; height: 15rem; }}"
       ],
       "settings": {

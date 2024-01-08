@@ -1,0 +1,319 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "b58f02cc-fabc-4622-acfb-8050bf44f593": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Breast Pumping Guide",
+            "heading_size": "h0",
+            "heading_h1": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/Breastpumpingguide.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "df1b65c6-e69c-414d-aefc-7ff949381f08": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Your Guide To Breast Pumping"
+          }
+        },
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Breast pumping is an important part of your motherhood journey.",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Ameda, it is our mission to help moms through their breastfeeding journey, whether they’re experienced or just beginning. This guide will help answer common questions about breast pumping and more.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-subheading-1",
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-heading-1",
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-text-1"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "1",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "13a235f4-a07a-47c9-a72f-4a2ab4888df2": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "top",
+        "waveposition": ""
+      }
+    },
+    "573619db-0785-4d1f-9f1c-27dc8cc93717": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choosing the Right Pump",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When it comes to choosing a breast pump, be sure to know what features matter most to you. There are so many options for breast pumps today, and you need to be sure you’re buying the right one for your lifestyle.<\/p><p><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "481b91cc-86ef-4e16-bfb9-b1ba9a9b9571": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "\/pages\/choosing-the-right-pump",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1",
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1",
+        "481b91cc-86ef-4e16-bfb9-b1ba9a9b9571"
+      ],
+      "custom_css": [
+        ".section--padded {margin-bottom: 0; padding-bottom: 0;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/milk-work.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "373c50a2-8138-49d8-97b6-e55bb6ee7315": {
+      "type": "media-with-text",
+      "blocks": {
+        "1c731b52-41e6-40b0-9299-c3eefdea414b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Breast Pumping on Milk 101",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "e18c8bd0-5ba0-439f-a422-41557dd36fc7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We don’t expect you to have all of the answers as a first-time mom (or even an experienced one). Our blog features posts about breastfeeding, breast pumping, and other topics to help you along the way. You aren’t alone in this journey, Mom!<\/p><p><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "36c12609-8906-47fd-8c21-792b6f67f5f1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Our Blog",
+            "button_link": "shopify:\/\/blogs\/posts",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "1c731b52-41e6-40b0-9299-c3eefdea414b",
+        "e18c8bd0-5ba0-439f-a422-41557dd36fc7",
+        "36c12609-8906-47fd-8c21-792b6f67f5f1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/milk-work.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "e83aa573-9d22-47ba-abd8-c081450e09c9": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5": {
+      "type": "faq",
+      "blocks": {
+        "template--21956781867323__ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5-question-4": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Why should I use a breast pump?",
+            "text": "<p>You may need to use a breast pump to express (take milk from your breasts) and store your breast milk when separated from your baby. This can happen when you return to work or are apart from your baby for other reasons.<\/p>"
+          }
+        },
+        "f1c27362-73bd-47e2-bad5-f67345b0fba9": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How does a breast pump work?",
+            "text": "<p>A breast pump extracts milk from the breasts by creating a seal around the nipple. Then it applies and releases suction to the nipple, which expresses milk from the breast. This suction is similar to a baby suckling at the breast. Each suction and release combination is called a cycle.<\/p>"
+          }
+        },
+        "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How often do I need to pump?",
+            "text": "<p>To establish good milk production, you’ll need to breastfeed or breast pump about eight times every 24 hours. Find times throughout your day that work with your schedule to pump. With that frequency of pumping, you’ll need a pump that is reliable and convenient.<\/p>"
+          }
+        },
+        "f496f0b8-2f60-44c1-8ad9-f04dc5b9bded": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How long should I breastfeed my baby?",
+            "text": "<p>According to guidelines from health officials and reliable organizations, moms should solely breastfeed their babies for at least six months before introducing other foods in addition to breastmilk. The longer a mother breastfeeds, the more protection they have for their overall health.<\/p>"
+          }
+        },
+        "2b3b2336-c8fa-4020-aa6d-bba470877632": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What’s an open system breast pump?",
+            "text": "<p>An open system does not have a barrier between the wet side and dry side. Without a barrier, moisture from the humidity produced by pumping your warm milk can get into the tubing and breast pump motor. Organisms such as mold, bacteria and viruses thrive and grow in moist environments.<\/p>"
+          }
+        },
+        "17217a10-3bc6-48d8-84d1-193ddbb9f37a": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What’s a closed system breast pump?",
+            "text": "<p>A closed system should have a barrier between the wet side and dry side. This barrier helps in preventing moisture from getting in to the tubing and pump motor. So, there should be no need to clean and dry the tubing and your breast milk will stay safe.<\/p>"
+          }
+        },
+        "5ae684cb-9828-4c90-ac53-58b4b30c3585": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How do I use my pump?",
+            "text": "<p>Follow the instructions for use that come with your breast pump. There will be different settings that you can control with your pump to personalize each pumping session. Find the right settings that feel comfortable to you.<\/p><p><a href=\"\/pages\/instructions-for-use\" title=\"Instructions For Use\">Learn More<\/a><\/p>"
+          }
+        },
+        "39314ff0-072d-45af-aa95-e52d6fdaf5fc": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How do I store breast milk?",
+            "text": "<p>The CDC and other health organizations have guidelines for storing breast milk at the proper temperatures and durations. Click below for more information on these recommendations to store breast milk properly.<\/p><p><a href=\"\/blogs\/posts\/how-to-store-breast-milk-safely\/\" title=\"\/blogs\/posts\/how-to-store-breast-milk-safely\/\">Learn More<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21956781867323__ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5-question-4",
+        "f1c27362-73bd-47e2-bad5-f67345b0fba9",
+        "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8",
+        "f496f0b8-2f60-44c1-8ad9-f04dc5b9bded",
+        "2b3b2336-c8fa-4020-aa6d-bba470877632",
+        "17217a10-3bc6-48d8-84d1-193ddbb9f37a",
+        "5ae684cb-9828-4c90-ac53-58b4b30c3585",
+        "39314ff0-072d-45af-aa95-e52d6fdaf5fc"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "heading_align": "text-center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "beed3893-13e5-403a-bc6d-b88cf18d5ece": {
+      "type": "latest-posts",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Latest Breast Pumping Posts",
+        "description": "",
+        "show_button": true,
+        "button_link": "\/blogs\/posts\/tagged\/breast-pumping",
+        "button_text": "Read All",
+        "button_style": "btn--primary",
+        "top_content_visible": true,
+        "blog_tag": ""
+      }
+    },
+    "75170376-c327-4296-adad-b15a7708d790": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "top",
+        "waveposition": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b58f02cc-fabc-4622-acfb-8050bf44f593",
+    "df1b65c6-e69c-414d-aefc-7ff949381f08",
+    "13a235f4-a07a-47c9-a72f-4a2ab4888df2",
+    "573619db-0785-4d1f-9f1c-27dc8cc93717",
+    "373c50a2-8138-49d8-97b6-e55bb6ee7315",
+    "e83aa573-9d22-47ba-abd8-c081450e09c9",
+    "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5",
+    "beed3893-13e5-403a-bc6d-b88cf18d5ece",
+    "75170376-c327-4296-adad-b15a7708d790"
+  ]
+}
