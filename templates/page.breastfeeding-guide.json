@@ -14,7 +14,7 @@
         "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "About Ameda",
+            "heading": "Breastfeeding Guide",
             "heading_size": "h0",
             "heading_h1": true
           }
@@ -24,7 +24,7 @@
         "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/about.jpg",
+        "image_desktop": "shopify:\/\/shop_images\/bf-banner.png",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
@@ -39,6 +39,104 @@
         "tint_color": "#000000",
         "tint_opacity": 40,
         "prevent_animation": false
+      }
+    },
+    "df1b65c6-e69c-414d-aefc-7ff949381f08": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Your Guide To Breastfeeding"
+          }
+        },
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Breastfeeding is beneficial for you, your baby, and the community.",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Breast milk is the perfect food for your baby, helping to keep your baby healthy and provide essential vitamins and nutrients that only a mother’s body can provide.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-subheading-1",
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-heading-1",
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-text-1"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "e8a8f773-01a4-46e3-9657-9c2de88372b8": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons_WORKING_Mom.png",
+            "media_scale": 100,
+            "heading": "For Mom",
+            "text": "<p>Reduced risk of postpartum depression, type II diabetes, and breast or ovarian cancer.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons_WORKING_Baby.png",
+            "media_scale": 100,
+            "heading": "For Baby",
+            "text": "<p>Lower risk of colds, asthma, ear infections, diabetes, obesity, and skin-related conditions.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons_WORKING_Community.png",
+            "media_scale": 100,
+            "heading": "For the Community",
+            "text": "<p>More cost effective and less wasteful compared to feeding with formula.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-1",
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-2",
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "left",
+        "media_align": "text-left",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
       }
     },
     "573619db-0785-4d1f-9f1c-27dc8cc93717": {
@@ -499,6 +597,8 @@
   "order": [
     "main",
     "b58f02cc-fabc-4622-acfb-8050bf44f593",
+    "df1b65c6-e69c-414d-aefc-7ff949381f08",
+    "e8a8f773-01a4-46e3-9657-9c2de88372b8",
     "573619db-0785-4d1f-9f1c-27dc8cc93717",
     "18a98304-eea6-4351-8b16-216e0a96ac0a",
     "785e07b8-ac2a-4dc9-9132-62454674e1e7",
