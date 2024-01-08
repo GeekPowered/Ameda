@@ -131,7 +131,7 @@
           "type": "text",
           "settings": {
             "text": "<p>You wouldn’t buy any bra off the rack without checking the size on the label. But what fewer new moms realize is that the same principle applies to pumping. Your best flange fit might be different from the mom next to you.<\/p>",
-            "enlarge_text": true
+            "enlarge_text": false
           }
         },
         "a0e98797-cb93-486f-9775-13e8f59b6765": {
