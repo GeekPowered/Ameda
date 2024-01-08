@@ -14,6 +14,12 @@
             </div>
         </div>
         <div class="flex-posts">
+            {% assign tag = section.settings.blog_tag %}
+            {% if tag %}
+                {% assign articles = blogs['posts'].articles | where_exp: "article", "article.tags contains tag" %}
+            {% else %}
+                {% assign articles = blogs['posts'].articles %}
+            {% endif %}
             {% for article in blogs['posts'].articles limit:4 %}
                 <div class="post-item">
                     <div class="post-item_image">
@@ -38,27 +44,34 @@
 </div>
 
 {% schema %}
-{
-  "name": "Latest Posts",
-  "presets": [
     {
       "name": "Latest Posts",
-      "category": "Template"
+      "presets": [
+        {
+          "name": "Latest Posts",
+          "category": "Template"
+        }
+      ],
+      "settings": [
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "title",
+          "default": "Latest Posts"
+        },
+        {
+          "type": "textarea",
+          "label": "Description",
+          "id": "description",
+          "default": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
+        },
+        {
+          "type": "text",
+          "label": "Blog Tag",
+          "id": "blog_tag",
+          "default": "",
+          "info": "Enter a tag to filter the posts. Leave blank to show all posts."
+        }
+      ]
     }
-  ],
-  "settings": [
-    {
-      "type": "text",
-      "label": "Title",
-      "id": "title",
-      "default": "Latest Posts"
-    },
-    {
-      "type": "textarea",
-      "label": "Description",
-      "id": "description",
-      "default": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
-    }
-  ]
-}
 {% endschema %}
