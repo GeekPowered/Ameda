@@ -333,9 +333,9 @@
       "settings": {
         "title": "Latest Breastfeeding Posts",
         "description": "",
-        "show_button": false,
-        "button_link": "\/blogs\/posts\/",
-        "button_text": "All Posts",
+        "show_button": true,
+        "button_link": "\/blogs\/posts\/tagged\/breast-pumping",
+        "button_text": "Read All",
         "button_style": "btn--primary",
         "top_content_visible": true,
         "blog_tag": ""
