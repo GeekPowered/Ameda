@@ -259,7 +259,8 @@
         "70ef0277-fe5c-4a8f-87f1-45aec4bb3ba2"
       ],
       "custom_css": [
-        ".card__media img {object-fit: contain;}",
+        ".card__media {overflow: visible !important;}",
+        ".card__media img {object-fit: contain; background: #fff; padding: 1rem; aspect-ratio: 1 \/ 1; width: auto; border-radius: 50%; left: 50%; transform: translate(-50%, 0); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);}",
         "@media (min-width: 769px) {.multi-column {width: calc((100% \/ 3) - var(--column-gap) + 2rem); } .card__media {padding-top: 0 !important; height: 15rem; }}"
       ],
       "settings": {
