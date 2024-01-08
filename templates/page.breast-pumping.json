@@ -1,0 +1,368 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "b58f02cc-fabc-4622-acfb-8050bf44f593": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Breastfeeding Guide",
+            "heading_size": "h0",
+            "heading_h1": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/bf-banner.png",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "df1b65c6-e69c-414d-aefc-7ff949381f08": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Your Guide To Breastfeeding"
+          }
+        },
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Breastfeeding is beneficial for you, your baby, and the community.",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Breast milk is the perfect food for your baby, helping to keep your baby healthy and provide essential vitamins and nutrients that only a mother’s body can provide.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-subheading-1",
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-heading-1",
+        "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-text-1"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "1",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "e8a8f773-01a4-46e3-9657-9c2de88372b8": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons_WORKING_Mom.png",
+            "media_scale": 100,
+            "heading": "For Mom",
+            "text": "<p>Reduced risk of postpartum depression, type II diabetes, and breast or ovarian cancer.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons_WORKING_Baby.png",
+            "media_scale": 100,
+            "heading": "For Baby",
+            "text": "<p>Lower risk of colds, asthma, ear infections, diabetes, obesity, and skin-related conditions.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons_WORKING_Community.png",
+            "media_scale": 100,
+            "heading": "For the Community",
+            "text": "<p>More cost effective and less wasteful compared to feeding with formula.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-1",
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-2",
+        "template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8-column-3"
+      ],
+      "custom_css": [
+        "#template--21956781867323__e8a8f773-01a4-46e3-9657-9c2de88372b8 {background: #fff; margin-top: 0; margin-bottom: 0; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5));}",
+        ".card {flex-direction: row; gap: 2rem;}",
+        ".card__media {padding-top: 0 !important; height: 5rem; width: 5rem; flex-shrink: 0; margin-top: 0.5em;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "left",
+        "media_align": "text-left",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "13a235f4-a07a-47c9-a72f-4a2ab4888df2": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "top",
+        "waveposition": ""
+      }
+    },
+    "573619db-0785-4d1f-9f1c-27dc8cc93717": {
+      "type": "media-with-text",
+      "blocks": {
+        "f066c075-e638-41ea-befa-7f79e7d555b0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Breastfeeding 101"
+          }
+        },
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "How Milk Production Works",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The more frequently you breastfeed or pump, the more milk you’ll make. Hormones play a key role in milk production. Every time you breastfeed or pump, your body releases the hormone prolactin. With each release, your body makes and stores more milk in the breast. If the level of this hormone gets too low, your milk supply will decrease. This is why it is important to breastfeed or pump right after delivery and then at regular time frames. Initially this is about eight times every 24 hours.<br\/><br\/>It is also very important to drain your breast fully when feeding your baby. A drained breast produces milk quickly, while a full breast produces milk slowly. Most mothers have an average of four milk ejection reflexes during a breastfeeding session.<\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "f066c075-e638-41ea-befa-7f79e7d555b0",
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1",
+        "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1"
+      ],
+      "custom_css": [
+        ".section--padded {margin-bottom: 0; padding-bottom: 0;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/milk-work.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "9064ad3d-8ef0-49cd-88a2-f0e079353f22": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons-Clutch.png",
+            "media_scale": 100,
+            "heading": "Clutch Hold",
+            "text": "<p>An upright position, holding your baby facing you with his or her feet tucked under your arm.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons-Cradle.png",
+            "media_scale": 100,
+            "heading": "Cradle or Cross-Cradle",
+            "text": "<p>The front of your baby touches your front, on his or her side, while he or she lays in your lap.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons-LaidBack.png",
+            "media_scale": 100,
+            "heading": "Laid Back Hold",
+            "text": "<p>Laying down comfortably, your baby will rest on top of your chest while you support him.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "70ef0277-fe5c-4a8f-87f1-45aec4bb3ba2": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_BreastfeedingIcons-SideLaying.png",
+            "media_scale": 100,
+            "heading": "Side-Laying Hold",
+            "text": "<p>Laying on your side, facing your baby while supporting your baby with your arm to prevent rolling.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-1",
+        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-2",
+        "template--21956781867323__9064ad3d-8ef0-49cd-88a2-f0e079353f22-column-3",
+        "70ef0277-fe5c-4a8f-87f1-45aec4bb3ba2"
+      ],
+      "custom_css": [
+        ".card__media {overflow: visible !important;}",
+        ".card__media img {object-fit: contain; background: #fff; padding: 1rem; aspect-ratio: 1 \/ 1; width: auto; border-radius: 50%; left: 50%; transform: translate(-50%, 0); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);}",
+        "@media (min-width: 769px) {.multi-column {width: calc((100% \/ 3) - var(--column-gap) + 2rem); } .card__media {padding-top: 0 !important; height: 15rem; }}"
+      ],
+      "settings": {
+        "title": "Common Breastfeeding Positions",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "shortest",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "e83aa573-9d22-47ba-abd8-c081450e09c9": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5": {
+      "type": "faq",
+      "blocks": {
+        "template--21956781867323__ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5-question-4": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How often should I breastfeed my baby?",
+            "text": "<p>The \u001ffirst several weeks, your baby will breastfeed 8-12x every 24 hours. Feed your baby when she is hungry, she will give you signs called hunger cues. Over time, she will breastfeed less often. More information can be found in the Making Milk For YourBaby Q&A.<\/p>"
+          }
+        },
+        "f1c27362-73bd-47e2-bad5-f67345b0fba9": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How will I know how much milk my baby is getting if I breastfeed?",
+            "text": "<p>Easy. What goes in must come out! You will know how much your baby is getting by how often he has wet and dirty diapers. Healthy weight gain is also a good sign that your baby is getting what he needs. You don’t need to know exactly how much your baby takes. You only need to know that your baby is thriving. This can simplify life with a newborn.<br\/><\/p>"
+          }
+        },
+        "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How Long Should I Breastfeed? New Breastfeeding Guidelines Released by the AAP",
+            "text": "<p>The American Academy of Pediatrics (AAP) released new breastfeeding recommendations in June 2022. These new recommendations support mothers to continue breastfeeding for two years or beyond. The recommendations align with guidelines provided by the World Health Organization (WHO), the American Academy of Family Physicians (AAFP), and the Canadian Pediatric Society.<\/p><h5><strong>Learn more here:<\/strong><\/h5><ul><li><a href=\"https:\/\/www.aap.org\/en\/news-room\/news-releases\/aap\/2022\/american-academy-of-pediatrics-calls-for-more-support-for-breastfeeding-mothers-within-updated-policy-recommendations\/\" target=\"_blank\" title=\"https:\/\/www.aap.org\/en\/news-room\/news-releases\/aap\/2022\/american-academy-of-pediatrics-calls-for-more-support-for-breastfeeding-mothers-within-updated-policy-recommendations\/\">American Academy of Pediatrics Calls for More Support for Breastfeeding Mothers Within Updated Policy Recommendations<\/a><\/li><li><a href=\"https:\/\/www.news-medical.net\/news\/20220630\/AAP-recommends-breastfeeding-for-2-years.aspx\" target=\"_blank\" title=\"https:\/\/www.news-medical.net\/news\/20220630\/AAP-recommends-breastfeeding-for-2-years.aspx\">AAP recommends breastfeeding for 2 years<\/a><\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21956781867323__ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5-question-4",
+        "f1c27362-73bd-47e2-bad5-f67345b0fba9",
+        "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "heading_align": "text-center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "beed3893-13e5-403a-bc6d-b88cf18d5ece": {
+      "type": "latest-posts",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Latest Breastfeeding Posts",
+        "description": "",
+        "show_button": true,
+        "button_link": "\/blogs\/posts\/tagged\/breast-pumping",
+        "button_text": "Read All",
+        "button_style": "btn--primary",
+        "top_content_visible": true,
+        "blog_tag": ""
+      }
+    },
+    "75170376-c327-4296-adad-b15a7708d790": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "top",
+        "waveposition": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b58f02cc-fabc-4622-acfb-8050bf44f593",
+    "df1b65c6-e69c-414d-aefc-7ff949381f08",
+    "e8a8f773-01a4-46e3-9657-9c2de88372b8",
+    "13a235f4-a07a-47c9-a72f-4a2ab4888df2",
+    "573619db-0785-4d1f-9f1c-27dc8cc93717",
+    "9064ad3d-8ef0-49cd-88a2-f0e079353f22",
+    "e83aa573-9d22-47ba-abd8-c081450e09c9",
+    "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5",
+    "beed3893-13e5-403a-bc6d-b88cf18d5ece",
+    "75170376-c327-4296-adad-b15a7708d790"
+  ]
+}
