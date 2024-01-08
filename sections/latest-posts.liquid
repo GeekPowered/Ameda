@@ -5,8 +5,8 @@
         {% if section.settings.top_content_visible %}
             <div class="flex-title">
                 <div class="flex-title_content">
-                    <h2 {% unless section.settings.description %}class="m-0"{% endunless %}>{{ section.settings.title | default: "Latest Posts" }}</h2>
-                    {% if section.settings.description %}<p class="m-0">{{ section.settings.description }}</p>{% endif %}
+                    <h2 class="m-0">{{ section.settings.title | default: "Latest Posts" }}</h2>
+                    {% if section.settings.description %}<p class="m-0" style="margin-top:.5em;">{{ section.settings.description }}</p>{% endif %}
                 </div>
                 {% if section.settings.show_button %}
                     <div class="flex-title_button">
