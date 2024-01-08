@@ -8,11 +8,13 @@
                     <h2>{{ section.settings.title | default: "Latest Posts" }}</h2>
                     {% if section.settings.description %}<p class="m-0">{{ section.settings.description }}</p>{% endif %}
                 </div>
-                <div class="flex-title_button">
-                    <a href="/blogs/posts/" class="btn btn--primary">
-                        All Posts
-                    </a>
-                </div>
+                {% if section.settings.show_button %}
+                    <div class="flex-title_button">
+                        <a href="{{ section.settings.button_link }}" class="btn {{ section.settings.button_style }}">
+                            {{ section.settings.button_text }}
+                        </a>
+                    </div>
+                {% endif %}
             </div>
         {% endif %}
         <div class="flex-posts">
@@ -90,6 +92,40 @@
           "label": "Description",
           "id": "description",
           "default": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
+        },
+        {
+            "type": "checkbox",
+            "id": "show_button",
+            "label": "Show Button?",
+            "default": true
+        },
+        {
+            "type": "text",
+            "id": "button_link",
+            "label": "Button Link",
+            "default": "/blogs/posts/"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "All Posts"
+        },
+        {
+            "type": "select",
+            "id": "button_style",
+            "label": "Button Style",
+            "default": "btn--primary",
+            "options": [
+                {
+                    "value": "btn--primary",
+                    "label": "Primary"
+                },
+                {
+                    "value": "btn--secondary",
+                    "label": "Secondary"
+                }
+            ]
         },
         {
             "type": "checkbox",
