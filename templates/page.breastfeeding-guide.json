@@ -328,8 +328,9 @@
     "beed3893-13e5-403a-bc6d-b88cf18d5ece": {
       "type": "latest-posts",
       "settings": {
-        "title": "Latest Posts",
-        "description": ""
+        "title": "Latest Breastfeeding Posts",
+        "description": "",
+        "blog_tag": ""
       }
     },
     "75170376-c327-4296-adad-b15a7708d790": {
