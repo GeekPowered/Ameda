@@ -32,14 +32,31 @@
             </div>
         </div>
         <div class="education-list">
-            {% for education_pdf in shop.metaobjects.education_pdf.values %}
-                <a href="/pages/education/" class="education-item">
-                    <div class="education-image-wrapper">
-                        <img src="{{ education_pdf.cover_image |  image_url  }}" />
-                    </div>
-                    <h3 class="h6">{{ education_pdf.name }}</h3>
-                </a>
-            {% endfor %}
+            {% assign block_count = section.blocks.size %}
+            {% if block_count > 0 %}
+                {% for block in section.blocks %}
+                    {% assign education_pdf_key = block.settings.education_pdf_key %}
+                    {% assign education_pdf = shop.metaobjects.education_pdf[education_pdf_key] %}
+                    {% if education_pdf %}
+                        <a href="/pages/education/" class="education-item">
+                            <div class="education-image-wrapper">
+                                <img src="{{ education_pdf.cover_image |  image_url  }}" />
+                            </div>
+                            <h3 class="h6">{{ education_pdf.name }}</h3>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                {% assign default_pdfs = shop.metaobjects.education_pdf.values | limit: 3 %}
+                {% for education_pdf in default_pdfs %}
+                    <a href="/pages/education/" class="education-item">
+                        <div class="education-image-wrapper">
+                            <img src="{{ education_pdf.cover_image |  image_url  }}" />
+                        </div>
+                        <h3 class="h6">{{ education_pdf.name }}</h3>
+                    </a>
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 </div>
@@ -47,6 +64,20 @@
 {% schema %}
     {
       "name": "Education PDFs",
+      "settings": [],
+      "blocks": [
+        {
+          "type": "education_pdf_block",
+          "name": "Education PDF Block",
+          "settings": [
+            {
+              "type": "text",
+              "id": "education_pdf_key",
+              "label": "Education PDF Key"
+            }
+          ]
+        }
+      ],
       "presets": [
         {
           "name": "Education PDFs",
