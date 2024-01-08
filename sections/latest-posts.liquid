@@ -15,8 +15,13 @@
         </div>
         <div class="flex-posts">
             {% assign tag = section.settings.blog_tag %}
+            {% assign filtered_articles = '' | split: '' %}
             {% if tag != blank %}
-                {% assign filtered_articles = blogs['posts'].articles | where: 'tags', tag %}
+                {% for article in blogs['posts'].articles %}
+                    {% if article.tags contains tag %}
+                        {% assign filtered_articles = filtered_articles | append: article | split: '' %}
+                    {% endif %}
+                {% endfor %}
             {% else %}
                 {% assign filtered_articles = blogs['posts'].articles %}
             {% endif %}
