@@ -1,10 +1,32 @@
 <link rel="stylesheet" href="{{ 'education-tabs.css' | asset_url }}" media="print" onload="this.media='all'">
 
+<style>
+    .flex-title {
+        display: flex;
+        align-items: flex-end;
+        gap: 10rem;
+        justify-content: space-between;
+    }
+
+    .flex-title_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-title_button {
+        flex: none;
+    }
+</style>
+
 <div class="section section--padded">
     <div class="container">
-        <div class="title-wrapper">
-            <h2>Education PDFs</h2>
-            <a href="/pages/education/" class="btn btn--primary">View All</a>
+        <div class="flex-title">
+            <div class="flex-title_content">
+                <h2 class="m-0">Education PDFs</h2>
+            </div>
+            <div class="flex-title_button">
+                <a href="/pages/education/" class="btn btn--primary">View All</a>
+            </div>
         </div>
         <div class="education-list">
             {% for education_pdf in shop.metaobjects.education_pdf.values %}
