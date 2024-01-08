@@ -621,7 +621,13 @@
       "type": "latest-posts",
       "settings": {
         "title": "Latest Posts",
-        "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
+        "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you.",
+        "show_button": true,
+        "button_link": "\/blogs\/posts\/",
+        "button_text": "All Posts",
+        "button_style": "btn--primary",
+        "top_content_visible": true,
+        "blog_tag": ""
       }
     },
     "8357ef30-4770-4182-9313-12f1b70af4cd": {
