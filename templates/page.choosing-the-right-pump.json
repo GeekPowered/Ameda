@@ -134,6 +134,31 @@
     },
     "b4ac1ed9-6195-4f5b-bc49-69c3bb239c4c": {
       "type": "education-pdfs",
+      "blocks": {
+        "b87ea32c-0d09-49cc-9950-3101e8c93941": {
+          "type": "education_pdf_block",
+          "settings": {
+            "education_pdf_key": "breastfeeding-q-a"
+          }
+        },
+        "b12f501f-c0a7-485d-8b4b-ee5f48dc7c4c": {
+          "type": "education_pdf_block",
+          "settings": {
+            "education_pdf_key": "how-your-breasts-make-milk"
+          }
+        },
+        "15bc29f2-efd5-4a50-99cf-bff5385a9b23": {
+          "type": "education_pdf_block",
+          "settings": {
+            "education_pdf_key": "dads-breastfeeding"
+          }
+        }
+      },
+      "block_order": [
+        "b87ea32c-0d09-49cc-9950-3101e8c93941",
+        "b12f501f-c0a7-485d-8b4b-ee5f48dc7c4c",
+        "15bc29f2-efd5-4a50-99cf-bff5385a9b23"
+      ],
       "settings": {
       }
     }
