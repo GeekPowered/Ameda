@@ -1,1 +1,143 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"show_page_title":false,"heading_align":"text-center"}},"image-banner":{"type":"image-banner","blocks":{"banner-heading-0":{"type":"heading","settings":{"heading":"Help & FAQs","heading_size":"h0","heading_h1":true}},"banner-text-1":{"type":"text","settings":{"text":"<p>Add some general information for your shoppers.<\/p>","enlarge_text":true}}},"block_order":["banner-heading-0","banner-text-1"],"settings":{"height_mode":"fixed","fixed_height_desktop":560,"fixed_height_mobile":400,"overlay_position":"justify-start items-center","overlay_text_align":"text-start","mob_center_text":true,"mobile_stacked":false,"color_scheme":"white","full_width":true,"prevent_animation":false}},"faqs":{"type":"faq","blocks":{"faq-category-1":{"type":"category","settings":{"text":"Ordering"}},"faq-question-1":{"type":"question","settings":{"icon":"question_mark","heading":"Can I cancel my order?","text":"<p>We completely get it, we change our minds too! While we wish could, once an order is placed, we are unable to alter or cancel it at this time. We hope to have a cancellation window one day in the future.<\/p><p>Should the item(s) not work out, make sure to exchange for a preferred style or return for a refund. As a reminder, domestic return shipping is free.<\/p>"}},"faq-question-2":{"type":"question","settings":{"icon":"chat_bubble","heading":"What if I want to speak to someone?","text":"<p>We want to speak to you too! <a href=\"https:\/\/enterprise-theme-digital.myshopify.com\/pages\/contact\" title=\"Contact\">Contact us <\/a>with any questions, concerns, or feedback. We will be sure to get back to you within 48 hours. However, please note that inquiries sent on Fridays will receive a reply the following Monday, but possibly sooner.<\/p>"}},"faq-category-2":{"type":"category","settings":{"text":"Shipping"}},"faq-question-3":{"type":"question","settings":{"icon":"map_pin","heading":"What countries do you ship to?","text":"<p>We currently ship to the United States, Canada, Australia and the UK. To enquire about shipping to a different destination, please contact us.<\/p>"}},"faq-question-4":{"type":"question","settings":{"icon":"calendar","heading":"How long will it take to receive my order?","text":"<p>Standard shipping normally takes 3-5 days. Next day shipping is available on all domestic orders (for an additional charge). International shipping times depend on the products and destination (estimated at checkout).<\/p>"}},"faq-category-3":{"type":"category","settings":{"text":"Returns and Refunds"}},"faq-question-5":{"type":"question","settings":{"icon":"return","heading":"How do I return a product?","text":"<p>Items must be returned within 30 days after receiving your order. Items must be returned in the same condition in which they were received, be unworn\/unused, have any tags still attached, and include all the original packaging.<\/p>"}},"faq-question-6":{"type":"question","settings":{"icon":"clock","heading":"How long will it take to receive my refund?","text":"<p>Refunds are processed within 7 days from when we receive the item(s).<\/p>"}}},"block_order":["faq-category-1","faq-question-1","faq-question-2","faq-category-2","faq-question-3","faq-question-4","faq-category-3","faq-question-5","faq-question-6"],"settings":{"heading":"FAQs","heading_align":"text-center","color_scheme":"none","full_width":true}},"contact-form":{"type":"contact-form","blocks":{"contact-text-1":{"type":"text","settings":{"text":"<p>If the answers you're looking for aren't in our FAQ, please send us an email by completing the form below.<\/p>","half_width":false}},"contact-name-2":{"type":"name","settings":{"required":true,"half_width":true}},"contact-email-3":{"type":"email","settings":{"required":true,"half_width":true}},"contact-dropdown-4":{"type":"dropdown","settings":{"title":"How can we help?","half_width":false}},"contact-body-5":{"type":"body","settings":{"required":true,"half_width":false}}},"block_order":["contact-text-1","contact-name-2","contact-email-3","contact-dropdown-4","contact-body-5"],"settings":{"heading":"Still looking for answers?","heading_align":"text-center","image_position":"top","color_scheme":"1","full_width":false,"button_style":"btn btn--primary"}},"featured-collection":{"type":"featured-collection","settings":{"title":"Trending","heading_align":"text-start","show_view_all":true,"layout":"carousel","card_size":"small","products_to_show":24,"show_promo_info":false,"image_ratio":"1","color_scheme":"none","button_style":"btn btn--secondary"}},"newsletter":{"type":"newsletter","blocks":{"newsletter-heading-1":{"type":"heading","settings":{"heading":"Sign up to our Newsletter","heading_size":"h5"}},"newsletter-text-2":{"type":"text","settings":{"enlarge_text":false}},"newsletter-form-3":{"type":"form","settings":{}}},"block_order":["newsletter-heading-1","newsletter-text-2","newsletter-form-3"],"settings":{"overlay_position":"justify-center","text_align":"text-center","color_scheme":"default","full_width":true}}},"order":["main","image-banner","faqs","contact-form","featured-collection","newsletter"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": false,
+        "heading_align": "text-center"
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "banner-heading-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently Asked Questions",
+            "heading_size": "h0",
+            "heading_h1": true
+          }
+        }
+      },
+      "block_order": [
+        "banner-heading-0"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/faq_1.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-start items-center",
+        "overlay_text_align": "text-start",
+        "mob_center_text": true,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "faqs": {
+      "type": "faq",
+      "blocks": {
+        "faq-category-1": {
+          "type": "category",
+          "settings": {
+            "text": "Ameda"
+          }
+        },
+        "faq-question-1": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What if I’m experiencing issues with my pump?",
+            "text": "<p>If you experience an issue with your pump, it falls within the warranty time frame, and you are the original owner, please contact our ParentCare team for assistance. In the United States, our Ameda ParentCare™ staff can answer consumer questions about proper use of Ameda® products, replacement parts and more. Give us a call at 1-866-992-6332 \/ 1-866-99-AMEDA or drop us a line at <a href=\"mailto:ParentCare@ameda.com\" title=\"mailto:ParentCare@ameda.com\">ParentCare@ameda.com<\/a>. We are available Monday through Friday 8:00 a.m. – 4:30 p.m. Central Standard Time.<\/p>"
+          }
+        },
+        "c86e2fad-a29a-45b0-a39b-7bb6d21705a8": {
+          "type": "category",
+          "settings": {
+            "text": "Products"
+          }
+        },
+        "df9ac59a-eb08-4ed1-823e-a8c11d926120": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Mya and Mya Joy look similar – what is the main difference between the two pumps?",
+            "text": "<p>Mya and Mya Joy are both small, lightweight personal use pumps. They both provide hospital strength performance and are designed for moms pumping on a daily basis. Mya includes an internal lithium battery and uses it own unique pump kit and flange system. Mya Joy has a internal battery back-up option that requires 4 AA batteries. Mya Joy is also compatible with most components in the Ameda HygieniKit including containers, tubing and CustomFit flanges.<br\/><br\/><\/p>"
+          }
+        },
+        "1e89eeb1-b378-48a2-958d-a7512222c429": {
+          "type": "category",
+          "settings": {
+            "text": "Pumping"
+          }
+        },
+        "b477f8f0-3f35-4219-9fb4-d8a3f0071277": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.<\/p>"
+          }
+        },
+        "c0ade049-49bf-44ce-95da-2aec6e8e6aae": {
+          "type": "category",
+          "settings": {
+            "text": "Troubleshooting"
+          }
+        },
+        "024201f1-2abd-47f7-ba5d-d5d42cb282f8": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.<\/p>"
+          }
+        },
+        "726b2b66-0632-4fcf-8b15-8a5ffdcb6746": {
+          "type": "category",
+          "settings": {
+            "text": "Insurance"
+          }
+        },
+        "1f52b604-f2f3-42ed-b91f-8e447ba23c7b": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-category-1",
+        "faq-question-1",
+        "c86e2fad-a29a-45b0-a39b-7bb6d21705a8",
+        "df9ac59a-eb08-4ed1-823e-a8c11d926120",
+        "1e89eeb1-b378-48a2-958d-a7512222c429",
+        "b477f8f0-3f35-4219-9fb4-d8a3f0071277",
+        "c0ade049-49bf-44ce-95da-2aec6e8e6aae",
+        "024201f1-2abd-47f7-ba5d-d5d42cb282f8",
+        "726b2b66-0632-4fcf-8b15-8a5ffdcb6746",
+        "1f52b604-f2f3-42ed-b91f-8e447ba23c7b"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image-banner",
+    "faqs"
+  ]
+}
