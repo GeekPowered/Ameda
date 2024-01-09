@@ -354,6 +354,15 @@
         "prevent_animation": false
       }
     },
+    "6605de14-6d59-4ee0-9b67-821f6e947a07": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "{{ shop.brand.colors.primary[0].background }}",
+        "wavetype": "bottom",
+        "waveposition": "bottom"
+      }
+    },
     "fe9eff60-0d45-4996-bdb0-ece01fd347ea": {
       "type": "media-with-text",
       "blocks": {
@@ -394,8 +403,17 @@
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
-        "color_scheme": "none",
+        "color_scheme": "1",
         "only_content_color_scheme": false
+      }
+    },
+    "0486d122-0365-4400-a44d-78fe01f5d63e": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "top",
+        "waveposition": ""
       }
     }
   },
@@ -411,6 +429,8 @@
     "9e29cb4b-8f94-4d6e-93c0-1a6d73608db4",
     "a40a96a5-c26c-41ba-869e-d74ac9418af8",
     "041144c2-9cbe-4163-8784-5467739525ff",
-    "fe9eff60-0d45-4996-bdb0-ece01fd347ea"
+    "6605de14-6d59-4ee0-9b67-821f6e947a07",
+    "fe9eff60-0d45-4996-bdb0-ece01fd347ea",
+    "0486d122-0365-4400-a44d-78fe01f5d63e"
   ]
 }
