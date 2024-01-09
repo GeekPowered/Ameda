@@ -133,7 +133,7 @@
         "9e4792ed-a218-4c7a-9800-fb6d6089b676"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/App_slide1.png",
+        "image": "shopify:\/\/shop_images\/app_slide2.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -170,7 +170,7 @@
         "69936f2d-156a-4cd9-bd1d-577fc0a050ae"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/App_slide1.png",
+        "image": "shopify:\/\/shop_images\/app_smob_slide2.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -207,7 +207,7 @@
         "281a251c-2e5b-4d78-b900-3a96916dc201"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/App_slide1.png",
+        "image": "shopify:\/\/shop_images\/app_mob_slide3.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -226,7 +226,7 @@
         "ef3a1fa0-be92-4eed-ad1e-07f560d8c1d8": {
           "type": "heading",
           "settings": {
-            "heading": "Statistics",
+            "heading": "Reminder",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -234,7 +234,7 @@
         "abfeee37-c0b9-4156-b19d-9c3cfed8dbdc": {
           "type": "text",
           "settings": {
-            "text": "<p>Our easy-to-read dashboards allow you to look at data trends over time.<\/p>",
+            "text": "<p>Our app allows you to set reminders for pumping and breastfeeding.<\/p>",
             "enlarge_text": true
           }
         }
@@ -244,11 +244,152 @@
         "abfeee37-c0b9-4156-b19d-9c3cfed8dbdc"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/App_slide1.png",
+        "image": "shopify:\/\/shop_images\/app_mob_slide4.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "9e29cb4b-8f94-4d6e-93c0-1a6d73608db4": {
+      "type": "media-with-text",
+      "blocks": {
+        "237487b1-9a40-495f-80d2-f86280350a21": {
+          "type": "heading",
+          "settings": {
+            "heading": "Record",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "9bae9006-50bf-478f-b3cf-b3e1650c4007": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Keep track of your daily breastfeeding and pumping session easily. Log the date, time, and quantity of milk of your pump session.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "237487b1-9a40-495f-80d2-f86280350a21",
+        "9bae9006-50bf-478f-b3cf-b3e1650c4007"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/app_mob_slide5.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "a40a96a5-c26c-41ba-869e-d74ac9418af8": {
+      "type": "media-with-text",
+      "blocks": {
+        "6101e349-4ff2-4a65-a9c7-abb8946f549c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Easy Setup",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "ab77cb95-dd61-480a-ba03-4a9d6ccccbb6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Ameda Baby Tracker app is free and easy to install.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "6101e349-4ff2-4a65-a9c7-abb8946f549c",
+        "ab77cb95-dd61-480a-ba03-4a9d6ccccbb6"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mob_app_slide6.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "041144c2-9cbe-4163-8784-5467739525ff": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21959003865403__041144c2-9cbe-4163-8784-5467739525ff-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Download the Ameda Baby App to receive 15% off your Mya Joy or Mya Joy Plus Breastfeeding Pumps. Once you have downloaded the App, you will receive a Coupon Code in your verification email.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21959003865403__041144c2-9cbe-4163-8784-5467739525ff-text-1"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "3",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "fe9eff60-0d45-4996-bdb0-ece01fd347ea": {
+      "type": "media-with-text",
+      "blocks": {
+        "17ec653e-4400-4f32-8747-386e7e524f78": {
+          "type": "subheading",
+          "settings": {
+            "text": "Scan Or Click To"
+          }
+        },
+        "template--21959003865403__fe9eff60-0d45-4996-bdb0-ece01fd347ea-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Download Today",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "197861a2-4c50-4083-9fdb-c223c67a900e": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.ameda.app\" target=\"_blank\" title=\"Google Play Store\">Google Play Store<\/a><\/p><p><a href=\"https:\/\/apps.apple.com\/us\/app\/ameda\/id1639087365\" target=\"_blank\" title=\"Apple App Store\">Apple App Store<\/a><\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "17ec653e-4400-4f32-8747-386e7e524f78",
+        "template--21959003865403__fe9eff60-0d45-4996-bdb0-ece01fd347ea-heading-1",
+        "197861a2-4c50-4083-9fdb-c223c67a900e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/QR_icon_86a541c3-4a45-4a1a-9c74-9c12e3ef24b0.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
         "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
@@ -266,6 +407,10 @@
     "8b248ab4-1bd8-4025-8031-2652db010ee4",
     "759e7ef3-7e07-40a9-85f8-6506aae9c244",
     "0b675af6-76bd-437b-a27e-4f8a4d1cb81d",
-    "36b54f40-1f89-4a97-84e2-59ddebf0924e"
+    "36b54f40-1f89-4a97-84e2-59ddebf0924e",
+    "9e29cb4b-8f94-4d6e-93c0-1a6d73608db4",
+    "a40a96a5-c26c-41ba-869e-d74ac9418af8",
+    "041144c2-9cbe-4163-8784-5467739525ff",
+    "fe9eff60-0d45-4996-bdb0-ece01fd347ea"
   ]
 }
