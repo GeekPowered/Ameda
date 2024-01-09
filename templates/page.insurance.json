@@ -10,6 +10,15 @@
     },
     "4e60b54a-b466-4694-9f93-58db2af8ec6d": {
       "type": "custom-liquid",
+      "custom_css": [
+        "table {background: rgba(255, 255, 255, 0.5); border: 1px solid rgba(0, 0, 0, 0.1); width: 100%;}",
+        "table td,table th {border: none;}",
+        "table thead tr {background: rgb(var(--link-color)); color: #fff;}",
+        "table thead th {font-weight: 900; text-transform: uppercase;}",
+        "table tr:nth-child(even):not(:first-of-type) {background-color: #fff;}",
+        ".pink-check {font-size: 1.5em; color: rgb(var(--link-color)); font-weight: 900;}",
+        "@media (max-width: 768px) {.table-wrapper {overflow: auto; } .table-wrapper table {min-width: 40rem; }}"
+      ],
       "settings": {
         "custom_liquid": "{% render 'joy-joyplus-chart' %}",
         "section_height": "default",
