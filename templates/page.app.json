@@ -407,6 +407,44 @@
         "only_content_color_scheme": false
       }
     },
+    "efeddb94-6b26-4be5-816c-5d1aa9ef0e89": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21959003865403__efeddb94-6b26-4be5-816c-5d1aa9ef0e89-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Android, Google Play and the Google Play logo are trademarks of Google Inc. iPhone®, Apple®and the Apple logo are trademarks of Apple Inc. App Store®is a service mark of Apple Inc.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "template--21959003865403__efeddb94-6b26-4be5-816c-5d1aa9ef0e89-button-1": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Ameda Baby App Terms Conditions",
+            "button_1_link": "shopify:\/\/pages\/ameda-baby-app-terms-conditions",
+            "button_1_style": "btn--secondary",
+            "button_2_label": "Ameda Baby App Privacy Policy",
+            "button_2_link": "shopify:\/\/pages\/ameda-baby-app-privacy-policy",
+            "button_2_style": "btn btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21959003865403__efeddb94-6b26-4be5-816c-5d1aa9ef0e89-text-1",
+        "template--21959003865403__efeddb94-6b26-4be5-816c-5d1aa9ef0e89-button-1"
+      ],
+      "custom_css": [
+        ".section--padded {padding-top: 0;}"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "1",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
     "0486d122-0365-4400-a44d-78fe01f5d63e": {
       "type": "wave-section",
       "settings": {
@@ -431,6 +469,7 @@
     "041144c2-9cbe-4163-8784-5467739525ff",
     "6605de14-6d59-4ee0-9b67-821f6e947a07",
     "fe9eff60-0d45-4996-bdb0-ece01fd347ea",
+    "efeddb94-6b26-4be5-816c-5d1aa9ef0e89",
     "0486d122-0365-4400-a44d-78fe01f5d63e"
   ]
 }
