@@ -187,6 +187,11 @@
           <span>{{ powered_by_link }}</span>
         {% endif %}
       </div>
+      {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
+        <div class="gps-powered">
+          <a href="https://www.geekpoweredstudios.com/">Site by GPS</a>
+        </div>
+      {%- endif -%}
       {%- if section.settings.secondary_menu != blank -%}
         <div>
           <ul class="footer-sublinks flex flex-wrap gap-x-theme" role="list">
@@ -251,6 +256,12 @@
       "type": "checkbox",
       "id": "show_powered_by",
       "label": "Show 'Powered by Shopify'",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "powered_by_gps",
+      "label": "Show 'Powered by GPS'",
       "default": true
     },
     {
