@@ -129,101 +129,14 @@
         "prevent_animation": false
       }
     },
-    "form": {
-      "type": "contact-form",
-      "blocks": {
-        "cfedfff9-e7ad-4879-9007-3ab0c0701ed9": {
-          "type": "custom",
-          "settings": {
-            "title": "First Name",
-            "type": "text",
-            "required": true,
-            "half_width": true
-          }
-        },
-        "368b0c46-467c-4c7f-8d54-38b29547b2f6": {
-          "type": "custom",
-          "settings": {
-            "title": "Last Name",
-            "type": "text",
-            "required": true,
-            "half_width": true
-          }
-        },
-        "contact-email-3": {
-          "type": "email",
-          "settings": {
-            "required": true,
-            "half_width": true
-          }
-        },
-        "fe4604ec-f2a4-4a39-8e12-4efb29388138": {
-          "type": "phone",
-          "settings": {
-            "required": true,
-            "half_width": true
-          }
-        },
-        "71a7b95b-c024-48c9-9962-1b77e3e0d782": {
-          "type": "custom",
-          "settings": {
-            "title": "City",
-            "type": "text",
-            "required": true,
-            "half_width": true
-          }
-        },
-        "59eba678-4c92-4cb7-b955-de185a321c86": {
-          "type": "custom",
-          "settings": {
-            "title": "State",
-            "type": "text",
-            "required": true,
-            "half_width": true
-          }
-        },
-        "contact-dropdown-4": {
-          "type": "dropdown",
-          "settings": {
-            "title": "I'm a",
-            "options": "Mom\nDistributer\nOther",
-            "half_width": false
-          }
-        },
-        "contact-body-5": {
-          "type": "body",
-          "settings": {
-            "required": true,
-            "half_width": false
-          }
-        },
-        "266d964f-8902-4338-ba31-4b888c762436": {
-          "type": "dropdown",
-          "settings": {
-            "title": "Mailing List",
-            "options": "Yes, sign me up for Ameda marketing and communications\nNo, do not sign me up for Ameda marketing and communications",
-            "half_width": false
-          }
-        }
-      },
-      "block_order": [
-        "cfedfff9-e7ad-4879-9007-3ab0c0701ed9",
-        "368b0c46-467c-4c7f-8d54-38b29547b2f6",
-        "contact-email-3",
-        "fe4604ec-f2a4-4a39-8e12-4efb29388138",
-        "71a7b95b-c024-48c9-9962-1b77e3e0d782",
-        "59eba678-4c92-4cb7-b955-de185a321c86",
-        "contact-dropdown-4",
-        "contact-body-5",
-        "266d964f-8902-4338-ba31-4b888c762436"
-      ],
+    "custom_liquid_RBbXEP": {
+      "type": "custom-liquid",
       "settings": {
-        "heading": "Contact Us",
-        "heading_align": "text-center",
-        "image_position": "top",
-        "color_scheme": "none",
+        "custom_liquid": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"wfqqv0qOYcIYBOXUwilzCw\"><\/div>",
+        "section_height": "default",
         "full_width": false,
-        "button_style": "btn btn--primary"
+        "dividers": "none",
+        "prevent_animation": false
       }
     },
     "3cc7f5aa-4d74-466b-8bd1-283487cccaee": {
@@ -320,7 +233,7 @@
     "image-banner",
     "7f110c36-d21b-4d2e-a02b-17889f958b35",
     "50a85a9a-0561-4cb0-a5fe-2c20d8e1d76d",
-    "form",
+    "custom_liquid_RBbXEP",
     "3cc7f5aa-4d74-466b-8bd1-283487cccaee",
     "2df0cb9e-eb44-4c3c-ab86-357ab4f8972b"
   ]
