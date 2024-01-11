@@ -146,10 +146,11 @@
         "column_XUEQh6"
       ],
       "custom_css": [
-
+        ".card__info {padding-top: 0; position: absolute; bottom: 0rem; left: 0; width: 100%;}",
+        ".card__media {border-radius: 1rem; overflow: hidden;}"
       ],
       "settings": {
-        "title": "Multi-column",
+        "title": "",
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -159,7 +160,7 @@
         "media_align": "text-center",
         "image_ratio": "1.77",
         "color_scheme": "none",
-        "button_style": "btn btn--secondary"
+        "button_style": "btn btn--primary"
       }
     },
     "custom_liquid_B8TacB": {
