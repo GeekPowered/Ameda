@@ -126,7 +126,7 @@
         "template--21965917618491__76cc895e-4cdb-4512-a4b6-0dca61f30110-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Fill out the following form to see if you qualify for a free Ameda pump through your insurance. One of our trusted partners will be in contact with you once your form has been completed and received.<\/p><p><\/p><p>&lcub;INSURANCE FORM GOES HERE&rcub;<\/p>",
+            "text": "<p>Fill out the following form to see if you qualify for a free Ameda pump through your insurance. One of our trusted partners will be in contact with you once your form has been completed and received.<\/p>",
             "enlarge_text": true
           }
         }
@@ -143,11 +143,21 @@
         "prevent_animation": false
       }
     },
+    "custom_liquid_c3M3xA": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h3>The journey to an insurance-covered pump starts here.<\/h3>\n<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"S6JyNwYUyN12xu6yEI_d8Q\"><\/div>\n<p>By clicking submit, you are agreeing that Ameda can contact you with updates about qualifying for your free pump.<\/p>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
     "611733a1-7260-4231-a0db-d622d34c311f": {
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": ""
       }
@@ -180,7 +190,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": "top"
       }
@@ -240,6 +250,7 @@
     "329e5978-de6e-4b2d-9322-d45d0e244c4b",
     "70b6796a-4aa7-4791-9ea6-72e90afed64c",
     "76cc895e-4cdb-4512-a4b6-0dca61f30110",
+    "custom_liquid_c3M3xA",
     "611733a1-7260-4231-a0db-d622d34c311f",
     "084c9bf7-9db6-4b91-9bf9-e234e1a59348",
     "d28ea09b-3af1-4fab-aa1d-888bd02ef647",
