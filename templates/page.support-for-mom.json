@@ -206,18 +206,6 @@
         "prevent_animation": false
       }
     },
-    "wave_section_rnQ3YP": {
-      "type": "wave-section",
-      "custom_css": [
-        "svg {z-index: 20;}"
-      ],
-      "settings": {
-        "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#ffffff",
-        "wavetype": "bottom",
-        "waveposition": "top"
-      }
-    },
     "image_banner_xDMBjp": {
       "type": "image-banner",
       "blocks": {
@@ -289,7 +277,6 @@
     "wave_section_7nMexY",
     "latest_posts_RUaTEa",
     "rich_text_qiJqzN",
-    "wave_section_rnQ3YP",
     "image_banner_xDMBjp"
   ]
 }
