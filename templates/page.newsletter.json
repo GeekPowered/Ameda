@@ -36,6 +36,16 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"nN21y5C-s2lc_Or7QEKn_g\"><\/div>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "custom_liquid_jLjrfx": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -46,6 +56,7 @@
   "order": [
     "main",
     "rich_text_q8XnkM",
-    "custom_liquid_3XAkmD"
+    "custom_liquid_3XAkmD",
+    "custom_liquid_jLjrfx"
   ]
 }
