@@ -180,7 +180,7 @@
     <hr class="footer__hr"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
     {% endif %}
 
-    <div class="footer__base grid grid-cols-1 lg:grid-cols-2 gap-x-theme gap-y-6 text-xs"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
+    <div class="footer__base grid grid-cols-1 text-center gap-x-theme gap-y-6 text-xs"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
       <div>
         <span>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</span>
         {% if section.settings.show_powered_by %}
