@@ -2,13 +2,314 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_page_title": true,
         "heading_align": "text-start"
       }
+    },
+    "image_banner_nmatX9": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ETn6kC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Customer Service",
+            "heading_size": "h0",
+            "heading_h1": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_ETn6kC"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/customer-service-banner.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "multi_column_Vk8LbJ": {
+      "type": "multi-column",
+      "blocks": {
+        "column_aeHqwm": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "I would love additional education.",
+            "text": "<p>You've come to the right place! We've collected knowledge from our experts to guide moms through all of their questions while they are breastfeeding.<\/p>",
+            "button_label": "Explore Resources",
+            "button_link": "shopify:\/\/pages\/education"
+          }
+        },
+        "column_bQ7XjG": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "I'm getting to know my pump.",
+            "text": "<p>Below are a few resources you'll need to make the most of your Ameda experience. Get started by registering your pump!<\/p>",
+            "button_label": "Register My Pump",
+            "button_link": "shopify:\/\/pages\/register-your-pump"
+          }
+        },
+        "column_GXFyxD": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "I need to find the right pump for me.",
+            "text": "<p>We'd love for you to join the Ameda family! Start by finding a breast pump that works for your lifestyle. We're happy to guide you to the right decision.<\/p>",
+            "button_label": "Show Pumps",
+            "button_link": "shopify:\/\/collections\/breast-pumps"
+          }
+        }
+      },
+      "block_order": [
+        "column_aeHqwm",
+        "column_bQ7XjG",
+        "column_GXFyxD"
+      ],
+      "custom_css": [
+        ".card {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "title": "How can we help you in your breastfeeding journey?",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "multi_column_KahHxy": {
+      "type": "multi-column",
+      "blocks": {
+        "column_wUyALp": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/support-for-mom-thumb.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "Support For Mom",
+            "button_link": "shopify:\/\/pages\/support-for-mom"
+          }
+        },
+        "column_ykktHY": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/faq-thumb.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "Frequently Asked Questions",
+            "button_link": "shopify:\/\/pages\/faq"
+          }
+        },
+        "column_XUEQh6": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/instructions-thumb.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "Instructions For Use",
+            "button_link": "shopify:\/\/pages\/instructions-for-use"
+          }
+        }
+      },
+      "block_order": [
+        "column_wUyALp",
+        "column_ykktHY",
+        "column_XUEQh6"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Multi-column",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1.77",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "custom_liquid_B8TacB": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h3>Returns &amp; Exchanges<\/h3>\n<h4>Can I return an item?<\/h4>\n<p>Ameda offers a no hassle return policy for unopened items. Unopened items must have the original safety seal, that is put on by the factory, intact and untampered with.<\/p>\n<p><strong>Replacements<\/strong><\/p>\n<p>If you are experiencing an issue with your pump, it falls within the warranty time frame, and you are the original owner, please contact our ParentCare team for assistance. In the United States, our Ameda ParentCare<sup>&trade;<\/sup>&nbsp;staff can answer consumer questions about proper use of Ameda<sup>&reg;<\/sup>&nbsp;products, replacement parts and more.<\/p>\n<p>1-866-992-6332 \/ 1-866-99-AMEDA<br><a href=\"mailto:parentcare@ameda.com\">ParentCare@ameda.com<\/a><br>Hours of Operation:<br>Monday &ndash; Friday 8:00 a.m. &ndash; 4:30 p.m. Central Standard Time<\/p>\n<h4>Returns, Refunds &amp; Exchanges<\/h4>\n<p>Returns\/Refund\/Exchanges can only be done if purchased from us directly via our ecommerce website. Return request must be received within 7 days of receiving the item, valid proof of purchase is required and all items must be unopened.<\/p>\n<p>Please email us at ParentCare@ameda.com to receive return instructions. Include your order ID number, item(s) you would like to return and reason for return. Once the return is approved we will email you the Return form and address for returning your item(s). &ldquo;Return&rdquo; constitutes receipt of the product by our warehouse. If you choose to use an Ameda.com return label, the cost of return will be subtracted from your refund amount.<\/p>\n<p>Items must be in the original, undamaged manufacturer&rsquo;s packaging with all packaging materials, including instruction booklets, packing inserts, plastic bags, and the warranty cards. The manufacturer&rsquo;s labeled packaging must be enclosed within a new shipping carton.<\/p>\n<p>Once we receive your return in the proper condition, we will then provide a refund to your payment account usually within 2-4 weeks. Returns cannot be accepted without a return form. Shipping, handling fees, discontinued products and special-order items if applicable, are not refundable.<\/p>\n<h3>Shipping &amp; Delivery<\/h3>\n<h4>Where do you ship?<\/h4>\n<p>Ameda ships to all U.S. States and Puerto Rico. We do not ship Internationally.<\/p>\n<h4>What shipping &amp; delivery options do you offer?<\/h4>\n<p><strong>Please note:<\/strong><br>Business days are defined as Monday &ndash; Friday, 8:00am &ndash; 2:00pm central time. Orders are not processed, shipped or delivered on weekends or holidays.<br>Some locations outside of the contiguous U.S. require additional transit time.<\/p>\n<p><strong>Shipping Methods<\/strong><\/p>\n<p><strong><em>Standard Shipping<\/em><\/strong><br>$5 for orders under $25<br>Free on orders $25 and over<br>Orders arrive within 5 to 7 business days<\/p>\n<p><strong><em>Expedited Shipping<\/em><\/strong><br>$18.90 for all orders<br>Orders placed before 1 p.m. central time Monday thru Friday will ship same day.<br>Orders placed after 1:30 p.m. central time Monday thru Friday, and weekend and holiday orders will ship the next business day.<br>Orders arrive within 2 business days.<\/p>\n<p><strong><em>Overnight Shipping<\/em><\/strong><br>$30.90 for all orders<br>Orders placed before 1 p.m. central time Monday thru Friday will ship same day.<br>Orders placed after 1:30 p.m. central time Monday thru Friday, and weekend and holiday orders will ship the next business day.<br>Orders arrive within 1 business days.<\/p>\n<h3>Payment Methods<\/h3>\n<h4>What payment methods are accepted?<\/h4>\n<ul>\n<li>Amex<\/li>\n<li>Discover<\/li>\n<li>Mastercard<\/li>\n<li>Visa<\/li>\n<\/ul>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "rich_text_w3FgLJ": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_JHLjUa": {
+          "type": "subheading",
+          "settings": {
+            "text": "Contact"
+          }
+        },
+        "heading_BHD7TE": {
+          "type": "heading",
+          "settings": {
+            "heading": "ParentCare™",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_DEVFrE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hours of Operation:<br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CST<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_7RzWnR": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "1-866-992-6332",
+            "button_1_link": "tel:1-866-992-6332",
+            "button_1_style": "btn--primary",
+            "button_2_label": "ParentCare@ameda.com",
+            "button_2_link": "mailto:ParentCare@ameda.com",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_JHLjUa",
+        "heading_BHD7TE",
+        "text_DEVFrE",
+        "button_7RzWnR"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "rich_text_byM4KW": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_U7tpWF": {
+          "type": "subheading",
+          "settings": {
+            "text": "Contact"
+          }
+        },
+        "heading_aK4mwp": {
+          "type": "heading",
+          "settings": {
+            "heading": "CustomerCare™",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_PaVtEx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hours of Operation:<br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CST<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_V69Fyw": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "1-866-992-6332",
+            "button_1_link": "tel:1-866-992-6332",
+            "button_1_style": "btn--primary",
+            "button_2_label": "orders@ameda.com",
+            "button_2_link": "mailto:orders@ameda.com",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_U7tpWF",
+        "heading_aK4mwp",
+        "text_PaVtEx",
+        "button_V69Fyw"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "rich_text_bKKAYg": {
+      "type": "rich-text",
+      "blocks": {
+        "button_PjHnjH": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Contact Us",
+            "button_1_link": "shopify:\/\/pages\/contact",
+            "button_1_style": "link",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_PjHnjH"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_banner_nmatX9",
+    "multi_column_Vk8LbJ",
+    "multi_column_KahHxy",
+    "custom_liquid_B8TacB",
+    "rich_text_w3FgLJ",
+    "rich_text_byM4KW",
+    "rich_text_bKKAYg"
   ]
 }
