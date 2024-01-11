@@ -146,7 +146,7 @@
     "custom_liquid_c3M3xA": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h3>The journey to an insurance-covered pump starts here.<\/h3>\n<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"S6JyNwYUyN12xu6yEI_d8Q\"><\/div>\n<p>By clicking submit, you are agreeing that Ameda can contact you with updates about qualifying for your free pump.<\/p>",
+        "custom_liquid": "<h3>The journey to an insurance-covered pump starts here.<\/h3>\n<div id=\"S6JyNwYUyN12xu6yEI_d8Q\" class=\"pxFormGenerator\" style=\"margin: 0 auto;\"><\/div>\n<p>By clicking submit, you are agreeing that Ameda can contact you with updates about qualifying for your free pump.<\/p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
