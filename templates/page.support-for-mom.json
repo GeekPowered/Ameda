@@ -71,6 +71,9 @@
         "heading_K7EYRp",
         "text_E6nLqf"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "text_position": "justify-center",
         "text_align": "text-center",
@@ -136,6 +139,9 @@
         "link_aVn6c6",
         "link_ciJBrg",
         "link_wKWjVV"
+      ],
+      "custom_css": [
+        ".section--padded {padding-top: 0;}"
       ],
       "settings": {
       }
