@@ -41,22 +41,11 @@
         "dividers": "none",
         "prevent_animation": false
       }
-    },
-    "custom_liquid_jLjrfx": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "prevent_animation": false
-      }
     }
   },
   "order": [
     "main",
     "rich_text_q8XnkM",
-    "custom_liquid_3XAkmD",
-    "custom_liquid_jLjrfx"
+    "custom_liquid_3XAkmD"
   ]
 }
