@@ -65,7 +65,7 @@
         "video_autoplay": false,
         "layout": "left",
         "image_fit": "contain",
-        "media_width": 50,
+        "media_width": 40,
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
@@ -95,6 +95,9 @@
         "f044698a-ea0d-48b5-990f-17f757222572",
         "863f5918-e808-4179-8b65-8e50596d4f42"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/App_slide1.png",
         "video_external": "",
@@ -102,8 +105,8 @@
         "video_autoplay": false,
         "layout": "right",
         "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
+        "media_width": 40,
+        "media_scale": 75,
         "text_align": "text-start",
         "color_scheme": "none",
         "only_content_color_scheme": false
@@ -139,8 +142,8 @@
         "video_autoplay": false,
         "layout": "left",
         "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
+        "media_width": 40,
+        "media_scale": 75,
         "text_align": "text-start",
         "color_scheme": "none",
         "only_content_color_scheme": false
@@ -176,8 +179,8 @@
         "video_autoplay": false,
         "layout": "right",
         "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
+        "media_width": 40,
+        "media_scale": 75,
         "text_align": "text-start",
         "color_scheme": "none",
         "only_content_color_scheme": false
@@ -213,8 +216,8 @@
         "video_autoplay": false,
         "layout": "left",
         "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
+        "media_width": 40,
+        "media_scale": 75,
         "text_align": "text-start",
         "color_scheme": "none",
         "only_content_color_scheme": false
@@ -250,8 +253,8 @@
         "video_autoplay": false,
         "layout": "right",
         "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
+        "media_width": 40,
+        "media_scale": 75,
         "text_align": "text-start",
         "color_scheme": "none",
         "only_content_color_scheme": false
@@ -287,8 +290,8 @@
         "video_autoplay": false,
         "layout": "left",
         "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
+        "media_width": 40,
+        "media_scale": 75,
         "text_align": "text-start",
         "color_scheme": "none",
         "only_content_color_scheme": false
@@ -324,8 +327,8 @@
         "video_autoplay": false,
         "layout": "right",
         "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
+        "media_width": 40,
+        "media_scale": 75,
         "text_align": "text-start",
         "color_scheme": "none",
         "only_content_color_scheme": false
@@ -449,7 +452,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": ""
       }
