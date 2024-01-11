@@ -79,7 +79,7 @@
           "type": "heading",
           "settings": {
             "heading": "Activity",
-            "heading_size": "h3",
+            "heading_size": "h0",
             "heading_h1": false
           }
         },
@@ -119,7 +119,7 @@
           "type": "heading",
           "settings": {
             "heading": "Order",
-            "heading_size": "h3",
+            "heading_size": "h0",
             "heading_h1": false
           }
         },
@@ -156,7 +156,7 @@
           "type": "heading",
           "settings": {
             "heading": "Support",
-            "heading_size": "h3",
+            "heading_size": "h0",
             "heading_h1": false
           }
         },
@@ -193,7 +193,7 @@
           "type": "heading",
           "settings": {
             "heading": "Statistics",
-            "heading_size": "h3",
+            "heading_size": "h0",
             "heading_h1": false
           }
         },
@@ -230,7 +230,7 @@
           "type": "heading",
           "settings": {
             "heading": "Reminder",
-            "heading_size": "h3",
+            "heading_size": "h0",
             "heading_h1": false
           }
         },
@@ -267,7 +267,7 @@
           "type": "heading",
           "settings": {
             "heading": "Record",
-            "heading_size": "h3",
+            "heading_size": "h0",
             "heading_h1": false
           }
         },
@@ -304,7 +304,7 @@
           "type": "heading",
           "settings": {
             "heading": "Easy Setup",
-            "heading_size": "h3",
+            "heading_size": "h0",
             "heading_h1": false
           }
         },
@@ -379,7 +379,7 @@
           "type": "heading",
           "settings": {
             "heading": "Download Today",
-            "heading_size": "h3",
+            "heading_size": "h0",
             "heading_h1": false
           }
         },
