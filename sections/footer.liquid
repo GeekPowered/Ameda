@@ -186,12 +186,8 @@
         {% if section.settings.show_powered_by %}
           <span>{{ powered_by_link }}</span>
         {% endif %}
+      {%- if section.settings.powered_by_gps -%}| <a target="_blank" href="https://www.geekpoweredstudios.com/">Site by GPS ⚡</a>{%- endif -%}
       </div>
-      {%- if section.settings.powered_by_gps -%}
-        <div class="gps-powered">
-          <a target="_blank" href="https://www.geekpoweredstudios.com/">Site by GPS ⚡</a>
-        </div>
-      {%- endif -%}
       {%- if section.settings.secondary_menu != blank -%}
         <div>
           <ul class="footer-sublinks flex flex-wrap gap-x-theme" role="list">
