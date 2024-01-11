@@ -111,6 +111,10 @@
   height: 24px;
 }
 
+.gps-powered {
+  text-align: right;
+}
+
 .payment-icon {
   display: block;
 }
