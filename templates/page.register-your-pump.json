@@ -24,6 +24,7 @@
         "heading_GxhDPU"
       ],
       "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/register-pump-banner.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
