@@ -183,7 +183,7 @@
         "button_cYLkbG": {
           "type": "button",
           "settings": {
-            "button_1_label": "Optional button",
+            "button_1_label": "Customer Service",
             "button_1_link": "\/pages\/customer-service",
             "button_1_style": "btn--primary",
             "button_2_label": "",
