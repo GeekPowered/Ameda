@@ -35,7 +35,7 @@
     "custom_liquid_3XAkmD": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"grid grid-cols-1 lg:grid-cols-3\"><div><\/div><div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"nN21y5C-s2lc_Or7QEKn_g\"><\/div><\/div>",
+        "custom_liquid": "<div class=\"grid grid-cols-1 lg:grid-cols-3\"><div><\/div><div style=\"margin:0 auto; width: 100\" class=\"pxFormGenerator\" id=\"nN21y5C-s2lc_Or7QEKn_g\"><\/div><\/div>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
