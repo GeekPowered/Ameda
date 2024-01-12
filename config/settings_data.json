@@ -449,7 +449,7 @@
     "show_blur_messages": true,
     "blur_message_1": "Ready to check out?",
     "blur_message_2": "Questions? Concerns? We have answers!",
-    "blur_message_delay": 4,
+    "blur_message_delay": 7,
     "vibrate_on_atc": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/favicon-180.png",
     "checkout_logo_position": "left",
