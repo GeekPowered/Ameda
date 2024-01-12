@@ -352,7 +352,22 @@
       "type": "latest-posts",
       "settings": {
         "title": "Latest Posts",
-        "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you."
+        "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you.",
+        "show_button": true,
+        "button_link": "\/blogs\/posts\/",
+        "button_text": "All Posts",
+        "button_style": "btn--primary",
+        "top_content_visible": true,
+        "blog_tag": ""
+      }
+    },
+    "wave_section_fAkqj3": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "{{ shop.brand.colors.secondary[0].background }}",
+        "wavetype": "top",
+        "waveposition": ""
       }
     },
     "d8cce70e-a0fa-49e3-af4a-6e92df06e86c": {
@@ -410,6 +425,7 @@
     "a477fc8e-3593-4177-886f-c751c483ad0d",
     "81edc268-77ee-444d-8faa-e39d442f831b",
     "6c43c588-3562-43d7-a23c-855740887428",
+    "wave_section_fAkqj3",
     "d8cce70e-a0fa-49e3-af4a-6e92df06e86c"
   ]
 }
