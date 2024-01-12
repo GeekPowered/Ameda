@@ -363,6 +363,9 @@
     },
     "wave_section_fAkqj3": {
       "type": "wave-section",
+      "custom_css": [
+        ".wave-container {margin-bottom: -1px;}"
+      ],
       "settings": {
         "wavebgcolor": "#ffffff",
         "wavesvgcolor": "{{ shop.brand.colors.secondary[0].background }}",
