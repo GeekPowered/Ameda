@@ -38,6 +38,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".main-nav__child {border-radius: 1rem;}"
+      ],
       "settings": {
         "enable_sticky": true,
         "mobile_menu_position": "burger-right",
