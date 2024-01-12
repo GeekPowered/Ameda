@@ -138,7 +138,7 @@
       ],
       "settings": {
         "stick_on_scroll": true,
-        "sticky_atc_panel": true,
+        "sticky_atc_panel": false,
         "sticky_atc_position": "end",
         "sticky_atc_mobile": true,
         "media_layout": "slider",
@@ -147,17 +147,17 @@
         "media_crop": "none",
         "hover_zoom": "large",
         "enable_video_looping": false,
-        "stacked_scroll": "always",
+        "stacked_scroll": "never",
         "underline_active": true,
         "media_thumbs": "desktop",
         "thumb_ratio": "1",
         "thumb_crop": "none",
         "media_arrows": "desktop",
         "show_slide_count": true,
-        "border_color": "#eeeeee",
-        "bg_color": "#f4f4f4",
+        "border_color": "rgba(0,0,0,0)",
+        "bg_color": "#ffffff",
         "enable_media_grouping": false,
-        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+        "media_grouping_option": "Bundle"
       }
     },
     "details": {
