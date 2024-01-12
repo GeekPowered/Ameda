@@ -38,7 +38,7 @@
     "custom_liquid_NWgAmx": {
       "type": "custom-liquid",
       "custom_css": [
-        ".section--padded {padding-top: 0; margin-top: 0;}"
+        ".section--full-width {padding-top: 0; margin-top: 0;}"
       ],
       "settings": {
         "custom_liquid": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"IqVkdCD4wxbqmr-DaMHncg\"><\/div>",
