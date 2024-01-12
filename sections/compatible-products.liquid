@@ -59,6 +59,8 @@
   
     assign compatibility_products = product.metafields.product.compatibility | split: ',' -%}
   
+    <script>console.log('{% product.metafields.product.compatibility %}');</script>
+
   <product-recommendations class="section">
     {%- if compatibility_products.size > 0 -%}
       {%- if section.settings.heading != blank -%}
@@ -215,5 +217,5 @@
         }
       ]
     }
-    {% endschema %}
+{% endschema %}
     
