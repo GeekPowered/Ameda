@@ -165,11 +165,6 @@
       "settings": {
       }
     },
-    "compatible_products_HxqRpA": {
-      "type": "compatible-products",
-      "settings": {
-      }
-    },
     "recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -185,7 +180,6 @@
   "order": [
     "main",
     "details",
-    "compatible_products_HxqRpA",
     "recommendations"
   ]
 }
