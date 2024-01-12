@@ -65,7 +65,7 @@
             "heading": "",
             "text": "",
             "button_label": "For Moms",
-            "button_link": "#"
+            "button_link": "shopify:\/\/pages\/support-for-mom"
           }
         },
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-2": {
@@ -89,7 +89,7 @@
             "heading": "",
             "text": "",
             "button_label": "Insurance",
-            "button_link": "#"
+            "button_link": "shopify:\/\/pages\/insurance"
           }
         }
       },
@@ -260,12 +260,6 @@
           "settings": {
             "collection": "cleaning-sanitization"
           }
-        },
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-6": {
-          "type": "collection",
-          "settings": {
-            "collection": "rental-pumps"
-          }
         }
       },
       "block_order": [
@@ -273,8 +267,7 @@
         "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-2",
         "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-3",
         "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-4",
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-5",
-        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-6"
+        "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-5"
       ],
       "settings": {
         "title": "Shop By Your Needs",
