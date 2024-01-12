@@ -70,7 +70,7 @@
       {%- endif -%}
   
       {%- if carousel -%}
-        <carousel-slider class="carousel block" inactive{% if section.settings.layout == 'carousel_on_mobile' %} disable-desktop="true"{% endif %}>
+        <carousel-slider class="carousel block" inactive {% if section.settings.layout == 'carousel_on_mobile' %} disable-desktop="true"{% endif %}>
           <div class="container relative">
             <div class="slider" id="slider-{{ section.id }}">
       {%- endif -%}
@@ -108,7 +108,7 @@
 
 {% schema %}
     {
-      "name": "Compatible products",
+      "name": "Compatible Products",
       "tag": "section",
       "class": "cc-product-recommendations",
       "settings": [
