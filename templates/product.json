@@ -165,6 +165,17 @@
       "settings": {
       }
     },
+    "compatible_products_783dhj": {
+      "type": "compatible-products",
+      "settings": {
+        "heading": "Compatible Products",
+        "heading_align": "text-center",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8
+      }
+    },
     "recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -180,6 +191,7 @@
   "order": [
     "main",
     "details",
+    "compatible_products_783dhj",
     "recommendations"
   ]
 }
