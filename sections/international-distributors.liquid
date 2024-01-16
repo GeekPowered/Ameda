@@ -29,6 +29,13 @@
             {% endfor %}
           {% endif %}
 
+            <div>
+                Phone Numbers Raw: {{ international_distributor.phone_numbers }}
+            </div>
+            <div>
+                Email Raw: {{ international_distributor.email }}
+            </div>
+
           {% if international_distributor.link %}
             <a class="btn btn--primary" href="{{ international_distributor.link }}" target="_blank">Visit Website</a>
           {% endif %}
