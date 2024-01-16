@@ -7,12 +7,12 @@
             <h3 class="h5">{{ international_distributors.title }}</h3>
           {% endif %}
 
-          {% if international_distributors.country.value %}
-            <p>{{ international_distributors.country.value }}</p>
+          {% if international_distributors.country %}
+            <p>{{ international_distributors.country }}</p>
           {% endif %}
 
-          {% if international_distributors.company.value %}
-            <p>{{ international_distributors.company.value }}</p>
+          {% if international_distributors.company %}
+            <p>{{ international_distributors.company }}</p>
           {% endif %}
 
           {% if international_distributors.address %}
@@ -21,13 +21,13 @@
 
           {% if international_distributors.phone_numbers %}
             {% for phone_number in international_distributors.phone_numbers %}
-              <a href="tel:{{ phone_number.value }}">{{ phone_number.value }}</a>
+              <a href="tel:{{ phone_number }}">{{ phone_number }}</a>
             {% endfor %}
           {% endif %}
 
           {% if international_distributors.email %}
             {% for email in international_distributors.email %}
-                <a href="mailto:{{ email.value }}">{{ email.value }}</a>
+                <a href="tel:{{ email }}">{{ email }}</a>
             {% endfor %}
           {% endif %}
 
