@@ -14,7 +14,7 @@
     flex-direction: column;
     gap: 1rem;
 }
-.distributor-location p {
+.distributor-location * {
     margin-bottom: 0;
 }
 </style>
@@ -26,11 +26,11 @@
         <div class="distributor-location">
 
           {% if international_distributor.country %}
-            <h3 class="h5">{{ international_distributor.country }}</h3>
+            <h4>{{ international_distributor.country }}</h4>
           {% endif %}
 
           {% if international_distributor.company %}
-            <p><strong>{{ international_distributor.company }}</strong></p>
+            <h5>{{ international_distributor.company }}</h5>
           {% endif %}
 
           {% if international_distributor.address %}
