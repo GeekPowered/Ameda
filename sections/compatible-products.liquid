@@ -83,12 +83,12 @@
             {%- for product_handle in compatible_products -%}
               {% assign product = all_products[product_handle] %}
                 {%- if product.available -%}
-                    <li{% if carousel %} class="slider__item"{% endif %}>
+                    <li {% if carousel %} class="slider__item"{% endif %}>
                         {% render 'product-card', product: product %}
                     </li>
                 {%- endif -%}
             {%- endfor -%}
-          </ul>
+        </ul>
         </div>
   
       {%- if carousel -%}
@@ -230,3 +230,4 @@
       ]
     }
 {% endschema %}
+    
