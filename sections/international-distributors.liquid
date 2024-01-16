@@ -15,26 +15,17 @@
             {{ international_distributor.address | metafield_tag }}
           {% endif %}
 
-          {% if international_distributor.phone_numbers != blank %}
-            {% for phone_number in international_distributor.phone_numbers | split: ',' %}
-              {% assign trimmed_phone_number = phone_number | strip %}
-              <a href="tel:{{ trimmed_phone_number }}">{{ trimmed_phone_number }}</a>
+          {% if international_distributor.phone_numbers.value != blank %}
+            {% for phone_number in international_distributor.phone_numbers.value | split: ',' %}
+              <a href="tel:{{ phone_number }}">{{ phone_number }}</a>
             {% endfor %}
           {% endif %}
           
-          {% if international_distributor.email != blank %}
-            {% for email in international_distributor.email | split: ',' %}
-              {% assign trimmed_email = email | strip %}
-              <a href="mailto:{{ trimmed_email }}">{{ trimmed_email }}</a>
+          {% if international_distributor.email.value != blank %}
+            {% for email in international_distributor.email.value | split: ',' %}
+              <a href="mailto:{{ email }}">{{ email }}</a>
             {% endfor %}
           {% endif %}
-
-            <div>
-                Phone Numbers Raw: {% echo international_distributor.phone_numbers %}
-            </div>
-            <div>
-                Email Raw: {% echo international_distributor.email %}
-            </div>
 
           {% if international_distributor.link %}
             <a class="btn btn--primary" href="{{ international_distributor.link }}" target="_blank">Visit Website</a>
