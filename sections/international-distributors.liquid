@@ -9,7 +9,7 @@
     background: #fff;
     border-radius: 1rem;
     flex: 0;
-    min-width: calc(25% - 3rem);
+    min-width: calc(25% - 1.5rem);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -24,12 +24,13 @@
     <div class="distributor-locations">
       {% for international_distributor in shop.metaobjects.international_distributors.values %}
         <div class="distributor-location">
-          {% if international_distributor.company %}
-            <h3 class="h5">{{ international_distributor.company }}</h3>
-          {% endif %}
 
           {% if international_distributor.country %}
-            <p>{{ international_distributor.country }}</p>
+            <h3 class="h5">{{ international_distributor.country }}</h3>
+          {% endif %}
+
+          {% if international_distributor.company %}
+            <p><strong>{{ international_distributor.company }}</strong></p>
           {% endif %}
 
           {% if international_distributor.address %}
