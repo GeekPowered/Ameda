@@ -60,6 +60,9 @@
     assign compatibility_products = product.metafields.product.compatibility | default: ''
     assign compatibility_products_list = compatibility_products | split: ','
   
+    echo "Compatibility Products List: " | append: compatibility_products
+    echo "Compatibility Products IDs: " | append: compatibility_products_list
+  
     assign product_handles = ''
     for compatibility_product_id in compatibility_products_list
       assign found_product = all_products[compatibility_product_id]
@@ -68,6 +71,8 @@
       endif
     endfor
     assign product_handles = product_handles | split: ',' | uniq
+  
+    echo "Product Handles: " | append: product_handles
   -%}
   
   <product-recommendations class="section" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit={{ limit }}&intent=related" data-product-id="{{ product_id }}">
