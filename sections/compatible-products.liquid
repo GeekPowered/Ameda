@@ -60,12 +60,10 @@
     assign compatibility_products = product.metafields.product.compatibility | default: ''
     assign compatibility_products_list = compatibility_products | split: ','
   
-    echo "Compatibility Products List: " | append: compatibility_products
-    echo "Compatibility Products IDs: " | append: compatibility_products_list
-  
     assign product_handles = ''
-    for compatibility_product_id in compatibility_products_list
-      assign found_product = all_products[compatibility_product_id]
+    for gid in compatibility_products_list
+      assign product_id = gid | split: '/' | last | split: '"' | first
+      assign found_product = all_products[product_id]
       if found_product != nil and found_product != empty
         assign product_handles = product_handles | append: found_product.handle | append: ','
       endif
