@@ -7,31 +7,31 @@
             <h3 class="h5">{{ international_distributors.title }}</h3>
           {% endif %}
 
-          {% if international_distributors.country != blank %}
+          {% if international_distributors.country %}
             <p>{{ international_distributors.country }}</p>
           {% endif %}
 
-          {% if international_distributors.company != blank %}
+          {% if international_distributors.company %}
             <p>{{ international_distributors.company }}</p>
           {% endif %}
 
-          {% if international_distributors.address != blank %}
-            <div>{{ international_distributors.address }}</div>
+          {% if international_distributors.address %}
+            <div class="distributor-address">{{ international_distributors.address | raw }}</div>
           {% endif %}
 
-          {% if international_distributors.phone_numbers != blank %}
+          {% if international_distributors.phone_numbers %}
             {% for phone_number in international_distributors.phone_numbers %}
               <a href="tel:{{ phone_number }}">{{ phone_number }}</a>
             {% endfor %}
           {% endif %}
 
-          {% if international_distributors.email != blank %}
+          {% if international_distributors.email %}
             {% for email in international_distributors.email %}
-                <a href="tel:{{ email }}">{{ email }}</a>
+                <a href="mailto:{{ email }}">{{ email }}</a>
             {% endfor %}
           {% endif %}
 
-          {% if international_distributors.link != blank %}
+          {% if international_distributors.link %}
             <a class="btn btn--primary" href="{{ international_distributors.link }}" target="_blank">Visit Website</a>
           {% endif %}
         </div>
