@@ -15,14 +15,14 @@
             {{ international_distributor.address | metafield_tag }}
           {% endif %}
 
-          {% if international_distributor.phone_numbers.length > 0 %}
-            {% for phone_number in international_distributor.phone_numbers %}
+          {% if international_distributor.phone_numbers %}
+            {% for phone_number in international_distributor.phone_numbers | split: ',' %}
               <a href="tel:{{ phone_number }}">{{ phone_number }}</a>
             {% endfor %}
           {% endif %}
 
-          {% if international_distributor.email.length > 0 %}
-            {% for email in international_distributor.email %}
+          {% if international_distributor.email %}
+            {% for email in international_distributor.email | split: ',' %}
                 <a href="tel:{{ email }}">{{ email }}</a>
             {% endfor %}
           {% endif %}
