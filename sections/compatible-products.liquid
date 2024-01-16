@@ -9,53 +9,53 @@
   {%- endif -%}
   
   {%- liquid
-    assign carousel_desktop_small = ' md:auto-cols-3 lg:auto-cols-4 xl:auto-cols-5 small-cards-desktop'
-    assign carousel_desktop_medium = ' sm:auto-cols-3 xl:auto-cols-4'
-    assign carousel_desktop_large = ' sm:auto-cols-2 lg:auto-cols-3'
-  
-    assign grid_desktop_small = ' md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 small-cards-desktop'
-    assign grid_desktop_medium = ' sm:grid-cols-3 xl:grid-cols-4'
-    assign grid_desktop_large = ' sm:grid-cols-2 lg:grid-cols-3'
-  
-    if section.settings.card_size_mobile == 'small'
-      assign carousel_mobile_cols = 'grid-flow-col auto-cols-2 small-cards-mobile'
-      assign grid_mobile_cols = 'grid-cols-2 small-cards-mobile'
+  assign carousel_desktop_small = ' md:auto-cols-3 lg:auto-cols-4 xl:auto-cols-5 small-cards-desktop'
+  assign carousel_desktop_medium = ' sm:auto-cols-3 xl:auto-cols-4'
+  assign carousel_desktop_large = ' sm:auto-cols-2 lg:auto-cols-3'
+
+  assign grid_desktop_small = ' md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 small-cards-desktop'
+  assign grid_desktop_medium = ' sm:grid-cols-3 xl:grid-cols-4'
+  assign grid_desktop_large = ' sm:grid-cols-2 lg:grid-cols-3'
+
+  if section.settings.card_size_mobile == 'small'
+    assign carousel_mobile_cols = 'grid-flow-col auto-cols-2 small-cards-mobile'
+    assign grid_mobile_cols = 'grid-cols-2 small-cards-mobile'
+  else
+    assign carousel_mobile_cols = 'grid-flow-col auto-cols-1'
+    assign grid_mobile_cols = 'grid-cols-1'
+  endif
+
+  if section.settings.layout == 'carousel'
+    assign carousel = true
+
+    if section.settings.card_size == 'small'
+      assign grid_classes = carousel_mobile_cols | append: carousel_desktop_small
+    elsif section.settings.card_size == 'medium'
+      assign grid_classes = carousel_mobile_cols | append: carousel_desktop_medium
     else
-      assign carousel_mobile_cols = 'grid-flow-col auto-cols-1'
-      assign grid_mobile_cols = 'grid-cols-1'
+      assign grid_classes = carousel_mobile_cols | append: carousel_desktop_large
     endif
-  
-    if section.settings.layout == 'carousel'
-      assign carousel = true
-  
-      if section.settings.card_size == 'small'
-        assign grid_classes = carousel_mobile_cols | append: carousel_desktop_small
-      elsif section.settings.card_size == 'medium'
-        assign grid_classes = carousel_mobile_cols | append: carousel_desktop_medium
-      else
-        assign grid_classes = carousel_mobile_cols | append: carousel_desktop_large
-      endif
-    elsif section.settings.layout == 'carousel_on_mobile'
-      assign carousel = true
-  
-      if section.settings.card_size == 'small'
-        assign grid_classes = carousel_mobile_cols | append: grid_desktop_small
-      elsif section.settings.card_size == 'medium'
-        assign grid_classes = carousel_mobile_cols | append: grid_desktop_medium
-      else
-        assign grid_classes = carousel_mobile_cols | append: grid_desktop_large
-      endif
+  elsif section.settings.layout == 'carousel_on_mobile'
+    assign carousel = true
+
+    if section.settings.card_size == 'small'
+      assign grid_classes = carousel_mobile_cols | append: grid_desktop_small
+    elsif section.settings.card_size == 'medium'
+      assign grid_classes = carousel_mobile_cols | append: grid_desktop_medium
     else
-      assign carousel = false
-  
-      if section.settings.card_size == 'small'
-        assign grid_classes = grid_mobile_cols | append: grid_desktop_small
-      elsif section.settings.card_size == 'medium'
-        assign grid_classes = grid_mobile_cols | append: grid_desktop_medium
-      else
-        assign grid_classes = grid_mobile_cols | append: grid_desktop_large
-      endif
+      assign grid_classes = carousel_mobile_cols | append: grid_desktop_large
     endif
+  else
+    assign carousel = false
+
+    if section.settings.card_size == 'small'
+      assign grid_classes = grid_mobile_cols | append: grid_desktop_small
+    elsif section.settings.card_size == 'medium'
+      assign grid_classes = grid_mobile_cols | append: grid_desktop_medium
+    else
+      assign grid_classes = grid_mobile_cols | append: grid_desktop_large
+    endif
+  endif
 
     assign compatibility_metafield = product.metafields.product.compatibility
     assign compatible_products = compatibility_metafield | split: ','
