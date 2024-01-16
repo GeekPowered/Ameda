@@ -16,7 +16,7 @@
           {% endif %}
 
           {% if international_distributors.address %}
-            {{ international_distributors.address | escape }}
+            {{ international_distributors.address.text }}
           {% endif %}
 
           {% if international_distributors.phone_numbers %}
