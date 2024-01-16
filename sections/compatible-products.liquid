@@ -57,19 +57,17 @@
       endif
     endif
   
-    assign product_id = product.id
-    assign limit = section.settings.products_to_show
-
     assign compatibility_products = product.metafields.product.compatibility | default: ''
     assign compatibility_products_list = compatibility_products | split: ','
   
-    assign products_to_display = []
+    assign product_handles = ''
     for compatibility_product_id in compatibility_products_list
       assign found_product = all_products[compatibility_product_id]
       if found_product != nil and found_product != empty
-        array_push(products_to_display, found_product)
+        assign product_handles = product_handles | append: found_product.handle | append: ','
       endif
     endfor
+    assign product_handles = product_handles | split: ',' | uniq
   -%}
   
   <product-recommendations class="section" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit={{ limit }}&intent=related" data-product-id="{{ product_id }}">
@@ -88,10 +86,13 @@
 
         <div class="container products-grid-container">
             <ul class="{% if carousel %}slider__grid {% endif %}grid {{ grid_classes }}" role="list">
-            {%- for compatible_product in products_to_display -%}
+            {%- for handle in product_handles -%}
+                {%- if handle != blank -%}
+                {%- assign compatible_product = all_products[handle] -%}
                 <li{% if carousel %} class="slider__item"{% endif %}>
-                {% render 'product-card', product: compatible_product %}
+                    {% render 'product-card', product: compatible_product %}
                 </li>
+                {%- endif -%}
             {%- endfor -%}
             </ul>
         </div>
