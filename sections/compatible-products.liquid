@@ -56,61 +56,63 @@
         assign grid_classes = grid_mobile_cols | append: grid_desktop_large
       endif
     endif
+
+    assign compatibility_list = product.metafields.product.compatibility | split: ','
+    assign compatible_products = ''
   
-    assign compatibility_product_handles = product.metafields.product.compatibility | default: ''
-    assign compatibility_product_handles_list = compatibility_product_handles | split: ',' -%}
+    for handle in compatibility_list
+      assign temp_product = all_products[handle]
+      if temp_product != nil
+        assign compatible_products = compatible_products | append: temp_product
+      endif
+    endfor
+
+-%}
     
   
-  <product-recommendations class="section" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit={{ limit }}&intent=related" data-product-id="{{ product_id }}">
-    {%- if compatibility_products_list.size > 0 -%}
-        {%- if section.settings.heading != blank -%}
+<product-recommendations class="section" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit={{ limit }}&intent=related" data-product-id="{{ product_id }}">
+    {%- if compatible_products.size > 0  -%}
+      {%- if section.settings.heading != blank -%}
         <div class="container">
-            <h2 class="h4 section__heading {{ section.settings.heading_align }}">{{ section.settings.heading | escape }}</h2>
+          <h2 class="h4 section__heading {{ section.settings.heading_align }}">{{ section.settings.heading | escape }}</h2>
         </div>
-        {%- endif -%}
-
-        {%- if carousel -%}
-        <carousel-slider class="carousel block" inactive{% if section.settings.layout == 'carousel_on_mobile' %} disable-desktop="true"{% endif %}>
-            <div class="container relative">
-            <div class="slider" id="slider-{{ section.id }}">
-        {%- endif -%}
-
-        <div class="container products-grid-container">
-            <ul class="{% if carousel %}slider__grid {% endif %}grid {{ grid_classes }}" role="list">
-            {%- for handle in compatibility_product_handles_list -%}
-                {%- if handle != blank -%}
-                {%- assign compatible_product = all_products[handle] -%}
-                {%- if compatible_product != empty -%}
-                    <li{% if carousel %} class="slider__item"{% endif %}>
-                    {% render 'product-card', product: compatible_product %}
-                    </li>
-                {%- endif -%}
-                {%- endif -%}
-            {%- endfor -%}
-            </ul>
-        </div>
-  
+      {%- endif -%}
   
       {%- if carousel -%}
-            </div>
-            {%- if settings.slider_show_arrows != 'never' -%}
-              <div class="slider-nav absolute top-middle end {% if settings.slider_show_arrows == 'hover' %}slider-nav--show-on-hover no-hover-hidden {% endif %}hidden md:block no-js-hidden">
-                <button type="button" class="slider-nav__btn tap-target btn {{ settings.slider_button_style }} has-ltr-icon" name="next" aria-controls="slider-{{ section.id }}">
-                  <span class="visually-hidden">{{ 'general.slider.next' | t }}</span>
-                  {% render 'icon-chevron-right' %}
-                </button>
-                <button type="button" class="slider-nav__btn tap-target btn {{ settings.slider_button_style }} has-ltr-icon" name="prev" aria-controls="slider-{{ section.id }}">
-                  <span class="visually-hidden">{{ 'general.slider.previous' | t }}</span>
-                  {% render 'icon-chevron-left' %}
-                </button>
-              </div>
-            {%- endif -%}
-          </div>
-        </carousel-slider>
+        <carousel-slider class="carousel block" inactive{% if section.settings.layout == 'carousel_on_mobile' %} disable-desktop="true"{% endif %}>
+          <div class="container relative">
+            <div class="slider" id="slider-{{ section.id }}">
       {%- endif -%}
-    {%- endif -%}
+  
+      <div class="container products-grid-container">
+        <ul class="{% if carousel %}slider__grid {% endif %}grid {{ grid_classes }}{% if section.settings.layout == 'carousel_on_mobile' and section.settings.card_size_mobile == 'small' and settings.card_contain %} sm:gap-x-theme sm:gap-y-8{% else %} gap-x-theme gap-y-8{% endif %}{% if section.settings.card_size_mobile == 'small' and settings.card_contain %} small__grid{% endif %}" role="list">
+        {%- for product in compatible_products -%}
+          <li{% if carousel %} class="slider__item"{% endif %}>
+            {% render 'product-card', product: product %}
+          </li>
+        {%- endfor -%}
+    </ul>
+  </div>
+  
+  {%- if carousel -%}
+        </div>
+        {%- if settings.slider_show_arrows != 'never' -%}
+          <div class="slider-nav absolute top-middle end {% if settings.slider_show_arrows == 'hover' %}slider-nav--show-on-hover no-hover-hidden {% endif %}hidden md:block no-js-hidden">
+            <button type="button" class="slider-nav__btn tap-target btn {{ settings.slider_button_style }} has-ltr-icon" name="next" aria-controls="slider-{{ section.id }}">
+              <span class="visually-hidden">{{ 'general.slider.next' | t }}</span>
+              {% render 'icon-chevron-right' %}
+            </button>
+            <button type="button" class="slider-nav__btn tap-target btn {{ settings.slider_button_style }} has-ltr-icon" name="prev" aria-controls="slider-{{ section.id }}">
+              <span class="visually-hidden">{{ 'general.slider.previous' | t }}</span>
+              {% render 'icon-chevron-left' %}
+            </button>
+          </div>
+        {%- endif -%}
+      </div>
+    </carousel-slider>
+  {%- endif -%}
+  {%- endif -%}
   </product-recommendations>
-
 
 
 {% schema %}
