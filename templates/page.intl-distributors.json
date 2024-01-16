@@ -14,7 +14,7 @@
         "heading_cyFUGh": {
           "type": "heading",
           "settings": {
-            "heading": "Store Locator",
+            "heading": "International Distributors",
             "heading_size": "h0",
             "heading_h1": true
           }
@@ -32,8 +32,8 @@
         "prevent_animation": false
       }
     },
-    "2c8e16d7-9c1c-43eb-bf7b-b8536df9ab8f": {
-      "type": "store-locator",
+    "international_distributors_kr6zCW": {
+      "type": "international-distributors",
       "settings": {
       }
     }
@@ -41,6 +41,6 @@
   "order": [
     "main",
     "rich_text_xHkyRR",
-    "2c8e16d7-9c1c-43eb-bf7b-b8536df9ab8f"
+    "international_distributors_kr6zCW"
   ]
 }
