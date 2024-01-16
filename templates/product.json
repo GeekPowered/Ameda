@@ -179,7 +179,7 @@
     "recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
+        "heading": "You May Also Like",
         "heading_align": "text-center",
         "layout": "carousel",
         "card_size_mobile": "small",
