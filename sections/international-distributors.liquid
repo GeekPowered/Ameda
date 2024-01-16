@@ -17,13 +17,15 @@
 
           {% if international_distributor.phone_numbers != blank %}
             {% for phone_number in international_distributor.phone_numbers | split: ',' %}
-              <a href="tel:{{ phone_number }}">{{ phone_number }}</a>
+              {% assign trimmed_phone_number = phone_number | strip %}
+              <a href="tel:{{ trimmed_phone_number }}">{{ trimmed_phone_number }}</a>
             {% endfor %}
           {% endif %}
-
+          
           {% if international_distributor.email != blank %}
             {% for email in international_distributor.email | split: ',' %}
-                <a href="tel:{{ email }}">{{ email }}</a>
+              {% assign trimmed_email = email | strip %}
+              <a href="mailto:{{ trimmed_email }}">{{ trimmed_email }}</a>
             {% endfor %}
           {% endif %}
 
