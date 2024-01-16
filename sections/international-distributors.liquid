@@ -1,38 +1,34 @@
 <div class="section section--padding">
   <div class="container">
     <div class="distributor-locations">
-      {% for international_distributors in shop.metaobjects.international_distributors.values %}
+      {% for international_distributor in shop.metaobjects.international_distributors.values %}
         <div class="distributor-location">
-          {% if international_distributors.title %}
-            <h3 class="h5">{{ international_distributors.title }}</h3>
+          {% if international_distributor.company %}
+            <h3 class="h5">{{ international_distributor.company }}</h3>
           {% endif %}
 
-          {% if international_distributors.country %}
-            <p>{{ international_distributors.country }}</p>
+          {% if international_distributor.country %}
+            <p>{{ international_distributor.country }}</p>
           {% endif %}
 
-          {% if international_distributors.company %}
-            <p>{{ international_distributors.company }}</p>
+          {% if international_distributor.address %}
+            {{ international_distributor.address | metafield_tag }}
           {% endif %}
 
-          {% if international_distributors.address %}
-            {{ international_distributors.address | metafield_tag }}
-          {% endif %}
-
-          {% if international_distributors.phone_numbers %}
-            {% for phone_number in international_distributors.phone_numbers %}
+          {% if international_distributor.phone_numbers %}
+            {% for phone_number in international_distributor.phone_numbers %}
               <a href="tel:{{ phone_number }}">{{ phone_number }}</a>
             {% endfor %}
           {% endif %}
 
-          {% if international_distributors.email %}
-            {% for email in international_distributors.email %}
+          {% if international_distributor.email %}
+            {% for email in international_distributor.email %}
                 <a href="tel:{{ email }}">{{ email }}</a>
             {% endfor %}
           {% endif %}
 
-          {% if international_distributors.link %}
-            <a class="btn btn--primary" href="{{ international_distributors.link }}" target="_blank">Visit Website</a>
+          {% if international_distributor.link %}
+            <a class="btn btn--primary" href="{{ international_distributor.link }}" target="_blank">Visit Website</a>
           {% endif %}
         </div>
       {% endfor %}
