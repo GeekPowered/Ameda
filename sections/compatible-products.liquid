@@ -57,21 +57,8 @@
       endif
     endif
   
-    assign compatibility_products = product.metafields.namespace.compatibility | default: ''
-    assign compatibility_products_list = compatibility_products | split: ','
-    
-    assign product_handles = ''
-    for gid in compatibility_products_list
-      assign product_gid = gid | split: '"' | first
-      assign compatible_product = all_products[product_gid]
-    
-      if compatible_product != nil
-        assign product_handle = compatible_product.handle
-        assign product_handles = product_handles | append: product_handle | append: ','
-      endif
-    endfor
-    
-    assign product_handles_array = product_handles | split: ',' | uniq -%}
+    assign compatibility_product_handles = product.metafields.product.compatibility | default: ''
+    assign compatibility_product_handles_list = compatibility_product_handles | split: ',' -%}
     
   
   <product-recommendations class="section" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit={{ limit }}&intent=related" data-product-id="{{ product_id }}">
@@ -87,19 +74,22 @@
             <div class="container relative">
             <div class="slider" id="slider-{{ section.id }}">
         {%- endif -%}
-        
+
         <div class="container products-grid-container">
-        <ul class="{% if carousel %}slider__grid {% endif %}grid {{ grid_classes }}" role="list">
-          {%- for handle in product_handles_array -%}
-            {%- if handle != blank -%}
-              {%- assign compatible_product = all_products[handle] -%}
-              <li{% if carousel %} class="slider__item"{% endif %}>
-                {% render 'product-card', product: compatible_product %}
-              </li>
-            {%- endif -%}
-          {%- endfor -%}
-        </ul>
-      </div>
+            <ul class="{% if carousel %}slider__grid {% endif %}grid {{ grid_classes }}" role="list">
+            {%- for handle in compatibility_product_handles_list -%}
+                {%- if handle != blank -%}
+                {%- assign compatible_product = all_products[handle] -%}
+                {%- if compatible_product != empty -%}
+                    <li{% if carousel %} class="slider__item"{% endif %}>
+                    {% render 'product-card', product: compatible_product %}
+                    </li>
+                {%- endif -%}
+                {%- endif -%}
+            {%- endfor -%}
+            </ul>
+        </div>
+  
   
       {%- if carousel -%}
             </div>
