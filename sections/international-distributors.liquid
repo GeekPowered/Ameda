@@ -30,10 +30,10 @@
           {% endif %}
 
             <div>
-                Phone Numbers Raw: {{ international_distributor.phone_numbers }}
+                Phone Numbers Raw: {% echo international_distributor.phone_numbers %}
             </div>
             <div>
-                Email Raw: {{ international_distributor.email }}
+                Email Raw: {% echo international_distributor.email %}
             </div>
 
           {% if international_distributor.link %}
