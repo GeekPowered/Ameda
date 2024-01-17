@@ -31,7 +31,7 @@ ul.state-selector {
     align-items: center;
     text-align: center;
     color: #fff;
-    background-color: var(--heading-color);
+    background-color: rgb(var(--heading-color));
     border-radius: 50%;
     padding: .25em;
 }
