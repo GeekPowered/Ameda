@@ -38,27 +38,11 @@
             {% if store_location.website %}
               <a class="link-with-icon" target="_blank" href="{{ store_location.website }}">{% render 'icon-link' %} {{ store_location.website }}</a>
             {% endif %}
-          
-            {% if store_location.address %}
-              <p><strong>Address:</strong> {{ store_location.address }}</p>
-            {% endif %}
-          
-            {% if store_location.city %}
-              <p><strong>City:</strong> {{ store_location.city }}</p>
-            {% endif %}
-          
-            {% if store_location.state_province %}
-              <p><strong>State / Province:</strong> <span>{{ store_location.state_province }}</span></p>
-            {% endif %}
-          
-            {% if store_location.country %}
-              <p><strong>Country:</strong> {{ store_location.country }}</p>
-            {% endif %}
-          
-            {% if store_location.zip %}
-              <p><strong>Zip:</strong> {{ store_location.zip }}</p>
-            {% endif %}
-          
+            
+            <p>
+              {% if store_location.address %}{{ store_location.address }}{% endif %} {% if store_location.city %}{{ store_location.city }}{% endif %}, {% if store_location.state_province %}{{ store_location.state_province }}{% endif %} {% if store_location.zip %}{{ store_location.zip }}{% endif %} {% if store_location.country %}{{ store_location.country }}{% endif %}
+            </p>
+
             {% if store_location.email %}
               <p><a class="btn btn--primary" href="mailto:{{ store_location.email }}">{{ store_location.email }}</a></p>
             {% endif %}
