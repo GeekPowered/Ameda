@@ -37,10 +37,6 @@ ul.state-selector {
     font-weight: bold;
 }
 
-.store-location .store-title {
-    padding-right: 4rem;
-}
-
 
 @media (max-width: 991px) {
     .store-location {
