@@ -24,8 +24,9 @@ ul.state-selector {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: .75em;
     display: flex;
     justify-content: center;
     align-items: center;
