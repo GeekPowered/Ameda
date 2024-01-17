@@ -35,12 +35,12 @@
               <span class="short-desc">{{ store_location.short_description }}</span>
             {% endif %}
             
-            <p>
+            <p class="mb-0">
               {% if store_location.address %}{{ store_location.address }}{% endif %}{% if store_location.city %} {{ store_location.city }}{% endif %},</br>{% if store_location.state_province %} {{ store_location.state_province }}{% endif %}{% if store_location.zip %} {{ store_location.zip }}{% endif %}{% if store_location.country %} {{ store_location.country }}{% endif %}
             </p>
 
             {% if store_location.email %}
-              <a class="btn btn--primary" href="mailto:{{ store_location.email }}">{{ store_location.email }}</a>
+              <a class="link-with-icon btn btn--primary" href="mailto:{{ store_location.email }}">{% render 'icon-mail' %} {{ store_location.email }}</a>
             {% endif %}
           
             {% if store_location.phone_number %}

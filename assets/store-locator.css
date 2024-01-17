@@ -38,6 +38,10 @@ ul.state-selector {
     font-weight: bold;
 }
 
+.store-location a.link-with-icon {
+    margin-top: 1rem;
+}
+
 .store-location a.link-with-icon svg {
     height: 1em;
     padding-top: 0.25em;
