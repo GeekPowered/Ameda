@@ -2,8 +2,7 @@
   .distributor-locations {
     display: flex;
     gap: 2rem;
-    fl
-    ex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .distributor-location {
     padding: 2rem;
@@ -27,6 +26,10 @@
 .distributor-location * {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
+}
+
+.distributor-location-content a:not(.btn) {
+  color: var(--text-color);
 }
 
 .distributor-location .country {
