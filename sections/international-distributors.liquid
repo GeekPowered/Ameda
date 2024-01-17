@@ -60,17 +60,16 @@
             {% if international_distributor.country %}
               <p class="country">{{ international_distributor.country }}</p>
             {% endif %}
+
             {% if international_distributor.company %}
               <h5>{{ international_distributor.company }}</h5>
             {% endif %}
+
             {% if international_distributor.address %}
               {{ international_distributor.address | metafield_tag }}
             {% endif %}
             <hr/>
-          </div>
 
-          <div class="distributor-location-content">
-  
             {% if international_distributor.phone_numbers.value != blank %}
               {% for phone_number in international_distributor.phone_numbers.value %}
                 <a href="tel:{{ phone_number }}">{% render 'icon-phone' %} {{ phone_number }}</a>
@@ -82,7 +81,9 @@
                 <a href="mailto:{{ email }}">{% render 'icon-mail' %} {{ email }}</a>
               {% endfor %}
             {% endif %}
-  
+          </div>
+
+          <div class="distributor-location-content">
             {% if international_distributor.link %}
               <a class="btn btn--primary" href="{{ international_distributor.link }}" target="_blank">Visit Website</a>
             {% endif %}
