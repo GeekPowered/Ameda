@@ -36,7 +36,7 @@
             {% endif %}
           
             {% if store_location.website %}
-              <p><strong>Website:</strong> <a target="_blank" href="{{ store_location.website }}">{{ store_location.website }}</a></p>
+              <a target="_blank" href="{{ store_location.website }}">{% render 'icon-link' %} {{ store_location.website }}</a>
             {% endif %}
           
             {% if store_location.address %}
