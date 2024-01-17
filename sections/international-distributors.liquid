@@ -37,8 +37,9 @@
 
 .distributor-location-content a:not(.btn) svg {
   height: 1em;
-  width: 1em;
+  width: auto;
   object-fit: contain;
+  transform: translateY(0.25em);
 }
 
 .distributor-location .country {
@@ -77,7 +78,7 @@
             
             {% if international_distributor.email != blank %}
               {% for email in international_distributor.email.value %}
-                <a href="mailto:{{ email }}">{{ email }}</a>
+                <a href="mailto:{{ email }}">{% render 'icon-mail' %} {{ email }}</a>
               {% endfor %}
             {% endif %}
   
