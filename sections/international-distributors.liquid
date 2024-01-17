@@ -10,8 +10,12 @@
     border-radius: 1rem;
     flex: 0;
     min-width: calc(25% - 1.5rem);
+    justify-content: space-between;
+}
+.distributor-location-content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
 }
 .distributor-location * {
@@ -33,29 +37,31 @@
             <p class="country">{{ international_distributor.country }}</p>
           {% endif %}
 
-          {% if international_distributor.company %}
-            <h5>{{ international_distributor.company }}</h5>
-          {% endif %}
-
-          {% if international_distributor.address %}
-            {{ international_distributor.address | metafield_tag }}
-          {% endif %}
-
-          {% if international_distributor.phone_numbers.value != blank %}
-            {% for phone_number in international_distributor.phone_numbers.value %}
-              <a href="tel:{{ phone_number }}">{{ phone_number }}</a>
-            {% endfor %}
-          {% endif %}
-          
-          {% if international_distributor.email != blank %}
-            {% for email in international_distributor.email.value %}
-              <a href="mailto:{{ email }}">{{ email }}</a>
-            {% endfor %}
-          {% endif %}
-
-          {% if international_distributor.link %}
-            <a class="btn btn--primary" href="{{ international_distributor.link }}" target="_blank">Visit Website</a>
-          {% endif %}
+          <div class="distributor-location-content">
+            {% if international_distributor.company %}
+              <h5>{{ international_distributor.company }}</h5>
+            {% endif %}
+  
+            {% if international_distributor.address %}
+              {{ international_distributor.address | metafield_tag }}
+            {% endif %}
+  
+            {% if international_distributor.phone_numbers.value != blank %}
+              {% for phone_number in international_distributor.phone_numbers.value %}
+                <a href="tel:{{ phone_number }}">{{ phone_number }}</a>
+              {% endfor %}
+            {% endif %}
+            
+            {% if international_distributor.email != blank %}
+              {% for email in international_distributor.email.value %}
+                <a href="mailto:{{ email }}">{{ email }}</a>
+              {% endfor %}
+            {% endif %}
+  
+            {% if international_distributor.link %}
+              <a class="btn btn--primary" href="{{ international_distributor.link }}" target="_blank">Visit Website</a>
+            {% endif %}
+          </div>
         </div>
       {% endfor %}
     </div>
