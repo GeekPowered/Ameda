@@ -52,10 +52,9 @@
 <div class="section section--padding">
   <div class="container">
     <div class="distributor-locations">
-      {% for international_distributor in shop.metaobjects.international_distributors.values %}
+      {% assign sorted_distributors = shop.metaobjects.international_distributors.values | sort: 'country' %}
+      {% for international_distributor in sorted_distributors %}        
         <div class="distributor-location">
-
-
           <div class="distributor-location-content">
             {% if international_distributor.country %}
               <p class="country">{{ international_distributor.country }}</p>
