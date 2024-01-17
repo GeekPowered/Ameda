@@ -24,8 +24,8 @@ ul.state-selector {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,10 +34,11 @@ ul.state-selector {
     background-color: rgb(var(--heading-color));
     border-radius: 50%;
     padding: .25em;
+    font-weight: bold;
 }
 
 .store-location .store-title {
-    padding-right: 2rem;
+    padding-right: 4rem;
 }
 
 
