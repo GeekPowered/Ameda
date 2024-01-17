@@ -15,7 +15,6 @@
   </div>
 </div>
 
-
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
@@ -23,50 +22,52 @@
       {% assign states_processed = "" | split: "," %}
 
       {% for store_location in sorted_store_locations %}
-        {% unless states_processed contains store_location.state_province %}
+        {% if states_processed contains store_location.state_province %}
+          <!-- State already processed, no ID added -->
+          <div class="store-location">
+        {% else %}
+          <!-- New state, add ID and mark state as processed -->
           <div class="store-location" id="{{ store_location.state_province }}">
           {% assign states_processed = states_processed | push: store_location.state_province %}
-        {% else %}
-          <div class="store-location">
-        {% endunless %}
-          <h3 class="h5">{{ store_location.title }}</h3>
+        {% endif %}
+            <h3 class="h5">{{ store_location.title }}</h3>
           
-          {% if store_location.short_description %}
-            <p><strong>Short Description:</strong> {{ store_location.short_description }}</p>
-          {% endif %}
+            {% if store_location.short_description %}
+              <p><strong>Short Description:</strong> {{ store_location.short_description }}</p>
+            {% endif %}
           
-          {% if store_location.website %}
-            <p><strong>Website:</strong> <a target="_blank" href="{{ store_location.website }}">{{ store_location.website }}</a></p>
-          {% endif %}
+            {% if store_location.website %}
+              <p><strong>Website:</strong> <a target="_blank" href="{{ store_location.website }}">{{ store_location.website }}</a></p>
+            {% endif %}
           
-          {% if store_location.address %}
-            <p><strong>Address:</strong> {{ store_location.address }}</p>
-          {% endif %}
+            {% if store_location.address %}
+              <p><strong>Address:</strong> {{ store_location.address }}</p>
+            {% endif %}
           
-          {% if store_location.city %}
-            <p><strong>City:</strong> {{ store_location.city }}</p>
-          {% endif %}
+            {% if store_location.city %}
+              <p><strong>City:</strong> {{ store_location.city }}</p>
+            {% endif %}
           
-          {% if store_location.state_province %}
-            <p><strong>State / Province:</strong> <span state="{{ store_location.state_province }}">{{ store_location.state_province }}<span></p>
-          {% endif %}
+            {% if store_location.state_province %}
+              <p><strong>State / Province:</strong> <span>{{ store_location.state_province }}</span></p>
+            {% endif %}
           
-          {% if store_location.country %}
-            <p><strong>Country:</strong> {{ store_location.country }}</p>
-          {% endif %}
+            {% if store_location.country %}
+              <p><strong>Country:</strong> {{ store_location.country }}</p>
+            {% endif %}
           
-          {% if store_location.zip %}
-            <p><strong>Zip:</strong> {{ store_location.zip }}</p>
-          {% endif %}
+            {% if store_location.zip %}
+              <p><strong>Zip:</strong> {{ store_location.zip }}</p>
+            {% endif %}
           
-          {% if store_location.email %}
-            <p><a class="btn btn--primary" href="mailto:{{ store_location.email }}">{{ store_location.email }}</a></p>
-          {% endif %}
+            {% if store_location.email %}
+              <p><a class="btn btn--primary" href="mailto:{{ store_location.email }}">{{ store_location.email }}</a></p>
+            {% endif %}
           
-          {% if store_location.phone_number %}
-            <p class="m-0"><a class="btn btn--primary" href="tel:{{ store_location.phone_number }}">{{ store_location.phone_number }}</a></p>
-          {% endif %}
-        </div>
+            {% if store_location.phone_number %}
+              <p class="m-0"><a class="btn btn--primary" href="tel:{{ store_location.phone_number }}">{{ store_location.phone_number }}</a></p>
+            {% endif %}
+          </div>
       {% endfor %}
     </div>
   </div>
