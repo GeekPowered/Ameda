@@ -15,22 +15,27 @@
   </div>
 </div>
 
+
+I apologize for the confusion earlier. Let's refine the logic to ensure that only the first store location for each state has an ID. We'll use a variable to track the current state being processed and only add an ID when a new state is encountered.
+
+Here's the revised full code:
+
+html
+Copy code
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
       {% assign sorted_store_locations = shop.metaobjects.store_location.values | sort: 'state_province' %}
-      {% assign states_processed = "" | split: "," %}
+      {% assign current_state = nil %}
 
       {% for store_location in sorted_store_locations %}
-        {% if states_processed contains store_location.state_province %}
-          <!-- State already processed, no ID added -->
-          <div class="store-location">
-        {% else %}
-          <!-- New state, add ID and mark state as processed -->
+        {% if current_state != store_location.state_province %}
+          {% assign current_state = store_location.state_province %}
           <div class="store-location" id="{{ store_location.state_province }}">
-          {% assign states_processed = states_processed | push: store_location.state_province %}
+        {% else %}
+          <div class="store-location">
         {% endif %}
-            <h3 class="h5">{{ store_location.title }}</h3>
+          <h3 class="h5">{{ store_location.title }}</h3>
           
             {% if store_location.short_description %}
               <p><strong>Short Description:</strong> {{ store_location.short_description }}</p>
