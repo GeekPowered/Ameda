@@ -11,6 +11,8 @@
     flex: 0;
     min-width: calc(25% - 1.5rem);
     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 .distributor-location-content {
     display: flex;
@@ -33,14 +35,17 @@
       {% for international_distributor in shop.metaobjects.international_distributors.values %}
         <div class="distributor-location">
 
-          {% if international_distributor.country %}
-            <p class="country">{{ international_distributor.country }}</p>
-          {% endif %}
 
           <div class="distributor-location-content">
+            {% if international_distributor.country %}
+              <p class="country">{{ international_distributor.country }}</p>
+            {% endif %}
             {% if international_distributor.company %}
               <h5>{{ international_distributor.company }}</h5>
             {% endif %}
+          </div>
+
+          <div class="distributor-location-content">
   
             {% if international_distributor.address %}
               {{ international_distributor.address | metafield_tag }}
