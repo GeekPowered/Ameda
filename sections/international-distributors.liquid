@@ -63,7 +63,7 @@
   
             {% if international_distributor.phone_numbers.value != blank %}
               {% for phone_number in international_distributor.phone_numbers.value %}
-                <a href="tel:{{ phone_number }}">{{ phone_number }}</a>
+                <a href="tel:{{ phone_number }}">{% render 'icon-phone' %} {{ phone_number }}</a>
               {% endfor %}
             {% endif %}
             
