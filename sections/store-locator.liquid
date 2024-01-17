@@ -40,7 +40,7 @@
             {% endif %}
             
             <p>
-              {% if store_location.address %}{{ store_location.address }}{% endif %} {% if store_location.city %}{{ store_location.city }}{% endif %}, {% if store_location.state_province %}{{ store_location.state_province }}{% endif %} {% if store_location.zip %}{{ store_location.zip }}{% endif %} {% if store_location.country %}{{ store_location.country }}{% endif %}
+              {% if store_location.address %}{{ store_location.address }}{% endif %}{% if store_location.city %} {{ store_location.city }}{% endif %},{% if store_location.state_province %} {{ store_location.state_province }}{% endif %}{% if store_location.zip %} {{ store_location.zip }}{% endif %}{% if store_location.country %} {{ store_location.country }}{% endif %}
             </p>
 
             {% if store_location.email %}

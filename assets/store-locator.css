@@ -44,10 +44,10 @@ ul.state-selector {
 }
 
 .store-location a.link-with-icon svg {
-    height: 1em;
-    padding-top: .5em;
+    height: 1.25em;
+    padding-top: 0.25em;
     width: 1em;
-    flex: 0;
+    object-fit: contain;
 }
 
 
