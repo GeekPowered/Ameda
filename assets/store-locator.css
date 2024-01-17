@@ -1,5 +1,14 @@
 .state-link {
-    font-weight: bold;
+    font-weight: 700;
+    width: 4rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
 }
 
 .store-locations {
