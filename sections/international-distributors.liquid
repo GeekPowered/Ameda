@@ -43,13 +43,12 @@
             {% if international_distributor.company %}
               <h5>{{ international_distributor.company }}</h5>
             {% endif %}
-          </div>
-
-          <div class="distributor-location-content">
-  
             {% if international_distributor.address %}
               {{ international_distributor.address | metafield_tag }}
             {% endif %}
+          </div>
+
+          <div class="distributor-location-content">
   
             {% if international_distributor.phone_numbers.value != blank %}
               {% for phone_number in international_distributor.phone_numbers.value %}
