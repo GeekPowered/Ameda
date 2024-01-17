@@ -38,6 +38,18 @@ ul.state-selector {
     font-weight: bold;
 }
 
+.store-location a.link-with-icon {
+    display: flex;
+    gap: 1rem;
+}
+
+.store-location a.link-with-icon svg {
+    height: 1em;
+    padding-top: .5em;
+    width: 1em;
+    flex: 0;
+}
+
 
 @media (max-width: 991px) {
     .store-location {
