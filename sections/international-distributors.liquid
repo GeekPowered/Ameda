@@ -17,6 +17,10 @@
 .distributor-location * {
     margin-bottom: 0;
 }
+.distributor-location .country {
+  text-transform: uppercase;
+  font-weight: bold;"
+}
 </style>
 
 <div class="section section--padding">
@@ -26,7 +30,7 @@
         <div class="distributor-location">
 
           {% if international_distributor.country %}
-            <p style="text-transform: uppercase; font-weight: bold;">{{ international_distributor.country }}</p>
+            <p class="country">{{ international_distributor.country }}</p>
           {% endif %}
 
           {% if international_distributor.company %}
