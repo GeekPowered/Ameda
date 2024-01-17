@@ -9,6 +9,11 @@
     justify-content: center;
     text-align: center;
     line-height: 1;
+    transition: .3s ease;
+}
+
+.state-link:hover {
+    transform: scale(1.1);
 }
 
 .store-locations {
