@@ -8,39 +8,427 @@
         "heading_align": "text-center"
       }
     },
-    "rich_text_xHkyRR": {
-      "type": "rich-text",
+    "image_banner_6XXWgY": {
+      "type": "image-banner",
       "blocks": {
-        "heading_cyFUGh": {
+        "subheading_xtwYUt": {
+          "type": "subheading",
+          "settings": {
+            "text": "Introducing Ameda's NEW Hospital Grade Breast Pump"
+          }
+        },
+        "text_Fz6VbC": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Introducing Ameda's NEW Hospital Grade Breast Pump<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "heading_XxCmiw": {
           "type": "heading",
           "settings": {
-            "heading": "Store Locator",
+            "heading": "Pearl®",
             "heading_size": "h0",
-            "heading_h1": true
+            "heading_h1": false
           }
         }
       },
       "block_order": [
-        "heading_cyFUGh"
+        "subheading_xtwYUt",
+        "text_Fz6VbC",
+        "heading_XxCmiw"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/pearl-banner.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/pearl-banner-m.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "media_with_text_QdFk7w": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_XQe9Xj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hospital Grade Pumping Meets Modern Design.",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_BMaU4R": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pearl's® modern design combines powerful performance inside with a protective shell on the outside. Pearl® is designed to build milk supply amongst pump dependent, all preterm and term moms. Pearl® modern design combines the durability needed for the multi-user\/hospital environment with lifestyle features moms expect. Pearl® will serve the needs of all hospitals and is the ideal multi-user product for WIC and rental stations. Pearl® is perfectly positioned to support continuity of care in the Hospital and Home.<br\/><br\/><em>Pearl® is available for purchase by Hospitals, DMEs and WIC agencies. It is not available for purchase by individual consumers at this time.<\/em><\/p>",
+            "enlarge_text": false
+          }
+        },
+        "button_zCnWEK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us For More Information",
+            "button_link": "shopify:\/\/pages\/hospital-product-inquiries",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XQe9Xj",
+        "text_BMaU4R",
+        "button_zCnWEK"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pearl.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false
+      }
+    },
+    "rich_text_9yrEJA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_34UBEi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Comfortable Pumping Day and Night",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_34UBEi"
+      ],
+      "custom_css": [
+        ".section--padded {padding-bottom: 0;}"
       ],
       "settings": {
         "text_position": "justify-center",
         "text_align": "text-center",
         "mob_center_text": true,
-        "color_scheme": "none",
+        "color_scheme": "1",
         "full_width": true,
         "prevent_animation": false
       }
     },
-    "2c8e16d7-9c1c-43eb-bf7b-b8536df9ab8f": {
-      "type": "store-locator",
+    "slideshow_W4mkEg": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_637DJY": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/AMEDA_Pearl_Light.png",
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#fff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
+        "slide_FK3jQT": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/AMEDA_Pearl_Dark.png",
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#fff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
+        "slide_dCNM6R": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/AMEDA_Pearl_Back.png",
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#fff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_637DJY",
+        "slide_FK3jQT",
+        "slide_dCNM6R"
+      ],
       "settings": {
+        "height_mode": "auto",
+        "fixed_height_desktop": 600,
+        "fixed_height_mobile": 350,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-center",
+        "transition": "slide-fade",
+        "autoplay": false,
+        "slider_pause": false,
+        "autoplay_speed": 7,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "custom_liquid_atHzJW": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "multi_column_nHiQFc": {
+      "type": "multi-column",
+      "blocks": {
+        "column_G7bNqG": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/switch-icon.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "<p>Hospital grade performance with two modes of pumping. Over 90% of moms surveyed were highly satisfied with Pearl®.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_x6TBTP": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons_Portable_2.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "<p>Small & lightweight with a rechargeable battery and carry handle.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_CkVxCp": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "<p>Mom controlled suction delivers personalized comfort.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_GzNwMP": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons_DRAFT_5.18.2020-05.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "<p>Universal HygieniKit<strong>™<\/strong> helps protect breast milk from potential contaminants like bacteria, viruses, and mold growth.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_G7bNqG",
+        "column_x6TBTP",
+        "column_CkVxCp",
+        "column_GzNwMP"
+      ],
+      "custom_css": [
+        "#template--22016424935739__multi_column_nHiQFc {background: #fff; margin: 0; padding-bottom: var(--ctrl-space) !important;}"
+      ],
+      "settings": {
+        "title": "Powerful. Portable. Comfortable. Safe.",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "natural",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "testimonials_wegkK9": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_zDkYiH": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>The Ameda Pearl® breast pump will be a great addition to any            Mom, especially NICU moms who can’t feed their babies yet but are working on supply. It’s lightweight and  the battery life make it a great pump for Moms on the go. My preemie baby thanks you for a great product.<\/p>",
+            "author": "Noemi N.",
+            "author_info": "",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        },
+        "testimonial_DzbqaJ": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>It is fantastic and so comfortable! I love how the simulation mode helps to start my let down. It does a better job of stimulating a let down than any other pump I have tried.<\/p>",
+            "author": "Danielle P.",
+            "author_info": "",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        },
+        "testimonial_VyteXH": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I loved the additional controls, THE TIMER, the bottle holders, and the night light function.<\/p>",
+            "author": "Emily G.",
+            "author_info": "",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        },
+        "testimonial_jM3H9Q": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>It's an amazing product that far exceeded my expectations and most definitely outperformed breast pumps I've used in the past.<\/p>",
+            "author": "Holly R.",
+            "author_info": "",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        },
+        "testimonial_WThXkq": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>The pump battery is incredible- I used it for about 20 minutes at a time and it lasted for at least 12 sessions. This pump was awesome! i loved how nice the layout was and the ease of the controls. i especially loved the nightlight feature, super convenient!<\/p>",
+            "author": "Charity R.",
+            "author_info": "",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_zDkYiH",
+        "testimonial_DzbqaJ",
+        "testimonial_VyteXH",
+        "testimonial_jM3H9Q",
+        "testimonial_WThXkq"
+      ],
+      "settings": {
+        "heading": "\"Most Modern Hospital Grade Pump Available\"",
+        "show_quotes": true,
+        "testimonial_size": "h5",
+        "text_position": "justify-center",
+        "text_align": "text-center justify-center",
+        "nav_style": "slideshow_nav_lines",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 7,
+        "color_scheme": "default",
+        "full_width": true
       }
     }
   },
   "order": [
     "main",
-    "rich_text_xHkyRR",
-    "2c8e16d7-9c1c-43eb-bf7b-b8536df9ab8f"
+    "image_banner_6XXWgY",
+    "media_with_text_QdFk7w",
+    "rich_text_9yrEJA",
+    "slideshow_W4mkEg",
+    "custom_liquid_atHzJW",
+    "multi_column_nHiQFc",
+    "testimonials_wegkK9"
   ]
 }
