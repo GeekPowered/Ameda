@@ -91,7 +91,7 @@
     "03ec6935-1fa5-4ef4-abf1-64b67801d52f": {
       "type": "video",
       "custom_css": [
-
+        ".video-section__media {border-radius: 1rem;}"
       ],
       "settings": {
         "video_external": "https:\/\/youtu.be\/2U0s5D8maNk",
