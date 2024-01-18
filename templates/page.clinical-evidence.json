@@ -253,14 +253,10 @@
     "7af04cf3-e681-4d54-be93-3a0a1cdcb2ed": {
       "type": "custom-liquid",
       "custom_css": [
-        "table {min-width: 70rem; overflow: auto; width: 100%; background: rgba(255,255,255,.5); border: 1px solid rgba(0, 0, 0, 0.1);}",
-        "table td,table th {border: none;}",
-        "table tr td:not(:first-of-type) {text-align: center; font-size: 1.5em; color: rgb(var(--link-color)); font-weight: 900;}",
-        "table tr:first-of-type {background: rgb(var(--link-color)); color: #fff;}",
-        "table tr:nth-child(odd):not(:first-of-type) {background-color: #fff;}"
+
       ],
       "settings": {
-        "custom_liquid": "<table class=\"comparison-chart-table\">\n<tbody>\n<tr>\n<th class=\"comparision-chart-title\">COMPARISON CHART<\/th>\n<th class=\"comparision-chart-th\">Ameda Penguin Warmer<\/th>\n<th class=\"comparision-chart-th\">Competing Brand<\/th>\n<\/tr>\n<tr>\n<td>Warms based on temperature sensor feedback loop<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Gently mixes while warming, eliminating the need for shaking or rolling<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Multi-directional, surround warming for a more uniform and even outcome<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Feedings safely warmed in closed system bag<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Warm from refrigerator to feeding temperature<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Warm from frozen to thawed temperature<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Warm from frozen to feeding temperature<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Easy to clean with common hospital disinfectant<\/td>\n<td>✓<\/td>\n<td>✓<\/td>\n<\/tr>\n<tr>\n<td>Accommodates feeding containers to 27 ml and syringes from 1mL to 100mL<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Compatible with most makes, models, and sizes of breast milk storage bags, syringes, and bottles<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<tr>\n<td>Space-saving four wells for pods or nutritional preparation area\/rooms<\/td>\n<td>✓<\/td>\n<td>&nbsp;<\/td>\n<\/tr>\n<\/tbody>\n<\/table>",
+        "custom_liquid": "{% render 'penguin-warmer-chart' %}",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
