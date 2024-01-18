@@ -1483,7 +1483,8 @@ button {
   border-color: rgb(var(--btn-text-color));
 }
 
-.btn--secondary {
+.btn--secondary,
+.product-info .shopify-payment-button__button--unbranded {
   border: var(--btn-border-width) solid rgb(var(--btn-alt-text-color));
   outline-color: rgb(var(--btn-alt-text-color));
   outline-offset: 3px;
