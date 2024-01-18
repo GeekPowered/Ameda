@@ -544,7 +544,7 @@
         "button_link": "",
         "layout": "carousel",
         "column_size": "small",
-        "column_align": "left",
+        "column_align": "center",
         "media_align": "text-center",
         "image_ratio": "shortest",
         "color_scheme": "none",
