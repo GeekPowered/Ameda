@@ -252,7 +252,7 @@
         "slider_pause": false,
         "autoplay_speed": 7,
         "color_scheme": "white",
-        "full_width": true,
+        "full_width": false,
         "tint_color": "#000000",
         "tint_opacity": 0,
         "accessibility_info": "",
