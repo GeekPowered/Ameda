@@ -643,6 +643,59 @@
         "dividers": "none",
         "prevent_animation": false
       }
+    },
+    "image_banner_m7ArRU": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xXX9CC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ameda Pearl®",
+            "heading_size": "h0",
+            "heading_h1": false
+          }
+        },
+        "text_qPLhFR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Trusted by Hospitals. Loved by Moms.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_KYBkiV": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Contact Us",
+            "button_1_link": "shopify:\/\/pages\/contact",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xXX9CC",
+        "text_qPLhFR",
+        "button_KYBkiV"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/Mask_Group_14_1.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-start items-center",
+        "overlay_text_align": "text-start",
+        "mob_center_text": true,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
     }
   },
   "order": [
@@ -661,6 +714,7 @@
     "multi_column_TdKKyE",
     "rich_text_t6iKzx",
     "wave_section_hVxWKm",
-    "custom_liquid_bqpC9A"
+    "custom_liquid_bqpC9A",
+    "image_banner_m7ArRU"
   ]
 }
