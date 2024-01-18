@@ -640,6 +640,15 @@
         "embed_code": "<script src=\"https:\/\/static.elfsight.com\/platform\/platform.js\" data-use-service-core defer><\/script>\n<div class=\"elfsight-app-09c01c85-1f70-4ab0-86c9-9a5335555020\" data-elfsight-app-lazy><\/div>"
       }
     },
+    "wave_section_cwRixD": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "rgba(0,0,0,0)",
+        "wavesvgcolor": "{{ shop.brand.colors.secondary[0].background }}",
+        "wavetype": "top",
+        "waveposition": ""
+      }
+    },
     "custom_liquid_4GpYky": {
       "type": "custom-liquid",
       "custom_css": [
@@ -670,6 +679,7 @@
     "8d53da5e-9774-4a39-be6d-1a6719422617",
     "8357ef30-4770-4182-9313-12f1b70af4cd",
     "1409fdfb-fc91-4faa-8c3a-0dc6db004bf6",
+    "wave_section_cwRixD",
     "custom_liquid_4GpYky"
   ]
 }
