@@ -58,6 +58,91 @@
         "prevent_animation": false
       }
     },
+    "multi_column_nHiQFc": {
+      "type": "multi-column",
+      "blocks": {
+        "column_G7bNqG": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/switch-icon.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "<p>Hospital grade performance with two modes of pumping. Over 90% of moms surveyed were highly satisfied with Pearl®.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_x6TBTP": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons_Portable_2.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "<p>Small & lightweight with a rechargeable battery and carry handle.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_CkVxCp": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "<p>Mom controlled suction delivers personalized comfort.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_GzNwMP": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons_DRAFT_5.18.2020-05.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "<p>Universal HygieniKit™ helps protect breast milk from potential contaminants like bacteria, viruses, and mold growth.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_G7bNqG",
+        "column_x6TBTP",
+        "column_CkVxCp",
+        "column_GzNwMP"
+      ],
+      "custom_css": [
+        "#template--22016424935739__multi_column_nHiQFc {margin: 0; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5)) !important; padding-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;}",
+        "@media (min-width: 769px) {#template--22016424935739__multi_column_nHiQFc .multi-column {width: calc((100% \/ 4) - var(--column-gap)); }}"
+      ],
+      "settings": {
+        "title": "Powerful. Portable. Comfortable. Safe.",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "natural",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "wave_section_FzTwQq": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "bottom",
+        "waveposition": "bottom"
+      }
+    },
     "media_with_text_QdFk7w": {
       "type": "media-with-text",
       "blocks": {
@@ -100,44 +185,8 @@
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
-        "color_scheme": "none",
-        "only_content_color_scheme": false
-      }
-    },
-    "wave_section_FzTwQq": {
-      "type": "wave-section",
-      "settings": {
-        "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
-        "wavetype": "bottom",
-        "waveposition": ""
-      }
-    },
-    "rich_text_9yrEJA": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_34UBEi": {
-          "type": "heading",
-          "settings": {
-            "heading": "Comfortable Pumping Day and Night",
-            "heading_size": "h3",
-            "heading_h1": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_34UBEi"
-      ],
-      "custom_css": [
-        ".section--padded {padding-bottom: 0;}"
-      ],
-      "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
         "color_scheme": "1",
-        "full_width": true,
-        "prevent_animation": false
+        "only_content_color_scheme": false
       }
     },
     "slideshow_W4mkEg": {
@@ -296,82 +345,6 @@
         "waveposition": ""
       }
     },
-    "multi_column_nHiQFc": {
-      "type": "multi-column",
-      "blocks": {
-        "column_G7bNqG": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/switch-icon.png",
-            "media_scale": 100,
-            "heading": "",
-            "text": "<p>Hospital grade performance with two modes of pumping. Over 90% of moms surveyed were highly satisfied with Pearl®.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_x6TBTP": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons_Portable_2.png",
-            "media_scale": 100,
-            "heading": "",
-            "text": "<p>Small & lightweight with a rechargeable battery and carry handle.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_CkVxCp": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons.png",
-            "media_scale": 100,
-            "heading": "",
-            "text": "<p>Mom controlled suction delivers personalized comfort.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_GzNwMP": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons_DRAFT_5.18.2020-05.png",
-            "media_scale": 100,
-            "heading": "",
-            "text": "<p>Universal HygieniKit<strong>™<\/strong> helps protect breast milk from potential contaminants like bacteria, viruses, and mold growth.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_G7bNqG",
-        "column_x6TBTP",
-        "column_CkVxCp",
-        "column_GzNwMP"
-      ],
-      "custom_css": [
-        "#template--22016424935739__multi_column_nHiQFc {margin: 0; padding-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;}",
-        "@media (min-width: 769px) {#template--22016424935739__multi_column_nHiQFc .multi-column {width: calc((100% \/ 4) - var(--column-gap)); }}"
-      ],
-      "settings": {
-        "title": "Powerful. Portable. Comfortable. Safe.",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "grid",
-        "column_size": "small",
-        "column_align": "center",
-        "media_align": "text-center",
-        "image_ratio": "natural",
-        "color_scheme": "none",
-        "button_style": "btn btn--secondary"
-      }
-    },
     "testimonials_wegkK9": {
       "type": "testimonials",
       "blocks": {
@@ -471,8 +444,8 @@
         "text_iP8FxF": {
           "type": "text",
           "settings": {
-            "text": "<p>There are a number of accessory options specifically for Ameda Pearl® that are designed to enhance your pumping experience. These include Pearl® Hard Shell Transport and Storage Case, Ameda Pearl® Trolley, Ameda Universal HygieniKits<strong>™<\/strong> and more...<\/p>",
-            "enlarge_text": true
+            "text": "<p>There are a number of accessory options specifically for Ameda Pearl® that are designed to enhance your pumping experience. These include Pearl® Hard Shell Transport and Storage Case, Ameda Pearl® Trolley, Ameda Universal HygieniKits™ and more...<\/p>",
+            "enlarge_text": false
           }
         }
       },
@@ -643,24 +616,77 @@
         "dividers": "none",
         "prevent_animation": false
       }
+    },
+    "image_banner_m7ArRU": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xXX9CC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ameda Pearl®",
+            "heading_size": "h0",
+            "heading_h1": false
+          }
+        },
+        "text_qPLhFR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Trusted by Hospitals. Loved by Moms.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_KYBkiV": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Contact Us",
+            "button_1_link": "shopify:\/\/pages\/hospital-product-inquiries",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xXX9CC",
+        "text_qPLhFR",
+        "button_KYBkiV"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/Mask_Group_14_1.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-start items-center",
+        "overlay_text_align": "text-start",
+        "mob_center_text": true,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
     }
   },
   "order": [
     "main",
     "image_banner_6XXWgY",
-    "media_with_text_QdFk7w",
+    "multi_column_nHiQFc",
     "wave_section_FzTwQq",
-    "rich_text_9yrEJA",
+    "media_with_text_QdFk7w",
     "slideshow_W4mkEg",
     "custom_liquid_atHzJW",
     "wave_section_LkAUGM",
-    "multi_column_nHiQFc",
     "testimonials_wegkK9",
     "wave_section_V9jtwa",
     "rich_text_XbAkaX",
     "multi_column_TdKKyE",
     "rich_text_t6iKzx",
     "wave_section_hVxWKm",
-    "custom_liquid_bqpC9A"
+    "custom_liquid_bqpC9A",
+    "image_banner_m7ArRU"
   ]
 }
