@@ -650,6 +650,7 @@
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
+        "color_scheme": "1",
         "prevent_animation": false
       }
     }
