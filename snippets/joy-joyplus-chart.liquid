@@ -1,3 +1,39 @@
+<style>
+    .table-wrapper table {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    }
+    .table-wrapper table td,
+    .table-wrapper table th {
+    border: none;
+    }
+    .table-wrapper table thead tr {
+    background: rgb(var(--link-color));
+    color: #fff;
+    }
+    .table-wrapper table thead th {
+    font-weight: 900;
+    text-transform: uppercase;
+    }
+    .table-wrapper table tr:nth-child(even):not(:first-of-type) {
+    background-color: #fff;
+    }
+    .table-wrapper .pink-check {
+    font-size: 1.5em;
+    color: rgb(var(--link-color));
+    font-weight: 900;
+    }
+    @media (max-width: 768px) {
+    .table-wrapper {
+        overflow: auto;
+    }
+    .table-wrapper table {
+        min-width: 40rem;
+    }
+    }
+</style>
+
 <div class="table-wrapper">
     <table>
     <thead>
