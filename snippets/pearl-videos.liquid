@@ -1,8 +1,28 @@
+<style>
+    .responsive-video {
+        width: 100%;
+        position: relative;
+        height: auto;
+        aspect-ratio: 2 / 3;
+    }
+    .responsive-video iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>
+
 <ul class="flex wrap-sm gap-x-theme gap-y-6">
     <li class="flex-col grow w-full">
-        <iframe frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="" width="1280" height="720" src="https://www.youtube.com/embed/IRgXwVQcheg?controls=1&amp;disablekb=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1" class="js-youtube"></iframe>
+        <div class="responsive-video">
+            <iframe frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="" width="1280" height="720" src="https://www.youtube.com/embed/IRgXwVQcheg?controls=1&amp;disablekb=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1" class="js-youtube"></iframe>
+        </div>
     </li>
     <li class="flex-col grow w-full">
-        <iframe frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="" width="1280" height="720" src="https://www.youtube.com/embed/p5f82vuUoZg?controls=1&amp;disablekb=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1" class="js-youtube"></iframe>
+        <div class="responsive-video">
+            <iframe frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="" width="1280" height="720" src="https://www.youtube.com/embed/p5f82vuUoZg?controls=1&amp;disablekb=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1" class="js-youtube"></iframe>
+        </div>
     </li>
 </ul>
