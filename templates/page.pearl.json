@@ -266,7 +266,6 @@
     },
     "custom_liquid_atHzJW": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "{% render 'pearl-info' %}",
         "section_height": "default",
