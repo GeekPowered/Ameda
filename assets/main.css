@@ -4454,6 +4454,11 @@ label[data-swatch]::before {
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
+@media (max-width: 600px) {
+  .wrap-sm {
+      flex-wrap: wrap;
+  }
+}
 @media (min-width: 600px){
   .sm\:col-span-3{
     grid-column: span 3 / span 3;
