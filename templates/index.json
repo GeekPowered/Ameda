@@ -640,36 +640,17 @@
         "embed_code": "<script src=\"https:\/\/static.elfsight.com\/platform\/platform.js\" data-use-service-core defer><\/script>\n<div class=\"elfsight-app-09c01c85-1f70-4ab0-86c9-9a5335555020\" data-elfsight-app-lazy><\/div>"
       }
     },
-    "5f455bc6-23bc-49a4-a914-add018baff10": {
-      "type": "newsletter",
-      "blocks": {
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to the Ameda Newsletter",
-            "heading_size": "h2"
-          }
-        },
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Enjoy motherhood by staying up to date with new product releases, events, and helpful guides.<\/p>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-heading-1",
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-text-1"
+    "custom_liquid_4GpYky": {
+      "type": "custom-liquid",
+      "custom_css": [
+
       ],
       "settings": {
-        "overlay_position": "justify-center",
-        "text_align": "text-center",
-        "color_scheme": "2",
-        "full_width": true,
-        "transparent_content_color": "#ffffff",
-        "tint_color": "#000000",
-        "tint_opacity": 20
+        "custom_liquid": "{% render 'subscription-form' %}",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
       }
     }
   },
@@ -688,6 +669,6 @@
     "8d53da5e-9774-4a39-be6d-1a6719422617",
     "8357ef30-4770-4182-9313-12f1b70af4cd",
     "1409fdfb-fc91-4faa-8c3a-0dc6db004bf6",
-    "5f455bc6-23bc-49a4-a914-add018baff10"
+    "custom_liquid_4GpYky"
   ]
 }
