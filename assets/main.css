@@ -859,6 +859,9 @@ address {
 .list-none{
   list-style-type: none;
 }
+.list-disc {
+  list-style: disc;
+}
 .auto-cols-2{
   grid-auto-columns: calc((100% - var(--column-gap)) / 2);
 }
