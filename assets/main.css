@@ -1462,6 +1462,7 @@ button {
 
 .btn--primary,
 .spr-button-primary,
+.shopify-payment-button .shopify-payment-button__button--unbranded,
 .shopify-challenge__button {
   border: var(--btn-border-width) solid rgb(var(--btn-bg-color));
   outline-color: rgb(var(--btn-bg-color));
@@ -1482,8 +1483,7 @@ button {
   border-color: rgb(var(--btn-text-color));
 }
 
-.btn--secondary,
-.shopify-payment-button .shopify-payment-button__button--unbranded {
+.btn--secondary {
   border: var(--btn-border-width) solid rgb(var(--btn-alt-text-color));
   outline-color: rgb(var(--btn-alt-text-color));
   outline-offset: 3px;
