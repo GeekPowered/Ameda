@@ -637,7 +637,7 @@
     "custom_liquid_bqpC9A": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "custom_liquid": "{% render 'pearl-videos' %}",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
