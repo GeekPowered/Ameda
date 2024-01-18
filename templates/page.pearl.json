@@ -241,7 +241,8 @@
       ],
       "custom_css": [
         ".cc-slideshow {background: #fff;}",
-        ".cc-slideshow .img-fit {object-fit: contain !important;}"
+        ".cc-slideshow .img-fit {object-fit: contain !important;}",
+        ".slideshow-ctrl {--text-color: 0 0 0;}"
       ],
       "settings": {
         "height_mode": "auto",
