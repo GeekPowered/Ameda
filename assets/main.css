@@ -1463,8 +1463,7 @@ button {
 .btn--primary,
 .spr-button-primary,
 .shopify-payment-button .shopify-payment-button__button--unbranded,
-.shopify-challenge__button,
-.pxFormGenerator > iframe .form_submit_div .btn {
+.shopify-challenge__button {
   border: var(--btn-border-width) solid rgb(var(--btn-bg-color));
   outline-color: rgb(var(--btn-bg-color));
   outline-offset: 3px;
@@ -1507,8 +1506,7 @@ button {
   .btn--primary:not(.slider-nav__btn):hover,
 .btn--secondary:not(.slider-nav__btn):hover,
 .shopify-challenge__button:hover,
-.shopify-payment-button .shopify-payment-button__button--unbranded:hover,
-.pxFormGenerator > iframe .form_submit_div .btn:hover {
+.shopify-payment-button .shopify-payment-button__button--unbranded:hover {
     background-position: 0 100%;
   }
 }
