@@ -15,6 +15,9 @@
     },
     "collection-products": {
       "type": "main-collection-products",
+      "custom_css": [
+        ".card__media {border-radius: 1rem; overflow: hidden;}"
+      ],
       "settings": {
         "products_per_page": 16,
         "card_size_mobile": "small",
