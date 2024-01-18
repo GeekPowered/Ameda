@@ -473,7 +473,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".card__media {border-radius: 1rem; overflow: hidden;}"
+      ".card__media {border-radius: 1rem; overflow: hidden;}",
+      ".header__cart-count {background: rgb(var(--btn-bg-color));}"
     ]
   }
 }
