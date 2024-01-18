@@ -184,7 +184,8 @@
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1"
       ],
       "custom_css": [
-        ".section--padded {margin-bottom: 0; padding-bottom: 0;}"
+        ".section--padded {margin-bottom: 0; padding-bottom: 0;}",
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/milk-work.jpg",

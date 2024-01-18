@@ -119,6 +119,9 @@
         "template--21939279298875__96fe1515-e74f-4517-a3b5-ad3b0fecafd8-text-1",
         "template--21939279298875__96fe1515-e74f-4517-a3b5-ad3b0fecafd8-button-1"
       ],
+      "custom_css": [
+        "img {border-radius: 1rem;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/HygieniKit_Milk_Collection_System.png",
         "video_external": "",
@@ -163,6 +166,9 @@
         "template--21939279298875__2a0ccb02-03d0-42fd-90cb-278c0a8cfddb-column-1",
         "template--21939279298875__2a0ccb02-03d0-42fd-90cb-278c0a8cfddb-column-2"
       ],
+      "custom_css": [
+        ".card {border-radius: 1rem;}"
+      ],
       "settings": {
         "title": "",
         "heading_align": "text-center",
@@ -206,6 +212,9 @@
         "d6b012a3-3e9c-4d6f-9b3b-04eacc25fc50",
         "037f1728-e481-48e0-bee8-f986293b9371",
         "3864de95-480c-4f13-a5a3-fb76abcfd48f"
+      ],
+      "custom_css": [
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/penguin_warmers_500x500_2.jpg",
@@ -293,6 +302,9 @@
         "acd8a935-4b55-4132-a896-dd70d8be8452",
         "2914391c-c237-4be5-8d25-b014e0518d0f"
       ],
+      "custom_css": [
+        ".card {border-radius: 1rem;}"
+      ],
       "settings": {
         "title": "",
         "heading_align": "text-center",
@@ -360,6 +372,9 @@
         "template--21939279298875__34f9f0fe-b145-4aea-82fd-228bb1949054-column-2",
         "template--21939279298875__34f9f0fe-b145-4aea-82fd-228bb1949054-column-3",
         "3470cb2e-1468-41d8-9795-b6da368f8b9b"
+      ],
+      "custom_css": [
+        ".card {border-radius: 1rem;}"
       ],
       "settings": {
         "title": "The Ameda Penguin Warmer Advantage",

@@ -80,6 +80,9 @@
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1",
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-button-1"
       ],
+      "custom_css": [
+        "img {border-radius: 1rem;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about-section2_2x_96a1c8f5-e72f-470a-a0b3-67386ad25e10.jpg",
         "video_external": "",
@@ -133,6 +136,9 @@
         "7ff6ac9f-6b60-4f2a-b30e-bf9a5db98392",
         "175fb035-d4c0-4ac8-b42d-1ba06f25c6f5"
       ],
+      "custom_css": [
+        "img {border-radius: 1rem;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about-section2.2_2x_ff06b0f3-381c-469a-be50-77f600920b0d.jpg",
         "video_external": "",
@@ -185,6 +191,9 @@
         "f80ed896-30ae-4e2b-a3cc-2b82bb004ef0",
         "f5521d42-4782-4d28-b25c-3436a265af9c",
         "284e3787-acc7-4c7e-bf3c-5380610c360a"
+      ],
+      "custom_css": [
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/who-we_-are.png",
@@ -257,6 +266,9 @@
         "template--21939474530619__7c2afcd6-707e-4619-8790-89a3b68da3f0-column-2",
         "template--21939474530619__7c2afcd6-707e-4619-8790-89a3b68da3f0-column-3",
         "d49aaf1d-368a-4ffb-9080-f6e6c40fa22b"
+      ],
+      "custom_css": [
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "title": "Trusted by Hospitals",

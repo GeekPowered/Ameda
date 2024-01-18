@@ -122,7 +122,8 @@
         "481b91cc-86ef-4e16-bfb9-b1ba9a9b9571"
       ],
       "custom_css": [
-        ".section--padded {margin-bottom: 0; padding-bottom: 0;}"
+        ".section--padded {margin-bottom: 0; padding-bottom: 0;}",
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/milk-work.jpg",
@@ -169,6 +170,9 @@
         "1c731b52-41e6-40b0-9299-c3eefdea414b",
         "e18c8bd0-5ba0-439f-a422-41557dd36fc7",
         "36c12609-8906-47fd-8c21-792b6f67f5f1"
+      ],
+      "custom_css": [
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/milk-work.jpg",
