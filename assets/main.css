@@ -861,6 +861,7 @@ address {
 }
 .list-disc {
   list-style: disc;
+  padding-left: 1em;
 }
 .auto-cols-2{
   grid-auto-columns: calc((100% - var(--column-gap)) / 2);
