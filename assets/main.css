@@ -1506,6 +1506,7 @@ button {
 @media (hover: hover) {
   .btn--primary:not(.slider-nav__btn):hover,
 .btn--secondary:not(.slider-nav__btn):hover,
+.product-info .shopify-payment-button__button--unbranded:hover,
 .shopify-challenge__button:hover,
 .shopify-payment-button .shopify-payment-button__button--unbranded:hover {
     background-position: 0 100%;
