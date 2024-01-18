@@ -239,6 +239,10 @@
         "slide_FK3jQT",
         "slide_dCNM6R"
       ],
+      "custom_css": [
+        ".cc-slideshow {background: #fff;}",
+        ".cc-slideshow .img-fit {object-fit: contain !important;}"
+      ],
       "settings": {
         "height_mode": "auto",
         "fixed_height_desktop": 600,
@@ -247,10 +251,10 @@
         "nav_style": "slideshow_nav_lines",
         "pagination_color": "#ffffff",
         "nav_position": "justify-center",
-        "transition": "slide-fade",
-        "autoplay": false,
-        "slider_pause": false,
-        "autoplay_speed": 7,
+        "transition": "slide",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 5,
         "color_scheme": "white",
         "full_width": false,
         "tint_color": "#000000",
