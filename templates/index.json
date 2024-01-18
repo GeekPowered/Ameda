@@ -640,6 +640,16 @@
         "embed_code": "<script src=\"https:\/\/static.elfsight.com\/platform\/platform.js\" data-use-service-core defer><\/script>\n<div class=\"elfsight-app-09c01c85-1f70-4ab0-86c9-9a5335555020\" data-elfsight-app-lazy><\/div>"
       }
     },
+    "custom_liquid_4GpYky": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"bRXEMJxx1eTk4EcyhCcUBw\"><\/div>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
     "5f455bc6-23bc-49a4-a914-add018baff10": {
       "type": "newsletter",
       "blocks": {
@@ -653,20 +663,14 @@
         "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Enjoy motherhood by staying up to date with new product releases, events, and helpful guides.<\/p>",
+            "text": "<p>Enjoy motherhood by staying up to date with new product releases, events, and helpful guides.<\/p><p><\/p>",
             "enlarge_text": false
-          }
-        },
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-form-1": {
-          "type": "form",
-          "settings": {
           }
         }
       },
       "block_order": [
         "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-heading-1",
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-text-1",
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-form-1"
+        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-text-1"
       ],
       "settings": {
         "overlay_position": "justify-center",
@@ -676,16 +680,6 @@
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
         "tint_opacity": 20
-      }
-    },
-    "custom_liquid_4GpYky": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"nN21y5C-s2lc_Or7QEKn_g\"><\/div>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "prevent_animation": false
       }
     }
   },
@@ -704,7 +698,7 @@
     "8d53da5e-9774-4a39-be6d-1a6719422617",
     "8357ef30-4770-4182-9313-12f1b70af4cd",
     "1409fdfb-fc91-4faa-8c3a-0dc6db004bf6",
-    "5f455bc6-23bc-49a4-a914-add018baff10",
-    "custom_liquid_4GpYky"
+    "custom_liquid_4GpYky",
+    "5f455bc6-23bc-49a4-a914-add018baff10"
   ]
 }
