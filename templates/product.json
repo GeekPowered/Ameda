@@ -136,6 +136,10 @@
         "31d2610e-0024-4377-b9d0-8bda2ca7b310",
         "share"
       ],
+      "custom_css": [
+        ".qty-input--secondary-btn .qty-input {border-color: rgb(var(--btn-bg-color));}",
+        ".qty-input__input,.qty-input__btn {color: rgb(var(--btn-bg-color));}"
+      ],
       "settings": {
         "stick_on_scroll": true,
         "sticky_atc_panel": false,
@@ -152,7 +156,7 @@
         "media_thumbs": "desktop",
         "thumb_ratio": "1",
         "thumb_crop": "none",
-        "media_arrows": "desktop",
+        "media_arrows": "always",
         "show_slide_count": true,
         "border_color": "rgba(0,0,0,0)",
         "bg_color": "#ffffff",
