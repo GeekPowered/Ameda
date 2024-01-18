@@ -176,6 +176,9 @@
       "block_order": [
         "template--21965917618491__084c9bf7-9db6-4b91-9bf9-e234e1a59348-text-1"
       ],
+      "custom_css": [
+        ".video-section__media {border-radius: 1rem;}"
+      ],
       "settings": {
         "video_external": "https:\/\/www.youtube.com\/watch?v=iN3I3sva8Uw",
         "video_description": "",
