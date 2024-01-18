@@ -436,7 +436,7 @@
       "settings": {
         "heading": "\"Most Modern Hospital Grade Pump Available\"",
         "show_quotes": true,
-        "testimonial_size": "h5",
+        "testimonial_size": "h6",
         "text_position": "justify-center",
         "text_align": "text-center justify-center",
         "nav_style": "slideshow_nav_lines",
@@ -446,6 +446,15 @@
         "autoplay_speed": 7,
         "color_scheme": "default",
         "full_width": true
+      }
+    },
+    "wave_section_V9jtwa": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "bottom",
+        "waveposition": ""
       }
     },
     "rich_text_XbAkaX": {
@@ -615,6 +624,25 @@
         "full_width": true,
         "prevent_animation": false
       }
+    },
+    "wave_section_hVxWKm": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "{{ shop.brand.colors.primary[0].foreground }}",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "custom_liquid_bqpC9A": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
     }
   },
   "order": [
@@ -628,8 +656,11 @@
     "wave_section_LkAUGM",
     "multi_column_nHiQFc",
     "testimonials_wegkK9",
+    "wave_section_V9jtwa",
     "rich_text_XbAkaX",
     "multi_column_TdKKyE",
-    "rich_text_t6iKzx"
+    "rich_text_t6iKzx",
+    "wave_section_hVxWKm",
+    "custom_liquid_bqpC9A"
   ]
 }
