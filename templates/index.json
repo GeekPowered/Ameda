@@ -677,6 +677,16 @@
         "tint_color": "#000000",
         "tint_opacity": 20
       }
+    },
+    "custom_liquid_4GpYky": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"nN21y5C-s2lc_Or7QEKn_g\"><\/div>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
     }
   },
   "order": [
@@ -694,6 +704,7 @@
     "8d53da5e-9774-4a39-be6d-1a6719422617",
     "8357ef30-4770-4182-9313-12f1b70af4cd",
     "1409fdfb-fc91-4faa-8c3a-0dc6db004bf6",
-    "5f455bc6-23bc-49a4-a914-add018baff10"
+    "5f455bc6-23bc-49a4-a914-add018baff10",
+    "custom_liquid_4GpYky"
   ]
 }
