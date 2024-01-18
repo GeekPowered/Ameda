@@ -100,8 +100,17 @@
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
-        "color_scheme": "1",
+        "color_scheme": "none",
         "only_content_color_scheme": false
+      }
+    },
+    "wave_section_FzTwQq": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "bottom",
+        "waveposition": ""
       }
     },
     "rich_text_9yrEJA": {
@@ -240,6 +249,7 @@
         "slide_dCNM6R"
       ],
       "custom_css": [
+        ".slideshow-section {margin-top: 0; margin-bottom: 0;}",
         ".cc-slideshow {background: #fff;}",
         ".cc-slideshow .img-fit {object-fit: contain !important;}",
         ".slideshow-ctrl {--text-color: 0 0 0;}"
@@ -266,12 +276,24 @@
     },
     "custom_liquid_atHzJW": {
       "type": "custom-liquid",
+      "custom_css": [
+        ".section--full-width {background: #fff;}"
+      ],
       "settings": {
         "custom_liquid": "{% render 'pearl-info' %}",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
         "prevent_animation": false
+      }
+    },
+    "wave_section_LkAUGM": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "top",
+        "waveposition": ""
       }
     },
     "multi_column_nHiQFc": {
@@ -333,7 +355,8 @@
         "column_GzNwMP"
       ],
       "custom_css": [
-        "#template--22016424935739__multi_column_nHiQFc {background: #fff; margin: 0; padding-bottom: var(--ctrl-space) !important;}"
+        "#template--22016424935739__multi_column_nHiQFc {margin: 0; padding-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;}",
+        "@media (min-width: 769px) {#template--22016424935739__multi_column_nHiQFc .multi-column {width: calc((100% \/ 4) - var(--column-gap)); }}"
       ],
       "settings": {
         "title": "Powerful. Portable. Comfortable. Safe.",
@@ -413,7 +436,7 @@
       "settings": {
         "heading": "\"Most Modern Hospital Grade Pump Available\"",
         "show_quotes": true,
-        "testimonial_size": "h5",
+        "testimonial_size": "h6",
         "text_position": "justify-center",
         "text_align": "text-center justify-center",
         "nav_style": "slideshow_nav_lines",
@@ -424,16 +447,220 @@
         "color_scheme": "default",
         "full_width": true
       }
+    },
+    "wave_section_V9jtwa": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "rich_text_XbAkaX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EhCEbM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pearl® Accessorized",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_iP8FxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>There are a number of accessory options specifically for Ameda Pearl® that are designed to enhance your pumping experience. These include Pearl® Hard Shell Transport and Storage Case, Ameda Pearl® Trolley, Ameda Universal HygieniKits<strong>™<\/strong> and more...<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_EhCEbM",
+        "text_iP8FxF"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "1",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "multi_column_TdKKyE": {
+      "type": "multi-column",
+      "blocks": {
+        "column_JHFQnK": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/3.png",
+            "media_scale": 100,
+            "heading": "Ameda  Pearl® Hard Shell Transport & Storage Case",
+            "text": "<p>501M03<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_XxyURH": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/Ameda_Pearl_Trolley_600.png",
+            "media_scale": 100,
+            "heading": "Ameda Pearl® Trolly",
+            "text": "<p>201H01<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_KwtHPB": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/1.png",
+            "media_scale": 100,
+            "heading": "Dual Universal HygieniKit™",
+            "text": "<p>17456 (non-sterile)<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_HdTbrz": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/3_2.png",
+            "media_scale": 100,
+            "heading": "Dual Universal HygieniKit™",
+            "text": "<p>17450W (sterile)<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_LqEVxr": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/Ameda-diaphragma_1.jpg",
+            "media_scale": 100,
+            "heading": "Universal Diaphragm Replacement Pack",
+            "text": "<p>000X02 (non-sterile)<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JHFQnK",
+        "column_XxyURH",
+        "column_KwtHPB",
+        "column_HdTbrz",
+        "column_LqEVxr"
+      ],
+      "custom_css": [
+        "#template--22016424935739__multi_column_TdKKyE {margin-top: 0; margin-bottom: 0; padding-top: 0; background: #fff;}",
+        "#template--22016424935739__multi_column_TdKKyE .img-fit {object-fit: contain;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "small",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "shortest",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "rich_text_t6iKzx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7aTtdt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get All The Features You Need",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_JU9Dr8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Visit our comparison chart page to compare and contrast Pearl® to our other breast pumps.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_zCi4Wb": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "See Comparison Chart",
+            "button_1_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMEDA_Pearl_Comparison_Chart.pdf?v=1705606041",
+            "button_1_style": "btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7aTtdt",
+        "text_JU9Dr8",
+        "button_zCi4Wb"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "1",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "wave_section_hVxWKm": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "{{ shop.brand.colors.primary[0].foreground }}",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "custom_liquid_bqpC9A": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
     }
   },
   "order": [
     "main",
     "image_banner_6XXWgY",
     "media_with_text_QdFk7w",
+    "wave_section_FzTwQq",
     "rich_text_9yrEJA",
     "slideshow_W4mkEg",
     "custom_liquid_atHzJW",
+    "wave_section_LkAUGM",
     "multi_column_nHiQFc",
-    "testimonials_wegkK9"
+    "testimonials_wegkK9",
+    "wave_section_V9jtwa",
+    "rich_text_XbAkaX",
+    "multi_column_TdKKyE",
+    "rich_text_t6iKzx",
+    "wave_section_hVxWKm",
+    "custom_liquid_bqpC9A"
   ]
 }
