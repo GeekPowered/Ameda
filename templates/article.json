@@ -1,1 +1,29 @@
-{"sections":{"main":{"type":"main-article","settings":{"pagination":"bar-reading"}},"article-comments":{"type":"article-comments","settings":{}}},"order":["main","article-comments"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "custom_css": [
+        "img {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "show_tags": true,
+        "show_author": true,
+        "show_date": true,
+        "featured_image_width": "page",
+        "heading_align": "text-center",
+        "show_share_buttons": true,
+        "pagination": "bar-reading"
+      }
+    },
+    "article-comments": {
+      "type": "article-comments",
+      "settings": {
+        "comments_per_page": 16
+      }
+    }
+  },
+  "order": [
+    "main",
+    "article-comments"
+  ]
+}

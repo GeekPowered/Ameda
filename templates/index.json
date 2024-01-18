@@ -583,7 +583,7 @@
           "type": "button",
           "settings": {
             "button_label": "About Ameda",
-            "button_link": "#",
+            "button_link": "shopify:\/\/pages\/about",
             "button_style": "btn btn--primary"
           }
         }
@@ -656,17 +656,11 @@
             "text": "<p>Enjoy motherhood by staying up to date with new product releases, events, and helpful guides.<\/p>",
             "enlarge_text": false
           }
-        },
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-form-1": {
-          "type": "form",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-heading-1",
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-text-1",
-        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-form-1"
+        "template--21856551764283__5f455bc6-23bc-49a4-a914-add018baff10-text-1"
       ],
       "settings": {
         "overlay_position": "justify-center",

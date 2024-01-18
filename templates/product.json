@@ -138,7 +138,9 @@
       ],
       "custom_css": [
         ".qty-input--secondary-btn .qty-input {border-color: rgb(var(--btn-bg-color));}",
-        ".qty-input__input,.qty-input__btn {color: rgb(var(--btn-bg-color));}"
+        ".qty-input__input,.qty-input__btn {color: rgb(var(--btn-bg-color));}",
+        ".media-gallery__viewer {border-radius: 1rem; overflow: hidden;}",
+        ".media-thumbs__btn {border-radius: .5rem;}"
       ],
       "settings": {
         "stick_on_scroll": true,
