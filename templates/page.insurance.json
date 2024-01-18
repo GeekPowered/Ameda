@@ -230,7 +230,7 @@
     "4e60b54a-b466-4694-9f93-58db2af8ec6d": {
       "type": "custom-liquid",
       "custom_css": [
-
+        ".section--padded-default {padding-top: 0; }"
       ],
       "settings": {
         "custom_liquid": "<div id=\"options\"><\/div>\n<h2 style=\"margin-bottom: 3rem;\">Meet Joy: Pump On-The-Go.<\/h2>\n{% render 'joy-joyplus-chart' %}\n<p style=\"margin-top:2rem;\">*Only Use the Diaphragms and Valves that come inside the Joy pumps.<\/p>",
