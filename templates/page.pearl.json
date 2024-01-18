@@ -262,7 +262,7 @@
     "custom_liquid_atHzJW": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "custom_liquid": "{% render 'pearl-info' %}",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
