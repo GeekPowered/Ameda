@@ -16,6 +16,11 @@
     width: calc(33% - 1.75rem);
 }
 
+.instruction-item.full {
+    width: 100%;
+
+}
+
 .instruction-item.active {
     display: flex;
 }
