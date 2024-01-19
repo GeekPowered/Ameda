@@ -2,7 +2,7 @@
 
 {% if instructions %}
 
-    <div class="instruction-item full" tabName="{{ instructions.tab_name }}">
+    <div class="instruction-item full active">
         <div class="instruction-image-wrapper">
             <img src="{{ instructions.product_image | image_url }}" />
         </div>
@@ -10,22 +10,16 @@
 
         {% if instructions.downloads.value.size > 0 %}
             <p class="instruction-dd-label">Downloads</p>
-            <select name="{{ instructions.name }}-downloads">
-                <option>Select Download</option>
-                {% for download in instructions.downloads.value %}
-                    <option value="{{ download.file }}">{{ download.language }}</option>
-                {% endfor %}
-            </select>
+            {% for download in instructions.downloads.value %}
+                <p><a href="{{ download.file }}">{{ download.language }} </a></p>
+            {% endfor %}
         {% endif %}
 
         {% if instructions.videos.value.size > 0 %}
-            <p class="instruction-dd-label">Video</p>
-            <select name="{{ instructions.name }}-videos">
-                <option>Select Video</option>
-                {% for video in instructions.videos.value %}
-                    <option value="{{ video.link }}">{{ video.title }}</option>
-                {% endfor %}
-            </select>
+            <p class="instruction-dd-label">Videos</p>
+            {% for video in instructions.videos.value %}
+                <p><a href="{{ video.link }}">{{ video.title }}</a></p>
+            {% endfor %}
         {% endif %}
     </div>
 
