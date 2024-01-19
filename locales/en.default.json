@@ -553,6 +553,9 @@
     "checkout": {
       "contact": {
         "address1_label": "Address (Please note we do not ship to PO boxes)"
+      },
+      "general": {
+        "choose_shipping_method": "Please note we do not ship to PO boxes"
       }
     }
   }
