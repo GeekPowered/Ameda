@@ -49,7 +49,7 @@
             <div class="instruction-content-cols">
                 <div class="instruction-content-col">
                     {% if instructions.downloads.value.size > 0 %}
-                        <p class="m-0">Downloads</p>
+                        <p class="m-0"><strong>Downloads</strong></p>
                         <ul class="list-disc">
                             {% for download in instructions.downloads.value %}
                                 <li><a href="{{ download.file }}">{{ download.language }} </a></li>
@@ -60,7 +60,7 @@
                 
                 <div class="instruction-content-col">
                     {% if instructions.videos.value.size > 0 %}
-                        <p class="m-0">Videos</p>
+                        <p class="m-0"><strong>Videos</strong></p>
                         <ul class="list-disc">
                             {% for video in instructions.videos.value %}
                                 <li><a href="{{ video.link }}">{{ video.title }}</a></li>
