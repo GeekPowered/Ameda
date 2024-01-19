@@ -2,25 +2,20 @@
 
 {% if instructions %}
 
-    <div class="instruction-item full active">
-        <div class="instruction-image-wrapper">
-            <img src="{{ instructions.product_image | image_url }}" />
-        </div>
-        <h3 class="h5 m-0">{{ instructions.name }}</h3>
+    <h3 class="h5 m-0">{{ instructions.name }}</h3>
 
-        {% if instructions.downloads.value.size > 0 %}
-            <p class="instruction-dd-label">Downloads</p>
-            {% for download in instructions.downloads.value %}
-                <p><a href="{{ download.file }}">{{ download.language }} </a></p>
-            {% endfor %}
-        {% endif %}
+    {% if instructions.downloads.value.size > 0 %}
+        <p class="instruction-dd-label">Downloads</p>
+        {% for download in instructions.downloads.value %}
+            <p><a href="{{ download.file }}">{{ download.language }} </a></p>
+        {% endfor %}
+    {% endif %}
 
-        {% if instructions.videos.value.size > 0 %}
-            <p class="instruction-dd-label">Videos</p>
-            {% for video in instructions.videos.value %}
-                <p><a href="{{ video.link }}">{{ video.title }}</a></p>
-            {% endfor %}
-        {% endif %}
-    </div>
+    {% if instructions.videos.value.size > 0 %}
+        <p class="instruction-dd-label">Videos</p>
+        {% for video in instructions.videos.value %}
+            <p><a href="{{ video.link }}">{{ video.title }}</a></p>
+        {% endfor %}
+    {% endif %}
 
 {% endif %}
