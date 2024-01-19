@@ -2,25 +2,51 @@
 
 {% if instructions %}
 
-    <div class="instruction-item full active">
+    <style>
+        .product-instruction-card {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .product-instruction-card .instruction-image-wrapper {
+            width: 10rem;
+            flex: 0;
+        }
+
+        .product-instruction-card .instruction-image-wrapper {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            margin: 0;
+        }
+    </style>
+
+    <div class="product-instruction-card">
         <div class="instruction-image-wrapper">
             <img src="{{ instructions.product_image | image_url }}" />
         </div>
-        <h3 class="h5 m-0">{{ instructions.name }}</h3>
 
-        {% if instructions.downloads.value.size > 0 %}
-            <p class="instruction-dd-label">Downloads</p>
-            {% for download in instructions.downloads.value %}
-                <p><a href="{{ download.file }}">{{ download.language }} </a></p>
-            {% endfor %}
-        {% endif %}
-
-        {% if instructions.videos.value.size > 0 %}
-            <p class="instruction-dd-label">Videos</p>
-            {% for video in instructions.videos.value %}
-                <p><a href="{{ video.link }}">{{ video.title }}</a></p>
-            {% endfor %}
-        {% endif %}
+        <div class="instruction-content-wrapper">
+            <h3 class="h5">{{ instructions.name }}</h3>
+    
+            {% if instructions.downloads.value.size > 0 %}
+                <p class="">Downloads</p>
+                <ul class="list-style-disc">
+                    {% for download in instructions.downloads.value %}
+                        <li><a href="{{ download.file }}">{{ download.language }} </a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+    
+            {% if instructions.videos.value.size > 0 %}
+                <p class="">Videos</p>
+                <ul class="list-style-disc">
+                    {% for video in instructions.videos.value %}
+                        <li><a href="{{ video.link }}">{{ video.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
     </div>
 
 {% endif %}
