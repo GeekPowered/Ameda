@@ -183,7 +183,7 @@
         "custom_liquid_nqdzrL": {
           "type": "custom-liquid",
           "settings": {
-            "custom_liquid": "{% echo product.metafields.product.instructions %}"
+            "custom_liquid": "{% render 'product-instruction-card' %}"
           }
         }
       },
