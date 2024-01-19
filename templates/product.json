@@ -180,7 +180,7 @@
     "details": {
       "type": "product-details",
       "blocks": {
-        "custom_liquid_nqdzrL": {
+        "custom_liquid_x4cYxH": {
           "type": "custom-liquid",
           "settings": {
             "custom_liquid": "{% render 'product-instruction-card' %}"
@@ -188,7 +188,7 @@
         }
       },
       "block_order": [
-        "custom_liquid_nqdzrL"
+        "custom_liquid_x4cYxH"
       ],
       "settings": {
       }
