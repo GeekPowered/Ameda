@@ -179,6 +179,17 @@
     },
     "details": {
       "type": "product-details",
+      "blocks": {
+        "custom_liquid_nqdzrL": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "{% echo product.metafields.product.instructions %}"
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_nqdzrL"
+      ],
       "settings": {
       }
     },
