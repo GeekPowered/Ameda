@@ -114,6 +114,16 @@
             "open": false
           }
         },
+        "collapsible_content_7hHFzf": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "FAQs",
+            "icon": "none",
+            "text": "{{ product.metafields.product.faq | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -134,13 +144,14 @@
         "collapsible-content-1",
         "collapsible-content-2",
         "31d2610e-0024-4377-b9d0-8bda2ca7b310",
+        "collapsible_content_7hHFzf",
         "share"
       ],
       "custom_css": [
         ".qty-input--secondary-btn .qty-input {border-color: rgb(var(--btn-bg-color));}",
         ".qty-input__input,.qty-input__btn {color: rgb(var(--btn-bg-color));}",
         ".media-gallery__viewer {border-radius: 1rem; overflow: hidden;}",
-        ".media-thumbs__btn {border-radius: .5rem;}"
+        ".media-thumbs__btn {border-radius: 0.5rem;}"
       ],
       "settings": {
         "stick_on_scroll": true,
