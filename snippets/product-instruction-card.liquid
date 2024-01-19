@@ -33,26 +33,28 @@
         <div class="instruction-content-wrapper">
             <h3 class="h5">{{ instructions.name }}</h3>
 
-            <div class="instruction-content-col">
-                {% if instructions.downloads.value.size > 0 %}
-                    <p class="m-0">Downloads</p>
-                    <ul class="list-disc">
-                        {% for download in instructions.downloads.value %}
-                            <li><a href="{{ download.file }}">{{ download.language }} </a></li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-            </div>
-            
-            <div class="instruction-content-col">
-                {% if instructions.videos.value.size > 0 %}
-                    <p class="m-0">Videos</p>
-                    <ul class="list-disc">
-                        {% for video in instructions.videos.value %}
-                            <li><a href="{{ video.link }}">{{ video.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
+            <div class="instruction-content-cols">
+                <div class="instruction-content-col">
+                    {% if instructions.downloads.value.size > 0 %}
+                        <p class="m-0">Downloads</p>
+                        <ul class="list-disc">
+                            {% for download in instructions.downloads.value %}
+                                <li><a href="{{ download.file }}">{{ download.language }} </a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                
+                <div class="instruction-content-col">
+                    {% if instructions.videos.value.size > 0 %}
+                        <p class="m-0">Videos</p>
+                        <ul class="list-disc">
+                            {% for video in instructions.videos.value %}
+                                <li><a href="{{ video.link }}">{{ video.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
