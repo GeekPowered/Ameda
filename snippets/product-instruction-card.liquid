@@ -23,7 +23,20 @@
             object-fit: contain;
             margin: 0;
         }
+        .instruction-content-cols {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .instruction-content-col {
+            flex: 1 0 auto;
+        }
+        .instruction-content-wrapper {
+            flex: 1;
+        }
     </style>
+
+    <h3>Instructions For Use</h3>
 
     <div class="product-instruction-card">
         <div class="instruction-image-wrapper">
@@ -31,7 +44,7 @@
         </div>
 
         <div class="instruction-content-wrapper">
-            <h3 class="h5">{{ instructions.name }}</h3>
+            <h5>{{ instructions.name }}</h3>
 
             <div class="instruction-content-cols">
                 <div class="instruction-content-col">
