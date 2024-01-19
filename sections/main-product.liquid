@@ -9,6 +9,10 @@
   {{ 'product-message.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
+{%- if product.metafields.product.instructions -%}
+  {{ 'instructions-for-use.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
 {%- if product.metafields.spr.reviews -%}
   {{ 'reviews.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
