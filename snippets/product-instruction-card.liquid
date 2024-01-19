@@ -2,59 +2,7 @@
 
 {% if instructions %}
 
-    <style>
-        .instructions-index {
-            display: flex;
-            gap: 3rem;
-            margin-top: 4rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .instruction-item {
-            display: none;
-            background: #fff;
-            padding: 2rem;
-            flex-direction: column;
-            text-align: center;
-            border-radius: 1rem;
-            align-items: center;
-            width: 100%;
-        }
 
-        .instruction-item.active {
-            display: flex;
-        }
-
-        .instruction-item .instruction-dd-label {
-            margin-top: 1rem;    
-            margin-bottom: .5rem;
-            font-weight: bold;
-        }
-
-        .instruction-image-wrapper {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 3 / 2;
-            margin-bottom: 1rem;
-            border-radius: .75rem;
-            overflow: hidden;
-        }
-
-        .instruction-image-wrapper img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: center top;
-        }
-
-        .instruction-item select {
-            padding: 0.75em 2em;
-            text-align: center;
-        }
-    </style>
     <div class="instruction-item" tabName="{{ instructions.tab_name }}">
         <div class="instruction-image-wrapper">
             <img src="{{ instructions.product_image | image_url }}" />
