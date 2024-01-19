@@ -1,0 +1,39 @@
+{% assign instructions = shop.metaobjects.instructions[product.metafields.product.instructions] %}
+
+{% if instructions %}
+    <link rel="stylesheet" href="{{ 'instructions-for-use.css' | asset_url }}" media="print" onload="this.media='all'">
+
+    <style>
+        .instruction-item {
+            width: 100%;
+        }
+    </style>
+    <div class="instruction-item" tabName="{{ instructions.tab_name }}">
+        <div class="instruction-image-wrapper">
+            <img src="{{ instructions.product_image | image_url }}" />
+        </div>
+        <h3 class="h5 m-0">{{ instructions.name }}</h3>
+
+        {% if instructions.downloads.value.size > 0 %}
+            <p class="instruction-dd-label">Downloads</p>
+            <select name="{{ instructions.name }}-downloads">
+                <option>Select Download</option>
+                {% for download in instructions.downloads.value %}
+                    <option value="{{ download.file }}">{{ download.language }}</option>
+                {% endfor %}
+            </select>
+        {% endif %}
+
+        {% if instructions.videos.value.size > 0 %}
+            <p class="instruction-dd-label">Video</p>
+            <select name="{{ instructions.name }}-videos">
+                <option>Select Video</option>
+                {% for video in instructions.videos.value %}
+                    <option value="{{ video.link }}">{{ video.title }}</option>
+                {% endfor %}
+            </select>
+        {% endif %}
+    </div>
+
+    <script src="{{ 'instructions-for-use.js' | asset_url }}" defer="defer"></script>
+{% endif %}
