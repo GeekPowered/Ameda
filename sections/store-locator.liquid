@@ -36,6 +36,7 @@
   })
     .then(response => response.json())
     .then(data => {
+      console.log(data);
       // Process the data, paginate, and determine total pages
       const allStoreLocations = data.data.shop.metaobjects.edges.map(edge => edge.node);
       const itemsPerPage = 10;
