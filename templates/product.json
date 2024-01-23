@@ -84,6 +84,16 @@
             "text_color": "#1a66d2"
           }
         },
+        "31d2610e-0024-4377-b9d0-8bda2ca7b310": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Package Includes",
+            "icon": "none",
+            "text": "{{ product.metafields.product.package_includes | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
         "collapsible-content-1": {
           "type": "collapsible-content",
           "settings": {
@@ -100,16 +110,6 @@
             "heading": "Technical Features",
             "icon": "none",
             "text": "{{ product.metafields.product.technical_features | metafield_tag }}",
-            "page": "",
-            "open": false
-          }
-        },
-        "31d2610e-0024-4377-b9d0-8bda2ca7b310": {
-          "type": "collapsible-content",
-          "settings": {
-            "heading": "Package Includes",
-            "icon": "none",
-            "text": "{{ product.metafields.product.package_includes | metafield_tag }}",
             "page": "",
             "open": false
           }
@@ -141,9 +141,9 @@
         "divider-1",
         "buy-buttons",
         "message-2",
+        "31d2610e-0024-4377-b9d0-8bda2ca7b310",
         "collapsible-content-1",
         "collapsible-content-2",
-        "31d2610e-0024-4377-b9d0-8bda2ca7b310",
         "collapsible_content_7hHFzf",
         "share"
       ],
