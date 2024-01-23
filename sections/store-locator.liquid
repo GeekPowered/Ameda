@@ -1,71 +1,13 @@
 <link rel="stylesheet" href="{{ 'store-locator.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<script type="text/javascript">
-  const query = `
-    {
-      shop {
-        metaobjects(first: 100, namespace: "store_locations") {
-          edges {
-            node {
-              id
-              title
-              state_province
-              short_description
-              address
-              city
-              state_province
-              zip
-              country
-              email
-              phone_number
-              website
-            }
-          }
-        }
-      }
-    }
-  `;
-
-  fetch('/admin/api/graphql.json', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'X-Shopify-Access-Token': '6c7718e61eb3fc94838ff97780294090',
-    },
-    body: JSON.stringify({ query }),
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      // Process the data, paginate, and determine total pages
-      const allStoreLocations = data.data.shop.metaobjects.edges.map(edge => edge.node);
-      const itemsPerPage = 10;
-      const totalPages = Math.ceil(allStoreLocations.length / itemsPerPage);
-
-      // Pass the data and pagination information to your Liquid template
-      window.storeLocationsData = {
-        allStoreLocations,
-        itemsPerPage,
-        totalPages,
-      };
-    });
-</script>
-
-{% assign all_store_locations = storeLocationsData.allStoreLocations %}
-{% assign items_per_page = storeLocationsData.itemsPerPage %}
-{% assign total_pages = storeLocationsData.totalPages %}
-{% assign current_page = 1 %}
-{% assign start_index = (current_page - 1) * items_per_page %}
-{% assign end_index = start_index | plus: items_per_page | minus: 1 %}
-{% assign current_page_items = all_store_locations | slice: start_index, end_index %}
-
 <div class="section section--padding">
   <div class="container">
     <p class="text-center h4">E is for Elites, P is for Platinums. Other is everything else.</p>
     <ul class="state-selector" id="stateList">
-      <li><strong>FIND BY STATE / PROVINCE:</strong></li>
-      {% assign state_provinces = all_store_locations | map: 'state_province' | uniq | sort %}
-      {% for state in state_provinces %}
+      <li><strong>FIND BY STATE:</strong></li>
+      {% assign state_provinces = shop.metaobjects.store_location.values | map: 'state_province' %}
+      {% assign unique_sorted_states = state_provinces | uniq | sort %}
+      {% for state in unique_sorted_states %}
         {% if state != blank %}
           <li class="state-link"><a href="#{{ state }}">{{ state }}</a></li>
         {% endif %}
@@ -74,10 +16,14 @@
   </div>
 </div>
 
+
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% for store_location in current_page_items %}
+      {% assign sorted_store_locations = shop.metaobjects.store_location.values | sort: 'state_province' %}
+      {% assign current_state = nil %}
+
+      {% for store_location in sorted_store_locations %}
         {% if current_state != store_location.state_province %}
           {% assign current_state = store_location.state_province %}
           <div class="store-location" id="{{ store_location.state_province }}">
