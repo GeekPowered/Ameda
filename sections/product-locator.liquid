@@ -17,10 +17,26 @@
   </div>
 </div>
 
+{% assign sorted_blocks = "" | split: ',' %}
+
+{% for block in section.blocks %}
+  {% assign state_province = block.settings.state_province %}
+  {% capture block_data %}
+    {
+      "state_province": "{{ state_province }}",
+      "block": block
+    }
+  {% endcapture %}
+  {% assign sorted_blocks = sorted_blocks | push: block_data %}
+{% endfor %}
+
+{% assign sorted_blocks = sorted_blocks | sort: 'state_province' %}
+
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% for block in section.blocks | sort: 'block.settings.state_province' %}
+      {% for sorted_block in sorted_blocks %}
+        {% assign block = sorted_block.block %}
         <div class="store-location" data-stateprovince="{{ block.settings.state_province }}">
           <div class="location-content">
             <h3 class="store-title h5" {% if block.settings.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ block.settings.title }}</h3>
