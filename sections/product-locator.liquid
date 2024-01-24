@@ -9,7 +9,7 @@
       {% for block in section.blocks %}
         {% assign state_province = block.settings.state_province %}
         {% unless unique_states contains state_province %}
-          <li class="state-link"><span>{{ state_province }}</span></li>
+          <button class="state-link">{{ state_province }}</button>
           {% assign unique_states = unique_states | join: ',' | append: ',' | append: state_province | split: ',' %}
         {% endunless %}
       {% endfor %}
