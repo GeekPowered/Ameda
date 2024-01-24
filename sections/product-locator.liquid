@@ -17,25 +17,11 @@
   </div>
 </div>
 
-{% assign sorted_blocks = "" | split: ',' %}
-
-{% for block in section.blocks %}
-  {% assign state_province = block.settings.state_province %}
-  {% capture block_data %}
-    {
-      "state_province": "{{ state_province }}",
-      "block": block
-    }
-  {% endcapture %}
-  {% assign sorted_blocks = sorted_blocks | push: block_data %}
-{% endfor %}
-
-{% assign sorted_blocks = sorted_blocks | sort: 'state_province' %}
+{% assign sorted_blocks = section.blocks | sort: 'settings.state_province' %}
 
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% assign sorted_blocks = section.blocks | sort: 'settings.state_province' %}
       {% for block in sorted_blocks %}
         <div class="store-location" data-stateprovince="{{ block.settings.state_province }}">
           <div class="location-content">
@@ -71,6 +57,7 @@
     </div>
   </div>
 </div>
+In this code, we first attempt to sort the section.blocks by the 'settings.st
 
 
 {% schema %}
