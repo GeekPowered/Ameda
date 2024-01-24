@@ -46,10 +46,23 @@
             "phone_number": "(212) 263-7201",
             "website": "https:\/\/www.nyubaby.org"
           }
+        },
+        "product_location_WqT8eq": {
+          "type": "product_location",
+          "settings": {
+            "title": "Healthy Horizons Peninsula Breastfeeding Center",
+            "short_description": "P",
+            "address": "<p>1432 Burlingame Avenue<br\/>Burlingame, CA 94010<\/p>",
+            "state_province": "CA",
+            "email": "",
+            "phone_number": "(650) 347-MILK",
+            "website": "http:\/\/www.hh-bc.com\/"
+          }
         }
       },
       "block_order": [
-        "product_location_xnP8it"
+        "product_location_xnP8it",
+        "product_location_WqT8eq"
       ],
       "settings": {
       }
