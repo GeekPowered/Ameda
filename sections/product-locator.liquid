@@ -17,12 +17,10 @@
   </div>
 </div>
 
-{% assign sorted_blocks = section.blocks | sort: 'settings.state_province' %}
-
 <div class="section section--padding">
   <div class="container">
-    <div class="store-locations">
-      {% for block in sorted_blocks %}
+    <div class="store-locations" id="storeLocationsContainer">
+      {% for block in section.blocks %}
         <div class="store-location" data-stateprovince="{{ block.settings.state_province }}">
           <div class="location-content">
             <h3 class="store-title h5" {% if block.settings.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ block.settings.title }}</h3>
@@ -57,8 +55,40 @@
     </div>
   </div>
 </div>
-In this code, we first attempt to sort the section.blocks by the 'settings.st
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the container element
+    var container = document.getElementById("storeLocationsContainer");
+
+    // Get all the store location elements
+    var storeLocations = container.querySelectorAll(".store-location");
+
+    // Convert the NodeList to an array
+    var storeLocationsArray = Array.from(storeLocations);
+
+    // Sort the store locations by state_province attribute
+    storeLocationsArray.sort(function (a, b) {
+      var stateA = a.getAttribute("data-stateprovince").toUpperCase();
+      var stateB = b.getAttribute("data-stateprovince").toUpperCase();
+      if (stateA < stateB) {
+        return -1;
+      }
+      if (stateA > stateB) {
+        return 1;
+      }
+      return 0;
+    });
+
+    // Clear the container
+    container.innerHTML = "";
+
+    // Append the sorted store locations back to the container
+    storeLocationsArray.forEach(function (location) {
+      container.appendChild(location);
+    });
+  });
+</script>
 
 {% schema %}
 {
