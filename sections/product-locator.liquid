@@ -13,7 +13,7 @@
   <div class="container">
     <div class="store-locations">
       {% for block in section.blocks %}
-        <div class="store-location">
+        <div class="store-location" data-stateprovince="{{ block.settings.state_province }}">
           <div class="location-content">
             <h3 class="store-title h5">{{ block.settings.title }}</h3>
             {% if block.settings.short_description != blank %}
@@ -80,6 +80,11 @@
           "label": "Address",
           "id": "address",
           "default": "<p>Default Address</p>"
+        },
+        {
+          "type": "text",
+          "label": "State / Province",
+          "id": "state_province"
         },
         {
           "type": "text",
