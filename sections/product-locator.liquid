@@ -19,26 +19,24 @@
             {% if block.settings.short_description != blank %}
               <span class="short-desc">{{ block.settings.short_description }}</span>
             {% endif %}
-            <p class="mb-0">
-              {% if block.settings.address %}{{ block.settings.address }}{% endif %}
-              {% if block.settings.city %} {{ block.settings.city }}{% endif %},
-              {% if block.settings.state_province %} {{ block.settings.state_province }}{% endif %}
-              {% if block.settings.zip %} {{ block.settings.zip }}{% endif %}
-              {% if block.settings.country %} {{ block.settings.country }}{% endif %}
-            </p>
+            {% if block.settings.address != blank %}
+              <p class="mb-0">
+                {{ block.settings.address }}
+              </p>
+            {% endif %}
           </div>
           <div class="location-content">
-            {% if block.settings.email %}
+            {% if block.settings.email != blank %}
               <a class="link-with-icon btn btn--primary" href="mailto:{{ block.settings.email }}">
                 {% render 'icon-mail' %} {{ block.settings.email }}
               </a>
             {% endif %}
-            {% if block.settings.phone_number %}
+            {% if block.settings.phone_number != blank %}
               <a class="link-with-icon btn btn--primary" href="tel:{{ block.settings.phone_number }}">
                 {% render 'icon-phone' %} {{ block.settings.phone_number }}
               </a>
             {% endif %}
-            {% if block.settings.website %}
+            {% if block.settings.website != blank %}
               <a class="link-with-icon btn btn--primary" target="_blank" href="{{ block.settings.website }}">
                 {% render 'icon-link' %} Visit Website
               </a>
