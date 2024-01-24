@@ -35,6 +35,18 @@
     "product_locator_x7JikG": {
       "type": "product-locator",
       "blocks": {
+        "product_location_HVRP8w": {
+          "type": "product_location",
+          "settings": {
+            "title": "O'Connor Hospital",
+            "short_description": "E",
+            "address": "<p>2105 Forest Ave<br\/>San Jose, CA 95128<\/p>",
+            "state_province": "CA",
+            "email": "",
+            "phone_number": "(408) 947-2743",
+            "website": ""
+          }
+        },
         "product_location_xnP8it": {
           "type": "product_location",
           "settings": {
@@ -58,24 +70,12 @@
             "phone_number": "(650) 347-MILK",
             "website": "http:\/\/www.hh-bc.com\/"
           }
-        },
-        "product_location_HVRP8w": {
-          "type": "product_location",
-          "settings": {
-            "title": "O'Connor Hospital",
-            "short_description": "E",
-            "address": "<p>2105 Forest Ave<br\/>San Jose, CA 95128<\/p>",
-            "state_province": "CA",
-            "email": "",
-            "phone_number": "(408) 947-2743",
-            "website": ""
-          }
         }
       },
       "block_order": [
+        "product_location_HVRP8w",
         "product_location_xnP8it",
-        "product_location_WqT8eq",
-        "product_location_HVRP8w"
+        "product_location_WqT8eq"
       ],
       "settings": {
       }
