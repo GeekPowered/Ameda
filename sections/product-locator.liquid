@@ -5,7 +5,7 @@
     <p class="text-center h4">E is for Elites, P is for Platinums. Other is everything else.</p>
     <ul class="state-selector" id="stateList">
       <li><strong>FIND BY STATE:</strong></li>
-      <li class="state-link"><button class="btn btn--secondary">TX</a></li>
+      <li class="state-link"><span>TX</span></li>
     </ul>
   </div>
 </div>
@@ -16,7 +16,7 @@
       {% for block in section.blocks %}
         <div class="store-location" data-stateprovince="{{ block.settings.state_province }}">
           <div class="location-content">
-            <h3 class="store-title h5">{{ block.settings.title }}</h3>
+            <h3 class="store-title h5" {% if block.settings.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ block.settings.title }}</h3>
             {% if block.settings.short_description != blank %}
               <span class="short-desc">{{ block.settings.short_description }}</span>
             {% endif %}
