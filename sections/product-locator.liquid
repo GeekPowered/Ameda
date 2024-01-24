@@ -6,7 +6,7 @@
     <ul class="state-selector" id="stateList">
       <li><strong>FIND BY STATE:</strong></li>
       {% assign unique_states = '' | split: ',' %}
-      {% for block in section.blocks | sort: 'settings.state_province' %}
+      {% for block in section.blocks %}
         {% assign state_province = block.settings.state_province %}
         {% unless unique_states contains state_province %}
           <li class="state-link"><span>{{ state_province }}</span></li>
@@ -20,11 +20,8 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% assign sorted_blocks = section.blocks | sort: 'settings.state_province' %}
-      {% assign encountered_states = '' | split: ',' %}
-      {% for block in sorted_blocks %}
-        {% assign state_province = block.settings.state_province %}
-        <div class="store-location" data-stateprovince="{{ state_province }}" {% if encountered_states contains state_province %}id="{{ state_province }}"{% assign encountered_states = encountered_states | join: ',' | append: ',' | append: state_province | split: ',' %}{% endif %}>
+      {% for block in section.blocks %}
+        <div class="store-location" data-stateprovince="{{ block.settings.state_province }}">
           <div class="location-content">
             <h3 class="store-title h5" {% if block.settings.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ block.settings.title }}</h3>
             {% if block.settings.short_description != blank %}
