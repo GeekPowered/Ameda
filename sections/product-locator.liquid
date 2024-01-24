@@ -6,7 +6,7 @@
     <ul class="state-selector" id="stateList">
       <li><strong>FIND BY STATE:</strong></li>
       {% assign unique_states = '' | split: ',' %}
-      {% for block in section.blocks | sort: 'settings.state_province' %}
+      {% for block in section.blocks %}
         {% assign state_province = block.settings.state_province %}
         {% unless unique_states contains state_province %}
           <li class="state-link"><span>{{ state_province }}</span></li>
