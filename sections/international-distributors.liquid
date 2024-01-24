@@ -88,7 +88,14 @@
 
           <div class="distributor-location-content">
             {% if international_distributor.link %}
-              <a class="btn btn--primary" href="{{ international_distributor.link }}" target="_blank">Visit Website</a>
+              {% assign link_has_http = international_distributor.link | contains: "http://" %}
+              {% assign link_has_https = international_distributor.link | contains: "https://" %}
+            
+              {% if link_has_http or link_has_https %}
+                <a class="btn btn--primary" href="{{ international_distributor.link }}" target="_blank">Visit Website</a>
+              {% else %}
+                <a class="btn btn--primary" href="http://{{ international_distributor.link }}" target="_blank">Visit Website</a>
+              {% endif %}
             {% endif %}
           </div>
         </div>
