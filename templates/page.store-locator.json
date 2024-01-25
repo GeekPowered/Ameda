@@ -40,7 +40,7 @@
           "settings": {
             "title": "O'Connor Hospital",
             "short_description": "E",
-            "address": "<p>2105 Forest Ave<\/p>",
+            "address": "2105 Forest Ave",
             "state_province": "CA",
             "city": "San Jose",
             "zip": "95128",
@@ -55,7 +55,7 @@
           "settings": {
             "title": "NYU Langone Parent Education",
             "short_description": "E",
-            "address": "<p>660 1st Ave<\/p>",
+            "address": "660 1st Ave",
             "state_province": "NY",
             "city": "New York City",
             "zip": "10016",
@@ -70,7 +70,7 @@
           "settings": {
             "title": "Healthy Horizons Peninsula Breastfeeding Center",
             "short_description": "P",
-            "address": "<p>1432 Burlingame Avenue<\/p>",
+            "address": "1432 Burlingame Avenue",
             "state_province": "CA",
             "city": "Burlingame",
             "zip": "94010",
