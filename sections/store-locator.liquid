@@ -31,30 +31,30 @@
             <div class="location-content">
                 <h3 class="store-title h5" {% if store_location.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ store_location.title }}</h3>
             
-                {% if store_location.short_description %}
+                {% if store_location.short_description != blank %}
                   <span class="short-desc">{{ store_location.short_description }}</span>
                 {% endif %}
                 
                 <p class="mb-0">
-                  {% if store_location.address %}{{ store_location.address }}{% endif %}
-                  {% if store_location.city %} {{ store_location.city }}{% endif %},
+                  {% if store_location.address != blank %}{{ store_location.address }}{% endif %}
+                  {% if store_location.city != blank %} {{ store_location.city }}{% endif %},
                   <br>
-                  {% if store_location.state_province %} {{ store_location.state_province }}{% endif %}
-                  {% if store_location.zip %} {{ store_location.zip }}{% endif %}
-                  {% if store_location.country %} {{ store_location.country }}{% endif %}
+                  {% if store_location.state_province != blank %} {{ store_location.state_province }}{% endif %}
+                  {% if store_location.zip != blank %} {{ store_location.zip }}{% endif %}
+                  {% if store_location.country != blank %} {{ store_location.country }}{% endif %}
                 </p>
             </div>
         
             <div class="location-content">
-              {% if store_location.email %}
+              {% if store_location.email != blank %}
                 <a class="link-with-icon btn btn--primary" href="mailto:{{ store_location.email }}">{% render 'icon-mail' %} {{ store_location.email }}</a>
               {% endif %}
             
-              {% if store_location.phone_number %}
+              {% if store_location.phone_number != blank %}
                 <a class="link-with-icon btn btn--primary" href="tel:{{ store_location.phone_number }}">{% render 'icon-phone' %} {{ store_location.phone_number }}</a>
               {% endif %}
         
-              {% if store_location.website %}
+              {% if store_location.website != blank %}
                 <a class="link-with-icon btn btn--primary" target="_blank" href="{{ store_location.website }}">{% render 'icon-link' %} Visit Website</a>
               {% endif %}
             </div>
