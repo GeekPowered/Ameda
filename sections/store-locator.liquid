@@ -22,7 +22,7 @@
     <div class="store-locations">
       {% assign location = shop.metaobjects.store_locations["all-locations"] %}
       {% assign locations = location.all.value | JSON %}
-      {% echo location %}
+      {% shop.metaobjects.store_locations %}
 
       {% for store_location in locations %}
         {% if current_state != store_location.state_province %}
