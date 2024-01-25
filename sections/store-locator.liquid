@@ -20,9 +20,9 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% assign location = shop.metaobjects.store_location | where: "handle", "store-locations-sro6betz" %}
+      {% assign location = shop.metaobjects.store_location[0] %}
       {% assign locations = location.all %}
-
+      <script>console.log('{% render locations %}')</script>
       {% for store_location in locations %}
         {% if current_state != store_location.state_province %}
           {% assign current_state = store_location.state_province %}
