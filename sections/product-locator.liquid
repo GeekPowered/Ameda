@@ -20,7 +20,7 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% assign locations = shop.metaobjects.store_locations["all-locations"].all.values %}
+      {% assign locations = shop.metaobjects.store_locations["all-locations"].all %}
       {% assign current_state = '' %}
         {% for store_location in locations %}
           <div class="store-location" 
