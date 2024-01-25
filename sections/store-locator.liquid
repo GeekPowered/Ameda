@@ -20,10 +20,10 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% assign sorted_store_locations = shop.metaobjects.store_location.values | sort: 'state_province' %}
-      {% assign current_state = nil %}
+      {% assign location = shop.metaobjects.store_location | where: "handle", "store-locations-sro6betz" %}
+      {% assign locations = location.all %}
 
-      {% for store_location in sorted_store_locations %}
+      {% for store_location in locations %}
         {% if current_state != store_location.state_province %}
           {% assign current_state = store_location.state_province %}
           <div class="store-location" id="{{ store_location.state_province }}">
