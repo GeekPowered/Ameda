@@ -18,8 +18,7 @@
 </div>
 
 
-{% assign json_file_url = 'store-locations.json' | asset_url %}
-{% assign json_content = json_file_url | json | split: ',' %}
+{% assign json_content = shop.metaobjects.store_location.values[0] %}
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations" id="storeLocationsContainer">
@@ -36,30 +35,16 @@
               </p>
             {% endif %}
             {% if location.address != blank %}
-              <p class="mb-0">
+              <p class="mb-0 address-1">
                 {{ location.address }}
               </p>
             {% endif %}
-            {% if location.city != blank %}
-              <p class="mb-0">
-                {{ location.city }}
+              <p class="mb-0 address-2">
+                {% if location.city != blank %} {{ location.city }} {% endif %}
+                {% if location.state != blank %} {{ location.state }} {% endif %}
+                {% if location.zip != blank %} {{ location.zip }} {% endif %}
+                {% if location.country != blank %} {{ location.country }} {% endif %}
               </p>
-            {% endif %}
-            {% if location.state != blank %}
-              <p class="mb-0">
-                {{ location.state }}
-              </p>
-            {% endif %}
-            {% if location.zip != blank %}
-              <p class="mb-0">
-                {{ location.zip }}
-              </p>
-            {% endif %}
-            {% if location.country != blank %}
-              <p class="mb-0">
-                {{ location.country }}
-              </p>
-            {% endif %}
           </div>
           <div class="location-content">
             {% if location.email != blank %}
