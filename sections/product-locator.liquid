@@ -20,63 +20,3013 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations" id="storeLocationsContainer">
-      {% for block in section.blocks %}
-        <div class="store-location" data-stateprovince="{{ block.settings.state_province }}">
-          <div class="location-content">
-            <h3 class="store-title h5" {% if block.settings.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ block.settings.title }}</h3>
-            {% if block.settings.short_description != blank %}
-              <span class="short-desc">{{ block.settings.short_description }}</span>
-            {% endif %}
-            {% if block.settings.description != blank %}
-              <p>
-                {{ block.settings.description }}
-              </p>
-            {% endif %}
-            {% if block.settings.address != blank %}
-              <p class="mb-0">
-                {{ block.settings.address }}
-              </p>
-            {% endif %}
-            {% if block.settings.city != blank %}
-              <p class="mb-0">
-                {{ block.settings.city }}
-              </p>
-            {% endif %}
-            {% if block.settings.state != blank %}
-              <p class="mb-0">
-                {{ block.settings.state }}
-              </p>
-            {% endif %}
-            {% if block.settings.zip != blank %}
-              <p class="mb-0">
-                {{ block.settings.zip }}
-              </p>
-            {% endif %}
-            {% if block.settings.country != blank %}
-              <p class="mb-0">
-                {{ block.settings.country }}
-              </p>
-            {% endif %}
+      <div class="store-location" data-stateprovince="AB">
+        <div class="location-content">
+            <h3 class="store-title h5">Mothers Choice Products</h3>
+
+
+            <p class="mb-0">11871 Horseshoe Way, Richmond, BC V7A 5H5, Canada</p>
+
+            <p class="mb-0">AB</p>
+
+            <p class="mb-0">CA</p>
           </div>
           <div class="location-content">
-            {% if block.settings.email != blank %}
-              <a class="link-with-icon btn btn--primary" href="mailto:{{ block.settings.email }}">
-                {% render 'icon-mail' %} {{ block.settings.email }}
-              </a>
-            {% endif %}
-            {% if block.settings.phone_number != blank %}
-              <a class="link-with-icon btn btn--primary" href="tel:{{ block.settings.phone_number }}">
-                {% render 'icon-phone' %} {{ block.settings.phone_number }}
-              </a>
-            {% endif %}
-            {% if block.settings.website != blank %}
-              <a class="link-with-icon btn btn--primary" target="_blank" href="{{ block.settings.website }}">
-                {% render 'icon-link' %} Visit Website
-              </a>
-            {% endif %}
+            <a class="link-with-icon btn btn--primary" href="mailto:info@motherschoiceproducts.com">{% render "icon-mail" %}
+              info@motherschoiceproducts.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel:1-800-604-6225 or 60">{% render "icon-phone" %} 1-800-604-6225
+              or 60</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.motherschoiceproducts.com">{% render
+              "icon-link" %} Visit Website</a>
           </div>
         </div>
-      {% endfor %}
+
+
+        <div class="store-location" data-stateprovince="AB">
+          <div class="location-content">
+            <h3 class="store-title h5">Amedex Web S.R.L.</h3>
+
+
+            <p class="mb-0">Unnamed Road, Vlădeni, Romania</p>
+
+            <p class="mb-0">AB</p>
+
+            <p class="mb-0">RO</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:contact@mamagazin.ro">{% render "icon-mail" %}
+              contact@mamagazin.ro</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +40 729 509 509">{% render "icon-phone" %} +40 729 509 509</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.mamagazin.ro">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="ACT">
+          <div class="location-content">
+            <h3 class="store-title h5"> Midmed Pty Ltd</h3>
+
+
+
+            <p class="mb-0">Queensland</p>
+            <p class="mb-0">ACT</p>
+            <p class="mb-0">4172</p>
+            <p class="mb-0">AU</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:ameda@midmed.com.au">{% render "icon-mail" %}
+              ameda@midmed.com.au</a>
+            <a class="link-with-icon btn btn--primary" href="tel:61733489155">{% render "icon-phone" %} 61733489155</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.midmed.com.au">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="AG">
+          <div class="location-content">
+            <h3 class="store-title h5">Nufer Medical AG</h3>
+
+
+            <p class="mb-0">Morgenstrasse 148, 3018 Bern, Switzerland</p>
+
+            <p class="mb-0">AG</p>
+
+            <p class="mb-0">CH</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:Info@nufer-medical.ch">{% render "icon-mail" %}
+              Info@nufer-medical.ch</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +41 31 958 66 66">{% render "icon-phone" %} +41 31 958 66
+              66</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.nufer-medical.ch">{% render "icon-link"
+              %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="AL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Hudson Pharmacy & Surgical</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">40 Spring Street</p>
+            <p class="mb-0">Ossining</p>
+            <p class="mb-0">AL</p>
+            <p class="mb-0">10562</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(914) 941-4476">{% render "icon-phone" %} (914) 941-4476</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="https://hudsonpharmacyandsurgical.com/">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="AL">
+          <div class="location-content">
+            <h3 class="store-title h5">United Medical Trade Company</h3>
+
+
+            <p class="mb-0">3400 SW 20th St, Hallandale Beach, FL 33009, USA</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">AL</p>
+            <p class="mb-0">33023</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:helen.kim@umtc.com">{% render "icon-mail" %}
+              helen.kim@umtc.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +1 954-889-0568">{% render "icon-phone" %} +1 954-889-0568</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="AN">
+          <div class="location-content">
+            <h3 class="store-title h5">Jolly Technocrats</h3>
+
+
+            <p class="mb-0">Nehru Pl Market Rd, Nehru Place, New Delhi, Delhi 110019, India</p>
+            <p class="mb-0">New Delhi</p>
+            <p class="mb-0">AN</p>
+            <p class="mb-0">110019</p>
+            <p class="mb-0">IN</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:jollytechnocrats@gmail.com, myamedain@gmail.com">{% render
+              "icon-mail" %} jollytechnocrats@gmail.com, myamedain@gmail.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel:0091-46066071">{% render "icon-phone" %} 0091-46066071</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://jollytechnocrats.in/">{% render "icon-link"
+              %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="AZ">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Serenity Feeding Supplies</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">3 Oakwood Dr.</p>
+            <p class="mb-0">Chandler</p>
+            <p class="mb-0">AZ</p>
+            <p class="mb-0">85248</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(480) 239-1866">{% render "icon-phone" %} (480) 239-1866</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.serenityfeeding.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="AZ">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Modern Mommy Boutique</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">3355 W. Chandler Blvd.</p>
+            <p class="mb-0">Chandler</p>
+            <p class="mb-0">AZ</p>
+            <p class="mb-0">85226</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(480) 857-7187">{% render "icon-phone" %} (480) 857-7187</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://modernmommyboutique.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="BAW">
+          <div class="location-content">
+            <h3 class="store-title h5"> MedCare Visions GmbH</h3>
+
+
+            <p class="mb-0">Franz-Lehner-Straße 3, 85716 Unterschleißheim, Germany</p>
+
+            <p class="mb-0">BAW</p>
+
+            <p class="mb-0">DE</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:info@medcarevisions.de">{% render "icon-mail" %}
+              info@medcarevisions.de</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +49 (0) 89 2000433-0">{% render "icon-phone" %} +49 (0) 89
+              2000433-0</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.medcarevisions.de">{% render "icon-link"
+              %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="BL">
+          <div class="location-content">
+            <h3 class="store-title h5">Eumedics Medizintechnik GmbH</h3>
+
+
+            <p class="mb-0">Scheringgasse 2, 1140 Wien, Austria</p>
+            <p class="mb-0">Wien</p>
+            <p class="mb-0">BL</p>
+            <p class="mb-0">A-1140</p>
+            <p class="mb-0">AT</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:office@eumedics.at">{% render "icon-mail" %}
+              office@eumedics.at</a>
+            <a class="link-with-icon btn btn--primary" href="tel:4315773560">{% render "icon-phone" %} 4315773560</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.eumedics.at">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">DayOne Baby</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">3548 Sacramento St</p>
+            <p class="mb-0">San Francisco</p>
+            <p class="mb-0">CA</p>
+            <p class="mb-0">94118</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(415) 813-1931">{% render "icon-phone" %} (415) 813-1931</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.dayonebaby.com">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">O'Connor Hospital</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">2105 Forest Ave</p>
+            <p class="mb-0">San Jose</p>
+            <p class="mb-0">CA</p>
+            <p class="mb-0">95128</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(408) 947-2743">{% render "icon-phone" %} (408) 947-2743</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Healthy Horizons Peninsula Breastfeeding Center</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">1432 Burlingame Avenue</p>
+            <p class="mb-0">Burlingame</p>
+            <p class="mb-0">CA</p>
+            <p class="mb-0">94010</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(650) 347-MILK">{% render "icon-phone" %} (650) 347-MILK</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.hh-bc.com/">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">DayOne Baby Palo Alto</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">552 Waverley Street</p>
+            <p class="mb-0">Palo Alto</p>
+            <p class="mb-0">CA</p>
+            <p class="mb-0">94301</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(650) 646-7644">{% render "icon-phone" %} (650) 646-7644</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.dayonebaby.com">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Healthy Beginnings</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">345 Tachevah Ste 2</p>
+            <p class="mb-0">Palm Springs</p>
+            <p class="mb-0">CA</p>
+            <p class="mb-0">92262</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(760) 416-4754">{% render "icon-phone" %} (760) 416-4754</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Growing With Baby</h3>
+            <span class="short-desc">E/P LACT-E</span>
+            <p>Elite/Platinum LACT E</p>
+            <p class="mb-0">1230 Marsh</p>
+            <p class="mb-0">San Luis Obispo</p>
+            <p class="mb-0">CA</p>
+            <p class="mb-0">93401</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(805) 543-6988">{% render "icon-phone" %} (805) 543-6988</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">San Ramon Regional Medical</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">6001 Norris Canyon Road</p>
+            <p class="mb-0">San Ramon</p>
+            <p class="mb-0">CA</p>
+            <p class="mb-0">94583</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(925) 275-8296">{% render "icon-phone" %} (925) 275-8296</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Healthlinks Torrance Memorial Medical Center</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">3330 Lomita Blvd</p>
+            <p class="mb-0">Torrance</p>
+            <p class="mb-0">CA</p>
+            <p class="mb-0">90505</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(310) 517-4711">{% render "icon-phone" %} (310) 517-4711</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Community Memorial Hospital Breastfeeding Resource Center
+            </h3>
+            <span class="short-desc">E, P</span>
+            <p>Elite, Platinum</p>
+            <p class="mb-0">2580 E. Main St. Ste. 101</p>
+            <p class="mb-0">Ventura</p>
+            <p class="mb-0">CA</p>
+            <p class="mb-0">93003</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(805) 948-2229">{% render "icon-phone" %} (805) 948-2229</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="CO">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Bosom Buddies</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">5684 W 88th Ave, Westminster</p>
+            <p class="mb-0">Denver</p>
+            <p class="mb-0">CO</p>
+            <p class="mb-0">80031</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(720) 482-0109">{% render "icon-phone" %} (720) 482-0109</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="DC">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Georgetown Loris Gifts</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">3800 Reservoir Rd Nw</p>
+            <p class="mb-0">Washington</p>
+            <p class="mb-0">DC</p>
+            <p class="mb-0">20007</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:store.0134@lorisgifts.com">{% render "icon-mail" %}
+              store.0134@lorisgifts.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel:(202) 444-4181">{% render "icon-phone" %} (202) 444-4181</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="DC">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Georgetown University Hospital</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">3800 Reservoir Rd Nw,</p>
+            <p class="mb-0">Washington</p>
+            <p class="mb-0">DC</p>
+            <p class="mb-0">20007</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(202) 444-6455">{% render "icon-phone" %} (202) 444-6455</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="DC">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">The Breastfeeding Center For Greater Washington Inc</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">2141 K St Nw</p>
+            <p class="mb-0">Washington</p>
+            <p class="mb-0">DC</p>
+            <p class="mb-0">20037</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(202) 293-5182">{% render "icon-phone" %} (202) 293-5182</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5">Wellington Regional Medical Center</h3>
+
+
+            <p class="mb-0">10101 Forest Hill Road</p>
+            <p class="mb-0">West Palm Beach</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">33414</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(561) 798-8664">{% render "icon-phone" %} (561) 798-8664</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Pill Box Pharmacy</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">1932 Weston Rd.</p>
+            <p class="mb-0">Weston</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">33326</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(954) 389-7455">{% render "icon-phone" %} (954) 389-7455</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Florida Hospital Celebration Health</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">400 Celebration Place</p>
+            <p class="mb-0">Celebration</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">34747</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(407) 303-4195">{% render "icon-phone" %} (407) 303-4195</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Florida Hospital Lactation Center</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">601 E. Rollins St</p>
+            <p class="mb-0">Orlando</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">32803</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(407) 303-7650">{% render "icon-phone" %} (407) 303-7650</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Hollywood Discount Pharmacy</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">1150 N. 35Th Avenue</p>
+            <p class="mb-0">Hollywood</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">33021</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(954) 432-7455">{% render "icon-phone" %} (954) 432-7455</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Boca Raton Regional Hospital</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">800 Meadows Rd.</p>
+            <p class="mb-0">Boca Raton</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">33486</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(561) 955-5415">{% render "icon-phone" %} (561) 955-5415</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Baptist Hospital Of Miami Lactation Services</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">8900 N. Kendall Drive</p>
+            <p class="mb-0">Miami</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">33176</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(786) 596-6766">{% render "icon-phone" %} (786) 596-6766</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Pill Box Pharmacy Pembroke Pines Terrance</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">1700 Nw 122Nd Terrace</p>
+            <p class="mb-0">Pembroke Pines</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">33026</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(954) 432-7455">{% render "icon-phone" %} (954) 432-7455</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Pill Box Pharmacy Flamingo</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">601 N. Flamingo Road</p>
+            <p class="mb-0">Pembroke Pines</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">33028</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(954) 437-7455">{% render "icon-phone" %} (954) 437-7455</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.pillbox123.com">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Lori's Gift Shop at Winnie Plamer Hospital for Woman and
+              Babies</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">83 W Miller Street</p>
+            <p class="mb-0">Orlando</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">32806</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(321) 841-1653">{% render "icon-phone" %} (321) 841-1653</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Lori's Gift Shop at Southlake Hospital</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">1900 Don Wickham Drive</p>
+            <p class="mb-0">Clermont</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">34711</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(352) 394-4071">{% render "icon-phone" %} (352) 394-4071</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Pill Box Pharmacy West</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">17529 Pines Boulevard</p>
+            <p class="mb-0">Pembroke Pines</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">33029</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(954) 443-7455">{% render "icon-phone" %} (954) 443-7455</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Florida Home Medical and Equipment Supplies</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">4700 Lb McLeod Road</p>
+            <p class="mb-0">Orlando</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">32811</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(407) 843-2777">{% render "icon-phone" %} (407) 843-2777</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">A Womans Place at Tallahassee Memorial Hospital</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">1301 E 6TH Avenue</p>
+            <p class="mb-0">Tallahassee</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">32303</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(850) 431-4928">{% render "icon-phone" %} (850) 431-4928</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="FL">
+          <div class="location-content">
+            <h3 class="store-title h5">Lactation Station</h3>
+
+
+            <p class="mb-0">6819 Broken Arrow Trail South</p>
+            <p class="mb-0">Lakeland</p>
+            <p class="mb-0">FL</p>
+            <p class="mb-0">33813</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:herdsnerds@gmail.com">{% render "icon-mail" %}
+              herdsnerds@gmail.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel:(863) 640-0117">{% render "icon-phone" %} (863) 640-0117</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="GA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Nancy Habif</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">546 Cresthill Ave NE</p>
+            <p class="mb-0">Atlanta</p>
+            <p class="mb-0">GA</p>
+            <p class="mb-0">30306</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(404) 326-9003">{% render "icon-phone" %} (404) 326-9003</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="GA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Little Five Points Pharmacy</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">484 Moreland Ave. N.E.</p>
+            <p class="mb-0">Atlanta</p>
+            <p class="mb-0">GA</p>
+            <p class="mb-0">30307</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(404) 524-4466">{% render "icon-phone" %} (404) 524-4466</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="GA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Lactation Consultants Of Atlanta - Marietta</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">2141 Kinston CT SE Suite 103</p>
+            <p class="mb-0">Marietta</p>
+            <p class="mb-0">GA</p>
+            <p class="mb-0">30067</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:ibclc@breastfeedingatlanta.com">{% render "icon-mail" %}
+              ibclc@breastfeedingatlanta.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel:(770) 644-0555">{% render "icon-phone" %} (770) 644-0555</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="https://breastfeedingatlanta.com/">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="GA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Breastfeed Atlanta</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">575 Boulevard SE</p>
+            <p class="mb-0">Atlanta</p>
+            <p class="mb-0">GA</p>
+            <p class="mb-0">30312</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(404) 454-9715">{% render "icon-phone" %} (404) 454-9715</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="GA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Concord Pharmacy</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">5485 Chamblee Dunwoody Rd.</p>
+            <p class="mb-0">Dunwoody</p>
+            <p class="mb-0">GA</p>
+            <p class="mb-0">30338</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(770) 394-3233">{% render "icon-phone" %} (770) 394-3233</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="GA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Apex Pharmacy</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">1240 Hwy 54 West, Bldg 100 Suite 101</p>
+            <p class="mb-0">Fayetteville</p>
+            <p class="mb-0">GA</p>
+            <p class="mb-0">30214</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="GA">
+          <div class="location-content">
+            <h3 class="store-title h5">Lactation Consultants of Atlanta - Jonesboro</h3>
+
+            <p>Elite/Platinum</p>
+            <p class="mb-0">9152 Endicott Place</p>
+            <p class="mb-0">Jonesboro</p>
+            <p class="mb-0">GA</p>
+            <p class="mb-0">30236</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:ibclc@breastfeedingatlanta.com">{% render "icon-mail" %}
+              ibclc@breastfeedingatlanta.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel:813-382-864">{% render "icon-phone" %} 813-382-864</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="www.breastfeedingatlanta.com">{% render "icon-link"
+              %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="GA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Sharon Birdseye RN, IBCLC; Lactation Consultants Of
+              Atlanta</h3>
+            <span class="short-desc">E/P</span>
+            <p>E/P</p>
+            <p class="mb-0">2141 Kingston Court, SE</p>
+            <p class="mb-0">Marietta</p>
+            <p class="mb-0">GA</p>
+            <p class="mb-0">30067</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(770) 644-0555">{% render "icon-phone" %} (770) 644-0555</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="https://breastfeedingatlanta.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="HI">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Hawaii Mother'S Milk</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">1319 Punahou Street</p>
+            <p class="mb-0">Honolulu</p>
+            <p class="mb-0">HI</p>
+            <p class="mb-0">96826</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(808) 947-6920">{% render "icon-phone" %} (808) 947-6920</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Mark Drug</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">384 E Irving Park Rd</p>
+            <p class="mb-0">Roselle</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60172</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(630) 529-3400">{% render "icon-phone" %} (630) 529-3400</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Mark Drug Medical Supply</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">548A West Dundee Rd</p>
+            <p class="mb-0">Wheeling</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60090</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(847) 537-8500">{% render "icon-phone" %} (847) 537-8500</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="https://www.markdrugmedicalsupply.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Elmhurst Memorial Hospital</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">155 E. BRUSH HILL RD</p>
+            <p class="mb-0">ELMHURST</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60129</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(331) 221-5433">{% render "icon-phone" %} (331) 221-5433</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Breastfeeding Support Services</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">302 Chesapeake Lane</p>
+            <p class="mb-0">Collinsville</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">62234</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(618) 346-1919">{% render "icon-phone" %} (618) 346-1919</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Edward Hospital</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">801 S. Washington St.</p>
+            <p class="mb-0">Naperville</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60540</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(630) 527-3000">{% render "icon-phone" %} (630) 527-3000</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="https://www.edward.org">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Rush-Copley Medical Center</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">2000 Ogden Ave</p>
+            <p class="mb-0">Aurora</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60504</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(630) 978-6235">{% render "icon-phone" %} (630) 978-6235</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Lori'S Gifts At Advocate Illinois Masonic Medical Center
+            </h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">836 W. Wellington Ave</p>
+            <p class="mb-0">Chicago</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60657</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(773) 296-5966">{% render "icon-phone" %} (773) 296-5966</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.lorisgifts.com">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Zen & Now At Advocate Lutheran General Hospital</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">1775 Dempster St.</p>
+            <p class="mb-0">Park Ridge</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60068</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(847) 723-0877">{% render "icon-phone" %} (847) 723-0877</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.lorisgifts.com">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">St. Alexius Medical Center</h3>
+            <span class="short-desc">P </span>
+            <p>Platinum</p>
+            <p class="mb-0">1555 Barrington Road</p>
+            <p class="mb-0">Hoffman Estates</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60194</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(847) 755-7600">{% render "icon-phone" %} (847) 755-7600</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Healthy Babies Happy Families</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">8267 W. Golf Road</p>
+            <p class="mb-0">Niles</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60714</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(847) 583-0499">{% render "icon-phone" %} (847) 583-0499</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.healthybabiesinc.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="IL">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Alexian Brothers Med Ctr</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">800 W Biesterfield Road</p>
+            <p class="mb-0">Elk Grove Village</p>
+            <p class="mb-0">IL</p>
+            <p class="mb-0">60007</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(847) 437-5500">{% render "icon-phone" %} (847) 437-5500</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MD">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Jessa Medical Supply</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">112 Market Street</p>
+            <p class="mb-0">Gaithersburg</p>
+            <p class="mb-0">MD</p>
+            <p class="mb-0">20878</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(301) 990-8706">{% render "icon-phone" %} (301) 990-8706</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.jessamedical.com">{% render "icon-link"
+              %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MD">
+          <div class="location-content">
+            <h3 class="store-title h5">Anne Arundel Medical Center</h3>
+
+
+            <p class="mb-0">2001 Medical Parkway</p>
+            <p class="mb-0">Annapolis</p>
+            <p class="mb-0">MD</p>
+            <p class="mb-0">21401</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(443)481-6977">{% render "icon-phone" %} (443)481-6977</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="https://www.aahs.org/birth/lactation.php">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MD">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">GBMC</h3>
+            <span class="short-desc">P/LACT-E</span>
+            <p>Platinum/LACT-E</p>
+            <p class="mb-0">6701 North Charles St</p>
+            <p class="mb-0">Baltimore</p>
+            <p class="mb-0">MD</p>
+            <p class="mb-0">21204</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(443) 849-2229">{% render "icon-phone" %} (443) 849-2229</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MD">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Frederick Memorial Hospital</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">400 West Seventh Street</p>
+            <p class="mb-0">Frederick</p>
+            <p class="mb-0">MD</p>
+            <p class="mb-0">21701</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(240) 566-3880">{% render "icon-phone" %} (240) 566-3880</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MD">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Northern Rexall Pharmacy</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">6701 Harford Road</p>
+            <p class="mb-0">Baltimore</p>
+            <p class="mb-0">MD</p>
+            <p class="mb-0">21234</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(410) 254-2055">{% render "icon-phone" %} (410) 254-2055</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MI">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Mom and Baby Shop</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">43000 W. 9 Mile Rd.</p>
+            <p class="mb-0">Novi</p>
+            <p class="mb-0">MI</p>
+            <p class="mb-0">48375</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(313) 444-2229">{% render "icon-phone" %} (313) 444-2229</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.momandbabyshop.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MI">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">St. John Providence Park Hospital</h3>
+            <span class="short-desc">Not doing rentals</span>
+            <p>Elite</p>
+            <p class="mb-0">47601 Grand River Ave.</p>
+            <p class="mb-0">Novi</p>
+            <p class="mb-0">MI</p>
+            <p class="mb-0">48374</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(248) 465-3887">{% render "icon-phone" %} (248) 465-3887</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MI">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Binson'S Home Health Care Center</h3>
+            <span class="short-desc">Not doing rentals</span>
+            <p>Elite</p>
+            <p class="mb-0">30475 N. Woodward Ave.</p>
+            <p class="mb-0">Royal Oak</p>
+            <p class="mb-0">MI</p>
+            <p class="mb-0">48073</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(248) 288-0440">{% render "icon-phone" %} (248) 288-0440</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MI">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Providence Hospital Breastfeeding Assistance Program</h3>
+            <span class="short-desc">E </span>
+            <p>Elite</p>
+            <p class="mb-0">16001 West Nine Mile Road</p>
+            <p class="mb-0">Southfield</p>
+            <p class="mb-0">MI</p>
+            <p class="mb-0">48075</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(248) 849-2799">{% render "icon-phone" %} (248) 849-2799</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MO">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Kangaroo Kids</h3>
+            <span class="short-desc">P/E</span>
+            <p>Platinum/Elite</p>
+            <p class="mb-0">10030 Manchester Rd.</p>
+            <p class="mb-0">St. Louis</p>
+            <p class="mb-0">MO</p>
+            <p class="mb-0">63122</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(314) 835-9200">{% render "icon-phone" %} (314) 835-9200</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.kangarookidsonline.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="MO">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Kilgore'S Medical Pharmacy</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">1608 Chapel Hill Rd</p>
+            <p class="mb-0">Columbia</p>
+            <p class="mb-0">MO</p>
+            <p class="mb-0">65203</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(573) 447-4444">{% render "icon-phone" %} (573) 447-4444</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NC">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Triangle Lactation Consultants</h3>
+            <span class="short-desc">p</span>
+            <p>Platinum</p>
+            <p class="mb-0">1875 Carrington Dr</p>
+            <p class="mb-0">Raleigh</p>
+            <p class="mb-0">NC</p>
+            <p class="mb-0">27615</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(919) 845-8826">{% render "icon-phone" %} (919) 845-8826</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.trianglelactation.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NJ">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Atlantic City Regional Medical Center</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">65 W Jimmie Leeds RD</p>
+            <p class="mb-0">Galloway</p>
+            <p class="mb-0">NJ</p>
+            <p class="mb-0">8205</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(609) 404-3837">{% render "icon-phone" %} (609) 404-3837</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NJ">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Mary Lou Moramarco</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">380 Line Rd.</p>
+            <p class="mb-0">Holmdell</p>
+            <p class="mb-0">NJ</p>
+            <p class="mb-0">7733</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(732) 239-7771">{% render "icon-phone" %} (732) 239-7771</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NJ">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Sunray Medical</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">1151 Highway 35</p>
+            <p class="mb-0">Middletown</p>
+            <p class="mb-0">NJ</p>
+            <p class="mb-0">7748</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(732) 671-1200">{% render "icon-phone" %} (732) 671-1200</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NJ">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">PPD Home Care Inc</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">101 Mantua Blvd.</p>
+            <p class="mb-0">Mantua</p>
+            <p class="mb-0">NJ</p>
+            <p class="mb-0">8051</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(888) 432-4400">{% render "icon-phone" %} (888) 432-4400</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NJ">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Overlook Hospital</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">99 Beauvoir Ave.</p>
+            <p class="mb-0">Summit</p>
+            <p class="mb-0">NJ</p>
+            <p class="mb-0">7901</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(908) 522-2229">{% render "icon-phone" %} (908) 522-2229</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NJ">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Hunterdon Medical Center</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">2100 Wescott Dr.</p>
+            <p class="mb-0">Flemington</p>
+            <p class="mb-0">NJ</p>
+            <p class="mb-0">8822</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(908) 788-6335">{% render "icon-phone" %} (908) 788-6335</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Brazen Lingerie</h3>
+            <span class="short-desc">Not doing rentals</span>
+
+            <p class="mb-0">5000 Broadway</p>
+            <p class="mb-0">New York City</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">10034</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(212) 567-5563">{% render "icon-phone" %} (212) 567-5563</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.brazenlingerie.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Yummy Mummy</h3>
+            <span class="short-desc">E</span>
+
+            <p class="mb-0">1201 Lexington</p>
+            <p class="mb-0">New York City</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">10028</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(212) 879-8669">{% render "icon-phone" %} (212) 879-8669</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.yummymummystore.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Lauren G. Macaluso Md Faap Ibclc Pc</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">1575 Hillside Avenue</p>
+            <p class="mb-0">New Hyde Park</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">11040</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(516) 498-2300">{% render "icon-phone" %} (516) 498-2300</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.macalusomedical.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">United Health Services at Wilson Hospital</h3>
+            <span class="short-desc">EPP</span>
+            <p>EPP</p>
+            <p class="mb-0">33-57 Harrison St</p>
+            <p class="mb-0">Johnson City</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">13790</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(607) 763-5951">{% render "icon-phone" %} (607) 763-5951</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Bellies And Babies Inc.</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">8 Kenwood St.</p>
+            <p class="mb-0">East Serauket</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">11733</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(631) 487-7133">{% render "icon-phone" %} (631) 487-7133</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.belliesandbabies.org">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Worldwide Surgical Equipment Inc.</h3>
+            <span class="short-desc">E</span>
+
+            <p class="mb-0">2165 East 21 Street</p>
+            <p class="mb-0">Brooklyn</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">11229</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(718) 648-8130">{% render "icon-phone" %} (718) 648-8130</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.worldwidesurgical.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">The Baby'S Den</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">3015 Avenue J</p>
+            <p class="mb-0">Brooklyn</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">11210</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(718) 676-1748">{% render "icon-phone" %} (718) 676-1748</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.babysden.com">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Charmar Pharmacy</h3>
+            <span class="short-desc">Not doing rentals</span>
+            <p>SMB</p>
+            <p class="mb-0">781 Lydig Ave</p>
+            <p class="mb-0">Bronx</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">10462</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(718) 822-1348">{% render "icon-phone" %} (718) 822-1348</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">New Baby New Paltz</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">15 Plattekill Ave.</p>
+            <p class="mb-0">New Platz</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">12561</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(845) 750-4402">{% render "icon-phone" %} (845) 750-4402</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://newbabynewpaltz.com">{% render "icon-link"
+              %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">The Shop At Full Circle</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">1241 Mamaroneck Ave</p>
+            <p class="mb-0">White Plains</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">10605</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(914) 421-1500 #21">{% render "icon-phone" %} (914) 421-1500
+              #21</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.fullcirclefamilycare.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Robert Jacobson Pharmacy</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">359 East Main St</p>
+            <p class="mb-0">Mount Kisco</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">10549</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(914)241-4887">{% render "icon-phone" %} (914)241-4887</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5">NYU Langone Parent Education</h3>
+
+
+            <p class="mb-0">660 1st Ave</p>
+            <p class="mb-0">New York City</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">10016</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(212) 263-7201">{% render "icon-phone" %} (212) 263-7201</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">The Modern Chemists</h3>
+            <span class="short-desc">E</span>
+
+            <p class="mb-0">191 4th Avenue</p>
+            <p class="mb-0">Brooklyn</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">11217</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(718) 369-6100">{% render "icon-phone" %} (718) 369-6100</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Lori's Gifts Richmond university medical Center</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">355 Bard Ave</p>
+            <p class="mb-0">Staten Island</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">10310</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(718) 818-4439">{% render "icon-phone" %} (718) 818-4439</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Northern Westchester Prescription Center</h3>
+            <span class="short-desc">E </span>
+            <p>Elite</p>
+            <p class="mb-0">19 E. Main St</p>
+            <p class="mb-0">Mount Kisco</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">10549</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(914) 666-4467">{% render "icon-phone" %} (914) 666-4467</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Scarpa Pharmacy</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">6216 11Th Avenue</p>
+            <p class="mb-0">Brooklyn</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">11219</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(718) 745-5499">{% render "icon-phone" %} (718) 745-5499</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="NY">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">NYU Langone Parent Eduducaiton </h3>
+            <span class="short-desc">E</span>
+            <p>E</p>
+            <p class="mb-0">660 1st Ave </p>
+            <p class="mb-0">New York City</p>
+            <p class="mb-0">NY</p>
+            <p class="mb-0">10016</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(212) 263-7201">{% render "icon-phone" %} (212) 263-7201</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="https://www.nyubaby.org">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="OH">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Mom & Me Boutique Center For Women'S Health</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum/SMB</p>
+            <p class="mb-0">2121 Hughes Drive</p>
+            <p class="mb-0">Toledo</p>
+            <p class="mb-0">OH</p>
+            <p class="mb-0">43606</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(419) 291-5666">{% render "icon-phone" %} (419) 291-5666</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.Promedica.org">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="OH">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Bernens Convalescent Pharmacy Inc.</h3>
+            <span class="short-desc">Not doing rentals</span>
+            <p>Elite/SMB</p>
+            <p class="mb-0">5053 Glenway Avenue</p>
+            <p class="mb-0">Cincinnati</p>
+            <p class="mb-0">OH</p>
+            <p class="mb-0">45238</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(513) 471-7575">{% render "icon-phone" %} (513) 471-7575</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="OK">
+          <div class="location-content">
+            <h3 class="store-title h5">Mercy Pharmacy - Physicians Tower</h3>
+
+
+            <p class="mb-0">4300 W. Memorial Road</p>
+            <p class="mb-0">Oklahoma City</p>
+            <p class="mb-0">OK</p>
+            <p class="mb-0">73120</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(405) 752-3631">{% render "icon-phone" %} (405) 752-3631</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="OR">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Luna Lactation</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">1906 NW 25th Ave Unit #10</p>
+            <p class="mb-0">Portland</p>
+            <p class="mb-0">OR</p>
+            <p class="mb-0">98661</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(360) 830-MILK">{% render "icon-phone" %} (360) 830-MILK</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.lunalactation.com/">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="PA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Breastfeeding Resource Center</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">1355 Old York Road</p>
+            <p class="mb-0">Suite 101 Abington</p>
+            <p class="mb-0">PA</p>
+            <p class="mb-0">19001</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(215) 886-2433">{% render "icon-phone" %} (215) 886-2433</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="PA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Lactation Station & More</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">142 Route 611</p>
+            <p class="mb-0">Bartonsville</p>
+            <p class="mb-0">PA</p>
+            <p class="mb-0">18372</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(570) 350-7327">{% render "icon-phone" %} (570) 350-7327</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.lactationstationandmore.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="PA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Gateway Pharmacy</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">165 Nutt Rd</p>
+            <p class="mb-0">Phoenixville</p>
+            <p class="mb-0">PA</p>
+            <p class="mb-0">19460</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(610) 933-2609">{% render "icon-phone" %} (610) 933-2609</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.thegatewaypharmacy.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="PA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Mommy Gear</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">107 S. St. Clair Street</p>
+            <p class="mb-0">Lingonier</p>
+            <p class="mb-0">PA</p>
+            <p class="mb-0">15658</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(724) 238-9633">{% render "icon-phone" %} (724) 238-9633</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="PA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Medical Home Care</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">202 Conestoga Road</p>
+            <p class="mb-0">Wayne</p>
+            <p class="mb-0">PA</p>
+            <p class="mb-0">19087</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(610) 687-6585">{% render "icon-phone" %} (610) 687-6585</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="PA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Paoli Apothecary At Paoli Hospital</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">255 W Lancaster Ave</p>
+            <p class="mb-0">Paoli</p>
+            <p class="mb-0">PA</p>
+            <p class="mb-0">19301</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(610) 251-2295">{% render "icon-phone" %} (610) 251-2295</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="PA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Breastfeeding Center Of Pittsburgh Beechwood</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">4070 Beechwood Blvd</p>
+            <p class="mb-0">Pittsburgh</p>
+            <p class="mb-0">PA</p>
+            <p class="mb-0">15217</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(412) 246-4726">{% render "icon-phone" %} (412) 246-4726</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="PA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Breastfeeding Center Of Pittsburgh</h3>
+            <span class="short-desc">E</span>
+            <p>Elite</p>
+            <p class="mb-0">850 Clairton Blvd</p>
+            <p class="mb-0">Pittsburgh</p>
+            <p class="mb-0">PA</p>
+            <p class="mb-0">15236</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(412) 246-4726">{% render "icon-phone" %} (412) 246-4726</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="SC">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Carolina Breast Pump</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">1090-D Johnny Dodds Blvd.</p>
+            <p class="mb-0">Mount Pleasant</p>
+            <p class="mb-0">SC</p>
+            <p class="mb-0">29464</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:843/754-1187">{% render "icon-phone" %} 843/754-1187</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="https://www.carolinabreastpump.com/">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="TAM">
+          <div class="location-content">
+            <h3 class="store-title h5">TIENDAS SINDICALES</h3>
+
+
+            <p class="mb-0">14001 Mines Rd, Laredo, TX 78045, USA</p>
+            <p class="mb-0">Texas</p>
+            <p class="mb-0">TAM</p>
+            <p class="mb-0">78045</p>
+            <p class="mb-0">MX</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary"
+              href="mailto:ivonneE@tiendassindicales.com  /  purchasing@tiendassindicales.com">{% render "icon-mail" %}
+              ivonneE@tiendassindicales.com  /  purchasing@tiendassindicales.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel:1-210-805-8931">{% render "icon-phone" %} 1-210-805-8931</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="TN">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">A31521 Medical Center-Medical</h3>
+            <span class="short-desc">E/LACT E</span>
+            <p>E/LACT E</p>
+            <p class="mb-0">1061 West Forest Ave.</p>
+            <p class="mb-0">Jackson</p>
+            <p class="mb-0">TN</p>
+            <p class="mb-0">38301</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(731) 664-4305">{% render "icon-phone" %} (731) 664-4305</a>
+            <a class="link-with-icon btn btn--primary" target="_blank"
+              href="https://www.wth.org/services/medical-products/equipment-and-supplies/">{% render "icon-link" %} Visit
+              Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="TN">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">A75425 Sweetwater Hospital</h3>
+            <span class="short-desc">E/P/SMB</span>
+            <p>E/P/SMB</p>
+            <p class="mb-0">304 Wright Street</p>
+            <p class="mb-0">Sweetwater</p>
+            <p class="mb-0">TN</p>
+            <p class="mb-0">37874</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(865) 213-8200">{% render "icon-phone" %} (865) 213-8200</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="https://sweetwaterhospital.org">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="TX">
+          <div class="location-content">
+            <h3 class="store-title h5">Christus Spohn South - Gift Shop</h3>
+
+
+            <p class="mb-0">5950 Saratoga</p>
+            <p class="mb-0">Corpus Christi</p>
+            <p class="mb-0">TX</p>
+            <p class="mb-0">78414</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(361) 985-5000">{% render "icon-phone" %} (361) 985-5000</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="TX">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Medical Center Hospital - Lori's Gifts</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">500 W. 4th Street</p>
+            <p class="mb-0">Odessa</p>
+            <p class="mb-0">TX</p>
+            <p class="mb-0">79761</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(432) 640-1924">{% render "icon-phone" %} (432) 640-1924</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="TX">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Seton Medical Center Austin</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">1201 W 38th St</p>
+            <p class="mb-0">Austin</p>
+            <p class="mb-0">TX</p>
+            <p class="mb-0">78705</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(512) 324-1000 #170">{% render "icon-phone" %} (512) 324-1000
+              #170</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="TX">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Central Texas Medical Center</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">1301 Wonder World Dr</p>
+            <p class="mb-0">San Marcos</p>
+            <p class="mb-0">TX</p>
+            <p class="mb-0">78666</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(512) 735-3615">{% render "icon-phone" %} (512) 735-3615</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Intermountain Healthcare Logan Regional Hospital</h3>
+            <span class="short-desc">P </span>
+            <p>Platinum</p>
+            <p class="mb-0">500 E. 1400 North</p>
+            <p class="mb-0">Logan</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84341</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(435) 716-2560">{% render "icon-phone" %} (435) 716-2560</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">L.A.C.E By Louise</h3>
+
+
+            <p class="mb-0">344 S 500W #2</p>
+            <p class="mb-0">Bountiful</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84010</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(801) 294-5223">{% render "icon-phone" %} (801) 294-5223</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Intermountain Healthcare</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">331 North 400 West</p>
+            <p class="mb-0">Orem</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84057</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">1440 South 500 West</p>
+            <p class="mb-0">Bountiful</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84010</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(801)294-0636">{% render "icon-phone" %} (801)294-0636</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">1333 N Main St Suite 102</p>
+            <p class="mb-0">Cedar City</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84721</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">Fillmore,UT</p>
+            <p class="mb-0">Fillmore</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84631</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:435-743-1790">{% render "icon-phone" %} 435-743-1790</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">Delta,UT</p>
+            <p class="mb-0">Delta</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84624</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:435-864-1581">{% render "icon-phone" %} 435-864-1581</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">175 North Main, Ste 104</p>
+            <p class="mb-0">Heber</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84032</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(435)657-4326, (866)657-4323 T">{% render "icon-phone" %}
+              (435)657-4326, (866)657-4323 T</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">1300 North 200 East, Ste. 106</p>
+            <p class="mb-0">Logan</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84341</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(435)716-5396">{% render "icon-phone" %} (435)716-5396</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">154 E Myrtle Ave #103</p>
+            <p class="mb-0">Murray</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84107</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(801) 507-9100">{% render "icon-phone" %} (801) 507-9100</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">130 West Main</p>
+            <p class="mb-0">Mt Pleasant</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84647</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">4421 South Harrison Blvd, Suite A1​</p>
+            <p class="mb-0">Ogden</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84403</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">289 West 1230 North</p>
+            <p class="mb-0">Provo</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84604</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(801)357-8250;  (800)888-9225 ">{% render "icon-phone" %}
+              (801)357-8250; (800)888-9225 </a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">70 East 1000 North</p>
+            <p class="mb-0">Richfield</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84701</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(435)896-5884">{% render "icon-phone" %} (435)896-5884</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">389 South 900 East, 1st Floor</p>
+            <p class="mb-0">Salt Lake City</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84102</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(385)282-2200">{% render "icon-phone" %} (385)282-2200</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">11520 S. Redwood Rd</p>
+            <p class="mb-0">South Jordan</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84095</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(385)887-7320">{% render "icon-phone" %} (385)887-7320</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="UT">
+          <div class="location-content">
+            <h3 class="store-title h5">Intermountain Healthcare</h3>
+
+
+            <p class="mb-0">923 S River Road, #104</p>
+            <p class="mb-0">St. George</p>
+            <p class="mb-0">UT</p>
+            <p class="mb-0">84790</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(435)251-2323">{% render "icon-phone" %} (435)251-2323</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="VA">
+          <div class="location-content">
+            <h3 class="store-title h5">Inova Loudoun Hospital</h3>
+
+
+            <p class="mb-0">44045 Riverside Parkway</p>
+            <p class="mb-0">Leesburg</p>
+            <p class="mb-0">VA</p>
+            <p class="mb-0">20176</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(703) 858-8911">{% render "icon-phone" %} (703) 858-8911</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="VA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Breastfeeding Center For Greater Washington</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">4923 Springbrook Drive</p>
+            <p class="mb-0">Annandale</p>
+            <p class="mb-0">VA</p>
+            <p class="mb-0">22003</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(703) 978-2000">{% render "icon-phone" %} (703) 978-2000</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="VA">
+          <div class="location-content">
+            <h3 class="store-title h5">Inova Fair Oaks Hospital</h3>
+
+
+            <p class="mb-0">3600 Joseph Siewick Drive</p>
+            <p class="mb-0">Fairfax</p>
+            <p class="mb-0">VA</p>
+            <p class="mb-0">22033</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(703) 391-3600">{% render "icon-phone" %} (703) 391-3600</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="VA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Alexandria Hospital</h3>
+            <span class="short-desc">P</span>
+            <p>Platinum</p>
+            <p class="mb-0">4320 Seminary Rd</p>
+            <p class="mb-0">Alexandria</p>
+            <p class="mb-0">VA</p>
+            <p class="mb-0">22304</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(703) 504-7867">{% render "icon-phone" %} (703) 504-7867</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="VA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Healthsource For Women</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">801 Volvo Parkway</p>
+            <p class="mb-0">Chesapeake</p>
+            <p class="mb-0">VA</p>
+            <p class="mb-0">23320</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(757) 436-3233">{% render "icon-phone" %} (757) 436-3233</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="VA">
+          <div class="location-content">
+            <h3 class="store-title h5">BIRTHJOURNEYS</h3>
+
+
+            <p class="mb-0">5741 Cleveland Street</p>
+            <p class="mb-0">Virginia Beach</p>
+            <p class="mb-0">VA</p>
+            <p class="mb-0">23462</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:jacqueline@birthjourneys.org">{% render "icon-mail" %}
+              jacqueline@birthjourneys.org</a>
+            <a class="link-with-icon btn btn--primary" href="tel:757-615-2933">{% render "icon-phone" %} 757-615-2933</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://birthjourneys.org/">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="VA">
+          <div class="location-content">
+            <h3 class="store-title h5">Inova Loudoun Hospital </h3>
+
+
+            <p class="mb-0">44045 Riverside Parkway</p>
+            <p class="mb-0">Leesburg</p>
+            <p class="mb-0">VA</p>
+            <p class="mb-0">20176</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(703) 858-8911">{% render "icon-phone" %} (703) 858-8911</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="VA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Alexandia Hospital</h3>
+            <span class="short-desc">P</span>
+            <p>P</p>
+            <p class="mb-0">4320 Seminary Rd</p>
+            <p class="mb-0">Alexandria </p>
+            <p class="mb-0">VA</p>
+            <p class="mb-0">22304</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(703) 504-7867">{% render "icon-phone" %} (703) 504-7867</a>
+
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="VAN">
+          <div class="location-content">
+            <h3 class="store-title h5">Medical Essentials BV</h3>
+
+
+            <p class="mb-0">Industriepark, 2220 Heist-op-den-Berg, Belgium</p>
+            <p class="mb-0">Heist-op-den-Berg</p>
+            <p class="mb-0">VAN</p>
+            <p class="mb-0">2220</p>
+            <p class="mb-0">BE</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:info@m-e.be">{% render "icon-mail" %} info@m-e.be</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +32 15 76 12 25">{% render "icon-phone" %} +32 15 76 12 25</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.medicalessentials.be">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="WA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Pacific Mother'S Support Inc.</h3>
+            <span class="short-desc">E/P/SMB</span>
+            <p>Elite/Platinum/SMB</p>
+            <p class="mb-0">1407 132Nd Ave N.E.</p>
+            <p class="mb-0">Bellevue</p>
+            <p class="mb-0">WA</p>
+            <p class="mb-0">98005</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(425) 462-0577">{% render "icon-phone" %} (425) 462-0577</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.pacificmsi.com">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="WA">
+          <div class="location-content">
+            <h3 class="store-title h5" style="padding-right: 3.5rem;">Our Perfect Baby</h3>
+            <span class="short-desc">E/P</span>
+            <p>Elite/Platinum</p>
+            <p class="mb-0">6601 220th Street Southwest #6</p>
+            <p class="mb-0">Mountlake Terrace</p>
+            <p class="mb-0">WA</p>
+            <p class="mb-0">98043</p>
+            <p class="mb-0">US</p>
+          </div>
+          <div class="location-content">
+
+            <a class="link-with-icon btn btn--primary" href="tel:(425) 563-1309">{% render "icon-phone" %} (425) 563-1309</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.ourperfectbaby.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">Relicor Drugstore LLC</h3>
+
+
+            <p class="mb-0">146 Street 23 - Industrial AreaIndustrial Area 1 - Sharjah - United Arab Emirates</p>
+            <p class="mb-0">Dubai</p>
+
+
+            <p class="mb-0">AE</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:INFO@RELICORDRUGSTORE.COM">{% render "icon-mail" %}
+              INFO@RELICORDRUGSTORE.COM</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +971 4 2382360">{% render "icon-phone" %} +971 4 2382360</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.relicordrugstore.com/">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">Dyn Diagnostics Ltd.</h3>
+
+
+            <p class="mb-0">Rotem HaMidbar St 4, Caesarea, Israel</p>
+            <p class="mb-0">Israel</p>
+
+            <p class="mb-0">3079504</p>
+            <p class="mb-0">IL</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:patient.care@dyn.co.il">{% render "icon-mail" %}
+              patient.care@dyn.co.il</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +972-4-6175390">{% render "icon-phone" %} +972-4-6175390</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.dyn.co.il">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">J.B.Care A/S</h3>
+
+
+            <p class="mb-0">Anelystparken 31b, 8381 Tilst, Denmark</p>
+            <p class="mb-0">Tilst</p>
+
+            <p class="mb-0">8381</p>
+            <p class="mb-0">DK</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:jan@jbcare.dk">{% render "icon-mail" %} jan@jbcare.dk</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +45 70272766">{% render "icon-phone" %} +45 70272766</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.jbcare.dk">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">Central Medical Supplies Ltd</h3>
+
+
+            <p class="mb-0">CMS House, Fynney Fields, Brooklands Way, Leek ST13 7QG, UK</p>
+
+
+            <p class="mb-0">ST13 7QG</p>
+            <p class="mb-0">GB</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:info@centralmedical.co.uk">{% render "icon-mail" %}
+              info@centralmedical.co.uk</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +44 (0)1538 399 541">{% render "icon-phone" %} +44 (0)1538 399
+              541</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.centralmedical.co.uk">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">Euramedic Pte Ltd</h3>
+
+
+            <p class="mb-0">Unnamed Road, Singapore</p>
+            <p class="mb-0">Midview City</p>
+
+            <p class="mb-0">573972</p>
+            <p class="mb-0">SG</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:euramedic@gmail.com">{% render "icon-mail" %}
+              euramedic@gmail.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +65 6844 7717">{% render "icon-phone" %} +65 6844 7717</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.euramedic.com.sg">{% render "icon-link"
+              %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5"> Babymama Inc.</h3>
+
+
+            <p class="mb-0">Basement, Tektite Tower, Pearl Drive cor, Exchange Rd, Ortigas Center, Pasig, Metro Manila,
+              Philippines</p>
+            <p class="mb-0">Pasig City</p>
+
+            <p class="mb-0">1605</p>
+            <p class="mb-0">PH</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:Miann@babymama.ph">{% render "icon-mail" %}
+              Miann@babymama.ph</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +63 8 2773360/  +63 ">{% render "icon-phone" %} +63 8
+              2773360/  +63 </a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.babymama.ph">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">G.ANANIADIS EE</h3>
+
+
+            <p class="mb-0">Mετρό Νέος Σινδ. Σταθμός, Monastiriou, Thessaloniki 546 29, Greece</p>
+            <p class="mb-0">THESSALONIKI</p>
+
+            <p class="mb-0">54634</p>
+            <p class="mb-0">GR</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:info@ameda.gr, olympia@ananiadis-medical.gr">{% render
+              "icon-mail" %} info@ameda.gr, olympia@ananiadis-medical.gr</a>
+            <a class="link-with-icon btn btn--primary" href="tel:0030 2310 200467, 00">{% render "icon-phone" %} 0030 2310
+              200467, 00</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.ameda.gr">{% render "icon-link" %} Visit
+              Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">My Breastpump</h3>
+
+
+            <p class="mb-0">16 Pitchford Pl, Northcliff, Randburg, 2115, South Africa</p>
+            <p class="mb-0">Johannesburg</p>
+
+
+            <p class="mb-0">ZA</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:info@mybreastpump.co.za">{% render "icon-mail" %}
+              info@mybreastpump.co.za</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +24 84 602 4234">{% render "icon-phone" %} +24 84 602 4234</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.mybreastpump.co.za">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">The HomeCare Medical Limited</h3>
+
+
+            <p class="mb-0">No. 2162, Section 3, Zhengda Road, Minxiong Township, Chiayi County, Taiwan 621</p>
+            <p class="mb-0">Kowloon</p>
+
+
+            <p class="mb-0">HK</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:homecare@homecare-medical.com">{% render "icon-mail" %}
+              homecare@homecare-medical.com</a>
+            <a class="link-with-icon btn btn--primary" href="tel:(852) 2402-2188">{% render "icon-phone" %} (852) 2402-2188</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.homecare-medical.com">{% render
+              "icon-link" %} Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">Surgitech</h3>
+
+
+
+            <p class="mb-0">Cairo</p>
+
+
+            <p class="mb-0">EG</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary"
+              href="mailto:mohamed.taha@surgitech.net, sally.medhat@intra.surgitech.net">{% render "icon-mail" %}
+              mohamed.taha@surgitech.net, sally.medhat@intra.surgitech.net</a>
+            <a class="link-with-icon btn btn--primary" href="tel: +202 3762 2092 – 333">{% render "icon-phone" %} +202 3762 2092
+              – 333</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.surgitech.net">{% render "icon-link" %}
+              Visit Website</a>
+          </div>
+        </div>
+
+
+        <div class="store-location" data-stateprovince="">
+          <div class="location-content">
+            <h3 class="store-title h5">Servicios Prenatal SAC</h3>
+
+
+
+            <p class="mb-0">Lima</p>
+
+
+            <p class="mb-0">PE</p>
+          </div>
+          <div class="location-content">
+            <a class="link-with-icon btn btn--primary" href="mailto:melissa.gandrup@prenatal.com.pe">{% render "icon-mail" %}
+              melissa.gandrup@prenatal.com.pe</a>
+            <a class="link-with-icon btn btn--primary" href="tel:011-511-96-238-2309">{% render "icon-phone" %}
+              011-511-96-238-2309</a>
+            <a class="link-with-icon btn btn--primary" target="_blank" href="http://www.prenatal.com.pe">{% render "icon-link"
+              %} Visit Website</a>
+          </div>
+        </div>
     </div>
   </div>
 </div>
