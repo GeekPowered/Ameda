@@ -47,7 +47,7 @@
         
             <div class="location-content">
               {% if store_location.email != blank %}
-                <a class="link-with-icon btn btn--primary" href="mailto:{{ email_address }}">{% render 'icon-mail' %} {{ email_address }}</a>
+                <a class="link-with-icon btn btn--primary" href="mailto:{{ store_location.email }}">{% render 'icon-mail' %} {{ store_location.email }}</a>
               {% endif %}
             
               {% if store_location.phone_number != blank %}
