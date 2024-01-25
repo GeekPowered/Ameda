@@ -20,9 +20,13 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
+      {% assign json_file_url = 'store-locations.json' | asset_url %}
+      {% assign json_content = json_file_url | json %}
+
+      
       {% assign locations = shop.metaobjects.store_locations["all-locations"].all.value %}
       {% assign current_state = '' %}
-        {% for store_location in locations %}
+        {% for store_location in json_content %}
           <div class="store-location" 
                id="{% if current_state != store_location.state_province %}
                      {% assign current_state = store_location.state_province %}
