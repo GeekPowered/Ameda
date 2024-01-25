@@ -32,6 +32,26 @@
                 {{ block.settings.address }}
               </p>
             {% endif %}
+            {% if block.settings.city != blank %}
+              <p class="mb-0">
+                {{ block.settings.city }}
+              </p>
+            {% endif %}
+            {% if block.settings.state != blank %}
+              <p class="mb-0">
+                {{ block.settings.state }}
+              </p>
+            {% endif %}
+            {% if block.settings.zip != blank %}
+              <p class="mb-0">
+                {{ block.settings.zip }}
+              </p>
+            {% endif %}
+            {% if block.settings.country != blank %}
+              <p class="mb-0">
+                {{ block.settings.country }}
+              </p>
+            {% endif %}
           </div>
           <div class="location-content">
             {% if block.settings.email != blank %}
@@ -126,6 +146,21 @@
           "type": "text",
           "label": "State / Province",
           "id": "state_province"
+        },
+        {
+          "type": "text",
+          "label": "City",
+          "id": "city"
+        },
+        {
+          "type": "text",
+          "label": "Country",
+          "id": "country"
+        },
+        {
+          "type": "text",
+          "label": "Zip",
+          "id": "zip"
         },
         {
           "type": "text",
