@@ -21,12 +21,13 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-        {% for store_location in locations %}
+          {% assign current_state = '' %}
+          {% for store_location in locations %}
+          {% if current_state != store_location.state_province %}
+            {% assign current_state = store_location.state_province %}
+          {% endif %}
           <div class="store-location" 
-               id="{% if current_state != store_location.state_province %}
-                     {% assign current_state = store_location.state_province | strip %}
-                     {{ store_location.state_province | strip  }}
-                   {% endif %}">
+               id="{{ current_state | strip }}">
             <div class="location-content">
                 <h3 class="store-title h5" {% if store_location.short_description != '' %}style="padding-right: 3.5rem;"{% endif %}>{{ store_location.title }}</h3>
             
