@@ -17,61 +17,50 @@
   </div>
 </div>
 
+{% assign csv_rows = 'https://cdn.shopify.com/s/files/1/0849/8062/9819/files/product-locations.csv?v=1706209591' | asset_url | csv %}
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations" id="storeLocationsContainer">
-      {% for block in section.blocks %}
-        <div class="store-location" data-stateprovince="{{ block.settings.state_province }}">
+      {% for row in csv_rows %}
+        <div class="store-location" data-stateprovince="{{ row.state_province }}">
           <div class="location-content">
-            <h3 class="store-title h5" {% if block.settings.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ block.settings.title }}</h3>
-            {% if block.settings.short_description != blank %}
-              <span class="short-desc">{{ block.settings.short_description }}</span>
+            <h3 class="store-title h5" {% if row.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ row.title }}</h3>
+            {% if row.short_description != blank %}
+              <span class="short-desc">{{ row.short_description }}</span>
             {% endif %}
-            {% if block.settings.description != blank %}
-              <p>
-                {{ block.settings.description }}
-              </p>
+            {% if row.description != blank %}
+              <p>{{ row.description }}</p>
             {% endif %}
-            {% if block.settings.address != blank %}
-              <p class="mb-0">
-                {{ block.settings.address }}
-              </p>
+            {% if row.address != blank %}
+              <p class="mb-0">{{ row.address }}</p>
             {% endif %}
-            {% if block.settings.city != blank %}
-              <p class="mb-0">
-                {{ block.settings.city }}
-              </p>
+            {% if row.city != blank %}
+              <p class="mb-0">{{ row.city }}</p>
             {% endif %}
-            {% if block.settings.state != blank %}
-              <p class="mb-0">
-                {{ block.settings.state }}
-              </p>
+            {% if row.state != blank %}
+              <p class="mb-0">{{ row.state }}</p>
             {% endif %}
-            {% if block.settings.zip != blank %}
-              <p class="mb-0">
-                {{ block.settings.zip }}
-              </p>
+            {% if row.zip != blank %}
+              <p class="mb-0">{{ row.zip }}</p>
             {% endif %}
-            {% if block.settings.country != blank %}
-              <p class="mb-0">
-                {{ block.settings.country }}
-              </p>
+            {% if row.country != blank %}
+              <p class="mb-0">{{ row.country }}</p>
             {% endif %}
           </div>
           <div class="location-content">
-            {% if block.settings.email != blank %}
-              <a class="link-with-icon btn btn--primary" href="mailto:{{ block.settings.email }}">
-                {% render 'icon-mail' %} {{ block.settings.email }}
+            {% if row.email != blank %}
+              <a class="link-with-icon btn btn--primary" href="mailto:{{ row.email }}">
+                Email {{ row.email }}
               </a>
             {% endif %}
-            {% if block.settings.phone_number != blank %}
-              <a class="link-with-icon btn btn--primary" href="tel:{{ block.settings.phone_number }}">
-                {% render 'icon-phone' %} {{ block.settings.phone_number }}
+            {% if row.phone_number != blank %}
+              <a class="link-with-icon btn btn--primary" href="tel:{{ row.phone_number }}">
+                Call {{ row.phone_number }}
               </a>
             {% endif %}
-            {% if block.settings.website != blank %}
-              <a class="link-with-icon btn btn--primary" target="_blank" href="{{ block.settings.website }}">
-                {% render 'icon-link' %} Visit Website
+            {% if row.website != blank %}
+              <a class="link-with-icon btn btn--primary" target="_blank" href="{{ row.website }}">
+                Visit Website
               </a>
             {% endif %}
           </div>
@@ -80,6 +69,7 @@
     </div>
   </div>
 </div>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
