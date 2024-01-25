@@ -34,49 +34,6 @@
     },
     "product_locator_x7JikG": {
       "type": "product-locator",
-      "blocks": {
-        "product_location_HVRP8w": {
-          "type": "product_location",
-          "settings": {
-            "title": "O'Connor Hospital",
-            "short_description": "E",
-            "address": "<p>2105 Forest Ave<br\/>San Jose, CA 95128<\/p>",
-            "state_province": "CA",
-            "email": "",
-            "phone_number": "(408) 947-2743",
-            "website": ""
-          }
-        },
-        "product_location_xnP8it": {
-          "type": "product_location",
-          "settings": {
-            "title": "NYU Langone Parent Education",
-            "short_description": "E",
-            "address": "<p>660 1st Ave<br\/>New York City, NY 10016<\/p>",
-            "state_province": "NY",
-            "email": "jollytechnocrats@gmail.com",
-            "phone_number": "(212) 263-7201",
-            "website": "https:\/\/www.nyubaby.org"
-          }
-        },
-        "product_location_WqT8eq": {
-          "type": "product_location",
-          "settings": {
-            "title": "Healthy Horizons Peninsula Breastfeeding Center",
-            "short_description": "P",
-            "address": "<p>1432 Burlingame Avenue<br\/>Burlingame, CA 94010<\/p>",
-            "state_province": "CA",
-            "email": "",
-            "phone_number": "(650) 347-MILK",
-            "website": "http:\/\/www.hh-bc.com\/"
-          }
-        }
-      },
-      "block_order": [
-        "product_location_HVRP8w",
-        "product_location_xnP8it",
-        "product_location_WqT8eq"
-      ],
       "settings": {
       }
     }
