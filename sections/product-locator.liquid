@@ -17,51 +17,61 @@
   </div>
 </div>
 
-{% assign store_locations = 'https://cdn.shopify.com/s/files/1/0849/8062/9819/files/product-locations.json?v=1706210609' | json %}
-
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations" id="storeLocationsContainer">
-      {% for location in store_locations %}
-        <div class="store-location" data-stateprovince="{{ location.state_province }}">
+      {% for block in section.blocks %}
+        <div class="store-location" data-stateprovince="{{ block.settings.state_province }}">
           <div class="location-content">
-            <h3 class="store-title h5" {% if location.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ location.title }}</h3>
-            {% if location.short_description != blank %}
-              <span class="short-desc">{{ location.short_description }}</span>
+            <h3 class="store-title h5" {% if block.settings.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ block.settings.title }}</h3>
+            {% if block.settings.short_description != blank %}
+              <span class="short-desc">{{ block.settings.short_description }}</span>
             {% endif %}
-            {% if location.description != blank %}
-              <p>{{ location.description }}</p>
+            {% if block.settings.description != blank %}
+              <p>
+                {{ block.settings.description }}
+              </p>
             {% endif %}
-            {% if location.address != blank %}
-              <p class="mb-0">{{ location.address }}</p>
+            {% if block.settings.address != blank %}
+              <p class="mb-0">
+                {{ block.settings.address }}
+              </p>
             {% endif %}
-            {% if location.city != blank %}
-              <p class="mb-0">{{ location.city }}</p>
+            {% if block.settings.city != blank %}
+              <p class="mb-0">
+                {{ block.settings.city }}
+              </p>
             {% endif %}
-            {% if location.state != blank %}
-              <p class="mb-0">{{ location.state }}</p>
+            {% if block.settings.state != blank %}
+              <p class="mb-0">
+                {{ block.settings.state }}
+              </p>
             {% endif %}
-            {% if location.zip != blank %}
-              <p class="mb-0">{{ location.zip }}</p>
+            {% if block.settings.zip != blank %}
+              <p class="mb-0">
+                {{ block.settings.zip }}
+              </p>
             {% endif %}
-            {% if location.country != blank %}
-              <p class="mb-0">{{ location.country }}</p>
+            {% if block.settings.country != blank %}
+              <p class="mb-0">
+                {{ block.settings.country }}
+              </p>
             {% endif %}
           </div>
           <div class="location-content">
-            {% if location.email != blank %}
-              <a class="link-with-icon btn btn--primary" href="mailto:{{ location.email }}">
-                Email {{ location.email }}
+            {% if block.settings.email != blank %}
+              <a class="link-with-icon btn btn--primary" href="mailto:{{ block.settings.email }}">
+                {% render 'icon-mail' %} {{ block.settings.email }}
               </a>
             {% endif %}
-            {% if location.phone_number != blank %}
-              <a class="link-with-icon btn btn--primary" href="tel:{{ location.phone_number }}">
-                Call {{ location.phone_number }}
+            {% if block.settings.phone_number != blank %}
+              <a class="link-with-icon btn btn--primary" href="tel:{{ block.settings.phone_number }}">
+                {% render 'icon-phone' %} {{ block.settings.phone_number }}
               </a>
             {% endif %}
-            {% if location.website != blank %}
-              <a class="link-with-icon btn btn--primary" target="_blank" href="{{ location.website }}">
-                Visit Website
+            {% if block.settings.website != blank %}
+              <a class="link-with-icon btn btn--primary" target="_blank" href="{{ block.settings.website }}">
+                {% render 'icon-link' %} Visit Website
               </a>
             {% endif %}
           </div>
@@ -70,7 +80,6 @@
     </div>
   </div>
 </div>
-
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
