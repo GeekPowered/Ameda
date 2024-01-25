@@ -18,7 +18,7 @@
 </div>
 
 
-{% assign json_content = 
+{% assign product_locations = 
 [
   {
     "title": "Mothers Choice Products",
@@ -2010,11 +2010,11 @@
     "zip": ""
   }
  ]
-| fetch | json %}
+| json %}
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations" id="storeLocationsContainer">
-      {% for location in json_content %}
+      {% for location in product_locations %}
         <div class="store-location" data-stateprovince="{{ location.state_province }}">
           <div class="location-content">
             <h3 class="store-title h5" {% if location.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ location.title }}</h3>
