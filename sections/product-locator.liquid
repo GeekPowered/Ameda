@@ -23,47 +23,8 @@
     <div class="store-locations" id="storeLocationsContainer">
       {% for row in csv_rows %}
         <div class="store-location" data-stateprovince="{{ row.state_province }}">
-          <div class="location-content">
-            <h3 class="store-title h5" {% if row.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ row.title }}</h3>
-            {% if row.short_description != blank %}
-              <span class="short-desc">{{ row.short_description }}</span>
-            {% endif %}
-            {% if row.description != blank %}
-              <p>{{ row.description }}</p>
-            {% endif %}
-            {% if row.address != blank %}
-              <p class="mb-0">{{ row.address }}</p>
-            {% endif %}
-            {% if row.city != blank %}
-              <p class="mb-0">{{ row.city }}</p>
-            {% endif %}
-            {% if row.state != blank %}
-              <p class="mb-0">{{ row.state }}</p>
-            {% endif %}
-            {% if row.zip != blank %}
-              <p class="mb-0">{{ row.zip }}</p>
-            {% endif %}
-            {% if row.country != blank %}
-              <p class="mb-0">{{ row.country }}</p>
-            {% endif %}
-          </div>
-          <div class="location-content">
-            {% if row.email != blank %}
-              <a class="link-with-icon btn btn--primary" href="mailto:{{ row.email }}">
-                Email {{ row.email }}
-              </a>
-            {% endif %}
-            {% if row.phone_number != blank %}
-              <a class="link-with-icon btn btn--primary" href="tel:{{ row.phone_number }}">
-                Call {{ row.phone_number }}
-              </a>
-            {% endif %}
-            {% if row.website != blank %}
-              <a class="link-with-icon btn btn--primary" target="_blank" href="{{ row.website }}">
-                Visit Website
-              </a>
-            {% endif %}
-          </div>
+          <h3>{{ row.title }}</h3>
+          <p>{{ row.address }}</p>
         </div>
       {% endfor %}
     </div>
