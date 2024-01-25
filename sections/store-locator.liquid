@@ -20,9 +20,7 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% assign location = shop.metaobjects.store_locations["all-locations"] %}
-      {% assign locations = location.all.value | json %}
-      {% shop.metaobjects.store_locations["all-locations"] | json %}
+      {% assign locations = shop.metaobjects.store_locations["all-locations"].all | json %}
 
       {% for store_location in locations %}
         {% if current_state != store_location.state_province %}
