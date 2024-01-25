@@ -5,7 +5,7 @@
     <p class="text-center h4">E is for Elites, P is for Platinums. Other is everything else.</p>
     <ul class="state-selector" id="stateList">
       <li><strong>FIND BY STATE:</strong></li>
-      {% assign state_provinces = shop.metaobjects.store_location.values | map: 'state_province' %}
+      {% assign state_provinces = shop.metaobjects.store_locations["all-locations"].all.values | map: 'state_province' %}
       {% assign unique_sorted_states = state_provinces | uniq | sort %}
       {% for state in unique_sorted_states %}
         {% if state != blank %}
@@ -20,7 +20,7 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% assign locations = shop.metaobjects.store_locations["all-locations"].all | json %}
+      {% assign locations = shop.metaobjects.store_locations["all-locations"].all.values %}
 
       {% for store_location in locations %}
         {% if current_state != store_location.state_province %}
