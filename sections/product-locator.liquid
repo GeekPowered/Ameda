@@ -47,17 +47,15 @@
             </div>
         
             <div class="location-content">
-              {% for store_location in locations %}
-                {% if store_location.email != '' %}
-                  {% assign emails = store_location.email | split: ',' %}
-                  {% for email in emails %}
-                    <a class="link-with-icon btn btn--primary" href="mailto:{{ email | strip }}">
-                      {% render 'icon-mail' %} {{ email | strip }}
-                    </a>
-                    {% if forloop.last == false %}, {% endif %}
-                  {% endfor %}
-                {% endif %}
-              {% endfor %}
+              {% if store_location.email != '' %}
+                {% assign emails = store_location.email | split: ',' %}
+                {% for email in emails %}
+                  <a class="link-with-icon btn btn--primary" href="mailto:{{ email | strip }}">
+                    {% render 'icon-mail' %} {{ email | strip }}
+                  </a>
+                  {% if forloop.last == false %}, {% endif %}
+                {% endfor %}
+              {% endif %}
             
               {% if store_location.phone_number != '' %}
                 <a class="link-with-icon btn btn--primary" href="tel:{{ store_location.phone_number }}">{% render 'icon-phone' %} {{ store_location.phone_number }}</a>
