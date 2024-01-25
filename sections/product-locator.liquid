@@ -36,25 +36,25 @@
                 {% endif %}
                 
                 <p class="mb-0">
-                  {% if store_location.address %}{{ store_location.address }}{% endif %}
-                  {% if store_location.city %} {{ store_location.city }}{% endif %},
+                  {% if store_location.address != '' %}{{ store_location.address }}{% endif %}
+                  {% if store_location.city != '' %} {{ store_location.city }}{% endif %},
                   <br>
-                  {% if store_location.state_province %} {{ store_location.state_province }}{% endif %}
-                  {% if store_location.zip %} {{ store_location.zip }}{% endif %}
-                  {% if store_location.country %} {{ store_location.country }}{% endif %}
+                  {% if store_location.state_province != '' %} {{ store_location.state_province }}{% endif %}
+                  {% if store_location.zip != '' %} {{ store_location.zip }}{% endif %}
+                  {% if store_location.country != '' %} {{ store_location.country }}{% endif %}
                 </p>
             </div>
         
             <div class="location-content">
-              {% if store_location.email != blank %}
+              {% if store_location.email != '' %}
                 <a class="link-with-icon btn btn--primary" href="mailto:{{ store_location.email }}">{% render 'icon-mail' %} {{ store_location.email }}</a>
               {% endif %}
             
-              {% if store_location.phone_number != blank %}
+              {% if store_location.phone_number != '' %}
                 <a class="link-with-icon btn btn--primary" href="tel:{{ store_location.phone_number }}">{% render 'icon-phone' %} {{ store_location.phone_number }}</a>
               {% endif %}
         
-              {% if store_location.website != blank %}
+              {% if store_location.website != '' %}
                 <a class="link-with-icon btn btn--primary" target="_blank" href="{{ store_location.website }}">{% render 'icon-link' %} Visit Website</a>
               {% endif %}
             </div>
