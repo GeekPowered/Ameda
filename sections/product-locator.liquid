@@ -20,9 +20,6 @@
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations">
-      {% assign json_file_url = 'https://cdn.shopify.com/s/files/1/0849/8062/9819/files/product-locations.json?v=1706210609' %}
-      {% capture json_content %}{{ json_file_url | json }}{% endcapture %}
-      {% assign parsed_json_content = json_content | json %}
       {% assign locations = shop.metaobjects.store_locations["all-locations"].all.value %}
       {% assign current_state = '' %}
         {% for store_location in locations %}
