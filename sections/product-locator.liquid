@@ -5,111 +5,73 @@
     <p class="text-center h4">E is for Elites, P is for Platinums. Other is everything else.</p>
     <ul class="state-selector" id="stateList">
       <li><strong>FIND BY STATE:</strong></li>
-      {% assign unique_states = '' | split: ',' %}
-      {% for block in section.blocks %}
-        {% assign state_province = block.settings.state_province %}
-        {% unless unique_states contains state_province %}
-          <button class="state-link">{{ state_province }}</button>
-          {% assign unique_states = unique_states | join: ',' | append: ',' | append: state_province | split: ',' %}
-        {% endunless %}
+      {% assign state_provinces = shop.metaobjects.store_locations["all-locations"].all.values | map: 'state_province' %}
+      {% assign unique_sorted_states = state_provinces | uniq | sort %}
+      {% for state in unique_sorted_states %}
+        {% if state != blank %}
+          <li class="state-link"><a href="#{{ state }}">{{ state }}</a></li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
 </div>
 
 
-{% assign json_content = shop.metaobjects.store_locations.values[0].all %}
 <div class="section section--padding">
   <div class="container">
-    <div class="store-locations" id="storeLocationsContainer">
-      {% for location in json_content %}
-        <div class="store-location" data-stateprovince="{{ location.state_province }}">
-          <div class="location-content">
-            <h3 class="store-title h5" {% if location.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ location.title }}</h3>
-            {% if location.short_description != blank %}
-              <span class="short-desc">{{ location.short_description }}</span>
-            {% endif %}
-            {% if location.description != blank %}
-              <p>
-                {{ location.description }}
-              </p>
-            {% endif %}
-            {% if location.address != blank %}
-              <p class="mb-0 address-1">
-                {{ location.address }}
-              </p>
-            {% endif %}
-              <p class="mb-0 address-2">
-                {% if location.city != blank %} {{ location.city }} {% endif %}
-                {% if location.state != blank %} {{ location.state }} {% endif %}
-                {% if location.zip != blank %} {{ location.zip }} {% endif %}
-                {% if location.country != blank %} {{ location.country }} {% endif %}
-              </p>
+    <div class="store-locations">
+      {% assign locations = shop.metaobjects.store_locations["all-locations"].all.value %}
+      {% assign current_state = '' %}
+        {% for store_location in locations %}
+          <div class="store-location" 
+               id="{% if current_state != store_location.state_province %}
+                     {% assign current_state = store_location.state_province %}
+                     {{ store_location.state_province }}
+                   {% endif %}">
+            <div class="location-content">
+                <h3 class="store-title h5" {% if store_location.short_description != blank %}style="padding-right: 3.5rem;"{% endif %}>{{ store_location.title }}</h3>
+            
+                {% if store_location.short_description %}
+                  <span class="short-desc">{{ store_location.short_description }}</span>
+                {% endif %}
+                
+                <p class="mb-0">
+                  {% if store_location.address %}{{ store_location.address }}{% endif %}
+                  {% if store_location.city %} {{ store_location.city }}{% endif %},
+                  <br>
+                  {% if store_location.state_province %} {{ store_location.state_province }}{% endif %}
+                  {% if store_location.zip %} {{ store_location.zip }}{% endif %}
+                  {% if store_location.country %} {{ store_location.country }}{% endif %}
+                </p>
+            </div>
+        
+            <div class="location-content">
+              {% if store_location.email %}
+                <a class="link-with-icon btn btn--primary" href="mailto:{{ store_location.email }}">{% render 'icon-mail' %} {{ store_location.email }}</a>
+              {% endif %}
+            
+              {% if store_location.phone_number %}
+                <a class="link-with-icon btn btn--primary" href="tel:{{ store_location.phone_number }}">{% render 'icon-phone' %} {{ store_location.phone_number }}</a>
+              {% endif %}
+        
+              {% if store_location.website %}
+                <a class="link-with-icon btn btn--primary" target="_blank" href="{{ store_location.website }}">{% render 'icon-link' %} Visit Website</a>
+              {% endif %}
+            </div>
           </div>
-          <div class="location-content">
-            {% if location.email != blank %}
-              <a class="link-with-icon btn btn--primary" href="mailto:{{ location.email }}">
-                {% render 'icon-mail' %} {{ location.email }}
-              </a>
-            {% endif %}
-            {% if location.phone_number != blank %}
-              <a class="link-with-icon btn btn--primary" href="tel:{{ location.phone_number }}">
-                {% render 'icon-phone' %} {{ location.phone_number }}
-              </a>
-            {% endif %}
-            {% if location.website != blank %}
-              <a class="link-with-icon btn btn--primary" target="_blank" href="{{ location.website }}">
-                {% render 'icon-link' %} Visit Website
-              </a>
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
     </div>
   </div>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the container element
-    var container = document.getElementById("storeLocationsContainer");
-
-    // Get all the store location elements
-    var storeLocations = container.querySelectorAll(".store-location");
-
-    // Convert the NodeList to an array
-    var storeLocationsArray = Array.from(storeLocations);
-
-    // Sort the store locations by state_province attribute
-    storeLocationsArray.sort(function (a, b) {
-      var stateA = a.getAttribute("data-stateprovince").toUpperCase();
-      var stateB = b.getAttribute("data-stateprovince").toUpperCase();
-      if (stateA < stateB) {
-        return -1;
-      }
-      if (stateA > stateB) {
-        return 1;
-      }
-      return 0;
-    });
-
-    // Clear the container
-    container.innerHTML = "";
-
-    // Append the sorted store locations back to the container
-    storeLocationsArray.forEach(function (location) {
-      container.appendChild(location);
-    });
-  });
-</script>
 
 {% schema %}
 {
-  "name": "Product Locator",
+  "name": "Locations",
   "presets": [
     {
-      "name": "Product Locator",
-      "category": "Custom"
+      "name": "Locations",
+      "category": "Template"
     }
   ]
 }
