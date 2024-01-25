@@ -40,8 +40,11 @@
           "settings": {
             "title": "O'Connor Hospital",
             "short_description": "E",
-            "address": "<p>2105 Forest Ave<br\/>San Jose, CA 95128<\/p>",
+            "address": "<p>2105 Forest Ave<\/p>",
             "state_province": "CA",
+            "city": "San Jose",
+            "zip": "95128",
+            "Country": "US",
             "email": "",
             "phone_number": "(408) 947-2743",
             "website": ""
@@ -52,8 +55,11 @@
           "settings": {
             "title": "NYU Langone Parent Education",
             "short_description": "E",
-            "address": "<p>660 1st Ave<br\/>New York City, NY 10016<\/p>",
+            "address": "<p>660 1st Ave<\/p>",
             "state_province": "NY",
+            "city": "New York City",
+            "zip": "10016",
+            "Country": "US",
             "email": "jollytechnocrats@gmail.com",
             "phone_number": "(212) 263-7201",
             "website": "https:\/\/www.nyubaby.org"
@@ -64,8 +70,11 @@
           "settings": {
             "title": "Healthy Horizons Peninsula Breastfeeding Center",
             "short_description": "P",
-            "address": "<p>1432 Burlingame Avenue<br\/>Burlingame, CA 94010<\/p>",
+            "address": "<p>1432 Burlingame Avenue<\/p>",
             "state_province": "CA",
+            "city": "Burlingame",
+            "zip": "94010",
+            "Country": "",
             "email": "",
             "phone_number": "(650) 347-MILK",
             "website": "http:\/\/www.hh-bc.com\/"
