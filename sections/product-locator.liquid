@@ -19,7 +19,7 @@
 
 
 {% assign json_file_url = 'store-locations.json' | asset_url %}
-{% assign json_content = json_file_url | split: ',' %}
+{% assign json_content = json_file_url | json | split: ',' %}
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations" id="storeLocationsContainer">
