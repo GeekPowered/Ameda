@@ -18,8 +18,8 @@
 </div>
 
 
-{% assign json_file_url = 'store-locations.json' | asset_url %}
-{% assign json_content = json_file_url | json_str | split: ',' %}
+{% assign json_content = 'https://cdn.shopify.com/s/files/1/0849/8062/9819/files/product-locations.json?v=1706210609' | json_str | split: ',' %}
+
 <div class="section section--padding">
   <div class="container">
     <div class="store-locations" id="storeLocationsContainer">
