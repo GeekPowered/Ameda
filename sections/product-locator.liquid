@@ -22,12 +22,13 @@
   <div class="container">
     <div class="store-locations">
           {% assign current_state = '' %}
+          {% assign is_first_item = true %}
           {% for store_location in locations %}
           {% if current_state != store_location.state_province %}
             {% assign current_state = store_location.state_province %}
+            {% assign is_first_item = true %}
           {% endif %}
-          <div class="store-location" 
-               id="{{ current_state | strip }}">
+          <div class="store-location" {% if is_first_item %}id="{{ current_state | strip }}"{% assign is_first_item = false %}{% endif %}>
             <div class="location-content">
                 <h3 class="store-title h5" {% if store_location.short_description != '' %}style="padding-right: 3.5rem;"{% endif %}>{{ store_location.title }}</h3>
             
