@@ -27,6 +27,11 @@
             {% if block.settings.short_description != blank %}
               <span class="short-desc">{{ block.settings.short_description }}</span>
             {% endif %}
+            {% if block.settings.description != blank %}
+              <p>
+                {{ block.settings.description }}
+              </p>
+            {% endif %}
             {% if block.settings.address != blank %}
               <p class="mb-0">
                 {{ block.settings.address }}
@@ -132,15 +137,18 @@
         },
         {
           "type": "text",
+          "label": "Description",
+          "id": "description"
+        },
+        {
+          "type": "text",
           "label": "Short Description",
-          "id": "short_description",
-          "default": "?"
+          "id": "short_description"
         },
         {
           "type": "text",
           "label": "Address",
-          "id": "address",
-          "default": "Default Address"
+          "id": "address"
         },
         {
           "type": "text",
@@ -165,14 +173,12 @@
         {
           "type": "text",
           "label": "Email",
-          "id": "email",
-          "default": "email@example.com"
+          "id": "email"
         },
         {
           "type": "text",
           "label": "Phone Number",
-          "id": "phone_number",
-          "default": "(555) 555-5555"
+          "id": "phone_number"
         },
         {
           "type": "url",
