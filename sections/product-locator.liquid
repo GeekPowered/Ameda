@@ -21,7 +21,7 @@
   <div class="container">
     <div class="store-locations">
       {% assign locations = shop.metaobjects.store_locations["all-locations"].all.values %}
-
+      {% assign current_state = '' %}
         {% for store_location in locations %}
           <div class="store-location" 
                id="{% if current_state != store_location.state_province %}
