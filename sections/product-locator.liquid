@@ -62,7 +62,6 @@
                   <a class="link-with-icon btn btn--primary" href="tel:{{ phone_number | strip }}">
                     {% render 'icon-phone' %} {{ phone_number | strip }}
                   </a>
-                  {% if forloop.last == false %}, {% endif %}
                 {% endfor %}
               {% endif %}
         
