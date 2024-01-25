@@ -53,7 +53,6 @@
                   <a class="link-with-icon btn btn--primary" href="mailto:{{ email | strip }}">
                     {% render 'icon-mail' %} {{ email | strip }}
                   </a>
-                  {% if forloop.last == false %}, {% endif %}
                 {% endfor %}
               {% endif %}
             
