@@ -67,6 +67,48 @@ ul.state-selector {
     margin-right: 0.25em;
 }
 
+.popover-wrapper {
+    position: relative;
+}
+
+.popover-content {
+    font-size: .75em;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(var(--heading-color));
+    border-radius: 0.5em;
+    padding: 0.25em 0.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.popover-content:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: calc(50% - 10px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent rgb(var(--heading-color)) transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.popover-wrapper:hover .popover-content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+
 
 @media (max-width: 991px) {
     .store-location {
