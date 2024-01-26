@@ -121,7 +121,7 @@
                       {% render 'image', image: variant.featured_media, src_width: swatch_size, lazy_load: false, class: class, disable_focal_point: true %}
                     </div>
                     <span class="variant-product-includes" style="display: none;">
-                      {{ variant.metafields.custom.package_includes }}
+                      {{ variant.metafields.custom.package_includes.value }}
                     </span>
                   </label>
                   {%- break -%}
