@@ -99,7 +99,7 @@
         {%- endif -%}
         <div class="option-selector__btns flex flex-wrap{% if is_variant_image_style %} items-start{% endif %}">
           {%- for variant in product.variants -%}
-            <span class="variant-product-includes" style="display: none;">
+            <span class="variant-product-includes" data-packageincludes="{{ variant.title }}" style="display: none;">
               {{ variant.metafields.custom.package_includes | metafield_tag }}
             </span>
           {%- endfor -%}
