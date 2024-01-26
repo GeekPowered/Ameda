@@ -120,6 +120,9 @@
                       -%}
                       {% render 'image', image: variant.featured_media, src_width: swatch_size, lazy_load: false, class: class, disable_focal_point: true %}
                     </div>
+                    <span class="variant-product-includes" style="display: none;">
+                      {{ variant.metafields.custom.package_includes }}
+                    </span>
                   </label>
                   {%- break -%}
                 {%- endif -%}
@@ -129,9 +132,6 @@
                 <span{% if is_color_selector and is_swatch_style %} class="visually-hidden js-value"{% endif %}>{{- value | escape -}}</span>
               </label>
             {%- endif -%}
-            <span class="variant-product-includes" style="display: none;">
-              {{ variant.metafields.custom.package_includes }}
-            </span>
           {%- endfor -%}
         </div>
       </fieldset>
