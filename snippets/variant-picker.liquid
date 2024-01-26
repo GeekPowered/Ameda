@@ -98,6 +98,11 @@
           <legend class="label">{{- option.name -}}{% if is_color_selector and settings.variant_picker_color_style != 'text' %}: <span class="option-selector__label-value js-color-text">{{ option.selected_value }}</span>{% endif %}</legend>
         {%- endif -%}
         <div class="option-selector__btns flex flex-wrap{% if is_variant_image_style %} items-start{% endif %}">
+          {%- for variant in product.variants -%}
+            <span class="variant-product-includes" style="display: none;">
+              {{ variant.metafields.custom.package_includes }}
+            </span>
+          {%- endfor -%}
           {%- for value in option.values -%}
             {%- assign value_index0 = forloop.index0 -%}
             <input type="radio" class="opt-btn visually-hidden focus-label js-option" name="{{ option_id }}-option" id="{{ option_id }}-opt-{{ value_index0 }}" value="{{ value | escape }}"{% if option.selected_value == value %} checked{% endif %}>
@@ -127,9 +132,6 @@
             {%- else -%}
               <label class="opt-label {% if is_color_selector and is_swatch_style %}opt-label--swatch swatch-shape--{{ settings.variant_picker_swatch_shape }}{% if settings.variant_picker_swatch_shape != "circle" %} swatch-shape--not-circle{% endif %}{% else %}opt-label--btn{% endif %} btn relative text-center"{% if is_color_selector and is_swatch_style %} data-swatch="{{ value | replace: '"', '' | downcase }}"{% endif %} for="{{ option_id }}-opt-{{ value_index0 }}">
                 <span{% if is_color_selector and is_swatch_style %} class="visually-hidden js-value"{% endif %}>{{- value | escape -}}</span>
-                <span class="variant-product-includes" style="display: none;">
-                  {{ variant.metafields.custom.package_includes.value }}
-                </span>
               </label>
             {%- endif -%}
           {%- endfor -%}
