@@ -192,10 +192,6 @@
             {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
             - {{ variant.price | money | strip_html }}
           </option>
-          <span class="variant-product-includes" style="display: none;">
-            {{ variant.metafields.custom.package_includes }}
-            
-          </span>
         {%- endfor -%}
       </select>
     </div>
