@@ -105,9 +105,6 @@
               {%- for variant in product.variants -%}
                 {%- if variant.options[option_index0] == value -%}
                   <label class="opt-label opt-label--swatch opt-label--image relative swatch-shape--{{ settings.variant_picker_swatch_shape }}{% if settings.variant_picker_swatch_shape != "circle" %} swatch-shape--not-circle{% endif %}{% if settings.variant_picker_color_style == 'variant-images' and variant.featured_media %} swatch--variant-image{% endif %}"{% if variant.featured_media == blank %} data-swatch="{{ value | replace: '"', '' | downcase }}"{% endif %} for="{{ option_id }}-opt-{{ value_index0 }}">
-                    <span class="variant-product-includes" style="display: none;">
-                      {{ variant.metafields.custom.package_includes }}
-                    </span>
                     <span class="visually-hidden js-value">{{- value | escape -}}</span>
                     <div class="opt-label__media media h-full w-full{% if settings.variant_picker_color_style == 'variant-images' and variant.featured_media == blank %} absolute top-0 left-0{% else %} relative{% endif %}">
                       {%- liquid
@@ -130,6 +127,11 @@
             {%- else -%}
               <label class="opt-label {% if is_color_selector and is_swatch_style %}opt-label--swatch swatch-shape--{{ settings.variant_picker_swatch_shape }}{% if settings.variant_picker_swatch_shape != "circle" %} swatch-shape--not-circle{% endif %}{% else %}opt-label--btn{% endif %} btn relative text-center"{% if is_color_selector and is_swatch_style %} data-swatch="{{ value | replace: '"', '' | downcase }}"{% endif %} for="{{ option_id }}-opt-{{ value_index0 }}">
                 <span{% if is_color_selector and is_swatch_style %} class="visually-hidden js-value"{% endif %}>{{- value | escape -}}</span>
+                {% if variant.metafields.custom.package_includes %}
+                  <span class="variant-product-includes" style="display: none;">
+                    {{ variant.metafields.custom.package_includes }}
+                  </span>
+                {% endif %}
               </label>
             {%- endif -%}
           {%- endfor -%}
