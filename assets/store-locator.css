@@ -43,21 +43,17 @@ ul.state-selector {
 }
 
 .store-location .short-desc {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    height: 3rem;
-    width: 3rem;
     font-size: .75em;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
     background-color: rgb(var(--heading-color));
-    border-radius: 50%;
-    padding: .25em;
-    font-weight: bold;
+    border-radius: 0.5em;
+    padding: 0.25em 0.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
 }
 
 .store-location a.link-with-icon {

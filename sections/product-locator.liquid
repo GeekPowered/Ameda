@@ -30,7 +30,7 @@
           {% endif %}
           <div class="store-location" {% if is_first_item %}id="{{ current_state | strip }}"{% assign is_first_item = false %}{% endif %}>
             <div class="location-content">
-                <h3 class="store-title h5" {% if store_location.short_description != '' %}style="padding-right: 3.5rem;"{% endif %}>{{ store_location.title }}</h3>
+                <h3 class="store-title h5">{{ store_location.title }}</h3>
             
                 {% if store_location.short_description != '' %}
                   <span class="short-desc">{{ store_location.short_description }}</span>
