@@ -4,8 +4,8 @@
 <div class="section section--padding">
   <div class="container">
     <p class="text-center h4">E is for Elites, P is for Platinums. Other is everything else.</p>
+    <p class="text-center"><strong>FIND BY STATE:</strong></p>
     <ul class="state-selector" id="stateList">
-      <li><strong>FIND BY STATE:</strong></li>
       {% assign state_provinces = locations | map: 'state_province' %}
       {% assign unique_sorted_states = state_provinces | uniq | sort %}
       {% for state in unique_sorted_states %}
