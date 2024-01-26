@@ -73,6 +73,7 @@ ul.state-selector {
 
 .popover-content {
     font-size: .75em;
+    visibility: hidden;
     display: inline-block;
     justify-content: center;
     align-items: center;
