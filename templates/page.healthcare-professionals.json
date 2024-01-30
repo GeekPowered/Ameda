@@ -398,7 +398,7 @@
           "type": "button",
           "settings": {
             "button_label": "Find A Location",
-            "button_link": "shopify:\/\/pages\/store-locator",
+            "button_link": "shopify:\/\/pages\/product-locator",
             "button_style": "btn btn--primary"
           }
         }
