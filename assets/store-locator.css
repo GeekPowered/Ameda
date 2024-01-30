@@ -42,10 +42,6 @@ ul.state-selector {
     flex-wrap: wrap;
 }
 
-ul.state-selector:not(.show) {
-    display: none;
-}
-
 .store-location .short-desc {
     font-size: .75em;
     display: inline-block;
