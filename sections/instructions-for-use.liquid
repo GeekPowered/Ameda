@@ -3,14 +3,14 @@
 <div class="section section--padded color-scheme" style="margin-top: 0; margin-bottom: 0; padding-bottom:0;">
     <div class="container">
         <div class="tabs-wrapper flex justify-center gap-theme flex-wrap">
-            {% assign tabs_with_pump = '' %}
-            {% assign tabs_without_pump = '' %}
+            {% assign tabs = '' %}
             
             {% for instruction in shop.metaobjects.instructions.values %}
-                {% if instruction.tab_name contains 'pump' %}
-                    {% capture tabs_with_pump %}{{ tabs_with_pump }}{{ instruction.tab_name }},{% endcapture %}
+                {% capture tab_name %}{{ instruction.tab_name }}{% endcapture %}
+                {% if tab_name contains 'pump' %}
+                    {% assign tabs_with_pump = tabs_with_pump | append: tab_name | append: ',' %}
                 {% else %}
-                    {% capture tabs_without_pump %}{{ tabs_without_pump }}{{ instruction.tab_name }},{% endcapture %}
+                    {% assign tabs_without_pump = tabs_without_pump | append: tab_name | append: ',' %}
                 {% endif %}
             {% endfor %}
             
@@ -21,7 +21,7 @@
             
             {% for tab_name in all_sorted_tabs %}
                 {% if tab_name != '' %}
-                    <button class="btn btn--secondary">{{ tab_name | remove: ',' }}</button>
+                    <button class="btn btn--secondary">{{ tab_name }}</button>
                 {% endif %}
             {% endfor %}
         </div>
