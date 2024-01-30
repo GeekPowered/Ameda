@@ -3,21 +3,23 @@
 <div class="section section--padded color-scheme" style="margin-top: 0; margin-bottom: 0; padding-bottom:0;">
     <div class="container">
         <div class="tabs-wrapper flex justify-center gap-theme flex-wrap">
-            {% assign tab_names = '' %}
-            
+            {% assign used_tab_names = '' %}
+            {% assign custom_tabs = 'Personal Pumps,Multi-User Pumps,' %}
             {% for instruction in shop.metaobjects.instructions.values %}
-                {% capture tab_name %}{{ instruction.tab_name }}{% endcapture %}
-                {% assign tab_names = tab_names | append: tab_name | append: ',' %}
+                {% unless used_tab_names contains instruction.tab_name %}
+                    {% capture used_tab_names %}{{ used_tab_names }}{{ instruction.tab_name }},{% endcapture %}
+                {% endunless %}
             {% endfor %}
             
-            {% assign sorted_tab_names = tab_names | split: ',' | sort %}
+            {% assign sorted_tabs = used_tab_names | split: ',' | sort %}
             
             <button class="btn btn--secondary">Personal Pumps</button>
+            <button class="btn btn--secondary">Multi-User Pumps</button>
             
-            {% for tab_name in sorted_tab_names %}
-                {% if tab_name != '' and tab_name != 'Personal Pumps' %}
+            {% for tab_name in sorted_tabs %}
+                {% unless tab_name == 'Personal Pumps' or tab_name == 'Multi-User Pumps' %}
                     <button class="btn btn--secondary">{{ tab_name }}</button>
-                {% endif %}
+                {% endunless %}
             {% endfor %}
         </div>
     </div>
