@@ -106,6 +106,12 @@
             "text": "<p>Your Finesse breast pump carries a two-year product warranty and all other personal electric breast pumps from Ameda carry a one-year product warranty from the date of receipt and our ParentCare staff is here to assist you during your breast pumping journey. Please call our ParentCare Department at 866-992-6332 M-F 8:00 am-4:30pm CST when you have a few minutes to discuss any issues you are experiencing. We will provide troubleshooting support over the phone to determine if a product related issue exists. If we determine that our product is the root cause of the issue you are experiencing, we will assist you under the terms of the product warranty. If a product related issue is not found, our ParentCare Specialists can support you further by providing additional product education and guidance that may help enhance your overall lactation and pumping experience.<\/p>"
           }
         },
+        "faq-category-2": {
+          "type": "category",
+          "settings": {
+            "text": "Products"
+          }
+        },
         "faq-question-8": {
           "type": "question",
           "settings": {
@@ -127,7 +133,7 @@
           "settings": {
             "icon": "none",
             "heading": "I received an Ameda HygieniKit™ in the hospital – can I use it with my Mya Joy Pump?",
-            "text": "<p>The HygieniKit you received in the hospital is mostly compatible with your Mya Joy pumping kit. All CustomFit<sup>™<\/sup> flanges, containers\/lids and tubing from your Ameda hospital kit can be used with the Joy. The diaphragm and valve pieces in the Joy are slightly different from those used in your HygieniKit so we recommend that only use the diaphragm and valves that come with your Mya Joy pump (just toss out the old ones). Two new sets of valves and diaphragms come with each Mya Joy pump.<\/p>"
+            "text": "<p>The HygieniKit you received in the hospital is mostly compatible with your Mya Joy pumping kit. All CustomFit™ flanges, containers\/lids and tubing from your Ameda hospital kit can be used with the Joy. The diaphragm and valve pieces in the Joy are slightly different from those used in your HygieniKit so we recommend that only use the diaphragm and valves that come with your Mya Joy pump (just toss out the old ones). Two new sets of valves and diaphragms come with each Mya Joy pump.<\/p>"
           }
         },
         "faq-question-11": {
@@ -229,6 +235,7 @@
         "faq-question-5",
         "faq-question-6",
         "faq-question-7",
+        "faq-category-2",
         "faq-question-8",
         "faq-question-9",
         "faq-question-10",
