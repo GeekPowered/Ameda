@@ -13,19 +13,18 @@
             
             {% assign sorted_tabs = used_tab_names | split: ',' | sort %}
             
-            {% for tab_name in custom_tabs | split: ',' %}
-                <button class="btn btn--secondary">{{ tab_name }}</button>
-            {% endfor %}
+            <button class="btn btn--secondary">Personal Pumps</button>
+            <button class="btn btn--secondary">Multi-User Pumps</button>
+            <button class="btn btn--secondary">Pump Parts & Accessories</button>
             
             {% for tab_name in sorted_tabs %}
-                {% unless custom_tabs contains tab_name %}
+                {% unless tab_name == 'Personal Pumps' or tab_name == 'Multi-User Pumps' or tab_name == 'Pump Parts & Accessories' %}
                     <button class="btn btn--secondary">{{ tab_name }}</button>
                 {% endunless %}
             {% endfor %}
         </div>
     </div>
 </div>
-
 
 <div class="section section--padded" style="margin-top: 0; padding-top:0;">
     <div class="container">
