@@ -12,6 +12,10 @@
     transition: .3s ease;
 }
 
+.state-link:not(.show) {
+    display: none;
+}
+
 .state-link:hover {
     transform: scale(1.1);
 }
