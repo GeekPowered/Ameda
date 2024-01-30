@@ -44,142 +44,78 @@
     "faqs": {
       "type": "faq",
       "blocks": {
-        "faq-category-ameda": {
+        "faq-category-1": {
           "type": "category",
           "settings": {
             "text": "Ameda"
           }
         },
-        "faq-question-ameda-1": {
+        "faq-question-1": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "What if I’m experiencing issues with my pump?",
+            "heading": "What if I'm experiencing issues with my pump?",
             "text": "<p>If you experience an issue with your pump, it falls within the warranty time frame, and you are the original owner, please contact our ParentCare team for assistance. In the United States, our Ameda ParentCare™ staff can answer consumer questions about proper use of Ameda® products, replacement parts and more. Give us a call at 1-866-992-6332 \/ 1-866-99-AMEDA or drop us a line at <a href=\"mailto:ParentCare@ameda.com\">ParentCare@ameda.com<\/a>. We are available Monday through Friday 8:00 a.m. – 4:30 p.m. Central Standard Time.<\/p>"
           }
         },
-        "faq-question-ameda-2": {
+        "faq-question-2": {
           "type": "question",
           "settings": {
             "icon": "none",
             "heading": "What are Ameda's Shipping Terms?",
-            "text": "<p>Ameda ships to all U.S. States and Puerto Rico. We do not ship Internationally. Shipping options vary, including standard, expedited, and overnight shipping, with specific charges and estimated delivery times.<\/p>"
+            "text": "<p>Ameda ships to all U.S. States and Puerto Rico. We do not ship Internationally.<\/p><p><b>What shipping &amp; delivery options do you offer?<\/b><\/p><p><b><i>Due to carrier service challenges across the country, Ameda cannot currently guarantee expedited shipping and delivery dates. Delivery dates are estimations only. Any delivery date estimations are provided exclusively by the shipping carrier and Ameda does not offer any guarantee or warranty as to accuracy.<\/i><\/b><\/p><p>Please note that all shipping windows are using business days. Business days are defined as Monday – Friday, 8:00am – 2:00pm central time. Orders are not processed, shipped or delivered on weekends or holidays. Some locations outside of the contiguous U.S. require additional transit time.<\/p><p><b>Shipping Methods<\/b><\/p><p><b><i>Standard Shipping<\/i><\/b><\/p><p>$5 for orders under $25<\/p><p>Free on orders $25 and over<\/p><p>Orders arrive within 5 to 7 business days<\/p><p><b><i>Expedited Shipping<\/i><\/b><\/p><p>$18.90 for all orders<\/p><p>Orders placed before 1 p.m. central time Monday thru Friday will ship same day.<\/p><p>Orders placed after 1:30 p.m. central time Monday thru Friday, and weekend and holiday orders will ship the next business day.<\/p><p>Orders arrive within 2 business days.<\/p><p><b><i>Overnight Shipping<\/i><\/b><\/p><p>$30.90 for all orders<\/p><p>Orders placed before 1 p.m. central time Monday thru Friday will ship same day.<\/p><p>Orders placed after 1:30 p.m. central time Monday thru Friday, and weekend and holiday orders will ship the next business day.<\/p><p>Orders arrive within 1 business days.<\/p>"
           }
         },
-        "faq-question-ameda-3": {
+        "faq-question-3": {
           "type": "question",
           "settings": {
             "icon": "none",
             "heading": "Can I return or exchange an item?",
-            "text": "<p>Ameda offers a no hassle return policy for unopened items with the original safety seal intact. Returns and exchanges are only possible for items purchased directly from Ameda's eCommerce website, within 7 days of receipt with valid proof of purchase.<\/p>"
+            "text": "<p>Ameda offers a no hassle return policy for unopened items. Unopened items must have the original safety seal, that is put on by the factory, intact and untampered with.<\/p><p>All returns and exchanges can only be done if purchased from us directly via our eCommerce website. In order to qualify A return request must be received within 7 days of receiving the item with valid proof of purchase. All items must be unopened.<\/p><p>Please email us at ParentCare@ameda.com to receive return instructions. Include your order ID number, item(s) you would like to return, and reason for return. Once the return is approved we will email you the Return form and address for returning your item(s). “Return” constitutes receipt of the product by our warehouse. If you choose to use an Ameda.com return label, the cost of return will be subtracted from your refund amount.<\/p><p>Items must be in the original, undamaged manufacturer’s packaging with all packaging materials, including instruction booklets, packing inserts, plastic bags, and the warranty cards. The manufacturer’s labeled packaging must be enclosed within a new shipping carton.<\/p><p>Once we receive your return in the proper condition, we will then provide a refund to your payment account usually within 2-4 weeks. Returns cannot be accepted without a return form. Shipping, handling fees, discontinued products and special-order items if applicable, are not refundable.<\/p>"
           }
         },
-        "faq-question-ameda-4": {
+        "faq-question-4": {
           "type": "question",
           "settings": {
             "icon": "none",
             "heading": "What payment methods are accepted?",
-            "text": "<p>Accepted payment methods include American Express™, Discover™, MasterCard™, and Visa™.<\/p>"
+            "text": "<p>We accept American Express™, Discover™, MasterCard™ and Visa™.<\/p>"
           }
         },
-        "faq-question-ameda-5": {
+        "faq-question-5": {
           "type": "question",
           "settings": {
             "icon": "none",
             "heading": "Do you have a recycling program?",
-            "text": "<p>Ameda does not currently offer a recycling program for used pumps. Contact local waste management for recycling options.<\/p>"
+            "text": "<p>Ameda does not currently offer a recycling program for used pumps. We suggest you contact your local waste management provider to determine if there are options in your area for recycling.<\/p>"
           }
         },
-        "faq-question-ameda-6": {
+        "faq-question-6": {
           "type": "question",
           "settings": {
             "icon": "none",
             "heading": "Who should I contact if I have a performance issue with my pump?",
-            "text": "<p>For warranty assistance and troubleshooting, contact the ParentCare Department at 866-992-6332, available Monday to Friday from 8:00 am to 4:30 pm CST.<\/p>"
+            "text": "<p>We recommend that you call our ParentCare Department when you have a few minutes available at 866-992-6332 M-F 8:00am-4:30pm CST for warranty assistance. Due to the nature of our product, we need to conduct our product troubleshooting over the phone. Troubleshooting may include listening to your motor, so please have your pump and pump accessories readily available when calling. General questions can be emailed to parentcare@ameda.com.<\/p>"
           }
         },
-        "faq-question-ameda-7": {
+        "faq-question-7": {
           "type": "question",
           "settings": {
             "icon": "none",
             "heading": "What if I have another issue with my pump?",
-            "text": "<p>For issues with Finesse breast pumps or other personal electric breast pumps from Ameda, contact the ParentCare Department at 866-992-6332 for troubleshooting and warranty assistance.<\/p>"
-          }
-        },
-        "faq-category-products": {
-          "type": "category",
-          "settings": {
-            "text": "Products"
-          }
-        },
-        "faq-question-products-1": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "Mya and Mya Joy look similar – what is the main difference between the two pumps?",
-            "text": "<p>Mya and Mya Joy are both small, lightweight personal use pumps. They both provide hospital strength performance and are designed for moms pumping on a daily basis. Mya includes an internal lithium battery and uses it own unique pump kit and flange system. Mya Joy has an internal battery back-up option that requires 4 AA batteries. Mya Joy is also compatible with most components in the Ameda HygieniKit including containers, tubing and CustomFit flanges.<\/p>"
-          }
-        },
-        "faq-category-pumping": {
-          "type": "category",
-          "settings": {
-            "text": "Pumping"
-          }
-        },
-        "faq-question-pumping-1": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "How long should I pump?",
-            "text": "<p>An average pumping session is 10-15 minutes. Discontinue pumping after 15-20 minutes if no results are achieved.<\/p>"
-          }
-        },
-        "faq-category-troubleshooting": {
-          "type": "category",
-          "settings": {
-            "text": "Troubleshooting"
-          }
-        },
-        "faq-question-troubleshooting-1": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "Troubleshooting Low Suction",
-            "text": "<p>Your breast pump valve should be replaced every 2 to 3 months depending on frequency of pumping.&nbsp;Low suction and other suction related issues are most often caused by damaged or worn valves, that need to be replaced.<\/p>"
-          }
-        },
-        "faq-category-insurance": {
-          "type": "category",
-          "settings": {
-            "text": "Insurance"
-          }
-        },
-        "faq-question-insurance-1": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "What is the process for ordering a breast pump that is covered by insurance?",
-            "text": "<p>Most health insurance plans cover the cost of a double electric breast pump. We recommend that you contact your insurance plan to ask about your benefits for a breast pump and what they require.<\/p>"
+            "text": "<p>Your Finesse breast pump carries a two-year product warranty and all other personal electric breast pumps from Ameda carry a one-year product warranty from the date of receipt and our ParentCare staff is here to assist you during your breast pumping journey. Please call our ParentCare Department at 866-992-6332 M-F 8:00 am-4:30pm CST when you have a few minutes to discuss any issues you are experiencing. We will provide troubleshooting support over the phone to determine if a product related issue exists. If we determine that our product is the root cause of the issue you are experiencing, we will assist you under the terms of the product warranty. If a product related issue is not found, our ParentCare Specialists can support you further by providing additional product education and guidance that may help enhance your overall lactation and pumping experience.<\/p>"
           }
         }
       },
       "block_order": [
-        "faq-category-ameda",
-        "faq-question-ameda-1",
-        "faq-question-ameda-2",
-        "faq-question-ameda-3",
-        "faq-question-ameda-4",
-        "faq-question-ameda-5",
-        "faq-question-ameda-6",
-        "faq-question-ameda-7",
-        "faq-category-products",
-        "faq-question-products-1",
-        "faq-category-pumping",
-        "faq-question-pumping-1",
-        "faq-category-troubleshooting",
-        "faq-question-troubleshooting-1",
-        "faq-category-insurance",
-        "faq-question-insurance-1"
+        "faq-category-1",
+        "faq-question-1",
+        "faq-question-2",
+        "faq-question-3",
+        "faq-question-4",
+        "faq-question-5",
+        "faq-question-6",
+        "faq-question-7"
       ],
       "settings": {
         "heading": "",
