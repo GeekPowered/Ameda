@@ -44,88 +44,142 @@
     "faqs": {
       "type": "faq",
       "blocks": {
-        "faq-category-1": {
+        "faq-category-ameda": {
           "type": "category",
           "settings": {
             "text": "Ameda"
           }
         },
-        "faq-question-1": {
+        "faq-question-ameda-1": {
           "type": "question",
           "settings": {
             "icon": "none",
             "heading": "What if I’m experiencing issues with my pump?",
-            "text": "<p>If you experience an issue with your pump, it falls within the warranty time frame, and you are the original owner, please contact our ParentCare team for assistance. In the United States, our Ameda ParentCare™ staff can answer consumer questions about proper use of Ameda® products, replacement parts and more. Give us a call at 1-866-992-6332 \/ 1-866-99-AMEDA or drop us a line at <a href=\"mailto:ParentCare@ameda.com\" title=\"mailto:ParentCare@ameda.com\">ParentCare@ameda.com<\/a>. We are available Monday through Friday 8:00 a.m. – 4:30 p.m. Central Standard Time.<\/p>"
+            "text": "<p>If you experience an issue with your pump, it falls within the warranty time frame, and you are the original owner, please contact our ParentCare team for assistance. In the United States, our Ameda ParentCare™ staff can answer consumer questions about proper use of Ameda® products, replacement parts and more. Give us a call at 1-866-992-6332 \/ 1-866-99-AMEDA or drop us a line at <a href=\"mailto:ParentCare@ameda.com\">ParentCare@ameda.com<\/a>. We are available Monday through Friday 8:00 a.m. – 4:30 p.m. Central Standard Time.<\/p>"
           }
         },
-        "c86e2fad-a29a-45b0-a39b-7bb6d21705a8": {
+        "faq-question-ameda-2": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What are Ameda's Shipping Terms?",
+            "text": "<p>Ameda ships to all U.S. States and Puerto Rico. We do not ship Internationally. Shipping options vary, including standard, expedited, and overnight shipping, with specific charges and estimated delivery times.<\/p>"
+          }
+        },
+        "faq-question-ameda-3": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Can I return or exchange an item?",
+            "text": "<p>Ameda offers a no hassle return policy for unopened items with the original safety seal intact. Returns and exchanges are only possible for items purchased directly from Ameda's eCommerce website, within 7 days of receipt with valid proof of purchase.<\/p>"
+          }
+        },
+        "faq-question-ameda-4": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What payment methods are accepted?",
+            "text": "<p>Accepted payment methods include American Express™, Discover™, MasterCard™, and Visa™.<\/p>"
+          }
+        },
+        "faq-question-ameda-5": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Do you have a recycling program?",
+            "text": "<p>Ameda does not currently offer a recycling program for used pumps. Contact local waste management for recycling options.<\/p>"
+          }
+        },
+        "faq-question-ameda-6": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Who should I contact if I have a performance issue with my pump?",
+            "text": "<p>For warranty assistance and troubleshooting, contact the ParentCare Department at 866-992-6332, available Monday to Friday from 8:00 am to 4:30 pm CST.<\/p>"
+          }
+        },
+        "faq-question-ameda-7": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What if I have another issue with my pump?",
+            "text": "<p>For issues with Finesse breast pumps or other personal electric breast pumps from Ameda, contact the ParentCare Department at 866-992-6332 for troubleshooting and warranty assistance.<\/p>"
+          }
+        },
+        "faq-category-products": {
           "type": "category",
           "settings": {
             "text": "Products"
           }
         },
-        "df9ac59a-eb08-4ed1-823e-a8c11d926120": {
+        "faq-question-products-1": {
           "type": "question",
           "settings": {
             "icon": "none",
             "heading": "Mya and Mya Joy look similar – what is the main difference between the two pumps?",
-            "text": "<p>Mya and Mya Joy are both small, lightweight personal use pumps. They both provide hospital strength performance and are designed for moms pumping on a daily basis. Mya includes an internal lithium battery and uses it own unique pump kit and flange system. Mya Joy has a internal battery back-up option that requires 4 AA batteries. Mya Joy is also compatible with most components in the Ameda HygieniKit including containers, tubing and CustomFit flanges.<br\/><br\/><\/p>"
+            "text": "<p>Mya and Mya Joy are both small, lightweight personal use pumps. They both provide hospital strength performance and are designed for moms pumping on a daily basis. Mya includes an internal lithium battery and uses it own unique pump kit and flange system. Mya Joy has an internal battery back-up option that requires 4 AA batteries. Mya Joy is also compatible with most components in the Ameda HygieniKit including containers, tubing and CustomFit flanges.<\/p>"
           }
         },
-        "1e89eeb1-b378-48a2-958d-a7512222c429": {
+        "faq-category-pumping": {
           "type": "category",
           "settings": {
             "text": "Pumping"
           }
         },
-        "b477f8f0-3f35-4219-9fb4-d8a3f0071277": {
+        "faq-question-pumping-1": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.<\/p>"
+            "heading": "How long should I pump?",
+            "text": "<p>An average pumping session is 10-15 minutes. Discontinue pumping after 15-20 minutes if no results are achieved.<\/p>"
           }
         },
-        "c0ade049-49bf-44ce-95da-2aec6e8e6aae": {
+        "faq-category-troubleshooting": {
           "type": "category",
           "settings": {
             "text": "Troubleshooting"
           }
         },
-        "024201f1-2abd-47f7-ba5d-d5d42cb282f8": {
+        "faq-question-troubleshooting-1": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.<\/p>"
+            "heading": "Troubleshooting Low Suction",
+            "text": "<p>Your breast pump valve should be replaced every 2 to 3 months depending on frequency of pumping.&nbsp;Low suction and other suction related issues are most often caused by damaged or worn valves, that need to be replaced.<\/p>"
           }
         },
-        "726b2b66-0632-4fcf-8b15-8a5ffdcb6746": {
+        "faq-category-insurance": {
           "type": "category",
           "settings": {
             "text": "Insurance"
           }
         },
-        "1f52b604-f2f3-42ed-b91f-8e447ba23c7b": {
+        "faq-question-insurance-1": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.<\/p>"
+            "heading": "What is the process for ordering a breast pump that is covered by insurance?",
+            "text": "<p>Most health insurance plans cover the cost of a double electric breast pump. We recommend that you contact your insurance plan to ask about your benefits for a breast pump and what they require.<\/p>"
           }
         }
       },
       "block_order": [
-        "faq-category-1",
-        "faq-question-1",
-        "c86e2fad-a29a-45b0-a39b-7bb6d21705a8",
-        "df9ac59a-eb08-4ed1-823e-a8c11d926120",
-        "1e89eeb1-b378-48a2-958d-a7512222c429",
-        "b477f8f0-3f35-4219-9fb4-d8a3f0071277",
-        "c0ade049-49bf-44ce-95da-2aec6e8e6aae",
-        "024201f1-2abd-47f7-ba5d-d5d42cb282f8",
-        "726b2b66-0632-4fcf-8b15-8a5ffdcb6746",
-        "1f52b604-f2f3-42ed-b91f-8e447ba23c7b"
+        "faq-category-ameda",
+        "faq-question-ameda-1",
+        "faq-question-ameda-2",
+        "faq-question-ameda-3",
+        "faq-question-ameda-4",
+        "faq-question-ameda-5",
+        "faq-question-ameda-6",
+        "faq-question-ameda-7",
+        "faq-category-products",
+        "faq-question-products-1",
+        "faq-category-pumping",
+        "faq-question-pumping-1",
+        "faq-category-troubleshooting",
+        "faq-question-troubleshooting-1",
+        "faq-category-insurance",
+        "faq-question-insurance-1"
       ],
       "settings": {
         "heading": "",
