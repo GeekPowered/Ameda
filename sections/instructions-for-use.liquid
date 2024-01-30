@@ -9,18 +9,30 @@
             {% for instruction in shop.metaobjects.instructions.values %}
                 {% capture tab_name %}{{ instruction.tab_name }}{% endcapture %}
                 {% if tab_name == 'Personal Pumps' %}
-                    <button class="btn btn--secondary">{{ tab_name }}</button>
+                    {% assign personal_pumps_tab = instruction.tab_name %}
                 {% elsif tab_name contains 'pump' %}
-                    {% assign tabs_with_pump = tabs_with_pump | append: tab_name | append: ',' %}
+                    {% unless tabs_with_pump contains tab_name %}
+                        <button class="btn btn--secondary">{{ tab_name }}</button>
+                        {% assign tabs_with_pump = tabs_with_pump | append: tab_name | append: ',' %}
+                    {% endunless %}
                 {% else %}
-                    {% assign tabs_without_pump = tabs_without_pump | append: tab_name | append: ',' %}
+                    {% unless tabs_without_pump contains tab_name %}
+                        <button class="btn btn--secondary">{{ tab_name }}</button>
+                        {% assign tabs_without_pump = tabs_without_pump | append: tab_name | append: ',' %}
+                    {% endunless %}
                 {% endif %}
             {% endfor %}
             
             {% assign sorted_tabs_with_pump = tabs_with_pump | split: ',' | sort %}
             {% assign sorted_tabs_without_pump = tabs_without_pump | split: ',' | sort %}
             
-            {% assign all_sorted_tabs = 'Personal Pumps,' | append: sorted_tabs_with_pump | concat: sorted_tabs_without_pump %}
+            {% assign all_sorted_tabs = '' %}
+            
+            {% if personal_pumps_tab %}
+                {% assign all_sorted_tabs = all_sorted_tabs | append: personal_pumps_tab | append: ',' %}
+            {% endif %}
+            
+            {% assign all_sorted_tabs = all_sorted_tabs | append: sorted_tabs_with_pump | concat: sorted_tabs_without_pump %}
             
             {% for tab_name in all_sorted_tabs %}
                 {% if tab_name != '' %}
