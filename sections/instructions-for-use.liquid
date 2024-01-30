@@ -4,7 +4,7 @@
     <div class="container">
         <div class="tabs-wrapper flex justify-center gap-theme flex-wrap">
             {% assign used_tab_names = '' %}
-            {% assign custom_tabs = 'Personal Pumps,Multi-User Pumps,' %}
+            {% assign custom_tabs = 'Personal Pumps,Multi-User Pumps,Pump Parts & Accessories' %}
             {% for instruction in shop.metaobjects.instructions.values %}
                 {% unless used_tab_names contains instruction.tab_name %}
                     {% capture used_tab_names %}{{ used_tab_names }}{{ instruction.tab_name }},{% endcapture %}
