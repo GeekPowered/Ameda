@@ -5,7 +5,7 @@
   <div class="container">
     <p class="text-center h4">E is for Elites, P is for Platinums. Other is everything else.</p>
     <ul class="state-selector" id="stateList">
-      <li><strong>FIND BY STATE:</strong></li>
+      <li><strong>FIND BY STATE / PROVINCE:</strong></li>
       {% assign state_provinces = locations | map: 'state_province' %}
       {% assign unique_sorted_states = state_provinces | uniq | sort %}
       {% for state in unique_sorted_states %}
