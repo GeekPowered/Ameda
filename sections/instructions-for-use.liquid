@@ -29,7 +29,7 @@
             <!-- Iterate through the sorted tabs to display buttons -->
             {% for tab_name in all_sorted_tabs %}
                 {% if tab_name != '' %}
-                    <button class="btn btn--secondary">{{ tab_name }}</button>
+                    <button class="btn btn--secondary">{{ tab_name | remove: ',' }}</button>
                 {% endif %}
             {% endfor %}
         </div>
