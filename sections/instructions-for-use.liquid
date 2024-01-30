@@ -3,21 +3,21 @@
 <div class="section section--padded color-scheme" style="margin-top: 0; margin-bottom: 0; padding-bottom:0;">
     <div class="container">
         <div class="tabs-wrapper flex justify-center gap-theme flex-wrap">
-            {% assign tab_names = '' | split: ',' %}
+            {% assign tab_names = '' %}
             
             {% for instruction in shop.metaobjects.instructions.values %}
                 {% capture tab_name %}{{ instruction.tab_name }}{% endcapture %}
-                {% if tab_name != 'Personal Pumps' %}
-                    {% assign tab_names = tab_names | push: tab_name %}
-                {% endif %}
+                {% assign tab_names = tab_names | append: tab_name | append: ',' %}
             {% endfor %}
             
-            {% assign sorted_tab_names = tab_names | sort %}
+            {% assign sorted_tab_names = tab_names | split: ',' | sort %}
             
             <button class="btn btn--secondary">Personal Pumps</button>
             
             {% for tab_name in sorted_tab_names %}
-                <button class="btn btn--secondary">{{ tab_name }}</button>
+                {% if tab_name != '' and tab_name != 'Personal Pumps' %}
+                    <button class="btn btn--secondary">{{ tab_name }}</button>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
