@@ -119,7 +119,7 @@
           "settings": {
             "icon": "none",
             "heading": "Are the Mya family of pumps covered by insurance? How can I find out if my insurance plan covers them?",
-            "text": "<p>The Mya and Mya Joy are covered by most insurance plans. To find out your options contact your insurance plan directly. Ameda also has a convenient web page to learn more and <a href=\"/pages/insurance/\" target=\"_blank\" rel=\"noopener\">search for a Durable Medical Equipment (DME) provider</a> that covers Ameda pumps.<\/p>"
+            "text": "<p>The Mya and Mya Joy are covered by most insurance plans. To find out your options contact your insurance plan directly. Ameda also has a convenient web page to learn more and <a href=\"\/pages\/insurance\/\" target=\"_blank\" rel=\"noopener\">search for a Durable Medical Equipment (DME) provider<\/a> that covers Ameda pumps.<\/p>"
           }
         },
         "faq-question-10": {
@@ -127,7 +127,7 @@
           "settings": {
             "icon": "none",
             "heading": "I received an Ameda HygieniKit™ in the hospital – can I use it with my Mya Joy Pump?",
-            "text": "<p>The HygieniKit you received in the hospital is mostly compatible with your Mya Joy pumping kit. All CustomFit<sup>™<\/sup> flanges, containers\/lids and tubing from your Ameda hospital kit can be used with the Joy. The diaphragm and valve pieces in the Joy are slightly different from those used in your HygieniKit so we recommend that only use the diaphragm and valves that come with your Mya Joy pump (just toss out the old ones). Two new sets of valves and diaphragms come with each Mya Joy pump.<\/p>"
+            "text": "<p>The HygieniKit you received in the hospital is mostly compatible with your Mya Joy pumping kit. All CustomFit™ flanges, containers\/lids and tubing from your Ameda hospital kit can be used with the Joy. The diaphragm and valve pieces in the Joy are slightly different from those used in your HygieniKit so we recommend that only use the diaphragm and valves that come with your Mya Joy pump (just toss out the old ones). Two new sets of valves and diaphragms come with each Mya Joy pump.<\/p>"
           }
         },
         "faq-question-11": {
@@ -135,7 +135,7 @@
           "settings": {
             "icon": "none",
             "heading": "Mya Joy is so small – will it be powerful enough to use when I go back to work?",
-            "text": "<p>Yes. The Mya Joy pump features hospital strength performance and is designed for daily use by moms. It also features two modes of pumping (stimulation and expression) and a large range of settings for mom's comfort. Plus - Joy is so small and quiet, mom can take it with her where -ever she needs to go!</p>"
+            "text": "<p>Yes. The Mya Joy pump features hospital strength performance and is designed for daily use by moms. It also features two modes of pumping (stimulation and expression) and a large range of settings for mom's comfort. Plus - Joy is so small and quiet, mom can take it with her where -ever she needs to go!<\/p>"
           }
         },
         "faq-question-12": {
@@ -143,7 +143,7 @@
           "settings": {
             "icon": "none",
             "heading": "Does Mya Joy have a battery option?",
-            "text": "<p>Yes. The Mya Joy has an internal battery compartment that requires 4 AA batteries.</p>"
+            "text": "<p>Yes. The Mya Joy has an internal battery compartment that requires 4 AA batteries.<\/p>"
           }
         },
         "faq-question-13": {
@@ -151,7 +151,7 @@
           "settings": {
             "icon": "none",
             "heading": "Where can I buy spare parts for my Mya Joy pump?",
-            "text": "<p>Mya Joy parts are conveniently available on the <a href=\"/collections/accessories\" rel=\"noopener\" target=\"_blank\">Ameda.com</a> website and through many online retail and DME partners nationwide including <a href=\"https://www.amazon.com/ameda\" rel=\"noopener\" target=\"_blank\">Amazon</a>.</p>"
+            "text": "<p>Mya Joy parts are conveniently available on the <a href=\"\/collections\/accessories\" rel=\"noopener\" target=\"_blank\">Ameda.com<\/a> website and through many online retail and DME partners nationwide including <a href=\"https:\/\/www.amazon.com\/ameda\" rel=\"noopener\" target=\"_blank\">Amazon<\/a>.<\/p>"
           }
         },
         "faq-question-14": {
@@ -159,7 +159,7 @@
           "settings": {
             "icon": "none",
             "heading": "Does Mya Joy have a battery option?",
-            "text": "<p>Yes. The Mya has a built-in lithium battery that provides up to two hours of pumping time on a single charge. Mom can conveniently pump without having to worry about being plugged in!</p>"
+            "text": "<p>Yes. The Mya has a built-in lithium battery that provides up to two hours of pumping time on a single charge. Mom can conveniently pump without having to worry about being plugged in!<\/p>"
           }
         },
         "faq-question-15": {
@@ -167,7 +167,7 @@
           "settings": {
             "icon": "none",
             "heading": "I received an Ameda HygieniKit™ in the hospital – can I use it with my Mya Pump?",
-            "text": "<p>The Mya pump uses a unique pump kit and flange system. The <a href=\"/products/ameda-hygienikit-universal-kit?_pos=1&_psq=hyg&_ss=e&_v=1.0\" target=\"_blank\" rel=\"noopener\">HygieniKit™ parts</a> and <a href=\"/products/ameda-customfit-breast-pump-flanges-and-inserts-comfort-fit-angled-flange\" target=\"_blank\" rel=\"noopener\">CustomFit™ Flanges</a> are not compatible with the Mya.</p>"
+            "text": "<p>The Mya pump uses a unique pump kit and flange system. The <a href=\"\/products\/ameda-hygienikit-universal-kit?_pos=1&_psq=hyg&_ss=e&_v=1.0\" target=\"_blank\" rel=\"noopener\">HygieniKit™ parts<\/a> and <a href=\"\/products\/ameda-customfit-breast-pump-flanges-and-inserts-comfort-fit-angled-flange\" target=\"_blank\" rel=\"noopener\">CustomFit™ Flanges<\/a> are not compatible with the Mya.<\/p>"
           }
         },
         "faq-question-16": {
@@ -175,50 +175,9 @@
           "settings": {
             "icon": "none",
             "heading": "Mya is so small – will it be powerful enough to use when I go back to work?",
-            "text": "<p>Yes. The Mya pump features hospital strength performance and is designed for daily use by moms. It also features two modes of pumping (stimulation and expression) and a large range of settings for mom's comfort. Plus - Mya is so small and quiet, mom can take it with her where -ever she needs to go!</p>"
-          },
-          "faq-question-17": {
-            "type": "question",
-            "settings": {
-              "icon": "none",
-              "heading": "Where can I buy spare parts for my Mya Pump?",
-              "text": "<p>Mya parts are conveniently available on the <a href=\"/collections/accessories\" rel=\"noopener\" target=\"_blank\">Ameda.com </a> website and through many online retail and DME partners nationwide including <a href=\"https://www.amazon.com/ameda\" rel=\"noopener\" target=\"_blank\">Amazon</a>. There are a wide range of spare parts for Mya including 5 unique flange sizes so mom can find her perfect fit!</p>"
-            }
-          },
-          "faq-question-18": {
-            "type": "question",
-            "settings": {
-              "icon": "none",
-              "heading": "Flange Fit",
-              "text": "<p>Proper flange fit is essential to successful breast pumping. Pumping should not cause discomfort. Additionally, using the proper size flange will ensure maximum milk output. A good fit allows your nipple to move freely in the breast flange tunnel. You should see some space around the nipple. Only a little of the areola should be drawn into the tunnel with the nipple. The flange is too small if some or all of your nipple rubs against the sides of the breast flange tunnel. The flange is too big if more areola is drawn into the breast flange with your nipple and/or if your areola rubs against the side of the breast flange tunnel. Refer to your instruction manual for pictures of a good flange fit. You may also call our ParentCare Department at 866-992-6332 to conduct a flange fit over the phone. To see our range of flanges, refer to the below chart:</p><p><img src=\"/cdn/shop/files/Nipple_size_guide.png?v=1706633952\" alt=\"\"></p>"
-            }
-          },
-          "faq-question-19": {
-            "type": "question",
-            "settings": {
-              "icon": "none",
-              "heading": "Are valves covered by the warranty?",
-              "text": "<p>Your Ameda pump includes 4 valves upon receipt. In most cases, 2 of your valves will be pre-assembled on the breast flange. Check the plastic bag that contains the bottle disk and collar for your 2 spare valves. Valves are a routine maintenance piece part, requiring replacement every 2-3 months, depending on care and frequency of pumping. You can purchase replacements valves at <a href=\"#\" target=\"_blank\" rel=\"noopener\">Ameda.com</a> as Ameda does not provide additional valves free of charge and insurance does not cover this piece part. We strongly urge you to purchase Ameda brand valves only, 2 per package. Off brand valves and other accessories are marketed as “compatible with” Ameda pumps. However, off-brand product does not work well with our pump and use of off-brand product will void your Ameda warranty.</p>"
-            }
-          },
-          "faq-question-20": {
-            "type": "question",
-            "settings": {
-              "icon": "none",
-              "heading": "What pieces or parts need to be replaced routinely on my Ameda Breast Pump?",
-              "text": "<p><strong>Pump Maintenance</strong></p><p><a class=\"c-button c-button--big c-button--blue\" href=\"https://youtu.be/vozRPJQm-mY\" style=\"cursor: pointer;\">WATCH VIDEO</a></p>"
-            }
-          },
-          "faq-question-21": {
-            "type": "question",
-            "settings": {
-              "icon": "none",
-              "heading": "How should I clean/sanitize the piece parts in my HygieniKit?",
-              "text": "<p>Before first use, unless otherwise directed by your healthcare provider, prepare your HygieniKit as follows:</p><ol><li>Set aside tubing, adapter cap and tubing adapter. These parts do not need to be cleaned.</li><li>Take apart the remaining parts (the diaphragms, flanges, valves, storage bottles, locking rings and discs. These are the parts that can touch the breast milk.</li><li>Boil a pot of clean water.</li><li>Place the diaphragms, flanges, valves, storage boles, locking rings and discs into the pot of boiling water for 20 minutes.</li><li>Wash your hands.</li><li>Remove the parts carefully with clean tongs.</li><li>Let parts AIR dry on a clean surface.</li></ol><p>WARNING: DO not leave boiling parts unattended. DO not allow boiling parts to contact boom of pot. This may cause damage to the parts. For more information, please review our <a href=\"/media/Ameda_Cleaning_Instructions_v3-2.pdf\" target=\"_blank\" rel=\"noopener\">cleaning instruction guide</a>.</p><h3>Clean &amp; Sanitize</h3><p><a class=\"c-button c-button--big c-button--blue\" href=\"https://www.youtube.com/watch?v=IlJK2ZC03wQ&amp;feature=youtu.be\" style=\"cursor: pointer;\">WATCH VIDEO</a></p><h3>Valves</h3><ol><li>Exercise extreme care when washing and drying the valves.</li><li>Carefully remove the valve from the flange.</li><li>First, rinse the valve in cold water. This will assist with removing fat deposits (a natural component of breast milk). Then swish the valve or soak the valve in warm soapy water.</li><li>Do not insert your fingers or any other tools into the valve opening.</li><li>Next, rinse the valve again in cool water and allow the valve to air dry.</li><li>Do not place the valve directly into the water flowing from the faucet. If your water pressure is too strong, this could cause damage to the valve.</li></ol><p><a class=\"c-button c-button--big c-button--blue\" href=\"https://youtu.be/cvoNZdVh7uA\" style=\"cursor: pointer;\">WATCH VIDEO</a></p><h3>Flanges, Bottles locking Rings &amp; Discs</h3><ol><li>Hand wash in warm soapy water and allow to air dry</li><li>Upper rack of standard, household dishwasher may also be used for flanges and boles</li><li>Do not use steam sterilizer bags or steam bole sterilizers</li></ol><h3>Tubing</h3><p>The tubing does not require cleaning before first use or in between uses. Our Proven Airlock Protection barrier helps protect milk while keeping pump tubing dry and clean.</p>"
-            }
+            "text": "<p>Yes. The Mya pump features hospital strength performance and is designed for daily use by moms. It also features two modes of pumping (stimulation and expression) and a large range of settings for mom's comfort. Plus - Mya is so small and quiet, mom can take it with her where -ever she needs to go!<\/p>"
           }
         }
-
       },
       "block_order": [
         "faq-category-1",
@@ -237,12 +196,7 @@
         "faq-question-13",
         "faq-question-14",
         "faq-question-15",
-        "faq-question-16",
-        "faq-question-17",
-        "faq-question-18",
-        "faq-question-19",
-        "faq-question-20",
-        "faq-question-21"
+        "faq-question-16"
       ],
       "settings": {
         "heading": "",
