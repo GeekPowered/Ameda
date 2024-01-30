@@ -5,10 +5,16 @@
         <div class="tabs-wrapper flex justify-center gap-theme flex-wrap">
             {% assign tabs_with_pump = '' %}
             {% assign tabs_without_pump = '' %}
+            {% assign personal_pumps_tab = '' %}
             
             {% for instruction in shop.metaobjects.instructions.values %}
                 {% capture tab_name %}{{ instruction.tab_name }}{% endcapture %}
-                {% if tab_name contains 'pump' %}
+                {% if tab_name contains 'Personal Pumps' %}
+                    {% unless personal_pumps_tab %}
+                        <button class="btn btn--secondary">{{ tab_name }}</button>
+                        {% assign personal_pumps_tab = true %}
+                    {% endunless %}
+                {% elsif tab_name contains 'pump' %}
                     {% unless tabs_with_pump contains tab_name %}
                         <button class="btn btn--secondary">{{ tab_name }}</button>
                         {% assign tabs_with_pump = tabs_with_pump | append: tab_name | append: ',' %}
