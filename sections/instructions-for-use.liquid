@@ -4,7 +4,7 @@
     <div class="container">
         <div class="tabs-wrapper flex justify-center gap-theme flex-wrap">
             {% assign used_tab_names = '' %}
-            {% assign custom_tabs = 'Personal Pumps,Multi-User Pumps,Pump Parts & Accessories' %}
+            {% assign custom_tabs = 'Personal Pumps,Multi-User Pumps,Pump Parts & Accessories,' %}
             {% for instruction in shop.metaobjects.instructions.values %}
                 {% unless used_tab_names contains instruction.tab_name %}
                     {% capture used_tab_names %}{{ used_tab_names }}{{ instruction.tab_name }},{% endcapture %}
@@ -13,11 +13,12 @@
             
             {% assign sorted_tabs = used_tab_names | split: ',' | sort %}
             
-            <button class="btn btn--secondary">Personal Pumps</button>
-            <button class="btn btn--secondary">Multi-User Pumps</button>
+            {% for tab_name in custom_tabs | split: ',' %}
+                <button class="btn btn--secondary">{{ tab_name }}</button>
+            {% endfor %}
             
             {% for tab_name in sorted_tabs %}
-                {% unless tab_name == 'Personal Pumps' or tab_name == 'Multi-User Pumps' %}
+                {% unless custom_tabs contains tab_name %}
                     <button class="btn btn--secondary">{{ tab_name }}</button>
                 {% endunless %}
             {% endfor %}
