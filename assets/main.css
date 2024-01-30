@@ -2521,9 +2521,9 @@ td {
   .card.color-scheme .card__info {
     padding: calc(10 * var(--space-unit));
   }
-  .card--article.card--featured .card__info {
+  /* .card--article.card--featured .card__info {
     min-height: 350px;
-  }
+  } */
 }
 @media (hover: none) {
   .card__hover-image {
