@@ -12,10 +12,6 @@
     transition: .3s ease;
 }
 
-.state-link:not(.show) {
-    display: none;
-}
-
 .state-link:hover {
     transform: scale(1.1);
 }
@@ -44,6 +40,10 @@ ul.state-selector {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+ul.state-selector:not(.show) {
+    display: none;
 }
 
 .store-location .short-desc {
