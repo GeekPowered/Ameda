@@ -4,11 +4,33 @@
     <div class="container">
         <div class="tabs-wrapper flex justify-center gap-theme flex-wrap">
             {% assign used_tab_names = '' %}
+            
+            <!-- Create two arrays to store tabs containing "pump" and others -->
+            {% assign tabs_with_pump = '' | split: ',' %}
+            {% assign other_tabs = '' | split: ',' %}
+            
             {% for instruction in shop.metaobjects.instructions.values %}
                 {% unless used_tab_names contains instruction.tab_name %}
-                    <button class="btn btn--secondary">{{ instruction.tab_name }}</button>
+                    {% if instruction.tab_name contains 'pump' %}
+                        {% capture tabs_with_pump %}{{ tabs_with_pump }}{{ instruction.tab_name }},{% endcapture %}
+                    {% else %}
+                        {% capture other_tabs %}{{ other_tabs }}{{ instruction.tab_name }},{% endcapture %}
+                    {% endif %}
+                    
                     {% capture used_tab_names %}{{ used_tab_names }}{{ instruction.tab_name }},{% endcapture %}
                 {% endunless %}
+            {% endfor %}
+            
+            <!-- Sort the tabs alphabetically, then concatenate the two arrays -->
+            {% assign sorted_tabs_with_pump = tabs_with_pump | split: ',' | sort %}
+            {% assign sorted_other_tabs = other_tabs | split: ',' | sort %}
+            {% assign all_sorted_tabs = sorted_tabs_with_pump | concat: sorted_other_tabs %}
+            
+            <!-- Iterate through the sorted tabs to display buttons -->
+            {% for tab_name in all_sorted_tabs %}
+                {% if tab_name != '' %}
+                    <button class="btn btn--secondary">{{ tab_name }}</button>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
