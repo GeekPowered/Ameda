@@ -195,7 +195,7 @@
           "settings": {
             "icon": "none",
             "heading": "How long should I pump?",
-            "text": "<p>An average pumping session is 10-15 minutes. Discontinue pumping after 15-20 minutes if no results are achieved.</p><ol><li>Attempt another pumping session in an hour or so after the baby feeds.</li> <li>Relax and allow your body to adjust to the feel of the pump. Your body recognizes the difference between the pump and your baby. Your body will adjust - this may take a few pumping sessions.</li> </ol><p><a href='https://youtu.be/s44h-MY4RYE'>WATCH VIDEO</a></p>"
+            "text": "<p>An average pumping session is 10-15 minutes. Discontinue pumping after 15-20 minutes if no results are achieved.<\/p><ol><li>Attempt another pumping session in an hour or so after the baby feeds.<\/li> <li>Relax and allow your body to adjust to the feel of the pump. Your body recognizes the difference between the pump and your baby. Your body will adjust - this may take a few pumping sessions.<\/li> <\/ol><p><a href='https:\/\/youtu.be\/s44h-MY4RYE'>WATCH VIDEO<\/a><\/p>"
           }
         },
         "faq-question-18": {
@@ -203,15 +203,15 @@
           "settings": {
             "icon": "none",
             "heading": "When should I pump?",
-            "text": "<p>Pumping is an art; the body needs me to adjust to this process. Practice and patience is required. We suggest you “get to know” your breast pump prior to returning to work or when first pumping to gather milk for a planned occasional separation. Pumping routinely to replace your nursing baby (i.e. returning to work):</p><ol><li>You must use your breast pump in accordance with the nursing schedule established by the nursing baby.</li> <li>Skipping pumping sessions will have a negative effect on your milk supply.</li> </ol><p>Pumping to gather milk for an occasional separation:</p><ol><li>Use your breast pump in between baby's nursing sessions.</li> <li>Single pump after a nursing session on the side that the baby finished nursing.</li> <li>You may need to combine expressed milk from multiple pumping sessions to create a full feeding for baby</li> </ol><p>Pumping for a pre-mature or ill baby:</p><ol><li>Consult your personal LC or other healthcare professional for further assessment of personal circumstances</li> </ol><h3>Replacing Valves</h3><p><a href='https://youtu.be/otGENMJ6pWE'>WATCH VIDEO</a></p>"
+            "text": "<p>Pumping is an art; the body needs me to adjust to this process. Practice and patience is required. We suggest you “get to know” your breast pump prior to returning to work or when first pumping to gather milk for a planned occasional separation. Pumping routinely to replace your nursing baby (i.e. returning to work):<\/p><ol><li>You must use your breast pump in accordance with the nursing schedule established by the nursing baby.<\/li> <li>Skipping pumping sessions will have a negative effect on your milk supply.<\/li> <\/ol><p>Pumping to gather milk for an occasional separation:<\/p><ol><li>Use your breast pump in between baby's nursing sessions.<\/li> <li>Single pump after a nursing session on the side that the baby finished nursing.<\/li> <li>You may need to combine expressed milk from multiple pumping sessions to create a full feeding for baby<\/li> <\/ol><p>Pumping for a pre-mature or ill baby:<\/p><ol><li>Consult your personal LC or other healthcare professional for further assessment of personal circumstances<\/li> <\/ol><h3>Replacing Valves<\/h3><p><a href='https:\/\/youtu.be\/otGENMJ6pWE'>WATCH VIDEO<\/a><\/p>"
           }
         },
         "faq-question-19": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "How should I use/set my breast pump speed and suction dials?",
-            "text": "<h3>Suction</h3><ol><li>The suction dial should be set to your highest COMFORTABLE suction level</li> <li>If any discomfort is felt, turn the suction down</li> </ol><h3>Speed</h3><ol><li>Your pumping sessions should begin with the speed dial set at the highest speed level. <ol><li>This will encourage your body to release your milk (let down) so milk flow will start.</li> <li>This action mimics the suckling action of your baby at the beginning of a nursing session</li> </ol></li> <li>Once milk flow has begun, slowly adjust the speed dial down, about half way <ol><li>This slower speed will effectively drain your breast of milk</li> <li>This action mimics the longer and slower sucks of your baby during a nursing session, once milk is present and feeding starts</li> </ol></li> <li>After milk flow slows, try to initiate another let down by turning the speed all the way up and repeating the process</li> <li>Multiple let-downs occur during a nursing session with baby. For optimal milk output, it is important to mimic this pattern when using your breast pump</li> </ol><p><a href='https://youtu.be/bdkdHIPeK3g'>WATCH VIDEO</a></p>"
+            "heading": "How should I use\/set my breast pump speed and suction dials?",
+            "text": "<h3>Suction<\/h3><ol><li>The suction dial should be set to your highest COMFORTABLE suction level<\/li> <li>If any discomfort is felt, turn the suction down<\/li> <\/ol><h3>Speed<\/h3><ol><li>Your pumping sessions should begin with the speed dial set at the highest speed level. <ol><li>This will encourage your body to release your milk (let down) so milk flow will start.<\/li> <li>This action mimics the suckling action of your baby at the beginning of a nursing session<\/li> <\/ol><\/li> <li>Once milk flow has begun, slowly adjust the speed dial down, about half way <ol><li>This slower speed will effectively drain your breast of milk<\/li> <li>This action mimics the longer and slower sucks of your baby during a nursing session, once milk is present and feeding starts<\/li> <\/ol><\/li> <li>After milk flow slows, try to initiate another let down by turning the speed all the way up and repeating the process<\/li> <li>Multiple let-downs occur during a nursing session with baby. For optimal milk output, it is important to mimic this pattern when using your breast pump<\/li> <\/ol><p><a href='https:\/\/youtu.be\/bdkdHIPeK3g'>WATCH VIDEO<\/a><\/p>"
           }
         },
         "faq-question-20": {
@@ -219,7 +219,83 @@
           "settings": {
             "icon": "none",
             "heading": "How do I switch between single and double pumping?",
-            "text": "<p><a href='https://youtu.be/xyGBaIbgbXM'>WATCH VIDEO</a></p>"
+            "text": "<p><a href='https:\/\/youtu.be\/xyGBaIbgbXM'>WATCH VIDEO<\/a><\/p>"
+          }
+        },
+        "category_aTY8Hg": {
+          "type": "category",
+          "settings": {
+            "text": "Troubleshooting"
+          }
+        },
+        "question_JyUAVx": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Troubleshooting Low Suction",
+            "text": "<p>Your breast pump valve should be replaced every 2 to 3 months depending on frequency of pumping. Low suction and other suction related issues are most often caused by damaged or worn valves, that need to be replaced. (Valves are the small, clear silicone, triangle shaped pieces that attach to the flange and hang down into the milk collection container during pumping). Valves are the “heart “of pump suction and therefore it is essential that these pieces are well-maintained during your pumping journey. To restore suction:<\/p><ol><li>Replace your current valves with brand new, unused valves.<\/li><li>Check your flange fit:<\/li><\/ol><h3>Replacing Valves<\/h3><p><a href=\"https:\/\/youtu.be\/nrCcw5eGYVQ\" target=\"_blank\" title=\"https:\/\/youtu.be\/nrCcw5eGYVQ\">https:\/\/youtu.be\/nrCcw5eGYVQ<\/a><\/p><h3>Flange Fit<\/h3><p><a href=\"https:\/\/youtu.be\/34Ap1AjyWe8\" target=\"_blank\" title=\"https:\/\/youtu.be\/34Ap1AjyWe8\">https:\/\/youtu.be\/34Ap1AjyWe8<\/a><\/p>"
+          }
+        },
+        "question_YUeTQN": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Troubleshooting Uneven Suction or Suction on one side only",
+            "text": "<p>Uneven suction or suction on one side only may be a sign that it is time for routine replacement of your valves as the pump motor cannot create uneven suction or suction on one side only (unless you are set up to single pump). Valves are the small, clear silicone, triangle shaped pieces that attach to the flange and hang down into the milk collection container during pumping.)<\/p><ol><li>Replace the valve on the pumping side that is not working with a brand new, unused valve.<\/li><\/ol><p>Using the wrong size the flange can create suction issues, discomfort while pumping and negatively affect your milk production.Learn more about how the proper flange fit can affect suction below:<\/p><ul><li>Nipple size variance from breast to breast is not uncommon. You may need a different size flange for each breast<\/li><li>Using the wrong size flange can create suction issues, discomfort while pumping and negatively affect your milk production<\/li><li>Nipple size and breast tissue may naturally change during your breast pumping journey. The flange size that was proper for you when you began pumping may not be the proper size after time has passed<\/li><li>Verify that the tubing adapter is inserted firmly into the tubing adapter port<\/li><li>Visibly inspect the tubing adapter for any signs of damage<\/li><li>Defects in the tubing adapter may be the cause uneven suction<\/li><li>Focus on the side that isn’t working<\/li><li>Starting with the valve, switch piece parts, one at a time, from the side that is working to the side that isn’t working. This will isolate the piece part that is causing the issue.<\/li><li>If the lower suction stays with the same breast regardless of switching piece parts, then the suction issue is most likely due to Mom’s anatomy<\/li><li>Check flange fit on the nipple of the breast that is having low suction<\/li><\/ul><p>Keep in mind that if only one side is working, you can single pump with the working side until you obtain replacement valves. To single pump:<\/p><ul><li>Remove the tubing set up that is not providing suction from the pump.<\/li><li>Close off the port that you are not using with the white, tail like piece that is attached to the tubing adapter<\/li><li>You must close off the unused port to single pump.<\/li><li>Suction levels will be stronger when single pumping<\/li><\/ul><p>Download the <a href=\"\/pages\/instructions-for-use\" title=\"Instructions For Use\">HygieniKit IFU<\/a> for more information.<\/p><h3>Uneven Suction<\/h3><p><a href=\"https:\/\/youtu.be\/nrCcw5eGYVQ\" target=\"_blank\" title=\"https:\/\/youtu.be\/nrCcw5eGYVQ\">https:\/\/youtu.be\/nrCcw5eGYVQ<\/a><\/p>"
+          }
+        },
+        "question_GP8WqP": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Troubleshooting No Suction",
+            "text": "<ol><li>Ensure that a valve is attached to each flange<\/li><li>Ensure that the tubing adapter is firmly inserted into the adapter port<\/li><li>Ensure diaphragms are placed in to the top of each flange<\/li><li>If using battery power exclusively, switch to your power cord adapter<\/li><\/ol><h3>Flange Fit<\/h3><p>Proper flange fit is essential to successful breast pumping. Pumping should not cause discomfort. Additionally, using the proper size flange will ensure maximum milk output. A good fit allows your nipple to move freely in the breast flange tunnel. You should see some space around the nipple. Only a little areola should be drawn into the tunnel with the nipple. The flange is too small if some or all of your nipple rubs against the sides of the breast flange tunnel. The flange is too big if more areola is drawn into the breast flange with your nipple and\/or if your areola rubs against the side of the breast flange tunnel. Refer to your instruction manual for pictures of a good flange fit. You may also call our ParentCare Department at 866-992-6332 to conduct a flange fit over the phone. <a href=\"\/collections\/accessories\" title=\"Pump Parts & Accessories\">Click here<\/a> to see our range of flanges.<\/p><h3>Other Troubleshooting<\/h3><p><a href=\"https:\/\/youtu.be\/DmwQztz9LFg\" target=\"_blank\" title=\"https:\/\/youtu.be\/DmwQztz9LFg\">https:\/\/youtu.be\/DmwQztz9LFg<\/a><\/p>"
+          }
+        },
+        "question_peEmEn": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Troubleshooting Power Issues",
+            "text": "<p>If Your Pump is not powering on with the AC Adapter, please follow the below instructions for troubleshooting:<\/p><ol><li>If you have batteries installed in the battery compartment, remove the batteries<\/li><li>Try using the pump in a different electrical socket.<\/li><li>Ensure the AC Adapter is inserted into the AC Adapter port and not the Tubing Adapter port<\/li><li>Try powering on the pump with 6 brand new premium AA batteries<\/li><\/ol><p>If Your Pump is not working on battery power:<\/p><ol><li>Ensure the AC Adapter has been unplugged from the motor unit<\/li><li>Ensure 6 brand new premium AA batteries have been installed<\/li><\/ol><p><a href=\"https:\/\/youtu.be\/CoEeiPEUcfM\" target=\"_blank\" title=\"https:\/\/youtu.be\/CoEeiPEUcfM\">https:\/\/youtu.be\/CoEeiPEUcfM<\/a><\/p>"
+          }
+        },
+        "category_K6AFGK": {
+          "type": "category",
+          "settings": {
+            "text": "Insurance"
+          }
+        },
+        "question_Hp6inr": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What is the process for ordering a breast pump that is covered by insurance?",
+            "text": "<p>Most health insurance plans cover the cost of a double electric breast pump. We recommend that you contact your insurance plan to ask about your benefits for a breast pump and what they require. Some insurance plans ask that you have a prescription from a doctor. Most will have you order your breast pump through a durable medical equipment provider (DME) on their list. To learn more about how this process works, check out our guide on receiving a free breast pump through insurance on<\/p><h4><\/h4>"
+          }
+        },
+        "question_7mfHXc": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Will I need a prescription to order my breast pump through insurance?",
+            "text": "<p>Each plan is different. We recommend calling your insurance plan to learn more. If a prescription is needed, contact your doctor to obtain a prescription in advance of placing the order for your breast pump. In some cases, your doctor may send the prescription directly to a specific DME. If this is the case, we recommend that follow up directly with this DME to see if additional information is needed to process your order.<\/p><h4><\/h4>"
+          }
+        },
+        "question_E4yg3J": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Can I upgrade my breast pump to a different model?",
+            "text": "<p>All health insurance plans are different. As a first step, ask your insurance plan. The second step is to see if the DME will allow you to upgrade your breast pump with an additional out of pocket fee. Many DMEs offer a range of upgrade options, as well as additional accessories available for purchase.<\/p>"
+          }
+        },
+        "question_dNiaRh": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Is it possible to use funds from a Flexible Spending Account, Health Savings Account or Health Reimbursement Account to pay breast pump or breast pump accessories or breastfeeding supplies?",
+            "text": "<p>This is often the case. Check with your employer or plan administrator to verify your benefits.<\/p>"
           }
         }
       },
@@ -246,7 +322,17 @@
         "faq-question-17",
         "faq-question-18",
         "faq-question-19",
-        "faq-question-20"
+        "faq-question-20",
+        "category_aTY8Hg",
+        "question_JyUAVx",
+        "question_YUeTQN",
+        "question_GP8WqP",
+        "question_peEmEn",
+        "category_K6AFGK",
+        "question_Hp6inr",
+        "question_7mfHXc",
+        "question_E4yg3J",
+        "question_dNiaRh"
       ],
       "settings": {
         "heading": "",
