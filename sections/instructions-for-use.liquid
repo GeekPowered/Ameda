@@ -3,25 +3,21 @@
 <div class="section section--padded color-scheme" style="margin-top: 0; margin-bottom: 0; padding-bottom:0;">
     <div class="container">
         <div class="tabs-wrapper flex justify-center gap-theme flex-wrap">
-            {% assign tabs = '' %}
+            {% assign tabs_with_pump = '' %}
+            {% assign tabs_without_pump = '' %}
             
             {% for instruction in shop.metaobjects.instructions.values %}
                 {% capture tab_name %}{{ instruction.tab_name }}{% endcapture %}
                 {% if tab_name contains 'pump' %}
-                    {% assign tabs_with_pump = tabs_with_pump | append: tab_name | append: ',' %}
+                    {% unless tabs_with_pump contains tab_name %}
+                        <button class="btn btn--secondary">{{ tab_name }}</button>
+                        {% assign tabs_with_pump = tabs_with_pump | append: tab_name | append: ',' %}
+                    {% endunless %}
                 {% else %}
-                    {% assign tabs_without_pump = tabs_without_pump | append: tab_name | append: ',' %}
-                {% endif %}
-            {% endfor %}
-            
-            {% assign sorted_tabs_with_pump = tabs_with_pump | split: ',' | sort %}
-            {% assign sorted_tabs_without_pump = tabs_without_pump | split: ',' | sort %}
-            
-            {% assign all_sorted_tabs = sorted_tabs_with_pump | concat: sorted_tabs_without_pump %}
-            
-            {% for tab_name in all_sorted_tabs %}
-                {% if tab_name != '' %}
-                    <button class="btn btn--secondary">{{ tab_name }}</button>
+                    {% unless tabs_without_pump contains tab_name %}
+                        <button class="btn btn--secondary">{{ tab_name }}</button>
+                        {% assign tabs_without_pump = tabs_without_pump | append: tab_name | append: ',' %}
+                    {% endunless %}
                 {% endif %}
             {% endfor %}
         </div>
