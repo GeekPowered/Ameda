@@ -438,7 +438,7 @@
             "title": "Choosing the Right Pump",
             "content": "Your breastfeeding and pumping journey starts with the right pump.",
             "link_text": "Find Your Pump",
-            "url": "#"
+            "url": "shopify:\/\/pages\/choosing-the-right-pump"
           }
         },
         "c9b11b25-394a-42ea-bbf2-4b2cefef3566": {
@@ -447,7 +447,7 @@
             "title": "Breastfeeding Guide",
             "content": "Breastfeeding is beneficial for you, your baby, and the community.",
             "link_text": "Breastfeeding Tips",
-            "url": "#"
+            "url": "shopify:\/\/pages\/breastfeeding-guide"
           }
         },
         "52132ce7-ae43-4c08-af17-206aaf0d6e95": {
@@ -456,7 +456,7 @@
             "title": "Usage Instructions",
             "content": "Learn how to use Ameda pumps, products, accessories, and more!",
             "link_text": "Product Guides",
-            "url": "#"
+            "url": "shopify:\/\/pages\/instructions-for-use"
           }
         },
         "ceaccd9d-5daf-4e8f-a92b-8c20a7b8283d": {
@@ -465,25 +465,25 @@
             "title": "The Milk 101 Blog",
             "content": "Breastfeeding is beneficial for you, your baby, and the community.",
             "link_text": "Learn More",
-            "url": ""
+            "url": "shopify:\/\/blogs\/posts"
           }
         },
         "15ac13ef-b830-45f9-b8fe-e70e38511ce3": {
           "type": "link",
           "settings": {
             "title": "Instructional Videos",
-            "content": "Lorem ipsum dolor sit amet consectetur.",
+            "content": "Learn proper product usage, troubleshooting and breastfeeding tips.",
             "link_text": "See Videos",
-            "url": "#"
+            "url": "shopify:\/\/pages\/education"
           }
         },
         "1524bde6-43ab-45a5-9d9e-e26750e61795": {
           "type": "link",
           "settings": {
             "title": "24\/7 Mom Support",
-            "content": "Lorem ipsum dolor sit amet consectetur.",
-            "link_text": "Learn More",
-            "url": "https:\/\/google.com"
+            "content": "We're here for you.",
+            "link_text": "Get Support",
+            "url": "shopify:\/\/pages\/contact"
           }
         }
       },
