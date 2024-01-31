@@ -301,17 +301,17 @@
                         {%- else -%}
                           {{- 'products.product.sold_out' | t -}}
                         {%- endif -%}
-                      </button>  {% endcomment %}
+                      </button> {% endcomment %}
 
-                      {%- if current_variant.available -%}
-                        {% if add_to_cart_text == 'Buy it now' %}
-                          <button type="submit" data-add-to-cart-text="{{ add_to_cart_text | escape }}" class="btn {% if enable_dynamic_checkout %}btn--primary{% else %}btn--primary{% endif %} w-full" name="add" {% if current_variant.available == false %} disabled{% endif %}>{{- add_to_cart_text -}}</button>
-                        {% else %}
-                          <button type="submit" data-add-to-cart-text="{{ add_to_cart_text | escape }}" class="btn {% if enable_dynamic_checkout %}btn--primary{% else %}btn--primary{% endif %} w-full" name="add">{{- add_to_cart_text -}}</button>
-                        {% endif %}
-                      {%- else -%}
-                          <a href="/pages/contact" class="btn btn--primary w-full">Contact Us</a>
-                      {%- endif -%}
+                      {% if current_variant.available %}
+                        <button type="submit" data-add-to-cart-text="{{ add_to_cart_text | escape }}" class="btn {% if enable_dynamic_checkout %}btn--primary{% else %}btn--primary{% endif %} w-full" name="add">
+                          {{ add_to_cart_text }}
+                        </button>
+                      {% else %}
+                        <a href="/pages/contact" class="btn btn--primary w-full">
+                          Contact Us for Availability
+                        </a>
+                      {% endif %}
 
                     </div>
                   </div>
