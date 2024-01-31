@@ -188,7 +188,7 @@
         "img {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/milk-work.jpg",
+        "image": "shopify:\/\/shop_images\/insurance.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -336,11 +336,11 @@
         "title": "Latest Breastfeeding Posts",
         "description": "",
         "show_button": true,
-        "button_link": "\/blogs\/posts\/tagged\/breast-pumping",
+        "button_link": "\/blogs\/posts\/tagged\/breastfeeding",
         "button_text": "Read All",
         "button_style": "btn--primary",
         "top_content_visible": true,
-        "blog_tag": ""
+        "blog_tag": "Breastfeeding"
       }
     },
     "75170376-c327-4296-adad-b15a7708d790": {
