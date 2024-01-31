@@ -94,6 +94,31 @@
     },
     "education_pdfs_prdQ9c": {
       "type": "education-pdfs",
+      "blocks": {
+        "education_pdf_block_i7h8X6": {
+          "type": "education_pdf_block",
+          "settings": {
+            "education_pdf_key": "breastfeeding-q-a"
+          }
+        },
+        "education_pdf_block_n4nVhA": {
+          "type": "education_pdf_block",
+          "settings": {
+            "education_pdf_key": "diet-breastfeeding"
+          }
+        },
+        "education_pdf_block_kL7dTw": {
+          "type": "education_pdf_block",
+          "settings": {
+            "education_pdf_key": "reaching-full-milk-production-with-a-pump"
+          }
+        }
+      },
+      "block_order": [
+        "education_pdf_block_i7h8X6",
+        "education_pdf_block_n4nVhA",
+        "education_pdf_block_kL7dTw"
+      ],
       "custom_css": [
 
       ],
