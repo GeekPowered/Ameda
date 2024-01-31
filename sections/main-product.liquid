@@ -295,13 +295,20 @@
                         {%- endif -%}
                       {%- endcapture -%}
 
-                      <button type="submit" data-add-to-cart-text="{{ add_to_cart_text | escape }}" class="btn {% if enable_dynamic_checkout %}btn--primary{% else %}btn--primary{% endif %} w-full" name="add"{% if current_variant.available == false %} disabled{% endif %}>
+                      {% comment %} <button type="submit" data-add-to-cart-text="{{ add_to_cart_text | escape }}" class="btn {% if enable_dynamic_checkout %}btn--primary{% else %}btn--primary{% endif %} w-full" name="add"{% if current_variant.available == false %} disabled{% endif %}>
                         {%- if current_variant.available -%}
                           {{- add_to_cart_text -}}
                         {%- else -%}
                           {{- 'products.product.sold_out' | t -}}
                         {%- endif -%}
-                      </button>
+                      </button> {% endcomment %}
+
+                      {%- if current_variant.available -%}
+                        <button type="submit" data-add-to-cart-text="{{ add_to_cart_text | escape }}" class="btn {% if enable_dynamic_checkout %}btn--primary{% else %}btn--primary{% endif %} w-full" name="add">{{- add_to_cart_text -}}</button>
+                      {%- else -%}
+                          <a href="/pages/contact" class="btn btn--primary w-full">Contact Us</a>
+                      {%- endif -%}
+
                     </div>
                   </div>
 
