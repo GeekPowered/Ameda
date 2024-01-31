@@ -60,7 +60,7 @@
             {% else %}
                 {% assign default_pdfs = shop.metaobjects.education_pdf.values | limit: 3 %}
                 {% for education_pdf in default_pdfs %}
-                    <a href="/pages/education/" class="education-item">
+                    <div class="education-item">
                         <div class="education-image-wrapper">
                             <img src="{{ education_pdf.cover_image |  image_url  }}" />
                         </div>
@@ -71,7 +71,7 @@
                             {% if education_pdf.spanish %}<option value="{{ education_pdf.spanish | file_url }}">Spanish</option>{% endif %}
                             {% if education_pdf.french %}<option value="{{ education_pdf.french | file_url }}">French</option>{% endif %}
                         </select>
-                    </a>
+                    </div>
                 {% endfor %}
             {% endif %}
         </div>
