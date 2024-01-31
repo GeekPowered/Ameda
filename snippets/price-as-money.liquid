@@ -11,26 +11,32 @@
     assign show_money_with_currency = settings.show_currency_code
   endif
 
-  if show_money_with_currency
-    assign money_price = price | money_with_currency
+  # Check if the price is 0
+  if price == 0
+    assign money_price = 'Contact for pricing'
   else
-    assign money_price = price | money
-  endif
+    # Original price handling logic
+    if show_money_with_currency
+      assign money_price = price | money_with_currency
+    else
+      assign money_price = price | money
+    endif
 
-  if settings.superscript_decimals
-    unless shop.money_format contains 'money' or shop.money_format contains '.'
-      assign separator = "."
-      if shop.money_format contains '{{amount_with_comma_separator}}' or shop.money_format contains '{{ amount_with_comma_separator }}'
-        assign separator = ","
-      endif
+    if settings.superscript_decimals
+      unless shop.money_format contains 'money' or shop.money_format contains '.'
+        assign separator = "."
+        if shop.money_format contains '{{amount_with_comma_separator}}' or shop.money_format contains '{{ amount_with_comma_separator }}'
+          assign separator = ","
+        endif
 
-      assign money_price = money_price | replace: separator, '<sup>'
-      if show_money_with_currency
-        assign money_price = money_price | replace: ' ', '</sup> '
-      else
-        assign money_price = money_price | concat: '</sup>'
-      endif
-    endunless
+        assign money_price = money_price | replace: separator, '<sup>'
+        if show_money_with_currency
+          assign money_price = money_price | replace: ' ', '</sup> '
+        else
+          assign money_price = money_price | concat: '</sup>'
+        endif
+      endunless
+    endif
   endif
 
   echo money_price
