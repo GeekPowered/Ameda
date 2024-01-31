@@ -1,7 +1,6 @@
 {% assign instructions = shop.metaobjects.instructions[product.metafields.product.instructions] %}
 
 {% if instructions %}
-
     <style>
         .product-instruction-card {
             display: flex;
@@ -32,6 +31,7 @@
             gap: 2rem;
             flex-wrap: wrap;
         }
+
         .instruction-content-col {
             flex: 1 0 auto;
         }
@@ -85,5 +85,4 @@
             </div>
         </div>
     </div>
-
 {% endif %}
