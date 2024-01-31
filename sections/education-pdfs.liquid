@@ -49,12 +49,18 @@
                     {% assign education_pdf_key = block.settings.education_pdf_key %}
                     {% assign education_pdf = shop.metaobjects.education_pdf[education_pdf_key] %}
                     {% if education_pdf %}
-                        <a href="/pages/education/" class="education-item">
+                        <div class="education-item">
                             <div class="education-image-wrapper">
                                 <img src="{{ education_pdf.cover_image |  image_url  }}" />
                             </div>
                             <h3 class="h6">{{ education_pdf.name }}</h3>
-                        </a>
+                            <select name="{{ education_pdf.name }}">
+                                <option value="">Language</option>
+                                {% if education_pdf.english %}<option value="{{ education_pdf.english | file_url }}">English</option>{% endif %}
+                                {% if education_pdf.spanish %}<option value="{{ education_pdf.spanish | file_url }}">Spanish</option>{% endif %}
+                                {% if education_pdf.french %}<option value="{{ education_pdf.french | file_url }}">French</option>{% endif %}
+                            </select>
+                        </div>
                     {% endif %}
                 {% endfor %}
             {% else %}
@@ -65,7 +71,7 @@
                             <img src="{{ education_pdf.cover_image |  image_url  }}" />
                         </div>
                         <h3 class="h6">{{ education_pdf.name }}</h3>
-                        <select name="{{ education_pdf.name }}" onchange="if(this.value) window.open(this.value, '_blank');">
+                        <select name="{{ education_pdf.name }}">
                             <option value="">Language</option>
                             {% if education_pdf.english %}<option value="{{ education_pdf.english | file_url }}">English</option>{% endif %}
                             {% if education_pdf.spanish %}<option value="{{ education_pdf.spanish | file_url }}">Spanish</option>{% endif %}
