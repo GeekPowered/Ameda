@@ -49,12 +49,11 @@
 
     <div class="product-instruction-card">
         <div class="instruction-content-wrapper">
-            <h6>Instructions For Use</h6>
-
             <div class="instruction-content-cols">
                 <div class="instruction-content-col">
                     {% if instructions.downloads.value.size > 0 %}
                         <p class="m-0"><strong>Downloads</strong></p>
+                        <hr />
                         <ul class="list-disc col-count-2">
                             {% for download in instructions.downloads.value %}
                                 <li><a href="{{ download.file }}">{{ download.language }} </a></li>
@@ -66,6 +65,7 @@
                 <div class="instruction-content-col">
                     {% if instructions.videos.value.size > 0 %}
                         <p class="m-0"><strong>Videos</strong></p>
+                        <hr />
                         <ul class="list-disc">
                             {% for video in instructions.videos.value %}
                                 <li><a href="{{ video.link }}">{{ video.title }}</a></li>
