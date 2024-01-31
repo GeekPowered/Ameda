@@ -84,6 +84,28 @@
     </div>
 </div>
 
+<script>
+    // Function to be executed when the document is fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Find all <select> elements within elements with the class .tab-content
+        var selects = document.querySelectorAll('.tab-content select');
+
+        // Attach a change event listener to each select element
+        selects.forEach(function(select) {
+            select.addEventListener('change', function() {
+                // Get the value of the selected option
+                var value = this.value;
+
+                // Check if the value is not empty
+                if (value !== '') {
+                    // Open the value URL in a new tab
+                    window.open(value, '_blank');
+                }
+            });
+        });
+    });
+</script>
+
 {% schema %}
     {
       "name": "Education PDFs",
