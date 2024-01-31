@@ -280,7 +280,7 @@
 
                   <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
                   <div class="product-info__add-to-cart flex{% if enable_dynamic_checkout %} qty-input--secondary-btn{% endif %}">
-                    {%- if block.settings.show_qty_selector -%}
+                    {%- if block.settings.show_qty_selector and current_variant.available -%}
                       {% render 'quantity-input', layout_style: "combined" %}
                     {%- else -%}
                       <input type="hidden" name="quantity" value="1">
