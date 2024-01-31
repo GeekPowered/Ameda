@@ -39,6 +39,14 @@
         .instruction-content-col {
             flex: 1 0 auto;
         }
+
+        .instruction-content-col svg {
+            color: inherit;
+            height: 1em;
+            width: 1em;
+            margin-right: .5em;
+        }
+
         .instruction-content-wrapper {
             flex: 1;
         }
@@ -58,7 +66,7 @@
                     {% if instructions.downloads.value.size > 0 %}
                         <p class="m-0"><strong>Downloads</strong></p>
                         <hr />
-                        <ul class="list-disc col-count-2">
+                        <ul class="col-count-2">
                             {% for download in instructions.downloads.value %}
                                 <li>{% render 'icon-link' %} <a href="{{ download.file }}">{{ download.language }} </a></li>
                             {% endfor %}
@@ -70,7 +78,7 @@
                     {% if instructions.videos.value.size > 0 %}
                         <p class="m-0"><strong>Videos</strong></p>
                         <hr />
-                        <ul class="list-disc">
+                        <ul>
                             {% for video in instructions.videos.value %}
                                 <li>{% render 'icon-video' %} <a href="{{ video.link }}">{{ video.title }}</a></li>
                             {% endfor %}
