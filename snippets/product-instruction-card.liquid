@@ -36,7 +36,7 @@
         }
 
         @media (min-width: 450px) {
-            .instruction-content-cols > .instruction-content-col ul:first-child {
+            .col-count-2 {
                 column-count: 2;
             }
         }
@@ -56,7 +56,7 @@
                 <div class="instruction-content-col">
                     {% if instructions.downloads.value.size > 0 %}
                         <p class="m-0"><strong>Downloads</strong></p>
-                        <ul class="list-disc">
+                        <ul class="list-disc col-count-2">
                             {% for download in instructions.downloads.value %}
                                 <li><a href="{{ download.file }}">{{ download.language }} </a></li>
                             {% endfor %}
