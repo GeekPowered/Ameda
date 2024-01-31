@@ -316,7 +316,7 @@
                     </div>
                   </div>
 
-                  {%- if enable_dynamic_checkout -%}
+                  {%- if enable_dynamic_checkout and current_variant.available -%}
                     {{ form | payment_button }}
                   {%- endif -%}
                 {%- endform -%}
