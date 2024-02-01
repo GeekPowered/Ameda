@@ -94,16 +94,6 @@
             "open": false
           }
         },
-        "collapsible_content_kz7QM6": {
-          "type": "collapsible-content",
-          "settings": {
-            "heading": "Resources",
-            "icon": "none",
-            "text": "{{ product.metafields.product.resources | metafield_tag }}",
-            "page": "",
-            "open": false
-          }
-        },
         "collapsible-content-1": {
           "type": "collapsible-content",
           "settings": {
@@ -134,6 +124,16 @@
             "open": false
           }
         },
+        "collapsible_content_kz7QM6": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Resources",
+            "icon": "none",
+            "text": "{{ product.metafields.product.resources | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -152,10 +152,10 @@
         "buy-buttons",
         "message-2",
         "31d2610e-0024-4377-b9d0-8bda2ca7b310",
-        "collapsible_content_kz7QM6",
         "collapsible-content-1",
         "collapsible-content-2",
         "collapsible_content_7hHFzf",
+        "collapsible_content_kz7QM6",
         "share"
       ],
       "custom_css": [
