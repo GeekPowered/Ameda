@@ -33,7 +33,12 @@ function sortEducationItems() {
     // Select the container
     const educationList = document.querySelector('.education-list');
 
-    // Select all education items and convert NodeList to Array
+    if (!educationList) {
+        console.error('Education list container not found');
+        return;
+    }
+
+    // Select all education items within the container and convert NodeList to Array
     let educationItems = Array.from(educationList.querySelectorAll('.education-item'));
 
     // Sort the items in reverse order
@@ -56,6 +61,7 @@ function sortEducationItems() {
 
 // Call the function to sort the items
 sortEducationItems();
+
 
 
 // Function to be executed when the document is fully loaded
