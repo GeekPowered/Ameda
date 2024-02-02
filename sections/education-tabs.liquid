@@ -8,8 +8,9 @@
         </div>
         <div id="EducationPDFs" class="tab-content active">
             <div class="education-list">
-                {% for education_pdf in shop.metaobjects.education_pdf.values %}
-                    <div class="education-item" sort="{{ education_pdf.sorting_order }}">
+                {% assign education_pdfs = shop.metaobjects.education_pdf.values | sort: 'sorting_order' %}
+                {% for education_pdf in education_pdfs %}
+                    <div class="education-item">
                         <div class="education-image-wrapper">
                             <img src="{{ education_pdf.cover_image |  image_url  }}" />
                         </div>
