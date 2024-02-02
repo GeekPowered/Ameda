@@ -62,8 +62,6 @@ function sortEducationItems() {
 // Call the function to sort the items
 sortEducationItems();
 
-
-
 // Function to be executed when the document is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Find all <select> elements within elements with the class .tab-content
