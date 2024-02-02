@@ -36,7 +36,7 @@ function sortEducationItems() {
     // Select all education items and convert NodeList to Array
     let educationItems = Array.from(educationList.querySelectorAll('.education-item'));
 
-    // Sort the items
+    // Sort the items in reverse order
     educationItems.sort((a, b) => {
         // Get the sort attribute values
         const sortA = a.getAttribute('sort');
@@ -46,8 +46,8 @@ function sortEducationItems() {
         if (!sortA) return 1; // Move a to the end if sort attribute is missing
         if (!sortB) return -1; // Move b to the end if sort attribute is missing
 
-        // Compare numeric values of sort attributes
-        return parseInt(sortA) - parseInt(sortB);
+        // Compare numeric values of sort attributes, reversed
+        return parseInt(sortB) - parseInt(sortA);
     });
 
     // Re-append sorted items to the container
