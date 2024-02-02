@@ -8,10 +8,11 @@
         </div>
         <div id="EducationPDFs" class="tab-content active">
             <div class="education-list">
-                {% for education_pdf in shop.metaobjects.education_pdf.values %}
+                {% set sorted_education_pdfs = shop.metaobjects.education_pdf.values | sort(attribute='sorting_order', reverse=true, default=0) %}
+                {% for education_pdf in sorted_education_pdfs %}
                     <div class="education-item">
                         <div class="education-image-wrapper">
-                            <img src="{{ education_pdf.cover_image |  image_url  }}" />
+                            <img src="{{ education_pdf.cover_image | image_url }}" />
                         </div>
                         <h3 class="h6">{{ education_pdf.name }}</h3>
                         <select name="{{ education_pdf.name }}">
