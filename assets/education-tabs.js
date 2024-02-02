@@ -29,38 +29,32 @@ function openTab(event, tabId) {
 
 }
 
-function sortEducationItems() {
-    // Select the container
-    const educationList = document.querySelector('.education-list');
+function sortEducationItems(containerId) {
+    // Select the container by ID
+    const educationList = document.querySelector(`#${containerId} .education-list`);
 
     if (!educationList) {
-        console.error('Education list container not found');
+        console.error('Education list container not found for ID:', containerId);
         return;
     }
 
-    // Select all education items within the container and convert NodeList to Array
     let educationItems = Array.from(educationList.querySelectorAll('.education-item'));
 
-    // Sort the items in reverse order
     educationItems.sort((a, b) => {
-        // Get the sort attribute values
-        const sortA = a.getAttribute('sort');
-        const sortB = b.getAttribute('sort');
+        const sortA = a.getAttribute('sort') || Infinity; // Treat missing sort as a large number
+        const sortB = b.getAttribute('sort') || Infinity; // Treat missing sort as a large number
 
-        // Check if sort attributes are empty or not set, and handle accordingly
-        if (!sortA) return 1; // Move a to the end if sort attribute is missing
-        if (!sortB) return -1; // Move b to the end if sort attribute is missing
-
-        // Compare numeric values of sort attributes, reversed
         return parseInt(sortB) - parseInt(sortA);
     });
 
-    // Re-append sorted items to the container
     educationItems.forEach(item => educationList.appendChild(item));
 }
 
-// Call the function to sort the items
-sortEducationItems();
+// Call the function for sorting education PDF items
+sortEducationItems('EducationPDFs');
+
+// Call the function for sorting education video items
+sortEducationItems('HowToVideos');
 
 // Function to be executed when the document is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
