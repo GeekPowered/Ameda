@@ -8,24 +8,10 @@
         </div>
         <div id="EducationPDFs" class="tab-content active">
             <div class="education-list">
-                {% assign education_pdfs_with_order = '' | split: '' %}
-                {% assign education_pdfs_without_order = '' | split: '' %}
-                
-                {% for education_pdf in shop.metaobjects.education_pdf.values %}
-                    {% if education_pdf.sorting_order %}
-                        {% assign education_pdfs_with_order = education_pdfs_with_order | push: education_pdf %}
-                    {% else %}
-                        {% assign education_pdfs_without_order = education_pdfs_without_order | push: education_pdf %}
-                    {% endif %}
-                {% endfor %}
-                
-                {% assign sorted_education_pdfs_with_order = education_pdfs_with_order | sort: 'sorting_order' | reverse %}
-                {% assign sorted_education_pdfs = sorted_education_pdfs_with_order | concat: education_pdfs_without_order %}
-                
-                {% for education_pdf in sorted_education_pdfs %}
+                {% for education_pdf in shop.metaobjects.education_pdf.values | sort: 'sorting_order' %}
                     <div class="education-item">
                         <div class="education-image-wrapper">
-                            <img src="{{ education_pdf.cover_image | image_url }}" />
+                            <img src="{{ education_pdf.cover_image |  image_url  }}" />
                         </div>
                         <h3 class="h6">{{ education_pdf.name }}</h3>
                         <select name="{{ education_pdf.name }}">
