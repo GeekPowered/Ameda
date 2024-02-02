@@ -29,6 +29,32 @@ function openTab(event, tabId) {
 
 }
 
+function sortEducationItems() {
+    // Select the container
+    const educationList = document.querySelector('.education-list');
+
+    // Select all education items and convert NodeList to Array
+    let educationItems = Array.from(educationList.querySelectorAll('.education-item'));
+
+    // Sort the items
+    educationItems.sort((a, b) => {
+        // Get the sort attribute values
+        const sortA = a.getAttribute('sort');
+        const sortB = b.getAttribute('sort');
+
+        // Check if sort attributes are empty or not set, and handle accordingly
+        if (!sortA) return 1; // Move a to the end if sort attribute is missing
+        if (!sortB) return -1; // Move b to the end if sort attribute is missing
+
+        // Compare numeric values of sort attributes
+        return parseInt(sortA) - parseInt(sortB);
+    });
+
+    // Re-append sorted items to the container
+    educationItems.forEach(item => educationList.appendChild(item));
+}
+
+
 // Function to be executed when the document is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Find all <select> elements within elements with the class .tab-content
@@ -47,4 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+
+    // Call the function to sort the items
+    sortEducationItems();
 });
