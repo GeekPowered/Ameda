@@ -8,31 +8,27 @@
         </div>
         <div id="EducationPDFs" class="tab-content active">
             <div class="education-list">
-                {% assign education_pdfs = shop.metaobjects.education_pdf.values | map: 'value' %}
+                {% assign education_pdfs_with_order = '' | split: '' %}
 
-                {% assign sorted_education_pdfs = '' | split: '' %}
-                
-                {% for education_pdf in education_pdfs %}
-                    {% if education_pdf.sorting_order %}
-                        {% assign sorted_education_pdfs = sorted_education_pdfs | push: education_pdf %}
-                    {% else %}
-                        {% assign sorted_education_pdfs = sorted_education_pdfs | unshift: education_pdf %}
-                    {% endif %}
+                {% for education_pdf in shop.metaobjects.education_pdf.values %}
+                    {% assign sorting_order = education_pdf.sorting_order | default: 0 %}
+                    {% assign pdf_with_order = education_pdf | merge: sorting_order %}
+                    {% assign education_pdfs_with_order = education_pdfs_with_order | push: pdf_with_order %}
                 {% endfor %}
                 
-                {% assign sorted_education_pdfs = sorted_education_pdfs | sort: 'sorting_order' | reverse %}
+                {% assign sorted_education_pdfs = education_pdfs_with_order | sort: 'sorting_order' | reverse %}
                 
-                {% for education_pdf in sorted_education_pdfs %}
+                {% for item in sorted_education_pdfs %}
                     <div class="education-item">
                         <div class="education-image-wrapper">
-                            <img src="{{ education_pdf.cover_image | image_url }}" />
+                            <img src="{{ item.cover_image | image_url }}" />
                         </div>
-                        <h3 class="h6">{{ education_pdf.name }}</h3>
-                        <select name="{{ education_pdf.name }}">
+                        <h3 class="h6">{{ item.name }}</h3>
+                        <select name="{{ item.name }}">
                             <option value="">Language</option>
-                            {% if education_pdf.english %}<option value="{{ education_pdf.english | file_url }}">English</option>{% endif %}
-                            {% if education_pdf.spanish %}<option value="{{ education_pdf.spanish | file_url }}">Spanish</option>{% endif %}
-                            {% if education_pdf.french %}<option value="{{ education_pdf.french | file_url }}">French</option>{% endif %}
+                            {% if item.english %}<option value="{{ item.english | file_url }}">English</option>{% endif %}
+                            {% if item.spanish %}<option value="{{ item.spanish | file_url }}">Spanish</option>{% endif %}
+                            {% if item.french %}<option value="{{ item.french | file_url }}">French</option>{% endif %}
                         </select>
                     </div>
                 {% endfor %}
