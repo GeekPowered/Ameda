@@ -54,6 +54,9 @@ function sortEducationItems() {
     educationItems.forEach(item => educationList.appendChild(item));
 }
 
+// Call the function to sort the items
+sortEducationItems();
+
 
 // Function to be executed when the document is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -73,8 +76,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-
-    // Call the function to sort the items
-    sortEducationItems();
 });
