@@ -8,20 +8,16 @@
         </div>
         <div id="EducationPDFs" class="tab-content active">
             <div class="education-list">
-                {% assign education_pdfs = shop.metaobjects.education_pdf.values %}
-                {% assign sorted_education_pdfs = '' | split: '' %}
+                {% assign education_pdfs = shop.metaobjects.education_pdf.values | sort: 'sorting_order' %}
+                {% assign max_value = 1000000 %}
                 
                 {% for education_pdf in education_pdfs %}
-                    {% if education_pdf.sorting_order %}
-                        {% assign sorted_education_pdfs = sorted_education_pdfs | push: education_pdf %}
-                    {% else %}
-                        {% assign education_pdf_with_default_order = education_pdf %}
-                        {% assign education_pdf_with_default_order.sorting_order = 0 %}
-                        {% assign sorted_education_pdfs = sorted_education_pdfs | push: education_pdf_with_default_order %}
+                    {% if education_pdf.sorting_order == nil %}
+                        {% assign education_pdf.sorting_order = max_value %}
                     {% endif %}
                 {% endfor %}
                 
-                {% assign sorted_education_pdfs = sorted_education_pdfs | sort_natural: 'sorting_order' | reverse %}
+                {% assign sorted_education_pdfs = education_pdfs | sort: 'sorting_order' | reverse %}
                 
                 {% for education_pdf in sorted_education_pdfs %}
                     <div class="education-item">
@@ -37,7 +33,6 @@
                         </select>
                     </div>
                 {% endfor %}
-                
             </div>
         </div>
 
