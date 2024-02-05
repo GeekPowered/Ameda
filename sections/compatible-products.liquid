@@ -64,8 +64,8 @@
     assign limit = section.settings.products_to_show
   -%}
   
-  <product-recommendations class="section" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit={{ limit }}&intent=related" data-product-id="{{ product_id }}">
-    {%- if compatibility_metafield != blank -%}
+  {%- if compatibility_metafield != blank -%}
+    <product-recommendations class="section" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit={{ limit }}&intent=related" data-product-id="{{ product_id }}">
         {%- if section.settings.heading != blank -%}
           <div class="container">
             <h2 class="h4 section__heading {{ section.settings.heading_align }}">{{ section.settings.heading | escape }}</h2>
@@ -108,8 +108,8 @@
           </div>
         </carousel-slider>
       {%- endif -%}
-    {%- endif -%}
-  </product-recommendations>
+    </product-recommendations>
+  {%- endif -%}
 
 
 {% schema %}
