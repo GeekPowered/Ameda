@@ -6,9 +6,9 @@ function openTab(event, tabId) {
 
     // Determine which tab is being opened and change URL accordingly
     var newUrl = '?tab=default'; // Default tab parameter
-    if (tabId === 'pdfTabContentId') { // Replace 'pdfTabContentId' with the actual ID of your PDF tab content
+    if (tabId === 'pdf-tab') { // Replace 'pdfTabContentId' with the actual ID of your PDF tab content
         newUrl = '?tab=pdfs';
-    } else if (tabId === 'videoTabContentId') { // Replace 'videoTabContentId' with the actual ID of your Video tab content
+    } else if (tabId === 'video-tab') { // Replace 'videoTabContentId' with the actual ID of your Video tab content
         newUrl = '?tab=videos';
     }
     history.pushState(null, '', newUrl);
