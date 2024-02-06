@@ -3,15 +3,15 @@
 <div class="section section--padded color-scheme">
     <div class="container">
         <div class="education-tabs flex justify-center gap-theme">
-            <button class="btn btn--primary tab-link" onclick="openTab(event, 'EducationPDFs')" id="pdfTab">Education PDFs</button>
-            <button class="btn btn--secondary tab-link" onclick="openTab(event, 'HowToVideos')" id="videoTab">How To Videos</button>
+            <button class="btn btn--primary tab-link" onclick="openTab(event, 'EducationPDFs')" id="pdf-tab">Education PDFs</button>
+            <button class="btn btn--secondary tab-link" onclick="openTab(event, 'HowToVideos')" id="video-tab">How To Videos</button>
         </div>
         <div id="EducationPDFs" class="tab-content active">
             <div class="education-list">
                 {% for education_pdf in shop.metaobjects.education_pdf.values %}
                     <div class="education-item" sort="{{ education_pdf.sorting_order }}">
                         <div class="education-image-wrapper">
-                            <img src="{{ education_pdf.cover_image |  image_url  }}" />
+                            <img width="auto" height="auto" src="{{ education_pdf.cover_image |  image_url  }}" />
                         </div>
                         <h3 class="h6">{{ education_pdf.name }}</h3>
                         <select name="{{ education_pdf.name }}">
@@ -32,7 +32,7 @@
                     <div class="education-item" sort="{{ education_video.sorting_order }}">
                         <a class="education-video-link" target="_blank" href="https://www.youtube.com/watch?v={{ education_video.you_tube_id }}">
                             <div class="education-image-wrapper">
-                                <img src="http://i3.ytimg.com/vi/{{ education_video.you_tube_id }}/hqdefault.jpg" />
+                                <img width="auto" height="auto" src="http://i3.ytimg.com/vi/{{ education_video.you_tube_id }}/hqdefault.jpg" />
                             </div>
                         </a>
                         <h3 class="h6 m-0">{{ education_video.video_title }}</h3>
