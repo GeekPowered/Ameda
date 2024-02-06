@@ -75,20 +75,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Function to activate the Video tab based on URL parameter
-    function activateTabFromURL() {
+    // Function to simulate a click on the Video tab based on URL parameter
+    function clickVideoTabIfParamSet() {
         const urlParams = new URLSearchParams(window.location.search);
         const tab = urlParams.get('tab');
 
-        // Check if 'tab' parameter is set to 'videos'
         if (tab === 'videos') {
-            // Assuming 'videoTabId' is the ID of the Video tab
-            // and 'videoTabLinkId' is the ID of the Video tab's link
-            openTab(null, 'videoTabId'); // Replace 'videoTabId' with the actual ID of your Video tab content
-            document.getElementById('videoTabLinkId').classList.add('btn--primary'); // Highlight the Video tab link as active
+            const videoTabLink = document.getElementById('video-tab');
+            if (videoTabLink) videoTabLink.click();
         }
     }
 
-    activateTabFromURL();
-
+    clickVideoTabIfParamSet();
+    
 });
