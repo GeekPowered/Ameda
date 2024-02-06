@@ -4,10 +4,17 @@ function openTab(event, tabId) {
         return; // Do nothing if it's not a 'btn--secondary' button
     }
 
-    // Get all tab links
+    // Determine which tab is being opened and change URL accordingly
+    var newUrl = '?tab=default'; // Default tab parameter
+    if (tabId === 'pdfTabContentId') { // Replace 'pdfTabContentId' with the actual ID of your PDF tab content
+        newUrl = '?tab=pdfs';
+    } else if (tabId === 'videoTabContentId') { // Replace 'videoTabContentId' with the actual ID of your Video tab content
+        newUrl = '?tab=videos';
+    }
+    history.pushState(null, '', newUrl);
+
+    // Get all tab links and loop through them to switch classes
     var tabLinks = document.getElementsByClassName('tab-link');
-    
-    // Loop through tab links to switch classes
     for (var i = 0; i < tabLinks.length; i++) {
         if (tabLinks[i].classList.contains('btn--primary')) {
             tabLinks[i].classList.remove('btn--primary');
@@ -26,8 +33,8 @@ function openTab(event, tabId) {
 
     // Show the current tab
     document.getElementById(tabId).classList.add('active');
-
 }
+
 
 function sortEducationItems(containerId) {
     // Select the container by ID
