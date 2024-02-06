@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const tab = urlParams.get('tab');
 
         if (tab === 'videos') {
-            const videoTabLink = document.getElementById('videoTab');
+            const videoTabLink = document.getElementById('video-tab');
             if (videoTabLink) videoTabLink.click();
         }
     }
