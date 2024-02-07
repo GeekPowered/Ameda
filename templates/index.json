@@ -474,7 +474,7 @@
             "title": "Instructional Videos",
             "content": "Learn proper product usage, troubleshooting and breastfeeding tips.",
             "link_text": "See Videos",
-            "url": "shopify:\/\/pages\/education"
+            "url": "\/pages\/education?tab=videos"
           }
         },
         "1524bde6-43ab-45a5-9d9e-e26750e61795": {
