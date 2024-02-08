@@ -55,6 +55,7 @@
       ],
       "custom_css": [
         "footer h2 {color: #1a4049; font-size: 2rem !important; margin-bottom: 1em;}",
+        "footer .footer__base > div * {display: inline;}",
         "@media (max-width: 767px) {footer summary h2 {margin-bottom: 0; }}"
       ],
       "settings": {
