@@ -353,11 +353,16 @@
                   {%- endif -%}
                 {%- endcapture -%}
 
+                {%- if current_variant.available == false %}
                 <button class="btn btn--primary w-full"
                         data-add-to-cart-text="{{- button_text | escape -}}"
                         name="add"
-                        aria-haspopup="dialog"
-                        {%- if current_variant.available == false %}disabled{% endif %}>
+                        aria-haspopup="dialog">
+                {% else %}
+                <a href="{{ product_url }}" class="btn btn--primary w-full"
+                        name="add"
+                        aria-haspopup="dialog"> View Product</a>
+                {% endif %}
                   <span class="quick-add-btn-icon">
                     <span class="visually-hidden">{{- button_text -}}</span>
                     {% render 'icon-add-to-cart' %}
