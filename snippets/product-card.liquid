@@ -353,7 +353,7 @@
                   {%- endif -%}
                 {%- endcapture -%}
 
-                  {%- if current_variant.available == false %}
+                  {%- if current_variant.available %}
                     <button class="btn btn--primary w-full"
                           data-add-to-cart-text="{{- button_text | escape -}}"
                           name="add"
