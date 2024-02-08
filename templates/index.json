@@ -132,7 +132,7 @@
         "69399623-3cdd-431f-a55e-2e997c84bbc6": {
           "type": "text",
           "settings": {
-            "text": "WHO Compliant Technology",
+            "text": "Exceptional Mom Support",
             "link": "",
             "font": "heading",
             "heading_size": "h3"
@@ -141,58 +141,58 @@
         "f31e305c-e8b3-4dfa-a550-51d42e5d2f4f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/who-logo.png",
+            "image": "shopify:\/\/shop_images\/mothers.svg",
             "image_height": 48,
             "link": ""
           }
         },
-        "scrolling-text-1": {
+        "text_xwWLHG": {
           "type": "text",
           "settings": {
-            "text": "First FDA-Approved Viral Barrier",
+            "text": "Only FDA-Cleared Viral Barrier",
             "link": "",
             "font": "heading",
             "heading_size": "h3"
           }
         },
-        "d1ca9935-c69e-495a-9dc5-2de789949cb5": {
+        "image_3FkNBc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fda-approved.png",
+            "image": "shopify:\/\/shop_images\/viral-barrier.svg",
             "image_height": 48,
             "link": ""
           }
         },
-        "d1c63dc0-87cd-42b9-a504-b0ab85e1ab15": {
+        "text_VL4Rpk": {
           "type": "text",
           "settings": {
-            "text": "Trusted by 100+ Hospitals",
+            "text": "Inventors of Breast Pump Tech",
             "link": "",
             "font": "heading",
             "heading_size": "h3"
           }
         },
-        "7662715e-6110-4e48-8fa2-f297a6b563c3": {
+        "image_KVPXgN": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/medical-logo.png",
+            "image": "shopify:\/\/shop_images\/pump.svg",
             "image_height": 48,
             "link": ""
           }
         },
-        "75529892-7926-4e7a-8740-2fbeca912ac7": {
+        "text_QFC3eL": {
           "type": "text",
           "settings": {
-            "text": "Exceptional Mom Support",
+            "text": "Trusted by Hospitals",
             "link": "",
             "font": "heading",
             "heading_size": "h3"
           }
         },
-        "db9e90bb-9f15-4751-8dfd-d47abf8c5371": {
+        "image_hDwyBX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mom-support.png",
+            "image": "shopify:\/\/shop_images\/hospitals.svg",
             "image_height": 48,
             "link": ""
           }
@@ -201,19 +201,19 @@
       "block_order": [
         "69399623-3cdd-431f-a55e-2e997c84bbc6",
         "f31e305c-e8b3-4dfa-a550-51d42e5d2f4f",
-        "scrolling-text-1",
-        "d1ca9935-c69e-495a-9dc5-2de789949cb5",
-        "d1c63dc0-87cd-42b9-a504-b0ab85e1ab15",
-        "7662715e-6110-4e48-8fa2-f297a6b563c3",
-        "75529892-7926-4e7a-8740-2fbeca912ac7",
-        "db9e90bb-9f15-4751-8dfd-d47abf8c5371"
+        "text_xwWLHG",
+        "image_3FkNBc",
+        "text_VL4Rpk",
+        "image_KVPXgN",
+        "text_QFC3eL",
+        "image_hDwyBX"
       ],
       "settings": {
         "section_height": "medium",
         "spacing": 40,
         "speed": 24,
         "direction": "normal",
-        "pausable": true,
+        "pausable": false,
         "color_scheme": "1",
         "dividers": "none",
         "prevent_animation": false
