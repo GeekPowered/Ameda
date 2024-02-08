@@ -98,6 +98,14 @@
   endif
 -%}
 
+{%- assign all_variants_out_of_stock = true -%}
+{%- for variant in product.variants -%}
+  {%- if variant.available -%}
+    {%- assign all_variants_out_of_stock = false -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
 {%- if product and product != empty -%}
   <product-card class="card card--product{{ card_class }} h-full{% if settings.card_contain %} card--product-contained{% endif %}{% unless settings.show_dividers %} card--no-lines{% endunless %}{% if show_compare %} card--product-compare{% endif %} relative flex">
 
@@ -372,6 +380,13 @@
                 </a>
               {%- endform -%}
             </product-form>
+          {%- elsif all_variants_out_of_stock -%}
+              <a href="{{ product_url }}" class="btn btn--primary w-full">
+                {{- 'products.product.view_product' | t -}}
+              </a>
+              <a href="{{ product_url }}" class="btn btn--secondary quick-add-view-btn">
+                {{- 'products.product.view_details' | t -}}
+              </a>
           {%- else -%}
             <div class="no-js-hidden">
               <button type="button"
