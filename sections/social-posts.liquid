@@ -1,7 +1,7 @@
 <div class="section section--padded social-posts">
     <div class="container text-center">
         <span class="h5">{{ section.settings.subtitle }}</span>
-        <h2>{{ section.settings.title }}</h2>
+        <h2 {%- if section.settings.content -%}class="mb-0"{%- endif -%}>{{ section.settings.title }}</h2>
         {%- if section.settings.content -%}<p class="enlarge-text">{{ section.settings.content }}</p>{%- endif -%}
         <div class="pt-6">{{ section.settings.embed_code }}</div>
         <div class="flex justify-center">{% include 'social-media' %}</div>
