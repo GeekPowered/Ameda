@@ -8,7 +8,7 @@
         "heading-0": {
           "type": "heading",
           "settings": {
-            "heading": "Seasonal promotion text goes here",
+            "heading": "Mya JoyPLUS: Buy One, Get One FREE!",
             "heading_size": "h6",
             "show_on_mobile": true,
             "show_on_desktop": true
@@ -17,7 +17,7 @@
         "discount-2": {
           "type": "discount",
           "settings": {
-            "discount_code": "DISCOUNTCODE"
+            "discount_code": "JPBOGO"
           }
         }
       },
