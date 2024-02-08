@@ -37,7 +37,7 @@
 
         {%- for block in section.blocks -%}
           {%- if block.type == 'category' -%}
-            <h3 class="text-h5 xs:text-h6 font-body font-bold{% unless forloop.first %} mt-16{% endunless %} mb-6" {{ block.shopify_attributes }}>{{ block.settings.text }}</h3>
+            <h3 class="text-h4 xs:text-h6 font-bold{% unless forloop.first %} mt-16{% endunless %} mb-6" {{ block.shopify_attributes }}>{{ block.settings.text }}</h3>
           {%- elsif block.type == 'button' -%}
             <div class="{% unless forloop.first %} mt-6{% endunless %} mb-6" {{ block.shopify_attributes }}>
               <a class="{{ block.settings.button_style }}" {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% else %}role="link" aria-disabled="true"{% endif %}>
