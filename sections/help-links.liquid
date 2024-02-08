@@ -3,7 +3,7 @@
 <div class="section section--padded helpful-links">
     <div class="container">
         <h2 class="section__heading text-center{% if section.settings.section_content %}{{ ' mb-0' }}{% endif %}">We're Here For You</h2>
-        {%- if section.settings.section_content -%}<p class="enlarge-text text-center">{{ section.settings.section_content }}</p>{%- endif -%}
+        {% if section.settings.section_content %}<p class="enlarge-text text-center  mb-10">{{ section.settings.section_content }}</p>{% endif %}
         <div class="helpful-links_list">
             {% for block in section.blocks %}
                 <div class="helpful-links_item">
