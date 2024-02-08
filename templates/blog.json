@@ -8,17 +8,20 @@
           "settings": {
             "heading": "Milk 101 Blog",
             "heading_size": "h2",
-            "heading_h1": false
+            "heading_h1": true
           }
         }
       },
       "block_order": [
         "heading_fdG44c"
       ],
+      "custom_css": [
+        "h1 {margin-bottom: -4rem;}"
+      ],
       "settings": {
         "text_position": "justify-start",
         "text_align": "text-start",
-        "mob_center_text": true,
+        "mob_center_text": false,
         "color_scheme": "none",
         "full_width": true,
         "prevent_animation": false
