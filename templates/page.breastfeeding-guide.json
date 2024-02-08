@@ -327,6 +327,36 @@
         "full_width": true
       }
     },
+    "rich_text_hgmAAG": {
+      "type": "rich-text",
+      "blocks": {
+        "button_q9PbwB": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Other Educational Materials",
+            "button_1_link": "shopify:\/\/pages\/education",
+            "button_1_style": "btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_q9PbwB"
+      ],
+      "custom_css": [
+        ".section--padded {padding-bottom: 0; padding-top: 0; margin-top: -2rem;}"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "1",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
     "beed3893-13e5-403a-bc6d-b88cf18d5ece": {
       "type": "latest-posts",
       "custom_css": [
@@ -363,6 +393,7 @@
     "9064ad3d-8ef0-49cd-88a2-f0e079353f22",
     "e83aa573-9d22-47ba-abd8-c081450e09c9",
     "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5",
+    "rich_text_hgmAAG",
     "beed3893-13e5-403a-bc6d-b88cf18d5ece",
     "75170376-c327-4296-adad-b15a7708d790"
   ]
