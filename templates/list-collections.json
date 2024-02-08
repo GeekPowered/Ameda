@@ -3,7 +3,7 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Collections",
+        "title": "Product Categories",
         "description": "",
         "text_align": "items-center text-center",
         "display_type": "all",
