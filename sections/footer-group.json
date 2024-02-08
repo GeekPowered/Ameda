@@ -61,7 +61,7 @@
         "show_back_to_top": false,
         "show_payment_icons": false,
         "show_powered_by": false,
-        "extra_footer_text": "<p>| <a href=\"\/pages\/terms-of-use\" title=\"Terms Of Use\">Terms Of Use<\/a><\/p>",
+        "extra_footer_text": "<p>| <a href=\"\/pages\/terms-of-use\" title=\"Terms Of Use\">Terms Of Use<\/a> <\/p>",
         "powered_by_gps": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
