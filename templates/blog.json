@@ -6,7 +6,7 @@
         "heading_fdG44c": {
           "type": "heading",
           "settings": {
-            "heading": "{{ blog.title }}",
+            "heading": "Milk 101 Blog",
             "heading_size": "h2",
             "heading_h1": true
           }
