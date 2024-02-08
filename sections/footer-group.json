@@ -38,7 +38,7 @@
           "settings": {
             "image_width": 150,
             "heading": "",
-            "text": "<h2><strong>Ameda ParentCare<\/strong><\/h2><p>1-866-992-6332<\/p><p>parentcare@ameda.com<\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CST<\/p><h2><strong>Ameda CustomerCare<\/strong><\/h2><p>1-866-992-6332<\/p><p>orders@ameda.com<\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CST<\/p>",
+            "text": "<h2><strong>Ameda ParentCare<\/strong><\/h2><p><a href=\"tel:1-866-992-6332\" title=\"tel:1-866-992-6332\">1-866-992-6332<\/a><\/p><p><a href=\"mailto:parentcare@ameda.com\" title=\"mailto:parentcare@ameda.com\">parentcare@ameda.com<\/a><\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CT<\/p><h2><strong>Ameda CustomerCare<\/strong><\/h2><p><a href=\"tel:1-866-992-6332\" title=\"tel:1-866-992-6332\">1-866-992-6332<\/a><\/p><p><a href=\"mailto:orders@ameda.com\" title=\"mailto:orders@ameda.com\">orders@ameda.com<\/a><\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CT<\/p>",
             "button_label": "",
             "button_link": "",
             "enable_follow_on_shop": false,
@@ -54,7 +54,8 @@
         "e42c3573-17d8-4422-84bb-e40f7070ecaa"
       ],
       "custom_css": [
-        "footer h2 {color: #1a4049; font-size: 2rem !important; margin-bottom: 1em;}"
+        "footer h2 {color: #1a4049; font-size: 2rem !important; margin-bottom: 1em;}",
+        "@media (max-width: 767px) {footer summary h2 {margin-bottom: 0; }}"
       ],
       "settings": {
         "show_back_to_top": false,
