@@ -642,8 +642,12 @@
             {{- 'products.product.view_details' | t -}}
           </a>
         {%- else -%}
-          <a class="btn btn--secondary btn--sm" href="#{{ anchor }}" rel="nofollow">
+        {% if current_variant.available %}
+          {% comment %} <a class="btn btn--secondary btn--sm" href="#{{ anchor }}" rel="nofollow">
             {{- 'products.product.choose_options' | t -}}
+          </a> {% endcomment %}
+          <a class="btn btn--secondary btn--sm" href="#" rel="nofollow">
+            View Product
           </a>
         {%- endif -%}
       </div>
