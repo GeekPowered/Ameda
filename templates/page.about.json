@@ -474,8 +474,8 @@
         "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-button-1": {
           "type": "button",
           "settings": {
-            "button_1_label": "Shop Now",
-            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_label": "Shop Pumps",
+            "button_1_link": "shopify:\/\/collections\/breast-pumps",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
