@@ -2,6 +2,7 @@
     <div class="container text-center">
         <span class="h5">{{ section.settings.subtitle }}</span>
         <h2>{{ section.settings.title }}</h2>
+        {%- if section.settings.content -%}<p class="enlarge-text">{{ section.settings.content }}</p>{%- endif -%}
         <div class="pt-6">{{ section.settings.embed_code }}</div>
         <div class="flex justify-center">{% include 'social-media' %}</div>
     </div>
@@ -22,6 +23,12 @@
           "label": "Title",
           "id": "title",
           "default": "Default Title"
+        },
+        {
+          "type": "text",
+          "label": "Content",
+          "id": "content",
+          "default": "Lorem ipsum dolor sit amet"
         },
         {
           "type": "textarea",
