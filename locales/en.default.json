@@ -144,6 +144,7 @@
       "value_reduction_up_to_html": "Up to {{ amount }} off",
       "vendor": "By",
       "view_details": "View details",
+      "view_product": "View Product",
       "weight": "Weight",
       "xr_button": "View in your space"
     },
@@ -546,8 +547,7 @@
       "type": "Product type",
       "vendor": "Product vendor",
       "sku": "SKU1234",
-      "description": "A description of the product, including details such as build quality, materials used and reasons to purchase.",
-      "view_product": "View Product"
+      "description": "A description of the product, including details such as build quality, materials used and reasons to purchase."
     }
   },
   "shopify": {
