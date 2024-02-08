@@ -39,8 +39,8 @@
         "image_desktop": "shopify:\/\/shop_images\/breastfeeding-hero.jpg",
         "url": "",
         "height_mode": "fixed",
-        "fixed_height_desktop": 600,
-        "fixed_height_mobile": 350,
+        "fixed_height_desktop": 550,
+        "fixed_height_mobile": 500,
         "overlay_position": "justify-start items-center",
         "overlay_text_align": "text-start",
         "mob_center_text": false,
@@ -314,7 +314,7 @@
             "enlarge_end_text": false,
             "countdown_hide_on_end": false,
             "use_custom_colors": false,
-            "count_color": "#fff",
+            "count_color": "#ffffff",
             "bg_color": "#070707",
             "bg_grad": ""
           }
@@ -380,7 +380,7 @@
             "enlarge_end_text": false,
             "countdown_hide_on_end": false,
             "use_custom_colors": false,
-            "count_color": "#fff",
+            "count_color": "#ffffff",
             "bg_color": "#070707",
             "bg_grad": ""
           }
