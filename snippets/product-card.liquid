@@ -354,14 +354,14 @@
                 {%- endcapture -%}
 
                 {%- if current_variant.available == false %}
-                <button class="btn btn--primary w-full"
-                        data-add-to-cart-text="{{- button_text | escape -}}"
-                        name="add"
-                        aria-haspopup="dialog">
+                  <a href="{{ product_url }}" class="btn btn--primary w-full"
+                  name="add"
+                  aria-haspopup="dialog"> View Product</a>
                 {% else %}
-                <a href="{{ product_url }}" class="btn btn--primary w-full"
-                        name="add"
-                        aria-haspopup="dialog"> View Product</a>
+                  <button class="btn btn--primary w-full"
+                data-add-to-cart-text="{{- button_text | escape -}}"
+                name="add"
+                aria-haspopup="dialog">
                 {% endif %}
                   <span class="quick-add-btn-icon">
                     <span class="visually-hidden">{{- button_text -}}</span>
