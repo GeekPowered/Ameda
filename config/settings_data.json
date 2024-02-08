@@ -392,6 +392,7 @@
     "card_url_within_coll": false,
     "card_atc_mobile": "icon",
     "card_atc_desktop": "text_button_hover",
+    "show_dividers": false,
     "card_contain": false,
     "card_bg_color": "#ffffff",
     "card_text_color": "#26262b",
