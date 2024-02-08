@@ -393,18 +393,26 @@
           "settings": {
           }
         },
-        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-description-1": {
-          "type": "description",
+        "metafield_Q47hqJ": {
+          "type": "metafield",
           "settings": {
-            "truncate_description": false,
-            "words_to_show": 20
+            "title": "Key Features",
+            "metafield_key": "product.key_features"
+          }
+        },
+        "metafield_dGLxYm": {
+          "type": "metafield",
+          "settings": {
+            "title": "Technical Features",
+            "metafield_key": "product.technical_features"
           }
         }
       },
       "block_order": [
         "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-product-1",
         "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-price-1",
-        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-description-1"
+        "metafield_Q47hqJ",
+        "metafield_dGLxYm"
       ],
       "custom_css": [
         ".product-comparison-grid {border: none;}",
