@@ -71,17 +71,17 @@
         <hr class="md-down:-mx-gutter w-auto">
       </div>
 
-      <div class="border-top border-bottom hidden md:block no-js-visible">
+      <div class="border-top hidden md:block no-js-visible">
         <ul class="list-none flex flex-wrap pt-3 pb-3 -blog-mx-2 lg:blog-text-lg" id="blog-filter-links">
           <li>
-            <a href="{{ blog.url }}" class="pt-2 pb-2 pl-4 pr-4 text-theme-text block{% unless current_tags %} font-bold underline{% endunless %}" data-tag="-">
+            <a href="{{ blog.url }}" class="pt-2 pb-2 pl-4 pr-4 text-theme-text block{% unless current_tags %} active{% endunless %}" data-tag="-">
               {{- 'blogs.filtering.all' | t -}}
             </a>
           </li>
           {% for tag in blog.all_tags %}
             <li>
               <a href="{{ tag | link_to_tag: tag | split: 'href="' | last | split: '"' | first }}" data-tag="{{ tag | escape }}"
-                 class="pt-2 pb-2 pl-4 pr-4 text-theme-text block{% if current_tags contains tag %} font-bold underline{% endif %}">
+                 class="pt-2 pb-2 pl-4 pr-4 text-theme-text block{% if current_tags contains tag %} active{% endif %}">
                 {{- tag -}}
               </a>
             </li>
