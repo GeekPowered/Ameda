@@ -286,72 +286,6 @@
     "7dbc7bd2-0a65-4654-9735-26944264824b": {
       "type": "slideshow",
       "blocks": {
-        "template--21856551764283__7dbc7bd2-0a65-4654-9735-26944264824b-slide-1": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/pearl-banner.png",
-            "url": "",
-            "overlay_position": "justify-center items-center",
-            "overlay_text_align": "text-center",
-            "mob_center_text": false,
-            "subheading": "",
-            "heading": "Powerful. Protective. Pearl®",
-            "heading_size": "h0",
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": false,
-            "button_1_label": "Learn More",
-            "button_1_link": "shopify:\/\/products\/ameda®-pearl®-hospital-grade-breast-pump",
-            "button_1_style": "btn btn--primary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary",
-            "transparent_content_color": "#ffffff",
-            "countdown_show": false,
-            "countdown_end_date": "",
-            "countdown_end_time": "",
-            "countdown_end_text": "",
-            "enlarge_end_text": false,
-            "countdown_hide_on_end": false,
-            "use_custom_colors": false,
-            "count_color": "#ffffff",
-            "bg_color": "#070707",
-            "bg_grad": ""
-          }
-        },
-        "6a292fed-bd4c-4db6-971c-7f05c17d8770": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/ameda-app.png",
-            "url": "https:\/\/play.google.com\/store\/apps\/details?id=com.ameda.app&pcampaignid=web_share",
-            "overlay_position": "justify-center items-center",
-            "overlay_text_align": "text-center",
-            "mob_center_text": false,
-            "subheading": "Try the NEW",
-            "heading": "Ameda Baby App",
-            "heading_size": "h0",
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_1_label": "Learn More",
-            "button_1_link": "https:\/\/play.google.com\/store\/apps\/details?id=com.ameda.app",
-            "button_1_style": "btn btn--primary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary",
-            "transparent_content_color": "#ffffff",
-            "countdown_show": false,
-            "countdown_end_date": "",
-            "countdown_end_time": "",
-            "countdown_end_text": "",
-            "enlarge_end_text": false,
-            "countdown_hide_on_end": false,
-            "use_custom_colors": false,
-            "count_color": "#ffffff",
-            "bg_color": "#070707",
-            "bg_grad": ""
-          }
-        },
         "slide_FwQChw": {
           "type": "slide",
           "settings": {
@@ -384,12 +318,44 @@
             "bg_color": "#070707",
             "bg_grad": ""
           }
+        },
+        "template--21856551764283__7dbc7bd2-0a65-4654-9735-26944264824b-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/pearl-banner.png",
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "Powerful. Protective. Pearl®",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": false,
+            "button_1_label": "Learn More",
+            "button_1_link": "shopify:\/\/products\/ameda®-pearl®-hospital-grade-breast-pump",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
         }
       },
       "block_order": [
-        "template--21856551764283__7dbc7bd2-0a65-4654-9735-26944264824b-slide-1",
-        "6a292fed-bd4c-4db6-971c-7f05c17d8770",
-        "slide_FwQChw"
+        "slide_FwQChw",
+        "template--21856551764283__7dbc7bd2-0a65-4654-9735-26944264824b-slide-1"
       ],
       "settings": {
         "height_mode": "fixed",
