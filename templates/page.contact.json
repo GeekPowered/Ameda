@@ -55,7 +55,7 @@
         "template--21856552386875__7f110c36-d21b-4d2e-a02b-17889f958b35-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Hours of Operation:<\/strong><br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CST<\/p>",
+            "text": "<p><strong>Hours of Operation:<\/strong><br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CT<\/p>",
             "enlarge_text": true
           }
         },
@@ -99,7 +99,7 @@
         "a2de7a20-e4b2-4554-a6f3-a70e9b6b4f77": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Hours of Operation:<\/strong><br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CST<\/p>",
+            "text": "<p><strong>Hours of Operation:<\/strong><br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CT<\/p>",
             "enlarge_text": true
           }
         },
@@ -136,6 +136,7 @@
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
+        "color_scheme": "none",
         "prevent_animation": false
       }
     },
