@@ -31,7 +31,7 @@
         "show_filter_deadends": true,
         "max_filter_options": 7,
         "enable_sorting": true,
-        "show_feat_sort_opt": true,
+        "show_feat_sort_opt": false,
         "sort_first": true
       }
     }

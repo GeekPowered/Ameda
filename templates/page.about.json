@@ -53,7 +53,7 @@
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "The first name in breast pumps.",
+            "heading": "The First Name in Breast Pumps.",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -233,7 +233,7 @@
             "heading": "Platinum®",
             "text": "<p>Take the quality and peace of mind of the hospital home with you by renting the Platinum pump.<\/p>",
             "button_label": "Learn More",
-            "button_link": ""
+            "button_link": "shopify:\/\/products\/ameda-platinum-multi-user-hospital-grade-electric-breast-pump"
           }
         },
         "template--21939474530619__7c2afcd6-707e-4619-8790-89a3b68da3f0-column-3": {
@@ -256,8 +256,8 @@
             "media_scale": 100,
             "heading": "Deluxe Penguin Warmer",
             "text": "<p>Safely, effectively, and consistently warm breast milk to mom’s ideal body temperature range every time.<\/p>",
-            "button_label": "",
-            "button_link": ""
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/products\/ameda-deluxe-penguin-nutritional-breast-milk-warmer-single-well"
           }
         }
       },
@@ -474,8 +474,8 @@
         "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-button-1": {
           "type": "button",
           "settings": {
-            "button_1_label": "Shop Now",
-            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_label": "Shop Pumps",
+            "button_1_link": "shopify:\/\/collections\/breast-pumps",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
