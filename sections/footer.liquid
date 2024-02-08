@@ -186,6 +186,7 @@
         {% if section.settings.show_powered_by %}
           <span>{{ powered_by_link }}</span>
         {% endif %}
+      {%- if section.settings.extra_footer_text -%}{{ section.settings.extra_footer_text }}{%- endif -%}
       {%- if section.settings.powered_by_gps -%}| <a target="_blank" href="https://www.geekpoweredstudios.com/">Site by GPS ⚡</a>{%- endif -%}
       </div>
       {%- if section.settings.secondary_menu != blank -%}
@@ -253,6 +254,11 @@
       "id": "show_powered_by",
       "label": "Show 'Powered by Shopify'",
       "default": true
+    },
+    {
+      "type": "richtext",
+      "id": "extra_footer_text",
+      "label": "Extra Bottom Footer Text"
     },
     {
       "type": "checkbox",
