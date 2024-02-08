@@ -499,6 +499,7 @@
 
       ],
       "settings": {
+        "content": "Lorem ipsum dolor sit amet"
       }
     },
     "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67": {
@@ -637,6 +638,7 @@
       "settings": {
         "subtitle": "Get Connected",
         "title": "Join The #Ameda Family!",
+        "content": "Lorem ipsum dolor sit amet",
         "embed_code": "<script src=\"https:\/\/static.elfsight.com\/platform\/platform.js\" data-use-service-core defer><\/script>\n<div class=\"elfsight-app-09c01c85-1f70-4ab0-86c9-9a5335555020\" data-elfsight-app-lazy><\/div>"
       }
     },
