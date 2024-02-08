@@ -31,7 +31,8 @@
       "type": "main-blog",
       "custom_css": [
         "ul#blog-filter-links {gap: 0.5rem;}",
-        "ul#blog-filter-links li a {border: 1px solid #ef9aa0; border-radius: 20rem; font-size: 1.25rem; background: #fff; font-weight: bold;}"
+        "ul#blog-filter-links li a {border: 1px solid #ef9aa0; border-radius: 20rem; font-size: 1.25rem; background: #fff; font-weight: bold;}",
+        "ul#blog-filter-links li a.active {background: #ef9aa0 !important; color: #fff;}"
       ],
       "settings": {
         "show_blog_title": false,
