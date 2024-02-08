@@ -38,7 +38,7 @@
           "settings": {
             "image_width": 150,
             "heading": "",
-            "text": "<p><strong>Ameda ParentCare<\/strong><\/p><p>1-866-992-6332<\/p><p>parentcare@ameda.com<\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CST<\/p><p><strong>Ameda CustomerCare<\/strong><\/p><p>1-866-992-6332<\/p><p>orders@ameda.com<\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CST<\/p>",
+            "text": "<h2><strong>Ameda ParentCare<\/strong><\/h2><p>1-866-992-6332<\/p><p>parentcare@ameda.com<\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CST<\/p><h2><strong>Ameda CustomerCare<\/strong><\/h2><p>1-866-992-6332<\/p><p>orders@ameda.com<\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CST<\/p>",
             "button_label": "",
             "button_link": "",
             "enable_follow_on_shop": false,
@@ -53,10 +53,14 @@
         "link-list-1",
         "e42c3573-17d8-4422-84bb-e40f7070ecaa"
       ],
+      "custom_css": [
+        "footer h2 {color: #1a4049; font-size: 2rem !important; margin-bottom: 1em;}"
+      ],
       "settings": {
         "show_back_to_top": false,
         "show_payment_icons": false,
         "show_powered_by": false,
+        "powered_by_gps": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "secondary_menu": "",
