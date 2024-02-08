@@ -10,8 +10,8 @@
         "selected_collections": [
 
         ],
-        "collections_per_page": 16,
-        "card_size": "small",
+        "collections_per_page": 50,
+        "card_size": "large",
         "use_product_image": false
       }
     }
