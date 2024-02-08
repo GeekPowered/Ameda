@@ -2,8 +2,8 @@
 
 <div class="section section--padded helpful-links">
     <div class="container">
-        <h2 class="section__heading text-center{% if section.settings.content %}{{ ' mb-0' }}{% endif %}">We're Here For You</h2>
-        {%- if section.settings.content -%}<p class="enlarge-text text-center">{{ section.settings.content }}</p>{%- endif -%}
+        <h2 class="section__heading text-center{% if section.settings.section_content %}{{ ' mb-0' }}{% endif %}">We're Here For You</h2>
+        {%- if section.settings.section_content -%}<p class="enlarge-text text-center">{{ section.settings.section_content }}</p>{%- endif -%}
         <div class="helpful-links_list">
             {% for block in section.blocks %}
                 <div class="helpful-links_item">
@@ -35,8 +35,8 @@
   "settings": [
     {
       "type": "text",
-      "label": "Content",
-      "id": "content"
+      "label": "Subtitle Content",
+      "id": "section_content"
     }
   ],
   "blocks": [
