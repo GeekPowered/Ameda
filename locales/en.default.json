@@ -546,7 +546,8 @@
       "type": "Product type",
       "vendor": "Product vendor",
       "sku": "SKU1234",
-      "description": "A description of the product, including details such as build quality, materials used and reasons to purchase."
+      "description": "A description of the product, including details such as build quality, materials used and reasons to purchase.",
+      "view_product": "View Product"
     }
   },
   "shopify": {
