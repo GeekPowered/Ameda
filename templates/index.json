@@ -24,8 +24,8 @@
             "button_1_label": "Shop Now",
             "button_1_link": "shopify:\/\/collections",
             "button_1_style": "btn btn--primary",
-            "button_2_label": "Get In Touch",
-            "button_2_link": "shopify:\/\/pages\/contact",
+            "button_2_label": "Get A Pump With Insurance",
+            "button_2_link": "shopify:\/\/pages\/insurance",
             "button_2_style": "btn btn--secondary"
           }
         }
@@ -39,8 +39,8 @@
         "image_desktop": "shopify:\/\/shop_images\/breastfeeding-hero.jpg",
         "url": "",
         "height_mode": "fixed",
-        "fixed_height_desktop": 600,
-        "fixed_height_mobile": 350,
+        "fixed_height_desktop": 550,
+        "fixed_height_mobile": 500,
         "overlay_position": "justify-start items-center",
         "overlay_text_align": "text-start",
         "mob_center_text": false,
@@ -132,67 +132,67 @@
         "69399623-3cdd-431f-a55e-2e997c84bbc6": {
           "type": "text",
           "settings": {
-            "text": "WHO Compliant Technology",
+            "text": "Exceptional Mom Support",
             "link": "",
             "font": "heading",
-            "heading_size": "h1"
+            "heading_size": "h3"
           }
         },
         "f31e305c-e8b3-4dfa-a550-51d42e5d2f4f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/who-logo.png",
+            "image": "shopify:\/\/shop_images\/mothers.svg",
             "image_height": 48,
             "link": ""
           }
         },
-        "scrolling-text-1": {
+        "text_xwWLHG": {
           "type": "text",
           "settings": {
-            "text": "First FDA-Approved Viral Barrier",
+            "text": "Only FDA-Cleared Viral Barrier",
             "link": "",
             "font": "heading",
-            "heading_size": "h1"
+            "heading_size": "h3"
           }
         },
-        "d1ca9935-c69e-495a-9dc5-2de789949cb5": {
+        "image_3FkNBc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fda-approved.png",
+            "image": "shopify:\/\/shop_images\/viral-barrier.svg",
             "image_height": 48,
             "link": ""
           }
         },
-        "d1c63dc0-87cd-42b9-a504-b0ab85e1ab15": {
+        "text_VL4Rpk": {
           "type": "text",
           "settings": {
-            "text": "Trusted by 100+ Hospitals",
+            "text": "Inventors of Breast Pump Tech",
             "link": "",
             "font": "heading",
-            "heading_size": "h1"
+            "heading_size": "h3"
           }
         },
-        "7662715e-6110-4e48-8fa2-f297a6b563c3": {
+        "image_KVPXgN": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/medical-logo.png",
+            "image": "shopify:\/\/shop_images\/pump.svg",
             "image_height": 48,
             "link": ""
           }
         },
-        "75529892-7926-4e7a-8740-2fbeca912ac7": {
+        "text_QFC3eL": {
           "type": "text",
           "settings": {
-            "text": "Exceptional Mom Support",
+            "text": "Trusted by Hospitals",
             "link": "",
             "font": "heading",
-            "heading_size": "h1"
+            "heading_size": "h3"
           }
         },
-        "db9e90bb-9f15-4751-8dfd-d47abf8c5371": {
+        "image_hDwyBX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mom-support.png",
+            "image": "shopify:\/\/shop_images\/hospitals.svg",
             "image_height": 48,
             "link": ""
           }
@@ -201,19 +201,19 @@
       "block_order": [
         "69399623-3cdd-431f-a55e-2e997c84bbc6",
         "f31e305c-e8b3-4dfa-a550-51d42e5d2f4f",
-        "scrolling-text-1",
-        "d1ca9935-c69e-495a-9dc5-2de789949cb5",
-        "d1c63dc0-87cd-42b9-a504-b0ab85e1ab15",
-        "7662715e-6110-4e48-8fa2-f297a6b563c3",
-        "75529892-7926-4e7a-8740-2fbeca912ac7",
-        "db9e90bb-9f15-4751-8dfd-d47abf8c5371"
+        "text_xwWLHG",
+        "image_3FkNBc",
+        "text_VL4Rpk",
+        "image_KVPXgN",
+        "text_QFC3eL",
+        "image_hDwyBX"
       ],
       "settings": {
         "section_height": "medium",
         "spacing": 40,
         "speed": 24,
         "direction": "normal",
-        "pausable": true,
+        "pausable": false,
         "color_scheme": "1",
         "dividers": "none",
         "prevent_animation": false
@@ -286,6 +286,39 @@
     "7dbc7bd2-0a65-4654-9735-26944264824b": {
       "type": "slideshow",
       "blocks": {
+        "slide_FwQChw": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/ameda-app.png",
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "Buy One, Get One Free!",
+            "heading": "Mya JoyPLUS Pumping System",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "<p>Use Code: <strong>JPBOGO<\/strong><\/p>",
+            "enlarge_text": true,
+            "button_1_label": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
         "template--21856551764283__7dbc7bd2-0a65-4654-9735-26944264824b-slide-1": {
           "type": "slide",
           "settings": {
@@ -319,22 +352,22 @@
             "bg_grad": ""
           }
         },
-        "6a292fed-bd4c-4db6-971c-7f05c17d8770": {
+        "slide_3Ny9RQ": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/ameda-app.png",
-            "url": "https:\/\/play.google.com\/store\/apps\/details?id=com.ameda.app&pcampaignid=web_share",
+            "image_desktop": "shopify:\/\/shop_images\/finesse-breast-pump-user_1.jpg",
+            "url": "",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
-            "subheading": "Try the NEW",
-            "heading": "Ameda Baby App",
+            "subheading": "",
+            "heading": "Get a Free Breast Pump with Insurance",
             "heading_size": "h0",
             "heading_h1": false,
             "text": "",
-            "enlarge_text": true,
-            "button_1_label": "Learn More",
-            "button_1_link": "https:\/\/play.google.com\/store\/apps\/details?id=com.ameda.app",
+            "enlarge_text": false,
+            "button_1_label": "Apply Now",
+            "button_1_link": "shopify:\/\/pages\/insurance",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -354,8 +387,9 @@
         }
       },
       "block_order": [
+        "slide_FwQChw",
         "template--21856551764283__7dbc7bd2-0a65-4654-9735-26944264824b-slide-1",
-        "6a292fed-bd4c-4db6-971c-7f05c17d8770"
+        "slide_3Ny9RQ"
       ],
       "settings": {
         "height_mode": "fixed",
@@ -393,18 +427,26 @@
           "settings": {
           }
         },
-        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-description-1": {
-          "type": "description",
+        "metafield_Q47hqJ": {
+          "type": "metafield",
           "settings": {
-            "truncate_description": false,
-            "words_to_show": 20
+            "title": "Key Features",
+            "metafield_key": "product.key_features"
+          }
+        },
+        "metafield_dGLxYm": {
+          "type": "metafield",
+          "settings": {
+            "title": "Technical Features",
+            "metafield_key": "product.technical_features"
           }
         }
       },
       "block_order": [
         "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-product-1",
         "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-price-1",
-        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-description-1"
+        "metafield_Q47hqJ",
+        "metafield_dGLxYm"
       ],
       "custom_css": [
         ".product-comparison-grid {border: none;}",

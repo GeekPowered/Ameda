@@ -1,9 +1,40 @@
 {
   "sections": {
+    "rich_text_iGpyee": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fdG44c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Milk 101 Blog",
+            "heading_size": "h2",
+            "heading_h1": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_fdG44c"
+      ],
+      "custom_css": [
+        "h1 {margin-bottom: -4rem;}"
+      ],
+      "settings": {
+        "text_position": "justify-start",
+        "text_align": "text-start",
+        "mob_center_text": false,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
     "main": {
       "type": "main-blog",
+      "custom_css": [
+        "ul#blog-filter-links {gap: 0.5rem;}",
+        "ul#blog-filter-links li a {border: 1px solid #ef9aa0; border-radius: 20rem; font-size: 1.25rem; background: #fff; font-weight: bold;}"
+      ],
       "settings": {
-        "show_blog_title": true,
+        "show_blog_title": false,
         "description": "",
         "show_share_links": false,
         "text_align": "text-start",
@@ -12,7 +43,7 @@
         "show_tag_filter": true,
         "show_featured_image": true,
         "image_ratio": "shortest",
-        "show_tags": false,
+        "show_tags": true,
         "show_excerpt": false,
         "show_author": false,
         "show_date": true,
@@ -27,6 +58,7 @@
     }
   },
   "order": [
+    "rich_text_iGpyee",
     "main"
   ]
 }
