@@ -354,14 +354,9 @@
                 {%- endcapture -%}
 
                 {%- if current_variant.available == false %}
-                  <a href="{{ product_url }}" class="btn btn--primary w-full"
-                  name="add"
-                  aria-haspopup="dialog"> View Product</a>
+                  <a href="{{ product_url }}" class="btn btn--primary w-full" name="add" aria-haspopup="dialog"> View Product</a>
                 {% else %}
-                  <button class="btn btn--primary w-full"
-                data-add-to-cart-text="{{- button_text | escape -}}"
-                name="add"
-                aria-haspopup="dialog">
+                  <button class="btn btn--primary w-full" data-add-to-cart-text="{{- button_text | escape -}}" name="add" aria-haspopup="dialog">
                 {% endif %}
                   <span class="quick-add-btn-icon">
                     <span class="visually-hidden">{{- button_text -}}</span>
