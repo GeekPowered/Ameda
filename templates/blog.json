@@ -15,6 +15,9 @@
       "block_order": [
         "heading_fdG44c"
       ],
+      "custom_css": [
+        "h1 {margin-bottom: -4rem;}"
+      ],
       "settings": {
         "text_position": "justify-start",
         "text_align": "text-start",
