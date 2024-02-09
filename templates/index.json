@@ -706,6 +706,7 @@
         "full_width": false,
         "dividers": "none",
         "color_scheme": "2",
+        "baby_patterns": true,
         "prevent_animation": false
       }
     }
