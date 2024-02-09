@@ -55,7 +55,7 @@
           "settings": {
             "icon": "none",
             "heading": "What if I'm experiencing issues with my pump?",
-            "text": "<p>If you experience an issue with your pump, it falls within the warranty time frame, and you are the original owner, please contact our ParentCare team for assistance. In the United States, our Ameda ParentCare™ staff can answer consumer questions about proper use of Ameda® products, replacement parts and more. Give us a call at 1-866-992-6332 \/ 1-866-99-AMEDA or drop us a line at <a href=\"mailto:ParentCare@ameda.com\">ParentCare@ameda.com<\/a>. We are available Monday through Friday 8:00 a.m. – 4:30 p.m. Central Standard Time.<\/p>"
+            "text": "<p>If you experience an issue with your pump, it falls within the warranty time frame, and you are the original owner, please contact our ParentCare team for assistance. In the United States, our Ameda ParentCare™ staff can answer consumer questions about proper use of Ameda® products, replacement parts and more. Give us a call at 1-866-992-6332 \/ 1-866-99-AMEDA or drop us a line at <a href=\"mailto:ParentCare@ameda.com\">ParentCare@ameda.com<\/a>. We are available Monday through Friday 8:00 a.m. – 4:30 p.m. Central Time.<\/p>"
           }
         },
         "faq-question-2": {
@@ -95,7 +95,7 @@
           "settings": {
             "icon": "none",
             "heading": "Who should I contact if I have a performance issue with my pump?",
-            "text": "<p>We recommend that you call our ParentCare Department when you have a few minutes available at 866-992-6332 M-F 8:00am-4:30pm CST for warranty assistance. Due to the nature of our product, we need to conduct our product troubleshooting over the phone. Troubleshooting may include listening to your motor, so please have your pump and pump accessories readily available when calling. General questions can be emailed to parentcare@ameda.com.<\/p>"
+            "text": "<p>We recommend that you call our ParentCare Department when you have a few minutes available at 866-992-6332 M-F 8:00am-4:30pm CT for warranty assistance. Due to the nature of our product, we need to conduct our product troubleshooting over the phone. Troubleshooting may include listening to your motor, so please have your pump and pump accessories readily available when calling. General questions can be emailed to <a href=\"mailto:parentcare@ameda.com\" title=\"mailto:parentcare@ameda.com\">parentcare@ameda.com<\/a>.<\/p>"
           }
         },
         "faq-question-7": {
@@ -103,7 +103,7 @@
           "settings": {
             "icon": "none",
             "heading": "What if I have another issue with my pump?",
-            "text": "<p>Your Finesse breast pump carries a two-year product warranty and all other personal electric breast pumps from Ameda carry a one-year product warranty from the date of receipt and our ParentCare staff is here to assist you during your breast pumping journey. Please call our ParentCare Department at 866-992-6332 M-F 8:00 am-4:30pm CST when you have a few minutes to discuss any issues you are experiencing. We will provide troubleshooting support over the phone to determine if a product related issue exists. If we determine that our product is the root cause of the issue you are experiencing, we will assist you under the terms of the product warranty. If a product related issue is not found, our ParentCare Specialists can support you further by providing additional product education and guidance that may help enhance your overall lactation and pumping experience.<\/p>"
+            "text": "<p>Your Finesse breast pump carries a two-year product warranty and all other personal electric breast pumps from Ameda carry a one-year product warranty from the date of receipt and our ParentCare staff is here to assist you during your breast pumping journey. Please call our ParentCare Department at 866-992-6332 M-F 8:00 am-4:30pm CT when you have a few minutes to discuss any issues you are experiencing. We will provide troubleshooting support over the phone to determine if a product related issue exists. If we determine that our product is the root cause of the issue you are experiencing, we will assist you under the terms of the product warranty. If a product related issue is not found, our ParentCare Specialists can support you further by providing additional product education and guidance that may help enhance your overall lactation and pumping experience.<\/p>"
           }
         },
         "faq-category-2": {
@@ -176,14 +176,6 @@
             "text": "<p>The Mya pump uses a unique pump kit and flange system. The <a href=\"\/products\/ameda-hygienikit-universal-kit?_pos=1&_psq=hyg&_ss=e&_v=1.0\" target=\"_blank\" rel=\"noopener\">HygieniKit™ parts<\/a> and <a href=\"\/products\/ameda-customfit-breast-pump-flanges-and-inserts-comfort-fit-angled-flange\" target=\"_blank\" rel=\"noopener\">CustomFit™ Flanges<\/a> are not compatible with the Mya.<\/p>"
           }
         },
-        "faq-question-16": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "Mya is so small – will it be powerful enough to use when I go back to work?",
-            "text": "<p>Yes. The Mya pump features hospital strength performance and is designed for daily use by moms. It also features two modes of pumping (stimulation and expression) and a large range of settings for mom's comfort. Plus - Mya is so small and quiet, mom can take it with her where -ever she needs to go!<\/p>"
-          }
-        },
         "faq-category-3": {
           "type": "category",
           "settings": {
@@ -203,7 +195,7 @@
           "settings": {
             "icon": "none",
             "heading": "When should I pump?",
-            "text": "<p>Pumping is an art; the body needs me to adjust to this process. Practice and patience is required. We suggest you “get to know” your breast pump prior to returning to work or when first pumping to gather milk for a planned occasional separation. Pumping routinely to replace your nursing baby (i.e. returning to work):<\/p><ol><li>You must use your breast pump in accordance with the nursing schedule established by the nursing baby.<\/li> <li>Skipping pumping sessions will have a negative effect on your milk supply.<\/li> <\/ol><p>Pumping to gather milk for an occasional separation:<\/p><ol><li>Use your breast pump in between baby's nursing sessions.<\/li> <li>Single pump after a nursing session on the side that the baby finished nursing.<\/li> <li>You may need to combine expressed milk from multiple pumping sessions to create a full feeding for baby<\/li> <\/ol><p>Pumping for a pre-mature or ill baby:<\/p><ol><li>Consult your personal LC or other healthcare professional for further assessment of personal circumstances<\/li> <\/ol><h3>Replacing Valves<\/h3><p><a href='https:\/\/youtu.be\/otGENMJ6pWE'>WATCH VIDEO<\/a><\/p>"
+            "text": "<p>Pumping is an art; the body needs me to adjust to this process. Practice and patience is required. We suggest you “get to know” your breast pump prior to returning to work or when first pumping to gather milk for a planned occasional separation. Pumping routinely to replace your nursing baby (i.e. returning to work):<\/p><p>You must use your breast pump in accordance with the nursing schedule established by the nursing baby.<\/p><p>Skipping pumping sessions will have a negative effect on your milk supply.<\/p><p>Pumping to gather milk for an occasional separation:<\/p><p>Use your breast pump in between baby's nursing sessions.<\/p><p>Single pump after a nursing session on the side that the baby finished nursing.<\/p><p>You may need to combine expressed milk from multiple pumping sessions to create a full feeding for baby<\/p><p>Pumping for a pre-mature or ill baby:<\/p><p>Consult your personal LC or other healthcare professional for further assessment of personal circumstances<\/p><h4>Replacing Valves<\/h4><p><a href=\"https:\/\/youtu.be\/otGENMJ6pWE\">WATCH VIDEO<\/a><\/p>"
           }
         },
         "faq-question-19": {
@@ -317,7 +309,6 @@
         "faq-question-13",
         "faq-question-14",
         "faq-question-15",
-        "faq-question-16",
         "faq-category-3",
         "faq-question-17",
         "faq-question-18",
