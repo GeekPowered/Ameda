@@ -15,6 +15,24 @@
           }
         }
       }
+    },
+    "1ff950cf-34b7-4e69-b8e2-53d2fadb9987": {
+      "settings": {
+      },
+      "blocks": {
+        "e37a882a-f355-4d2b-a7c2-b81f8dc58268": {
+          "settings": {
+            "content": "Breastfeeding is beneficial for you, your baby, and the community."
+          }
+        },
+        "49895fd3-000e-42d9-b379-e4cc79369f0f": {
+          "settings": {
+            "content": "Frequently asked questions about products, pumping, insurance and more!",
+            "url": "shopify:\/\/pages\/faq",
+            "title": "FAQs"
+          }
+        }
+      }
     }
   }
 }
