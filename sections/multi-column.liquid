@@ -113,7 +113,7 @@
               endif
             -%}
             <li class="multi-column grow w-full max-w-none{% if carousel %} slider__item{% endif %}" {{ block.shopify_attributes }}{% if settings.animations_enabled != "disabled" %} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"{% endif %}>
-              <div class="card{% if block.settings.video_shopify != blank %} video-section{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %} relative flex flex-col h-full">
+              <div class="card{% if block.settings.video_shopify != blank %} video-section{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %} relative flex flex-col h-full {% if section.settings.baby_pattern == true %} baby-pattern{% endif %}">
                 {%- if block.settings.enable_media -%}
                   {%- liquid
                     if section.settings.column_size == 'small'
@@ -398,6 +398,12 @@
         }
       ],
       "default": "1"
+    },
+    {
+      "type": "checkbox",
+      "id": "baby_pattern",
+      "label": "Baby Pattern",
+      "default": true
     },
     {
       "type": "select",
