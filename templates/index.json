@@ -114,6 +114,7 @@
         "media_align": "text-center",
         "image_ratio": "1",
         "color_scheme": "3",
+        "baby_pattern": true,
         "button_style": "btn btn--secondary"
       }
     },
@@ -650,7 +651,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "3",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": true
       }
     },
     "8d53da5e-9774-4a39-be6d-1a6719422617": {
