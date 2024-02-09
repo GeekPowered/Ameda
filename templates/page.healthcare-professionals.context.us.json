@@ -47,6 +47,29 @@
           }
         }
       }
+    },
+    "wave_section_fAkqj3": {
+      "custom_css": [
+        ".wave-container {z-index: 1;}"
+      ],
+      "settings": {
+        "wavetype": "bottom",
+        "waveposition": "top",
+        "wavesvgcolor": "#ffffff",
+        "wavebgcolor": "rgba(0,0,0,0)"
+      },
+      "blocks": {
+      }
+    },
+    "d8cce70e-a0fa-49e3-af4a-6e92df06e86c": {
+      "custom_css": [
+        ".section--full-width {padding-top: 10rem;}",
+        "@media (max-width: 767px) {.section--full-width {padding-top: 8rem; }}"
+      ],
+      "settings": {
+      },
+      "blocks": {
+      }
     }
   }
 }
