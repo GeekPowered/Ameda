@@ -4720,7 +4720,7 @@ label[data-swatch]::before {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.25;
+  opacity: 0.1;
   background-image: url('https://cdn.shopify.com/s/files/1/0849/8062/9819/files/baby-pattern-white.png?v=1707496923');
   background-size: 50rem;
 }
