@@ -4,5 +4,10 @@
     "market": "us"
   },
   "sections": {
-  }
+  },
+  "order": [
+    "main",
+    "image-banner",
+    "faq_page_xGnc6n"
+  ]
 }
