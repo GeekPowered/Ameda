@@ -1,0 +1,8 @@
+{
+  "parent": "page.faqs.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+  }
+}
