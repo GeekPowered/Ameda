@@ -7,7 +7,7 @@
     .table-wrapper table th {
       border: none;
     }
-    .table-wrapper table thead tr img {
+    .table-wrapper table tbody tr img {
       width: 20rem;
       display: block;
       margin: 0 auto 1rem auto;
@@ -22,7 +22,7 @@
       text-align: center;
       text-transform: uppercase;
     }
-    .table-wrapper table tbody tr:nth-child(even):not(:first-of-type) {
+    .table-wrapper table tbody tr:nth-child(odd):not(:first-of-type) {
       background-color: #fff;
     }
     .table-wrapper .pink-check {
@@ -43,11 +43,6 @@
 <div class="table-wrapper">
 <table>
   <thead>
-    <tr style="background: white;">
-        <th></th>
-        <th colspan="2"><img src="/cdn/shop/products/01.jpg"></th>
-        <th colspan="2"><img src="/cdn/shop/products/AMED_ProductPhoto_1.jpg"></th>
-    </tr>
     <tr class="pink">
       <th></th>
       <th colspan="2">Personal Pumps</th>
@@ -55,6 +50,13 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td><img src="/cdn/shop/products/sku_131a40_010_rgb_2_d5aa24c1-5a80-4b7b-a085-122a92dc2dff.jpg"></td>
+      <td><img src="/cdn/shop/products/01.jpg"></td>
+      <td><img src="/cdn/shop/products/AMED_ProductPhoto_1.jpg"></td>
+      <td><img src="/cdn/shop/products/17803_3.png"></td>
+    </tr>
     <tr>
       <th scope="row">PUMP MODEL</th>
       <td>Mya Joy</td>
