@@ -114,7 +114,7 @@
         "media_align": "text-center",
         "image_ratio": "1",
         "color_scheme": "3",
-        "baby_pattern": true,
+        "baby_patterns": true,
         "button_style": "btn btn--secondary"
       }
     },
