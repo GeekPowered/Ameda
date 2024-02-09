@@ -11,7 +11,7 @@
     <div class="container">
   {%- endunless -%}
 
-  <div class="section{% if section.settings.full_width %} section--full-width{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% endif %} section--padded-{{ section.settings.section_height }}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}" id="{{ section.id }}">
+  <div class="section{% if section.settings.full_width %} section--full-width{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% endif %} section--padded-{{ section.settings.section_height }}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_pattern == true %} baby-pattern{% endif %}" id="{{ section.id }}">
     <div class="container text-center flex-wrap flex-auto items-center justify-center gap-x-theme promo-strip__container"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -129,6 +129,12 @@
       "type": "checkbox",
       "id": "full_width",
       "label": "Make section background full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "baby_pattern",
+      "label": "Baby Pattern",
       "default": true
     },
     {
