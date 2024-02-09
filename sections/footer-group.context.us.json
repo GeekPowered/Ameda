@@ -1,0 +1,19 @@
+{
+  "parent": "footer-group.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "footer": {
+      "settings": {
+      },
+      "blocks": {
+        "e42c3573-17d8-4422-84bb-e40f7070ecaa": {
+          "settings": {
+            "text": "<h2><strong>Ameda ParentCare<\/strong><\/h2><p><a href=\"tel:1-866-992-6332\" title=\"tel:1-866-992-6332\">1-866-992-6332<\/a><\/p><p><a href=\"mailto:parentcare@ameda.com\" title=\"mailto:parentcare@ameda.com\">parentcare@ameda.com<\/a><\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CT<\/p><p><br\/><\/p><h2><strong>Ameda CustomerCare<\/strong><\/h2><p><a href=\"tel:1-866-992-6332\" title=\"tel:1-866-992-6332\">1-866-992-6332<\/a><\/p><p><a href=\"mailto:orders@ameda.com\" title=\"mailto:orders@ameda.com\">orders@ameda.com<\/a><\/p><p>Monday - Friday<\/p><p>8 a.m. – 5 p.m. CT<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

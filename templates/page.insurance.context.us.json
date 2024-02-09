@@ -1,0 +1,67 @@
+{
+  "parent": "page.insurance.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "084c9bf7-9db6-4b91-9bf9-e234e1a59348": {
+      "settings": {
+      },
+      "blocks": {
+        "template--21965917618491__084c9bf7-9db6-4b91-9bf9-e234e1a59348-text-1": {
+          "settings": {
+            "text": "<p>Congratulations, mama! We're thrilled about your choice to nourish your baby with breast milk. Let’s see if you qualify for an Ameda breast pump through insurance at no charge!<\/p>",
+            "enlarge_text": true
+          }
+        }
+      }
+    },
+    "1ff950cf-34b7-4e69-b8e2-53d2fadb9987": {
+      "settings": {
+      },
+      "blocks": {
+        "e37a882a-f355-4d2b-a7c2-b81f8dc58268": {
+          "settings": {
+            "content": "Breastfeeding is beneficial for you, your baby, and the community."
+          }
+        },
+        "49895fd3-000e-42d9-b379-e4cc79369f0f": {
+          "settings": {
+            "title": "FAQs",
+            "content": "Frequently asked questions about products, pumping, insurance and more!",
+            "url": "shopify:\/\/pages\/faq"
+          }
+        }
+      }
+    },
+    "custom_liquid_c3M3xA": {
+      "settings": {
+        "custom_liquid": "<div style=\"    width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 2rem;\n    border-radius: 1.75rem;\"><h3>The journey to an insurance-covered pump starts here.<\/h3>\n<div id=\"S6JyNwYUyN12xu6yEI_d8Q\" class=\"pxFormGenerator\" style=\"margin: 0 auto;\"><\/div>\n<p><em>By clicking submit, you are agreeing that Ameda can contact you with updates about qualifying for your free pump.<\/em><\/p><\/div>"
+      },
+      "blocks": {
+      }
+    },
+    "70b6796a-4aa7-4791-9ea6-72e90afed64c": {
+      "settings": {
+      },
+      "blocks": {
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-1": {
+          "settings": {
+            "text": "<p>Submit Contact Form Below<\/p>"
+          }
+        }
+      }
+    },
+    "76cc895e-4cdb-4512-a4b6-0dca61f30110": {
+      "settings": {
+      },
+      "blocks": {
+        "template--21965917618491__76cc895e-4cdb-4512-a4b6-0dca61f30110-text-1": {
+          "settings": {
+            "text": "<p>Fill out the following form to see if you qualify for a <strong>FREE<\/strong> Ameda pump through your insurance. One of our trusted partners will be in contact with you once your form has been completed and received.<\/p>"
+          }
+        }
+      }
+    }
+  }
+}
