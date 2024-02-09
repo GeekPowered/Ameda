@@ -4,5 +4,12 @@
     "market": "us"
   },
   "sections": {
+    "d97afc36-38ed-43a4-b139-382503e8f87e": {
+      "settings": {
+        "baby_patterns": false
+      },
+      "blocks": {
+      }
+    }
   }
 }
