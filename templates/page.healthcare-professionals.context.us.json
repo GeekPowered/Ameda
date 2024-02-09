@@ -53,10 +53,10 @@
         ".wave-container {z-index: 1;}"
       ],
       "settings": {
-        "wavetype": "bottom",
-        "waveposition": "top",
+        "wavebgcolor": "rgba(0,0,0,0)",
         "wavesvgcolor": "#ffffff",
-        "wavebgcolor": "rgba(0,0,0,0)"
+        "wavetype": "bottom",
+        "waveposition": "top"
       },
       "blocks": {
       }
@@ -69,6 +69,17 @@
       "settings": {
       },
       "blocks": {
+      }
+    },
+    "38ede330-6dde-49f6-b43f-9314978853d6": {
+      "settings": {
+      },
+      "blocks": {
+        "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-2": {
+          "settings": {
+            "button_link": "shopify:\/\/collections\/breast-pumps"
+          }
+        }
       }
     }
   }
