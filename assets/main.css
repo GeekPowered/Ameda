@@ -4723,4 +4723,9 @@ label[data-swatch]::before {
   opacity: 0.1;
   background-image: url('https://cdn.shopify.com/s/files/1/0849/8062/9819/files/baby-pattern-white.png?v=1707496923');
   background-size: 50rem;
+  z-index: 0;
+}
+
+.baby-pattern > * {
+  z-index: 1;
 }
