@@ -287,6 +287,39 @@
     "7dbc7bd2-0a65-4654-9735-26944264824b": {
       "type": "slideshow",
       "blocks": {
+        "slide_3Ny9RQ": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/finesse-breast-pump-user_1.jpg",
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "Get a Free Breast Pump with Insurance",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": false,
+            "button_1_label": "Apply Now",
+            "button_1_link": "shopify:\/\/pages\/insurance",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
         "slide_FwQChw": {
           "type": "slide",
           "settings": {
@@ -352,45 +385,12 @@
             "bg_color": "#070707",
             "bg_grad": ""
           }
-        },
-        "slide_3Ny9RQ": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/finesse-breast-pump-user_1.jpg",
-            "url": "",
-            "overlay_position": "justify-center items-center",
-            "overlay_text_align": "text-center",
-            "mob_center_text": false,
-            "subheading": "",
-            "heading": "Get a Free Breast Pump with Insurance",
-            "heading_size": "h0",
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": false,
-            "button_1_label": "Apply Now",
-            "button_1_link": "shopify:\/\/pages\/insurance",
-            "button_1_style": "btn btn--primary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary",
-            "transparent_content_color": "#ffffff",
-            "countdown_show": false,
-            "countdown_end_date": "",
-            "countdown_end_time": "",
-            "countdown_end_text": "",
-            "enlarge_end_text": false,
-            "countdown_hide_on_end": false,
-            "use_custom_colors": false,
-            "count_color": "#ffffff",
-            "bg_color": "#070707",
-            "bg_grad": ""
-          }
         }
       },
       "block_order": [
+        "slide_3Ny9RQ",
         "slide_FwQChw",
-        "template--21856551764283__7dbc7bd2-0a65-4654-9735-26944264824b-slide-1",
-        "slide_3Ny9RQ"
+        "template--21856551764283__7dbc7bd2-0a65-4654-9735-26944264824b-slide-1"
       ],
       "settings": {
         "height_mode": "fixed",
@@ -401,8 +401,8 @@
         "pagination_color": "#ffffff",
         "nav_position": "justify-center",
         "transition": "slide-fade",
-        "autoplay": false,
-        "slider_pause": false,
+        "autoplay": true,
+        "slider_pause": true,
         "autoplay_speed": 5,
         "color_scheme": "white",
         "full_width": true,
