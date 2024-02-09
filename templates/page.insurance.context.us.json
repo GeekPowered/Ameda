@@ -36,7 +36,7 @@
     },
     "custom_liquid_c3M3xA": {
       "settings": {
-        "custom_liquid": "<div style=\"    width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 2rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2);\"><h3>The journey to an insurance-covered pump starts here.<\/h3>\n<div id=\"S6JyNwYUyN12xu6yEI_d8Q\" class=\"pxFormGenerator\" style=\"margin: 0 auto;\"><\/div>\n<p>By clicking submit, you are agreeing that Ameda can contact you with updates about qualifying for your free pump.<\/p><\/div>"
+        "custom_liquid": "<div style=\"    width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 2rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2);\"><h3>The journey to an insurance-covered pump starts here.<\/h3>\n<div id=\"S6JyNwYUyN12xu6yEI_d8Q\" class=\"pxFormGenerator\" style=\"margin: 0 auto;\"><\/div>\n<p><em>By clicking submit, you are agreeing that Ameda can contact you with updates about qualifying for your free pump.<\/em><\/p><\/div>"
       },
       "blocks": {
       }
