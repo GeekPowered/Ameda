@@ -4728,4 +4728,5 @@ label[data-swatch]::before {
 
 .baby-pattern > * {
   z-index: 1;
+  position: relative;
 }
