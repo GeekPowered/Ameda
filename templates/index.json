@@ -101,7 +101,7 @@
       "custom_css": [
         ".card {border-radius: 1rem; overflow: hidden;}",
         ".card__info > div {margin: 0;}",
-        ".card__info > div a {border: 0; padding: 0; font-size: var(--h2-font-size); font-weight: bold; font-family: var(--heading-font-family);}"
+        ".card__info > div a {border: 0; padding: 0; font-size: var(--h2-font-size); font-weight: bold; font-family: var(--heading-font-family); z-index: 1;}"
       ],
       "settings": {
         "title": "",
@@ -688,11 +688,14 @@
     },
     "wave_section_cwRixD": {
       "type": "wave-section",
+      "custom_css": [
+        ".wave-container {z-index: 1;}"
+      ],
       "settings": {
         "wavebgcolor": "rgba(0,0,0,0)",
-        "wavesvgcolor": "{{ shop.brand.colors.secondary[0].background }}",
-        "wavetype": "top",
-        "waveposition": ""
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "bottom",
+        "waveposition": "top"
       }
     },
     "custom_liquid_4GpYky": {
@@ -701,7 +704,7 @@
 
       ],
       "settings": {
-        "custom_liquid": "{% render 'subscription-form' %}",
+        "custom_liquid": "<div style=\"padding-top:4rem;\"><\/div>\n{% render 'subscription-form' %}",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
