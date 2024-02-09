@@ -4,5 +4,12 @@
     "market": "us"
   },
   "sections": {
+    "custom_liquid_RBbXEP": {
+      "settings": {
+        "custom_liquid": "<h2 class=\"text-center\">Contact Us<\/h2>\n<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"wfqqv0qOYcIYBOXUwilzCw\"><\/div>"
+      },
+      "blocks": {
+      }
+    }
   }
 }
