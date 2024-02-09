@@ -233,7 +233,7 @@
           "settings": {
             "icon": "none",
             "heading": "Troubleshooting Uneven Suction or Suction on one side only",
-            "text": "<p>Uneven suction or suction on one side only may be a sign that it is time for routine replacement of your valves as the pump motor cannot create uneven suction or suction on one side only (unless you are set up to single pump). Valves are the small, clear silicone, triangle shaped pieces that attach to the flange and hang down into the milk collection container during pumping.)<\/p><ol><li>Replace the valve on the pumping side that is not working with a brand new, unused valve. <ol><li>A spare set can be found with the lids and locking disks that were included with your pump<\/li> <li>Additional valves can also be purchased thru several online retailers such Amazon.com or Target.com.<\/li> <\/ol><\/li> <\/ol><p>Using the wrong size the flange can create suction issues, discomfort while pumping and negatively affect your milk production.Learn more about how the proper flange fit can affect suction below:<\/p><ul><li>Nipple size variance from breast to breast is not uncommon. You may need a different size flange for each breast<\/li> <li>Using the wrong size flange can create suction issues, discomfort while pumping and negatively affect your milk production<\/li> <li>Nipple size and breast tissue may naturally change during your breast pumping journey. The flange size that was proper for you when you began pumping may not be the proper size after time has passed<\/li> <li>Verify that the tubing adapter is inserted firmly into the tubing adapter port<\/li> <li>Visibly inspect the tubing adapter for any signs of damage<\/li> <li>Defects in the tubing adapter may be the cause uneven suction<\/li> <li>Focus on the side that isn’t working<\/li> <li>Starting with the valve, switch piece parts, one at a time, from the side that is working to the side that isn’t working. This will isolate the piece part that is causing the issue.<\/li> <li>If the lower suction stays with the same breast regardless of switching piece parts, then the suction issue is most likely due to Mom’s anatomy<\/li> <li>Check flange fit on the nipple of the breast that is having low suction<\/li> <\/ul><p>Keep in mind that if only one side is working, you can single pump with the working side until you obtain replacement valves. To single pump:<\/p><ul><li>Remove the tubing set up that is not providing suction from the pump.<\/li> <li>Close off the port that you are not using with the white, tail like piece that is attached to the tubing adapter<\/li> <li>You must close off the unused port to single pump.<\/li> <li>Suction levels will be stronger when single pumping<\/li> <\/ul><p>Download the <a href=\"\/pages\/instructions-for-use\" rel=\"noopener\" target=\"_blank\">HygieniKit IFU<\/a> for more information.<\/p><h3>Uneven Suction<\/h3><a href=\"https:\/\/youtu.be\/nrCcw5eGYVQ\" style=\"cursor: pointer;\">WATCH VIDEO<\/a>"
+            "text": "<p>Uneven suction or suction on one side only may be a sign that it is time for routine replacement of your valves as the pump motor cannot create uneven suction or suction on one side only (unless you are set up to single pump). Valves are the small, clear silicone, triangle shaped pieces that attach to the flange and hang down into the milk collection container during pumping.)<\/p><ol><li>Replace the valve on the pumping side that is not working with a brand new, unused valve.<\/li><\/ol><p>Using the wrong size the flange can create suction issues, discomfort while pumping and negatively affect your milk production.Learn more about how the proper flange fit can affect suction below:<\/p><ul><li>Nipple size variance from breast to breast is not uncommon. You may need a different size flange for each breast<\/li><li>Using the wrong size flange can create suction issues, discomfort while pumping and negatively affect your milk production<\/li><li>Nipple size and breast tissue may naturally change during your breast pumping journey. The flange size that was proper for you when you began pumping may not be the proper size after time has passed<\/li><li>Verify that the tubing adapter is inserted firmly into the tubing adapter port<\/li><li>Visibly inspect the tubing adapter for any signs of damage<\/li><li>Defects in the tubing adapter may be the cause uneven suction<\/li><li>Focus on the side that isn’t working<\/li><li>Starting with the valve, switch piece parts, one at a time, from the side that is working to the side that isn’t working. This will isolate the piece part that is causing the issue.<\/li><li>If the lower suction stays with the same breast regardless of switching piece parts, then the suction issue is most likely due to Mom’s anatomy<\/li><li>Check flange fit on the nipple of the breast that is having low suction<\/li><\/ul><p>Keep in mind that if only one side is working, you can single pump with the working side until you obtain replacement valves. To single pump:<\/p><ul><li>Remove the tubing set up that is not providing suction from the pump.<\/li><li>Close off the port that you are not using with the white, tail like piece that is attached to the tubing adapter<\/li><li>You must close off the unused port to single pump.<\/li><li>Suction levels will be stronger when single pumping<\/li><\/ul><p>Download the <a href=\"\/pages\/instructions-for-use\" title=\"Instructions For Use\">HygieniKit IFU<\/a> for more information.<\/p><h3>Uneven Suction<\/h3><p><a href=\"https:\/\/youtu.be\/nrCcw5eGYVQ\" target=\"_blank\" title=\"https:\/\/youtu.be\/nrCcw5eGYVQ\">https:\/\/youtu.be\/nrCcw5eGYVQ<\/a><\/p>"
           }
         },
         "question_GP8WqP": {
@@ -325,17 +325,24 @@
         "question_E4yg3J",
         "question_dNiaRh"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_align": "text-center",
         "color_scheme": "none",
         "full_width": true
       }
+    },
+    "faq_page_xGnc6n": {
+      "type": "faq-page",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "image-banner",
-    "faqs"
+    "faqs",
+    "faq_page_xGnc6n"
   ]
 }
