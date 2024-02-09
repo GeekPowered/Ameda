@@ -70,7 +70,7 @@
 {%- endcapture -%}
 
 
-<div class="section section--full-width section--padded {% unless color_scheme == 'none' or section.settings.only_content_color_scheme %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}">
+<div class="section section--full-width section--padded {% unless color_scheme == 'none' or section.settings.only_content_color_scheme %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_pattern == true %} baby-pattern{% endif %}">
   <div class="container">
     <div class="media-with-text{% if section.settings.layout == 'right' %} media-with-text--reverse{% endif %}"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %} style="--media-width: {{ section.settings.media_width }}%">
       <div class="media-with-text__media{% if media_type == 'video' %} video-section{% endif %} relative flex flex-col justify-center overflow-hidden" style="--media-scale: {{ section.settings.media_scale | times: 0.01 }}">
@@ -316,6 +316,12 @@
       "type": "checkbox",
       "id": "only_content_color_scheme",
       "label": "Apply color scheme only to the content"
+    },
+    {
+      "type": "checkbox",
+      "id": "baby_pattern",
+      "label": "Baby Pattern",
+      "default": true
     }
   ],
   "blocks": [
