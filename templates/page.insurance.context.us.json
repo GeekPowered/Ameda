@@ -4,5 +4,17 @@
     "market": "us"
   },
   "sections": {
+    "084c9bf7-9db6-4b91-9bf9-e234e1a59348": {
+      "settings": {
+      },
+      "blocks": {
+        "template--21965917618491__084c9bf7-9db6-4b91-9bf9-e234e1a59348-text-1": {
+          "settings": {
+            "text": "<p>Congratulations, mama! We're thrilled about your choice to nourish your baby with breast milk. Let’s see if you qualify for an Ameda breast pump through insurance at no charge!<\/p>",
+            "enlarge_text": true
+          }
+        }
+      }
+    }
   }
 }
