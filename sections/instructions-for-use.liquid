@@ -29,9 +29,8 @@
 <div class="section section--padded" style="margin-top: 0; padding-top:0;">
     <div class="container">
         <div class="instructions-index">
-            {% assign instructions = shop.metaobjects.instructions.values | sort: 'sort_order' %}
-            {% for instruction in instructions %}
-                <div class="instruction-item" tabName="{{ instruction.tab_name }}">
+            {% for instruction in shop.metaobjects.instructions.values %}
+                <div class="instruction-item" tabName="{{ instruction.tab_name }}" sort="{{ instruction.sort_order }}">
                     <div class="instruction-image-wrapper">
                         <img src="{{ instruction.product_image |  image_url }}" />
                     </div>
