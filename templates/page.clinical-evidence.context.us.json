@@ -1,0 +1,30 @@
+{
+  "parent": "page.clinical-evidence.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "34f9f0fe-b145-4aea-82fd-228bb1949054": {
+      "settings": {
+      },
+      "blocks": {
+        "template--21939279298875__34f9f0fe-b145-4aea-82fd-228bb1949054-column-2": {
+          "settings": {
+            "text": "<p>Patented \"Bag-in-Bag\" closed system designed to prevent contamination.<\/p>"
+          }
+        }
+      }
+    },
+    "7cad64d1-d256-4722-a49a-996580ae3ace": {
+      "settings": {
+      },
+      "blocks": {
+        "ebb2d4ab-b6de-40a1-8861-20f6c55a6d90": {
+          "settings": {
+            "text": "<ul><li>During heating, it is not only the temperature that breast milk may reach that is important for enzyme activity, but the time of exposure to heat is also critical.<\/li><li>The North American Human Milk Banking Association (HMBANA) advocates warming feeds to body temperature for premature infants, particularly those at risk for necrotizing enterocolitis (NEC).<\/li><li>Bransburg-Zabary S, et al, suggests a smarter method to warm breast milk is required to ensure that temperatures not exceed 40° C (104° F), so its unique properties will be better preserved. Possible solutions may include a mechanism by which human milk would be constantly stirred during heating, similar to technology in Ameda Penguin warmers.<\/li><li>Bransburg-Zabary S, et al. also showed that it was difficult to determine when milk reaches the desired temperature due to lack of stirring and creates heat zone islets of high temperatures.<\/li><li>The World Health Organization (WHO) also recommends constant stirring for a period of 20 minutes.<\/li><\/ul>"
+          }
+        }
+      }
+    }
+  }
+}
