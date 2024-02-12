@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    // SORT ITEMS BY SORT ORDER
+    const instructionsIndex = document.querySelector('.instructions-index');
+    const items = Array.from(instructionsIndex.querySelectorAll('.instruction-item'));
+    const sortedItems = items.sort((a, b) => {
+        const sortA = parseInt(a.getAttribute('sort'), 10);
+        const sortB = parseInt(b.getAttribute('sort'), 10);
+        return sortA - sortB;
+    });
+    instructionsIndex.innerHTML = '';
+    sortedItems.forEach(item => instructionsIndex.appendChild(item));
+    // DONE SORTING
+
     const tabs = document.querySelectorAll('.tabs-wrapper button');
 
     // Function to handle tab click
