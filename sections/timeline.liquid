@@ -86,23 +86,24 @@
 </style>
 
 <div class="section section--padded" style="margin-top: 0; padding-top:0;">
-    <div class="container">
-        {% if section.settings.section_title %}<h2 class="" style="text-align: center; margin-bottom: 4rem;">{{ section.settings.section_title }}</h2>{% endif %}
-        <div class="timeline-wrapper">
-            <div class="timeline-vertical-line"></div>
-            
-            {% for block in section.blocks %}
-            <div class="timeline-item">
-                <div class="timeline-item_image">
-                    <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title }}">
+    <div class="page-width">
+        <div class="container">
+            {% if section.settings.section_title %}<h2 class="" style="text-align: center; margin-bottom: 4rem;">{{ section.settings.section_title }}</h2>{% endif %}
+            <div class="timeline-wrapper">
+                <div class="timeline-vertical-line"></div>
+                
+                {% for block in section.blocks %}
+                <div class="timeline-item">
+                    <div class="timeline-item_image">
+                        <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title }}">
+                    </div>
+                    <div class="timeline-item_content">
+                        <h4>{{ block.settings.title }}</h4>
+                        <p>{{ block.settings.content }}</p>
+                    </div>
                 </div>
-                <div class="timeline-item_content">
-                    <h4>{{ block.settings.title }}</h4>
-                    <p>{{ block.settings.content }}</p>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-            
         </div>
     </div>
 </div>
