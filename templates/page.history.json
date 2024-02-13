@@ -298,6 +298,11 @@
         "baby_patterns": false,
         "button_style": "btn btn--secondary"
       }
+    },
+    "timeline_C3NadR": {
+      "type": "timeline",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -305,6 +310,7 @@
     "50ebb950-6902-45e7-abee-0e76489143f6",
     "047c699d-f6cd-4be9-839b-b66902cd34aa",
     "03ec6935-1fa5-4ef4-abf1-64b67801d52f",
-    "d97afc36-38ed-43a4-b139-382503e8f87e"
+    "d97afc36-38ed-43a4-b139-382503e8f87e",
+    "timeline_C3NadR"
   ]
 }
