@@ -112,7 +112,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1942.png",
             "title": "1942",
-            "content": "Einar Egnell develops the world’s first hospital grade breast pump in 1942."
+            "content": "Einar Egnell develops the world’s first hospital grade breast pump."
           }
         },
         "timeline_block_r9pyy6": {
@@ -120,7 +120,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1970.png",
             "title": "1970",
-            "content": "Ameda AG was founded in 1970."
+            "content": "Ameda AG was founded."
           }
         },
         "timeline_block_hrkFLU": {
@@ -128,7 +128,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1984.png",
             "title": "1984",
-            "content": "The first portable hospital-grade breast pump, Lact-E, was created in 1984"
+            "content": "The first portable hospital-grade breast pump, Lact-E, was created."
           }
         },
         "timeline_block_thpr68": {
@@ -136,7 +136,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1993.png",
             "title": "1993",
-            "content": "The world’s first breast pump with a micro-processor, the Elite, was established in 1993."
+            "content": "The world’s first breast pump with a micro-processor, the Elite, was established."
           }
         },
         "timeline_block_Fahwcw": {
@@ -144,7 +144,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1994.png",
             "title": "1994",
-            "content": "The world’s first and only FDA-cleared pump kit with Airlock Protection was created in 1994."
+            "content": "The world’s first and only FDA-cleared pump kit with Airlock Protection was created."
           }
         },
         "timeline_block_wFeDj7": {
@@ -152,7 +152,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1998.png",
             "title": "1998",
-            "content": "The world’s first piston-driven personal pump, Purely Yours, was created in 1998."
+            "content": "The world’s first piston-driven personal pump, Purely Yours, was created."
           }
         },
         "timeline_block_FkgYqz": {
@@ -160,7 +160,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2010.png",
             "title": "2010",
-            "content": "The Platinum breast pump, a premium hospital grade pump with vacusense technology, was created in 2010."
+            "content": "The Platinum breast pump, a premium hospital grade pump with vacusense technology, was created."
           }
         },
         "timeline_block_ibEbkJ": {
@@ -168,7 +168,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2016.png",
             "title": "2016",
-            "content": "Ameda acquired the Penguin Warming System in 2016."
+            "content": "Ameda acquired the Penguin Warming System."
           }
         },
         "timeline_block_W8L8FD": {
@@ -176,7 +176,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2017.png",
             "title": "2017",
-            "content": "The Finesse breast pump, created in 2017, was Ameda’s first personal pump designed for insurance reimbursement."
+            "content": "The Finesse breast pump was Ameda’s first personal pump designed for insurance reimbursement."
           }
         },
         "timeline_block_rXTpdb": {
@@ -192,7 +192,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2020.png",
             "title": "2020",
-            "content": "Ameda’s first mobile personal pump, designed to work with the Universal HygieniKit™ Milk Collection System, the Mya Joy, was created in 2020."
+            "content": "Ameda’s first mobile personal pump, designed to work with the Universal HygieniKit™ Milk Collection System, the Mya Joy, was created."
           }
         },
         "timeline_block_r3frCA": {
@@ -228,6 +228,7 @@
         "timeline_block_V7N9HJ"
       ],
       "settings": {
+        "section_title": "Supporting Breastfeeding Moms for 80+ Years"
       }
     }
   },
