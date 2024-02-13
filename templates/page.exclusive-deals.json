@@ -24,14 +24,26 @@
         "text_gqUj7B": {
           "type": "text",
           "settings": {
-            "text": "<p>$10 off any of the 4 Snugabell®Hands-Free Pumping Bra on ameda.com<\/p>",
+            "text": "<p>$10 off any of the 4 Snugabell®Hands-Free Pumping Bra on ameda.com<\/p><p>Use the <strong>Handsfree10off<\/strong> coupon at checkout<\/p>",
             "enlarge_text": true
+          }
+        },
+        "button_wGzkgG": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_style": "btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
           }
         }
       },
       "block_order": [
         "heading_6bPgYJ",
-        "text_gqUj7B"
+        "text_gqUj7B",
+        "button_wGzkgG"
       ],
       "settings": {
         "text_position": "justify-center",
@@ -56,14 +68,26 @@
         "text_fRzqDy": {
           "type": "text",
           "settings": {
-            "text": "<p>Buy a box of 100 Pump 'N Protect®6 Ounce Milk Storage Bags, and get 50 additional Bags FREE on ameda.com<\/p>",
+            "text": "<p>Buy a box of 100 Pump 'N Protect®6 Ounce Milk Storage Bags, and get 50 additional Bags FREE on ameda.com<\/p><p>Use the <strong>Milkbagsfree50<\/strong> coupon at checkout<\/p>",
             "enlarge_text": true
+          }
+        },
+        "button_zeT7dn": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_style": "btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
           }
         }
       },
       "block_order": [
         "heading_KFadyE",
-        "text_fRzqDy"
+        "text_fRzqDy",
+        "button_zeT7dn"
       ],
       "settings": {
         "text_position": "justify-center",
