@@ -693,7 +693,7 @@
       ],
       "settings": {
         "wavebgcolor": "rgba(0,0,0,0)",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": "top"
       }
@@ -705,7 +705,7 @@
       ],
       "settings": {
         "custom_liquid": "<div style=\"padding-top:4rem;\"><\/div>\n{% render 'subscription-form' %}",
-        "section_height": "default",
+        "section_height": "medium",
         "full_width": false,
         "dividers": "none",
         "color_scheme": "2",
