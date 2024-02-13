@@ -37,7 +37,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Customer Service",
-            "menu": "main-menu"
+            "menu": "customer-service"
           }
         }
       },
