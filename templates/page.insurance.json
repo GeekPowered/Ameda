@@ -81,7 +81,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Step 2",
-            "text": "<p>Supply Some Patient Information<\/p>",
+            "text": "<p>Supply Additional Patient Information<\/p>",
             "button_label": "",
             "button_link": ""
           }
