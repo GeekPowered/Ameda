@@ -279,7 +279,6 @@
         "c6cfd747-b788-4ef8-b787-18063a4bb98d",
         "a387d620-ee45-433d-8af0-ef3f43fc9330"
       ],
-      "disabled": true,
       "custom_css": [
         ".card__media {width: 10rem; height: 10rem; padding: 0 !important;}",
         ".card {align-items: center;}"
@@ -301,6 +300,18 @@
     },
     "timeline_C3NadR": {
       "type": "timeline",
+      "blocks": {
+        "timeline_block_88WWqd": {
+          "type": "timeline_block",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "timeline_block_88WWqd"
+      ],
       "settings": {
       }
     }
