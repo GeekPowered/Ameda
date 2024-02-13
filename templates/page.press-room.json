@@ -8,300 +8,33 @@
         "heading_align": "text-center"
       }
     },
-    "50ebb950-6902-45e7-abee-0e76489143f6": {
-      "type": "image-banner",
+    "rich_text_yepjCH": {
+      "type": "rich-text",
       "blocks": {
-        "template--21939582304571__50ebb950-6902-45e7-abee-0e76489143f6-heading-1": {
+        "heading_MQCntY": {
           "type": "heading",
           "settings": {
-            "heading": "Our History",
+            "heading": "Press Room",
             "heading_size": "h0",
             "heading_h1": true
           }
         }
       },
       "block_order": [
-        "template--21939582304571__50ebb950-6902-45e7-abee-0e76489143f6-heading-1"
+        "heading_MQCntY"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/banner.png",
-        "url": "",
-        "height_mode": "fixed",
-        "fixed_height_desktop": 400,
-        "fixed_height_mobile": 250,
-        "overlay_position": "justify-center items-center",
-        "overlay_text_align": "text-center",
-        "mob_center_text": false,
-        "mobile_stacked": false,
-        "color_scheme": "white",
-        "full_width": true,
-        "transparent_content_color": "#ffffff",
-        "tint_color": "#000000",
-        "tint_opacity": 40,
-        "prevent_animation": false
-      }
-    },
-    "047c699d-f6cd-4be9-839b-b66902cd34aa": {
-      "type": "media-with-text",
-      "blocks": {
-        "8175f01b-cf40-48eb-882d-c2807a150be5": {
-          "type": "subheading",
-          "settings": {
-            "text": "Our History"
-          }
-        },
-        "template--21939582304571__047c699d-f6cd-4be9-839b-b66902cd34aa-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Einar Egnell",
-            "heading_size": "h2",
-            "heading_h1": false
-          }
-        },
-        "template--21939582304571__047c699d-f6cd-4be9-839b-b66902cd34aa-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>More than 70 years ago, Swedish engineer, Einar Egnell, made it his life’s work to help breastfeeding mothers. After years of research, Egnell created the first comfortable and effective breast pump that closely mimics the sucking rhythm of nursing infants. In the process, Egnell also created the vacuum and cycling standards that today’s lactation professionals use to judge breast pump quality.<\/p>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "8175f01b-cf40-48eb-882d-c2807a150be5",
-        "template--21939582304571__047c699d-f6cd-4be9-839b-b66902cd34aa-heading-1",
-        "template--21939582304571__047c699d-f6cd-4be9-839b-b66902cd34aa-text-1"
-      ],
-      "custom_css": [
-        ".section--padded {margin-bottom: 0; padding-bottom: 0;}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/einar.png",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "left",
-        "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "none",
-        "only_content_color_scheme": false
-      }
-    },
-    "03ec6935-1fa5-4ef4-abf1-64b67801d52f": {
-      "type": "video",
-      "custom_css": [
-        ".video-section__media {border-radius: 1rem;}"
-      ],
-      "settings": {
-        "video_external": "https:\/\/youtu.be\/2U0s5D8maNk",
-        "video_description": "",
-        "poster_image": "shopify:\/\/shop_images\/hqdefault.jpg",
-        "video_size": "sm",
-        "video_autoplay": false,
+        "text_position": "justify-center",
         "text_align": "text-center",
-        "color_scheme": "default"
-      }
-    },
-    "d97afc36-38ed-43a4-b139-382503e8f87e": {
-      "type": "multi-column",
-      "blocks": {
-        "template--21939582304571__d97afc36-38ed-43a4-b139-382503e8f87e-column-1": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/1942.png",
-            "media_scale": 100,
-            "heading": "1942",
-            "text": "<p>Einar Egnell develops the world’s first hospital grade breast pump in 1942.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "0616a960-d47a-47c5-a547-120330479050": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/1970.png",
-            "media_scale": 100,
-            "heading": "1970",
-            "text": "<p>Ameda AG was founded in 1970.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "afec30d6-7c03-448e-8ca2-a92be77e349f": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/1984.png",
-            "media_scale": 100,
-            "heading": "1984",
-            "text": "<p>The first portable hospital-grade breast pump, Lact-E, was created in 1984.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "b6818e55-cfd5-4b7b-947d-712a5f73f726": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/1993.png",
-            "media_scale": 100,
-            "heading": "1993",
-            "text": "<p>The world’s first breast pump with a micro-processor, the Elite, was established in 1993.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "c32e7179-b923-413a-8e66-a760f9e766f2": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/1994.png",
-            "media_scale": 100,
-            "heading": "1994",
-            "text": "<p>The world’s first and only FDA-cleared pump kit with Airlock Protection was created in 1994.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "d7c3cb40-4c17-470e-aa25-a6a5ce835744": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/1998.png",
-            "media_scale": 100,
-            "heading": "1998",
-            "text": "<p>The world’s first piston-driven personal pump, Purely Yours, was created in 1998.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "65f0ba4f-85e3-4d28-8017-0ac58081fe76": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/2010.png",
-            "media_scale": 100,
-            "heading": "2010",
-            "text": "<p>The Platinum breast pump, a premium hospital grade pump with vacusense technology, was created in 2010.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "1207aa7e-891c-421c-85aa-f9625e76982b": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/2016.png",
-            "media_scale": 100,
-            "heading": "2016",
-            "text": "<p>Ameda acquired the Penguin Warming System in 2016.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "1400918d-ebb0-4790-811c-a9d2ba555ca6": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/2017.png",
-            "media_scale": 100,
-            "heading": "2017",
-            "text": "<p>The Finesse breast pump, created in 2017, was Ameda’s first personal pump designed for insurance reimbursement.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "64fd993c-e7d6-434c-8f85-1fbfa49d4f85": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/2019.png",
-            "media_scale": 100,
-            "heading": "2019",
-            "text": "<p>Ameda’s first personal pump with a rechargeable battery, the Ameda Mya, was created.<br\/><\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "7662dbe0-7dee-4a47-9694-305c28fd95d6": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/2020.png",
-            "media_scale": 100,
-            "heading": "2020",
-            "text": "<p>Ameda’s first mobile personal pump, designed to work with the Universal HygieniKit™ Milk Collection System, the Mya Joy, was created in 2020.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "c6cfd747-b788-4ef8-b787-18063a4bb98d": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/2020-21.png",
-            "media_scale": 100,
-            "heading": "2020 & 2021",
-            "text": "<p>Mya Joy & Mya Joy PLUS were introduced: Ameda’s first mobile personal pumps designed to work with the Universal HygieniKits™ .<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "a387d620-ee45-433d-8af0-ef3f43fc9330": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify:\/\/shop_images\/2022.png",
-            "media_scale": 100,
-            "heading": "2022",
-            "text": "<p>Pearl® was launched – Ameda’s most mobile Hospital Grade Pump designed for use in the hospital and at home.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21939582304571__d97afc36-38ed-43a4-b139-382503e8f87e-column-1",
-        "0616a960-d47a-47c5-a547-120330479050",
-        "afec30d6-7c03-448e-8ca2-a92be77e349f",
-        "b6818e55-cfd5-4b7b-947d-712a5f73f726",
-        "c32e7179-b923-413a-8e66-a760f9e766f2",
-        "d7c3cb40-4c17-470e-aa25-a6a5ce835744",
-        "65f0ba4f-85e3-4d28-8017-0ac58081fe76",
-        "1207aa7e-891c-421c-85aa-f9625e76982b",
-        "1400918d-ebb0-4790-811c-a9d2ba555ca6",
-        "64fd993c-e7d6-434c-8f85-1fbfa49d4f85",
-        "7662dbe0-7dee-4a47-9694-305c28fd95d6",
-        "c6cfd747-b788-4ef8-b787-18063a4bb98d",
-        "a387d620-ee45-433d-8af0-ef3f43fc9330"
-      ],
-      "custom_css": [
-        ".card__media {width: 10rem; height: 10rem; padding: 0 !important;}",
-        ".card {align-items: center;}"
-      ],
-      "settings": {
-        "title": "Ameda Timeline",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "carousel",
-        "column_size": "small",
-        "column_align": "center",
-        "media_align": "text-center",
-        "image_ratio": "1",
+        "mob_center_text": true,
         "color_scheme": "none",
-        "button_style": "btn btn--secondary"
+        "full_width": true,
+        "prevent_animation": false
       }
     }
   },
   "order": [
     "main",
-    "50ebb950-6902-45e7-abee-0e76489143f6",
-    "047c699d-f6cd-4be9-839b-b66902cd34aa",
-    "03ec6935-1fa5-4ef4-abf1-64b67801d52f",
-    "d97afc36-38ed-43a4-b139-382503e8f87e"
+    "rich_text_yepjCH"
   ]
 }
