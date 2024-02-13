@@ -32,6 +32,7 @@
         "section_height": "xsmall",
         "color_scheme": "2",
         "full_width": true,
+        "baby_pattern": true,
         "dividers": "border-top",
         "prevent_animation": false
       }
