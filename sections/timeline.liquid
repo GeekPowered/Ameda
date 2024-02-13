@@ -4,6 +4,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 5rem;
     }
     .timeline-item_image {
         height: 15rem;
@@ -23,15 +24,24 @@
         right: 0;
         width: calc(50% - 10rem);
         background: #fff;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 1rem;
     }
-    .timeline-item_content p {
+    .timeline-item_content * {
         margin-bottom: 0;
     }
     .timeline-item:nth-child(odd) .timeline-item_content {
         right: auto;
         left: 0;
+    }
+    @media (max-width: 767px) {
+        .timeline-item_content {
+            position: relative;
+            width: 100%;
+        }
+        .timeline-item {
+            align-items: flex-start;
+        }
     }
 </style>
 
