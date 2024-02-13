@@ -94,7 +94,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "18a98304-eea6-4351-8b16-216e0a96ac0a": {
@@ -150,7 +151,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "785e07b8-ac2a-4dc9-9132-62454674e1e7": {
@@ -206,7 +208,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "7c2afcd6-707e-4619-8790-89a3b68da3f0": {
@@ -281,6 +284,7 @@
         "media_align": "text-center",
         "image_ratio": "1",
         "color_scheme": "none",
+        "baby_patterns": false,
         "button_style": "btn btn--primary"
       }
     },
@@ -353,6 +357,7 @@
         "media_align": "text-center",
         "image_ratio": "1.77",
         "color_scheme": "none",
+        "baby_patterns": false,
         "button_style": "btn btn--primary"
       }
     },
@@ -383,11 +388,11 @@
         "e4b16516-e3a0-4627-8911-62dd6555e6e9": {
           "type": "button",
           "settings": {
-            "button_1_label": "Careers",
-            "button_1_link": "shopify:\/\/pages\/careers",
+            "button_1_label": "PR Media Toolkit",
+            "button_1_link": "shopify:\/\/pages\/press-room",
             "button_1_style": "btn--primary",
-            "button_2_label": "",
-            "button_2_link": "",
+            "button_2_label": "Careers",
+            "button_2_link": "shopify:\/\/pages\/careers",
             "button_2_style": "btn btn--primary"
           }
         }
