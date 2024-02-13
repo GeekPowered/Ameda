@@ -241,6 +241,13 @@ mark {
   margin-left: auto;
 }
 
+.timeline-width {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100rem;
+  max-width: 100%;
+}
+
 .reading-width {
   max-width: var(--reading-width, 48em);
   margin-right: auto;
