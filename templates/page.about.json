@@ -94,7 +94,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "18a98304-eea6-4351-8b16-216e0a96ac0a": {
@@ -150,7 +151,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "785e07b8-ac2a-4dc9-9132-62454674e1e7": {
@@ -206,7 +208,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "7c2afcd6-707e-4619-8790-89a3b68da3f0": {
@@ -281,6 +284,7 @@
         "media_align": "text-center",
         "image_ratio": "1",
         "color_scheme": "none",
+        "baby_patterns": false,
         "button_style": "btn btn--primary"
       }
     },
@@ -342,6 +346,9 @@
         "4649055c-2261-45b7-a140-9bffa49af15e",
         "94e85e1a-a445-47fa-95d8-2a04b605e70d"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "Loved By Moms",
         "heading_align": "text-center",
@@ -353,6 +360,7 @@
         "media_align": "text-center",
         "image_ratio": "1.77",
         "color_scheme": "none",
+        "baby_patterns": false,
         "button_style": "btn btn--primary"
       }
     },
@@ -383,11 +391,11 @@
         "e4b16516-e3a0-4627-8911-62dd6555e6e9": {
           "type": "button",
           "settings": {
-            "button_1_label": "Careers",
-            "button_1_link": "shopify:\/\/pages\/careers",
+            "button_1_label": "PR Media Toolkit",
+            "button_1_link": "shopify:\/\/pages\/press-room",
             "button_1_style": "btn--primary",
-            "button_2_label": "",
-            "button_2_link": "",
+            "button_2_label": "Careers",
+            "button_2_link": "shopify:\/\/pages\/careers",
             "button_2_style": "btn btn--primary"
           }
         }
@@ -413,7 +421,7 @@
         "template--21939474530619__aa56a765-7216-4362-8da6-7254c9eaeabc-question-1": {
           "type": "question",
           "settings": {
-            "icon": "none",
+            "icon": "check_mark_in_circle",
             "heading": "Safe",
             "text": "<p>Ameda’s high quality solutions are designed to keep mom and baby safe and to protect the unique properties of breast milk.<\/p><p>Universal HygieniKit™ is the world’s only collection kit with an FDA-clead barrier designed to protect breast milk and baby from bacteria, mold, and viruses.<\/p><p>Penguin warming systems use Dual Pouch Smart Warming Technology™ to safely warm breast milk and protect the integrity of breastmilk’s valuable nutrients.<\/p><p>Platinum multi-user breast pumps are clinically proven to initiate and maintain breast milk supply. The Mya Joy family of personal pumps feature hospital strength performance designed to maintain milk supply.<\/p>"
           }
@@ -421,7 +429,7 @@
         "55486eef-8866-4cb6-8cb5-214f376a0e4d": {
           "type": "question",
           "settings": {
-            "icon": "none",
+            "icon": "star",
             "heading": "Trusted",
             "text": "<p>Ameda is the first name in breast pumps, offering complete solutions from hospital to home.<\/p><p>Ameda is the first and original name in breast pumps. We introduced the first effective hospital grade pump, the first portable hospital pump, and the first and only FDA-cleared patented milk collection system.<\/p><p>Ameda is a pioneer in new technology. We created breast pumps that mimic infant feeding, collection systems that prevent milk from entering tubing and Vacusense™ technology which optimizes pumping in a wide range of settings.<\/p><p>Ameda is WHO code compliant and actively supports the International Code of Marketing Breast milk substitutes.<\/p>"
           }
@@ -429,7 +437,7 @@
         "45383f6f-c868-440c-9b0f-b6251c4c8955": {
           "type": "question",
           "settings": {
-            "icon": "none",
+            "icon": "heart",
             "heading": "Accessible",
             "text": "<p>Ameda supports all moms with approachable service, education, and product solutions.<\/p><p>Ameda products are available around the globe and across a wide range of distribution outlets. Our complete range of solutions are accessible to all moms with diverse needs and circumstances.<\/p><p>Ameda proudly offers Customer Service and ParentCare Support from an experienced team of dedicated professionals.<\/p>"
           }

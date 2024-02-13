@@ -81,7 +81,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Step 2",
-            "text": "<p>Supply Some Patient Information<\/p>",
+            "text": "<p>Supply Additional Patient Information<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -92,7 +92,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Step 3",
-            "text": "<p>Submit Form And Our Providers Will Contact You!<br\/><\/p>",
+            "text": "<p>Our Providers Will Contact You!<br\/><\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -117,6 +117,7 @@
         "media_align": "text-center",
         "image_ratio": "1",
         "color_scheme": "1",
+        "baby_patterns": false,
         "button_style": "btn btn--secondary"
       }
     },
@@ -150,6 +151,8 @@
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
         "prevent_animation": false
       }
     },
@@ -225,6 +228,7 @@
         "49895fd3-000e-42d9-b379-e4cc79369f0f"
       ],
       "settings": {
+        "section_content": ""
       }
     },
     "4e60b54a-b466-4694-9f93-58db2af8ec6d": {
@@ -237,6 +241,8 @@
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
         "prevent_animation": false
       }
     }
