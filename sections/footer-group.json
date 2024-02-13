@@ -19,18 +19,18 @@
             "text_align": "text-start"
           }
         },
-        "8d9478b4-a675-49f8-8a50-ad56005aaaa2": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Support",
-            "menu": "footer"
-          }
-        },
         "link-list-1": {
           "type": "link_list",
           "settings": {
             "heading": "Products",
             "menu": "footer-menu-2"
+          }
+        },
+        "8d9478b4-a675-49f8-8a50-ad56005aaaa2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
+            "menu": "footer"
           }
         },
         "link_list_6LUr4N": {
@@ -43,8 +43,8 @@
       },
       "block_order": [
         "text",
-        "8d9478b4-a675-49f8-8a50-ad56005aaaa2",
         "link-list-1",
+        "8d9478b4-a675-49f8-8a50-ad56005aaaa2",
         "link_list_6LUr4N"
       ],
       "custom_css": [
