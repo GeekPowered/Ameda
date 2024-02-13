@@ -701,11 +701,11 @@
     "custom_liquid_4GpYky": {
       "type": "custom-liquid",
       "custom_css": [
-
+        ".section--padded-default {padding-bottom: 0;}"
       ],
       "settings": {
         "custom_liquid": "<div style=\"padding-top:4rem;\"><\/div>\n{% render 'subscription-form' %}",
-        "section_height": "medium",
+        "section_height": "default",
         "full_width": false,
         "dividers": "none",
         "color_scheme": "2",
