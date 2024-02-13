@@ -170,7 +170,8 @@
       ],
       "custom_css": [
         ".card__media + * {display: none;}",
-        ".card {background: transparent;}"
+        ".card {background: transparent;}",
+        ".slider.is-grabbable img {pointer-events: all;}"
       ],
       "settings": {
         "title": "Licensed Photography",
