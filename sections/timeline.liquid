@@ -35,6 +35,25 @@
         right: auto;
         left: 0;
     }
+    .timeline-item_content::before {
+        content: '';
+        position: absolute;
+        left: -1rem;
+        top: 1rem;
+        border-top: 1rem solid transparent;
+        border-bottom: 1rem solid transparent;
+        border-right: 1rem solid #fff;
+    }
+    .timeline-item:nth-child(odd) .timeline-item_content::before {
+        content: '';
+        position: absolute;
+        left: auto;
+        right: 1rem;
+        top: 1rem;
+        border-top: 1rem solid transparent;
+        border-bottom: 1rem solid transparent;
+        border-left: 1rem solid #fff;
+    }
     .timeline-vertical-line {
         position: absolute;
         top: 5rem;
@@ -55,6 +74,13 @@
         .timeline-vertical-line {
             left: calc(15rem / 2);
             transform: none;
+        }
+        .timeline-item_content::before {
+            left: 1rem;
+            top: -1rem;
+            border-left: 1rem solid transparent;
+            border-right: 1rem solid transparent;
+            border-bottom: 1rem solid #fff;
         }
     }
 </style>
