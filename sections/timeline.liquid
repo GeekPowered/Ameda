@@ -87,7 +87,7 @@
 
 <div class="section section--padded" style="margin-top: 0; padding-top:0;">
     <div class="container">
-        <h2 class="" style="text-align: center; margin-bottom: 4rem;">Supporting Breastfeeding Moms for 80+ Years</h2>
+        {% if section.settings.section_title %}<h2 class="" style="text-align: center; margin-bottom: 4rem;">{{ section.settings.section_title }}</h2>{% endif %}
         <div class="timeline-wrapper">
             <div class="timeline-vertical-line"></div>
             
@@ -114,6 +114,13 @@
     {
       "name": "History Timeline",
       "category": "Template"
+    }
+  ],
+  "settings" : [
+    {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title"
     }
   ],
   "blocks": [
