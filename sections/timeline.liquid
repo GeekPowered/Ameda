@@ -5,6 +5,7 @@
         justify-content: center;
         align-items: center;
         gap: 5rem;
+        position: relative;
     }
     .timeline-item_image {
         height: 15rem;
@@ -34,6 +35,15 @@
         right: auto;
         left: 0;
     }
+    .timeline-vertical-line {
+        position: absolute;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: calc(100% - 10rem);
+        background-color: rgba(0,0,0,.25);
+    }
     @media (max-width: 767px) {
         .timeline-item_content {
             position: relative;
@@ -42,6 +52,10 @@
         .timeline-item {
             align-items: flex-start;
         }
+        .timeline-vertical-line {
+            left: calc(15rem / 2);
+            transform: none;
+        }
     }
 </style>
 
@@ -49,6 +63,7 @@
 <div class="section section--padded" style="margin-top: 0; padding-top:0;">
     <div class="container">
         <div class="timeline-wrapper">
+            <div class="timeline-vertical-line"></div>
             <div class="timeline-item">
                 <div class="timeline-item_image ">
                     <img src="/cdn/shop/files/1942.png?v=1704496365" alt="1942">
