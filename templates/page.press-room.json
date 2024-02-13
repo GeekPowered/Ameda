@@ -207,10 +207,11 @@
     "custom_liquid_68z4DL": {
       "type": "custom-liquid",
       "custom_css": [
-        ".flex img {width: auto; height: 7rem;}"
+        ".flex img {width: auto; height: 7rem;}",
+        ".flex > a {flex: 0 0 auto;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"flex gap-theme justify-center\">\n  <a target=\"_blank\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/ameda-logo.webp?v=1703714431\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/ameda-logo.webp?v=1703714431\" alt=\"\"><\/a>\n  <a target=\"_blank\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMED_Green_logo.png?v=1707849277\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMED_Green_logo.png?v=1707849277\" alt=\"\"><\/a>\n  <a target=\"_blank\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMEDA_White_logo.png?v=1707849305\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMEDA_White_logo.png?v=1707849305\" alt=\"\"><\/a>\n<\/div>",
+        "custom_liquid": "<div class=\"flex flex-wrap gap-theme justify-center\">\n  <a target=\"_blank\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/ameda-logo.webp?v=1703714431\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/ameda-logo.webp?v=1703714431\" alt=\"\"><\/a>\n  <a target=\"_blank\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMED_Green_logo.png?v=1707849277\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMED_Green_logo.png?v=1707849277\" alt=\"\"><\/a>\n  <a target=\"_blank\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMEDA_White_logo.png?v=1707849305\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMEDA_White_logo.png?v=1707849305\" alt=\"\"><\/a>\n<\/div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
