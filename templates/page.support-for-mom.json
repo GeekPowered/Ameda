@@ -169,6 +169,7 @@
         ".section--padded {padding-top: 0;}"
       ],
       "settings": {
+        "section_content": ""
       }
     },
     "wave_section_7nMexY": {
@@ -265,7 +266,7 @@
           "type": "button",
           "settings": {
             "button_1_label": "Shop Now",
-            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_link": "shopify:\/\/collections\/breast-pumps",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
