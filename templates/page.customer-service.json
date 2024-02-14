@@ -197,7 +197,7 @@
         "text_DEVFrE": {
           "type": "text",
           "settings": {
-            "text": "<p>Hours of Operation:<br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CST<\/p>",
+            "text": "<p>Hours of Operation:<br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CT<\/p>",
             "enlarge_text": true
           }
         },
@@ -248,7 +248,7 @@
         "text_PaVtEx": {
           "type": "text",
           "settings": {
-            "text": "<p>Hours of Operation:<br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CST<\/p>",
+            "text": "<p>Hours of Operation:<br\/>Monday - Friday<br\/>8:00 a.m. – 4:30 p.m. CT<\/p>",
             "enlarge_text": true
           }
         },
