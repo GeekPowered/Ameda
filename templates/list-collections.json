@@ -2,6 +2,9 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "custom_css": [
+        ".card__media {border: none;}"
+      ],
       "settings": {
         "title": "Product Categories",
         "description": "",
