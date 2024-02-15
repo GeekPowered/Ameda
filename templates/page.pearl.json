@@ -200,7 +200,8 @@
       ],
       "custom_css": [
         ".section--padded {padding-bottom: 0;}",
-        ".max-w-text-overlay,.contained-heading {max-width: 100%;}"
+        ".max-w-text-overlay,.contained-heading {max-width: 100%;}",
+        "h2 {padding-left: 0; padding-right: 0;}"
       ],
       "settings": {
         "text_position": "justify-center",
@@ -362,7 +363,8 @@
       ],
       "custom_css": [
         ".section--padded {padding-bottom: 0;}",
-        ".max-w-text-overlay,.contained-heading {max-width: 100%;}"
+        ".max-w-text-overlay,.contained-heading {max-width: 100%;}",
+        "h2 {padding-left: 0; padding-right: 0;}"
       ],
       "settings": {
         "text_position": "justify-start",
