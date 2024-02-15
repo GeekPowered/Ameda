@@ -199,7 +199,8 @@
         "heading_fVrkWe"
       ],
       "custom_css": [
-        ".section--padded {padding-top: 0; padding-bottom: 0;}"
+        ".section--padded {padding-bottom: 0;}",
+        ".max-w-text-overlay,.contained-heading {max-width: 100%;}"
       ],
       "settings": {
         "text_position": "justify-center",
@@ -342,6 +343,34 @@
         "tint_opacity": 0,
         "accessibility_info": "",
         "prevent_animation": true
+      }
+    },
+    "rich_text_d68P9w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QQMtqB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Powerful, Lightweight, and Whisper Quiet.",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QQMtqB"
+      ],
+      "custom_css": [
+        ".section--padded {padding-bottom: 0;}",
+        ".max-w-text-overlay,.contained-heading {max-width: 100%;}"
+      ],
+      "settings": {
+        "text_position": "justify-start",
+        "text_align": "text-start",
+        "mob_center_text": false,
+        "color_scheme": "1",
+        "full_width": true,
+        "prevent_animation": false
       }
     },
     "custom_liquid_atHzJW": {
@@ -705,6 +734,7 @@
     "media_with_text_QdFk7w",
     "rich_text_YpdJjW",
     "slideshow_W4mkEg",
+    "rich_text_d68P9w",
     "custom_liquid_atHzJW",
     "wave_section_LkAUGM",
     "testimonials_wegkK9",
