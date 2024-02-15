@@ -6,9 +6,15 @@
         "title": "Product Categories",
         "description": "",
         "text_align": "items-center text-center",
-        "display_type": "all",
+        "display_type": "selected",
         "selected_collections": [
-
+          "breast-pumps",
+          "accessories",
+          "breast-care",
+          "breast-milk-storage",
+          "hands-free-pumping-apparel",
+          "breast-milk-warmers",
+          "cleaning-sanitization"
         ],
         "collections_per_page": 50,
         "card_size": "large",
@@ -22,7 +28,7 @@
       ],
       "settings": {
         "wavebgcolor": "rgba(0,0,0,0)",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": "top"
       }
