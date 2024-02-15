@@ -183,6 +183,33 @@
         "baby_patterns": false
       }
     },
+    "rich_text_YpdJjW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fVrkWe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Comfortable Pumping Day and Night",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fVrkWe"
+      ],
+      "custom_css": [
+        ".section--padded {padding-top: 0; padding-bottom: 0;}"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "1",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
     "slideshow_W4mkEg": {
       "type": "slideshow",
       "blocks": {
@@ -676,6 +703,7 @@
     "multi_column_nHiQFc",
     "wave_section_FzTwQq",
     "media_with_text_QdFk7w",
+    "rich_text_YpdJjW",
     "slideshow_W4mkEg",
     "custom_liquid_atHzJW",
     "wave_section_LkAUGM",
