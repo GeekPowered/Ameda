@@ -12,7 +12,7 @@
         "heading_align": "text-center",
         "products_per_page": 16,
         "card_size": "medium",
-        "show_layout_toggle": true,
+        "show_layout_toggle": false,
         "enable_filtering": true,
         "filters_open_lg": true,
         "stick_on_scroll": true,
