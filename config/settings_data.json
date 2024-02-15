@@ -369,7 +369,7 @@
     "section_gap": "48",
     "input_button_border_width": "2",
     "input_button_border_radius": 26,
-    "slider_show_arrows": "always",
+    "slider_show_arrows": "never",
     "slider_button_style": "btn--primary",
     "drawer_border_radius": 16,
     "overlay_border_radius": 0,
@@ -477,7 +477,8 @@
   "platform_customizations": {
     "custom_css": [
       ".card__media {border-radius: 1rem; overflow: hidden;}",
-      ".header__cart-count {background: rgb(var(--btn-bg-color));}"
+      ".header__cart-count {background: rgb(var(--btn-bg-color));}",
+      ".main-nav__item--back {color: currentColor !important;}"
     ]
   }
 }
