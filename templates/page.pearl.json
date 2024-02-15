@@ -11,15 +11,8 @@
     "image_banner_6XXWgY": {
       "type": "image-banner",
       "blocks": {
-        "subheading_xtwYUt": {
-          "type": "subheading",
-          "settings": {
-            "text": "Introducing Ameda's NEW Hospital Grade Breast Pump"
-          }
-        },
         "text_Fz6VbC": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>Introducing Ameda's NEW Hospital Grade Breast Pump<\/p>",
             "enlarge_text": true
@@ -35,7 +28,6 @@
         }
       },
       "block_order": [
-        "subheading_xtwYUt",
         "text_Fz6VbC",
         "heading_XxCmiw"
       ],
@@ -131,6 +123,7 @@
         "media_align": "text-center",
         "image_ratio": "natural",
         "color_scheme": "none",
+        "baby_patterns": false,
         "button_style": "btn btn--secondary"
       }
     },
@@ -138,7 +131,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": "bottom"
       }
@@ -186,7 +179,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "1",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "slideshow_W4mkEg": {
@@ -220,7 +214,7 @@
             "enlarge_end_text": false,
             "countdown_hide_on_end": false,
             "use_custom_colors": false,
-            "count_color": "#fff",
+            "count_color": "#ffffff",
             "bg_color": "#070707",
             "bg_grad": ""
           }
@@ -253,7 +247,7 @@
             "enlarge_end_text": false,
             "countdown_hide_on_end": false,
             "use_custom_colors": false,
-            "count_color": "#fff",
+            "count_color": "#ffffff",
             "bg_color": "#070707",
             "bg_grad": ""
           }
@@ -286,7 +280,7 @@
             "enlarge_end_text": false,
             "countdown_hide_on_end": false,
             "use_custom_colors": false,
-            "count_color": "#fff",
+            "count_color": "#ffffff",
             "bg_color": "#070707",
             "bg_grad": ""
           }
@@ -333,6 +327,8 @@
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
         "prevent_animation": false
       }
     },
@@ -340,7 +336,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": ""
       }
@@ -425,7 +421,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": ""
       }
@@ -548,6 +544,7 @@
         "media_align": "text-center",
         "image_ratio": "shortest",
         "color_scheme": "none",
+        "baby_patterns": false,
         "button_style": "btn btn--secondary"
       }
     },
@@ -614,6 +611,8 @@
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
         "prevent_animation": false
       }
     },
