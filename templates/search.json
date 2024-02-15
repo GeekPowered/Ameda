@@ -18,7 +18,7 @@
         "stick_on_scroll": true,
         "show_filter_counts": true,
         "expand_filters": true,
-        "show_filter_deadends": true,
+        "show_filter_deadends": false,
         "max_filter_options": 7,
         "enable_sorting": true,
         "sort_first": true,
