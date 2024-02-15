@@ -25,6 +25,10 @@
   {%- render 'doc-head-core' -%}
   {%- render 'doc-head-social' -%}
 
+  {% comment %} GPS NO INDEX {% endcomment %}
+  <meta name="robots" content="noindex">
+  {% comment %} GPS NO INDEX {% endcomment %}
+
   <link rel="preload" href="{{ 'main.css' | asset_url }}" as="style">
 
   {%- style %}
