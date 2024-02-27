@@ -100,6 +100,7 @@
       ],
       "custom_css": [
         ".card {border-radius: 1rem; overflow: hidden;}",
+        ".card__info {align-items: center; justify-content: center;}",
         ".card__info > div {margin: 0;}",
         ".card__info > div a {border: 0; padding: 0; font-size: var(--h3-font-size); font-weight: bold; font-family: var(--heading-font-family); z-index: 1;}"
       ],
