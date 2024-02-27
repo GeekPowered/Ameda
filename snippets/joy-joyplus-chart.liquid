@@ -4,6 +4,14 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
         width: 100%;
     }
+    .table-wrapper table tbody tr img {
+      width: 20rem;
+      display: block;
+      margin: 0 auto 1rem auto;
+      border-radius: 1rem;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
     .table-wrapper table td,
     .table-wrapper table th {
         border: none;
@@ -16,7 +24,7 @@
         font-weight: 900;
         text-transform: uppercase;
     }
-    .table-wrapper table tr:nth-child(even):not(:first-of-type) {
+    .table-wrapper table tbody tr:nth-child(odd) {
         background-color: #fff;
     }
     .table-wrapper .pink-check {
