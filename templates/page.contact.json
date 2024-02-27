@@ -137,6 +137,7 @@
         "full_width": false,
         "dividers": "none",
         "color_scheme": "none",
+        "baby_patterns": false,
         "prevent_animation": false
       }
     },
@@ -198,15 +199,15 @@
         "84729553-acde-4c76-a1cd-082c981ca15d": {
           "type": "text",
           "settings": {
-            "text": "<p>Mechelsesteenweg 251<br\/>B-1800 Vilvoorde<br\/>Belgium<\/p>",
+            "text": "<p>Glütschbachstrasse 100 CH-3661<br\/>Uetendorf, Switzerland<\/p>",
             "enlarge_text": true
           }
         },
         "87ce94b8-a36c-451d-98ba-b73744c01e45": {
           "type": "button",
           "settings": {
-            "button_1_label": "+32 2 304 52 79",
-            "button_1_link": "tel:+32 2 304 52 79",
+            "button_1_label": "+41.33.345.66.00",
+            "button_1_link": "tel: 41.33.345.66.00",
             "button_1_style": "btn--primary",
             "button_2_label": "internationalsales@ameda.com",
             "button_2_link": "mailto:internationalsales@ameda.com",
