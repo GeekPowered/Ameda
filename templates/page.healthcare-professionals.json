@@ -140,6 +140,7 @@
         "media_align": "text-center",
         "image_ratio": "1.77",
         "color_scheme": "none",
+        "baby_patterns": false,
         "button_style": "btn btn--primary"
       }
     },
@@ -198,7 +199,8 @@
         "media_scale": 100,
         "text_align": "text-center",
         "color_scheme": "1",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "5474ae37-436a-49af-82e6-a7ee2a3573c9": {
@@ -247,7 +249,8 @@
         "media_scale": 100,
         "text_align": "text-center",
         "color_scheme": "1",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "a477fc8e-3593-4177-886f-c751c483ad0d": {
@@ -296,7 +299,8 @@
         "media_scale": 100,
         "text_align": "text-center",
         "color_scheme": "1",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "81edc268-77ee-444d-8faa-e39d442f831b": {
@@ -345,7 +349,8 @@
         "media_scale": 100,
         "text_align": "text-center",
         "color_scheme": "1",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "6c43c588-3562-43d7-a23c-855740887428": {
@@ -412,6 +417,7 @@
         "section_height": "default",
         "color_scheme": "2",
         "full_width": true,
+        "baby_pattern": true,
         "dividers": "border-top",
         "prevent_animation": false
       }
