@@ -288,6 +288,66 @@
         "button_style": "btn btn--primary"
       }
     },
+    "225748ac-c324-477e-b2dc-1a2714865f85": {
+      "type": "image-banner",
+      "blocks": {
+        "4649bb1b-5595-40f0-946d-e541e09f0d72": {
+          "type": "subheading",
+          "settings": {
+            "text": "Ameda Breast Pumps"
+          }
+        },
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Giving Moms<br>Peace of Mind.",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ameda breast pumps offer moms quality and<br\/>convenience for whatever her day holds.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-button-1": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Shop Pumps",
+            "button_1_link": "shopify:\/\/collections\/breast-pumps",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "4649bb1b-5595-40f0-946d-e541e09f0d72",
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-heading-1",
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-text-1",
+        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-button-1"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/about-section3.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
     "d35ed043-a14a-4efe-ad13-5bedc54c91b4": {
       "type": "multi-column",
       "blocks": {
@@ -454,66 +514,6 @@
         "color_scheme": "none",
         "full_width": true
       }
-    },
-    "225748ac-c324-477e-b2dc-1a2714865f85": {
-      "type": "image-banner",
-      "blocks": {
-        "4649bb1b-5595-40f0-946d-e541e09f0d72": {
-          "type": "subheading",
-          "settings": {
-            "text": "Ameda Breast Pumps"
-          }
-        },
-        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Giving Moms<br>Peace of Mind.",
-            "heading_size": "h1",
-            "heading_h1": false
-          }
-        },
-        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Ameda breast pumps offer moms quality and<br\/>convenience for whatever her day holds.<\/p>",
-            "enlarge_text": true
-          }
-        },
-        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-button-1": {
-          "type": "button",
-          "settings": {
-            "button_1_label": "Shop Pumps",
-            "button_1_link": "shopify:\/\/collections\/breast-pumps",
-            "button_1_style": "btn btn--primary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "4649bb1b-5595-40f0-946d-e541e09f0d72",
-        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-heading-1",
-        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-text-1",
-        "template--21939474530619__225748ac-c324-477e-b2dc-1a2714865f85-button-1"
-      ],
-      "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/about-section3.jpg",
-        "url": "",
-        "height_mode": "fixed",
-        "fixed_height_desktop": 400,
-        "fixed_height_mobile": 250,
-        "overlay_position": "justify-center items-center",
-        "overlay_text_align": "text-center",
-        "mob_center_text": false,
-        "mobile_stacked": false,
-        "color_scheme": "white",
-        "full_width": true,
-        "transparent_content_color": "#ffffff",
-        "tint_color": "#000000",
-        "tint_opacity": 40,
-        "prevent_animation": false
-      }
     }
   },
   "order": [
@@ -523,9 +523,9 @@
     "18a98304-eea6-4351-8b16-216e0a96ac0a",
     "785e07b8-ac2a-4dc9-9132-62454674e1e7",
     "7c2afcd6-707e-4619-8790-89a3b68da3f0",
+    "225748ac-c324-477e-b2dc-1a2714865f85",
     "d35ed043-a14a-4efe-ad13-5bedc54c91b4",
     "159402bb-207e-4471-9891-5b1125275e2a",
-    "aa56a765-7216-4362-8da6-7254c9eaeabc",
-    "225748ac-c324-477e-b2dc-1a2714865f85"
+    "aa56a765-7216-4362-8da6-7254c9eaeabc"
   ]
 }

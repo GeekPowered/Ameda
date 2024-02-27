@@ -141,6 +141,7 @@
         "media_align": "text-left",
         "image_ratio": "1",
         "color_scheme": "none",
+        "baby_patterns": false,
         "button_style": "btn btn--secondary"
       }
     },
@@ -198,7 +199,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "9064ad3d-8ef0-49cd-88a2-f0e079353f22": {
@@ -275,6 +277,7 @@
         "media_align": "text-center",
         "image_ratio": "shortest",
         "color_scheme": "none",
+        "baby_patterns": false,
         "button_style": "btn btn--secondary"
       }
     },
@@ -295,7 +298,7 @@
           "settings": {
             "icon": "none",
             "heading": "How often should I breastfeed my baby?",
-            "text": "<p>The \u001ffirst several weeks, your baby will breastfeed 8-12x every 24 hours. Feed your baby when she is hungry, she will give you signs called hunger cues. Over time, she will breastfeed less often. More information can be found in the Making Milk For YourBaby Q&A.<\/p>"
+            "text": "<p>Feeding frequency for newborns, particularly those who are breastfed, is indeed quite high, typically ranging from 8 to 12 times in a 24-hour period. Babies feed frequently because breast milk is quickly digested, and their small stomachs can only hold a small amount at a time. It's crucial for parents to respond to their baby's hunger cues, which can include rooting, sucking on fists or fingers, and fussiness.<\/p><p>As babies grow and their stomach capacity increases, they may begin to breastfeed less frequently, but it's essential to continue feeding on demand and responding to hunger cues. Each baby is different, so there's no set schedule for when feeding frequency will decrease—it varies from child to child.<\/p><p>More information can be found in the \"Making Milk For Your Baby Q&A\".<\/p>"
           }
         },
         "f1c27362-73bd-47e2-bad5-f67345b0fba9": {
