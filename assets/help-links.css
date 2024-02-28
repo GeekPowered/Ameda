@@ -12,7 +12,7 @@
 
 .helpful-links_item_content.left {
     display: flex;
-    gap: var(--gutter-sm);
+    gap: 1.5rem;
 }
 
 .helpful-links_item_content.left * {
