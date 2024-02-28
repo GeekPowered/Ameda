@@ -452,7 +452,8 @@
       ],
       "custom_css": [
         ".product-comparison-grid {border: none;}",
-        ".product-comparison-slider {border-radius: 1rem; overflow: hidden;}"
+        ".product-comparison-slider {border-radius: 1rem; overflow: hidden;}",
+        ".product-comparison-grid ul {padding-left: 0;}"
       ],
       "settings": {
         "heading": "Pump Without Compromise",
