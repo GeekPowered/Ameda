@@ -12,7 +12,7 @@
 
 .helpful-links_item_content.left {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .helpful-links_item_content.left * {
