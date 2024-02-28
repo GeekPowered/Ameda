@@ -8,6 +8,8 @@
 .helpful-links_item_content {
     width: 50%;
     padding: var(--gutter-md) 0;
+    display: flex;
+    gap: var(--gutter-sm);
 }
 
 .helpful-links_item_content.left * {
