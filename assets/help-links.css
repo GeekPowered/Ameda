@@ -20,7 +20,7 @@
 }
 
 .helpful-links .svg-wrapper {
-    height: 4rem;
+    height: calc(var(--h3-font-size) * 1.25);
     aspect-ratio: 1 / 1;
 }
 
@@ -42,5 +42,14 @@
     .helpful-links_item_content.right {
         padding-top: 0;
         width: 100% !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .helpful-links_item_content.left {
+        flex-direction: column;
+    }
+    .helpful-links .svg-wrapper svg {
+        width: auto;
     }
 }
