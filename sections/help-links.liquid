@@ -8,7 +8,7 @@
             {% for block in section.blocks %}
                 <div class="helpful-links_item">
                     <div class="helpful-links_item_content left">
-                    <h3>{% if block.settings.icon != "none" %}Icon{% endif %}{{ block.settings.title }}</h3>
+                    <h3>{% if block.settings.icon %}<div class="svg-wrapper">{{ block.settings.icon }}</div>{% endif %}{{ block.settings.title }}</h3>
                     </div>
                     <div class="helpful-links_item_content right">
                         <p>{{ block.settings.content }}</p>
@@ -65,159 +65,9 @@
           "id": "url"
         },
         {
-          "type": "select",
+          "type": "text",
           "id": "icon",
-          "label": "Icon",
-          "options": [
-            {
-              "value": "none",
-              "label": "None"
-            },
-            {
-              "value": "award",
-              "label": "Award"
-            },
-            {
-              "value": "box",
-              "label": "Box"
-            },
-            {
-              "value": "briefcase",
-              "label": "Briefcase"
-            },
-            {
-              "value": "calendar",
-              "label": "Calendar"
-            },
-            {
-              "value": "chat_bubble",
-              "label": "Chat bubble"
-            },
-            {
-              "value": "check_mark",
-              "label": "Check mark"
-            },
-            {
-              "value": "check_mark_in_circle",
-              "label": "Check mark in circle"
-            },
-            {
-              "value": "clock",
-              "label": "Clock"
-            },
-            {
-              "value": "credit_card",
-              "label": "Credit card"
-            },
-            {
-              "value": "dollar_sign",
-              "label": "Dollar sign"
-            },
-            {
-              "value": "dryer",
-              "label": "Dryer"
-            },
-            {
-              "value": "email",
-              "label": "Email"
-            },
-            {
-              "value": "eye",
-              "label": "Eye"
-            },
-            {
-              "value": "feather",
-              "label": "Feather"
-            },
-            {
-              "value": "gift",
-              "label": "Gift"
-            },
-            {
-              "value": "heart",
-              "label": "Heart"
-            },
-            {
-              "value": "iron",
-              "label": "Iron"
-            },
-            {
-              "value": "leaf",
-              "label": "Leaf"
-            },
-            {
-              "value": "leather",
-              "label": "Leather"
-            },
-            {
-              "value": "lock",
-              "label": "Lock"
-            },
-            {
-              "value": "map_pin",
-              "label": "Map pin"
-            },
-            {
-              "value": "pants",
-              "label": "Pants"
-            },
-            {
-              "value": "percent",
-              "label": "Percent"
-            },
-            {
-              "value": "phone",
-              "label": "Phone"
-            },
-            {
-              "value": "plane",
-              "label": "Plane"
-            },
-            {
-              "value": "price_tag",
-              "label": "Price tag"
-            },
-            {
-              "value": "question_mark",
-              "label": "Question mark"
-            },
-            {
-              "value": "return",
-              "label": "Return"
-            },
-            {
-              "value": "ruler",
-              "label": "Ruler"
-            },
-            {
-              "value": "scissors",
-              "label": "Scissors"
-            },
-            {
-              "value": "shirt",
-              "label": "Shirt"
-            },
-            {
-              "value": "shoe",
-              "label": "Shoe"
-            },
-            {
-              "value": "silhouette",
-              "label": "Silhouette"
-            },
-            {
-              "value": "star",
-              "label": "Star"
-            },
-            {
-              "value": "truck",
-              "label": "Truck"
-            },
-            {
-              "value": "washing",
-              "label": "Washing"
-            }
-          ]
+          "label": "SVG Icon"
         }
       ]
     }
