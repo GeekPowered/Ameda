@@ -10,7 +10,7 @@
     padding: var(--gutter-md) 0;
 }
 
-.helpful-links_item_container.left {
+.helpful-links_item_content.left {
     display: flex;
     gap: var(--gutter-sm);
 }
