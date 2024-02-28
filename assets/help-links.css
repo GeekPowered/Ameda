@@ -8,6 +8,9 @@
 .helpful-links_item_content {
     width: 50%;
     padding: var(--gutter-md) 0;
+}
+
+.helpful-links_item_container.left {
     display: flex;
     gap: var(--gutter-sm);
 }
@@ -17,8 +20,8 @@
 }
 
 .helpful-links .svg-wrapper {
-    height: 1.25em;
-    width: 1.25em;
+    height: 4rem;
+    aspect-ratio: 1 / 1;
 }
 
 .helpful-links .svg-wrapper svg {
