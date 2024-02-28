@@ -8,7 +8,8 @@
             {% for block in section.blocks %}
                 <div class="helpful-links_item">
                     <div class="helpful-links_item_content left">
-                    <h3>{% if block.settings.icon %}<div class="svg-wrapper">{{ block.settings.icon }}</div>{% endif %}{{ block.settings.title }}</h3>
+                      {% if block.settings.icon %}<div class="svg-wrapper">{{ block.settings.icon }}</div>{% endif %}
+                      <h3>{{ block.settings.title }}</h3>
                     </div>
                     <div class="helpful-links_item_content right">
                         <p>{{ block.settings.content }}</p>
