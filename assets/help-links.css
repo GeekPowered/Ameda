@@ -38,6 +38,7 @@
     .helpful-links_item_content.left {
         padding-bottom: 0;
         width: 100% !important;
+        gap: 1.5rem;
     }
     .helpful-links_item_content.right {
         padding-top: 0;
