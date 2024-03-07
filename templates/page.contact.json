@@ -132,7 +132,7 @@
     "custom_liquid_RBbXEP": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"wfqqv0qOYcIYBOXUwilzCw\"><\/div>",
+        "custom_liquid": "<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 2rem 2rem 0 2rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\"><h2>Contact Us<\/h2>\n<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"wfqqv0qOYcIYBOXUwilzCw\"><\/div>\n<\/div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
