@@ -129,7 +129,7 @@
         "prevent_animation": false
       }
     },
-    "custom_liquid_RBbXEP": {
+    "custom_liquid_nFFbTb": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<h2 class=\"text-center\">Contact Us<\/h2>\n<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div style=\"margin:0 auto -6rem auto;\" class=\"pxFormGenerator\" id=\"wfqqv0qOYcIYBOXUwilzCw\"><\/div>\n<\/div>",
@@ -235,7 +235,7 @@
     "image-banner",
     "7f110c36-d21b-4d2e-a02b-17889f958b35",
     "50a85a9a-0561-4cb0-a5fe-2c20d8e1d76d",
-    "custom_liquid_RBbXEP",
+    "custom_liquid_nFFbTb",
     "3cc7f5aa-4d74-466b-8bd1-283487cccaee",
     "2df0cb9e-eb44-4c3c-ab86-357ab4f8972b"
   ]
