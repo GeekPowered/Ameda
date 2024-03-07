@@ -147,7 +147,7 @@
     "custom_liquid_c3M3xA": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h3>The journey to an insurance-covered pump starts here.<\/h3>\n<div id=\"S6JyNwYUyN12xu6yEI_d8Q\" class=\"pxFormGenerator\" style=\"margin: 0 auto;\"><\/div>\n<p>By clicking submit, you are agreeing that Ameda can contact you with updates about qualifying for your free pump.<\/p>",
+        "custom_liquid": "<h3 class=\"text-center\">The journey to an insurance-covered pump starts here.<\/h3>\n<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div style=\"margin:0 auto -6rem auto;\" class=\"pxFormGenerator\" id=\"S6JyNwYUyN12xu6yEI_d8Q\"><\/div>\n<p>By clicking submit, you are agreeing that Ameda can contact you with updates about qualifying for your free pump.<\/p>\n<\/div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -210,7 +210,8 @@
             "title": "Milk 101",
             "content": "The easy guide to getting a free breast pump through insurance.",
             "link_text": "Learn More",
-            "url": "shopify:\/\/blogs\/posts"
+            "url": "shopify:\/\/blogs\/posts",
+            "icon": ""
           }
         },
         "49895fd3-000e-42d9-b379-e4cc79369f0f": {
@@ -219,7 +220,8 @@
             "title": "FAQS",
             "content": "Got questions? We got answers! Check some of our most common questions and answers.",
             "link_text": "Learn More",
-            "url": "\/pages\/faq"
+            "url": "\/pages\/faq",
+            "icon": ""
           }
         }
       },
