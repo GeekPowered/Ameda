@@ -84,7 +84,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": ""
       }
@@ -92,10 +92,12 @@
     "custom_liquid_49Pxdh": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"3A_eDfckU59IIPw02qc04w\"><\/div>",
+        "custom_liquid": "<h2 class=\"text-center\">Pump Registration<\/h2>\n<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div style=\"margin:0 auto -6rem auto;\" class=\"pxFormGenerator\" id=\"3A_eDfckU59IIPw02qc04w\"><\/div>\n<\/div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
         "prevent_animation": false
       }
     }
