@@ -491,6 +491,7 @@
   },
   "platform_customizations": {
     "custom_css": [
+      ":root {--oke-button-textColor: #fff !important;}",
       ".card__media {border-radius: 1rem; overflow: hidden;}",
       ".header__cart-count {background: rgb(var(--btn-bg-color));}",
       ".main-nav__item--back {color: currentColor !important;}"
