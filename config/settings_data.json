@@ -430,7 +430,7 @@
     "show_search_types": false,
     "enable_predictive_search": true,
     "predictive_search_show_collections": true,
-    "predictive_search_show_vendor": true,
+    "predictive_search_show_vendor": false,
     "predictive_search_show_price": true,
     "predictive_search_include_skus": true,
     "search_input_placeholder_1": "Portable breast pumps",
