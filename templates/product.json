@@ -14,6 +14,12 @@
             "show_weight": false
           }
         },
+        "okendo_star_rating_PxMyB3": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "9d3c5612-e12c-4f60-bc00-70a90a414745": {
           "type": "description",
           "settings": {
@@ -143,6 +149,7 @@
       "block_order": [
         "product-labels",
         "title",
+        "okendo_star_rating_PxMyB3",
         "9d3c5612-e12c-4f60-bc00-70a90a414745",
         "vendor-sku",
         "price",
@@ -233,7 +240,7 @@
       ],
       "settings": {
         "wavebgcolor": "rgba(0,0,0,0)",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": "top"
       }
