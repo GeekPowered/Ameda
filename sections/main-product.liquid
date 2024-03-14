@@ -175,6 +175,15 @@
               </h1>
             </div>
 
+          {%- if product.metafields.reviews.rating.value != blank -%}
+            <div>
+              {% render 'rating',
+                rating_value: product.metafields.reviews.rating.value,
+                rating_count: product.metafields.reviews.rating_count
+              %}
+            </div>
+          {%- endif -%}
+          
           {%- when 'weight' -%}
             <div class="product-info__block product-info__block--sm product-info__weight" {{ block.shopify_attributes }}{% unless current_variant.weight > 0 %} hidden{% endunless %}>
               {% if current_variant.weight > 0 %}
