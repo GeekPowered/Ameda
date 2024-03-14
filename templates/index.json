@@ -553,26 +553,6 @@
         "section_content": "From finding the right pump to usage instructions and general breastfeeding tips, explore our resources for moms below."
       }
     },
-    "1710455107016f55a6": {
-      "type": "apps",
-      "blocks": {
-        "okendo_reviews_carousel_7QVnJX": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "show_heading": true,
-            "heading": "Testimonials",
-            "badge_link": "",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_carousel_7QVnJX"
-      ],
-      "settings": {
-        "full_width": false
-      }
-    },
     "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67": {
       "type": "testimonials",
       "blocks": {
@@ -752,7 +732,6 @@
     "7dbc7bd2-0a65-4654-9735-26944264824b",
     "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc",
     "acd7fd58-c974-46c3-b1be-199a5a00dae3",
-    "1710455107016f55a6",
     "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67",
     "c35932f3-e653-4986-a811-3f28d8ce7450",
     "8d53da5e-9774-4a39-be6d-1a6719422617",
