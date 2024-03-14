@@ -175,8 +175,6 @@
               </h1>
             </div>
 
-          {% render 'okendo-reviews-product-rating-summary', product: product %}
-
           {%- when 'weight' -%}
             <div class="product-info__block product-info__block--sm product-info__weight" {{ block.shopify_attributes }}{% unless current_variant.weight > 0 %} hidden{% endunless %}>
               {% if current_variant.weight > 0 %}
