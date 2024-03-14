@@ -218,7 +218,7 @@
     "custom_liquid_DnXFqh": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"padding: 2rem; background: #fff; border-radius: 1rem;\">\n{% render 'okendo-reviews-widget' %}\n<\/div>",
+        "custom_liquid": "<h2 class=\"text-center\">Product Reviews<\/h2>\n<div style=\"padding: 2rem; background: #fff; border-radius: 1rem;\">\n{% render 'okendo-reviews-widget' %}\n<\/div>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",
