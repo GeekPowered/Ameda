@@ -140,6 +140,14 @@
                                   {%- if settings.predictive_search_show_vendor -%}
                                     <div class="predictive-result__sub-title text-sm">{{ item.vendor }}</div>
                                   {%- endif -%}
+                                  {%- if product.metafields.reviews.rating.value != blank -%}
+                                    <div>
+                                      {% render 'rating',
+                                        rating_value: product.metafields.reviews.rating.value,
+                                        rating_count: product.metafields.reviews.rating_count
+                                      %}
+                                    </div>
+                                  {%- endif -%}
                                 {%- elsif type == 'collections' and item.metafields.theme.label != empty -%}
                                   <div class="predictive-result__sub-title text-sm">
                                     {{ item.metafields.theme.label }}
