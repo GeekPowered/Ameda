@@ -24,37 +24,27 @@
         "use_product_image": false
       }
     },
-    "wave_section_HVUAUB": {
-      "type": "wave-section",
-      "custom_css": [
-        ".wave-container {z-index: 1;}"
-      ],
-      "settings": {
-        "wavebgcolor": "rgba(0,0,0,0)",
-        "wavesvgcolor": "#fbf6ef",
-        "wavetype": "bottom",
-        "waveposition": "top"
-      }
-    },
-    "custom_liquid_h78BCP": {
+    "custom_liquid_rzUaqf": {
       "type": "custom-liquid",
-      "custom_css": [
-        ".section--padded-default {padding-bottom: 0;}"
-      ],
       "settings": {
-        "custom_liquid": "<div style=\"padding-top:4rem;\"><\/div>\n{% render 'subscription-form' %}",
-        "section_height": "default",
+        "custom_liquid": "",
+        "section_height": "medium",
         "full_width": false,
         "dividers": "none",
-        "color_scheme": "2",
-        "baby_patterns": true,
+        "color_scheme": "none",
+        "baby_patterns": false,
         "prevent_animation": false
+      }
+    },
+    "global_footer_cta_pcWa4f": {
+      "type": "global-footer-cta",
+      "settings": {
       }
     }
   },
   "order": [
     "main",
-    "wave_section_HVUAUB",
-    "custom_liquid_h78BCP"
+    "custom_liquid_rzUaqf",
+    "global_footer_cta_pcWa4f"
   ]
 }
