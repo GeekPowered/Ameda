@@ -238,6 +238,18 @@
         "products_to_show": 8
       }
     },
+    "custom_liquid_6FwBVC": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "section_height": "medium",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "global_footer_cta_GKPbqF": {
       "type": "global-footer-cta",
       "settings": {
@@ -250,6 +262,7 @@
     "compatible_products_783dhj",
     "custom_liquid_DnXFqh",
     "recommendations",
+    "custom_liquid_6FwBVC",
     "global_footer_cta_GKPbqF"
   ]
 }
