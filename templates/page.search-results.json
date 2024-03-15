@@ -52,11 +52,18 @@
         "baby_patterns": false,
         "prevent_animation": false
       }
+    },
+    "global_footer_cta_Bh3c8f": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "main",
     "image_banner_Gj3wT8",
-    "custom_liquid_86J4QY"
+    "custom_liquid_86J4QY",
+    "global_footer_cta_Bh3c8f"
   ]
 }

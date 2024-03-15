@@ -20,10 +20,17 @@
       "settings": {
         "comments_per_page": 16
       }
+    },
+    "global_footer_cta_dUChzP": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "main",
-    "article-comments"
+    "article-comments",
+    "global_footer_cta_dUChzP"
   ]
 }

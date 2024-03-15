@@ -36,11 +36,18 @@
       "type": "product-locator",
       "settings": {
       }
+    },
+    "global_footer_cta_4Vkbyc": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "main",
     "rich_text_xHkyRR",
-    "product_locator_x7JikG"
+    "product_locator_x7JikG",
+    "global_footer_cta_4Vkbyc"
   ]
 }

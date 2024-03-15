@@ -56,10 +56,17 @@
         "color_scheme": "1",
         "featured_button_style": "btn btn--secondary"
       }
+    },
+    "global_footer_cta_W8BhxP": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "rich_text_iGpyee",
-    "main"
+    "main",
+    "global_footer_cta_W8BhxP"
   ]
 }
