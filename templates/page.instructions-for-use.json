@@ -45,11 +45,18 @@
       "type": "instructions-for-use",
       "settings": {
       }
+    },
+    "global_footer_cta_3iAadW": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "main",
     "eb3f6abf-c392-4491-9a38-3f6053638f20",
-    "cbe8f08d-d9b8-48ee-94a8-bfb6f282ecdb"
+    "cbe8f08d-d9b8-48ee-94a8-bfb6f282ecdb",
+    "global_footer_cta_3iAadW"
   ]
 }

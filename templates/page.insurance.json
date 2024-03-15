@@ -247,6 +247,12 @@
         "baby_patterns": false,
         "prevent_animation": false
       }
+    },
+    "global_footer_cta_tD8LVQ": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
@@ -259,6 +265,7 @@
     "084c9bf7-9db6-4b91-9bf9-e234e1a59348",
     "d28ea09b-3af1-4fab-aa1d-888bd02ef647",
     "1ff950cf-34b7-4e69-b8e2-53d2fadb9987",
-    "4e60b54a-b466-4694-9f93-58db2af8ec6d"
+    "4e60b54a-b466-4694-9f93-58db2af8ec6d",
+    "global_footer_cta_tD8LVQ"
   ]
 }

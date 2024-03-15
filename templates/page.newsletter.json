@@ -23,6 +23,9 @@
       "block_order": [
         "heading_UBMXXK"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "text_position": "justify-center",
         "text_align": "text-center",
@@ -34,6 +37,9 @@
     },
     "custom_liquid_3XAkmD": {
       "type": "custom-liquid",
+      "custom_css": [
+
+      ],
       "settings": {
         "custom_liquid": "<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div><\/div><div style=\"margin:0 auto -6rem auto;\" class=\"pxFormGenerator\" id=\"nN21y5C-s2lc_Or7QEKn_g\"><\/div>\n<\/div>",
         "section_height": "tight",
@@ -43,11 +49,31 @@
         "baby_patterns": false,
         "prevent_animation": false
       }
+    },
+    "custom_liquid_KFqGpQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "section_height": "medium",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "global_footer_cta_6DcrVE": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "main",
     "rich_text_q8XnkM",
-    "custom_liquid_3XAkmD"
+    "custom_liquid_3XAkmD",
+    "custom_liquid_KFqGpQ",
+    "global_footer_cta_6DcrVE"
   ]
 }

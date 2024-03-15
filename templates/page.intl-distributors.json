@@ -36,11 +36,18 @@
       "type": "international-distributors",
       "settings": {
       }
+    },
+    "global_footer_cta_rPPYzB": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "main",
     "rich_text_xHkyRR",
-    "international_distributors_kr6zCW"
+    "international_distributors_kr6zCW",
+    "global_footer_cta_rPPYzB"
   ]
 }
