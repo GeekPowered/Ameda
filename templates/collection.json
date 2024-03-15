@@ -35,6 +35,17 @@
         "sort_first": true
       }
     },
+    "rich_text_VmQqYp": {
+      "type": "rich-text",
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
     "global_footer_cta_VcTUnt": {
       "type": "global-footer-cta",
       "settings": {
@@ -44,6 +55,7 @@
   "order": [
     "collection-banner",
     "collection-products",
+    "rich_text_VmQqYp",
     "global_footer_cta_VcTUnt"
   ]
 }
