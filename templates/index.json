@@ -556,64 +556,24 @@
         "section_content": "From finding the right pump to usage instructions and general breastfeeding tips, explore our resources for moms below."
       }
     },
-    "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67": {
-      "type": "testimonials",
+    "1710524885cc252599": {
+      "type": "apps",
       "blocks": {
-        "template--21856551764283__ed8d29c9-7aeb-41cd-9313-624ffe2b1c67-testimonial-1": {
-          "type": "testimonial",
+        "okendo_reviews_carousel_yi9pe6": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "testimonial": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.<\/p>",
-            "author": "Jessie J.",
-            "author_info": "Mya Joy Plus",
-            "author_image": "shopify:\/\/shop_images\/joykit_2_b092f283-97d8-48b7-a97f-d51b6f61b8bc.jpg",
-            "show_star_rating": true,
-            "star_rating": 5
-          }
-        },
-        "6835264e-1ee5-4511-9bac-7fd8f4fc8b64": {
-          "type": "testimonial",
-          "settings": {
-            "testimonial": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.<\/p>",
-            "author": "Cassandra M.",
-            "author_info": "Pearl",
-            "author_image": "shopify:\/\/shop_images\/AMED_ProductPhoto_1.jpg",
-            "show_star_rating": true,
-            "star_rating": 5
-          }
-        },
-        "af40b256-9c41-4e1d-885a-d76d313dc1be": {
-          "type": "testimonial",
-          "settings": {
-            "testimonial": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.<\/p>",
-            "author": "Cara D.",
-            "author_info": "Mya Joy",
-            "author_image": "shopify:\/\/shop_images\/joykit_2_b092f283-97d8-48b7-a97f-d51b6f61b8bc.jpg",
-            "show_star_rating": true,
-            "star_rating": 5
+            "show_heading": true,
+            "heading": "Testimonials",
+            "badge_link": "",
+            "product": ""
           }
         }
       },
       "block_order": [
-        "template--21856551764283__ed8d29c9-7aeb-41cd-9313-624ffe2b1c67-testimonial-1",
-        "6835264e-1ee5-4511-9bac-7fd8f4fc8b64",
-        "af40b256-9c41-4e1d-885a-d76d313dc1be"
-      ],
-      "custom_css": [
-
+        "okendo_reviews_carousel_yi9pe6"
       ],
       "settings": {
-        "heading": "Testimonials",
-        "show_quotes": true,
-        "testimonial_size": "h4",
-        "text_position": "justify-center",
-        "text_align": "text-center justify-center",
-        "nav_style": "slideshow_nav_lines",
-        "transition": "slide-fade",
-        "autoplay": true,
-        "slider_pause": true,
-        "autoplay_speed": 5,
-        "color_scheme": "default",
-        "full_width": true
+        "full_width": false
       }
     },
     "c35932f3-e653-4986-a811-3f28d8ce7450": {
@@ -735,7 +695,7 @@
     "7dbc7bd2-0a65-4654-9735-26944264824b",
     "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc",
     "acd7fd58-c974-46c3-b1be-199a5a00dae3",
-    "ed8d29c9-7aeb-41cd-9313-624ffe2b1c67",
+    "1710524885cc252599",
     "c35932f3-e653-4986-a811-3f28d8ce7450",
     "8d53da5e-9774-4a39-be6d-1a6719422617",
     "8357ef30-4770-4182-9313-12f1b70af4cd",
