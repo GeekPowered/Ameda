@@ -413,6 +413,9 @@
         "template--21925444354363__d8cce70e-a0fa-49e3-af4a-6e92df06e86c-text-1",
         "template--21925444354363__d8cce70e-a0fa-49e3-af4a-6e92df06e86c-button-1"
       ],
+      "custom_css": [
+        "h2 {margin-top: 2rem;}"
+      ],
       "settings": {
         "section_height": "default",
         "color_scheme": "2",
