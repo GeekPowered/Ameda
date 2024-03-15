@@ -614,31 +614,9 @@
         "embed_code": "<script src=\"https:\/\/static.elfsight.com\/platform\/platform.js\" data-use-service-core defer><\/script>\n<div class=\"elfsight-app-09c01c85-1f70-4ab0-86c9-9a5335555020\" data-elfsight-app-lazy><\/div>"
       }
     },
-    "wave_section_cwRixD": {
-      "type": "wave-section",
-      "custom_css": [
-        ".wave-container {z-index: 1;}"
-      ],
+    "global_footer_cta_zaGD9D": {
+      "type": "global-footer-cta",
       "settings": {
-        "wavebgcolor": "rgba(0,0,0,0)",
-        "wavesvgcolor": "#fbf6ef",
-        "wavetype": "bottom",
-        "waveposition": "top"
-      }
-    },
-    "custom_liquid_4GpYky": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".section--padded-default {padding-bottom: 0;}"
-      ],
-      "settings": {
-        "custom_liquid": "<div style=\"padding-top:4rem;\"><\/div>\n{% render 'subscription-form' %}",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "2",
-        "baby_patterns": true,
-        "prevent_animation": false
       }
     }
   },
@@ -657,7 +635,6 @@
     "8d53da5e-9774-4a39-be6d-1a6719422617",
     "8357ef30-4770-4182-9313-12f1b70af4cd",
     "1409fdfb-fc91-4faa-8c3a-0dc6db004bf6",
-    "wave_section_cwRixD",
-    "custom_liquid_4GpYky"
+    "global_footer_cta_zaGD9D"
   ]
 }
