@@ -35,14 +35,15 @@
         "sort_first": true
       }
     },
-    "rich_text_VmQqYp": {
-      "type": "rich-text",
+    "custom_liquid_7BngVk": {
+      "type": "custom-liquid",
       "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
+        "custom_liquid": "",
+        "section_height": "medium",
+        "full_width": false,
+        "dividers": "none",
         "color_scheme": "none",
-        "full_width": true,
+        "baby_patterns": false,
         "prevent_animation": false
       }
     },
@@ -55,7 +56,7 @@
   "order": [
     "collection-banner",
     "collection-products",
-    "rich_text_VmQqYp",
+    "custom_liquid_7BngVk",
     "global_footer_cta_VcTUnt"
   ]
 }
