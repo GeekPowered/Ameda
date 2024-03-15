@@ -140,8 +140,8 @@
                                   {%- if settings.predictive_search_show_vendor -%}
                                     <div class="predictive-result__sub-title text-sm">{{ item.vendor }}</div>
                                   {%- endif -%}
-                                  {%- if product.metafields.reviews.rating.value != blank -%}
-                                    <div>{% render 'okendo-reviews-product-rating-summary', product: product %}</div>
+                                  {%- if item.metafields.reviews.rating.value != blank -%}
+                                    <div>{% render 'okendo-reviews-product-rating-summary', product: item %}</div>
                                   {%- endif -%}
                                 {%- elsif type == 'collections' and item.metafields.theme.label != empty -%}
                                   <div class="predictive-result__sub-title text-sm">
