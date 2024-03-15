@@ -419,8 +419,8 @@
     "most_popular_products_xTpaYU": {
       "type": "most-popular-products",
       "settings": {
-        "heading": "You may also like",
-        "heading_align": "text-start",
+        "heading": "Pump Without Compromise",
+        "heading_align": "text-center",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
