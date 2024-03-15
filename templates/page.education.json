@@ -56,11 +56,18 @@
       ],
       "settings": {
       }
+    },
+    "global_footer_cta_9YJrDK": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "main",
     "1273f508-5369-4ad8-8efb-ae6ed7c170fa",
-    "5d0dea48-f9f2-4b22-ae3b-70f1eb395ed5"
+    "5d0dea48-f9f2-4b22-ae3b-70f1eb395ed5",
+    "global_footer_cta_9YJrDK"
   ]
 }
