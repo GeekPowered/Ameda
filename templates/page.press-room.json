@@ -220,6 +220,12 @@
         "baby_patterns": false,
         "prevent_animation": false
       }
+    },
+    "global_footer_cta_FxqaHN": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#ffffff"
+      }
     }
   },
   "order": [
@@ -227,6 +233,7 @@
     "rich_text_yepjCH",
     "custom_liquid_68z4DL",
     "multi_column_ghd66j",
-    "custom_liquid_HXEMkC"
+    "custom_liquid_HXEMkC",
+    "global_footer_cta_FxqaHN"
   ]
 }
