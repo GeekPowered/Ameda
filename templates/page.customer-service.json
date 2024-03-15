@@ -305,6 +305,12 @@
         "full_width": true,
         "prevent_animation": false
       }
+    },
+    "global_footer_cta_r4W7GQ": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
@@ -315,6 +321,7 @@
     "custom_liquid_B8TacB",
     "rich_text_w3FgLJ",
     "rich_text_byM4KW",
-    "rich_text_bKKAYg"
+    "rich_text_bKKAYg",
+    "global_footer_cta_r4W7GQ"
   ]
 }
