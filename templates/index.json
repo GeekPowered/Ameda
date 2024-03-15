@@ -418,74 +418,17 @@
     },
     "most_popular_products_xTpaYU": {
       "type": "most-popular-products",
+      "custom_css": [
+
+      ],
       "settings": {
+        "eyebrow-heading": "Mom-Approved Best Sellers",
         "heading": "Pump Without Compromise",
         "heading_align": "text-center",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
         "products_to_show": 8
-      }
-    },
-    "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc": {
-      "type": "product-comparison-grid",
-      "blocks": {
-        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-product-1": {
-          "type": "product",
-          "settings": {
-            "show_image": true,
-            "show_title": true,
-            "show_button": true
-          }
-        },
-        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-price-1": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "metafield_Q47hqJ": {
-          "type": "metafield",
-          "settings": {
-            "title": "Key Features",
-            "metafield_key": "product.key_features"
-          }
-        },
-        "metafield_dGLxYm": {
-          "type": "metafield",
-          "settings": {
-            "title": "Technical Features",
-            "metafield_key": "product.technical_features"
-          }
-        }
-      },
-      "block_order": [
-        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-product-1",
-        "template--21856551764283__4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc-price-1",
-        "metafield_Q47hqJ",
-        "metafield_dGLxYm"
-      ],
-      "custom_css": [
-        ".product-comparison-grid {border: none;}",
-        ".product-comparison-slider {border-radius: 1rem; overflow: hidden;}",
-        ".product-comparison-grid ul {padding-left: 0;}"
-      ],
-      "settings": {
-        "heading": "Pump Without Compromise",
-        "text": "",
-        "heading_align": "text-center",
-        "view_more_label": "View more",
-        "view_more_link": "",
-        "product_list": [
-          "ameda-mya-joy-hospital-strength-portable-electric-breast-pump",
-          "ameda-mya-joy-plus-rechargeable-quiet-and-portable-double-breast-pump",
-          "ameda®-pearl®-hospital-grade-breast-pump"
-        ],
-        "empty_field_text": "-",
-        "image_ratio": "1.33",
-        "image_crop": "center",
-        "num_rows": 0,
-        "color_scheme": "1",
-        "highlight_row": false
       }
     },
     "acd7fd58-c974-46c3-b1be-199a5a00dae3": {
@@ -561,7 +504,7 @@
         "1524bde6-43ab-45a5-9d9e-e26750e61795"
       ],
       "custom_css": [
-
+        ".section--padded {margin-top: 0;}"
       ],
       "settings": {
         "section_content": "From finding the right pump to usage instructions and general breastfeeding tips, explore our resources for moms below."
@@ -708,7 +651,6 @@
     "d7e1a754-c0f2-42cf-8b40-26636730031a",
     "7dbc7bd2-0a65-4654-9735-26944264824b",
     "most_popular_products_xTpaYU",
-    "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc",
     "acd7fd58-c974-46c3-b1be-199a5a00dae3",
     "1710524885cc252599",
     "c35932f3-e653-4986-a811-3f28d8ce7450",
