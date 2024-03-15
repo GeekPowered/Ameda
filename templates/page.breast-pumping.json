@@ -306,6 +306,7 @@
 
       ],
       "settings": {
+        "svg_fill_override": "#ffffff"
       }
     }
   },
