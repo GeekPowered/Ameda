@@ -77,7 +77,7 @@
     <div class="container">
       <div class="section__header items-center flex{% if section.settings.heading_align == 'text-center' %} flex-col text-center{% elsif section.settings.heading_align == 'text-end' %} flex-row-reverse flex-wrap{% else %} flex-row flex-wrap{% endif %} gap-x-theme"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
         {%- if section.settings.title != blank -%}
-          <h2 class="h4 mb-0 flex-auto {{ section.settings.heading_align }}">
+          <h2 class="mb-0 flex-auto {{ section.settings.heading_align }}">
             {{- section.settings.title | escape -}}
           </h2>
         {%- endif -%}
