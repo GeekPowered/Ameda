@@ -230,6 +230,12 @@
       "settings": {
         "section_title": "Supporting Breastfeeding Moms for 80+ Years"
       }
+    },
+    "global_footer_cta_t934jq": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
@@ -237,6 +243,7 @@
     "50ebb950-6902-45e7-abee-0e76489143f6",
     "047c699d-f6cd-4be9-839b-b66902cd34aa",
     "03ec6935-1fa5-4ef4-abf1-64b67801d52f",
-    "timeline_C3NadR"
+    "timeline_C3NadR",
+    "global_footer_cta_t934jq"
   ]
 }
