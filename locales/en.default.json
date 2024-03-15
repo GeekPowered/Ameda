@@ -356,7 +356,7 @@
   },
   "cart": {
     "general": {
-      "title": "Your cart",
+      "title": "Your Cart",
       "empty": "Your cart is empty",
       "start_shopping": "Start shopping",
       "backorder": "Product is backordered and will ship as soon as it is back in stock.",
