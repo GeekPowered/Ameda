@@ -416,6 +416,17 @@
         "prevent_animation": true
       }
     },
+    "most_popular_products_xTpaYU": {
+      "type": "most-popular-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_align": "text-start",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8
+      }
+    },
     "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc": {
       "type": "product-comparison-grid",
       "blocks": {
@@ -696,6 +707,7 @@
     "baa96221-7cae-47c4-9db3-d5857e55db23",
     "d7e1a754-c0f2-42cf-8b40-26636730031a",
     "7dbc7bd2-0a65-4654-9735-26944264824b",
+    "most_popular_products_xTpaYU",
     "4e5b72a4-cf30-4b2b-9f3c-5070a3dc4edc",
     "acd7fd58-c974-46c3-b1be-199a5a00dae3",
     "1710524885cc252599",
