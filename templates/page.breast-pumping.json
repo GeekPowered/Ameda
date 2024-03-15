@@ -136,7 +136,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "373c50a2-8138-49d8-97b6-e55bb6ee7315": {
@@ -185,7 +186,8 @@
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
-        "only_content_color_scheme": false
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "e83aa573-9d22-47ba-abd8-c081450e09c9": {
@@ -298,13 +300,12 @@
         "blog_tag": "Breast Pumping"
       }
     },
-    "75170376-c327-4296-adad-b15a7708d790": {
-      "type": "wave-section",
+    "global_footer_cta_c7AzY3": {
+      "type": "global-footer-cta",
+      "custom_css": [
+
+      ],
       "settings": {
-        "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#fbf6ef",
-        "wavetype": "top",
-        "waveposition": ""
       }
     }
   },
@@ -318,6 +319,6 @@
     "e83aa573-9d22-47ba-abd8-c081450e09c9",
     "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5",
     "beed3893-13e5-403a-bc6d-b88cf18d5ece",
-    "75170376-c327-4296-adad-b15a7708d790"
+    "global_footer_cta_c7AzY3"
   ]
 }
