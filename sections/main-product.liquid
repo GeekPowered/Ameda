@@ -176,12 +176,7 @@
             </div>
 
           {%- if product.metafields.reviews.rating.value != blank -%}
-            <div>
-              {% render 'rating',
-                rating_value: product.metafields.reviews.rating.value,
-                rating_count: product.metafields.reviews.rating_count
-              %}
-            </div>
+            <div>{% render 'okendo-reviews-product-rating-summary', product: product %}</div>
           {%- endif -%}
           
           {%- when 'weight' -%}
