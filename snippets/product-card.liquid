@@ -205,12 +205,7 @@
           {%- endif -%}
 
           {%- if product.metafields.reviews.rating.value != blank and settings.card_show_rating -%}
-            <div>
-              {% render 'rating',
-                rating_value: product.metafields.reviews.rating.value,
-                rating_count: product.metafields.reviews.rating_count
-              %}
-            </div>
+            {% render 'okendo-reviews-product-rating-summary' %}
           {%- endif -%}
 
           {%- if settings.card_price_bottom == false -%}
