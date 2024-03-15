@@ -45,11 +45,18 @@
       "type": "faq-page",
       "settings": {
       }
+    },
+    "global_footer_cta_HNGG67": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "main",
     "image-banner",
-    "faq_page_xGnc6n"
+    "faq_page_xGnc6n",
+    "global_footer_cta_HNGG67"
   ]
 }
