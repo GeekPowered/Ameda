@@ -49,11 +49,18 @@
         "baby_patterns": false,
         "prevent_animation": false
       }
+    },
+    "global_footer_cta_p3A6Rd": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
     "main",
     "rich_text_jwg9Ac",
-    "custom_liquid_NWgAmx"
+    "custom_liquid_NWgAmx",
+    "global_footer_cta_p3A6Rd"
   ]
 }
