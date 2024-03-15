@@ -140,13 +140,8 @@
                                   {%- if settings.predictive_search_show_vendor -%}
                                     <div class="predictive-result__sub-title text-sm">{{ item.vendor }}</div>
                                   {%- endif -%}
-                                  {%- if item.metafields.reviews.rating.value != blank -%}
-                                    <div>
-                                      {% render 'rating',
-                                        rating_value: item.metafields.reviews.rating.value,
-                                        rating_count: item.metafields.reviews.rating_count
-                                      %}
-                                    </div>
+                                  {%- if product.metafields.reviews.rating.value != blank -%}
+                                    <div>{% render 'okendo-reviews-product-rating-summary', product: product %}</div>
                                   {%- endif -%}
                                 {%- elsif type == 'collections' and item.metafields.theme.label != empty -%}
                                   <div class="predictive-result__sub-title text-sm">
