@@ -205,7 +205,7 @@
           {%- endif -%}
 
           {%- if product.metafields.reviews.rating.value != blank and settings.card_show_rating -%}
-            <div style="margin-top:.25rem;">{% render 'okendo-reviews-product-rating-summary', product: product %}</div>
+            <div style="margin-top:.5rem;">{% render 'okendo-reviews-product-rating-summary', product: product %}</div>
           {%- endif -%}
 
           {%- if settings.card_price_bottom == false -%}
