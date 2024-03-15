@@ -228,6 +228,12 @@
         "full_width": true,
         "prevent_animation": false
       }
+    },
+    "global_footer_cta_xNWfYH": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
     }
   },
   "order": [
@@ -237,6 +243,7 @@
     "50a85a9a-0561-4cb0-a5fe-2c20d8e1d76d",
     "custom_liquid_nFFbTb",
     "3cc7f5aa-4d74-466b-8bd1-283487cccaee",
-    "2df0cb9e-eb44-4c3c-ab86-357ab4f8972b"
+    "2df0cb9e-eb44-4c3c-ab86-357ab4f8972b",
+    "global_footer_cta_xNWfYH"
   ]
 }
