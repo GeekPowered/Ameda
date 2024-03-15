@@ -494,7 +494,9 @@
       ":root {--oke-button-textColor: #fff !important;}",
       ".card__media {border-radius: 1rem; overflow: hidden;}",
       ".header__cart-count {background: rgb(var(--btn-bg-color));}",
-      ".main-nav__item--back {color: currentColor !important;}"
+      ".main-nav__item--back {color: currentColor !important;}",
+      ".oke-reviewCarousel-header-title {font-size: var(--h2-font-size); margin: 0 0 0.5em; color: rgb(var(--heading-color)); font-family: var(--heading-font-family); font-style: var(--heading-font-style); font-weight: var(--heading-font-weight); line-height: calc(4px + 2.4ex); text-transform: var(--heading-text-transform);}",
+      ".oke-reviewCard.oke-reviewCard--below {background: #fff; border: none !important; border-radius: 1rem;}"
     ]
   }
 }

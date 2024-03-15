@@ -573,7 +573,7 @@
         "okendo_reviews_carousel_yi9pe6"
       ],
       "custom_css": [
-        "h2.oke-title {font-size: var(--h2-font-size); margin: 0 0 0.5em; color: rgb(var(--heading-color)); font-family: var(--heading-font-family); font-style: var(--heading-font-style); font-weight: var(--heading-font-weight); line-height: calc(4px + 2.4ex); text-transform: var(--heading-text-transform);}"
+
       ],
       "settings": {
         "full_width": true
