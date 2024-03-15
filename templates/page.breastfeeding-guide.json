@@ -376,13 +376,10 @@
         "blog_tag": "Breastfeeding"
       }
     },
-    "75170376-c327-4296-adad-b15a7708d790": {
-      "type": "wave-section",
+    "global_footer_cta_Pg64nK": {
+      "type": "global-footer-cta",
       "settings": {
-        "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#fbf6ef",
-        "wavetype": "top",
-        "waveposition": ""
+        "svg_fill_override": "#ffffff"
       }
     }
   },
@@ -398,6 +395,6 @@
     "ee6093cd-a2d9-41a2-9bdc-790c6cc5fdb5",
     "rich_text_hgmAAG",
     "beed3893-13e5-403a-bc6d-b88cf18d5ece",
-    "75170376-c327-4296-adad-b15a7708d790"
+    "global_footer_cta_Pg64nK"
   ]
 }
