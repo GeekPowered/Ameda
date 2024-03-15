@@ -4,8 +4,35 @@
     "theme_name": "Enterprise",
     "theme_version": "1.4.0",
     "theme_author": "Clean Canvas",
-    "theme_documentation_url": "https://cleancanvas.co.uk/support/enterprise",
-    "theme_support_url": "https://cleancanvas.co.uk/support/enterprise"
+    "theme_documentation_url": "https:\/\/cleancanvas.co.uk\/support\/enterprise",
+    "theme_support_url": "https:\/\/cleancanvas.co.uk\/support\/enterprise"
+  },
+  {
+    "name": "Global Footer CTA",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Global Footer Call to Action Settings"
+      },
+      {
+        "type": "text",
+        "id": "footer_cta_title",
+        "label": "Title",
+        "default": "Subscribe to the Ameda Newsletter"
+      },
+      {
+        "type": "text",
+        "id": "footer_cta_subtitle",
+        "label": "Subtitle",
+        "default": "Stay up to date with new product releases, events, and helpful guides."
+      },
+      {
+        "type": "text",
+        "id": "footer_cta_hulkapp_form_id",
+        "label": "Hulkapp Form ID",
+        "default": "bRXEMJxx1eTk4EcyhCcUBw"
+      }
+    ]
   },
   {
     "name": "Colors",
@@ -280,7 +307,7 @@
       },
       {
         "type": "paragraph",
-        "content": "If all collection or product images are set on a very light background, this can blend that background into a light color. [Read more](https://cleancanvas.co.uk/support/enterprise/settings/product-image-blend)"
+        "content": "If all collection or product images are set on a very light background, this can blend that background into a light color. [Read more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/settings\/product-image-blend)"
       },
       {
         "type": "checkbox",
@@ -535,7 +562,7 @@
       },
       {
         "type": "range",
-          "id": "overlay_border_radius",
+        "id": "overlay_border_radius",
         "label": "Corner radius",
         "min": 0,
         "max": 26,
@@ -554,11 +581,11 @@
         "options": [
           {
             "value": "arrow",
-            "label": "Arrow down / up"
+            "label": "Arrow down \/ up"
           },
           {
             "value": "plus",
-            "label": "Plus / minus"
+            "label": "Plus \/ minus"
           }
         ],
         "default": "arrow"
@@ -851,7 +878,7 @@
         "type": "checkbox",
         "id": "card_show_subtitle",
         "label": "Show product subtitle",
-        "info": "Uses product subtitle [metafield](https://help.shopify.com/en/manual/metafields)",
+        "info": "Uses product subtitle [metafield](https:\/\/help.shopify.com\/en\/manual\/metafields)",
         "default": true
       },
       {
@@ -997,7 +1024,7 @@
         "type": "select",
         "id": "compare_toggle",
         "label": "Compare toggle",
-        "info": "This utilizes browser caching. Your Compare toggle might not update until the browser cache is cleared. [Read more](https://cleancanvas.co.uk/support/enterprise/templates/collection-page/comparison-grid)",
+        "info": "This utilizes browser caching. Your Compare toggle might not update until the browser cache is cleared. [Read more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/templates\/collection-page\/comparison-grid)",
         "default": "toggle_on",
         "options": [
           {
@@ -1090,7 +1117,7 @@
         "label": "Show inventory notice",
         "options": [
           {
-            "label": "Low/very low inventory",
+            "label": "Low\/very low inventory",
             "value": "low"
           },
           {
@@ -1116,7 +1143,7 @@
             "value": "never"
           },
           {
-            "label": "Low/very low inventory",
+            "label": "Low\/very low inventory",
             "value": "low"
           },
           {
@@ -1786,7 +1813,7 @@
       },
       {
         "type": "paragraph",
-        "content": "A product is a preorder if its template name contains the word 'preorder'. [Read more](https://cleancanvas.co.uk/support/enterprise/settings/product-labels)"
+        "content": "A product is a preorder if its template name contains the word 'preorder'. [Read more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/settings\/product-labels)"
       },
       {
         "type": "select",
@@ -1958,7 +1985,7 @@
       },
       {
         "type": "paragraph",
-        "content": "For custom labels, add a product metafield with the namespace and key 'theme.label', with the 'Single line text' type. [Read more](https://cleancanvas.co.uk/support/enterprise/settings/product-labels)"
+        "content": "For custom labels, add a product metafield with the namespace and key 'theme.label', with the 'Single line text' type. [Read more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/settings\/product-labels)"
       },
       {
         "type": "checkbox",
@@ -2137,7 +2164,7 @@
     "settings": [
       {
         "type": "paragraph",
-        "content": "Swatches are small visual indicators that display the colors, patterns, and materials in which a product is available to customers. [Learn more](https://cleancanvas.co.uk/support/enterprise/swatches)"
+        "content": "Swatches are small visual indicators that display the colors, patterns, and materials in which a product is available to customers. [Learn more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/swatches)"
       },
       {
         "type": "text",
@@ -2308,7 +2335,7 @@
         "id": "swatch_colors",
         "label": "Swatch color list",
         "placeholder": "Red:#ff0000\nLight Blue:#add8e6\nHot Pink:hot-pink.png\nRed Blue Stripes:#e22#22e",
-        "info": "One color name:value per line. [Learn more](https://cleancanvas.co.uk/support/enterprise/swatches)"
+        "info": "One color name:value per line. [Learn more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/swatches)"
       }
     ]
   },
@@ -2319,19 +2346,19 @@
         "type": "text",
         "id": "social_facebook_url",
         "label": "Facebook",
-        "info": "https://facebook.com/shopify"
+        "info": "https:\/\/facebook.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_youtube_url",
         "label": "YouTube",
-        "info": "https://youtube.com/user/shopify"
+        "info": "https:\/\/youtube.com\/user\/shopify"
       },
       {
         "type": "text",
         "id": "social_instagram_url",
         "label": "Instagram",
-        "info": "https://instagram.com/shopify"
+        "info": "https:\/\/instagram.com\/shopify"
       },
       {
         "type": "text",
@@ -2343,49 +2370,49 @@
         "type": "text",
         "id": "social_tiktok_url",
         "label": "TikTok",
-        "info": "https://tiktok.com/@shopify"
+        "info": "https:\/\/tiktok.com\/@shopify"
       },
       {
         "type": "text",
         "id": "social_snapchat_url",
         "label": "Snapchat",
-        "info": "https://www.snapchat.com/add/shopify"
+        "info": "https:\/\/www.snapchat.com\/add\/shopify"
       },
       {
         "type": "text",
         "id": "social_pinterest_url",
         "label": "Pinterest",
-        "info": "https://pinterest.com/shopify"
+        "info": "https:\/\/pinterest.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_twitter_url",
         "label": "X (formerly Twitter)",
-        "info": "https://twitter.com/shopify"
+        "info": "https:\/\/twitter.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_linkedin_url",
         "label": "LinkedIn",
-        "info": "https://linkedin.com/company/shopify"
+        "info": "https:\/\/linkedin.com\/company\/shopify"
       },
       {
         "type": "text",
         "id": "social_wechat_url",
         "label": "WeChat",
-        "info": "weixin://dl/chat?shopify"
+        "info": "weixin:\/\/dl\/chat?shopify"
       },
       {
         "type": "text",
         "id": "social_vimeo_url",
         "label": "Vimeo",
-        "info": "https://vimeo.com/shopify"
+        "info": "https:\/\/vimeo.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_tumblr_url",
         "label": "Tumblr",
-        "info": "https://shopify.tumblr.com"
+        "info": "https:\/\/shopify.tumblr.com"
       },
       {
         "type": "text",
@@ -2403,19 +2430,19 @@
         "type": "text",
         "id": "social_discord_url",
         "label": "Discord",
-        "info": "https://discord.com/servers/shopify"
+        "info": "https:\/\/discord.com\/servers\/shopify"
       },
       {
         "type": "text",
         "id": "social_mastodon_url",
         "label": "Mastodon",
-        "info": "https://mastodon.social/@shopify"
+        "info": "https:\/\/mastodon.social\/@shopify"
       },
       {
         "type": "text",
         "id": "social_threads_url",
         "label": "Threads",
-        "info": "https://threads.net/user"
+        "info": "https:\/\/threads.net\/user"
       },
       {
         "type": "header",
@@ -2431,7 +2458,7 @@
         "type": "text",
         "id": "social_custom_url",
         "label": "URL",
-        "info": "https://socialnetwork.com/shopify"
+        "info": "https:\/\/socialnetwork.com\/shopify"
       }
     ]
   },
@@ -2474,7 +2501,7 @@
       },
       {
         "type": "paragraph",
-        "content": "If enabled, you should also add the Product Type filter within the Search & Discovery app. [Learn more](https://help.shopify.com/manual/online-store/search-and-discovery/filters)"
+        "content": "If enabled, you should also add the Product Type filter within the Search & Discovery app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/filters)"
       },
       {
         "type": "checkbox",
@@ -2507,7 +2534,7 @@
         "type": "checkbox",
         "id": "predictive_search_show_collections",
         "label": "Show collections",
-        "info": "To show a custom message below each collection result, add a Collection metafield with the namespace and key 'theme.label', with the 'Single line text' type. [Read more](https://cleancanvas.co.uk/support/enterprise/settings/custom-collection-message).",
+        "info": "To show a custom message below each collection result, add a Collection metafield with the namespace and key 'theme.label', with the 'Single line text' type. [Read more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/settings\/custom-collection-message).",
         "default": false
       },
       {
@@ -2599,7 +2626,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Speech search is only available on Chrome for desktop or Android (will not work on iPhone). [Read more](https://cleancanvas.co.uk/support/enterprise/settings/voice-search)"
+        "content": "Speech search is only available on Chrome for desktop or Android (will not work on iPhone). [Read more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/settings\/voice-search)"
       },
       {
         "type": "checkbox",
@@ -2713,7 +2740,7 @@
         "type": "url",
         "id": "cart_empty_shop_link",
         "label": "Empty cart shopping link",
-        "default": "/collections/all"
+        "default": "\/collections\/all"
       },
       {
         "type": "checkbox",
@@ -2727,7 +2754,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Dynamic recommendations are based on your cart contents and will change and improve over time. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)"
+        "content": "Dynamic recommendations are based on your cart contents and will change and improve over time. [Learn more](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
       },
       {
         "type": "checkbox",
@@ -2773,7 +2800,7 @@
       },
       {
         "type": "paragraph",
-        "content": "This draws attention to the cart icon when it has items, and could encourage checkouts.  [Read more](https://cleancanvas.co.uk/support/enterprise/settings/shaking-cart-icon)"
+        "content": "This draws attention to the cart icon when it has items, and could encourage checkouts.  [Read more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/settings\/shaking-cart-icon)"
       },
       {
         "type": "checkbox",
@@ -2821,7 +2848,7 @@
       },
       {
         "type": "paragraph",
-        "content": "[Currency code reference](https://www.iso.org/iso-4217-currency-codes.html) [Country code reference](https://www.iso.org/glossary-for-iso-3166.html)"
+        "content": "[Currency code reference](https:\/\/www.iso.org\/iso-4217-currency-codes.html) [Country code reference](https:\/\/www.iso.org\/glossary-for-iso-3166.html)"
       },
       {
         "type": "select",
@@ -2953,7 +2980,7 @@
           }
         ],
         "default": "1",
-        "info": "Changing the image quality can affect the page load speed. [Learn more](https://cleancanvas.co.uk/support/enterprise/settings/image-quality)"
+        "info": "Changing the image quality can affect the page load speed. [Learn more](https:\/\/cleancanvas.co.uk\/support\/enterprise\/settings\/image-quality)"
       },
       {
         "type": "header",
@@ -3014,7 +3041,7 @@
         "type": "html",
         "id": "custom_html_head",
         "label": "HTML for <head> tag",
-        "placeholder": "<meta name=\"google-site-verification\" content=\"\"/>",
+        "placeholder": "<meta name=\"google-site-verification\" content=\"\"\/>",
         "info": "Placed at the end of the head tag. Included on all theme pages - this does not include the checkout."
       },
       {
@@ -3023,7 +3050,7 @@
       },
       {
         "type": "paragraph",
-        "content": "For a full list of JavaScript events included with Enterprise, please refer to the /assets/custom.js file within the theme code, or read our [JavaScript Technical Guide](https://cleancanvas.co.uk/support/enterprise/technical-guides/js)."
+        "content": "For a full list of JavaScript events included with Enterprise, please refer to the \/assets\/custom.js file within the theme code, or read our [JavaScript Technical Guide](https:\/\/cleancanvas.co.uk\/support\/enterprise\/technical-guides\/js)."
       }
     ]
   }
