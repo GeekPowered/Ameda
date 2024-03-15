@@ -10,12 +10,12 @@
         <div style="padding-top:4rem;"></div>
         <div class="flex justify-center text-center">
             <div class="text-center" data-cc-animate="">
-                <h2 class="section__block section__block--heading h2">Subscribe to the Ameda Newsletter</h2>
+                <h2 class="section__block section__block--heading h2">{{ settings.footer_cta_title }}</h2>
                 <div class="section__block reading-width rte  mx-auto">
-                    <p>Stay up to date with new product releases, events, and helpful guides.</p>
+                    <p>{{ settings.footer_cta_subtitle }}</p>
                 </div>
-                <div style="margin:0 auto;" class="pxFormGenerator" id="bRXEMJxx1eTk4EcyhCcUBw">
-                    <iframe src="https://formbuilder.hulkapps.com/corepage/customform?id=bRXEMJxx1eTk4EcyhCcUBw&amp;referrer_url=https://ameda-dev.myshopify.com/" title="Form Builder - bRXEMJxx1eTk4EcyhCcUBw" id="frame_bRXEMJxx1eTk4EcyhCcUBw" frameborder="0" width="100%" style="height: 115px;"></iframe>
+                <div style="margin:0 auto;" class="pxFormGenerator" id="{{ settings.footer_cta_hulkapp_form_id }}">
+                    <iframe src="https://formbuilder.hulkapps.com/corepage/customform?id={{ settings.footer_cta_hulkapp_form_id }}&amp;referrer_url=https://ameda-dev.myshopify.com/" title="Form Builder - {{ settings.footer_cta_hulkapp_form_id }}" id="frame_{{ settings.footer_cta_hulkapp_form_id }}" frameborder="0" width="100%" style="height: 115px;"></iframe>
                 </div>
             </div>
         </div>
