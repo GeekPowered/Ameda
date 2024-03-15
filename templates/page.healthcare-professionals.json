@@ -369,13 +369,13 @@
     "wave_section_fAkqj3": {
       "type": "wave-section",
       "custom_css": [
-        ".wave-container {margin-bottom: -1px;}"
+
       ],
       "settings": {
-        "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "{{ shop.brand.colors.secondary[0].background }}",
-        "wavetype": "top",
-        "waveposition": ""
+        "wavebgcolor": "rgba(0,0,0,0)",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "bottom",
+        "waveposition": "top"
       }
     },
     "d8cce70e-a0fa-49e3-af4a-6e92df06e86c": {
