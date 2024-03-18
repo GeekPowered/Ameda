@@ -1,3 +1,6 @@
+{% assign url_parts = request.path | split: '/' %}
+{% assign current_collection_handle = url_parts[2] %}
+
 <details-disclosure class="facets__active-filters" {% if active_filters_count == 0 %} hidden{% endif %}>
   <details class="disclosure"{% if section.settings.expand_filters %} open{% endif %}>
     <summary>
@@ -17,10 +20,10 @@
     <div class="disclosure__panel has-motion">
       <div class="disclosure__content">
         <div class="active-filters flex flex-wrap">
-          <ul>
+          <ul class="filter">
             {% for collection in collections %}
               {% if collection.metafields.collection.visible != false %}
-                <li><a href="/collections/{{ collection.handle }}">{{ collection.title }}</a></li>
+                <li><a class="font-body {% if collection.handle == current_collection_handle %}active{% endif %}" href="/collections/{{ collection.handle }}">{{ collection.title }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>
