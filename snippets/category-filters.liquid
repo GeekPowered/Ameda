@@ -2,7 +2,12 @@
 {% assign current_collection_handle = url_parts[2] %}
 
 <style>
-  details-disclosure .active-filters a {
+  details-disclosure .filter.collections {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+  }
+  details-disclosure .filter.collections a {
     border: 1px solid #ef9aa0;
     border-radius: 20rem;
     font-size: 1.25rem;
@@ -10,7 +15,7 @@
     font-weight: bold;
     display: block;
   }
-  details-disclosure .active-filters a.active {
+  details-disclosure .filter.collections a.active {
     background: #ef9aa0 !important;
     color: #fff;
   }
@@ -36,7 +41,7 @@
     <div class="disclosure__panel has-motion">
       <div class="disclosure__content">
         <div class="active-filters flex flex-wrap">
-          <div class="filter">
+          <div class="filter collections">
             {% for collection in collections %}
               {% if collection.metafields.collection.visible != false %}
                 <a class="pt-2 pb-2 pl-4 pr-4 font-body {% if collection.handle == current_collection_handle %}active{% endif %}" href="/collections/{{ collection.handle }}">{{ collection.title }}</a>
