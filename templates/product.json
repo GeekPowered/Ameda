@@ -253,6 +253,7 @@
     "global_footer_cta_GKPbqF": {
       "type": "global-footer-cta",
       "settings": {
+        "svg_fill_override": "#fbf6ef"
       }
     }
   },
