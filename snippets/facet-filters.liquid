@@ -73,7 +73,7 @@
 <sticky-scroll-direction data-min-sticky-size="lg">
 {%- endif -%}
 
-  {% render 'category-filters' %}
+  
   
   <facet-filters class="facets drawer fixed top-0 left-0 flex flex-col w-full has-motion" data-name="facet-filters" id="facet-filters" data-filtering="{{ section.settings.enable_filtering }}" data-sorting="{{ section.settings.enable_sorting }}" role="dialog" aria-labelledby="facets-title" aria-modal="true" aria-hidden="true" tabindex="-1">
     <header class="drawer__header flex justify-between items-center lg:hidden">
@@ -92,6 +92,7 @@
     </header>
 
     <div class="drawer__content">
+      {% render 'category-filters' %}
       <form id="facets" novalidate>
         {%- if results.current_vendor or results.current_type -%}
           <input type="hidden" name="q" value="{{ results.current_vendor }}{{ results.current_type }}">
