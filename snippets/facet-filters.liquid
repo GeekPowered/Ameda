@@ -90,7 +90,7 @@
         {% render 'icon-close' %}
       </button>
     </header>
-
+{% render 'category-filters' %}
     <div class="drawer__content">
       
       <form id="facets" novalidate>
@@ -102,7 +102,6 @@
           <input name="options[prefix]" type="hidden" value="last">
         {%- endif -%}
 
-        {% render 'category-filters' %}
         <details-disclosure class="facets__active-filters" {% if active_filters_count == 0 %} hidden{% endif %}>
           <details class="disclosure"{% if section.settings.expand_filters %} open{% endif %}>
             {%- liquid
