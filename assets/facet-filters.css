@@ -71,7 +71,7 @@ input[disabled] + .filter__label {
   border-radius: 50%;
   stroke-width: 2px;
   stroke: rgba(var(--bg-color));
-  background-color: rgb(var(--text-color));
+  background-color: rgb(var(--btn-bg-color-og));
   pointer-events: none;
 }
 
