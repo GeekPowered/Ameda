@@ -348,51 +348,51 @@
         "prevent_animation": false
       }
     },
-    "d35ed043-a14a-4efe-ad13-5bedc54c91b4": {
+    "multi_column_r6y8xY": {
       "type": "multi-column",
       "blocks": {
-        "5bba4961-1a59-4e02-af33-f3259f348a8c": {
+        "column_XQQ4JL": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_ShopCategoryIcons-11.png",
-            "media_scale": 65,
+            "image": "shopify:\/\/shop_images\/joy-plus-on.jpg",
+            "media_scale": 100,
             "heading": "Breast Pumps",
             "text": "<p>Browse our hospital-strength breast pumps for truly personalized pumping sessions.<\/p>",
             "button_label": "Shop All",
             "button_link": "shopify:\/\/collections\/breast-pumps"
           }
         },
-        "1d93f691-31f6-4800-b0e1-e7a54f9bce2b": {
+        "column_bfgjyY": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_ShopCategoryIcons-13.png",
-            "media_scale": 65,
+            "image": "shopify:\/\/shop_images\/cooling_bag_for_TSA.jpg",
+            "media_scale": 100,
             "heading": "Breast Milk Storage",
             "text": "<p>Prevent spilling or spoiling with our breast milk storage bottles and accessories.<\/p>",
             "button_label": "Shop All",
             "button_link": "shopify:\/\/collections\/breast-milk-storage"
           }
         },
-        "4649055c-2261-45b7-a140-9bffa49af15e": {
+        "column_AmXwqC": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_ShopCategoryIcons-14.png",
-            "media_scale": 65,
+            "image": "shopify:\/\/shop_images\/Ameda_ComfortGel_HydroGel_pads_300x300_0914471f-8924-4a39-b414-a70446bb56d2.jpg",
+            "media_scale": 100,
             "heading": "Breast Care",
             "text": "<p>Take care of your nipples and skin with our lanolin cream, breast pads, and other items.<\/p>",
             "button_label": "Shop All",
             "button_link": "shopify:\/\/collections\/breast-care"
           }
         },
-        "94e85e1a-a445-47fa-95d8-2a04b605e70d": {
+        "column_fYNYnM": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_ShopCategoryIcons-12.png",
-            "media_scale": 65,
+            "image": "shopify:\/\/shop_images\/01_e187629e-5b77-408d-b285-53b899410ac5.jpg",
+            "media_scale": 100,
             "heading": "Accessories",
             "text": "<p>A wide selection of accessories to ensure mom has the most comfortable breastfeeding experience.<\/p>",
             "button_label": "Shop All",
@@ -401,13 +401,10 @@
         }
       },
       "block_order": [
-        "5bba4961-1a59-4e02-af33-f3259f348a8c",
-        "1d93f691-31f6-4800-b0e1-e7a54f9bce2b",
-        "4649055c-2261-45b7-a140-9bffa49af15e",
-        "94e85e1a-a445-47fa-95d8-2a04b605e70d"
-      ],
-      "custom_css": [
-
+        "column_XQQ4JL",
+        "column_bfgjyY",
+        "column_AmXwqC",
+        "column_fYNYnM"
       ],
       "settings": {
         "title": "Loved By Moms",
@@ -418,7 +415,7 @@
         "column_size": "small",
         "column_align": "center",
         "media_align": "text-center",
-        "image_ratio": "1.77",
+        "image_ratio": "1",
         "color_scheme": "none",
         "baby_patterns": false,
         "button_style": "btn btn--primary"
@@ -530,7 +527,7 @@
     "785e07b8-ac2a-4dc9-9132-62454674e1e7",
     "7c2afcd6-707e-4619-8790-89a3b68da3f0",
     "225748ac-c324-477e-b2dc-1a2714865f85",
-    "d35ed043-a14a-4efe-ad13-5bedc54c91b4",
+    "multi_column_r6y8xY",
     "159402bb-207e-4471-9891-5b1125275e2a",
     "aa56a765-7216-4362-8da6-7254c9eaeabc",
     "global_footer_cta_3qT4JE"
