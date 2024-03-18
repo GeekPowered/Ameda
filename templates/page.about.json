@@ -118,7 +118,7 @@
         "7ff6ac9f-6b60-4f2a-b30e-bf9a5db98392": {
           "type": "text",
           "settings": {
-            "text": "<p>As part of our ongoing mission to be active in the global breastfeeding community, we at Ameda support and comply with the World Health Organization’s goals, including its International Code of Marketing Breast Milk Substitutes, also known as the WHO Code. Ameda is one of the few companies that is WHO code compliant in the breastfeeding solutions category. Not all major breastfeeding products manufacturing companies abide this voluntary determination of standard.<\/p>",
+            "text": "<p>As part of our ongoing mission to be active in the global breastfeeding community, we at Ameda support and comply with the World Health Organization’s goals, including its International Code of Marketing Breast Milk Substitutes, also known as the WHO Code. Ameda is one of the few companies that is WHO code compliant in the breastfeeding solutions category.<\/p>",
             "enlarge_text": false
           }
         },
@@ -518,6 +518,7 @@
     "global_footer_cta_3qT4JE": {
       "type": "global-footer-cta",
       "settings": {
+        "svg_fill_override": "#fbf6ef"
       }
     }
   },
