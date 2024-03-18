@@ -1,0 +1,29 @@
+<details-disclosure class="facets__active-filters" {% if active_filters_count == 0 %} hidden{% endif %}>
+  <details class="disclosure"{% if section.settings.expand_filters %} open{% endif %}>
+    <summary>
+      <div class="flex justify-between items-center">
+        <span class="flex-auto font-bold active-filters-header">
+          Product Category          
+        </span>
+        <span class="disclosure__toggle">
+          {%- if settings.disclosure_toggle == 'plus' -%}
+            {% render 'icon-plus' %}
+          {%- else -%}
+            {% render 'icon-chevron-down' %}
+          {%- endif -%}
+        </span>
+      </div>
+    </summary>
+    <div class="disclosure__panel has-motion">
+      <div class="disclosure__content">
+        <div class="active-filters flex flex-wrap">
+          <ul>
+            {% for collection in collections %}
+              <li><a href="/collections/{{ collection.handle }}">{{ collection.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </details>
+</details-disclosure>
