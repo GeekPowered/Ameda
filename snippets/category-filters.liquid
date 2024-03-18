@@ -23,7 +23,7 @@
           <ul class="filter">
             {% for collection in collections %}
               {% if collection.metafields.collection.visible != false %}
-                <li><a class="font-body {% if collection.handle == current_collection_handle %}active{% endif %}" href="/collections/{{ collection.handle }}">{{ collection.title }}</a></li>
+                <li><a class="font-body" {% if collection.handle == current_collection_handle %}style="text-decoration:underline;"{% endif %} href="/collections/{{ collection.handle }}">{{ collection.title }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>
