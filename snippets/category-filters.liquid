@@ -19,7 +19,9 @@
         <div class="active-filters flex flex-wrap">
           <ul>
             {% for collection in collections %}
-              <li><a href="/collections/{{ collection.handle }}">{{ collection.title }}</a></li>
+              {% if collection.metafields.collection.visible != false %}
+                <li><a href="/collections/{{ collection.handle }}">{{ collection.title }}</a></li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
