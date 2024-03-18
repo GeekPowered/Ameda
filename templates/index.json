@@ -431,6 +431,29 @@
         "products_to_show": 8
       }
     },
+    "1710524885cc252599": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_carousel_yi9pe6": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": true,
+            "heading": "Product Reviews",
+            "badge_link": "",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_carousel_yi9pe6"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true
+      }
+    },
     "acd7fd58-c974-46c3-b1be-199a5a00dae3": {
       "type": "help-links",
       "blocks": {
@@ -508,29 +531,6 @@
       ],
       "settings": {
         "section_content": "From finding the right pump to usage instructions and general breastfeeding tips, explore our resources for moms below."
-      }
-    },
-    "1710524885cc252599": {
-      "type": "apps",
-      "blocks": {
-        "okendo_reviews_carousel_yi9pe6": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "show_heading": true,
-            "heading": "Product Reviews",
-            "badge_link": "",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_carousel_yi9pe6"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true
       }
     },
     "c35932f3-e653-4986-a811-3f28d8ce7450": {
@@ -630,8 +630,8 @@
     "d7e1a754-c0f2-42cf-8b40-26636730031a",
     "7dbc7bd2-0a65-4654-9735-26944264824b",
     "most_popular_products_xTpaYU",
-    "acd7fd58-c974-46c3-b1be-199a5a00dae3",
     "1710524885cc252599",
+    "acd7fd58-c974-46c3-b1be-199a5a00dae3",
     "c35932f3-e653-4986-a811-3f28d8ce7450",
     "8d53da5e-9774-4a39-be6d-1a6719422617",
     "8357ef30-4770-4182-9313-12f1b70af4cd",
