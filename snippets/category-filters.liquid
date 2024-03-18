@@ -35,13 +35,13 @@
     <div class="disclosure__panel has-motion">
       <div class="disclosure__content">
         <div class="active-filters flex flex-wrap">
-          <ul class="filter">
+          <div class="filter">
             {% for collection in collections %}
               {% if collection.metafields.collection.visible != false %}
-                <li><a class="pt-2 pb-2 pl-4 pr-4 font-body {% if collection.handle == current_collection_handle %}active{% endif %}" href="/collections/{{ collection.handle }}">{{ collection.title }}</a></li>
+                <a class="pt-2 pb-2 pl-4 pr-4 font-body {% if collection.handle == current_collection_handle %}active{% endif %}" href="/collections/{{ collection.handle }}">{{ collection.title }}</a>
               {% endif %}
             {% endfor %}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
