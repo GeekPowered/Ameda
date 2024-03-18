@@ -1,6 +1,21 @@
 {% assign url_parts = request.path | split: '/' %}
 {% assign current_collection_handle = url_parts[2] %}
 
+<style>
+  details-disclosure li a {
+    border: 1px solid #ef9aa0;
+    border-radius: 20rem;
+    font-size: 1.25rem;
+    background: #fff;
+    font-weight: bold;
+  }
+  details-disclosure li a.active {
+    background: #ef9aa0 !important;
+    color: #fff;
+  }
+  
+</style>
+
 <details-disclosure class="facets__active-filters" {% if active_filters_count == 0 %} hidden{% endif %}>
   <details class="disclosure"{% if section.settings.expand_filters %} open{% endif %}>
     <summary>
