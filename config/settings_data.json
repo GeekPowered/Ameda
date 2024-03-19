@@ -392,6 +392,7 @@
     "card_show_inventory": false,
     "card_price_bottom": true,
     "card_url_within_coll": false,
+    "enable_view_product_button": false,
     "enable_quick_add": false,
     "card_atc_mobile": "text_button_bottom",
     "card_atc_desktop": "text_button_bottom",
