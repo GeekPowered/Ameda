@@ -363,6 +363,7 @@
                   <div class="disclosure__panel has-motion">
                     <div class="disclosure__content rte" data-productdropdown="{{ block.settings.heading | escape }}">
                       {{ block.settings.text }}
+                      {{ block.settings.custom_liquid }}
                       {{ block.settings.page.content }}
                     </div>
                   </div>
@@ -1063,6 +1064,12 @@
           "id": "heading",
           "label": "Heading",
           "default": "Collapsible content"
+        },
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "Custom code",
+          "default": "Add HTML or Liquid code to create advanced customizations."
         },
         {
           "type": "select",
