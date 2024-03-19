@@ -333,6 +333,12 @@
         </div>
       </div>
 
+      {% if settings.enable_view_product_button == true %}
+        <a href="{{ product_url }}" class="btn btn--secondary quick-add-view-btn">
+          View Product
+        </a>
+      {% endif %}
+      
       {%- if settings.enable_quick_add and disable_quickbuy != true -%}
         <div class="card__quick-add
           {% if settings.card_atc_mobile == "text_button_bottom" %}mob:card__quick-add--below{% endif %}
