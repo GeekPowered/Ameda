@@ -90,6 +90,7 @@
             "heading": "Package Includes",
             "icon": "none",
             "text": "{{ product.metafields.product.package_includes | metafield_tag }}",
+            "custom_liquid": "",
             "page": "",
             "open": false
           }
@@ -100,6 +101,7 @@
             "heading": "Key Features",
             "icon": "none",
             "text": "{{ product.metafields.product.key_features | metafield_tag }}",
+            "custom_liquid": "Replace",
             "page": "",
             "open": false
           }
@@ -110,6 +112,7 @@
             "heading": "Technical Features",
             "icon": "none",
             "text": "{{ product.metafields.product.technical_features | metafield_tag }}",
+            "custom_liquid": "Replace",
             "page": "",
             "open": false
           }
@@ -120,6 +123,7 @@
             "heading": "FAQs",
             "icon": "none",
             "text": "{{ product.metafields.product.faq | metafield_tag }}",
+            "custom_liquid": "Replace",
             "page": "",
             "open": false
           }
@@ -130,6 +134,7 @@
             "heading": "Resources",
             "icon": "none",
             "text": "{{ product.metafields.product.resources | metafield_tag }}",
+            "custom_liquid": "Replace",
             "page": "",
             "open": false
           }
