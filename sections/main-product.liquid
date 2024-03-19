@@ -363,9 +363,6 @@
                   <div class="disclosure__panel has-motion">
                     <div class="disclosure__content rte" data-productdropdown="{{ block.settings.heading | escape }}">
                       {{ block.settings.text }}
-                      {% if block.settings.custom_liquid != "Replace" %}
-                        {{ block.settings.custom_liquid }}
-                      {% endif %}
                       {{ block.settings.page.content }}
                     </div>
                   </div>
@@ -1228,12 +1225,6 @@
           "id": "text",
           "label": "Content",
           "default": "<p>Add your content here</p>"
-        },
-        {
-          "type": "liquid",
-          "id": "custom_liquid",
-          "label": "Custom code",
-          "default": "Replace"
         },
         {
           "type": "page",
