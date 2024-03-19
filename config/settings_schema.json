@@ -914,6 +914,12 @@
       },
       {
         "type": "checkbox",
+        "id": "enable_view_product_button",
+        "label": "Enable View Product Button",
+        "default": true
+      },
+      {
+        "type": "checkbox",
         "id": "enable_quick_add",
         "label": "Enable Quick Buy",
         "default": true
