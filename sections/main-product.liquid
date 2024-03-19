@@ -363,7 +363,9 @@
                   <div class="disclosure__panel has-motion">
                     <div class="disclosure__content rte" data-productdropdown="{{ block.settings.heading | escape }}">
                       {{ block.settings.text }}
-                      {{ block.settings.custom_liquid }}
+                      {% if block.settings.custom_liquid != "Replace" %}
+                        {{ block.settings.custom_liquid }}
+                      {% endif %}
                       {{ block.settings.page.content }}
                     </div>
                   </div>
