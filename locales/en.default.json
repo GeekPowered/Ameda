@@ -558,6 +558,13 @@
       "general": {
         "choose_shipping_method": "Please note we do not ship to PO boxes"
       }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "out_of_stock": "Contact For Availability"
+        }
+      }
     }
   }
 }
