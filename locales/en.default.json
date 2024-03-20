@@ -557,9 +557,6 @@
       },
       "general": {
         "choose_shipping_method": "Please note we do not ship to PO boxes"
-      },
-      "stock": {
-        "title": "Contact For Availibility"
       }
     }
   }
