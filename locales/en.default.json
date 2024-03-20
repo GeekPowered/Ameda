@@ -562,7 +562,7 @@
     "filters": {
       "availability": {
         "value": {
-          "out_of_stock": "Contact For Availability"
+          "out_of_stock": "Contact for Availability"
         }
       }
     }
