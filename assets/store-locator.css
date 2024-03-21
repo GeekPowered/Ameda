@@ -110,6 +110,9 @@ ul.state-selector {
     transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
   }
 
+#global-results, .find-global-locations {
+    display: none;
+}
 
 @media (max-width: 991px) {
     .store-location {
