@@ -26,7 +26,7 @@
         {% endfor %}
       </ul>
     </div>
-    <div class="find-global-locations" style="display: hidden;">
+    <div class="find-global-locations hidden">
       <p class="text-center"><strong>FIND BY COUNTRY:</strong></p>
       <ul class="state-selector">
         {% for country in global_countries %}
@@ -104,7 +104,7 @@
     </div>
   </div>
 </div>
-<div class="section section--padding" id="global-results">
+<div class="section section--padding hidden" id="global-results">
   <div class="container">
     <div class="store-locations">
           {% assign current_country = '' %}

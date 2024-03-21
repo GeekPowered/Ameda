@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 .state-link {
     font-weight: 700;
     width: 4rem;
@@ -119,10 +123,7 @@ ul.state-selector {
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
-    cursor: pointer;
-    user-select: none;
 }
-
 
 .country-selector>.country {
     padding: .25rem 1rem;
@@ -130,6 +131,8 @@ ul.state-selector {
     font-weight: bold;
     text-transform: uppercase;
     border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+    user-select: none;
 }
 
 .country-selector > .country:not(.active) {
