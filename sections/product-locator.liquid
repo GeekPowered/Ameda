@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="{{ 'store-locator.css' | asset_url }}" media="print" onload="this.media='all'">
-{% assign locations = shop.metaobjects.store_locations["us-locations"].all.value %}
+{% assign us_locations = shop.metaobjects.store_locations["us-locations"].all.value %}
 
 <div class="section section--padding">
   <div class="container">
     <p class="text-center h4" style="margin-bottom: calc(10 * var(--space-unit));">E is for Elites, P is for Platinums, LE is for LACT-E, and SMB is for SMB.</p>
     <p class="text-center"><strong>FIND BY STATE:</strong></p>
     <ul class="state-selector" id="stateList">
-      {% assign state_provinces = locations | map: 'state_province' %}
+      {% assign state_provinces = us_locations | map: 'state_province' %}
       {% assign unique_sorted_states = state_provinces | uniq | sort %}
       {% for state in unique_sorted_states %}
         {% if state != blank %}
@@ -22,7 +22,7 @@
     <div class="store-locations">
           {% assign current_state = '' %}
           {% assign is_first_item = true %}
-          {% for store_location in locations %}
+          {% for store_location in us_locations %}
           {% if current_state != store_location.state_province %}
             {% assign current_state = store_location.state_province %}
             {% assign is_first_item = true %}
