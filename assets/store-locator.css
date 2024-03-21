@@ -130,8 +130,8 @@ ul.state-selector {
     text-transform: uppercase;
 }
 
-.country-selector > .country.active {
-    border: 1px solid rgb(var(--btn-bg-color));
+.country-selector > .country:not(.active) {
+    background: rgba(0,0,0,.1);
 }
 
 .country-selector > .country:first-child {
