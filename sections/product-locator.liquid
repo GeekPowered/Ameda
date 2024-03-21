@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="{{ 'store-locator.css' | asset_url }}" media="print" onload="this.media='all'">
-{% assign us_locations = shop.metaobjects.store_locations["us-locations"].all.value %}
+{% assign locations = shop.metaobjects.store_locations["us-locations"].all.value %}
 
 <div class="section section--padding">
   <div class="container">
@@ -22,7 +22,7 @@
     <div class="store-locations">
           {% assign current_state = '' %}
           {% assign is_first_item = true %}
-          {% for store_location in us_locations %}
+          {% for store_location in locations %}
           {% if current_state != store_location.state_province %}
             {% assign current_state = store_location.state_province %}
             {% assign is_first_item = true %}
