@@ -6,7 +6,7 @@
 
 {% assign global_locations = shop.metaobjects.store_locations["global-locations"].all.value %}
 {% assign global_countries = global_locations | map: 'country' %}
-{% assign sorted_global_countries = global_locations | uniq | sort %}
+{% assign sorted_global_countries = global_countries | uniq | sort %}
 
 
 <div class="section section--padding">
@@ -19,7 +19,6 @@
     <div class="find-locations" data-location="usa">
       <p class="text-center"><strong>FIND BY STATE/PROVINCE:</strong></p>
       <ul class="state-selector" id="stateList">
-        {% assign unique_sorted_states = state_provinces | uniq | sort %}
         {% for state in unique_sorted_states %}
           {% if state != blank %}
             <li class="state-link"><a href="#{{ state }}">{{ state }}</a></li>
