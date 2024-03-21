@@ -35,7 +35,7 @@
   </div>
 </div>
 
-<div class="section section--padding">
+<div class="section section--padding us">
   <div class="container">
     <div class="store-locations">
           {% assign current_state = '' %}
@@ -93,6 +93,71 @@
         
               {% if store_location.website != '' %}
                 <a class="link-with-icon btn btn--primary" target="_blank" href="{{ store_location.website }}">{% render 'icon-link' %} Visit Website</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="section section--padding global">
+  <div class="container">
+    <div class="store-locations">
+          {% assign current_country = '' %}
+          {% assign is_first_item = true %}
+          {% for global_location in global_locations %}
+          {% if current_country != global_location.country %}
+            {% assign current_country = global_location.country %}
+            {% assign is_first_item = true %}
+          {% endif %}
+          <div class="store-location" {% if is_first_item %}id="{{ current_country | strip }}"{% assign is_first_item = false %}{% endif %}>
+            <div class="location-content">
+                <h3 class="store-title h5">{{ global_location.title }}</h3>
+            
+                {% if global_location.short_description != '' %}
+                  <div class="popover-wrapper">
+                    <span class="short-desc">{{ global_location.short_description }}</span>
+                    {% if global_location.rentals != '' %}<span class="short-desc">{{ global_location.rentals }}</span>{% endif %}
+                    {% if global_location.description != '' %}
+                      <div class="popover-content">
+                        <span>{{ global_location.description }}</span>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+                
+                <p class="mb-0">
+                  {% if global_location.address != '' %}{{ global_location.address }}{% endif %}
+                    <br>
+                  {% if global_location.city != '' %} {{ global_location.city }}{% endif %}
+                  {% if global_location.state_province != '' %} {{ global_location.state_province }}{% endif %}
+                  {% if global_location.zip != '' %} {{ global_location.zip }}{% endif %}
+                  <br>
+                  {% if global_location.country != '' %} {{ global_location.country }}{% endif %}
+                </p>
+            </div>
+        
+            <div class="location-content">
+              {% if global_location.email != '' %}
+                {% assign emails = global_location.email | split: ',' %}
+                {% for email in emails %}
+                  <a class="link-with-icon btn btn--primary" href="mailto:{{ email | strip }}">
+                    {% render 'icon-mail' %} {{ email | strip }}
+                  </a>
+                {% endfor %}
+              {% endif %}
+            
+              {% if global_location.phone_number != '' %}
+                {% assign phone_numbers = global_location.phone_number | split: ',' %}
+                {% for phone_number in phone_numbers %}
+                  <a class="link-with-icon btn btn--primary" href="tel:{{ phone_number | strip }}">
+                    {% render 'icon-phone' %} {{ phone_number | strip }}
+                  </a>
+                {% endfor %}
+              {% endif %}
+        
+              {% if global_location.website != '' %}
+                <a class="link-with-icon btn btn--primary" target="_blank" href="{{ global_location.website }}">{% render 'icon-link' %} Visit Website</a>
               {% endif %}
             </div>
           </div>
