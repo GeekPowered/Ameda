@@ -118,7 +118,9 @@ ul.state-selector {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    user-select: none;
 }
 
 .country-selector>.country {
