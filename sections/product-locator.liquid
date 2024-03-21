@@ -24,10 +24,10 @@
     </div>
     <div class="find-global-locations" style="display: hidden;">
       <p class="text-center"><strong>FIND BY COUNTRY:</strong></p>
-      <ul class="country-selector">
+      <ul class="state-selector">
         {% for country in global_countries %}
           {% if country != blank %}
-            <li class="country-link"><a href="#{{ country }}">{{ country }}</a></li>
+            <li class="state-link"><a href="#{{ country }}">{{ country }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
