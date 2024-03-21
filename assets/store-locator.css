@@ -121,6 +121,7 @@ ul.state-selector {
     margin-bottom: 3rem;
     cursor: pointer;
     user-select: none;
+    border: 1px solid rgba(0,0,0,.1);
 }
 
 .country-selector>.country {
@@ -131,7 +132,7 @@ ul.state-selector {
 }
 
 .country-selector > .country:not(.active) {
-    background: rgba(0,0,0,.1);
+    opacity: .5;
 }
 
 .country-selector > .country:first-child {
