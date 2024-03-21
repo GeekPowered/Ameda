@@ -18,20 +18,13 @@
             "heading_size": "h0",
             "heading_h1": true
           }
-        },
-        "subheading_YU9RyP": {
-          "type": "subheading",
-          "settings": {
-            "text": "E is for Elites, P is for Platinums, LE is for LACT-E, EPP is for EPP, and SMB is for SMB."
-          }
         }
       },
       "block_order": [
-        "heading_cyFUGh",
-        "subheading_YU9RyP"
+        "heading_cyFUGh"
       ],
       "custom_css": [
-        ".max-w-text-overlay {max-width: 100% !important;}"
+
       ],
       "settings": {
         "text_position": "justify-center",
