@@ -114,6 +114,34 @@ ul.state-selector {
     display: none;
 }
 
+.country-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.country-selector > .country {
+    padding: 0 .5rem;
+    background: #fff;
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+
+.country-selector > .country.active {
+    background: rgba(0,0,0,.1);
+}
+
+.country-selector > .country:first-child {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.country-selector > .country:last-child {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    border-right: none;
+}
+
 @media (max-width: 991px) {
     .store-location {
         width: calc(50% - 1rem); 
