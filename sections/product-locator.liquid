@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="{{ 'store-locator.css' | asset_url }}" media="print" onload="this.media='all'">
 
-{% assign us_locations = shop.metaobjects.store_locations["us-locations"].all.value %}
+{% assign us_locations = shop.metaobjects.store_locations["us-locations"].all.value | sort: 'state_province' %}
 {% assign state_provinces = us_locations | map: 'state_province' %}
 {% assign unique_sorted_states = state_provinces | uniq | sort %}
 
-{% assign global_locations = shop.metaobjects.store_locations["global-locations"].all.value %}
+{% assign global_locations = shop.metaobjects.store_locations["global-locations"].all.value | sort: 'country' %}
 {% assign global_countries = global_locations | map: 'country' %}
 {% assign sorted_global_countries = global_countries | uniq | sort %}
 
