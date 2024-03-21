@@ -6,6 +6,7 @@
 
 {% assign global_locations = shop.metaobjects.store_locations["global-locations"].all.value %}
 {% assign global_countries = global_locations | map: 'country' %}
+{% assign sorted_global_countries = global_locations | uniq | sort %}
 
 
 <div class="section section--padding">
@@ -29,7 +30,7 @@
     <div class="find-locations hidden" data-location="global">
       <p class="text-center"><strong>FIND BY COUNTRY:</strong></p>
       <ul class="state-selector">
-        {% for country in global_countries %}
+        {% for country in sorted_global_countries %}
           {% if country != blank %}
             <li class="state-link"><a href="#{{ country }}">{{ country }}</a></li>
           {% endif %}
@@ -169,6 +170,35 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const countries = document.querySelectorAll(".country");
+    const findLocations = document.querySelectorAll("[data-location]");
+
+    countries.forEach(country => {
+      country.addEventListener("click", function() {
+        const targetLocation = this.getAttribute("data-location-target");
+
+        // If the clicked country already has the active class, do nothing
+        if (this.classList.contains("active")) {
+          return;
+        }
+
+        // Toggle active class on countries
+        countries.forEach(country => {
+          country.classList.toggle("active", country === this);
+        });
+
+        // Toggle hidden class on find-locations elements
+        findLocations.forEach(location => {
+          location.classList.toggle("hidden", location.getAttribute("data-location") !== targetLocation);
+        });
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
