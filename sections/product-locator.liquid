@@ -12,10 +12,10 @@
   <div class="container">
     <p class="text-center h4" style="margin-bottom: calc(10 * var(--space-unit));">E is for Elites, P is for Platinums, LE is for LACT-E, EPP is for EPP, and SMB is for SMB.</p>
     <div class="country-selector">
-      <div class="country active"><span>🇺🇸 USA</span></div>
-      <div class="country"><span>🌐 Global</span></div>
+      <div class="country active" data-location-target="usa"><span>🇺🇸 USA</span></div>
+      <div class="country" data-location-target="global"><span>🌐 Global</span></div>
     </div>
-    <div class="find-us-locations">
+    <div class="find-locations" data-location="usa">
       <p class="text-center"><strong>FIND BY STATE/PROVINCE:</strong></p>
       <ul class="state-selector" id="stateList">
         {% assign unique_sorted_states = state_provinces | uniq | sort %}
@@ -26,7 +26,7 @@
         {% endfor %}
       </ul>
     </div>
-    <div class="find-global-locations hidden">
+    <div class="find-locations hidden" data-location="global">
       <p class="text-center"><strong>FIND BY COUNTRY:</strong></p>
       <ul class="state-selector">
         {% for country in global_countries %}
@@ -39,7 +39,7 @@
   </div>
 </div>
 
-<div class="section section--padding" id="us-results">
+<div class="section section--padding" data-location="usa">
   <div class="container">
     <div class="store-locations">
           {% assign current_state = '' %}
@@ -104,7 +104,7 @@
     </div>
   </div>
 </div>
-<div class="section section--padding hidden" id="global-results">
+<div class="section section--padding hidden" data-location="global">
   <div class="container">
     <div class="store-locations">
           {% assign current_country = '' %}
