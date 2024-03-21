@@ -1,19 +1,37 @@
 <link rel="stylesheet" href="{{ 'store-locator.css' | asset_url }}" media="print" onload="this.media='all'">
+
 {% assign us_locations = shop.metaobjects.store_locations["us-locations"].all.value %}
+{% assign state_provinces = us_locations | map: 'state_province' %}
+{% assign unique_sorted_states = state_provinces | uniq | sort %}
+
+{% assign global_locations = shop.metaobjects.store_locations["global-locations"].all.value %}
+{% assign global_countries = global_locations | map: 'country' %}
+
 
 <div class="section section--padding">
   <div class="container">
     <p class="text-center h4" style="margin-bottom: calc(10 * var(--space-unit));">E is for Elites, P is for Platinums, LE is for LACT-E, EPP is for EPP, and SMB is for SMB.</p>
-    <p class="text-center"><strong>FIND BY STATE:</strong></p>
-    <ul class="state-selector" id="stateList">
-      {% assign state_provinces = us_locations | map: 'state_province' %}
-      {% assign unique_sorted_states = state_provinces | uniq | sort %}
-      {% for state in unique_sorted_states %}
-        {% if state != blank %}
-          <li class="state-link"><a href="#{{ state }}">{{ state }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <div class="find-us-locations">
+      <p class="text-center"><strong>FIND BY STATE/PROVINCE:</strong></p>
+      <ul class="state-selector" id="stateList">
+        {% assign unique_sorted_states = state_provinces | uniq | sort %}
+        {% for state in unique_sorted_states %}
+          {% if state != blank %}
+            <li class="state-link"><a href="#{{ state }}">{{ state }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="find-global-locations" style="display: hidden;">
+      <p class="text-center"><strong>FIND BY COUNTRY:</strong></p>
+      <ul class="country-selector">
+        {% for country in global_countries %}
+          {% if country != blank %}
+            <li class="country-link"><a href="#{{ country }}">{{ country }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </div>
 
