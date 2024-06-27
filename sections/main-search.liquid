@@ -144,7 +144,7 @@
                             </a>
                           </h3>
 
-                          {% if item.metafields.custom.image %}
+                          {% if item.metafields.custom.image != blank %}
                             <div style="width: 100%; aspect-ratio: 1 / 1; position: relative;">
                               {% render 'image',
                                 image: item.metafields.custom.image,
