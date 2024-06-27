@@ -144,10 +144,10 @@
                             </a>
                           </h3>
 
-                          {% if item.custom.image %}
+                          {% if item.metafields.custom.image %}
                             <div style="width: 100%; aspect-ratio: 1 / 1; position: relative;">
                               {% render 'image',
-                                image: item.custom.image,
+                                image: item.metafields.custom.image,
                                 src_width: 460,
                                 widths: '320, 460, 600, 700, 800, 900, 1200',
                                 src_placeholder: true,
