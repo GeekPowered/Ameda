@@ -33,7 +33,7 @@
         "sort_first": true,
         "show_article_featured_image": true,
         "show_article_tags": false,
-        "show_article_excerpt": true,
+        "show_article_excerpt": false,
         "show_article_author": true,
         "show_article_date": true,
         "show_page_date": true,
