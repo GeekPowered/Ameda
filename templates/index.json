@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "a2669460-8635-4e2e-b686-0b839f32114c": {
@@ -339,7 +348,7 @@
             "text": "<p>Use Code: <strong>JPBOGO<\/strong><\/p>",
             "enlarge_text": true,
             "button_1_label": "Shop Now",
-            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_link": "shopify:\/\/collections",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -372,7 +381,7 @@
             "text": "",
             "enlarge_text": false,
             "button_1_label": "Learn More",
-            "button_1_link": "shopify:\/\/products\/ameda®-pearl®-hospital-grade-breast-pump",
+            "button_1_link": "shopify:\/\/products\/ameda-pearl-hospital-grade-breast-pump",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
