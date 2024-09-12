@@ -248,7 +248,8 @@
         "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "breast-pumps"
+            "collection": "breast-pumps",
+            "image": "shopify:\/\/shop_images\/joy-plus-on.jpg"
           }
         },
         "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-2": {
