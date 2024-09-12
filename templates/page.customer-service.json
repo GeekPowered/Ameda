@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -113,7 +122,7 @@
             "heading": "",
             "text": "",
             "button_label": "Support For Mom",
-            "button_link": "shopify:\/\/pages\/support-for-mom"
+            "button_link": "shopify:\/\/pages\/support-for-moms"
           }
         },
         "column_ykktHY": {
