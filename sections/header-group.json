@@ -29,11 +29,21 @@
           "settings": {
             "discount_code": "JOYPLUSBOGO"
           }
+        },
+        "text_KjRK64": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"\/pages\/insurance\" title=\"Insurance\"><strong>Get a FREE Pump through insurance<\/strong><\/a><\/p>",
+            "enlarge_text": false,
+            "show_on_mobile": true,
+            "show_on_desktop": true
+          }
         }
       },
       "block_order": [
         "heading-0",
-        "discount-2"
+        "discount-2",
+        "text_KjRK64"
       ],
       "custom_css": [
         ".promo-strip__container {justify-content: space-between;}"
