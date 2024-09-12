@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "header",
   "name": "Header Group",
@@ -8,7 +17,7 @@
         "heading-0": {
           "type": "heading",
           "settings": {
-            "heading": "Joy PLUS: Buy 1, Get 1 FREE!",
+            "heading": "Free Shipping on all orders over $25!",
             "heading_size": "h6",
             "show_on_mobile": true,
             "show_on_desktop": true
@@ -16,6 +25,7 @@
         },
         "discount-2": {
           "type": "discount",
+          "disabled": true,
           "settings": {
             "discount_code": "JOYPLUSBOGO"
           }
