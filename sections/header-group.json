@@ -32,6 +32,7 @@
         },
         "text_KjRK64": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p><a href=\"\/pages\/insurance\" title=\"Insurance\"><strong>Get a FREE Pump through insurance<\/strong><\/a><\/p>",
             "enlarge_text": false,
