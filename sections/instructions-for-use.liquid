@@ -30,7 +30,7 @@
     <div class="container">
         <div class="instructions-index">
             {% for instruction in shop.metaobjects.instructions.values %}
-                <div class="instruction-item" tabName="{{ instruction.tab_name }}" sort="{{ instruction.sort_order }}">
+                <div class="instruction-item" tabName="{{ instruction.tab_name }}" sort="{{ instruction.sort_order }}" id="{{ instruction.product_hash_route }}">
                     <div class="instruction-image-wrapper">
                         <img 
                           src="{{ instruction.product_image |  image_url }}" 
