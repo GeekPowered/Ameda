@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const offsetPosition = elementPosition - headerHeight; // Adjust scroll position by header height
 
                 window.scrollTo({
-                    top: offsetPosition,
+                    top: (offsetPosition - 16),
                     behavior: 'smooth'
                 });
             }, delay);
