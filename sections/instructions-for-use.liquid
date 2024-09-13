@@ -32,7 +32,12 @@
             {% for instruction in shop.metaobjects.instructions.values %}
                 <div class="instruction-item" tabName="{{ instruction.tab_name }}" sort="{{ instruction.sort_order }}">
                     <div class="instruction-image-wrapper">
-                        <img src="{{ instruction.product_image |  image_url }}" />
+                        <img 
+                          src="{{ instruction.product_image |  image_url }}" 
+                          width="{{ instruction.product_image.width }}" 
+                          height="{{ instruction.product_image.height }}" 
+                          alt="{{ instruction.product_image.alt | escape }}" 
+                        />
                     </div>
                     <h3 class="h5 m-0">{{ instruction.name }}</h3>
                     {% if instruction.downloads.value.size > 0 %}
