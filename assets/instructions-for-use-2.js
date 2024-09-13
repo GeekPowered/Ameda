@@ -19,12 +19,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Function to scroll to element after a delay
+    // Function to scroll to element after a delay, considering the <store-header> height
     function scrollToElement(id, delay = 1000) {
         const element = document.getElementById(id);
+        const header = document.querySelector('store-header'); // Select the store-header element
+        const headerHeight = header ? header.offsetHeight : 0; // Get the header's height (default to 0 if not found)
+
         if (element) {
             setTimeout(() => {
-                element.scrollIntoView({ behavior: 'smooth' });
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerHeight; // Adjust scroll position by header height
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
             }, delay);
         }
     }
