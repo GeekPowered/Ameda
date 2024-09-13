@@ -46,9 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Add hash routing logic
-    handleHashRouting();
-
     // Existing code: SORT ITEMS BY SORT ORDER...
     const instructionsIndex = document.querySelector('.instructions-index');
     const items = Array.from(instructionsIndex.querySelectorAll('.instruction-item'));
@@ -93,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     if (tabs.length > 0) {
-        tabs[0].click();
+        tabs[0].click(); // Ensure the first tab is clicked by default
     }
 
     // Handle selects
@@ -106,5 +103,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    // Run hash routing logic after the tabs are initialized
+    handleHashRouting(); // This ensures the hash logic runs after the DOM is fully ready
 
 });
