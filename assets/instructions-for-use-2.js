@@ -38,12 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // Function to decode hash and handle Safari's `%23` encoding issue
+    function decodeHash(hash) {
+        return decodeURIComponent(hash);
+    }
+
     // Handle hash routing
     function handleHashRouting() {
         const hash = window.location.hash;
 
         if (hash) {
-            const [tabHash, scrollHash] = hash.split('#').filter(Boolean); // filter to remove empty strings
+            const decodedHash = decodeHash(hash); // Decode any encoded characters
+            const [tabHash, scrollHash] = decodedHash.split('#').filter(Boolean); // Filter to remove empty strings
 
             if (tabHash) {
                 clickTab(tabHash); // Click on the corresponding tab based on the hash
