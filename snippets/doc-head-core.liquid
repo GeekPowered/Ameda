@@ -15,6 +15,12 @@
   <link rel="canonical" href="{{ canonical_url | split: '?' | first }}">
 {%- endif -%}
 
+{% if template == 'page' %}
+  {% if page.metafields.page.noindex == true %}
+    <meta name="robots" content="noindex, nofollow" />
+  {% endif %}
+{% endif %}
+
 {%- if settings.favicon != blank -%}
   {%- liquid
     assign image_type = settings.favicon | split: '?' | first | split: '.' | last | downcase
