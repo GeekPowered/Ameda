@@ -11,12 +11,6 @@
   {%- endif -%}
 </title>
 
-{% comment %}
-{%- if canonical_url != blank -%}
-  <link rel="canonical" href="{{ canonical_url }}">
-{%- endif -%}
-{% endcomment %}
-
 {%- if canonical_url != blank -%}
   <link rel="canonical" href="{{ canonical_url | split: '?' | first }}">
 {%- endif -%}
