@@ -51,7 +51,7 @@
                     {% if education_pdf %}
                         <div class="education-item">
                             <div class="education-image-wrapper">
-                                <img src="{{ education_pdf.cover_image |  image_url  }}" />
+                                <img src="{{ education_pdf.cover_image |  image_url  }}" alt="{{ education_pdf.name }}" />
                             </div>
                             <h3 class="h6">{{ education_pdf.name }}</h3>
                             <select name="{{ education_pdf.name }}">
