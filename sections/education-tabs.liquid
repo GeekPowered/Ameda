@@ -11,18 +11,7 @@
                 {% for education_pdf in shop.metaobjects.education_pdf.values %}
                     <div class="education-item" sort="{{ education_pdf.sorting_order }}">
                         <div class="education-image-wrapper">
-                            {% comment %} <img width="auto" height="auto" src="{{ education_pdf.cover_image |  image_url  }}" /> {% endcomment %}
-                            {%- capture sizes_md %}calc((50vw - {{ gutter_sm | times: 2 }}px) + 9px){% endcapture -%}
-                            {%- capture sizes -%}
-                                {%- render 'sizes-attribute', min: 'page', sm: 'page', md: sizes_md, lg: '536px', xl: false, max: false -%}
-                            {%- endcapture -%}
-                            {% render 'image',
-                                image: education_pdf.cover_image,
-                                widths: '480, 640, 960',
-                                quality: 1,
-                                src_width: 960,
-                                sizes: sizes
-                            %}
+                            <img width="auto" height="auto" src="{{ education_pdf.cover_image |  image_url  }}" alt="{{ education_pdf.cover_image.alt | escape }}"/>
                         </div>
                         <h3 class="h6">{{ education_pdf.name }}</h3>
                         <select name="{{ education_pdf.name }}">
