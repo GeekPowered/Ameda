@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -293,11 +302,11 @@
         "title": "Latest Breast Pumping Posts",
         "description": "",
         "show_button": true,
-        "button_link": "\/blogs\/posts\/tagged\/breast-pumping",
+        "button_link": "\/blogs\/posts\/tagged\/breast-pumping-q-as",
         "button_text": "Read All",
         "button_style": "btn--primary",
         "top_content_visible": true,
-        "blog_tag": "Breast Pumping"
+        "blog_tag": "Breast Pumping Q&A's"
       }
     },
     "global_footer_cta_c7AzY3": {

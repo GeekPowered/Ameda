@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -369,11 +378,11 @@
         "title": "Latest Breastfeeding Posts",
         "description": "",
         "show_button": true,
-        "button_link": "\/blogs\/posts\/tagged\/breastfeeding",
+        "button_link": "\/blogs\/posts\/tagged\/breastfeeding-education",
         "button_text": "Read All",
         "button_style": "btn--primary",
         "top_content_visible": true,
-        "blog_tag": "Breastfeeding"
+        "blog_tag": "Breastfeeding Education"
       }
     },
     "global_footer_cta_Pg64nK": {
