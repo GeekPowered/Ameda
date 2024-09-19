@@ -62,7 +62,7 @@
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
         "tint_opacity": 40,
-        "prevent_animation": true
+        "prevent_animation": false
       }
     },
     "99ad067f-b38f-4c8e-873d-dea943226a60": {
