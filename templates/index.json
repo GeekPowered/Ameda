@@ -45,7 +45,7 @@
         "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-button-1"
       ],
       "custom_css": [
-        "h1 {margin-bottom: 1rem;}"
+        "h1 {margin-bottom: 1rem !important;}"
       ],
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/breastfeeding-hero.jpg",
