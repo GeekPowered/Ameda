@@ -41,7 +41,7 @@
                               src="{{ instruction.product_image | image_url }}" 
                               width="{{ instruction.product_image.width | default: 'auto' }}" 
                               height="{{ instruction.product_image.height | default: 'auto' }}" 
-                              alt="{{ first_image.alt | default: instruction.name }}" 
+                              alt=`{{ first_image.alt | default: instruction.name }}` 
                             />
                         {% else %}
                             <img 
