@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -248,7 +257,7 @@
             "heading": "Universal HygieniKit™",
             "text": "<p>Our milk collection system features the world’s only FDA-cleared patented protective barrier.<\/p>",
             "button_label": "Learn More",
-            "button_link": "shopify:\/\/products\/ameda-hygienikit®-universal-kit"
+            "button_link": "shopify:\/\/products\/ameda-hygienikit-universal-kit"
           }
         },
         "d49aaf1d-368a-4ffb-9080-f6e6c40fa22b": {
