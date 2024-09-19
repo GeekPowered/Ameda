@@ -27,7 +27,7 @@
                             <div class="post-item">
                                 <div class="post-item_image">
                                     <a href="{{ article.url }}">
-                                        <img src="{{ article.image | article_img_url: 'large' }}" alt="{{ article.image.alt | default: '' }}">
+                                        <img loading="lazy" data-src="{{ article.image | article_img_url: 'large' }}" alt="{{ article.image.alt | default: '' }}">
                                     </a>
                                 </div>
                                 <div class="post-item_content">
@@ -50,7 +50,7 @@
                     <div class="post-item">
                         <div class="post-item_image">
                             <a href="{{ article.url }}">
-                                <img src="{{ article.image | article_img_url: 'large' }}" alt="{{ article.image.alt | default: '' }}">
+                                <img loading="lazy" data-src="{{ article.image | article_img_url: 'large' }}" alt="{{ article.image.alt | default: '' }}">
                             </a>
                         </div>
                         <div class="post-item_content">
