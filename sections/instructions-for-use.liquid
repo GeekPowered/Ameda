@@ -32,25 +32,12 @@
             {% for instruction in shop.metaobjects.instructions.values %}
                 <div class="instruction-item" tabName="{{ instruction.tab_name }}" sort="{{ instruction.sort_order }}" id="{{ instruction.product_hash_route }}">
                     <div class="instruction-image-wrapper">
-                        {% assign product_handle = instruction.product %}
-                        {% assign product = all_products[product_handle] %}
-            
-                        {% if product and product.images.size > 0 %}
-                            {% assign first_image = product.images.first %}
-                            <img 
-                              src="{{ instruction.product_image | image_url }}" 
-                              width="{{ instruction.product_image.width | default: 'auto' }}" 
-                              height="{{ instruction.product_image.height | default: 'auto' }}" 
-                              alt='{{ first_image.alt | default: instruction.name }}' 
-                            />
-                        {% else %}
-                            <img 
-                              src="{{ instruction.product_image | image_url }}" 
-                              width="{{ instruction.product_image.width | default: 'auto' }}" 
-                              height="{{ instruction.product_image.height | default: 'auto' }}" 
-                              alt="{{ instruction.name }}" 
-                            />
-                        {% endif %}
+                        <img 
+                          src="{{ instruction.product_image |  image_url }}" 
+                          width="{{ instruction.product_image.width }}" 
+                          height="{{ instruction.product_image.height }}" 
+                          alt="{{ instruction.name }}" 
+                        />
                     </div>
                     <h3 class="h5 m-0">{{ instruction.name }}</h3>
                     {% if instruction.downloads.value.size > 0 %}
@@ -72,7 +59,7 @@
                         </select>
                     {% endif %}
                 </div>
-            {% endfor %}            
+            {% endfor %}
         </div>
     </div>
 </div>
