@@ -11,7 +11,7 @@
                 {% for education_pdf in shop.metaobjects.education_pdf.values %}
                     <div class="education-item" sort="{{ education_pdf.sorting_order }}">
                         <div class="education-image-wrapper">
-                            <img width="auto" height="auto" src="{{ education_pdf.cover_image |  image_url  }}" alt="{{ education_pdf.cover_image.alt_text }}"/>
+                            <img width="auto" height="auto" src="{{ education_pdf.cover_image |  image_url  }}" alt="{{ education_pdf.name }}"/>
                         </div>
                         <h3 class="h6">{{ education_pdf.name }}</h3>
                         <select name="{{ education_pdf.name }}">
