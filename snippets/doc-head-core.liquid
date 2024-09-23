@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-
+{% comment %}
 <title>
   {%- if request.page_type == 'password' -%}
     {{- shop.name -}}
@@ -16,6 +16,41 @@
 {%- if page_description -%}
   <meta name="description" content="{{ page_description | escape }}">
 {%- endif -%}
+
+{% endcomment %}
+
+<title>
+  {%- if request.page_type == 'password' -%}
+    {{- shop.name -}}
+  {%- else -%}
+    {%- if current_tags.size > 0 and blog_category_seo %}
+      {%- assign matched_metaobject = blog_category_seo.objects | where: 'tag_slug', current_tags.first | first -%}
+      {%- if matched_metaobject -%}
+        {{ matched_metaobject.seo_title | escape }}
+      {%- else -%}
+        {{ page_title }}
+      {%- endif -%}
+    {%- else -%}
+      {{ page_title }}
+      {%- if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif -%}
+      {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    {%- endif -%}
+  {%- endif -%}
+</title>
+
+{%- if current_tags.size > 0 and blog_category_seo %}
+  {%- assign matched_metaobject = blog_category_seo.objects | where: 'tag_slug', current_tags.first | first -%}
+  {%- if matched_metaobject -%}
+    <meta name="description" content="{{ matched_metaobject.seo_meta | escape }}">
+  {%- elsif page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+{%- else %}
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+{%- endif %}
 
 
 {%- if canonical_url != blank -%}
