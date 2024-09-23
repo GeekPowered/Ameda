@@ -1,7 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-{% comment %}
 <title>
   {%- if request.page_type == 'password' -%}
     {{- shop.name -}}
@@ -17,40 +16,28 @@
   <meta name="description" content="{{ page_description | escape }}">
 {%- endif -%}
 
-{% endcomment %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the current tags
+    var currentTags = {{ current_tags | json }};
+    console.log("Current Tags: ", currentTags);
 
-<title>
-  {%- if request.page_type == 'password' -%}
-    {{- shop.name -}}
-  {%- else -%}
-    {%- if current_tags.size > 0 %}
-      {%- assign blog_tag = shop.metaobjects['blog_category_seo'].values | where: 'tag_slug', current_tags.first | first -%}
-      {%- if blog_tag -%}
-        {{ blog_tag.seo_title | escape }}
-      {%- else -%}
-        {{ page_title }}
-      {%- endif -%}
-    {%- else -%}
-      {{ page_title }}
-      {%- if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif -%}
-      {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
-    {%- endif -%}
-  {%- endif -%}
-</title>
+    // Fetch and log metaobject values for the current tag
+    {% assign blog_tag = shop.metaobjects['blog_category_seo'].values | where: 'tag_slug', current_tags.first | first %}
+    
+    {% if blog_tag %}
+      var metaObject = {
+        tagSlug: "{{ blog_tag.tag_slug }}",
+        seoTitle: "{{ blog_tag.seo_title }}",
+        seoMeta: "{{ blog_tag.seo_meta }}"
+      };
+      console.log("Matched Metaobject: ", metaObject);
+    {% else %}
+      console.log("No matching metaobject found for the current tag.");
+    {% endif %}
+  });
+</script>
 
-{%- if current_tags.size > 0 %}
-  {%- assign blog_tag = shop.metaobjects['blog_category_seo'].values | where: 'tag_slug', current_tags.first | first -%}
-  {%- if blog_tag -%}
-    <meta name="description" content="{{ blog_tag.seo_meta | escape }}">
-  {%- elsif page_description -%}
-    <meta name="description" content="{{ page_description | escape }}">
-  {%- endif -%}
-{%- else %}
-  {%- if page_description -%}
-    <meta name="description" content="{{ page_description | escape }}">
-  {%- endif -%}
-{%- endif %}
 
 {%- if canonical_url != blank -%}
   <link rel="canonical" href="{{ canonical_url | split: '?' | first }}">
