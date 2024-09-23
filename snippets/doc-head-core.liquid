@@ -22,7 +22,7 @@
     {{- shop.name -}}
   {%- else -%}
     {%- if request.path contains '/blogs/posts/tagged' -%}
-      {%- assign current_tag = current_tags.first -%}
+      {%- assign current_tag = request.path | split: 'tagged/' | last -%}
       {%- assign seo_entry = blog_category_seo | where: "tag_slug", current_tag | first -%}
       
       {%- if seo_entry -%}
@@ -34,7 +34,6 @@
       
     {%- else -%}
       {{- page_title -}}
-      {%- if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif -%}
       {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     {%- endif -%}
@@ -42,7 +41,9 @@
 </title>
 
 {%- if request.path contains '/blogs/posts/tagged' -%}
-  {%- assign seo_entry = blog_category_seo | where: "tag_slug", current_tags.first | first -%}
+  {%- assign current_tag = request.path | split: 'tagged/' | last -%}
+  {%- assign seo_entry = blog_category_seo | where: "tag_slug", current_tag | first -%}
+  
   {%- if seo_entry and seo_entry.seo_meta != blank -%}
     <meta name="description" content="{{ seo_entry.seo_meta | escape }}">
   {%- else -%}
