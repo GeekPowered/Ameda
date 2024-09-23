@@ -11,6 +11,12 @@
   {%- endif -%}
 </title>
 
+{% if request.path contains '/blogs/posts/tagged/breastfeeding-education' %}
+    <script>
+        console.log("hi");
+    </script>
+{% endif %}
+
 {%- if canonical_url != blank -%}
   <link rel="canonical" href="{{ canonical_url | split: '?' | first }}">
 {%- endif -%}
