@@ -39,6 +39,26 @@
   {%- endif -%}
 </title>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Log current tags for debugging
+    var currentTags = {{ current_tags | json }};
+    console.log("Current Tags: ", currentTags);
+
+    {% if current_tags.size > 0 %}
+      // Log matched metaobject for debugging
+      var matchedMetaObject = {
+        seoTitle: "{{ matched_metaobject.seo_title }}",
+        seoMeta: "{{ matched_metaobject.seo_meta }}",
+        tagSlug: "{{ matched_metaobject.tag_slug }}"
+      };
+      console.log("Matched Metaobject: ", matchedMetaObject);
+    {% else %}
+      console.log("No tags present or no metaobject found.");
+    {% endif %}
+  });
+</script>
+
 {%- if current_tags.size > 0 and blog_category_seo %}
   {%- assign matched_metaobject = blog_category_seo.objects | where: 'tag_slug', current_tags.first | first -%}
   {%- if matched_metaobject -%}
