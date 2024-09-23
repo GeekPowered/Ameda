@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+{% comment %}
 <title>
   {%- if request.page_type == 'password' -%}
     {{- shop.name -}}
@@ -11,11 +12,49 @@
   {%- endif -%}
 </title>
 
-{% if request.path contains '/blogs/posts/tagged/breastfeeding-education' %}
-    <script>
-        console.log("hi");
-    </script>
-{% endif %}
+{%- if page_description -%}
+  <meta name="description" content="{{ page_description | escape }}">
+{%- endif -%}
+{% endcomment %}
+
+<title>
+  {%- if request.page_type == 'password' -%}
+    {{- shop.name -}}
+  {%- else -%}
+    {%- if current_tags.size > 0 -%}
+      {%- assign current_tag = current_tags.first -%}
+      {%- assign seo_entry = blog_category_seo | where: "tag_slug", current_tag | first -%}
+      
+      {%- if seo_entry -%}
+        {{ seo_entry.seo_title }} &ndash; {{ shop.name }}
+      {%- else -%}
+        {{- page_title -}}
+        {%- if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif -%}
+        {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+        {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- endif -%}
+      
+    {%- else -%}
+      {{- page_title -}}
+      {%- if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif -%}
+      {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    {%- endif -%}
+  {%- endif -%}
+</title>
+
+{%- if current_tags.size > 0 -%}
+  {%- assign seo_entry = blog_category_seo | where: "tag_slug", current_tags.first | first -%}
+  {%- if seo_entry and seo_entry.seo_meta != blank -%}
+    <meta name="description" content="{{ seo_entry.seo_meta | escape }}">
+  {%- else -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+{%- else -%}
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+{%- endif -%}
 
 {%- if canonical_url != blank -%}
   <link rel="canonical" href="{{ canonical_url | split: '?' | first }}">
@@ -36,10 +75,6 @@
   -%}
   <link rel="icon" href="{{ settings.favicon | image_url: width: 48, height: 48 }}" type="image/{{ image_type }}">
   <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180, height: 180 }}">
-{%- endif -%}
-
-{%- if page_description -%}
-  <meta name="description" content="{{ page_description | escape }}">
 {%- endif -%}
 
 <script type="application/ld+json">
