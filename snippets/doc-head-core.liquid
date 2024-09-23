@@ -18,8 +18,16 @@
 
 {%- if request.path contains '/blogs/posts/tagged' -%}
   {%- assign current_tag = request.path | split: '/tagged/' | last | split: '/' | first -%}
+  {%- assign seo_entry = blog_category_seo | where: "tag_slug", current_tag | first -%}
+
   <script>
     console.log("Extracted Tag: {{ current_tag }}");
+    {%- if seo_entry -%}
+      console.log("SEO Title: {{ seo_entry.seo_title }}");
+      console.log("SEO Meta: {{ seo_entry.seo_meta }}");
+    {%- else -%}
+      console.log("No SEO entry found for this tag.");
+    {%- endif -%}
   </script>
 {%- endif -%}
 
