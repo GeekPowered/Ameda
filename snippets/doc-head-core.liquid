@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
+{% comment %}
 <title>
   {%- if request.page_type == 'password' -%}
     {{- shop.name -}}
@@ -15,6 +15,43 @@
 {%- if page_description -%}
   <meta name="description" content="{{ page_description | escape }}">
 {%- endif -%}
+{% endcomment %}
+
+<title>
+  {%- if request.page_type == 'password' -%}
+    {{- shop.name -}}
+  {%- else -%}
+    {%- if request.path contains '/blogs/posts/tagged' -%}
+      {%- assign current_tag = request.path | split: '/tagged/' | last | split: '/' | first -%}
+      {%- assign seo_entry = blog_category_seo | where: "tag_slug", current_tag | first -%}
+      
+      {%- if seo_entry -%}
+        {{ seo_entry.seo_title }} &ndash; {{ shop.name }}
+      {%- else -%}
+        {{- page_title -}} &ndash; {{ shop.name }}
+      {%- endif -%}
+      
+    {%- else -%}
+      {{- page_title -}} &ndash; {{ shop.name }}
+    {%- endif -%}
+  {%- endif -%}
+</title>
+
+{%- if request.path contains '/blogs/posts/tagged' -%}
+  {%- assign current_tag = request.path | split: '/tagged/' | last | split: '/' | first -%}
+  {%- assign seo_entry = blog_category_seo | where: "tag_slug", current_tag | first -%}
+  
+  {%- if seo_entry and seo_entry.seo_meta != blank -%}
+    <meta name="description" content="{{ seo_entry.seo_meta | escape }}">
+  {%- else -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+{%- else -%}
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+{%- endif -%}
+
 
 {%- if canonical_url != blank -%}
   <link rel="canonical" href="{{ canonical_url | split: '?' | first }}">
