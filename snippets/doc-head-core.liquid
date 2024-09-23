@@ -18,23 +18,30 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Get the current tags
+    // Log current tags
     var currentTags = {{ current_tags | json }};
     console.log("Current Tags: ", currentTags);
 
-    // Fetch and log metaobject values for the current tag
-    {% assign blog_tag = shop.metaobjects['blog_category_seo'].values | where: 'tag_slug', current_tags.first | first %}
-    
-    {% if blog_tag %}
-      var metaObject = {
-        tagSlug: "{{ blog_tag.tag_slug }}",
-        seoTitle: "{{ blog_tag.seo_title }}",
-        seoMeta: "{{ blog_tag.seo_meta }}"
-      };
-      console.log("Matched Metaobject: ", metaObject);
+    // Log the first tag
+    {% if current_tags.size > 0 %}
+      var firstTag = "{{ current_tags.first }}";
+      console.log("First Tag: ", firstTag);
     {% else %}
-      console.log("No matching metaobject found for the current tag.");
+      console.log("No tags found on this page.");
     {% endif %}
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Log all metaobjects for blog_category_seo
+    var allMetaObjects = {{ shop.metaobjects['blog_category_seo'].values | json }};
+    console.log("All Metaobjects: ", allMetaObjects);
+
+    // Log their tag_slugs
+    allMetaObjects.forEach(function(metaObject) {
+      console.log("Metaobject Tag Slug: ", metaObject.tag_slug);
+    });
   });
 </script>
 
