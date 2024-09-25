@@ -89,3 +89,57 @@
   ]
 }
 </script>
+
+{% if template == 'collection' %}
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "ProductGroup",
+        "name": "{{ collection.title | strip_html | strip | json }}",
+        "description": "{{ collection.description | strip_html | strip | json }}",
+        "url": "{{ collection.url }}",
+        "image": "{{ collection.image.src | product_img_url: '450x450' }}",
+        "productGroup": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {% assign active_products = collection.products | where: 'published_at', 'present' %}
+                {% for product in active_products %}
+                {
+                    "@type": "ListItem",
+                    "position": {{ forloop.index }},
+                    "item": {
+                        "@type": "Product",
+                        "name": "{{ product.title | strip_html | strip | json }}",
+                        "image": "https:{{ product.featured_image | product_img_url: '450x450' }}",
+                        "description": "{{ product.description | strip_html | strip | json }}",
+                        "mpn": "{{ product.id }}",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "{{ product.vendor | strip_html | strip | json }}"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "priceCurrency": "{{ shop.currency }}",
+                            "price": "{{ product.price | money_without_currency | remove: ',' }}",
+                            "availability": "{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+                            "seller": {
+                                "@type": "Organization",
+                                "name": "{{ shop.name | strip_html | strip | json }}"
+                            }
+                        }
+                        {% if product.metafields.okendo.summaryData.reviewCount > 0 %}
+                        ,"aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "{{ product.metafields.okendo.summaryData.reviewAverageValue }}",
+                            "ratingCount": "{{ product.metafields.okendo.summaryData.reviewCount }}"
+                        }
+                        {% endif %}
+                    }
+                }
+                {% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+        }
+    }
+    </script>
+{% endif %}
