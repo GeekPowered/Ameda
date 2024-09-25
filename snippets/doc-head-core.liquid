@@ -102,8 +102,8 @@
         "productGroup": {
             "@type": "ItemList",
             "itemListElement": [
-                {% assign active_products = collection.products | where: 'published_at', 'present' %}
-                {% for product in active_products %}
+                {% for product in collection.products %}
+                {% if product.available %}
                 {
                     "@type": "ListItem",
                     "position": {{ forloop.index }},
@@ -121,7 +121,7 @@
                             "@type": "Offer",
                             "priceCurrency": "{{ shop.currency }}",
                             "price": "{{ product.price | money_without_currency | remove: ',' }}",
-                            "availability": "{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+                            "availability": "InStock",
                             "seller": {
                                 "@type": "Organization",
                                 "name": "{{ shop.name | strip_html | strip | json }}"
@@ -137,6 +137,7 @@
                     }
                 }
                 {% unless forloop.last %},{% endunless %}
+                {% endif %}
                 {% endfor %}
             ]
         }
