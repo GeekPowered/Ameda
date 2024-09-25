@@ -97,13 +97,15 @@
         "@type": "ItemList",
         "name": {{ collection.title | strip_html | strip | json }},
         "description": {{ collection.description | strip_html | strip | json }},
-        "numberOfItems": {{ collection.products | where: "price", ">", 0 | size }},
+        "numberOfItems": {% assign count = 0 %}{% for product in collection.products %}{% if product.price > 0 %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}{{ count }},
         "itemListElement": [
-            {% assign priced_products = collection.products | where: "price", ">", 0 %}
-            {% for product in priced_products %}
+            {% assign position = 0 %}
+            {% for product in collection.products %}
+            {% if product.price > 0 %}
+            {% assign position = position | plus: 1 %}
             {
                 "@type": "ListItem",
-                "position": {{ forloop.index }},
+                "position": {{ position }},
                 "item": {
                     "@type": "Product",
                     "name": {{ product.title | strip_html | strip | json }},
@@ -135,6 +137,7 @@
                 }
             }
             {% unless forloop.last %},{% endunless %}
+            {% endif %}
             {% endfor %}
         ]
     }
