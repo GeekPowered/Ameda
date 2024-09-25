@@ -100,6 +100,7 @@
         "numberOfItems": {% assign count = 0 %}{% for product in collection.products %}{% if product.price > 0 %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}{{ count }},
         "itemListElement": [
             {% assign position = 0 %}
+            {% assign total_items = count %}
             {% for product in collection.products %}
             {% if product.price > 0 %}
             {% assign position = position | plus: 1 %}
@@ -136,7 +137,7 @@
                     {% endif %}
                 }
             }
-            {% unless forloop.last %},{% endunless %}
+            {% if position != total_items %},{% endif %}
             {% endif %}
             {% endfor %}
         ]
