@@ -97,7 +97,7 @@
         "@type": "ItemList",
         "name": {{ collection.title | strip_html | strip | json }},
         "description": {{ collection.description | strip_html | strip | json }},
-        "numberOfItems": {{ collection.products_count }},
+        "numberOfItems": {{ collection.products | where: "available", true | size }},
         "itemListElement": [
             {% for product in collection.products %}
             {% if product.available %}
