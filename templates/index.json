@@ -23,7 +23,7 @@
         "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Mom-Approved, Hospital-Grade Breast Pumps, Accessories, and Supplies.<\/p>",
+            "text": "<p>Mom-Approved, Hospital-Grade Breast Pumps, Accessories, and Supplies.</p>",
             "enlarge_text": true
           }
         },
@@ -31,10 +31,10 @@
           "type": "button",
           "settings": {
             "button_1_label": "Shop Now",
-            "button_1_link": "shopify:\/\/collections",
+            "button_1_link": "shopify://collections",
             "button_1_style": "btn btn--primary",
             "button_2_label": "Get A Pump With Insurance",
-            "button_2_link": "shopify:\/\/pages\/insurance",
+            "button_2_link": "shopify://pages/insurance",
             "button_2_style": "btn btn--secondary"
           }
         }
@@ -48,7 +48,7 @@
         "h1 {margin-bottom: 1rem;}"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/breastfeeding-hero.jpg",
+        "image_desktop": "shopify://shop_images/breastfeeding-hero.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 550,
@@ -65,6 +65,22 @@
         "prevent_animation": true
       }
     },
+    "custom_liquid_Ei9tNh": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".primeday-banner {display: none;}",
+        ".primeday-banner img {border-radius: 1rem; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;}"
+      ],
+      "settings": {
+        "custom_liquid": "<a href=\"https://www.amazon.com/stores/Ameda/Ameda/page/ADD276D5-5C0C-4CE3-80DA-CF04B4DF4D4A\" target=\"_blank\" class=\"primeday-banner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/Prime_Day_Banner_V2.jpg?v=1727376919\" width=\"100%\" height=\"auto\" alt=\"Prime Day Banner\" style=\"\" />\n</a>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "99ad067f-b38f-4c8e-873d-dea943226a60": {
       "type": "multi-column",
       "blocks": {
@@ -72,36 +88,36 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/for-moms.jpg",
+            "image": "shopify://shop_images/for-moms.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
             "button_label": "Support For Moms",
-            "button_link": "shopify:\/\/pages\/support-for-moms"
+            "button_link": "shopify://pages/support-for-moms"
           }
         },
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-2": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/for-hospitals.jpg",
+            "image": "shopify://shop_images/for-hospitals.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
             "button_label": "For Clinicians & Hospitals",
-            "button_link": "shopify:\/\/pages\/healthcare-professionals"
+            "button_link": "shopify://pages/healthcare-professionals"
           }
         },
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-3": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/insurance.jpg",
+            "image": "shopify://shop_images/insurance.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
             "button_label": "Insurance",
-            "button_link": "shopify:\/\/pages\/insurance"
+            "button_link": "shopify://pages/insurance"
           }
         }
       },
@@ -155,7 +171,7 @@
         "f31e305c-e8b3-4dfa-a550-51d42e5d2f4f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mothers.svg",
+            "image": "shopify://shop_images/mothers.svg",
             "image_height": 48,
             "link": ""
           }
@@ -172,7 +188,7 @@
         "image_3FkNBc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/viral-barrier.svg",
+            "image": "shopify://shop_images/viral-barrier.svg",
             "image_height": 48,
             "link": ""
           }
@@ -189,7 +205,7 @@
         "image_KVPXgN": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pump.svg",
+            "image": "shopify://shop_images/pump.svg",
             "image_height": 48,
             "link": ""
           }
@@ -206,7 +222,7 @@
         "image_hDwyBX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hospitals.svg",
+            "image": "shopify://shop_images/hospitals.svg",
             "image_height": 48,
             "link": ""
           }
@@ -249,7 +265,7 @@
           "type": "collection",
           "settings": {
             "collection": "breast-pumps",
-            "image": "shopify:\/\/shop_images\/joy-plus-on.jpg"
+            "image": "shopify://shop_images/joy-plus-on.jpg"
           }
         },
         "template--21856551764283__d7e1a754-c0f2-42cf-8b40-26636730031a-collection-2": {
@@ -304,7 +320,7 @@
         "slide_3Ny9RQ": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/finesse-breast-pump-user_1.jpg",
+            "image_desktop": "shopify://shop_images/finesse-breast-pump-user_1.jpg",
             "url": "",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
@@ -316,7 +332,7 @@
             "text": "",
             "enlarge_text": false,
             "button_1_label": "Apply Now",
-            "button_1_link": "shopify:\/\/pages\/insurance",
+            "button_1_link": "shopify://pages/insurance",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -337,7 +353,7 @@
         "slide_FwQChw": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/myajoy-pattern_c1952174-f4c5-42e3-9809-66adef2e72ec.jpg",
+            "image_desktop": "shopify://shop_images/myajoy-pattern_c1952174-f4c5-42e3-9809-66adef2e72ec.jpg",
             "url": "",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
@@ -346,10 +362,10 @@
             "heading": "FREE SHIPPING",
             "heading_size": "h0",
             "heading_h1": false,
-            "text": "<p><strong>ON ALL ORDERS OVER $25<\/strong><\/p>",
+            "text": "<p><strong>ON ALL ORDERS OVER $25</strong></p>",
             "enlarge_text": true,
             "button_1_label": "Shop Now",
-            "button_1_link": "shopify:\/\/collections",
+            "button_1_link": "shopify://collections",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -370,7 +386,7 @@
         "template--21856551764283__7dbc7bd2-0a65-4654-9735-26944264824b-slide-1": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/pearl-banner.png",
+            "image_desktop": "shopify://shop_images/pearl-banner.png",
             "url": "",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
@@ -382,7 +398,7 @@
             "text": "",
             "enlarge_text": false,
             "button_1_label": "Learn More",
-            "button_1_link": "shopify:\/\/products\/ameda-pearl-hospital-grade-breast-pump",
+            "button_1_link": "shopify://products/ameda-pearl-hospital-grade-breast-pump",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -445,7 +461,7 @@
       "type": "apps",
       "blocks": {
         "okendo_reviews_carousel_yi9pe6": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify://apps/okendo/blocks/reviews-carousel/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "show_heading": true,
             "heading": "Product Reviews",
@@ -473,8 +489,8 @@
             "title": "Choosing the Right Pump",
             "content": "Your breastfeeding and pumping journey starts with the right pump.",
             "link_text": "Find Your Pump",
-            "url": "shopify:\/\/pages\/choosing-the-right-pump",
-            "icon": "<svg width=\"448\" height=\"512\" viewbox=\"0 0 448 512\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M358.182 179.361C338.689 154.593 305.503 147.416 278.31 160.263C263.183 144.576 242.128 137.776 221.715 140.634V67C221.715 30.056 191.979 0 155.429 0C118.879 0 89.1432 30.056 89.1432 67V228.129C69.2342 220.719 45.8712 223.035 27.0602 237.001C-2.29482 258.796 -8.73282 300.334 12.5102 330.153L122.209 484.154C134.632 501.59 154.741 512 176 512H354.286C385.088 512 411.86 490.5 418.843 460.203L446.272 341.204C447.419 336.217 447.999 331.117 448 326V242C448 195.156 401.375 162.727 358.182 179.361ZM80.9852 279.697L108.111 317.776C117.106 330.402 137.142 324.063 137.142 308.493V67C137.142 41.88 173.713 41.84 173.713 67V242C173.713 250.836 180.876 258 189.713 258H196.57C205.407 258 212.57 250.836 212.57 242V207C212.57 181.88 249.141 181.84 249.141 207V242C249.141 250.836 256.304 258 265.141 258H272C280.837 258 288 250.836 288 242V221C288 195.88 324.571 195.84 324.571 221V242C324.571 250.836 331.734 258 340.571 258H347.428C356.265 258 363.428 250.836 363.428 242C363.428 216.879 399.999 216.84 399.999 242V326C399.999 327.488 399.83 328.977 399.497 330.423L372.067 449.424C370.089 458.006 362.777 464 354.285 464H176C170.231 464 164.737 461.122 161.303 456.303L51.5912 302.303C37.1852 282.08 66.5852 259.485 80.9852 279.697ZM176.143 400V304C176.143 295.163 182.411 288 190.143 288H196.143C203.875 288 210.143 295.163 210.143 304V400C210.143 408.837 203.875 416 196.143 416H190.143C182.41 416 176.143 408.837 176.143 400ZM251.571 400V304C251.571 295.163 257.839 288 265.571 288H271.571C279.303 288 285.571 295.163 285.571 304V400C285.571 408.837 279.303 416 271.571 416H265.571C257.839 416 251.571 408.837 251.571 400ZM327 400V304C327 295.163 333.268 288 341 288H347C354.732 288 361 295.163 361 304V400C361 408.837 354.732 416 347 416H341C333.268 416 327 408.837 327 400Z\" fill=\"#EF9AA0\"><\/path> <\/svg>"
+            "url": "shopify://pages/choosing-the-right-pump",
+            "icon": "<svg width=\"448\" height=\"512\" viewbox=\"0 0 448 512\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M358.182 179.361C338.689 154.593 305.503 147.416 278.31 160.263C263.183 144.576 242.128 137.776 221.715 140.634V67C221.715 30.056 191.979 0 155.429 0C118.879 0 89.1432 30.056 89.1432 67V228.129C69.2342 220.719 45.8712 223.035 27.0602 237.001C-2.29482 258.796 -8.73282 300.334 12.5102 330.153L122.209 484.154C134.632 501.59 154.741 512 176 512H354.286C385.088 512 411.86 490.5 418.843 460.203L446.272 341.204C447.419 336.217 447.999 331.117 448 326V242C448 195.156 401.375 162.727 358.182 179.361ZM80.9852 279.697L108.111 317.776C117.106 330.402 137.142 324.063 137.142 308.493V67C137.142 41.88 173.713 41.84 173.713 67V242C173.713 250.836 180.876 258 189.713 258H196.57C205.407 258 212.57 250.836 212.57 242V207C212.57 181.88 249.141 181.84 249.141 207V242C249.141 250.836 256.304 258 265.141 258H272C280.837 258 288 250.836 288 242V221C288 195.88 324.571 195.84 324.571 221V242C324.571 250.836 331.734 258 340.571 258H347.428C356.265 258 363.428 250.836 363.428 242C363.428 216.879 399.999 216.84 399.999 242V326C399.999 327.488 399.83 328.977 399.497 330.423L372.067 449.424C370.089 458.006 362.777 464 354.285 464H176C170.231 464 164.737 461.122 161.303 456.303L51.5912 302.303C37.1852 282.08 66.5852 259.485 80.9852 279.697ZM176.143 400V304C176.143 295.163 182.411 288 190.143 288H196.143C203.875 288 210.143 295.163 210.143 304V400C210.143 408.837 203.875 416 196.143 416H190.143C182.41 416 176.143 408.837 176.143 400ZM251.571 400V304C251.571 295.163 257.839 288 265.571 288H271.571C279.303 288 285.571 295.163 285.571 304V400C285.571 408.837 279.303 416 271.571 416H265.571C257.839 416 251.571 408.837 251.571 400ZM327 400V304C327 295.163 333.268 288 341 288H347C354.732 288 361 295.163 361 304V400C361 408.837 354.732 416 347 416H341C333.268 416 327 408.837 327 400Z\" fill=\"#EF9AA0\"></path> </svg>"
           }
         },
         "c9b11b25-394a-42ea-bbf2-4b2cefef3566": {
@@ -483,8 +499,8 @@
             "title": "Breastfeeding Guide",
             "content": "Breastfeeding is beneficial for you, your baby, and the community.",
             "link_text": "Breastfeeding Tips",
-            "url": "shopify:\/\/pages\/breastfeeding-guide",
-            "icon": "<svg width=\"307\" height=\"292\" viewbox=\"0 0 307 292\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M168.791 92.333V214.666C168.791 226.833 163.958 238.502 155.355 247.105C146.752 255.708 135.083 260.541 122.916 260.541H89.7336C86.1262 270.748 79.0264 279.352 69.6892 284.83C60.3519 290.308 49.3785 292.31 38.7085 290.48C28.0385 288.65 18.359 283.106 11.381 274.829C4.40296 266.553 0.575684 256.075 0.575684 245.25C0.575684 234.424 4.40296 223.947 11.381 215.67C18.359 207.393 28.0385 201.85 38.7085 200.02C49.3785 198.19 60.3519 200.191 69.6892 205.669C79.0264 211.148 86.1262 219.751 89.7336 229.958H122.916C126.972 229.958 130.862 228.347 133.729 225.479C136.597 222.611 138.208 218.722 138.208 214.666V92.333C138.208 80.1662 143.041 68.4977 151.645 59.8945C160.248 51.2913 171.916 46.458 184.083 46.458H229.958V0.583008L306.416 61.7497L229.958 122.916V77.0413H184.083C180.028 77.0413 176.138 78.6524 173.27 81.5202C170.403 84.3879 168.791 88.2774 168.791 92.333Z\" fill=\"#EF9AA0\"><\/path> <\/svg>"
+            "url": "shopify://pages/breastfeeding-guide",
+            "icon": "<svg width=\"307\" height=\"292\" viewbox=\"0 0 307 292\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M168.791 92.333V214.666C168.791 226.833 163.958 238.502 155.355 247.105C146.752 255.708 135.083 260.541 122.916 260.541H89.7336C86.1262 270.748 79.0264 279.352 69.6892 284.83C60.3519 290.308 49.3785 292.31 38.7085 290.48C28.0385 288.65 18.359 283.106 11.381 274.829C4.40296 266.553 0.575684 256.075 0.575684 245.25C0.575684 234.424 4.40296 223.947 11.381 215.67C18.359 207.393 28.0385 201.85 38.7085 200.02C49.3785 198.19 60.3519 200.191 69.6892 205.669C79.0264 211.148 86.1262 219.751 89.7336 229.958H122.916C126.972 229.958 130.862 228.347 133.729 225.479C136.597 222.611 138.208 218.722 138.208 214.666V92.333C138.208 80.1662 143.041 68.4977 151.645 59.8945C160.248 51.2913 171.916 46.458 184.083 46.458H229.958V0.583008L306.416 61.7497L229.958 122.916V77.0413H184.083C180.028 77.0413 176.138 78.6524 173.27 81.5202C170.403 84.3879 168.791 88.2774 168.791 92.333Z\" fill=\"#EF9AA0\"></path> </svg>"
           }
         },
         "52132ce7-ae43-4c08-af17-206aaf0d6e95": {
@@ -493,8 +509,8 @@
             "title": "Usage Instructions",
             "content": "Learn how to use Ameda pumps, products, accessories, and more!",
             "link_text": "Product Guides",
-            "url": "shopify:\/\/pages\/instructions-for-use",
-            "icon": "<svg width=\"826\" height=\"1101\" viewbox=\"0 0 826 1101\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M309.5 206.334H619V275.112H309.5V206.334Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M309.5 343.89H619V412.667H309.5V343.89Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M309.5 481.445H619V550.223H309.5V481.445Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M309.5 619H619V687.778H309.5V619Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M309.5 756.556H619V825.333H309.5V756.556Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M171.944 206.334H240.722V275.112H171.944V206.334Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M171.944 343.89H240.722V412.667H171.944V343.89Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M171.944 481.445H240.722V550.223H171.944V481.445Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M171.944 619H240.722V687.778H171.944V619Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M171.944 756.556H240.722V825.333H171.944V756.556Z\" fill=\"#EF9AA0\"><\/path> <path d=\"M756.556 0H68.7778C50.5368 0 33.0429 7.24621 20.1445 20.1445C7.24621 33.0429 0 50.5368 0 68.7778V1031.67C0 1049.91 7.24621 1067.4 20.1445 1080.3C33.0429 1093.2 50.5368 1100.44 68.7778 1100.44H756.556C774.797 1100.44 792.29 1093.2 805.189 1080.3C818.087 1067.4 825.333 1049.91 825.333 1031.67V68.7778C825.333 50.5368 818.087 33.0429 805.189 20.1445C792.29 7.24621 774.797 0 756.556 0ZM756.556 1031.67H68.7778V68.7778H756.556V1031.67Z\" fill=\"#EF9AA0\"><\/path> <\/svg>"
+            "url": "shopify://pages/instructions-for-use",
+            "icon": "<svg width=\"826\" height=\"1101\" viewbox=\"0 0 826 1101\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M309.5 206.334H619V275.112H309.5V206.334Z\" fill=\"#EF9AA0\"></path> <path d=\"M309.5 343.89H619V412.667H309.5V343.89Z\" fill=\"#EF9AA0\"></path> <path d=\"M309.5 481.445H619V550.223H309.5V481.445Z\" fill=\"#EF9AA0\"></path> <path d=\"M309.5 619H619V687.778H309.5V619Z\" fill=\"#EF9AA0\"></path> <path d=\"M309.5 756.556H619V825.333H309.5V756.556Z\" fill=\"#EF9AA0\"></path> <path d=\"M171.944 206.334H240.722V275.112H171.944V206.334Z\" fill=\"#EF9AA0\"></path> <path d=\"M171.944 343.89H240.722V412.667H171.944V343.89Z\" fill=\"#EF9AA0\"></path> <path d=\"M171.944 481.445H240.722V550.223H171.944V481.445Z\" fill=\"#EF9AA0\"></path> <path d=\"M171.944 619H240.722V687.778H171.944V619Z\" fill=\"#EF9AA0\"></path> <path d=\"M171.944 756.556H240.722V825.333H171.944V756.556Z\" fill=\"#EF9AA0\"></path> <path d=\"M756.556 0H68.7778C50.5368 0 33.0429 7.24621 20.1445 20.1445C7.24621 33.0429 0 50.5368 0 68.7778V1031.67C0 1049.91 7.24621 1067.4 20.1445 1080.3C33.0429 1093.2 50.5368 1100.44 68.7778 1100.44H756.556C774.797 1100.44 792.29 1093.2 805.189 1080.3C818.087 1067.4 825.333 1049.91 825.333 1031.67V68.7778C825.333 50.5368 818.087 33.0429 805.189 20.1445C792.29 7.24621 774.797 0 756.556 0ZM756.556 1031.67H68.7778V68.7778H756.556V1031.67Z\" fill=\"#EF9AA0\"></path> </svg>"
           }
         },
         "ceaccd9d-5daf-4e8f-a92b-8c20a7b8283d": {
@@ -503,8 +519,8 @@
             "title": "The Milk 101 Blog",
             "content": "Breastfeeding is beneficial for you, your baby, and the community.",
             "link_text": "View Posts",
-            "url": "shopify:\/\/blogs\/posts",
-            "icon": "<svg width=\"387\" height=\"387\" viewbox=\"0 0 387 387\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M333.12 0C327.553 0 322.253 2.52385 317.799 6.97769L307.14 17.177L369.761 79.7981L379.975 69.1385C388.882 60.2308 388.882 46.9584 379.975 38.0507L348.887 6.96285C344.433 2.509 338.688 0 333.12 0ZM296.925 25.9956L280.684 39.4611L347.491 106.269L362.338 91.4226L296.925 25.9956ZM271.865 50.1206L137.804 182.816C137.126 183.376 136.5 183.997 135.934 184.671L135.013 185.132C133.394 186.987 132.275 189.225 131.762 191.634L113.664 255.191C112.889 257.706 112.814 260.386 113.448 262.941C114.081 265.496 115.4 267.83 117.261 269.691C119.123 271.552 121.457 272.871 124.012 273.505C126.567 274.139 129.246 274.064 131.762 273.288L195.318 255.191C197.429 254.69 199.399 253.722 201.085 252.357C202.771 250.993 204.128 249.267 205.057 247.307L336.832 116.928L311.772 90.0122V91.4078L294.134 73.7705H295.53L271.865 50.1206ZM12.0722 60.3199C8.63281 60.9741 5.53524 62.8227 3.32667 65.5393C1.1181 68.2559 -0.0593518 71.6656 0.00230414 75.1661V372.089C0.00230414 376.027 1.56645 379.803 4.35064 382.587C7.13484 385.371 10.911 386.935 14.8485 386.935H311.772C315.709 386.935 319.485 385.371 322.269 382.587C325.054 379.803 326.618 376.027 326.618 372.089V208.781C326.618 204.844 325.054 201.068 322.269 198.284C319.485 195.499 315.709 193.935 311.772 193.935C307.834 193.935 304.058 195.499 301.274 198.284C298.49 201.068 296.925 204.844 296.925 208.781V357.243H29.6946V90.0122H178.156C182.094 90.0122 185.87 88.4481 188.654 85.6639C191.438 82.8797 193.002 79.1035 193.002 75.1661C193.002 71.2286 191.438 67.4525 188.654 64.6683C185.87 61.8841 182.094 60.3199 178.156 60.3199H14.8485C14.3835 60.2981 13.9178 60.2981 13.4529 60.3199C12.988 60.2981 12.5223 60.2981 12.0574 60.3199H12.0722ZM157.758 206.005L178.171 207.386L179.567 229.655L159.153 235.683L151.27 227.814L157.758 206.005Z\" fill=\"#EF9AA0\"><\/path> <\/svg>"
+            "url": "shopify://blogs/posts",
+            "icon": "<svg width=\"387\" height=\"387\" viewbox=\"0 0 387 387\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M333.12 0C327.553 0 322.253 2.52385 317.799 6.97769L307.14 17.177L369.761 79.7981L379.975 69.1385C388.882 60.2308 388.882 46.9584 379.975 38.0507L348.887 6.96285C344.433 2.509 338.688 0 333.12 0ZM296.925 25.9956L280.684 39.4611L347.491 106.269L362.338 91.4226L296.925 25.9956ZM271.865 50.1206L137.804 182.816C137.126 183.376 136.5 183.997 135.934 184.671L135.013 185.132C133.394 186.987 132.275 189.225 131.762 191.634L113.664 255.191C112.889 257.706 112.814 260.386 113.448 262.941C114.081 265.496 115.4 267.83 117.261 269.691C119.123 271.552 121.457 272.871 124.012 273.505C126.567 274.139 129.246 274.064 131.762 273.288L195.318 255.191C197.429 254.69 199.399 253.722 201.085 252.357C202.771 250.993 204.128 249.267 205.057 247.307L336.832 116.928L311.772 90.0122V91.4078L294.134 73.7705H295.53L271.865 50.1206ZM12.0722 60.3199C8.63281 60.9741 5.53524 62.8227 3.32667 65.5393C1.1181 68.2559 -0.0593518 71.6656 0.00230414 75.1661V372.089C0.00230414 376.027 1.56645 379.803 4.35064 382.587C7.13484 385.371 10.911 386.935 14.8485 386.935H311.772C315.709 386.935 319.485 385.371 322.269 382.587C325.054 379.803 326.618 376.027 326.618 372.089V208.781C326.618 204.844 325.054 201.068 322.269 198.284C319.485 195.499 315.709 193.935 311.772 193.935C307.834 193.935 304.058 195.499 301.274 198.284C298.49 201.068 296.925 204.844 296.925 208.781V357.243H29.6946V90.0122H178.156C182.094 90.0122 185.87 88.4481 188.654 85.6639C191.438 82.8797 193.002 79.1035 193.002 75.1661C193.002 71.2286 191.438 67.4525 188.654 64.6683C185.87 61.8841 182.094 60.3199 178.156 60.3199H14.8485C14.3835 60.2981 13.9178 60.2981 13.4529 60.3199C12.988 60.2981 12.5223 60.2981 12.0574 60.3199H12.0722ZM157.758 206.005L178.171 207.386L179.567 229.655L159.153 235.683L151.27 227.814L157.758 206.005Z\" fill=\"#EF9AA0\"></path> </svg>"
           }
         },
         "15ac13ef-b830-45f9-b8fe-e70e38511ce3": {
@@ -513,18 +529,18 @@
             "title": "Instructional Videos",
             "content": "Learn proper product usage, troubleshooting and breastfeeding tips.",
             "link_text": "See Videos",
-            "url": "\/pages\/education?tab=videos",
-            "icon": "<svg width=\"294\" height=\"294\" viewbox=\"0 0 294 294\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M147 293.25C166.206 293.25 185.224 289.467 202.967 282.117C220.711 274.768 236.834 263.995 250.414 250.414C263.995 236.834 274.768 220.711 282.117 202.967C289.467 185.224 293.25 166.206 293.25 147C293.25 127.794 289.467 108.776 282.117 91.0325C274.768 73.2887 263.995 57.1662 250.414 43.5856C236.834 30.0051 220.711 19.2324 202.967 11.8826C185.224 4.53287 166.206 0.75 147 0.75C108.212 0.750001 71.0128 16.1584 43.5856 43.5856C16.1584 71.0128 0.75 108.212 0.75 147C0.75 185.788 16.1584 222.987 43.5856 250.414C71.0128 277.842 108.212 293.25 147 293.25ZM127.224 81.8375L218.939 132.798C221.471 134.205 223.58 136.264 225.049 138.761C226.518 141.259 227.292 144.103 227.292 147C227.292 149.897 226.518 152.741 225.049 155.239C223.58 157.736 221.471 159.795 218.939 161.202L127.224 212.163C124.254 213.813 120.905 214.659 117.507 214.617C114.11 214.575 110.783 213.645 107.855 211.921C104.927 210.197 102.501 207.738 100.816 204.788C99.1313 201.837 98.2468 198.498 98.25 195.1V98.9C98.2468 95.5024 99.1313 92.1629 100.816 89.2124C102.501 86.2619 104.927 83.8027 107.855 82.0786C110.783 80.3545 114.11 79.4253 117.507 79.383C120.905 79.3407 124.254 80.1868 127.224 81.8375Z\" fill=\"#EF9AA0\"><\/path> <\/svg>"
+            "url": "/pages/education?tab=videos",
+            "icon": "<svg width=\"294\" height=\"294\" viewbox=\"0 0 294 294\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M147 293.25C166.206 293.25 185.224 289.467 202.967 282.117C220.711 274.768 236.834 263.995 250.414 250.414C263.995 236.834 274.768 220.711 282.117 202.967C289.467 185.224 293.25 166.206 293.25 147C293.25 127.794 289.467 108.776 282.117 91.0325C274.768 73.2887 263.995 57.1662 250.414 43.5856C236.834 30.0051 220.711 19.2324 202.967 11.8826C185.224 4.53287 166.206 0.75 147 0.75C108.212 0.750001 71.0128 16.1584 43.5856 43.5856C16.1584 71.0128 0.75 108.212 0.75 147C0.75 185.788 16.1584 222.987 43.5856 250.414C71.0128 277.842 108.212 293.25 147 293.25ZM127.224 81.8375L218.939 132.798C221.471 134.205 223.58 136.264 225.049 138.761C226.518 141.259 227.292 144.103 227.292 147C227.292 149.897 226.518 152.741 225.049 155.239C223.58 157.736 221.471 159.795 218.939 161.202L127.224 212.163C124.254 213.813 120.905 214.659 117.507 214.617C114.11 214.575 110.783 213.645 107.855 211.921C104.927 210.197 102.501 207.738 100.816 204.788C99.1313 201.837 98.2468 198.498 98.25 195.1V98.9C98.2468 95.5024 99.1313 92.1629 100.816 89.2124C102.501 86.2619 104.927 83.8027 107.855 82.0786C110.783 80.3545 114.11 79.4253 117.507 79.383C120.905 79.3407 124.254 80.1868 127.224 81.8375Z\" fill=\"#EF9AA0\"></path> </svg>"
           }
         },
         "1524bde6-43ab-45a5-9d9e-e26750e61795": {
           "type": "link",
           "settings": {
-            "title": "24\/7 Mom Support",
+            "title": "24/7 Mom Support",
             "content": "Speak to parenting and breastfeeding experts to get any of your burning questions answered.",
             "link_text": "Get Support",
-            "url": "shopify:\/\/pages\/contact",
-            "icon": "<svg width=\"188\" height=\"221\" viewbox=\"0 0 188 221\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M93.9792 0.0830078C42.1937 0.0830078 0.125 42.1518 0.125 93.9372C0.125 145.723 42.1937 187.791 93.9792 187.791H99.5V220.916C153.162 195.079 187.833 143.625 187.833 93.9372C187.833 42.1518 145.765 0.0830078 93.9792 0.0830078ZM105.021 160.187H82.9375V138.104H105.021V160.187ZM109.437 107.408C109.327 107.518 109.217 107.739 109.106 107.96C108.554 108.843 108.002 109.727 107.56 110.61C107.34 110.941 107.229 111.383 107.119 111.825C106.787 112.598 106.456 113.371 106.235 114.143C105.462 116.462 105.131 118.891 105.131 121.652H82.9375C82.9375 116.021 83.8208 111.273 85.1458 107.298C85.1458 107.187 85.1458 107.077 85.2562 106.966C85.3667 106.525 85.6979 106.304 85.8083 105.862C86.4708 104.096 87.2437 102.55 88.2375 101.004C88.5687 100.452 89.0104 99.8997 89.3417 99.3476C89.6729 98.9059 89.8937 98.3538 90.225 98.0226L90.3354 98.133C99.6104 85.9872 114.737 82.233 115.952 68.5413C116.946 57.7205 109.217 47.2309 98.6167 45.0226C87.1333 42.5934 76.7542 49.3288 73.2208 59.1559C71.675 63.1309 68.0312 66.333 63.5042 66.333H61.2958C54.6708 66.333 49.8125 59.8184 51.6896 53.4143C54.7835 43.2606 61.429 34.5598 70.4107 28.9032C79.3925 23.2465 90.1103 21.0119 100.604 22.608C119.265 25.3684 134.171 40.7163 137.373 59.3768C142.231 86.3184 119.375 92.833 109.437 107.408Z\" fill=\"#EF9AA0\"><\/path> <\/svg>"
+            "url": "shopify://pages/contact",
+            "icon": "<svg width=\"188\" height=\"221\" viewbox=\"0 0 188 221\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M93.9792 0.0830078C42.1937 0.0830078 0.125 42.1518 0.125 93.9372C0.125 145.723 42.1937 187.791 93.9792 187.791H99.5V220.916C153.162 195.079 187.833 143.625 187.833 93.9372C187.833 42.1518 145.765 0.0830078 93.9792 0.0830078ZM105.021 160.187H82.9375V138.104H105.021V160.187ZM109.437 107.408C109.327 107.518 109.217 107.739 109.106 107.96C108.554 108.843 108.002 109.727 107.56 110.61C107.34 110.941 107.229 111.383 107.119 111.825C106.787 112.598 106.456 113.371 106.235 114.143C105.462 116.462 105.131 118.891 105.131 121.652H82.9375C82.9375 116.021 83.8208 111.273 85.1458 107.298C85.1458 107.187 85.1458 107.077 85.2562 106.966C85.3667 106.525 85.6979 106.304 85.8083 105.862C86.4708 104.096 87.2437 102.55 88.2375 101.004C88.5687 100.452 89.0104 99.8997 89.3417 99.3476C89.6729 98.9059 89.8937 98.3538 90.225 98.0226L90.3354 98.133C99.6104 85.9872 114.737 82.233 115.952 68.5413C116.946 57.7205 109.217 47.2309 98.6167 45.0226C87.1333 42.5934 76.7542 49.3288 73.2208 59.1559C71.675 63.1309 68.0312 66.333 63.5042 66.333H61.2958C54.6708 66.333 49.8125 59.8184 51.6896 53.4143C54.7835 43.2606 61.429 34.5598 70.4107 28.9032C79.3925 23.2465 90.1103 21.0119 100.604 22.608C119.265 25.3684 134.171 40.7163 137.373 59.3768C142.231 86.3184 119.375 92.833 109.437 107.408Z\" fill=\"#EF9AA0\"></path> </svg>"
           }
         }
       },
@@ -557,7 +573,7 @@
         "template--21856551764283__c35932f3-e653-4986-a811-3f28d8ce7450-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>With a full portfolio of clinically-based solutions, Ameda is in the hospital ensuring moms get started right with products that are trusted by clinicians and lactation experts. Ameda is one of the few companies that is WHO code compliant in the breastfeeding solutions category. Not all major breastfeeding products manufacturing companies abide this voluntary determination of standard.<\/p>",
+            "text": "<p>With a full portfolio of clinically-based solutions, Ameda is in the hospital ensuring moms get started right with products that are trusted by clinicians and lactation experts. Ameda is one of the few companies that is WHO code compliant in the breastfeeding solutions category. Not all major breastfeeding products manufacturing companies abide this voluntary determination of standard.</p>",
             "enlarge_text": true
           }
         },
@@ -565,7 +581,7 @@
           "type": "button",
           "settings": {
             "button_label": "About Ameda",
-            "button_link": "shopify:\/\/pages\/about",
+            "button_link": "shopify://pages/about",
             "button_style": "btn btn--primary"
           }
         }
@@ -579,7 +595,7 @@
         ".media-with-text__media {border-radius: 1rem; overflow: hidden;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/home-cta.jpg",
+        "image": "shopify://shop_images/home-cta.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -599,7 +615,7 @@
         "title": "Latest Blog Posts",
         "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you.",
         "show_button": true,
-        "button_link": "\/blogs\/posts\/",
+        "button_link": "/blogs/posts/",
         "button_text": "All Posts",
         "button_style": "btn--primary",
         "top_content_visible": true,
@@ -621,7 +637,7 @@
         "subtitle": "Get Connected",
         "title": "Join The #Ameda Family!",
         "content": "",
-        "embed_code": "<script src=\"https:\/\/static.elfsight.com\/platform\/platform.js\" data-use-service-core defer><\/script>\n<div class=\"elfsight-app-09c01c85-1f70-4ab0-86c9-9a5335555020\" data-elfsight-app-lazy><\/div>"
+        "embed_code": "<script src=\"https://static.elfsight.com/platform/platform.js\" data-use-service-core defer></script>\n<div class=\"elfsight-app-09c01c85-1f70-4ab0-86c9-9a5335555020\" data-elfsight-app-lazy></div>"
       }
     },
     "global_footer_cta_zaGD9D": {
@@ -633,6 +649,7 @@
   },
   "order": [
     "a2669460-8635-4e2e-b686-0b839f32114c",
+    "custom_liquid_Ei9tNh",
     "99ad067f-b38f-4c8e-873d-dea943226a60",
     "02c77f79-19a8-4ef0-83e3-b0409a84e86f",
     "scrolling-banner",
