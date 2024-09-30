@@ -4,7 +4,7 @@
         <h2 class="{% if section.settings.content %}{{ 'mb-0' }}{% endif %}">{{ section.settings.title }}</h2>
         {%- if section.settings.content -%}<p class="enlarge-text mb-10">{{ section.settings.content }}</p>{%- endif -%}
         <div class="pt-6">{{ section.settings.embed_code }}</div>
-        <div class="flex justify-center">{% include 'social-media' %}</div>
+        <div class="pt-6 flex justify-center">{% include 'social-media' %}</div>
     </div>
 </div>
 
