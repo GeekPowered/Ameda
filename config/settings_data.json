@@ -69,7 +69,7 @@
       "card_bg_color": "#ffffff",
       "card_text_color": "#26262b",
       "card_border_color": "#f2f2f2",
-      "compare_empty_field_text": "N\/A",
+      "compare_empty_field_text": "N/A",
       "inventory_threshold_low": 20,
       "inventory_threshold_very_low": 8,
       "inventory_show_notice": "always",
@@ -177,7 +177,7 @@
       "show_dividers": false,
       "compare_toggle": "toggle_off",
       "compare_show_empty_metafields": false,
-      "compare_empty_field_text": "N\/A",
+      "compare_empty_field_text": "N/A",
       "inventory_show_notice": "always",
       "inventory_show_count": "always",
       "in_stock_text_color": "#0da44a",
@@ -283,7 +283,7 @@
       "compare_toggle": "toggle_off",
       "compare_max": 8,
       "compare_show_empty_metafields": false,
-      "compare_empty_field_text": "N\/A",
+      "compare_empty_field_text": "N/A",
       "inventory_threshold_low": 10,
       "inventory_threshold_very_low": 2,
       "inventory_show_notice": "always",
@@ -412,7 +412,7 @@
     "card_border_color": "#f2f2f2",
     "enable_compare": false,
     "compare_toggle": "none",
-    "compare_empty_field_text": "N\/A",
+    "compare_empty_field_text": "N/A",
     "inventory_threshold_low": 20,
     "inventory_threshold_very_low": 8,
     "inventory_show_notice": "always",
@@ -431,11 +431,11 @@
     "preorder_label_text_color": "#ffffff",
     "custom_label_bg_color": "{{ shop.brand.colors.secondary[0].background }}",
     "custom_label_text_color": "#ffffff",
-    "social_facebook_url": "https:\/\/www.facebook.com\/MyAmeda",
-    "social_youtube_url": "https:\/\/www.youtube.com\/c\/amedabreastfeeding",
-    "social_instagram_url": "https:\/\/www.instagram.com\/myameda\/?hl=en",
-    "social_pinterest_url": "https:\/\/www.pinterest.com\/myameda\/_created\/",
-    "social_twitter_url": "https:\/\/twitter.com\/MyAmeda",
+    "social_facebook_url": "https://www.facebook.com/MyAmeda",
+    "social_youtube_url": "https://www.youtube.com/c/amedabreastfeeding",
+    "social_instagram_url": "https://www.instagram.com/myameda/?hl=en",
+    "social_pinterest_url": "https://www.pinterest.com/myameda/_created/",
+    "social_twitter_url": "https://twitter.com/MyAmeda",
     "search_show_pages": true,
     "search_show_articles": true,
     "show_search_types": false,
@@ -460,14 +460,14 @@
     "show_free_shipping_notice": true,
     "free_shipping_color_scheme": "1",
     "animations_enabled": "mobile_desktop",
-    "favicon": "shopify:\/\/shop_images\/favicon-180.png",
+    "favicon": "shopify://shop_images/favicon-180.png",
     "image_quality": "1",
-    "show_blur_messages": true,
+    "show_blur_messages": false,
     "blur_message_1": "Ready to check out?",
     "blur_message_2": "Questions? Concerns? We have answers!",
     "blur_message_delay": 7,
     "vibrate_on_atc": true,
-    "checkout_logo_image": "shopify:\/\/shop_images\/favicon-180.png",
+    "checkout_logo_image": "shopify://shop_images/favicon-180.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#fbf6ef",
@@ -480,26 +480,26 @@
     ],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
       },
       "319724205969189013": {
-        "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/app-embed\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+        "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
         "disabled": false,
         "settings": {
         }
       },
       "733389323033596483": {
-        "type": "shopify:\/\/apps\/okendo\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "type": "shopify://apps/okendo/blocks/theme-settings/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
         "disabled": false,
         "settings": {
           "show_preview_data": true
         }
       },
       "6023461868751542726": {
-        "type": "shopify:\/\/apps\/bsure-checkout-rules\/blocks\/embed\/01dc9f18-0935-422b-a3f7-3d2458585368",
+        "type": "shopify://apps/bsure-checkout-rules/blocks/embed/01dc9f18-0935-422b-a3f7-3d2458585368",
         "disabled": false,
         "settings": {
         }
