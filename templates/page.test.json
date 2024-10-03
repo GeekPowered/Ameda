@@ -20,7 +20,7 @@
     "timed_custom_liquid_g98X9h": {
       "type": "timed-custom-liquid",
       "settings": {
-        "custom_liquid": "<a href=\"https://www.amazon.com/stores/Ameda/Ameda/page/ADD276D5-5C0C-4CE3-80DA-CF04B4DF4D4A\" target=\"_blank\" class=\"primeday-banner\" style=\"border-radius: .5rem; overflow: hidden;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/2024_Prime_Day_Banner.jpg?v=1727970537\" width=\"100%\" height=\"auto\" alt=\"Prime Day Banner\" style=\"\" />\n</a>",
+        "custom_liquid": "<a href=\"https://www.amazon.com/stores/Ameda/Ameda/page/ADD276D5-5C0C-4CE3-80DA-CF04B4DF4D4A\" target=\"_blank\" class=\"primeday-banner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/2024_Prime_Day_Banner.jpg?v=1727970537\" width=\"100%\" height=\"auto\" alt=\"Prime Day Banner\" style=\"border-radius: .5rem; overflow: hidden;\" />\n</a>",
         "iso_date_time": "2024-10-03T20:01:38.289Z",
         "section_height": "default",
         "full_width": false,
