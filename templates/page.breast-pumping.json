@@ -33,7 +33,7 @@
         "template--21939474530619__b58f02cc-fabc-4622-acfb-8050bf44f593-heading-1"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/Breastpumpingguide.jpg",
+        "image_desktop": "shopify://shop_images/Breastpumpingguide.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
@@ -70,7 +70,7 @@
         "template--21956781867323__df1b65c6-e69c-414d-aefc-7ff949381f08-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Ameda, it is our mission to help moms through their breastfeeding journey, whether they’re experienced or just beginning. This guide will help answer common questions about breast pumping and more.<\/p>",
+            "text": "<p>At Ameda, it is our mission to help moms through their breastfeeding journey, whether they’re experienced or just beginning. This guide will help answer common questions about breast pumping and more.</p>",
             "enlarge_text": true
           }
         }
@@ -112,7 +112,7 @@
         "template--21939474530619__573619db-0785-4d1f-9f1c-27dc8cc93717-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>When it comes to choosing a breast pump, be sure to know what features matter most to you. There are so many options for breast pumps today, and you need to be sure you’re buying the right one for your lifestyle.<\/p><p><\/p>",
+            "text": "<p>When it comes to choosing a breast pump, be sure to know what features matter most to you. There are so many options for breast pumps today, and you need to be sure you’re buying the right one for your lifestyle.</p><p></p>",
             "enlarge_text": true
           }
         },
@@ -120,7 +120,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "\/pages\/choosing-the-right-pump",
+            "button_link": "/pages/choosing-the-right-pump",
             "button_style": "btn btn--primary"
           }
         }
@@ -135,7 +135,7 @@
         "img {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Pumpease_2.png",
+        "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -163,7 +163,7 @@
         "e18c8bd0-5ba0-439f-a422-41557dd36fc7": {
           "type": "text",
           "settings": {
-            "text": "<p>We don’t expect you to have all of the answers as a first-time mom (or even an experienced one). Our blog features posts about breastfeeding, breast pumping, and other topics to help you along the way. You aren’t alone in this journey, Mom!<\/p><p><\/p>",
+            "text": "<p>We don’t expect you to have all of the answers as a first-time mom (or even an experienced one). Our blog features posts about breastfeeding, breast pumping, and other topics to help you along the way. You aren’t alone in this journey, Mom!</p><p></p>",
             "enlarge_text": true
           }
         },
@@ -171,7 +171,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read Our Blog",
-            "button_link": "shopify:\/\/blogs\/posts",
+            "button_link": "shopify://blogs/posts",
             "button_style": "btn btn--primary"
           }
         }
@@ -185,7 +185,7 @@
         "img {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Pump_NProtect_3.png",
+        "image": "shopify://shop_images/mother-holding-pump.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -216,7 +216,7 @@
           "settings": {
             "icon": "none",
             "heading": "Why should I use a breast pump?",
-            "text": "<p>You may need to use a breast pump to express (take milk from your breasts) and store your breast milk when separated from your baby. This can happen when you return to work or are apart from your baby for other reasons.<\/p>"
+            "text": "<p>You may need to use a breast pump to express (take milk from your breasts) and store your breast milk when separated from your baby. This can happen when you return to work or are apart from your baby for other reasons.</p>"
           }
         },
         "f1c27362-73bd-47e2-bad5-f67345b0fba9": {
@@ -224,7 +224,7 @@
           "settings": {
             "icon": "none",
             "heading": "How does a breast pump work?",
-            "text": "<p>A breast pump extracts milk from the breasts by creating a seal around the nipple. Then it applies and releases suction to the nipple, which expresses milk from the breast. This suction is similar to a baby suckling at the breast. Each suction and release combination is called a cycle.<\/p>"
+            "text": "<p>A breast pump extracts milk from the breasts by creating a seal around the nipple. Then it applies and releases suction to the nipple, which expresses milk from the breast. This suction is similar to a baby suckling at the breast. Each suction and release combination is called a cycle.</p>"
           }
         },
         "ebfd97fc-ef9e-4136-aed8-17cb22cc98d8": {
@@ -232,7 +232,7 @@
           "settings": {
             "icon": "none",
             "heading": "How often do I need to pump?",
-            "text": "<p>To establish good milk production, you’ll need to breastfeed or breast pump about eight times every 24 hours. Find times throughout your day that work with your schedule to pump. With that frequency of pumping, you’ll need a pump that is reliable and convenient.<\/p>"
+            "text": "<p>To establish good milk production, you’ll need to breastfeed or breast pump about eight times every 24 hours. Find times throughout your day that work with your schedule to pump. With that frequency of pumping, you’ll need a pump that is reliable and convenient.</p>"
           }
         },
         "f496f0b8-2f60-44c1-8ad9-f04dc5b9bded": {
@@ -240,7 +240,7 @@
           "settings": {
             "icon": "none",
             "heading": "How long should I breastfeed my baby?",
-            "text": "<p>According to guidelines from health officials and reliable organizations, moms should solely breastfeed their babies for at least six months before introducing other foods in addition to breastmilk. The longer a mother breastfeeds, the more protection they have for their overall health.<\/p>"
+            "text": "<p>According to guidelines from health officials and reliable organizations, moms should solely breastfeed their babies for at least six months before introducing other foods in addition to breastmilk. The longer a mother breastfeeds, the more protection they have for their overall health.</p>"
           }
         },
         "2b3b2336-c8fa-4020-aa6d-bba470877632": {
@@ -248,7 +248,7 @@
           "settings": {
             "icon": "none",
             "heading": "What’s an open system breast pump?",
-            "text": "<p>An open system does not have a barrier between the wet side and dry side. Without a barrier, moisture from the humidity produced by pumping your warm milk can get into the tubing and breast pump motor. Organisms such as mold, bacteria and viruses thrive and grow in moist environments.<\/p>"
+            "text": "<p>An open system does not have a barrier between the wet side and dry side. Without a barrier, moisture from the humidity produced by pumping your warm milk can get into the tubing and breast pump motor. Organisms such as mold, bacteria and viruses thrive and grow in moist environments.</p>"
           }
         },
         "17217a10-3bc6-48d8-84d1-193ddbb9f37a": {
@@ -256,7 +256,7 @@
           "settings": {
             "icon": "none",
             "heading": "What’s a closed system breast pump?",
-            "text": "<p>A closed system should have a barrier between the wet side and dry side. This barrier helps in preventing moisture from getting in to the tubing and pump motor. So, there should be no need to clean and dry the tubing and your breast milk will stay safe.<\/p>"
+            "text": "<p>A closed system should have a barrier between the wet side and dry side. This barrier helps in preventing moisture from getting in to the tubing and pump motor. So, there should be no need to clean and dry the tubing and your breast milk will stay safe.</p>"
           }
         },
         "5ae684cb-9828-4c90-ac53-58b4b30c3585": {
@@ -264,7 +264,7 @@
           "settings": {
             "icon": "none",
             "heading": "How do I use my pump?",
-            "text": "<p>Follow the instructions for use that come with your breast pump. There will be different settings that you can control with your pump to personalize each pumping session. Find the right settings that feel comfortable to you.<\/p><p><a href=\"\/pages\/instructions-for-use\" title=\"Instructions For Use\">Learn More<\/a><\/p>"
+            "text": "<p>Follow the instructions for use that come with your breast pump. There will be different settings that you can control with your pump to personalize each pumping session. Find the right settings that feel comfortable to you.</p><p><a href=\"/pages/instructions-for-use\" title=\"Instructions For Use\">Learn More</a></p>"
           }
         },
         "39314ff0-072d-45af-aa95-e52d6fdaf5fc": {
@@ -272,7 +272,7 @@
           "settings": {
             "icon": "none",
             "heading": "How do I store breast milk?",
-            "text": "<p>The CDC and other health organizations have guidelines for storing breast milk at the proper temperatures and durations. Click below for more information on these recommendations to store breast milk properly.<\/p><p><a href=\"\/blogs\/posts\/how-to-store-breast-milk-safely\/\" title=\"\/blogs\/posts\/how-to-store-breast-milk-safely\/\">Learn More<\/a><\/p>"
+            "text": "<p>The CDC and other health organizations have guidelines for storing breast milk at the proper temperatures and durations. Click below for more information on these recommendations to store breast milk properly.</p><p><a href=\"/blogs/posts/how-to-store-breast-milk-safely/\" title=\"/blogs/posts/how-to-store-breast-milk-safely/\">Learn More</a></p>"
           }
         }
       },
@@ -302,7 +302,7 @@
         "title": "Latest Breast Pumping Posts",
         "description": "",
         "show_button": true,
-        "button_link": "\/blogs\/posts\/tagged\/breast-pumping-q-as",
+        "button_link": "/blogs/posts/tagged/breast-pumping-q-as",
         "button_text": "Read All",
         "button_style": "btn--primary",
         "top_content_visible": true,
