@@ -182,7 +182,7 @@
         "36c12609-8906-47fd-8c21-792b6f67f5f1"
       ],
       "custom_css": [
-        "img {border-radius: 1rem;}"
+        "img {border-radius: 1rem; object-position: 50% 40% !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/mother-holding-pump.jpg",
