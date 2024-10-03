@@ -125,6 +125,9 @@
                     endcapture
                   -%}
 
+                  {% if block.settings.button_link %}
+                  <a href="{{ block.settings.button_link }}">
+                  {% endif %}
                   <div class="card__media media relative w-full{% if section.settings.image_ratio == "natural" %} {{ section.settings.media_align }}{% endif %}" style="{% unless section.settings.image_ratio == "natural" %}padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;{% endunless %}{% if section.settings.image_ratio == "natural" and block.settings.video_shopify %}padding-top: 56.25%;{% endif %}{% if block.settings.media_scale < 100 %} transform: scale({{ block.settings.media_scale | divided_by: 100.0 }});{% endif %}">
                     {%- if block.settings.image != blank or block.settings.video_shopify != blank -%}
                       {%- if block.settings.video_shopify != blank -%}
@@ -195,6 +198,9 @@
                   {% endif %}
                 </div>
               </div>
+                  {% if block.settings.button_link %}
+                  </a>
+                  {% endif %}
             </li>
           {%- endfor -%}
         </ul>
