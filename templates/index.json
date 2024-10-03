@@ -81,6 +81,20 @@
         "prevent_animation": false
       }
     },
+    "timed_custom_liquid_DA3qjJ": {
+      "type": "timed-custom-liquid",
+      "settings": {
+        "custom_liquid": "<a href=\"https://www.amazon.com/stores/Ameda/Ameda/page/ADD276D5-5C0C-4CE3-80DA-CF04B4DF4D4A\" target=\"_blank\" class=\"primeday-banner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/2024_Prime_Day_Banner.jpg?v=1727970537\" width=\"100%\" height=\"auto\" alt=\"Prime Day Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
+        "iso_start_date_time": "",
+        "iso_end_date_time": "",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "99ad067f-b38f-4c8e-873d-dea943226a60": {
       "type": "multi-column",
       "blocks": {
@@ -650,6 +664,7 @@
   "order": [
     "a2669460-8635-4e2e-b686-0b839f32114c",
     "custom_liquid_Ei9tNh",
+    "timed_custom_liquid_DA3qjJ",
     "99ad067f-b38f-4c8e-873d-dea943226a60",
     "02c77f79-19a8-4ef0-83e3-b0409a84e86f",
     "scrolling-banner",
