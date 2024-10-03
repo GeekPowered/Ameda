@@ -17,47 +17,16 @@
         "heading_align": "text-start"
       }
     },
-    "rich_text_hBchXH": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_WMWHHb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Thank You!",
-            "heading_size": "h0",
-            "heading_h1": true
-          }
-        },
-        "text_9MXBTg": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We have received your submission and will be in touch as soon as possible</p>",
-            "enlarge_text": true
-          }
-        },
-        "button_gjwVkM": {
-          "type": "button",
-          "settings": {
-            "button_1_label": "Home",
-            "button_1_link": "/",
-            "button_1_style": "btn--primary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_WMWHHb",
-        "text_9MXBTg",
-        "button_gjwVkM"
-      ],
+    "timed_custom_liquid_g98X9h": {
+      "type": "timed-custom-liquid",
       "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
-        "color_scheme": "1",
-        "full_width": true,
+        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "iso_date_time": "2024-10-03T20:01:38.289Z",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
         "prevent_animation": false
       }
     },
@@ -65,7 +34,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": ""
       }
@@ -73,7 +42,7 @@
   },
   "order": [
     "main",
-    "rich_text_hBchXH",
+    "timed_custom_liquid_g98X9h",
     "wave_section_eT6bA3"
   ]
 }
