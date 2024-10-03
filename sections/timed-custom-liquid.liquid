@@ -29,21 +29,18 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // Get the target ISO 8601 date from Shopify settings
-    var isoDateTime = "{{ section.settings.iso_date_time }}";
+    // Get the target ISO 8601 start and end dates from Shopify settings
+    var isoStartDateTime = "{{ section.settings.iso_start_date_time }}";
+    var isoEndDateTime = "{{ section.settings.iso_end_date_time }}";
     
-    if (isoDateTime) {
-      // Parse the target date from the input and the current date
-      var targetDate = new Date(isoDateTime);
-      var currentDate = new Date();
+    // Parse the target dates
+    var startDate = new Date(isoStartDateTime);
+    var endDate = new Date(isoEndDateTime);
+    var currentDate = new Date();
 
-      // Check if the current date is greater than or equal to the target date
-      if (currentDate >= targetDate) {
-        // Show the section
-        document.getElementById('timed-section').style.display = 'block';
-      }
-    } else {
-      // If no ISO date is set, show the section by default
+    // Check if the current date is within the range of start and end dates
+    if (currentDate >= startDate && currentDate <= endDate) {
+      // Show the section
       document.getElementById('timed-section').style.display = 'block';
     }
   });
@@ -51,7 +48,7 @@
 
 {% schema %}
 {
-  "name": "Timed Custom HTML/Liquid",
+  "name": "Custom HTML/Liquid",
   "tag": "section",
   "class": "cc-custom-liquid",
   "settings": [
@@ -63,9 +60,15 @@
     },
     {
       "type": "text",
-      "id": "iso_date_time",
-      "label": "ISO 8601 Date/Time",
-      "info": "Enter the date and time in ISO 8601 format to control when this section is displayed. Example: 2024-10-03T15:00:00Z"
+      "id": "iso_start_date_time",
+      "label": "ISO 8601 Start Date/Time",
+      "info": "Enter the start date and time in ISO 8601 format to start displaying this section. Example: 2024-10-03T15:00:00Z"
+    },
+    {
+      "type": "text",
+      "id": "iso_end_date_time",
+      "label": "ISO 8601 End Date/Time",
+      "info": "Enter the end date and time in ISO 8601 format to stop displaying this section. Example: 2024-10-05T15:00:00Z"
     },
     {
       "type": "header",
@@ -177,7 +180,7 @@
   ],
   "presets": [
     {
-      "name": "Timed Custom HTML/Liquid"
+      "name": "Custom HTML/Liquid"
     }
   ],
   "disabled_on": {
