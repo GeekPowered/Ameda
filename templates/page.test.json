@@ -25,7 +25,7 @@
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
-        "color_scheme": "none",
+        "color_scheme": "1",
         "baby_patterns": false,
         "prevent_animation": false
       }
