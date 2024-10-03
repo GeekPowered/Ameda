@@ -88,7 +88,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/for-moms.jpg",
+            "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
@@ -112,7 +112,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/insurance.jpg",
+            "image": "shopify://shop_images/mother-holding-pump.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
@@ -595,7 +595,7 @@
         ".media-with-text__media {border-radius: 1rem; overflow: hidden;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/home-cta.jpg",
+        "image": "shopify://shop_images/mjp-reading.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
