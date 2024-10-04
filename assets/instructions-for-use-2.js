@@ -108,19 +108,24 @@ document.addEventListener('DOMContentLoaded', function () {
         tabs[0].click(); // Ensure the first tab is clicked by default
     }
 
+    // Function to detect if the browser is Safari
+    function isSafari() {
+        return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    }
+    
     // Handle selects
     const selectElements = document.querySelectorAll('select');
     Array.prototype.forEach.call(selectElements, function(select) {
         select.addEventListener('change', function () {
             const value = this.value;
             if (value !== "") {
-                // Create a temporary anchor element to simulate a user click
-                const a = document.createElement('a');
-                a.href = value;
-                a.target = '_blank';
-    
-                // Simulate a user-initiated click event
-                a.click();
+                if (isSafari()) {
+                    // Open in the same window for Safari
+                    window.location.href = value;
+                } else {
+                    // Open in a new tab for non-Safari browsers
+                    window.open(value, '_blank');
+                }
             }
         });
     });
