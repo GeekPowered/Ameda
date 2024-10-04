@@ -114,7 +114,13 @@ document.addEventListener('DOMContentLoaded', function () {
         select.addEventListener('change', function () {
             const value = this.value;
             if (value !== "") {
-                window.open(value, '_blank');
+                // Create a temporary anchor element to simulate a user click
+                const a = document.createElement('a');
+                a.href = value;
+                a.target = '_blank';
+    
+                // Simulate a user-initiated click event
+                a.click();
             }
         });
     });
