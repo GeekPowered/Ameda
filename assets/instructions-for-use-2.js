@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Handle selects
     const selectElements = document.querySelectorAll('select');
-    selectElements.forEach(select => {
+    Array.prototype.forEach.call(selectElements, function(select) {
         select.addEventListener('change', function () {
             const value = this.value;
             if (value !== "") {
