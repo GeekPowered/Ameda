@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "a2669460-8635-4e2e-b686-0b839f32114c": {
@@ -65,24 +65,9 @@
         "prevent_animation": true
       }
     },
-    "custom_liquid_Ei9tNh": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".primeday-banner {display: none;}",
-        ".primeday-banner img {border-radius: 1rem; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;}"
-      ],
-      "settings": {
-        "custom_liquid": "<a href=\"https://www.amazon.com/stores/page/C872DADF-2F17-46AF-AE12-984291E0F7FA?ingress=0&visitId=80a4b7b6-496f-4177-b8b4-e1144946bf4e\" target=\"_blank\" class=\"primeday-banner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/2024_Prime_Day_Banner_465d386b-3946-478b-a4d4-16ced6b87d89.jpg?v=1728335263\" width=\"100%\" height=\"auto\" alt=\"Prime Day Banner\" style=\"\" />\n</a>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    let clickCount = 0;\n    let clickTimeout;\n\n    const storeHeader = document.querySelector(\"store-header\");\n    const primedayBanner = document.querySelector(\".primeday-banner\");\n\n    storeHeader.addEventListener(\"click\", function() {\n        clickCount++;\n\n        // Reset click count after 2 seconds if no further clicks\n        if (clickTimeout) {\n            clearTimeout(clickTimeout);\n        }\n        clickTimeout = setTimeout(function() {\n            clickCount = 0;\n        }, 2000);\n\n        // Check if user clicked 3 times in a row\n        if (clickCount === 3) {\n            primedayBanner.style.display = \"block\";\n            clickCount = 0;  // Reset click count after action\n        }\n    });\n});\n</script>",
-        "section_height": "tight",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
     "timed_custom_liquid_DA3qjJ": {
       "type": "timed-custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<a href=\"https://www.amazon.com/stores/page/C872DADF-2F17-46AF-AE12-984291E0F7FA?ingress=0&visitId=80a4b7b6-496f-4177-b8b4-e1144946bf4e\" target=\"_blank\" class=\"primeday-banner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/2024_Prime_Day_Banner_465d386b-3946-478b-a4d4-16ced6b87d89.jpg?v=1728335263\" width=\"100%\" height=\"auto\" alt=\"Prime Day Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
         "iso_start_date_time": "2024-10-08T07:00:00.000Z",
@@ -663,7 +648,6 @@
   },
   "order": [
     "a2669460-8635-4e2e-b686-0b839f32114c",
-    "custom_liquid_Ei9tNh",
     "timed_custom_liquid_DA3qjJ",
     "99ad067f-b38f-4c8e-873d-dea943226a60",
     "02c77f79-19a8-4ef0-83e3-b0409a84e86f",
