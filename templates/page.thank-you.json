@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -8,47 +17,15 @@
         "heading_align": "text-start"
       }
     },
-    "rich_text_hBchXH": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_WMWHHb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Thank You!",
-            "heading_size": "h0",
-            "heading_h1": true
-          }
-        },
-        "text_9MXBTg": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We have received your submission and will be in touch as soon as possible<\/p>",
-            "enlarge_text": true
-          }
-        },
-        "button_gjwVkM": {
-          "type": "button",
-          "settings": {
-            "button_1_label": "Home",
-            "button_1_link": "\/",
-            "button_1_style": "btn--primary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_WMWHHb",
-        "text_9MXBTg",
-        "button_gjwVkM"
-      ],
+    "custom_liquid_LGPHwk": {
+      "type": "custom-liquid",
       "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
+        "custom_liquid": "<div style=\"text-align:center; margin: auto;\" class=\"max-w-text-overlay\">\n<h1 class=\"h0\">Thank You</h1>\n<div class=\"enlarge-text\">\n<p>{{ page.content }}</p>\n</div>\n<a class=\"btn btn--primary\" href=\"/\">Home</a>\n</div>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
         "color_scheme": "1",
-        "full_width": true,
+        "baby_patterns": false,
         "prevent_animation": false
       }
     },
@@ -56,7 +33,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": ""
       }
@@ -64,7 +41,7 @@
   },
   "order": [
     "main",
-    "rich_text_hBchXH",
+    "custom_liquid_LGPHwk",
     "wave_section_eT6bA3"
   ]
 }
