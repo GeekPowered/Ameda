@@ -65,21 +65,6 @@
         "prevent_animation": true
       }
     },
-    "timed_custom_liquid_DA3qjJ": {
-      "type": "timed-custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<a href=\"https://www.amazon.com/stores/page/C872DADF-2F17-46AF-AE12-984291E0F7FA?ingress=0&visitId=80a4b7b6-496f-4177-b8b4-e1144946bf4e\" target=\"_blank\" class=\"primeday-banner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/2024_Prime_Day_Banner_465d386b-3946-478b-a4d4-16ced6b87d89.jpg?v=1728335263\" width=\"100%\" height=\"auto\" alt=\"Prime Day Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
-        "iso_start_date_time": "2024-10-08T07:00:00.000Z",
-        "iso_end_date_time": "2024-10-10T06:59:00.000Z",
-        "section_height": "tight",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
     "99ad067f-b38f-4c8e-873d-dea943226a60": {
       "type": "multi-column",
       "blocks": {
@@ -648,7 +633,6 @@
   },
   "order": [
     "a2669460-8635-4e2e-b686-0b839f32114c",
-    "timed_custom_liquid_DA3qjJ",
     "99ad067f-b38f-4c8e-873d-dea943226a60",
     "02c77f79-19a8-4ef0-83e3-b0409a84e86f",
     "scrolling-banner",
