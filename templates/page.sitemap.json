@@ -20,7 +20,7 @@
     "custom_liquid_LGPHwk": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h1>Sitemap</h1>\n{% render 'sitemap' %}",
+        "custom_liquid": "<h1>Sitemap</h1>\n{% render 'sitemap.liquid' %}",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
