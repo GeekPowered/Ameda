@@ -105,5 +105,18 @@
         }{% unless forloop.last %},{% endunless %}
       {%- endfor -%}
     ]
+    {% if product.metafields.okendo.summaryData.reviewCount > 0 %}
+        ,"aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "{{ product.metafields.okendo.summaryData.reviewAverageValue }}",
+            "ratingCount": "{{ product.metafields.okendo.summaryData.reviewCount }}"
+        }
+    {% elsif product.metafields.okendo.ReviewCount > 0 %}
+        ,"aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "{{ product.metafields.okendo.ReviewAverageValue }}",
+            "ratingCount": "{{ product.metafields.okendo.ReviewCount }}"
+        }
+    {% endif %}
   }
 </script>
