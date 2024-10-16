@@ -1,0 +1,195 @@
+<style>
+  .sitemap-row {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    flex-flow: wrap;
+    display: flex;
+  }
+  .sitemap-card {
+    background-color: #fff;
+    flex: 1;
+    min-width: 45%;
+    max-width: 100%;
+    max-height: 50vh;
+    padding: .5rem 1rem 1rem;
+    overflow: auto;
+  }
+  .sitemap-card.hide { display: none; }
+  .sitemap-list {
+    columns: 2;
+    margin-bottom: 0;
+    padding-left: 1.25em;
+    overflow: auto;
+  }
+  @media screen and (max-width: 479px) {
+      .sitemap-list {
+          columns: auto;
+      }
+  }
+  @media screen and (max-width: 767px) {
+    .sitemap-card {
+      min-width: 100%;
+    }
+    .sitemap-row {
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+    }
+  }
+</style>
+
+<div id="sitemap">
+  <div class="sitemap-row">
+    <div class="sitemap-card hide">
+      <ul role="list" class="sitemap-list"></ul>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    loadAndProcessGoogleSheet();
+});
+
+function loadAndProcessGoogleSheet() {
+    // Google Sheets CSV URL
+    var googleSheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTXwotWReuR1TWDxeXX3mhqNIyUTocOPRA87UdIafl6Pi1qtZRvK39ZH_56X5L4dbWIndeqiraWccxe/pub?gid=1601585009&single=true&output=csv'; // Replace with your Google Sheets CSV URL
+
+    fetch(googleSheetURL)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.text();
+        })
+        .then(csvText => {
+            processCSVData(csvText);
+        })
+        .catch(error => {
+            console.error('There has been a problem with your fetch operation:', error);
+        });
+}
+
+function processCSVData(csvText) {
+    var data = parseCSV(csvText);
+
+    // Organize data into groups
+    var groups = {};
+
+    data.forEach(function(row) {
+        var address = row['Address'];
+        var title = row['Title'];
+        var group = row['Group'];
+
+        if (!address || !title || !group) {
+            // Skip rows with missing data
+            return;
+        }
+
+        if (!groups[group]) {
+            groups[group] = [];
+        }
+
+        groups[group].push({
+            address: address,
+            title: title
+        });
+    });
+
+    // Generate HTML
+    generateHTML(groups);
+}
+
+function parseCSV(csvText) {
+    var lines = csvText.trim().split('\n');
+    var result = [];
+    var headers = lines[0].split(',');
+
+    for (var i = 1; i < lines.length; i++) {
+        var obj = {};
+        var currentLine = lines[i];
+
+        // Skip empty lines
+        if (!currentLine.trim()) {
+            continue;
+        }
+
+        var values = splitCSVLine(currentLine);
+
+        for (var j = 0; j < headers.length; j++) {
+            var key = headers[j].trim().replace(/^"|"$/g, '');
+            var value = values[j] ? values[j].trim().replace(/^"|"$/g, '') : '';
+            obj[key] = value;
+        }
+
+        result.push(obj);
+    }
+    return result;
+}
+
+function splitCSVLine(line) {
+    var values = [];
+    var insideQuotes = false;
+    var value = '';
+
+    for (var i = 0; i < line.length; i++) {
+        var char = line[i];
+
+        if (char === '"') {
+            insideQuotes = !insideQuotes;
+        } else if (char === ',' && !insideQuotes) {
+            values.push(value);
+            value = '';
+        } else {
+            value += char;
+        }
+    }
+    values.push(value);
+    return values;
+}
+
+function generateHTML(groups) {
+    var sitemapRow = document.querySelector('.sitemap-row');
+
+    if (!sitemapRow) {
+        console.error('No element with class .sitemap-row found');
+        return;
+    }
+
+    for (var groupName in groups) {
+        var groupItems = groups[groupName];
+
+        // Create the sitemap-card div
+        var sitemapCard = document.createElement('div');
+        sitemapCard.className = 'sitemap-card';
+
+        // Create the h2 with group name
+        var h2 = document.createElement('h2');
+        h2.textContent = groupName;
+
+        sitemapCard.appendChild(h2);
+
+        // Create the ul
+        var ul = document.createElement('ul');
+        ul.className = 'sitemap-list';
+
+        // Add the li items
+        groupItems.forEach(function(item) {
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = item.address;
+
+            // Split the title at the '|' character and keep the part before it
+            var splitTitle = item.title.split('|')[0].trim();
+            a.textContent = splitTitle;
+
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+
+        sitemapCard.appendChild(ul);
+
+        // Append the sitemapCard to sitemapRow
+        sitemapRow.appendChild(sitemapCard);
+    }
+}
+</script>
