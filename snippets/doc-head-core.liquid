@@ -48,6 +48,10 @@
   <!-- End Google Tag Manager -->
 {% endif %}
 
+{% if request.path contains '/blogs/posts/tagged/pregnancy' %}
+  <meta name="robots" content="noindex, nofollow" />
+{% endif %}
+
 {%- if current_tags.size > 0 %}
   {%- assign blogTag = shop.metaobjects['blog_category_seo'].values | where: 'tag_slug', current_tags.first | first -%}
   {%- if blogTag -%}
