@@ -6,13 +6,14 @@
     display: flex;
   }
   .sitemap-card {
-    background-color: #fff;
+    background-color: rgb(251, 246, 239);
     flex: 1;
     min-width: 45%;
     max-width: 100%;
     max-height: 50vh;
-    padding: .5rem 1rem 1rem;
+    padding: 1.5rem;
     overflow: auto;
+    border-radius: 1rem;
   }
   .sitemap-card.hide { display: none; }
   .sitemap-list {
@@ -20,6 +21,7 @@
     margin-bottom: 0;
     padding-left: 1.25em;
     overflow: auto;
+    list-style: disc;
   }
   @media screen and (max-width: 479px) {
       .sitemap-list {
