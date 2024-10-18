@@ -13,10 +13,12 @@
                     </div>
                     <div class="helpful-links_item_content right">
                         <p>{{ block.settings.content }}</p>
+                        {% if block.settings.url != blank %}
                         <a href="{{ block.settings.url }}" class="inline-flex card__collection--arrow">
                             {{ block.settings.link_text }}
                             <span class="has-ltr-icon flex items-center mis-2">{% render 'icon-arrow-right' %}</span>
                         </a>
+                        {% endif %}
                     </div>
                 </div>
             {% endfor %}
