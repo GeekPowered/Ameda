@@ -148,7 +148,9 @@
             "icon": "",
             "content": "Pumping provides milk for feedings when you’re away. It builds milk production if your baby does not feed well or is not yet breastfeeding. When choosing a pump, be aware that some pumps are better for certain situations than others.",
             "link_text": "Learn More",
-            "url": "shopify://pages/choosing-the-right-pump"
+            "url": "shopify://pages/choosing-the-right-pump",
+            "link_text_2": "",
+            "url_2": ""
           }
         },
         "link_ciJBrg": {
@@ -158,7 +160,9 @@
             "icon": "",
             "content": "From the moment you find out you’re going to be a parent, you’re going to need to build your village. Ameda is here to give you the resources and expertise you need to prepare your mind and body for motherhood. Click to view our full breastfeeding guide with plenty of advice and tips for this beautiful season of life.",
             "link_text": "Learn More",
-            "url": "shopify://pages/breastfeeding-guide"
+            "url": "shopify://pages/breastfeeding-guide",
+            "link_text_2": "",
+            "url_2": ""
           }
         },
         "link_wKWjVV": {
@@ -168,17 +172,22 @@
             "icon": "",
             "content": "There are going to be days when you need to pump breast milk and store it to feed your baby at another time. Ameda has compiled resources so that mom has a full understanding of when to pump, how long to pump, how to store breast milk, and other related topics. Click below to view our full breast pumping guide to go along with your favorite Ameda breast pump.",
             "link_text": "Learn More",
-            "url": "shopify://pages/breast-pumping-guide"
+            "url": "shopify://pages/breast-pumping-guide",
+            "link_text_2": "",
+            "url_2": ""
           }
         },
         "link_PHWMXi": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "title": "Connect With A Lactation Professional",
             "icon": "",
             "content": "The Affordable Care Act (ACA) mandates that health insurance plans cover breastfeeding support, counseling, and equipment for the duration of breastfeeding. These services may be provided before and after birth. This applies to Marketplace plans and all other health insurance plans, except for grandfathered plans. Both resources will verify your coverage benefits prior to support.\n<br><br>\nThe Nest & TLN (The Lactation Network) connect parents with insurance-covered resources.\n<br><br>\nInternational Board-Certified Lactation Consultants (IBCLCs) – the Gold standard in expert lactation care – for in-home, in-office, or tele-health lactation consultations, billable to your insurance or for cash pay.",
             "link_text": "",
-            "url": ""
+            "url": "",
+            "link_text_2": "",
+            "url_2": ""
           }
         }
       },
