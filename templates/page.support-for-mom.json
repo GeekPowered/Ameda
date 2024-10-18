@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -24,7 +33,7 @@
         "heading_PmHgAe"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/support-for-mom-banner.jpg",
+        "image_desktop": "shopify://shop_images/support-for-mom-banner.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
@@ -61,7 +70,7 @@
         "text_E6nLqf": {
           "type": "text",
           "settings": {
-            "text": "<p>At Ameda, we have a team of IBCLCs, nurses, and other healthcare professionals that are dedicated to providing moms with knowledge and resources so that they can thrive in motherhood. Your journey starts the moment your pregnancy begins, and we’ll be here each step of the way.<\/p>",
+            "text": "<p>At Ameda, we have a team of IBCLCs, nurses, and other healthcare professionals that are dedicated to providing moms with knowledge and resources so that they can thrive in motherhood. Your journey starts the moment your pregnancy begins, and we’ll be here each step of the way.</p>",
             "enlarge_text": true
           }
         }
@@ -126,7 +135,7 @@
         "heading_text": "Education for Mom",
         "show_view_all_button": true,
         "view_all_button_text": "View All",
-        "view_all_button_url": "\/pages\/education"
+        "view_all_button_url": "/pages/education"
       }
     },
     "help_links_thr7Q9": {
@@ -136,34 +145,48 @@
           "type": "link",
           "settings": {
             "title": "Choosing The Right Pump",
+            "icon": "",
             "content": "Pumping provides milk for feedings when you’re away. It builds milk production if your baby does not feed well or is not yet breastfeeding. When choosing a pump, be aware that some pumps are better for certain situations than others.",
             "link_text": "Learn More",
-            "url": "shopify:\/\/pages\/choosing-the-right-pump"
+            "url": "shopify://pages/choosing-the-right-pump"
           }
         },
         "link_ciJBrg": {
           "type": "link",
           "settings": {
             "title": "Breastfeeding Guide",
+            "icon": "",
             "content": "From the moment you find out you’re going to be a parent, you’re going to need to build your village. Ameda is here to give you the resources and expertise you need to prepare your mind and body for motherhood. Click to view our full breastfeeding guide with plenty of advice and tips for this beautiful season of life.",
             "link_text": "Learn More",
-            "url": "shopify:\/\/pages\/breastfeeding-guide"
+            "url": "shopify://pages/breastfeeding-guide"
           }
         },
         "link_wKWjVV": {
           "type": "link",
           "settings": {
             "title": "Breast Pumping Guide",
+            "icon": "",
             "content": "There are going to be days when you need to pump breast milk and store it to feed your baby at another time. Ameda has compiled resources so that mom has a full understanding of when to pump, how long to pump, how to store breast milk, and other related topics. Click below to view our full breast pumping guide to go along with your favorite Ameda breast pump.",
             "link_text": "Learn More",
-            "url": "shopify:\/\/pages\/breast-pumping-guide"
+            "url": "shopify://pages/breast-pumping-guide"
+          }
+        },
+        "link_PHWMXi": {
+          "type": "link",
+          "settings": {
+            "title": "Connect With A Lactation Professional",
+            "icon": "",
+            "content": "The Affordable Care Act (ACA) mandates that health insurance plans cover breastfeeding support, counseling, and equipment for the duration of breastfeeding. These services may be provided before and after birth. This applies to Marketplace plans and all other health insurance plans, except for grandfathered plans. Both resources will verify your coverage benefits prior to support.\n<br><br>\nThe Nest & TLN (The Lactation Network) connect parents with insurance-covered resources.\n<br><br>\nInternational Board-Certified Lactation Consultants (IBCLCs) – the Gold standard in expert lactation care – for in-home, in-office, or tele-health lactation consultations, billable to your insurance or for cash pay.",
+            "link_text": "",
+            "url": ""
           }
         }
       },
       "block_order": [
         "link_aVn6c6",
         "link_ciJBrg",
-        "link_wKWjVV"
+        "link_wKWjVV",
+        "link_PHWMXi"
       ],
       "custom_css": [
         ".section--padded {padding-top: 0;}"
@@ -187,7 +210,7 @@
         "title": "Milk 101 Blog",
         "description": "",
         "show_button": true,
-        "button_link": "\/blogs\/posts\/",
+        "button_link": "/blogs/posts/",
         "button_text": "All Posts",
         "button_style": "btn--primary",
         "top_content_visible": true,
@@ -208,7 +231,7 @@
         "text_fnapKf": {
           "type": "text",
           "settings": {
-            "text": "<p>Contact our Customer Service team!<\/p>",
+            "text": "<p>Contact our Customer Service team!</p>",
             "enlarge_text": true
           }
         },
@@ -216,7 +239,7 @@
           "type": "button",
           "settings": {
             "button_1_label": "Customer Service",
-            "button_1_link": "shopify:\/\/pages\/contact",
+            "button_1_link": "shopify://pages/contact",
             "button_1_style": "btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -258,7 +281,7 @@
         "text_LHVGxW": {
           "type": "text",
           "settings": {
-            "text": "<p>Ameda breast pumps offer moms quality and convenience for whatever her day holds.<\/p>",
+            "text": "<p>Ameda breast pumps offer moms quality and convenience for whatever her day holds.</p>",
             "enlarge_text": true
           }
         },
@@ -266,7 +289,7 @@
           "type": "button",
           "settings": {
             "button_1_label": "Shop Now",
-            "button_1_link": "shopify:\/\/collections\/breast-pumps",
+            "button_1_link": "shopify://collections/breast-pumps",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -281,7 +304,7 @@
         "button_4kiMrJ"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/myajoy-pattern.jpg",
+        "image_desktop": "shopify://shop_images/myajoy-pattern.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
