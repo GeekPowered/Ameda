@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "rich_text_iGpyee": {
@@ -43,7 +52,7 @@
         "three_columns": true,
         "show_tag_filter": true,
         "show_featured_image": true,
-        "image_ratio": "shortest",
+        "image_ratio": "1.77",
         "show_tags": true,
         "show_excerpt": false,
         "show_author": false,
