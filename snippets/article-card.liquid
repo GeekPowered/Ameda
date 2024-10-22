@@ -66,7 +66,8 @@
   {%- unless show_image == false -%}
     <a href="{{ article.url }}" class="card__media relative">
       {%- if article and article.image -%}
-        {% unless featured %}<div class="media block relative h-full" tabindex="-1" style="padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;">{% endunless %}
+        {% comment %}{% unless featured %}<div class="media block relative h-full" tabindex="-1" style="padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;">{% endunless %}{% endcomment %}
+        {% unless featured %}<div class="media block relative h-full" tabindex="-1" style="object-fit: 3 / 2;">{% endunless %}
         {%- liquid
           assign class = "img-fit"
           if featured
