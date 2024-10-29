@@ -150,7 +150,8 @@
             "link_text": "Learn More",
             "url": "shopify://pages/choosing-the-right-pump",
             "link_text_2": "",
-            "url_2": ""
+            "url_2": "",
+            "hash": ""
           }
         },
         "link_ciJBrg": {
@@ -162,7 +163,8 @@
             "link_text": "Learn More",
             "url": "shopify://pages/breastfeeding-guide",
             "link_text_2": "",
-            "url_2": ""
+            "url_2": "",
+            "hash": ""
           }
         },
         "link_wKWjVV": {
@@ -174,7 +176,8 @@
             "link_text": "Learn More",
             "url": "shopify://pages/breast-pumping-guide",
             "link_text_2": "",
-            "url_2": ""
+            "url_2": "",
+            "hash": ""
           }
         },
         "link_PHWMXi": {
@@ -186,7 +189,8 @@
             "link_text": "The Nest",
             "url": "https://book.nestcollaborative.com/1?partner=ameda",
             "link_text_2": "TLN",
-            "url_2": "https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda"
+            "url_2": "https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda",
+            "hash": "lactation-pro"
           }
         }
       },
