@@ -13,6 +13,7 @@
                     </div>
                     <div class="helpful-links_item_content right">
                         <p>{{ block.settings.content }}</p>
+                        {% if block.settings.custom_liquid != blank %}{{ block.settings.custom_liquid }}{% endif %}
                         {% if block.settings.url != blank %}
                         <a href="{{ block.settings.url }}" class="inline-flex card__collection--arrow">
                             {{ block.settings.link_text }}
@@ -68,6 +69,11 @@
           "type": "textarea",
           "label": "Content",
           "id": "content"
+        },
+        {
+          "type": "liquid",
+          "label": "Custom Liquid",
+          "id": "custom_liquid"
         },
         {
           "type": "text",
