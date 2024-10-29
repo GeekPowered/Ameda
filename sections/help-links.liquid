@@ -6,7 +6,7 @@
         {% if section.settings.section_content %}<p class="enlarge-text text-center  mb-10">{{ section.settings.section_content }}</p>{% endif %}
         <div class="helpful-links_list">
             {% for block in section.blocks %}
-                <div class="helpful-links_item">
+                <div class="helpful-links_item"{% if block.settings.hash != blank %} id="{{ block.settings.hash }}"{% endif %}>
                     <div class="helpful-links_item_content left">
                       {% if block.settings.icon != blank %}<div class="svg-wrapper">{{ block.settings.icon }}</div>{% endif %}
                       <h3>{{ block.settings.title }}</h3>
@@ -88,6 +88,11 @@
           "type": "url",
           "label": "Link URL 2",
           "id": "url_2"
+        },
+        {
+          "type": "text",
+          "label": "Hash Route",
+          "id": "hash"
         }
       ]
     }
