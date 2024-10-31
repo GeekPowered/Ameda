@@ -517,11 +517,9 @@
                   const hash = this.getAttribute('href');
                   if (hash === '#') return; // Ignore single '#' links
 
-                  event.preventDefault();
+                  event.preventDefault(); // Prevent default jump to hash
                   history.pushState(null, null, hash); // Update the URL without jumping
-
-                  // Use a slight delay to account for the URL update
-                  setTimeout(() => scrollToHash(hash), 10);
+                  scrollToHash(hash); // Apply scroll with offset immediately
               });
           });
       });
