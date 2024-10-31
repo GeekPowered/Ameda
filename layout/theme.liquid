@@ -497,8 +497,10 @@
               // Get the target element using the hash
               const targetElement = document.querySelector(window.location.hash);
               if (targetElement) {
-                  // Scroll to the element with the navbar height in mind
-                  const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                  // Calculate the exact scroll position with the navbar offset
+                  const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+                  // Scroll to the calculated position
                   window.scrollTo({
                       top: offsetTop,
                       behavior: 'smooth'
