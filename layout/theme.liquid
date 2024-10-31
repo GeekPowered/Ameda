@@ -486,7 +486,27 @@
   {% endif %}
 
   {%- unless request.path contains 'instructions-for-use' -%}
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // Check if there is a hash in the URL
+          if (window.location.hash) {
+              // Get the navbar height
+              const navbar = document.querySelector('.shopify-section-group-header-group');
+              const navbarHeight = navbar ? navbar.offsetHeight : 0;
 
+              // Get the target element using the hash
+              const targetElement = document.querySelector(window.location.hash);
+              if (targetElement) {
+                  // Scroll to the element with the navbar height in mind
+                  const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                  window.scrollTo({
+                      top: offsetTop,
+                      behavior: 'smooth'
+                  });
+              }
+          }
+      });
+    </script>
   {%- endunless -%}
   
 </body>
