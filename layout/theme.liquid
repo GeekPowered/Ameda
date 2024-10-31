@@ -485,11 +485,11 @@
     <!-- End Google Tag Manager (noscript) -->
   {% endif %}
 
-  {%- if request.path contains 'instructions-for-use' -%}
+  {%- unless request.path contains 'instructions-for-use' -%}
     <script>
       console.log('hi');
     </script>
-  {%- endif -%}
+  {%- endunless -%}
   
 </body>
 </html>
