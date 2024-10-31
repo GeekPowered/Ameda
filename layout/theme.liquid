@@ -491,7 +491,7 @@
         const navbarHeight = document.querySelector(".shopify-section-group-header-group").offsetHeight;
         const element = document.querySelector(hash);
         if (element) {
-          const y = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+          const y = element.getBoundingClientRect().top - window.pageYOffset - navbarHeight;
           window.scrollTo({top: y, behavior: "smooth"});
         }
       }
