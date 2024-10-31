@@ -488,14 +488,16 @@
   {%- unless request.path contains 'instructions-for-use' -%}
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-          // Function to scroll to the element considering navbar height
+          // Get the initial height of the <store-header> navbar
+          const navbar = document.querySelector('store-header');
+          const initialNavbarHeight = navbar ? navbar.offsetHeight : 0;
+
+          // Function to scroll to the element considering the initial navbar height
           function scrollToHash(hash) {
-              const navbar = document.querySelector('store-header');
-              const navbarHeight = navbar ? navbar.offsetHeight : 0;
               const targetElement = document.querySelector(hash);
 
               if (targetElement) {
-                  const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+                  const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - initialNavbarHeight;
                   window.scrollTo({
                       top: offsetTop,
                       behavior: 'smooth'
@@ -518,7 +520,6 @@
               });
           });
       });
-
     </script>
   {%- endunless -%}
   
