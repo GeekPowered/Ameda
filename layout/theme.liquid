@@ -519,11 +519,12 @@
 
                   event.preventDefault();
                   history.pushState(null, null, hash); // Update the URL without jumping
-                  scrollToHash(hash);
+
+                  // Use a slight delay to account for the URL update
+                  setTimeout(() => scrollToHash(hash), 10);
               });
           });
       });
-
     </script>
   {%- endunless -%}
   
