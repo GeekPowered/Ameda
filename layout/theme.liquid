@@ -484,50 +484,6 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
   {% endif %}
-
-  {%- unless request.path contains 'instructions-for-use' -%}
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the initial height of the <store-header> navbar
-    const navbar = document.querySelector('store-header');
-    const initialNavbarHeight = navbar ? navbar.offsetHeight : 0;
-
-    // Function to scroll to the element considering the initial navbar height
-    function scrollToHash(hash) {
-        if (hash === '#') return; // Ignore single '#' links
-
-        const targetElement = document.querySelector(hash);
-        if (targetElement) {
-            const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - initialNavbarHeight;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    }
-
-    // Check for initial hash on page load
-    if (window.location.hash && window.location.hash !== '#') {
-        scrollToHash(window.location.hash);
-    }
-
-    // Listen for clicks on hash links
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener('click', function(event) {
-            const hash = this.getAttribute('href');
-            if (hash === '#') return; // Ignore single '#' links
-
-            event.preventDefault(); // Prevent default jump to hash
-            history.pushState(null, null, hash); // Update the URL without jumping
-
-            // Use a slight delay to ensure the hash update takes effect
-            setTimeout(() => scrollToHash(hash), 50); // Delay to account for pushState
-        });
-    });
-});
-
-    </script>
-  {%- endunless -%}
   
 </body>
 </html>
