@@ -490,8 +490,8 @@
       document.addEventListener('DOMContentLoaded', function() {
           // Check if there is a hash in the URL
           if (window.location.hash) {
-              // Get the navbar height
-              const navbar = document.querySelector('.shopify-section-group-header-group');
+              // Get the navbar height from the <store-header> element
+              const navbar = document.querySelector('store-header');
               const navbarHeight = navbar ? navbar.offsetHeight : 0;
 
               // Get the target element using the hash
