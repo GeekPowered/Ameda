@@ -488,64 +488,67 @@
   {% unless request.path contains 'instructions-for-use' %}
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Select all anchor links with a hash
-        const links = document.querySelectorAll('a[href^="#"]');
-        const header = document.querySelector('store-header');
+    // Select all anchor links with a hash
+    const links = document.querySelectorAll('a[href^="#"]');
+    const header = document.querySelector('store-header');
 
-        // Function to get the height of the sticky header
-        function getHeaderHeight() {
-            return header ? header.offsetHeight : 0;
-        }
+    // Function to get the height of the sticky header
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
+    }
 
-        // Adjust scroll when clicking on a hash link
-        links.forEach(link => {
-            link.addEventListener('click', function(event) {
-                // Prevent the default jump to the hash
-                event.preventDefault();
+    // Adjust scroll when clicking on a hash link
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // Prevent the default jump to the hash
+            event.preventDefault();
 
-                const targetId = this.getAttribute('href').slice(1);
-                const targetElement = document.getElementById(targetId);
+            const targetId = this.getAttribute('href').slice(1);
+            const targetElement = document.getElementById(targetId);
 
-                if (targetElement) {
-                    const headerHeight = getHeaderHeight();
-                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            if (targetElement) {
+                const headerHeight = getHeaderHeight();
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-                    // Scroll to the element, adjusted for header height
+                // Scroll to the element, adjusted for header height
+                window.scrollTo({
+                    top: elementPosition - headerHeight,
+                    behavior: 'smooth'
+                });
+
+                // Update the URL hash without scrolling
+                history.pushState(null, '', `#${targetId}`);
+            }
+        });
+    });
+
+    // Adjust scroll position when navigating to a hash directly (e.g., page load or link click from another page)
+    function adjustScrollForHash() {
+        if (window.location.hash) {
+            const targetId = window.location.hash.slice(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const headerHeight = getHeaderHeight();
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+                // Scroll after a brief delay to ensure the page is fully loaded
+                setTimeout(() => {
                     window.scrollTo({
                         top: elementPosition - headerHeight,
                         behavior: 'smooth'
                     });
-
-                    // Update the URL hash without scrolling
-                    history.pushState(null, '', `#${targetId}`);
-                }
-            });
-        });
-
-        // Adjust scroll position when navigating to a hash directly (e.g., page load or link click from another page)
-        function adjustScrollForHash() {
-            if (window.location.hash) {
-                const targetId = window.location.hash.slice(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    const headerHeight = getHeaderHeight();
-                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-
-                    // Scroll after a brief delay to ensure the page is fully loaded
-                    setTimeout(() => {
-                        window.scrollTo({
-                            top: elementPosition - headerHeight,
-                            behavior: 'smooth'
-                        });
-                    }, 100);
-                }
+                }, 100);
             }
         }
+    }
 
-        // Run the adjustment on page load
-        adjustScrollForHash();
-    });
+    // Run the adjustment on page load
+    adjustScrollForHash();
+
+    // Listen for popstate events (e.g., navigating through browser history)
+    window.addEventListener('popstate', adjustScrollForHash);
+});
   
     </script>
   {% endunless %}
