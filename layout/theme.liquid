@@ -488,75 +488,85 @@
   {% unless request.path contains 'instructions-for-use' %}
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Select all anchor links with a hash but ignore those that are just "#"
-        const links = document.querySelectorAll('a[href^="#"]:not([href="#"])');
-        const header = document.querySelector('store-header');
+    // Select all anchor links with a hash but ignore those that are just "#"
+    const links = document.querySelectorAll('a[href^="#"]:not([href="#"])');
+    const header = document.querySelector('store-header');
 
-        // Function to get the height of the sticky header
-        function getHeaderHeight() {
-            return header ? header.offsetHeight : 0;
-        }
+    // Function to get the height of the sticky header
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
+    }
 
-        // Adjust scroll when clicking on a hash link
-        links.forEach(link => {
-            link.addEventListener('click', function(event) {
-                // Prevent the default jump to the hash
-                event.preventDefault();
+    // Adjust scroll when clicking on a hash link
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // Prevent the default jump to the hash
+            event.preventDefault();
 
-                const targetId = this.getAttribute('href').slice(1);
-                const targetElement = document.getElementById(targetId);
+            const targetId = this.getAttribute('href').slice(1);
+            const targetElement = document.getElementById(targetId);
 
-                if (targetElement) {
-                    const headerHeight = getHeaderHeight();
-                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            if (targetElement) {
+                const headerHeight = getHeaderHeight();
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-                    // Scroll to the element, adjusted for header height
+                // Scroll to the element, adjusted for header height
+                window.scrollTo({
+                    top: elementPosition - headerHeight,
+                    behavior: 'smooth'
+                });
+
+                // Scroll down 1px to trigger navbar shrink
+                setTimeout(() => {
+                    window.scrollBy({ top: 1, behavior: 'smooth' });
+                }, 500);
+
+                // Update the URL hash without scrolling
+                history.pushState(null, '', `#${targetId}`);
+            }
+        });
+    });
+
+    // Adjust scroll position when navigating to a hash directly (e.g., page load or link click from another page)
+    function adjustScrollForHash() {
+        if (window.location.hash) {
+            const targetId = window.location.hash.slice(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const headerHeight = getHeaderHeight();
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+                // Scroll after a brief delay to ensure the page is fully loaded
+                setTimeout(() => {
                     window.scrollTo({
                         top: elementPosition - headerHeight,
                         behavior: 'smooth'
                     });
-
-                    // Update the URL hash without scrolling
-                    history.pushState(null, '', `#${targetId}`);
-                }
-            });
-        });
-
-        // Adjust scroll position when navigating to a hash directly (e.g., page load or link click from another page)
-        function adjustScrollForHash() {
-            if (window.location.hash) {
-                const targetId = window.location.hash.slice(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    const headerHeight = getHeaderHeight();
-                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-
-                    // Scroll after a brief delay to ensure the page is fully loaded
+                    // Scroll down 1px to trigger navbar shrink
                     setTimeout(() => {
-                        window.scrollTo({
-                            top: elementPosition - headerHeight,
-                            behavior: 'smooth'
-                        });
-                    }, 100);
-                }
+                        window.scrollBy({ top: 1, behavior: 'smooth' });
+                    }, 500);
+                }, 100);
             }
         }
+    }
 
-        // Run the adjustment on page load
-        adjustScrollForHash();
+    // Run the adjustment on page load
+    adjustScrollForHash();
 
-        // Immediate adjustment if the page is already scrolled to a hash on load
-        if (window.location.hash) {
-            window.addEventListener('load', adjustScrollForHash);
-        }
+    // Immediate adjustment if the page is already scrolled to a hash on load
+    if (window.location.hash) {
+        window.addEventListener('load', adjustScrollForHash);
+    }
 
-        // Listen for popstate events (e.g., navigating through browser history)
-        window.addEventListener('popstate', adjustScrollForHash);
+    // Listen for popstate events (e.g., navigating through browser history)
+    window.addEventListener('popstate', adjustScrollForHash);
 
-        // Listen for hashchange events (e.g., hash routing happening after page load)
-        window.addEventListener('hashchange', adjustScrollForHash);
-    });
+    // Listen for hashchange events (e.g., hash routing happening after page load)
+    window.addEventListener('hashchange', adjustScrollForHash);
+});
+  
     </script>
   {% endunless %}
   
