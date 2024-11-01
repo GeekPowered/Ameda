@@ -546,10 +546,17 @@
     // Run the adjustment on page load
     adjustScrollForHash();
 
+    // Immediate adjustment if the page is already scrolled to a hash on load
+    if (window.location.hash) {
+        window.addEventListener('load', adjustScrollForHash);
+    }
+
     // Listen for popstate events (e.g., navigating through browser history)
     window.addEventListener('popstate', adjustScrollForHash);
-});
-  
+
+    // Listen for hashchange events (e.g., hash routing happening after page load)
+    window.addEventListener('hashchange', adjustScrollForHash);
+});  
     </script>
   {% endunless %}
   
