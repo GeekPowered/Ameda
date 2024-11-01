@@ -512,7 +512,7 @@
 
                 // Scroll to the element, adjusted for header height
                 window.scrollTo({
-                    top: elementPosition - headerHeight - 50,
+                    top: elementPosition - headerHeight - 16,
                     behavior: 'smooth'
                 });
 
@@ -540,7 +540,7 @@
                 // Scroll after a brief delay to ensure the page is fully loaded
                 setTimeout(() => {
                     window.scrollTo({
-                        top: elementPosition - headerHeight - 50,
+                        top: elementPosition - headerHeight - 16,
                         behavior: 'smooth'
                     });
                     // Scroll down 1px to trigger navbar shrink
