@@ -35,7 +35,7 @@
     "timed_custom_liquid_XnwwX4": {
       "type": "timed-custom-liquid",
       "settings": {
-        "custom_liquid": "<a href=\"https://www.amazon.com/stores/Ameda/Ameda/page/ADD276D5-5C0C-4CE3-80DA-CF04B4DF4D4A\" target=\"_blank\" class=\"\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/black-friday-banner.jpg?v=1732051028\" width=\"100%\" height=\"auto\" alt=\"Black Friday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
+        "custom_liquid": "<a href=\"https://www.amazon.com/stores/Ameda/Ameda/page/ADD276D5-5C0C-4CE3-80DA-CF04B4DF4D4A\" target=\"_blank\" class=\"\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/black-friday-banner.jpg?v=1732051668\" width=\"100%\" height=\"auto\" alt=\"Black Friday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
         "iso_start_date_time": "2024-11-19T21:24:11.875Z",
         "iso_end_date_time": "2024-11-19T21:30:11.875Z",
         "section_height": "tight",
