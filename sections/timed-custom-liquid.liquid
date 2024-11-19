@@ -15,7 +15,7 @@
   endif
 -%}
 
-<div class="section relative section--full-width{% unless section.settings.section_height == "tight" %} section--padded-{{ section.settings.section_height }}{% endunless %}{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_patterns == true %} baby-pattern{% endif %}" id="timed-section" style="display: none;" {% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
+<div class="section relative section--full-width{% unless section.settings.section_height == "tight" %} section--padded-{{ section.settings.section_height }}{% endunless %}{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_patterns == true %} baby-pattern{% endif %}" id="timed-section-{{ section.id }}" style="display: none;" {% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %} data-start-date="{{ section.settings.iso_start_date_time }}" data-end-date="{{ section.settings.iso_end_date_time }}">
   {%- unless section.settings.full_width -%}
     <div class="container">
   {%- endunless -%}
@@ -41,7 +41,7 @@
     // Check if the current date is within the range of start and end dates
     if (currentDate >= startDate && currentDate <= endDate) {
       // Show the section
-      document.getElementById('timed-section').style.display = 'block';
+      document.getElementById('timed-section-{{ section.id }}').style.display = 'block';
     }
   });
 </script>
