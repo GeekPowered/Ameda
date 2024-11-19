@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -19,13 +19,11 @@
     },
     "timed_custom_liquid_g98X9h": {
       "type": "timed-custom-liquid",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
-        "custom_liquid": "<a href=\"https://www.amazon.com/stores/Ameda/Ameda/page/ADD276D5-5C0C-4CE3-80DA-CF04B4DF4D4A\" target=\"_blank\" class=\"primeday-banner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/2024_Prime_Day_Banner.jpg?v=1727970537\" width=\"100%\" height=\"auto\" alt=\"Prime Day Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
-        "iso_start_date_time": "2024-10-08T07:00:00.000Z",
-        "iso_end_date_time": "2024-10-10T06:59:00.000Z",
+        "custom_liquid": "<a href=\"https://www.amazon.com/stores/Ameda/Ameda/page/ADD276D5-5C0C-4CE3-80DA-CF04B4DF4D4A\" target=\"_blank\" class=\"primeday-banner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/cyber-monday-banner.jpg?v=1732051027\" width=\"100%\" height=\"auto\" alt=\"Cyber Monday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
+        "iso_start_date_time": "2024-11-19T07:00:00.000Z",
+        "iso_end_date_time": "2024-11-19T06:59:00.000Z",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
