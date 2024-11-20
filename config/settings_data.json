@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "presets": {
     "Digital": {
@@ -435,7 +435,7 @@
     "social_youtube_url": "https://www.youtube.com/c/amedabreastfeeding",
     "social_instagram_url": "https://www.instagram.com/myameda/?hl=en",
     "social_pinterest_url": "https://www.pinterest.com/myameda/_created/",
-    "social_twitter_url": "https://twitter.com/MyAmeda",
+    "social_twitter_url": "https://x.com/MyAmeda",
     "search_show_pages": true,
     "search_show_articles": true,
     "show_search_types": false,
@@ -475,21 +475,17 @@
     "checkout_accent_color": "#333333",
     "checkout_button_color": "#fcedee",
     "heading_type_scale": "1.3",
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "319724205969189013": {
         "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "733389323033596483": {
         "type": "shopify://apps/okendo/blocks/theme-settings/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
@@ -501,8 +497,7 @@
       "6023461868751542726": {
         "type": "shopify://apps/bsure-checkout-rules/blocks/embed/01dc9f18-0935-422b-a3f7-3d2458585368",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
