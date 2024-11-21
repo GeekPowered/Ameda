@@ -14,21 +14,23 @@
     "promo-strip": {
       "type": "promo-strip",
       "blocks": {
-        "heading-0": {
-          "type": "heading",
+        "text_WnNPfU": {
+          "type": "text",
           "settings": {
-            "heading": "Free Shipping on all orders over $25!",
-            "heading_size": "h6",
+            "text": "<h6><a href=\"/collections/breast-pumps\" title=\"Breast Pumps\"><strong>Black Friday Sale: Get 25% Off All Breast Pumps During Checkout!</strong></a></h6>",
+            "enlarge_text": false,
             "show_on_mobile": true,
             "show_on_desktop": true
           }
         }
       },
       "block_order": [
-        "heading-0"
+        "text_WnNPfU"
       ],
       "custom_css": [
-        ".promo-strip__container {justify-content: space-between;}"
+        ".promo-strip__container {justify-content: space-between;}",
+        ".promo-strip__container h6 {margin-bottom: 0; text-decoration: none;}",
+        ".promo-strip__container a {text-decoration: none;}"
       ],
       "settings": {
         "section_height": "xsmall",
