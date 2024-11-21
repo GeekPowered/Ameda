@@ -82,7 +82,7 @@
     "timed_custom_liquid_nHzKUh": {
       "type": "timed-custom-liquid",
       "settings": {
-        "custom_liquid": "<a href=\"/collections/breast-pumps\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/cyber-monday-banner.jpg?v=1732051669\" width=\"100%\" height=\"auto\" alt=\"Cyber Monday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
+        "custom_liquid": "<a href=\"/collections/breast-pumps\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/CMV2.jpg?v=1732204225\" width=\"100%\" height=\"auto\" alt=\"Cyber Monday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
         "iso_start_date_time": "2024-12-02T05:59:00.000Z",
         "iso_end_date_time": "2024-12-03T05:59:00.000Z",
         "section_height": "default",
