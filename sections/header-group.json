@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "Header Group",
@@ -22,29 +22,10 @@
             "show_on_mobile": true,
             "show_on_desktop": true
           }
-        },
-        "discount-2": {
-          "type": "discount",
-          "disabled": true,
-          "settings": {
-            "discount_code": "JOYPLUSBOGO"
-          }
-        },
-        "text_KjRK64": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p><a href=\"\/pages\/insurance\" title=\"Insurance\"><strong>Get a FREE Pump through insurance<\/strong><\/a><\/p>",
-            "enlarge_text": false,
-            "show_on_mobile": true,
-            "show_on_desktop": true
-          }
         }
       },
       "block_order": [
-        "heading-0",
-        "discount-2",
-        "text_KjRK64"
+        "heading-0"
       ],
       "custom_css": [
         ".promo-strip__container {justify-content: space-between;}"
@@ -95,9 +76,7 @@
     "announcement": {
       "type": "announcement",
       "disabled": true,
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "link1": "",
         "link1_label": "",
