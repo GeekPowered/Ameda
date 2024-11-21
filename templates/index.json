@@ -69,7 +69,7 @@
       "type": "timed-custom-liquid",
       "settings": {
         "custom_liquid": "<a href=\"/collections/breast-pumps\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/black-friday-banner.jpg?v=1732051668\" width=\"100%\" height=\"auto\" alt=\"Black Friday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
-        "iso_start_date_time": "2024-11-29T14:32:00.000Z",
+        "iso_start_date_time": "2024-11-21T14:34:00.000Z",
         "iso_end_date_time": "2024-12-02T05:59:00.000Z",
         "section_height": "default",
         "full_width": false,
