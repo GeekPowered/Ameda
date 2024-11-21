@@ -1,14 +1,42 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "timed_custom_liquid_ntbmja": {
+      "type": "timed-custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if collection.metafields.custom.enable_sale_banner == true %}\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/bfbv2.jpg?v=1732202782\" width=\"100%\" height=\"auto\" alt=\"Black Friday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n{% endif %}",
+        "iso_start_date_time": "2024-11-21T14:34:00.000Z",
+        "iso_end_date_time": "2024-12-02T05:59:00.000Z",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "timed_custom_liquid_AW9C33": {
+      "type": "timed-custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if collection.metafields.custom.enable_sale_banner == true %}\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/cyber-monday-banner.jpg?v=1732051669\" width=\"100%\" height=\"auto\" alt=\"Cyber Monday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n{% endif %}",
+        "iso_start_date_time": "2024-12-02T05:59:00.000Z",
+        "iso_end_date_time": "2024-12-03T05:59:00.000Z",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "collection-banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -24,9 +52,7 @@
     },
     "collection-products": {
       "type": "main-collection-products",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "products_per_page": 16,
         "card_size_mobile": "small",
@@ -64,6 +90,8 @@
     }
   },
   "order": [
+    "timed_custom_liquid_ntbmja",
+    "timed_custom_liquid_AW9C33",
     "collection-banner",
     "collection-products",
     "custom_liquid_7BngVk",
