@@ -20,7 +20,7 @@
     "custom_liquid_LwLcUC": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"form_container\"><div class=\"pxFormGenerator\" id=\"0ximyZ1PZkb64BrUrzrIMg\"></div></div>\n\n<script>\n    window.addEventListener('message', function(event) {\n      // For security, verify the origin of the message\n      // Replace 'https://your-iframe-origin.com' with the iframe's origin\n      // if (event.origin !== 'https://your-iframe-origin.com') return;\n\n      // Get the data from the message\n      var data = event.data;\n      \n      // Log the field name and value\n      console.log(data.fieldName + ': ' + data.fieldValue);\n    });\n</script>",
+        "custom_liquid": "<div class=\"form_container\"><div class=\"pxFormGenerator\" id=\"0ximyZ1PZkb64BrUrzrIMg\"></div></div>\n\n<script>\n    window.addEventListener('message', function(event) {\n      // For security, verify the origin of the message\n      // Replace 'https://formbuilder.hulkapps.com' with the iframe's origin\n      // if (event.origin !== 'https://formbuilder.hulkapps.com') return;\n\n      // Get the data from the message\n      var data = event.data;\n      \n      // Log the field name and value\n      console.log(data.fieldName + ': ' + data.fieldValue);\n    });\n</script>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
