@@ -28,7 +28,7 @@
         "text_WnNPfU"
       ],
       "custom_css": [
-        ".promo-strip__container {justify-content: space-between;}",
+        ".promo-strip__container {justify-content: center;}",
         ".promo-strip__container h6 {margin-bottom: 0; text-decoration: none;}",
         ".promo-strip__container a {text-decoration: none;}"
       ],
