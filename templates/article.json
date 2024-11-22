@@ -1,9 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-article",
       "custom_css": [
-        "img {border-radius: 1rem;}"
+        "img {border-radius: 1rem;}",
+        ".article-content iframe[src*=\"youtube.com\"] {width: 100%; aspect-ratio: 16 / 9; height: auto; border-radius: 1rem; border: none;}"
       ],
       "settings": {
         "show_tags": true,
