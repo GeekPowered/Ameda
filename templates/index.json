@@ -613,7 +613,7 @@
           "type": "button",
           "settings": {
             "button_label": "About Ameda",
-            "button_link": "shopify://pages/about",
+            "button_link": "https://www.ameda.com/pages/about",
             "button_style": "btn btn--primary"
           }
         }
