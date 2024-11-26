@@ -140,7 +140,7 @@
                         <ul class="footer-menu__links disclosure__content" role="list">
                           {%- for link in block.settings.menu.links -%}
                             <li>
-                              <a href="{{ link.url }}">{{ link.title }}</a>
+                              <a href="{{ shop.url }}{{ link.url }}">{{ link.title }}</a>
                             </li>
                           {%- endfor -%}
                         </ul>
@@ -194,7 +194,7 @@
           <ul class="footer-sublinks flex flex-wrap gap-x-theme" role="list">
             {% for link in section.settings.secondary_menu.links %}
               <li class="footer-sublinks__item">
-                <a href="{{ link.url }}">{{ link.title }}</a>
+                <a href="{{ shop.url }}{{ link.url }}">{{ link.title }}</a>
               </li>
             {% endfor %}
           </ul>
