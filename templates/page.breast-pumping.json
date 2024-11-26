@@ -300,7 +300,7 @@
         "title": "Latest Breast Pumping Posts",
         "description": "",
         "show_button": true,
-        "button_link": "/blogs/posts/tagged/breast-pumping-q-as",
+        "button_link": "https://www.ameda.com/blogs/posts/tagged/breast-pumping-q-as",
         "button_text": "Read All",
         "button_style": "btn--primary",
         "top_content_visible": true,
