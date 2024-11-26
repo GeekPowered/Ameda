@@ -124,7 +124,7 @@
                 "item": {
                     "@type": "Product",
                     "name": {{ product.title | strip_html | strip | json }},
-                    "url": "{{ product.url }}",
+                    "url": "{{ shop.url }}{{ product.url }}",
                     "image": "https:{{ product.featured_image | product_img_url: '450x450' }}",
                     "description": {{ product.description | strip_html | strip | json }},
                     "sku": "{{ product.variants.first.sku }}",
@@ -140,7 +140,7 @@
                         "priceValidUntil": "{{ 'now' | date: '%Y-%m-%d' }}",
                         "itemCondition": "https://schema.org/NewCondition",
                         "availability": "https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
-                        "url": "{{ product.url }}"
+                        "url": "{{ shop.url }}{{ product.url }}"
                     }
                     {% if product.metafields.okendo.summaryData.reviewCount > 0 %}
                     ,"aggregateRating": {
