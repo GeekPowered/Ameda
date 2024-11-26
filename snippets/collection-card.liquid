@@ -43,7 +43,7 @@
 
 <div class="card hover:grow-media relative flex flex-col card__collection{% if show_border %} card__collection--with-border{% endif %}">
   <div class="card__media relative{% if circle_image %} card__media--circle{% endif %}">
-    <a href="{{ collection.url }}" aria-label="{{ collection.title | escape }}" class="media block relative{% if settings.blend_collection_images %} image-blend{% endif %}" tabindex="-1" style="padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;">
+    <a href="{{ shop.url }}{{ collection.url }}" aria-label="{{ collection.title | escape }}" class="media block relative{% if settings.blend_collection_images %} image-blend{% endif %}" tabindex="-1" style="padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;">
       {%- if collection != empty and image != blank -%}
         {%- capture sizes %}{% render 'sizes-attribute', grid: true, min: 1, sm: 2, lg: 3, xl: 4 %}{% endcapture -%}
         {%- liquid
@@ -78,7 +78,7 @@
     </p>
 
     {%- if settings.coll_show_link -%}
-      <a href="{{ collection.url }}" class="text-theme-text inline-flex card__collection--arrow">
+      <a href="{{ shop.url }}{{ collection.url }}" class="text-theme-text inline-flex card__collection--arrow">
         {{ 'sections.collection.view' | t }}
         <span class="has-ltr-icon flex items-center mis-2">
           {%- render 'icon-arrow-in-circle' -%}
