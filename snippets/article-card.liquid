@@ -146,7 +146,7 @@
     </div>
 
     {%- if show_button -%}
-      <a href="{{ article.url }}" class="card__button btn {{ button_style }} btn--icon btn--lg has-ltr-icon mt-8">
+      <a href="{{ shop.url }}{{ article.url }}" class="card__button btn {{ button_style }} btn--icon btn--lg has-ltr-icon mt-8">
         <span class="visually-hidden">{{ article.title | escape }}</span>
         {%- render 'icon-arrow-right' -%}
       </a>
