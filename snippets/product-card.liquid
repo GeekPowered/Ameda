@@ -112,7 +112,7 @@
     {%- if show_compare -%}
       <div class="card__compare no-js-hidden text-sm">
         <input type="checkbox" class="checkbox checkbox--compare js-compare-checkbox" id="compare-{{ product.id }}"
-               data-product-id="{{ product.id }}" data-product-url="{{ product_url }}">
+               data-product-id="{{ product.id }}" data-product-url="{{ shop.url }}{{ product_url }}">
         <label for="compare-{{ product.id }}">{{ 'products.compare.switch_label' | t }}</label>
       </div>
     {%- endif -%}
