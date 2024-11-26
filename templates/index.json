@@ -499,7 +499,7 @@
             "content": "Your breastfeeding and pumping journey starts with the right pump.",
             "custom_liquid": "",
             "link_text": "Find Your Pump",
-            "url": "shopify://pages/choosing-the-right-pump",
+            "url": "https://www.ameda.com/pages/choosing-the-right-pump",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -513,7 +513,7 @@
             "content": "Breastfeeding is beneficial for you, your baby, and the community.",
             "custom_liquid": "",
             "link_text": "Breastfeeding Tips",
-            "url": "shopify://pages/breastfeeding-guide",
+            "url": "https://www.ameda.com/pages/breastfeeding-guide",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -527,7 +527,7 @@
             "content": "Learn how to use Ameda pumps, products, accessories, and more!",
             "custom_liquid": "",
             "link_text": "Product Guides",
-            "url": "shopify://pages/instructions-for-use",
+            "url": "https://www.ameda.com/pages/instructions-for-use",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -541,7 +541,7 @@
             "content": "Breastfeeding is beneficial for you, your baby, and the community.",
             "custom_liquid": "",
             "link_text": "View Posts",
-            "url": "shopify://blogs/posts",
+            "url": "https://www.ameda.com/blogs/posts",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -555,7 +555,7 @@
             "content": "Learn proper product usage, troubleshooting and breastfeeding tips.",
             "custom_liquid": "",
             "link_text": "See Videos",
-            "url": "/pages/education?tab=videos",
+            "url": "https://www.ameda.com/pages/education?tab=videos",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -569,7 +569,7 @@
             "content": "Speak to parenting and breastfeeding experts to get any of your burning questions answered.",
             "custom_liquid": "",
             "link_text": "Get Support",
-            "url": "shopify://pages/contact",
+            "url": "https://www.ameda.com/pages/contact",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
