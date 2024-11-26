@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,7 +23,7 @@
         "text_Fz6VbC": {
           "type": "text",
           "settings": {
-            "text": "<p>Introducing Ameda's NEW Hospital Grade Breast Pump<\/p>",
+            "text": "<p>Introducing Ameda's NEW Hospital Grade Breast Pump</p>",
             "enlarge_text": true
           }
         },
@@ -32,8 +41,8 @@
         "heading_XxCmiw"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/pearl-banner.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/pearl-banner-m.jpg",
+        "image_desktop": "shopify://shop_images/pearl-banner.jpg",
+        "image_mobile": "shopify://shop_images/pearl-banner-m.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
@@ -57,10 +66,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/switch-icon.png",
+            "image": "shopify://shop_images/switch-icon.png",
             "media_scale": 100,
             "heading": "",
-            "text": "<p>Hospital grade performance with two modes of pumping. Over 90% of moms surveyed were highly satisfied with Pearl®.<\/p>",
+            "text": "<p>Hospital grade performance with two modes of pumping. Over 90% of moms surveyed were highly satisfied with Pearl®.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -69,10 +78,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons_Portable_2.png",
+            "image": "shopify://shop_images/AMED_MyaJoyIcons_Portable_2.png",
             "media_scale": 100,
             "heading": "",
-            "text": "<p>Small & lightweight with a rechargeable battery and carry handle.<\/p>",
+            "text": "<p>Small & lightweight with a rechargeable battery and carry handle.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -81,10 +90,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons.png",
+            "image": "shopify://shop_images/AMED_MyaJoyIcons.png",
             "media_scale": 100,
             "heading": "",
-            "text": "<p>Mom controlled suction delivers personalized comfort.<\/p>",
+            "text": "<p>Mom controlled suction delivers personalized comfort.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -93,10 +102,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/AMED_MyaJoyIcons_DRAFT_5.18.2020-05.png",
+            "image": "shopify://shop_images/AMED_MyaJoyIcons_DRAFT_5.18.2020-05.png",
             "media_scale": 100,
             "heading": "",
-            "text": "<p>Universal HygieniKit™ helps protect breast milk from potential contaminants like bacteria, viruses, and mold growth.<\/p>",
+            "text": "<p>Universal HygieniKit™ helps protect breast milk from potential contaminants like bacteria, viruses, and mold growth.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -110,7 +119,7 @@
       ],
       "custom_css": [
         "#template--22016424935739__multi_column_nHiQFc {margin: 0; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5)) !important; padding-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;}",
-        "@media (min-width: 769px) {#template--22016424935739__multi_column_nHiQFc .multi-column {width: calc((100% \/ 4) - var(--column-gap)); }}"
+        "@media (min-width: 769px) {#template--22016424935739__multi_column_nHiQFc .multi-column {width: calc((100% / 4) - var(--column-gap)); }}"
       ],
       "settings": {
         "title": "Powerful. Portable. Comfortable. Safe.",
@@ -150,7 +159,7 @@
         "text_BMaU4R": {
           "type": "text",
           "settings": {
-            "text": "<p>Pearl's® modern design combines powerful performance inside with a protective shell on the outside. Pearl® is designed to build milk supply amongst pump dependent, all preterm and term moms. Pearl® modern design combines the durability needed for the multi-user\/hospital environment with lifestyle features moms expect. Pearl® will serve the needs of all hospitals and is the ideal multi-user product for WIC and rental stations. Pearl® is perfectly positioned to support continuity of care in the Hospital and Home.<br\/><br\/><em>Pearl® is available for purchase by Hospitals, DMEs and WIC agencies. It is not available for purchase by individual consumers at this time.<\/em><\/p>",
+            "text": "<p>Pearl's® modern design combines powerful performance inside with a protective shell on the outside. Pearl® is designed to build milk supply amongst pump dependent, all preterm and term moms. Pearl® modern design combines the durability needed for the multi-user/hospital environment with lifestyle features moms expect. Pearl® will serve the needs of all hospitals and is the ideal multi-user product for WIC and rental stations. Pearl® is perfectly positioned to support continuity of care in the Hospital and Home.<br/><br/><em>Pearl® is available for purchase by Hospitals, DMEs and WIC agencies. It is not available for purchase by individual consumers at this time.</em></p>",
             "enlarge_text": false
           }
         },
@@ -158,7 +167,7 @@
           "type": "button",
           "settings": {
             "button_label": "Contact Us For More Information",
-            "button_link": "shopify:\/\/pages\/hospital-product-inquiries",
+            "button_link": "https://www.ameda.com/pages/hospital-product-inquiries",
             "button_style": "btn btn--primary"
           }
         }
@@ -169,7 +178,7 @@
         "button_zCnWEK"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/pearl.png",
+        "image": "shopify://shop_images/pearl.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -218,7 +227,7 @@
         "slide_637DJY": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/AMEDA_Pearl_Light.png",
+            "image_desktop": "shopify://shop_images/AMEDA_Pearl_Light.png",
             "url": "",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
@@ -251,7 +260,7 @@
         "slide_FK3jQT": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/AMEDA_Pearl_Dark.png",
+            "image_desktop": "shopify://shop_images/AMEDA_Pearl_Dark.png",
             "url": "",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
@@ -284,7 +293,7 @@
         "slide_dCNM6R": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/AMEDA_Pearl_Back.png",
+            "image_desktop": "shopify://shop_images/AMEDA_Pearl_Back.png",
             "url": "",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
@@ -405,7 +414,7 @@
         "testimonial_zDkYiH": {
           "type": "testimonial",
           "settings": {
-            "testimonial": "<p>The Ameda Pearl® breast pump will be a great addition to any            Mom, especially NICU moms who can’t feed their babies yet but are working on supply. It’s lightweight and  the battery life make it a great pump for Moms on the go. My preemie baby thanks you for a great product.<\/p>",
+            "testimonial": "<p>The Ameda Pearl® breast pump will be a great addition to any            Mom, especially NICU moms who can’t feed their babies yet but are working on supply. It’s lightweight and  the battery life make it a great pump for Moms on the go. My preemie baby thanks you for a great product.</p>",
             "author": "Noemi N.",
             "author_info": "",
             "show_star_rating": true,
@@ -415,7 +424,7 @@
         "testimonial_DzbqaJ": {
           "type": "testimonial",
           "settings": {
-            "testimonial": "<p>It is fantastic and so comfortable! I love how the simulation mode helps to start my let down. It does a better job of stimulating a let down than any other pump I have tried.<\/p>",
+            "testimonial": "<p>It is fantastic and so comfortable! I love how the simulation mode helps to start my let down. It does a better job of stimulating a let down than any other pump I have tried.</p>",
             "author": "Danielle P.",
             "author_info": "",
             "show_star_rating": true,
@@ -425,7 +434,7 @@
         "testimonial_VyteXH": {
           "type": "testimonial",
           "settings": {
-            "testimonial": "<p>I loved the additional controls, THE TIMER, the bottle holders, and the night light function.<\/p>",
+            "testimonial": "<p>I loved the additional controls, THE TIMER, the bottle holders, and the night light function.</p>",
             "author": "Emily G.",
             "author_info": "",
             "show_star_rating": true,
@@ -435,7 +444,7 @@
         "testimonial_jM3H9Q": {
           "type": "testimonial",
           "settings": {
-            "testimonial": "<p>It's an amazing product that far exceeded my expectations and most definitely outperformed breast pumps I've used in the past.<\/p>",
+            "testimonial": "<p>It's an amazing product that far exceeded my expectations and most definitely outperformed breast pumps I've used in the past.</p>",
             "author": "Holly R.",
             "author_info": "",
             "show_star_rating": true,
@@ -445,7 +454,7 @@
         "testimonial_WThXkq": {
           "type": "testimonial",
           "settings": {
-            "testimonial": "<p>The pump battery is incredible- I used it for about 20 minutes at a time and it lasted for at least 12 sessions. This pump was awesome! i loved how nice the layout was and the ease of the controls. i especially loved the nightlight feature, super convenient!<\/p>",
+            "testimonial": "<p>The pump battery is incredible- I used it for about 20 minutes at a time and it lasted for at least 12 sessions. This pump was awesome! i loved how nice the layout was and the ease of the controls. i especially loved the nightlight feature, super convenient!</p>",
             "author": "Charity R.",
             "author_info": "",
             "show_star_rating": true,
@@ -498,7 +507,7 @@
         "text_iP8FxF": {
           "type": "text",
           "settings": {
-            "text": "<p>There are a number of accessory options specifically for Ameda Pearl® that are designed to enhance your pumping experience. These include Pearl® Hard Shell Transport and Storage Case, Ameda Pearl® Trolley, Ameda Universal HygieniKits™ and more...<\/p>",
+            "text": "<p>There are a number of accessory options specifically for Ameda Pearl® that are designed to enhance your pumping experience. These include Pearl® Hard Shell Transport and Storage Case, Ameda Pearl® Trolley, Ameda Universal HygieniKits™ and more...</p>",
             "enlarge_text": false
           }
         }
@@ -523,10 +532,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/3.png",
+            "image": "shopify://shop_images/3.png",
             "media_scale": 100,
             "heading": "Ameda  Pearl® Hard Shell Transport & Storage Case",
-            "text": "<p>501M03<\/p>",
+            "text": "<p>501M03</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -535,10 +544,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/Ameda_Pearl_Trolley_600.png",
+            "image": "shopify://shop_images/Ameda_Pearl_Trolley_600.png",
             "media_scale": 100,
             "heading": "Ameda Pearl® Trolly",
-            "text": "<p>201H01<\/p>",
+            "text": "<p>201H01</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -547,10 +556,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/1.png",
+            "image": "shopify://shop_images/1.png",
             "media_scale": 100,
             "heading": "Dual Universal HygieniKit™",
-            "text": "<p>17456 (non-sterile)<\/p>",
+            "text": "<p>17456 (non-sterile)</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -559,10 +568,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/3_2.png",
+            "image": "shopify://shop_images/3_2.png",
             "media_scale": 100,
             "heading": "Dual Universal HygieniKit™",
-            "text": "<p>17450W (sterile)<\/p>",
+            "text": "<p>17450W (sterile)</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -571,10 +580,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/Ameda-diaphragma_1.jpg",
+            "image": "shopify://shop_images/Ameda-diaphragma_1.jpg",
             "media_scale": 100,
             "heading": "Universal Diaphragm Replacement Pack",
-            "text": "<p>000X02 (non-sterile)<\/p>",
+            "text": "<p>000X02 (non-sterile)</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -620,7 +629,7 @@
         "text_JU9Dr8": {
           "type": "text",
           "settings": {
-            "text": "<p>Visit our comparison chart page to compare and contrast Pearl® to our other breast pumps.<\/p>",
+            "text": "<p>Visit our comparison chart page to compare and contrast Pearl® to our other breast pumps.</p>",
             "enlarge_text": true
           }
         },
@@ -628,7 +637,7 @@
           "type": "button",
           "settings": {
             "button_1_label": "See Comparison Chart",
-            "button_1_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMEDA_Pearl_Comparison_Chart.pdf?v=1705606041",
+            "button_1_link": "https://cdn.shopify.com/s/files/1/0849/8062/9819/files/AMEDA_Pearl_Comparison_Chart.pdf?v=1705606041",
             "button_1_style": "btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -641,9 +650,7 @@
         "text_JU9Dr8",
         "button_zCi4Wb"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "text_position": "justify-center",
         "text_align": "text-center",
@@ -688,7 +695,7 @@
         "text_qPLhFR": {
           "type": "text",
           "settings": {
-            "text": "<p>Trusted by Hospitals. Loved by Moms.<\/p>",
+            "text": "<p>Trusted by Hospitals. Loved by Moms.</p>",
             "enlarge_text": true
           }
         },
@@ -696,7 +703,7 @@
           "type": "button",
           "settings": {
             "button_1_label": "Contact Us",
-            "button_1_link": "shopify:\/\/pages\/hospital-product-inquiries",
+            "button_1_link": "https://www.ameda.com/pages/hospital-product-inquiries",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -710,7 +717,7 @@
         "button_KYBkiV"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/Mask_Group_14_1.jpg",
+        "image_desktop": "shopify://shop_images/Mask_Group_14_1.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
