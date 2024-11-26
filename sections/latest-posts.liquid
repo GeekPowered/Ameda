@@ -26,7 +26,7 @@
                         {% if articles_count < 4 %}
                             <div class="post-item">
                                 <div class="post-item_image">
-                                    <a href="{{ article.url }}">
+                                    <a href="{{ shop.url }}{{ article.url }}">
                                         <img loading="lazy" data-src="{{ article.image | article_img_url: 'large' }}" alt="{{ article.image.alt | default: '' }}">
                                     </a>
                                 </div>
@@ -37,7 +37,7 @@
                                         {{ article.excerpt | default: '' }}
                                     </p>
                                     <div class="post-item_button">
-                                        <a href="{{ article.url }}" class="link" style="font-weight:bold;">Read More</a>
+                                        <a href="{{ shop.url }}{{ article.url }}" class="link" style="font-weight:bold;">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
                 {% for article in blogs['posts'].articles limit:4 %}
                     <div class="post-item">
                         <div class="post-item_image">
-                            <a href="{{ article.url }}">
+                            <a href="{{ shop.url }}{{ article.url }}">
                                 <img loading="lazy" data-src="{{ article.image | article_img_url: 'large' }}" alt="{{ article.image.alt | default: '' }}">
                             </a>
                         </div>
@@ -60,7 +60,7 @@
                                 {{ article.excerpt | default: '' }}
                             </p>
                             <div class="post-item_button">
-                                <a href="{{ article.url }}" class="link" style="font-weight:bold;">Read More</a>
+                                <a href="{{ shop.url }}{{ article.url }}" class="link" style="font-weight:bold;">Read More</a>
                             </div>
                         </div>
                     </div>
