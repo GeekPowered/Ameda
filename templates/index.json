@@ -105,7 +105,7 @@
             "heading": "",
             "text": "",
             "button_label": "Support For Moms",
-            "button_link": "shopify://pages/support-for-moms"
+            "button_link": "https://www.ameda.com/pages/support-for-moms"
           }
         },
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-2": {
@@ -117,7 +117,7 @@
             "heading": "",
             "text": "",
             "button_label": "For Clinicians & Hospitals",
-            "button_link": "shopify://pages/healthcare-professionals"
+            "button_link": "https://www.ameda.com/pages/healthcare-professionals"
           }
         },
         "template--21856551764283__99ad067f-b38f-4c8e-873d-dea943226a60-column-3": {
@@ -129,7 +129,7 @@
             "heading": "",
             "text": "",
             "button_label": "Insurance",
-            "button_link": "shopify://pages/insurance"
+            "button_link": "https://www.ameda.com/pages/insurance"
           }
         }
       },
@@ -344,7 +344,7 @@
             "text": "",
             "enlarge_text": false,
             "button_1_label": "Apply Now",
-            "button_1_link": "shopify://pages/insurance",
+            "button_1_link": "https://www.ameda.com/pages/insurance",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -377,7 +377,7 @@
             "text": "<p><strong>ON ALL ORDERS OVER $25</strong></p>",
             "enlarge_text": true,
             "button_1_label": "Shop Now",
-            "button_1_link": "shopify://collections",
+            "button_1_link": "https://www.ameda.com/collections",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -410,7 +410,7 @@
             "text": "",
             "enlarge_text": false,
             "button_1_label": "Learn More",
-            "button_1_link": "shopify://products/ameda-pearl-hospital-grade-breast-pump",
+            "button_1_link": "https://www.ameda.com/products/ameda-pearl-hospital-grade-breast-pump",
             "button_1_style": "btn btn--primary",
             "button_2_label": "",
             "button_2_link": "",
