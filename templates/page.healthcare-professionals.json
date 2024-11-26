@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -24,7 +33,7 @@
         "template--21925444354363__0fb38072-7134-48f5-b158-64c61836a19c-heading-1"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/healthcare.jpg",
+        "image_desktop": "shopify://shop_images/healthcare.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
@@ -61,7 +70,7 @@
         "template--21925444354363__3b033708-8c4c-417a-838c-b6e6c5af8de2-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Ameda offers the perfect combination of advanced technology and the time-proven benefits of our legacy technology that has set the industry standards, to determine pumping efficiency. We are dedicated to providing customized and efficient solutions for both clinicians and mothers to optimize breastfeeding.<\/p>",
+            "text": "<p>Ameda offers the perfect combination of advanced technology and the time-proven benefits of our legacy technology that has set the industry standards, to determine pumping efficiency. We are dedicated to providing customized and efficient solutions for both clinicians and mothers to optimize breastfeeding.</p>",
             "enlarge_text": true
           }
         }
@@ -87,36 +96,36 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/education-card.jpg",
+            "image": "shopify://shop_images/education-card.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
             "button_label": "Education For Moms",
-            "button_link": "\/pages\/education"
+            "button_link": "/pages/education"
           }
         },
         "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-2": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/pumps-products-card.jpg",
+            "image": "shopify://shop_images/pumps-products-card.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
             "button_label": "Pumps & Products",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         },
         "template--21925444354363__38ede330-6dde-49f6-b43f-9314978853d6-column-3": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/clinical-evidence-card.jpg",
+            "image": "shopify://shop_images/clinical-evidence-card.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
             "button_label": "Clinical Evidence",
-            "button_link": "\/pages\/the-clinical-evidence"
+            "button_link": "/pages/the-clinical-evidence"
           }
         }
       },
@@ -167,7 +176,7 @@
         "template--21925444354363__564f8bcd-98be-4ac7-a197-e4a6d4924ecc-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pearl® brings powerful pumping from hospital to home. Pearl’s® modern design combines the durability needed for the multi-user\/hospital environment with the lifestyle features moms expect.<\/p>",
+            "text": "<p>Pearl® brings powerful pumping from hospital to home. Pearl’s® modern design combines the durability needed for the multi-user/hospital environment with the lifestyle features moms expect.</p>",
             "enlarge_text": true
           }
         },
@@ -175,7 +184,7 @@
           "type": "button",
           "settings": {
             "button_label": "View Product",
-            "button_link": "shopify:\/\/products\/ameda®-pearl®-hospital-grade-breast-pump",
+            "button_link": "https://www.ameda.com/products/ameda-pearl-hospital-grade-breast-pump",
             "button_style": "btn btn--primary"
           }
         }
@@ -189,7 +198,7 @@
         ".section--padded {padding-bottom: 0;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/AMED_Pearl_Product.jpg",
+        "image": "shopify://shop_images/AMED_Pearl_Product.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -217,7 +226,7 @@
         "template--21925444354363__5474ae37-436a-49af-82e6-a7ee2a3573c9-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The Ameda Platinum™ hospital breast pump has been proven with clinical research to be the most effective breast pump for establishing and maintaining increased milk production for preterm and full term infants.<\/p>",
+            "text": "<p>The Ameda Platinum™ hospital breast pump has been proven with clinical research to be the most effective breast pump for establishing and maintaining increased milk production for preterm and full term infants.</p>",
             "enlarge_text": true
           }
         },
@@ -225,7 +234,7 @@
           "type": "button",
           "settings": {
             "button_label": "View Product",
-            "button_link": "#",
+            "button_link": "https://ameda.com/products/ameda-platinum-multi-user-hospital-grade-electric-breast-pump",
             "button_style": "btn btn--primary"
           }
         }
@@ -239,7 +248,7 @@
         ".section--padded {padding-bottom: 0;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/platinum-front-bottles-2-simple-1000x1000_2x_4a11065b-d4ed-4ad0-9b3b-0e47dbfd7862.jpg",
+        "image": "shopify://shop_images/platinum-front-bottles-2-simple-1000x1000_2x_4a11065b-d4ed-4ad0-9b3b-0e47dbfd7862.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -267,7 +276,7 @@
         "template--21925444354363__a477fc8e-3593-4177-886f-c751c483ad0d-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The Universal HygieniKit™ Milk Collection System is intended to facilitate the expression and collection of breast milk during a mom's breastfeeding journey.<\/p>",
+            "text": "<p>The Universal HygieniKit™ Milk Collection System is intended to facilitate the expression and collection of breast milk during a mom's breastfeeding journey.</p>",
             "enlarge_text": true
           }
         },
@@ -275,7 +284,7 @@
           "type": "button",
           "settings": {
             "button_label": "View Product",
-            "button_link": "#",
+            "button_link": "https://www.ameda.com/products/ameda-hygienikit-universal-kit",
             "button_style": "btn btn--primary"
           }
         }
@@ -289,7 +298,7 @@
         ".section--padded {padding-bottom: 0;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/hygienikit-1000x1000-1_1.jpg",
+        "image": "shopify://shop_images/hygienikit-1000x1000-1_1.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -317,7 +326,7 @@
         "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Going beyond just warming breast milk, the Penguin Thermal Warmer™ ensures each feeding is always safely delivered within the ideal human physiological temperature range of 98F-100F, regardless of the starting temperature.<\/p>",
+            "text": "<p>Going beyond just warming breast milk, the Penguin Thermal Warmer™ ensures each feeding is always safely delivered within the ideal human physiological temperature range of 98F-100F, regardless of the starting temperature.</p>",
             "enlarge_text": true
           }
         },
@@ -325,7 +334,7 @@
           "type": "button",
           "settings": {
             "button_label": "View Product",
-            "button_link": "#",
+            "button_link": "https://www.ameda.com/products/ameda-deluxe-penguin-nutritional-breast-milk-warmer-single-well",
             "button_style": "btn btn--primary"
           }
         }
@@ -335,11 +344,9 @@
         "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-text-1",
         "template--21925444354363__81edc268-77ee-444d-8faa-e39d442f831b-button-1"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
-        "image": "shopify:\/\/shop_images\/penguin_warmers_500x500_2.jpg",
+        "image": "shopify://shop_images/penguin_warmers_500x500_2.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -359,7 +366,7 @@
         "title": "Latest Posts",
         "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you.",
         "show_button": true,
-        "button_link": "\/blogs\/posts\/",
+        "button_link": "https://www.ameda.com/blogs/posts/",
         "button_text": "All Posts",
         "button_style": "btn--primary",
         "top_content_visible": true,
@@ -368,9 +375,7 @@
     },
     "wave_section_fAkqj3": {
       "type": "wave-section",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "wavebgcolor": "rgba(0,0,0,0)",
         "wavesvgcolor": "#ffffff",
@@ -393,7 +398,7 @@
         "template--21925444354363__d8cce70e-a0fa-49e3-af4a-6e92df06e86c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Do you need to rent one of our multi-user breast pumps? The Platinum and Pearl breast pumps are both available at select locations.<\/p>",
+            "text": "<p>Do you need to rent one of our multi-user breast pumps? The Platinum and Pearl breast pumps are both available at select locations.</p>",
             "enlarge_text": true,
             "show_on_mobile": true,
             "show_on_desktop": true
@@ -403,7 +408,7 @@
           "type": "button",
           "settings": {
             "button_label": "Find A Location",
-            "button_link": "shopify:\/\/pages\/product-locator",
+            "button_link": "https://www.ameda.com/pages/product-locator",
             "button_style": "btn btn--primary"
           }
         }
