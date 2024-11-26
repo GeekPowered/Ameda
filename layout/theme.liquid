@@ -569,6 +569,82 @@
   
     </script>
   {% endunless %}
+
+  <script>
+    // Helper function to set a cookie without encoding
+    function setCookie(name, value, days) {
+      var expires = '';
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = '; expires=' + date.toUTCString();
+      }
+      document.cookie = name + '=' + value + expires + '; path=/';
+    }
+  
+    // Function to get a URL parameter value by name
+    function getURLParameter(name) {
+      var params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+  
+    // Common Google Ads parameters to track
+    var googleAdsParams = ['gclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+  
+    // Loop through each parameter and store in a cookie if present
+    googleAdsParams.forEach(function (param) {
+      var value = getURLParameter(param);
+      if (value) {
+        // Store each parameter in a cookie that expires in 90 days
+        setCookie(param, value, 90);
+      }
+    });
+  
+    // Event listener to receive messages from the iframe
+    window.addEventListener('message', function (event) {
+      var iframeOrigin = 'https://formbuilder.hulkapps.com';
+      if (event.origin !== iframeOrigin) {
+        console.warn('Received message from unknown origin:', event.origin);
+        return;
+      }
+  
+      var data = event.data;
+  
+      // Map the form field names to cookie names
+      var fieldToCookieName = {
+        'First Name': 'firstName',
+        'Last Name': 'lastName',
+        'Email': 'email',
+        'Email Address': 'email',
+        'Phone': 'phone',
+        'Phone Number': 'phone'
+      };
+  
+      var cookieName = fieldToCookieName[data.fieldName];
+      if (cookieName) {
+        setCookie(cookieName, data.fieldValue, 365); // Set cookie for form fields (365-day expiration)
+      }
+    });
+  
+    // Send Google Ads cookies to iframe
+    window.addEventListener('DOMContentLoaded', function () {
+      var iframe = document.querySelector('iframe[src^="https://formbuilder.hulkapps.com"]');
+      if (iframe) {
+        iframe.onload = function () {
+          var cookieData = {};
+          googleAdsParams.forEach(function (param) {
+            var match = document.cookie.match(new RegExp('(^| )' + param + '=([^;]+)'));
+            if (match) {
+              cookieData[param] = match[2]; // Extract the value
+            }
+          });
+          iframe.contentWindow.postMessage(cookieData, 'https://formbuilder.hulkapps.com');
+        };
+      } else {
+        console.warn('No iframe found with src starting with "https://formbuilder.hulkapps.com".');
+      }
+    });
+  </script>
   
 </body>
 </html>
