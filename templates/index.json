@@ -647,7 +647,7 @@
         "title": "Latest Blog Posts",
         "description": "Everything breastfeeding and breast pumping. We have educational material written by IBCLCs, great articles spanning all topics baby, and The Village blog posts from moms just like you.",
         "show_button": true,
-        "button_link": "/blogs/posts/",
+        "button_link": "https://www.ameda.com/blogs/posts/",
         "button_text": "All Posts",
         "button_style": "btn--primary",
         "top_content_visible": true,
