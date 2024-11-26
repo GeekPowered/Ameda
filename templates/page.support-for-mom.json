@@ -80,9 +80,7 @@
         "heading_K7EYRp",
         "text_E6nLqf"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "text_position": "justify-center",
         "text_align": "text-center",
@@ -128,14 +126,12 @@
         "education_pdf_block_n4nVhA",
         "education_pdf_block_kL7dTw"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "heading_text": "Education for Mom",
         "show_view_all_button": true,
         "view_all_button_text": "View All",
-        "view_all_button_url": "/pages/education"
+        "view_all_button_url": "https://www.ameda.com/pages/education"
       }
     },
     "help_links_thr7Q9": {
