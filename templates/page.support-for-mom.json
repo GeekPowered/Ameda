@@ -145,7 +145,7 @@
             "content": "Pumping provides milk for feedings when you’re away. It builds milk production if your baby does not feed well or is not yet breastfeeding. When choosing a pump, be aware that some pumps are better for certain situations than others.",
             "custom_liquid": "",
             "link_text": "Learn More",
-            "url": "shopify://pages/choosing-the-right-pump",
+            "url": "https://www.ameda.com/pages/choosing-the-right-pump",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -159,7 +159,7 @@
             "content": "From the moment you find out you’re going to be a parent, you’re going to need to build your village. Ameda is here to give you the resources and expertise you need to prepare your mind and body for motherhood. Click to view our full breastfeeding guide with plenty of advice and tips for this beautiful season of life.",
             "custom_liquid": "",
             "link_text": "Learn More",
-            "url": "shopify://pages/breastfeeding-guide",
+            "url": "https://www.ameda.com/pages/breastfeeding-guide",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -173,7 +173,7 @@
             "content": "There are going to be days when you need to pump breast milk and store it to feed your baby at another time. Ameda has compiled resources so that mom has a full understanding of when to pump, how long to pump, how to store breast milk, and other related topics. Click below to view our full breast pumping guide to go along with your favorite Ameda breast pump.",
             "custom_liquid": "",
             "link_text": "Learn More",
-            "url": "shopify://pages/breast-pumping-guide",
+            "url": "https://www.ameda.com/pages/breast-pumping-guide",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -222,7 +222,7 @@
         "title": "Milk 101 Blog",
         "description": "",
         "show_button": true,
-        "button_link": "/blogs/posts/",
+        "button_link": "https://www.ameda.com/blogs/posts/",
         "button_text": "All Posts",
         "button_style": "btn--primary",
         "top_content_visible": true,
@@ -251,7 +251,7 @@
           "type": "button",
           "settings": {
             "button_1_label": "Customer Service",
-            "button_1_link": "shopify://pages/contact",
+            "button_1_link": "https://www.ameda.com/pages/contact",
             "button_1_style": "btn--primary",
             "button_2_label": "",
             "button_2_link": "",
