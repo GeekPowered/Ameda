@@ -118,7 +118,7 @@
     {%- endif -%}
 
     <div class="card__media{% if show_hover_image %} has-hover-image{% endif %}{% if settings.blend_product_images %} image-blend{% endif %} relative">
-      <a href="{{ product_url }}" aria-label="{{ product.title | escape }}" class="media block relative{% if settings.blend_product_images %} image-blend{% endif %} js-prod-link" style="padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;" tabindex="-1">
+      <a href="{{ shop.url }}{{ product_url }}" aria-label="{{ product.title | escape }}" class="media block relative{% if settings.blend_product_images %} image-blend{% endif %} js-prod-link" style="padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;" tabindex="-1">
         {%- if product.featured_media -%}
           {%- capture attributes %}data-media-id="{{ product.featured_media.id }}"{% endcapture -%}
           {% render 'image',
@@ -187,7 +187,7 @@
           {%- endif -%}
 
           <p class="card__title font-bold{% if settings.show_dividers %} mb-1{% else %} mt-1 mb-0{% endif %}">
-            <a href="{{ product_url }}" class="card-link text-current js-prod-link">
+            <a href="{{ shop.url }}{{ product_url }}" class="card-link text-current js-prod-link">
               {{- product.title | escape -}}
             </a>
           </p>
@@ -334,7 +334,7 @@
       </div>
 
       {% if settings.enable_view_product_button == true %}
-        <a href="{{ product_url }}" class="btn btn--primary mt-5">
+        <a href="{{ shop.url }}{{ product_url }}" class="btn btn--primary mt-5">
           View Product
         </a>
       {% endif %}
@@ -376,16 +376,16 @@
                     </span>
                   </button>
                 {% endif %}
-                <a href="{{ product_url }}" class="btn btn--secondary quick-add-view-btn">
+                <a href="{{ shop.url }}{{ product_url }}" class="btn btn--secondary quick-add-view-btn">
                   {{- 'products.product.view_details' | t -}}
                 </a>
               {%- endform -%}
             </product-form>
           {%- elsif all_variants_out_of_stock -%}
-              <a href="{{ product_url }}" class="btn btn--primary w-full">
+              <a href="{{ shop.url }}{{ product_url }}" class="btn btn--primary w-full">
                 {{- 'products.product.view_product' | t -}}
               </a>
-              <a href="{{ product_url }}" class="btn btn--secondary quick-add-view-btn">
+              <a href="{{ shop.url }}{{ product_url }}" class="btn btn--secondary quick-add-view-btn">
                 {{- 'products.product.view_details' | t -}}
               </a>
           {%- else -%}
@@ -393,7 +393,7 @@
               <button type="button"
                       class="btn btn--primary w-full js-quick-add"
                       aria-haspopup="dialog"
-                      data-product-url="{{ product_url }}"
+                      data-product-url="{{ shop.url }}{{ product_url }}"
                       data-product-default-variant="{{ product.has_only_default_variant }}"
                       {% if selected_color %}data-selected-color="{{ selected_color }}"{% endif %}>
                 <span class="quick-add-btn-icon block pointer-events-none">
@@ -404,7 +404,7 @@
                   {{- 'products.product.choose_options' | t -}}
                 </span>
               </button>
-              <a href="{{ product_url }}" class="btn btn--secondary quick-add-view-btn">
+              <a href="{{ shop.url }}{{ product_url }}" class="btn btn--secondary quick-add-view-btn">
                 {{- 'products.product.view_details' | t -}}
               </a>
             </div>
