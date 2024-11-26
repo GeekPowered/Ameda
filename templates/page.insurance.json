@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -22,7 +31,7 @@
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Experience powerful pumping on the go with the Ameda family of pumps.<\/p>",
+            "text": "<p>Experience powerful pumping on the go with the Ameda family of pumps.</p>",
             "enlarge_text": true
           }
         },
@@ -44,7 +53,7 @@
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-button-1"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/inscopy.jpg",
+        "image_desktop": "shopify://shop_images/inscopy.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
@@ -70,7 +79,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Step 1",
-            "text": "<p>Submit Contact Form<\/p>",
+            "text": "<p>Submit Contact Form</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -81,7 +90,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Step 2",
-            "text": "<p>Supply Additional Patient Information<\/p>",
+            "text": "<p>Supply Additional Patient Information</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -92,7 +101,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Step 3",
-            "text": "<p>Our Providers Will Contact You!<br\/><\/p>",
+            "text": "<p>Our Providers Will Contact You!<br/></p>",
             "button_label": "",
             "button_link": ""
           }
@@ -127,7 +136,7 @@
         "template--21965917618491__76cc895e-4cdb-4512-a4b6-0dca61f30110-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Fill out the following form to see if you qualify for a free Ameda pump through your insurance. One of our trusted partners will be in contact with you once your form has been completed and received.<\/p>",
+            "text": "<p>Fill out the following form to see if you qualify for a free Ameda pump through your insurance. One of our trusted partners will be in contact with you once your form has been completed and received.</p>",
             "enlarge_text": true
           }
         }
@@ -147,7 +156,7 @@
     "custom_liquid_pPMXFH": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h3 class=\"text-center mb-10\">The journey to an insurance-covered pump starts here.<\/h3>\n<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div style=\"margin:0 auto -5rem auto;\" class=\"pxFormGenerator\" id=\"S6JyNwYUyN12xu6yEI_d8Q\"><\/div>\n<p style=\"\n    margin-bottom: 0;\n    opacity: .75;\n    font-style: italic;\n\">*By clicking \"Complete Step 1\", you are agreeing that Ameda can contact you with updates about qualifying for your free pump.<\/p>\n<\/div>",
+        "custom_liquid": "<h3 class=\"text-center mb-10\">The journey to an insurance-covered pump starts here.</h3>\n<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div style=\"margin:0 auto -5rem auto;\" class=\"pxFormGenerator\" id=\"S6JyNwYUyN12xu6yEI_d8Q\"></div>\n<p style=\"\n    margin-bottom: 0;\n    opacity: .75;\n    font-style: italic;\n\">*By clicking \"Complete Step 1\", you are agreeing that Ameda can contact you with updates about qualifying for your free pump.</p>\n</div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -171,7 +180,7 @@
         "template--21965917618491__084c9bf7-9db6-4b91-9bf9-e234e1a59348-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Congratulations mama on your decision to provide breast milk to your baby. Let’s see if you qualify for an Ameda breast pump at no charge!<\/p>",
+            "text": "<p>Congratulations mama on your decision to provide breast milk to your baby. Let’s see if you qualify for an Ameda breast pump at no charge!</p>",
             "enlarge_text": true
           }
         }
@@ -183,9 +192,9 @@
         ".video-section__media {border-radius: 1rem;}"
       ],
       "settings": {
-        "video_external": "https:\/\/www.youtube.com\/watch?v=iN3I3sva8Uw",
+        "video_external": "https://www.youtube.com/watch?v=iN3I3sva8Uw",
         "video_description": "",
-        "poster_image": "shopify:\/\/shop_images\/hqdefault.webp",
+        "poster_image": "shopify://shop_images/hqdefault.webp",
         "video_size": "sm",
         "video_autoplay": false,
         "text_align": "text-center",
@@ -208,20 +217,28 @@
           "type": "link",
           "settings": {
             "title": "Milk 101",
+            "icon": "",
             "content": "The easy guide to getting a free breast pump through insurance.",
+            "custom_liquid": "",
             "link_text": "Learn More",
-            "url": "shopify:\/\/blogs\/posts",
-            "icon": ""
+            "url": "https://www.ameda.com/blogs/posts",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
           }
         },
         "49895fd3-000e-42d9-b379-e4cc79369f0f": {
           "type": "link",
           "settings": {
             "title": "FAQS",
+            "icon": "",
             "content": "Got questions? We got answers! Check some of our most common questions and answers.",
+            "custom_liquid": "",
             "link_text": "Learn More",
-            "url": "\/pages\/faq",
-            "icon": ""
+            "url": "https://www.ameda.com/pages/faq",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
           }
         }
       },
@@ -239,7 +256,7 @@
         ".section--padded-default {padding-top: 0;}"
       ],
       "settings": {
-        "custom_liquid": "<div id=\"options\"><\/div>\n<h2 style=\"margin-bottom: 3rem;\">Meet Joy: Pump On-The-Go.<\/h2>\n{% render 'joy-joyplus-chart' %}\n<p style=\"margin-top:2rem;\">*Only Use the Diaphragms and Valves that come inside the Joy pumps.<\/p>",
+        "custom_liquid": "<div id=\"options\"></div>\n<h2 style=\"margin-bottom: 3rem;\">Meet Joy: Pump On-The-Go.</h2>\n{% render 'joy-joyplus-chart' %}\n<p style=\"margin-top:2rem;\">*Only Use the Diaphragms and Valves that come inside the Joy pumps.</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
