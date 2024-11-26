@@ -71,7 +71,7 @@
   <div class="card__info relative {% if circle_image %}text-center{% else %}{{ settings.coll_text_align }}{% endif %}">
     <p class="card__title h6 mb-2 last:mb-0">
       {%- if collection != blank -%}
-        <a href="{{ collection.url }}" class="card-link text-current">{{ collection.title | escape }}</a>
+        <a href="{{ shop.url }}{{ collection.url }}" class="card-link text-current">{{ collection.title | escape }}</a>
       {%- else -%}
         {{- 'onboarding.collection.title' | t -}}
       {%- endif -%}
