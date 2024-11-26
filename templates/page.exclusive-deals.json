@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -24,7 +33,7 @@
         "text_gqUj7B": {
           "type": "text",
           "settings": {
-            "text": "<p>$10 off any of the 4 Snugabell®Hands-Free Pumping Bra on ameda.com<\/p><p>Use the <strong>Handsfree10off<\/strong> coupon at checkout<\/p>",
+            "text": "<p>$10 off any of the 4 Snugabell®Hands-Free Pumping Bra on ameda.com</p><p>Use the <strong>Handsfree10off</strong> coupon at checkout</p>",
             "enlarge_text": true
           }
         },
@@ -32,7 +41,7 @@
           "type": "button",
           "settings": {
             "button_1_label": "Shop Now",
-            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_link": "https://www.ameda.com/collections/all",
             "button_1_style": "btn--primary",
             "button_2_label": "",
             "button_2_link": "",
@@ -68,7 +77,7 @@
         "text_fRzqDy": {
           "type": "text",
           "settings": {
-            "text": "<p>Buy a box of 100 Pump 'N Protect®6 Ounce Milk Storage Bags, and get 50 additional Bags FREE on ameda.com<\/p><p>Use the <strong>Milkbagsfree50<\/strong> coupon at checkout<\/p>",
+            "text": "<p>Buy a box of 100 Pump 'N Protect®6 Ounce Milk Storage Bags, and get 50 additional Bags FREE on ameda.com</p><p>Use the <strong>Milkbagsfree50</strong> coupon at checkout</p>",
             "enlarge_text": true
           }
         },
@@ -76,7 +85,7 @@
           "type": "button",
           "settings": {
             "button_1_label": "Shop Now",
-            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_link": "https://www.ameda.com/collections/all",
             "button_1_style": "btn--primary",
             "button_2_label": "",
             "button_2_link": "",
