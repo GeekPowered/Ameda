@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -120,7 +120,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "/pages/choosing-the-right-pump",
+            "button_link": "https://www.ameda.com/pages/choosing-the-right-pump",
             "button_style": "btn btn--primary"
           }
         }
@@ -171,7 +171,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read Our Blog",
-            "button_link": "shopify://blogs/posts",
+            "button_link": "https://www.ameda.com/blogs/posts",
             "button_style": "btn btn--primary"
           }
         }
@@ -295,9 +295,7 @@
     },
     "beed3893-13e5-403a-bc6d-b88cf18d5ece": {
       "type": "latest-posts",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Latest Breast Pumping Posts",
         "description": "",
@@ -311,9 +309,7 @@
     },
     "global_footer_cta_c7AzY3": {
       "type": "global-footer-cta",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "svg_fill_override": "#ffffff"
       }
