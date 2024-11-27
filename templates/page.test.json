@@ -17,18 +17,6 @@
         "heading_align": "text-start"
       }
     },
-    "custom_liquid_LwLcUC": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"form_container\"><div class=\"pxFormGenerator\" id=\"0ximyZ1PZkb64BrUrzrIMg\"></div></div>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
     "timed_custom_liquid_XnwwX4": {
       "type": "timed-custom-liquid",
       "settings": {
@@ -69,7 +57,6 @@
   },
   "order": [
     "main",
-    "custom_liquid_LwLcUC",
     "timed_custom_liquid_XnwwX4",
     "timed_custom_liquid_g98X9h",
     "wave_section_eT6bA3"
