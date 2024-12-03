@@ -126,7 +126,7 @@
                   -%}
 
                   {% if block.settings.button_link %}
-                  <a href="{{ shop.url }}{{ block.settings.button_link }}">
+                  <a href="{{ block.settings.button_link }}">
                   {% endif %}
                   <div class="card__media media relative w-full{% if section.settings.image_ratio == "natural" %} {{ section.settings.media_align }}{% endif %}" style="{% unless section.settings.image_ratio == "natural" %}padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;{% endunless %}{% if section.settings.image_ratio == "natural" and block.settings.video_shopify %}padding-top: 56.25%;{% endif %}{% if block.settings.media_scale < 100 %} transform: scale({{ block.settings.media_scale | divided_by: 100.0 }});{% endif %}">
                     {%- if block.settings.image != blank or block.settings.video_shopify != blank -%}
@@ -186,7 +186,7 @@
 
                   {% if block.settings.button_link %}
                     <div class="mt-8{% if section.settings.color_scheme == 'none' and carousel == false %} mb-8{% endif %}">
-                      <a class="card__button{% if block.settings.button_label == blank %}{% if section.settings.button_style == 'link' %} btn--primary{% else %} {{ section.settings.button_style }}{% endif %} btn btn--icon btn--lg has-ltr-icon{% else %} {{ section.settings.button_style }}{% endif %}" {% if block.settings.button_link != blank %}href="{{ shop.url }}{{ block.settings.button_link }}"{% else %}role="link" aria-disabled="true"{% endif %}>
+                      <a class="card__button{% if block.settings.button_label == blank %}{% if section.settings.button_style == 'link' %} btn--primary{% else %} {{ section.settings.button_style }}{% endif %} btn btn--icon btn--lg has-ltr-icon{% else %} {{ section.settings.button_style }}{% endif %}" {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% else %}role="link" aria-disabled="true"{% endif %}>
                         {%- if block.settings.button_label != blank -%}
                           {{- block.settings.button_label | escape -}}
                         {%- else -%}
