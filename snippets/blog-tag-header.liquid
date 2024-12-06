@@ -4,7 +4,7 @@
     | where: 'tag_slug', current_tags.first 
     | first %}
 
-  {% if blog_tag.fields.intro %}
-    {{ blog_tag.fields.intro.value | metafield_tag}}
+  {% if blog_tag.intro %}
+    {{ blog_tag.intro.value | metafield_tag }}
   {% endif %}
 {% endif %}
