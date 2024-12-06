@@ -1,5 +1,5 @@
 <h1>{% if current_tags.size > 0 %}{{ current_tags.first }}{% else %}Milk 101 Blog{% endif %}</h1>
-  <script>console.log('hi')</script>
+<div style="display: none;">
 {% if current_tags.size > 0 %}
   {% assign blog_tag = shop.metaobjects['blog_category_seo'].values 
     | where: 'tag_slug', current_tags.first 
@@ -9,3 +9,4 @@
     {{ blog_tag.intro.value | metafield_tag }}
   {% endif %}
 {% endif %}
+</div>
