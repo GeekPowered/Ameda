@@ -5,8 +5,8 @@
     | where: 'tag_slug', current_tags.first 
     | first %}
 
-  {% if blogTag and blogTag.intro != blank %}
-    {{ blogTag.intro }}
+  {% if blogTag and blogTag.introduction != blank %}
+    {{ blogTag.introduction }}
   {% endif %}
 {% endif %}
 </div>
