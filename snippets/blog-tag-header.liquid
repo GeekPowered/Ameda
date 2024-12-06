@@ -1,12 +1,10 @@
 <h1>{% if current_tags.size > 0 %}{{ current_tags.first }}{% else %}Milk 101 Blog{% endif %}</h1>
-<div style="display: none;">
 {% if current_tags.size > 0 %}
   {% assign blogTag = shop.metaobjects['blog_category_seo'].values 
     | where: 'tag_slug', current_tags.first 
     | first %}
 
   {% if blogTag and blogTag.introduction != blank %}
-    {{ blogTag.introduction }}
+    <p>{{ blogTag.introduction }}</p>
   {% endif %}
 {% endif %}
-</div>
