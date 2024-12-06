@@ -5,8 +5,8 @@
     | where: 'tag_slug', current_tags.first 
     | first %}
 
-  {% if blogTag and blogTag.fields.intro != blank %}
-    {{ blogTag.fields.intro.value }}
+  {% if blogTag and blogTag.fields.intro %}
+    {{ blogTag.fields.intro.value | metafield_tag }}
   {% endif %}
 {% endif %}
 </div>
