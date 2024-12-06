@@ -5,6 +5,6 @@
     | first %}
 
   {% if blog_tag.fields.intro %}
-    {{ blog_tag.fields.intro.value }}
+    {{ blog_tag.fields.intro.value | metafield_tag}}
   {% endif %}
 {% endif %}
