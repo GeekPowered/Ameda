@@ -6,7 +6,7 @@
     | first %}
 
   {% if blogTag.intro %}
-    {{ blogTag.intro.value }}
+    {{ blogTag.intro.value | rich_text }}
   {% endif %}
 {% endif %}
 </div>
