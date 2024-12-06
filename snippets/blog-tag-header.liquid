@@ -5,8 +5,8 @@
     | where: 'tag_slug', current_tags.first 
     | first %}
 
-  {% if blogTag.intro %}
-    <p>{{ blogTag.intro.value }}</p>
+  {% if blogTag.fields.intro %}
+    <p>{{ blogTag.fields.intro.value }}</p>
   {% endif %}
 {% endif %}
 </div>
