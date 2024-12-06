@@ -5,7 +5,7 @@
     | where: 'tag_slug', current_tags.first 
     | first %}
 
-  {% if blogTag.fields.intro %}
+  {% if blogTag.fields.intro != blank %}
     <p>{{ blogTag.fields.intro.value }}</p>
   {% endif %}
 {% endif %}
