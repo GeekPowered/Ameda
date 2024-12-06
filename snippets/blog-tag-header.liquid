@@ -5,7 +5,7 @@
   
   {% assign blog_category_seo_object = shop.metaobjects.blog_category_seo[metaobject_handle] %}
   
-  {% if blog_category_seo_object and blog_category_seo_object.fields.intro %}
+  {% if blog_category_seo_object.fields.intro != blank %}
     {{ blog_category_seo_object.fields.intro.value }}
   {% endif %}
 {% endif %}
