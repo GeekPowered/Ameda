@@ -1,11 +1,7 @@
 <h1>{% if current_tags.size > 0 %}{{ current_tags.first }}{% else %}Milk 101 Blog{% endif %}</h1>
 {% if current_tags.size > 0 %}
-  {% assign this_tag = current_tags.first %}
-  {% assign metaobject_handle = this_tag | handleize %}
-  
-  {% assign blog_category_seo_object = shop.metaobjects.blog_category_seo[metaobject_handle] %}
-  
-  {% if blog_category_seo_object.fields.intro != blank %}
-    {{ blog_category_seo_object.fields.intro.value }}
+  {% assign blogTag = shop.metaobjects['blog_category_seo'].values | where: 'tag_slug', current_tags.first | first %}
+  {% if blogTag and blogTag.fields.intro != blank %}
+    {{ blogTag.fields.intro.value }}
   {% endif %}
 {% endif %}
