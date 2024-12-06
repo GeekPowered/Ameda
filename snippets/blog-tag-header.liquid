@@ -3,7 +3,7 @@
   {% assign blog_tag = shop.metaobjects['blog_category_seo'].values 
     | where: 'tag_slug', current_tags.first 
     | first %}
-
+  <script>console.log('tag exists')</script>
   {% if blog_tag.intro %}
     {{ blog_tag.intro.value | metafield_tag }}
   {% endif %}
