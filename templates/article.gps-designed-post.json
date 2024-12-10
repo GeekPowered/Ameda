@@ -17,7 +17,7 @@
         "show_author": false,
         "show_date": true,
         "featured_image_width": "page",
-        "heading_align": "text-center",
+        "heading_align": "text-start",
         "show_share_buttons": true,
         "pagination": "bar-reading"
       }
