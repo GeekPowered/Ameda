@@ -15,6 +15,10 @@
   margin-inline-end: 0.5em;
 }
 
+.article-content ol, .article-content ul {
+  padding-inline-start: none;
+}
+
 .article-content h1,
 .article-content h2,
 .article-content h3,
