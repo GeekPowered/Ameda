@@ -31,6 +31,17 @@
 .article-content img {
   border-radius: 1rem;
 }
+
+.article__tags > a {
+  background: #fff;
+  color: rgb(var(--link-color));
+  font-weight: bold;
+  padding: .25em .75em;
+  border-radius: 10rem;
+  margin-right: .5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
 .article-content blockquote {
   /* padding-top: calc(4 * var(--space-unit)); */
   font-size: 2rem;
