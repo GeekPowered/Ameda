@@ -73,7 +73,28 @@
 .article-content img + h4,
 .article-content img + h5,
 .article-content img + h6 {
-  margin-top: 2rem !important;
+  margin-top: 1rem !important;
+}
+
+.article-content p + p:has(img),
+.article-content p + p:has(iframe),
+.article-content p + img,
+.article-content p + p:has(video),
+.article-content p + iframe,
+.article-content p + video,
+.article-content ul + ul:has(img),
+.article-content ul + ul:has(iframe),
+.article-content ul + img,
+.article-content ul + ul:has(video),
+.article-content ul + iframe,
+.article-content ul + video,
+.article-content ol + ol:has(img),
+.article-content ol + ol:has(iframe),
+.article-content ol + img,
+.article-content ol + ol:has(video),
+.article-content ol + iframe,
+.article-content ol + video {
+  margin-bottom: 3rem !important;
 }
 
 @media (max-width: 1023.98px) {
