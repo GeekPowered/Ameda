@@ -18,8 +18,8 @@
   margin-top: var(--heading-margin-bottom, 1.5em) !important;
 }
 .article-content img {
-  padding-top: calc(2 * var(--space-unit));
-  padding-bottom: calc(2 * var(--space-unit));
+  /* padding-top: calc(2 * var(--space-unit));
+  padding-bottom: calc(2 * var(--space-unit)); */
   border-radius: 1rem;
 }
 .article-content blockquote {
