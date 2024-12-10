@@ -29,7 +29,7 @@
 
     {%- if section.settings.show_tags -%}
       {%- capture tag_markup -%}
-        <div class="article__tags mb-4 lg:blog-mb-6 last:mb-0 reading-width mx-auto uppercase {{ section.settings.heading_align }}">
+        <div class="article__tags reading-width mx-auto uppercase {{ section.settings.heading_align }}">
           {%- for tag in article.tags -%}
             <a href="{{ tag | link_to_tag: tag | split: 'href="' | last | split: '"' | first }}" class="text-theme-light text-sm">
               {{ tag }}{% unless forloop.last %}, {% endunless %}
