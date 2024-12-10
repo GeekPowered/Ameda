@@ -18,8 +18,6 @@
   margin-top: var(--heading-margin-bottom, 1.5em) !important;
 }
 .article-content img {
-  margin-top: calc(2 * var(--space-unit));
-  margin-bottom: calc(2 * var(--space-unit));
   border-radius: 1rem;
 }
 .article-content blockquote {
@@ -94,7 +92,7 @@
 .article-content ol + ol:has(video),
 .article-content ol + iframe,
 .article-content ol + video {
-  margin-top: var(--heading-margin-bottom, 1.5em)!important;
+  margin-top: 3rem !important;
 }
 
 @media (max-width: 1023.98px) {
