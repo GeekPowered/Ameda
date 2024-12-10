@@ -1,5 +1,6 @@
-{{ 'blog.css' | asset_url | stylesheet_tag }}
-{{ 'article.css' | asset_url | stylesheet_tag }}
+{{ 'blog.css' | asset_url | stylesheet_tag }} 
+{% comment %} ^^^ No touchy pls ^^^ {% endcomment %}
+{{ 'gps-article.css' | asset_url | stylesheet_tag }}
 
 <article class="article js-article">
   <div class="container">
@@ -96,7 +97,6 @@
 {
   "name": "GPS Article",
   "class": "cc-main-article section section--template",
-  "type": "article",
   "settings": [
     {
       "type": "header",
