@@ -9,6 +9,12 @@
 .article-content img {
   margin-bottom: var(--element-margin-bottom, 2em);
 } */
+
+
+.article-content ul li:before {
+  margin-inline-end: 0.5em;
+}
+
 .article-content h1,
 .article-content h2,
 .article-content h3,
