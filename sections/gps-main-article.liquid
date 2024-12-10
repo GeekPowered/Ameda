@@ -46,7 +46,7 @@
           {{ article.author }}{% if section.settings.show_date %} | {% endif %}
         {%- endif -%}
         {%- if section.settings.show_date -%}
-          {{ article.published_at | time_tag: format: 'date' }}
+          Published: {{ article.published_at | time_tag: format: 'date' }}
         {%- endif -%}
       </p>
     {%- endif -%}
