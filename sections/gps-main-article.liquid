@@ -4,6 +4,29 @@
 
 <article class="article js-article">
   <div class="container">
+
+  {%- if article.image and section.settings.featured_image_width != "none" -%}
+    <div class="article__image article__image--{{ section.settings.featured_image_width }} mb-5 md:blog-mb-6 text-center last:mb-0 mx-auto{% if section.settings.featured_image_width == "page" %} md-down:-mx-gutter{% else %} reading-width article-width{% endif %}">
+      <div class="media relative text-center w-full">
+        {%- capture sizes -%}
+          {%- render 'sizes-attribute', min: 'page', sm: 'page', md: '800px', lg: false, xl: false, max: false -%}
+        {%- endcapture -%}
+        {% render 'image',
+          image: article.image,
+          widths: '800, 1200, 1600',
+          src_width: 1600,
+          src_placeholder: true,
+          lazy_load: false,
+          sizes: sizes
+        %}
+      </div>
+    </div>
+  {%- endif -%}
+
+    <div class="article__title rte mb-6 md:mb-8 last:mb-0 reading-width mx-auto {{ section.settings.heading_align }}">
+      <h1 class="mb-0">{{ article.title | escape }}</h1>
+    </div>
+
     {%- if section.settings.show_tags -%}
       {%- capture tag_markup -%}
         <div class="article__tags mb-4 lg:blog-mb-6 last:mb-0 reading-width mx-auto uppercase {{ section.settings.heading_align }}">
@@ -15,28 +38,6 @@
         </div>
       {%- endcapture -%}
       {% if tag_markup contains '</a>' %}{{ tag_markup }}{% endif %}
-    {%- endif -%}
-
-    <div class="article__title rte mb-6 md:mb-8 last:mb-0 reading-width mx-auto {{ section.settings.heading_align }}">
-      <h1 class="mb-0">{{ article.title | escape }}</h1>
-    </div>
-
-    {%- if article.image and section.settings.featured_image_width != "none" -%}
-      <div class="article__image article__image--{{ section.settings.featured_image_width }} mb-5 md:blog-mb-6 text-center last:mb-0 mx-auto{% if section.settings.featured_image_width == "page" %} md-down:-mx-gutter{% else %} reading-width article-width{% endif %}">
-        <div class="media relative text-center w-full">
-          {%- capture sizes -%}
-            {%- render 'sizes-attribute', min: 'page', sm: 'page', md: '800px', lg: false, xl: false, max: false -%}
-          {%- endcapture -%}
-          {% render 'image',
-            image: article.image,
-            widths: '800, 1200, 1600',
-            src_width: 1600,
-            src_placeholder: true,
-            lazy_load: false,
-            sizes: sizes
-          %}
-        </div>
-      </div>
     {%- endif -%}
 
     {%- if section.settings.show_author or section.settings.show_date -%}
