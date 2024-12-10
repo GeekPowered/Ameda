@@ -19,7 +19,7 @@
         "featured_image_width": "content",
         "heading_align": "text-start",
         "show_share_buttons": true,
-        "pagination": "bar-reading"
+        "pagination": "none"
       }
     },
     "article-comments": {
