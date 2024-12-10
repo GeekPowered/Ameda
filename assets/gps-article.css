@@ -2,13 +2,14 @@
   --element-margin-bottom: 2em;
   --heading-margin-bottom: 1.5em;
 }
-/* .article-content p,
+
+
+.article-content p,
 .article-content ol,
-.article-content ul,
-.article-content blockquote,
-.article-content img {
-  margin-bottom: var(--element-margin-bottom, 2em);
-} */
+.article-content ul {
+  /* margin-bottom: var(--element-margin-bottom, 2em); */
+  line-height: 1.75;
+}
 
 
 .article-content ul li:before {
