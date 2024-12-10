@@ -94,7 +94,7 @@
 .article-content ol + ol:has(video),
 .article-content ol + iframe,
 .article-content ol + video {
-  margin-top: 3rem !important;
+  margin-top: var(--heading-margin-bottom, 1.5em)!important;
 }
 
 @media (max-width: 1023.98px) {
