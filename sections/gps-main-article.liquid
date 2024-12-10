@@ -27,6 +27,17 @@
       <h1 class="mb-0">{{ article.title | escape }}</h1>
     </div>
 
+    {%- if section.settings.show_author or section.settings.show_date -%}
+      <p class="text-theme-light reading-width mx-auto {{ section.settings.heading_align }}">
+        {%- if section.settings.show_author -%}
+          {{ article.author }}{% if section.settings.show_date %} | {% endif %}
+        {%- endif -%}
+        {%- if section.settings.show_date -%}
+          <em>Published: {{ article.published_at | time_tag: format: 'date' }}</em>
+        {%- endif -%}
+      </p>
+    {%- endif -%}
+
     {%- if section.settings.show_tags -%}
       {%- capture tag_markup -%}
         <div class="article__tags reading-width mx-auto uppercase {{ section.settings.heading_align }}">
@@ -40,16 +51,7 @@
       {% if tag_markup contains '</a>' %}{{ tag_markup }}{% endif %}
     {%- endif -%}
 
-    {%- if section.settings.show_author or section.settings.show_date -%}
-      <p class="text-theme-light reading-width mx-auto {{ section.settings.heading_align }}">
-        {%- if section.settings.show_author -%}
-          {{ article.author }}{% if section.settings.show_date %} | {% endif %}
-        {%- endif -%}
-        {%- if section.settings.show_date -%}
-          <em>Published: {{ article.published_at | time_tag: format: 'date' }}</em>
-        {%- endif -%}
-      </p>
-    {%- endif -%}
+
 
     <div class="article__content reading-width rte article-content mx-auto">
       <hr>
