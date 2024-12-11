@@ -125,7 +125,7 @@
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  border: 2px solid rgb(var(--link-color));
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .025);
   position: sticky;
   top: 15rem;
 }
