@@ -146,6 +146,11 @@
   -webkit-box-orient: vertical;
 }
 
+.blog-content-wrapper {
+  display: flex; 
+  flex-direction: column;
+  gap: 3rem;
+}
 
 @media (max-width: 1023.98px) {
   .article-content,
@@ -154,11 +159,18 @@
   }
 }
 @media (min-width: 768px) {
-
+  .blog-content-wrapper {
+    flex-direction: row;
+    gap: 5rem;
+  }
 }
 @media (min-width: 1024px) {
   .article-content blockquote {
     font-size: 2.8rem;
     line-height: 3.6rem;
   }
+}
+
+.reading-width {
+  max-width: 100%;
 }
