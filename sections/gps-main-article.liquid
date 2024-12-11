@@ -45,9 +45,6 @@
         {%- if section.settings.show_author -%}
           {{ article.author }}{% if section.settings.show_date %} | {% endif %}
         {%- endif -%}
-        {%- if section.settings.show_date -%}
-          <em>Published: {{ article.published_at | time_tag: format: 'date' }}</em>
-        {%- endif -%}
       </p>
     {%- endif -%}
 
@@ -60,6 +57,9 @@
           <h4>Recent Posts</h4>
             {% for article in blogs['posts'].articles limit:5 %}
               <hr/>
+              {%- if section.settings.show_date -%}
+                <em>Published: {{ article.published_at | time_tag: format: 'date' }}</em>
+              {%- endif -%}
               <a href="{{ article.url }}">{{ article.title }}</a>
             {% endfor %}
         </div>
