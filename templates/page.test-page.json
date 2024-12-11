@@ -17,15 +17,55 @@
         "heading_align": "text-start"
       }
     },
-    "custom_liquid_LGPHwk": {
-      "type": "custom-liquid",
+    "image_banner_exQf78": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ckKq9w": {
+          "type": "heading",
+          "settings": {
+            "heading": "This is my test page",
+            "heading_size": "h0",
+            "heading_h1": true
+          }
+        },
+        "text_wn6p4A": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_LL7C3P": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Optional button",
+            "button_1_link": "#",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Optional button",
+            "button_2_link": "#",
+            "button_2_style": "btn btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ckKq9w",
+        "text_wn6p4A",
+        "button_LL7C3P"
+      ],
       "settings": {
-        "custom_liquid": "<div style=\"text-align:center; margin: auto;\" class=\"max-w-text-overlay\">\n<h1 class=\"h0\">Thank You</h1>\n<div class=\"enlarge-text\">\n<p>{{ page.content }}</p>\n</div>\n<a class=\"btn btn--primary\" href=\"https://www.ameda.com/\">Home</a>\n</div>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "1",
-        "baby_patterns": false,
+        "url": "",
+        "height_mode": "auto",
+        "fixed_height_desktop": 600,
+        "fixed_height_mobile": 350,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
         "prevent_animation": false
       }
     },
@@ -41,7 +81,7 @@
   },
   "order": [
     "main",
-    "custom_liquid_LGPHwk",
+    "image_banner_exQf78",
     "wave_section_eT6bA3"
   ]
 }
