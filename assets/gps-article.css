@@ -125,16 +125,32 @@
   height: 100%;
   border-radius: 1rem;
   border: 2px solid rgb(var(--link-color));
+  position: sticky;
+  top: 15rem;
 }
 
 .blog-sidebar > *:first-child {
   margin-top: 0 !important;
 }
 
+.blog-sidebar hr {
+  margin: 1rem 0;
+}
+
+.blog-sidebar a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+
 @media (max-width: 1023.98px) {
   .article-content,
   .article-width {
-    max-width: 37em;
+    max-width: 45em;
   }
 }
 @media (min-width: 768px) {
