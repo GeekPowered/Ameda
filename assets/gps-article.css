@@ -136,14 +136,7 @@
   margin: 1rem 0;
 }
 
-.blog-sidebar a {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
+
 
 .blog-content-wrapper {
   display: flex; 
@@ -164,6 +157,14 @@
   }
   .blog-sidebar {
     width: 27rem;
+  }
+  .blog-sidebar a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 }
 @media (min-width: 1024px) {
