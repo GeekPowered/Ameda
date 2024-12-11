@@ -128,7 +128,7 @@
 }
 
 .blog-sidebar > *:first-child {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 @media (max-width: 1023.98px) {
