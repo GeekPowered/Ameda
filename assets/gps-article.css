@@ -159,7 +159,7 @@
     max-width: 45em;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .blog-content-wrapper {
     flex-direction: row;
     gap: 5rem;
