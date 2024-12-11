@@ -143,6 +143,10 @@
   text-decoration: none;
 }
 
+.blog-sidebar a:hover {
+  text-decoration: underline;
+}
+
 .blog-content-wrapper {
   display: flex; 
   flex-direction: column;
