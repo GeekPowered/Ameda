@@ -35,11 +35,13 @@
 .article__tags > a {
   background: #fff;
   color: rgb(var(--link-color));
-  font-weight: bold;
+  font-weight: 700;
   padding: .25em .75em;
   border-radius: 10rem;
   margin-right: .5em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  margin-top: .5rem;
+  box-shadow: 0 2px 5px #0000001a;
+  display: inline-block;
 }
 
 .article-content blockquote {
