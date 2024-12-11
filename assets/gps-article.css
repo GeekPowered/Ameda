@@ -72,8 +72,7 @@
 
 .article__image img {
   max-height: 75vh;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: 1rem;
 }
