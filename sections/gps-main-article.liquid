@@ -60,7 +60,7 @@
         {{ article.content }}
         <div class="blog-sidebar mt-12">
           <h4>Recent Posts</h4>
-            {% for article in blogs['posts'].articles limit:5 %}
+            {% for article in blogs['posts'].articles limit:10 %}
               <hr/>
               <a href="{{ article.url }}">{{ article.title }}</a>
             {% endfor %}
