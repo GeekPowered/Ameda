@@ -57,7 +57,16 @@
       <hr>
       <div style="display: flex; gap: 2rem;">
         {{ article.content }}
-        <div class="blog-sidebar">Sidebar here</div>
+        <div class="blog-sidebar">
+          <h4>Recent Posts</h4>
+          <ul>
+            {% for article in blogs['posts'].articles limit:5 %}
+              <li>
+                <a href="{{ article.url }}">{{ article.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
 
