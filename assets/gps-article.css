@@ -138,7 +138,10 @@
   margin: 1rem 0;
 }
 
-
+.blog-sidebar a {
+  font-weight: bold;
+  text-decoration: none;
+}
 
 .blog-content-wrapper {
   display: flex; 
