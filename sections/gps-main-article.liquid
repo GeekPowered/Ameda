@@ -57,9 +57,7 @@
           <h4>Recent Posts</h4>
             {% for article in blogs['posts'].articles limit:5 %}
               <hr/>
-              {%- if section.settings.show_date -%}
-                <em>Published: {{ article.published_at | time_tag: format: 'date' }}</em>
-              {%- endif -%}
+              <p>{{ article<em>Published: {{ article.published_at | time_tag: format: 'date' }}</em></p>
               <a href="{{ article.url }}">{{ article.title }}</a>
             {% endfor %}
         </div>
