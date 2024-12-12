@@ -70,6 +70,27 @@
         "prevent_animation": false
       }
     },
+    "featured_collection_jTcgdm": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Experience powerful pumping on the go with the Ameda family of breast pumps.",
+        "heading_align": "text-start",
+        "show_view_all": false,
+        "collection": "breast-pumps",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
     "70b6796a-4aa7-4791-9ea6-72e90afed64c": {
       "type": "multi-column",
       "blocks": {
@@ -277,6 +298,46 @@
         "prevent_animation": false
       }
     },
+    "faq_JPpizx": {
+      "type": "faq",
+      "blocks": {
+        "question_q4wELk": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How Are Breast Pumps & The Affordable Care Act (ACA) Related?",
+            "text": "<p>The Affordable Care Act (ACA), established in March 2010, mandates that most health insurance plans cover breastfeeding support, counseling, and supplies. This includes access to a free insurance-covered breast pump, lactation consultant services, and pregnancy counseling. The ACA aims to support breastfeeding mothers by ensuring they have the necessary tools and resources throughout their breastfeeding journey. By working with your insurance company, you can take advantage of these benefits and receive the support you need to breastfeed your baby successfully.<br/></p>"
+          }
+        },
+        "question_Lz7pyL": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Are Breast Pumps Covered By Most Insurance Plans?",
+            "text": "<p>Yes, under the Affordable Care Act (ACA), most health insurance plans are required to cover the cost of a breast pump for new mothers. Coverage may vary depending on your specific insurance provider and plan, but Ameda works with a wide range of insurance companies to help you get a breast pump at little to no cost. We recommend contacting your insurance company to understand your specific benefits and eligibility.<br/></p>"
+          }
+        },
+        "question_J7hNmL": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Do I Have to Pay Any Out-of-Pocket Expenses for My Breast Pump?",
+            "text": "<p>In most cases, insurance will cover the full cost of your breast pump. However, depending on your specific insurance plan, there may be some out-of-pocket expenses such as co-pays or deductibles. Our team will work with you and your insurance company to minimize any costs and help ensure you receive your breast pump with as little expense as possible. We recommend checking with your insurance company for more details on potential costs.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_q4wELk",
+        "question_Lz7pyL",
+        "question_J7hNmL"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "heading_align": "text-start",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "global_footer_cta_tD8LVQ": {
       "type": "global-footer-cta",
       "settings": {
@@ -287,6 +348,7 @@
   "order": [
     "main",
     "329e5978-de6e-4b2d-9322-d45d0e244c4b",
+    "featured_collection_jTcgdm",
     "70b6796a-4aa7-4791-9ea6-72e90afed64c",
     "custom_liquid_tRmdKP",
     "76cc895e-4cdb-4512-a4b6-0dca61f30110",
@@ -296,6 +358,7 @@
     "d28ea09b-3af1-4fab-aa1d-888bd02ef647",
     "1ff950cf-34b7-4e69-b8e2-53d2fadb9987",
     "4e60b54a-b466-4694-9f93-58db2af8ec6d",
+    "faq_JPpizx",
     "global_footer_cta_tD8LVQ"
   ]
 }
