@@ -11,7 +11,9 @@
   "sections": {
     "main": {
       "type": "gps-main-article",
-      "custom_css": [],
+      "custom_css": [
+        ".section--padded-default {margin-bottom: 0;}"
+      ],
       "settings": {
         "show_tags": true,
         "show_author": false,
@@ -24,8 +26,30 @@
     },
     "article-comments": {
       "type": "article-comments",
+      "disabled": true,
       "settings": {
         "comments_per_page": 16
+      }
+    },
+    "featured_collection_yy4nPb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Related Products",
+        "heading_align": "text-start",
+        "show_view_all": false,
+        "collection": "{{ article.metafields.custom.related_products.value }}",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
       }
     },
     "global_footer_cta_dUChzP": {
@@ -38,6 +62,7 @@
   "order": [
     "main",
     "article-comments",
+    "featured_collection_yy4nPb",
     "global_footer_cta_dUChzP"
   ]
 }
