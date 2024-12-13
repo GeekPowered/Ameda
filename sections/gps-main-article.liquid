@@ -62,12 +62,8 @@
           <h4>Related Posts</h4>
           {% if article.tags and article.tags.size > 0 %}
             {% assign first_tag = article.tags | first %}
-        
-            {% comment %}
-              Filter the articles in the same blog by the first_tag.
-              Adjust 'blogs["posts"]' to match the correct blog handle if necessary.
-            {% endcomment %}
-            {% assign related_articles = blogs["posts"].articles | where: "tags", first_tag %}
+            {% assign blog_handle = article.blog.handle %}
+            {% assign related_articles = blogs[blog_handle].articles | where: "tags", first_tag %}
         
             {% for related_article in related_articles limit:10 %}
               {% if related_article.id != article.id %}
