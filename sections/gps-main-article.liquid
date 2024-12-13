@@ -61,13 +61,29 @@
         <div class="blog-sidebar mt-12">
           <h4>Related Posts</h4>
           {% assign first_tag = article.tags | first %}
-          {% for related_article in blogs['posts'].articles %}
-            {% if related_article.id != article.id and related_article.tags contains first_tag %}
-              <hr/>
-              <a href="{{ related_article.url }}">{{ related_article.title }}</a>
-            {% endif %}
-          {% endfor %}
+          {% assign found_related_posts = false %}
+        
+          {% if first_tag %}
+            {% for related_article in blogs['posts'].articles %}
+              {% if related_article.id != article.id and related_article.tags contains first_tag %}
+                {% assign found_related_posts = true %}
+                <hr/>
+                <a href="{{ related_article.url }}">{{ related_article.title }}</a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        
+          {% if found_related_posts == false %}
+            <h4>Recent Posts</h4>
+            {% for fallback_article in blogs['posts'].articles limit:10 %}
+              {% if fallback_article.id != article.id %}
+                <hr/>
+                <a href="{{ fallback_article.url }}">{{ fallback_article.title }}</a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
         </div>
+
       </div>
     </div>
 
