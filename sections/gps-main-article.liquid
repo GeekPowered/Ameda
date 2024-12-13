@@ -60,36 +60,13 @@
         {{ article.content }}
         <div class="blog-sidebar mt-12">
           <h4>Related Posts</h4>
-          {% if article.tags and article.tags.size > 0 %}
-            {% assign first_tag = article.tags | first %}
-            {% assign blog_handle = article.blog.handle %}
-            {% assign all_articles = blogs[blog_handle].articles %}
-        
-            {% comment %}
-              We cannot directly use `where` with arrays like tags since it's a list of strings.
-              Instead, we filter manually in a for-loop by checking if `related_article.tags` contains `first_tag`.
-            {% endcomment %}
-        
-            {% assign matched_count = 0 %}
-        
-            {% for related_article in all_articles %}
-              {% if related_article.id != article.id and related_article.tags contains first_tag %}
-                {% if matched_count < 10 %}
-                  <hr/>
-                  <a href="{{ related_article.url }}">{{ related_article.title }}</a>
-                  {% assign matched_count = matched_count | plus: 1 %}
-                {% else %}
-                  {% break %}
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-        
-            {% if matched_count == 0 %}
-              <p>No related posts found.</p>
+          {% assign first_tag = article.tags | first %}
+          {% for related_article in blogs['posts'].articles limit:10 %}
+            {% if related_article.id != article.id and related_article.tags contains first_tag %}
+              <hr/>
+              <a href="{{ related_article.url }}">{{ related_article.title }}</a>
             {% endif %}
-          {% else %}
-            <p>No tags for this article.</p>
-          {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
