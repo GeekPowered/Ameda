@@ -60,27 +60,21 @@
         {{ article.content }}
         <div class="blog-sidebar mt-12">
           <h4>Related Posts</h4>
-          {% assign current_tag = article.tags.first %} {%- comment -%} Get the first tag of the current article {%- endcomment -%}
-          
-          {% assign related_articles = '' | split: '' %}
+          {% if article.tags and article.tags.size > 0 %}
+            {% assign first_tag = article.tags | first %}
         
-          {%- comment -%} Loop through all blogs and their articles {%- endcomment -%}
-          {% for blog in blogs %}
-            {% for post in blog.articles %}
-              {% if post.tags contains current_tag and post.id != article.id %}
-                {% assign related_articles = related_articles | push: post %}
+            {% comment %}
+              Filter the articles in the same blog by the first_tag.
+              Adjust 'blogs["posts"]' to match the correct blog handle if necessary.
+            {% endcomment %}
+            {% assign related_articles = blogs["posts"].articles | where: "tags", first_tag %}
+        
+            {% for related_article in related_articles limit:10 %}
+              {% if related_article.id != article.id %}
+                <hr/>
+                <a href="{{ related_article.url }}">{{ related_article.title }}</a>
               {% endif %}
             {% endfor %}
-          {% endfor %}
-        
-          {%- comment -%} Display up to 10 related posts {%- endcomment -%}
-          {% if related_articles.size > 0 %}
-            {% for post in related_articles limit:10 %}
-              <hr/>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            {% endfor %}
-          {% else %}
-            <p>No related posts found.</p>
           {% endif %}
         </div>
       </div>
