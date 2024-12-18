@@ -136,7 +136,7 @@
   endif
 -%}
 
-
+{%- unless section.settings.collection == blank and section.settings.hide_on_blank == true -%}
 <div class="section">
   {%- if section.settings.title != blank or section.settings.show_view_all -%}
     <div class="container">
@@ -270,6 +270,8 @@
     </div>
   {%- endif -%}
 </div>
+{%- endif -%}
+
 
 {% schema %}
 {
