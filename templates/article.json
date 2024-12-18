@@ -10,27 +10,47 @@
 {
   "sections": {
     "main": {
-      "type": "main-article",
+      "type": "gps-main-article",
       "custom_css": [
-        "img {border-radius: 1rem;}",
-        ".article__image img {max-height: 50vh; width: auto; max-width: 100%; object-fit: cover;}",
-        ".article-content iframe[src*=\"youtube.com\"] {width: 100%; aspect-ratio: 16 / 9; height: auto; border-radius: 1rem; border: none;}",
-        ".article-content blockquote {border-left: 5px solid #ef9aa0; padding: 2rem 0 2rem 2rem; margin-right: 0; margin-left: 0;}"
+        ".section--padded-default {margin-bottom: 0;}"
       ],
       "settings": {
         "show_tags": true,
         "show_author": false,
         "show_date": true,
-        "featured_image_width": "page",
-        "heading_align": "text-center",
+        "featured_image_width": "content",
+        "heading_align": "text-start",
         "show_share_buttons": true,
-        "pagination": "bar-reading"
+        "pagination": "none"
       }
     },
     "article-comments": {
       "type": "article-comments",
+      "disabled": true,
       "settings": {
         "comments_per_page": 16
+      }
+    },
+    "featured_collection_yy4nPb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Related Products",
+        "heading_align": "text-start",
+        "show_view_all": false,
+        "hide_on_blank": true,
+        "collection": "{{ article.metafields.custom.related_products.value }}",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
       }
     },
     "global_footer_cta_dUChzP": {
@@ -43,6 +63,7 @@
   "order": [
     "main",
     "article-comments",
+    "featured_collection_yy4nPb",
     "global_footer_cta_dUChzP"
   ]
 }
