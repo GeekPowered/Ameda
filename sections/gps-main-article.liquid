@@ -31,7 +31,7 @@
     {%- capture tag_markup -%}
       <div class="article__tags mb-4 reading-width mx-auto uppercase {{ section.settings.heading_align }}">
         {%- for tag in article.tags -%}
-          <a href="{{ tag | link_to_tag: tag | split: 'href="' | last | split: '"' | first }}" class="text-theme-light text-sm">
+          <a href="{{ shop.url }}/blogs/posts/tagged/{{ tag | handle }}" class="text-theme-light text-sm">
             {{ tag }}
           </a>
         {%- endfor -%}
