@@ -24,7 +24,7 @@
         "featured_image_width": "page",
         "heading_align": "text-center",
         "show_share_buttons": true,
-        "pagination": "bar-reading"
+        "pagination": "none"
       }
     },
     "article-comments": {
