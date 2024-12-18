@@ -37,6 +37,7 @@
         "title": "Related Products",
         "heading_align": "text-start",
         "show_view_all": false,
+        "hide_on_blank": true,
         "collection": "{{ article.metafields.custom.related_products.value }}",
         "layout": "carousel",
         "card_size_mobile": "small",
