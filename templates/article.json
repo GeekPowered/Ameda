@@ -10,9 +10,12 @@
 {
   "sections": {
     "main": {
-      "type": "gps-main-article",
+      "type": "main-article",
       "custom_css": [
-        ".section--padded-default {margin-bottom: 0;}"
+        "img {border-radius: 1rem;}",
+        ".article__image img {max-height: 50vh; width: auto; max-width: 100%; object-fit: cover;}",
+        ".article-content iframe[src*=\"youtube.com\"] {width: 100%; aspect-ratio: 16 / 9; height: auto; border-radius: 1rem; border: none;}",
+        ".article-content blockquote {border-left: 5px solid #ef9aa0; padding: 2rem 0 2rem 2rem; margin-right: 0; margin-left: 0;}"
       ],
       "settings": {
         "show_tags": true,
