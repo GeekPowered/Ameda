@@ -24,13 +24,6 @@
         "pagination": "none"
       }
     },
-    "article-comments": {
-      "type": "article-comments",
-      "disabled": true,
-      "settings": {
-        "comments_per_page": 16
-      }
-    },
     "featured_collection_yy4nPb": {
       "type": "featured-collection",
       "custom_css": [
@@ -64,7 +57,6 @@
   },
   "order": [
     "main",
-    "article-comments",
     "featured_collection_yy4nPb",
     "global_footer_cta_dUChzP"
   ]
