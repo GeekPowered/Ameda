@@ -40,13 +40,13 @@
     {% if tag_markup contains '</a>' %}{{ tag_markup }}{% endif %}
   {%- endif -%}
 
-    {%- if section.settings.show_author or section.settings.show_date -%}
-      <p class="text-theme-light reading-width mx-auto {{ section.settings.heading_align }}">
-        {%- if section.settings.show_author -%}
-          {{ article.author }}{% if section.settings.show_date %} | {% endif %}
-        {%- endif -%}
-      </p>
-    {%- endif -%}
+  {%- if section.settings.show_author or section.settings.show_date -%}
+    <p class="text-theme-light reading-width mx-auto {{ section.settings.heading_align }}">
+      {%- if section.settings.show_author -%}
+        {{ article.author }}{% if section.settings.show_date %} | {% endif %}
+      {%- endif -%}
+    </p>
+  {%- endif -%}
 
 
     <div class="article__content reading-width rte article-content mx-auto">
