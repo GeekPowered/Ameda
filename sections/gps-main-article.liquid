@@ -59,11 +59,11 @@
       <div class="blog-content-wrapper">
         <div>{{ article.content }}</div>
         <div class="blog-sidebar mt-12">
-          <h4>Related Posts</h4>
           {% assign first_tag = article.tags | first %}
           {% assign found_related_posts = false %}
         
           {% if first_tag %}
+            <h4>Related Posts</h4>
             {% for related_article in blogs['posts'].articles %}
               {% if related_article.id != article.id and related_article.tags contains first_tag %}
                 {% assign found_related_posts = true %}
