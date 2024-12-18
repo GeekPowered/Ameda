@@ -40,13 +40,13 @@
     {% if tag_markup contains '</a>' %}{{ tag_markup }}{% endif %}
   {%- endif -%}
 
-  {%- if section.settings.show_author or section.settings.show_date -%}
-    <p class="text-theme-light reading-width mx-auto {{ section.settings.heading_align }}">
-      {%- if section.settings.show_author -%}
-        {{ article.author }}{% if section.settings.show_date %} | {% endif %}
-      {%- endif -%}
-    </p>
-  {%- endif -%}
+    {%- if section.settings.show_author or section.settings.show_date -%}
+      <p class="text-theme-light reading-width mx-auto {{ section.settings.heading_align }}">
+        {%- if section.settings.show_author -%}
+          {{ article.author }}{% if section.settings.show_date %} | {% endif %}
+        {%- endif -%}
+      </p>
+    {%- endif -%}
 
 
     <div class="article__content reading-width rte article-content mx-auto">
@@ -63,6 +63,7 @@
           {% assign found_related_posts = false %}
         
           {% if first_tag %}
+            <h4>Related Posts</h4>
             {% for related_article in blogs['posts'].articles %}
               {% if related_article.id != article.id and related_article.tags contains first_tag %}
                 {% assign found_related_posts = true %}
@@ -70,9 +71,7 @@
                 <a href="{{ related_article.url }}">{{ related_article.title }}</a>
               {% endif %}
             {% endfor %}
-          {% endif %}
-        
-          {% if found_related_posts == false %}
+          {% elsif found_related_posts == false %}
             <h4>Recent Posts</h4>
             {% for fallback_article in blogs['posts'].articles limit:10 %}
               {% if fallback_article.id != article.id %}
