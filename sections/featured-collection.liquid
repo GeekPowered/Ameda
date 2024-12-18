@@ -136,8 +136,6 @@
   endif
 -%}
 
-{%- assign product_count = collection.products.size -%}
-{%- unless product_count > 0 and section.settings.hide_on_blank == true -%}
 <div class="section">
   {%- if section.settings.title != blank or section.settings.show_view_all -%}
     <div class="container">
@@ -271,8 +269,6 @@
     </div>
   {%- endif -%}
 </div>
-{%- endif -%}
-
 
 {% schema %}
 {
@@ -315,12 +311,6 @@
       "id": "show_view_all",
       "label": "Show \"View all\" link",
       "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "hide_on_blank",
-      "label": "Hide section if no collection is selected",
-      "default": false
     },
     {
       "type": "header",
