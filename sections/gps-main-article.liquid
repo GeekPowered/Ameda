@@ -63,14 +63,22 @@
           {% assign found_related_posts = false %}
         
           {% if first_tag %}
-            <h4>Related Posts</h4>
+            {% assign related_posts_count = 0 %}
             {% for related_article in blogs['posts'].articles %}
               {% if related_article.id != article.id and related_article.tags contains first_tag %}
-                {% assign found_related_posts = true %}
-                <hr/>
-                <a href="{{ related_article.url }}">{{ related_article.title }}</a>
+                {% assign related_posts_count = related_posts_count | plus: 1 %}
               {% endif %}
             {% endfor %}
+            {% if related_posts_count > 0 %}
+              <h4>Related Posts</h4>
+              {% for related_article in blogs['posts'].articles %}
+                {% if related_article.id != article.id and related_article.tags contains first_tag %}
+                  {% assign found_related_posts = true %}
+                  <hr/>
+                  <a href="{{ related_article.url }}">{{ related_article.title }}</a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
           {% endif %}
         
           {% if found_related_posts == false %}
