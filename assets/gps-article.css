@@ -172,6 +172,8 @@
   
   .blog-sidebar {
     width: 32rem;
+    max-height: calc(100vh - 17rem);
+    overflow: auto;
   }
   .blog-sidebar a {
     overflow: hidden;
