@@ -76,11 +76,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Check if the value is not empty
             if (value !== '') {
-                // Open the value URL in a new tab
-                window.open(value, '_blank');
+                // Open the value URL in the same window for Safari users
+                if (isSafari()) {
+                    window.location.href = value;
+                } else {
+                    // Open the value URL in a new tab for non-Safari browsers
+                    window.open(value, '_blank');
+                }
             }
         });
     });
+
+    // Function to detect if the browser is Safari
+    function isSafari() {
+        // Safari has a unique userAgent string
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        return userAgent.includes('safari') && !userAgent.includes('chrome');
+    }
 
     // Function to simulate a click on the Video tab based on URL parameter
     function clickVideoTabIfParamSet() {
