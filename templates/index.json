@@ -65,34 +65,6 @@
         "prevent_animation": true
       }
     },
-    "timed_custom_liquid_T8dhma": {
-      "type": "timed-custom-liquid",
-      "settings": {
-        "custom_liquid": "<a href=\"https://www.ameda.com/collections/breast-pumps\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/bfbv2.jpg?v=1732202782\" width=\"100%\" height=\"auto\" alt=\"Black Friday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
-        "iso_start_date_time": "2024-11-21T14:34:00.000Z",
-        "iso_end_date_time": "2024-12-02T05:59:00.000Z",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
-    "timed_custom_liquid_nHzKUh": {
-      "type": "timed-custom-liquid",
-      "settings": {
-        "custom_liquid": "<a href=\"/collections/breast-pumps\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/CMV2.jpg?v=1732204225\" width=\"100%\" height=\"auto\" alt=\"Cyber Monday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n</a>",
-        "iso_start_date_time": "2024-12-02T05:59:00.000Z",
-        "iso_end_date_time": "2024-12-03T05:59:00.000Z",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
     "99ad067f-b38f-4c8e-873d-dea943226a60": {
       "type": "multi-column",
       "blocks": {
@@ -681,8 +653,6 @@
   },
   "order": [
     "a2669460-8635-4e2e-b686-0b839f32114c",
-    "timed_custom_liquid_T8dhma",
-    "timed_custom_liquid_nHzKUh",
     "99ad067f-b38f-4c8e-873d-dea943226a60",
     "02c77f79-19a8-4ef0-83e3-b0409a84e86f",
     "scrolling-banner",
