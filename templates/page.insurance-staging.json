@@ -113,7 +113,8 @@
         "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-3"
       ],
       "custom_css": [
-        ".multi-column .card {border-radius: 1rem;}"
+        ".multi-column .card {border-radius: 1rem;}",
+        ".multi-column.grow {width: 100%;}"
       ],
       "settings": {
         "title": "See If You Qualify For A Free Breast Pump Through Insurance Immediately",
