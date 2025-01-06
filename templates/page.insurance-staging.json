@@ -221,7 +221,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/icons-providers.png",
+            "image": "shopify://shop_images/icons-doctor.png",
             "media_scale": 100,
             "heading": "Trusted by Healthcare Professionals",
             "text": "<p>Ameda breast pumps are trusted by healthcare providers worldwide, with a reputation for reliability and efficiency. Over 1,000 hospitals use Ameda pumps to support breastfeeding moms.</p>",
