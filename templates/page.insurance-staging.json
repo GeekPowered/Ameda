@@ -165,6 +165,21 @@
         "button_style": "btn btn--primary"
       }
     },
+    "custom_liquid_U8iDYi": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".padding-section-default {padding-bottom: 0;}"
+      ],
+      "settings": {
+        "custom_liquid": "<h2>Why Choose Ameda For Your Breast Pump?</h2>\n<p>Ameda was founded by the inventor of the hospital-grade breast pump over 80 years ago, and we’re still dedicated to supporting breastfeeding mothers with high-quality, innovative products. Here are a few reasons why Ameda is the best choice for your breast pump needs:</p>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "multi_column_BfTGiE": {
       "type": "multi-column",
       "blocks": {
@@ -209,7 +224,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Multi-column",
+        "title": "",
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -411,6 +426,7 @@
     "custom_liquid_tRmdKP",
     "70b6796a-4aa7-4791-9ea6-72e90afed64c",
     "featured_collection_jTcgdm",
+    "custom_liquid_U8iDYi",
     "multi_column_BfTGiE",
     "76cc895e-4cdb-4512-a4b6-0dca61f30110",
     "custom_liquid_pPMXFH",
