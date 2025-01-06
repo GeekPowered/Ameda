@@ -390,6 +390,215 @@
         "baby_patterns": false
       }
     },
+    "media_with_text_QWrBef": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_7whQpe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wearable Breast Pumps Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_w9idEN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wearable breast pumps provide freedom and flexibility to pump whenever and wherever you need to. With lightweight and compact designs, wearable pumps fit seamlessly under clothing, allowing you to express milk discreetly. Ameda's wearable breast pumps are covered by many insurance plans, ensuring moms can enjoy hands-free pumping with hospital-grade efficiency.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_J4ahQN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Wearable Breast Pumps",
+            "button_link": "shopify://collections/breast-pumps",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7whQpe",
+        "text_w9idEN",
+        "button_J4ahQN"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff; padding-top: 0;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_aYH4hm": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_Bc9tUi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Double Breast Pumps Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_t7AQac": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Double breast pumps allow moms to pump from both breasts simultaneously, significantly reducing pumping time. These pumps are perfect for moms who need to express milk quickly and efficiently. Ameda’s double breast pumps provide customizable suction levels and pumping modes, making it easy to find the perfect settings for comfort and effective milk expression.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_jDyj9n": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Double Breast Pumps",
+            "button_link": "shopify://products/ameda-mya-joy-plus-rechargeable-quiet-and-portable-double-breast-pump",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Bc9tUi",
+        "text_t7AQac",
+        "button_jDyj9n"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff; padding-top: 0;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_HV7TEm": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_9BQfaj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Manual Breast Pumps Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_pWnxkT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Manual breast pumps are a great option for moms who need a simple, portable solution for occasional pumping. These pumps are lightweight, easy to use, and do not require electricity, making them convenient for travel or when on the go. Ameda’s manual pumps are designed for comfort and ease, providing an affordable and effective way to express milk through insurance.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_r79CXP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Manual Breast Pumps",
+            "button_link": "shopify://products/ameda-portable-manual-breast-pump",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9BQfaj",
+        "text_pWnxkT",
+        "button_r79CXP"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff; padding-top: 0;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_yV9YpV": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_gHNfEw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Other Breastfeeding Essentials Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_QcALed": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In addition to breast pumps, many breastfeeding essentials are also available through insurance to help support your breastfeeding journey. These essentials include accessories like extra breast milk storage bottles, breast pump flanges in different sizes, silicone inserts, valves, and cleaning supplies. Having the right accessories can make a significant difference in the comfort and efficiency of your pumping sessions. Ameda works with insurance companies to help you get these essential items covered, making sure you have everything you need for a successful breastfeeding experience.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_RdwcmT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Breastfeeding Accessories",
+            "button_link": "shopify://collections/accessories",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gHNfEw",
+        "text_QcALed",
+        "button_RdwcmT"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff; padding-top: 0;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "wave_section_ntFccT": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
     "76cc895e-4cdb-4512-a4b6-0dca61f30110": {
       "type": "rich-text",
       "blocks": {
@@ -584,6 +793,11 @@
     "media_with_text_rpzKKz",
     "custom_liquid_DNwP9D",
     "media_with_text_ArF8qh",
+    "media_with_text_QWrBef",
+    "media_with_text_aYH4hm",
+    "media_with_text_HV7TEm",
+    "media_with_text_yV9YpV",
+    "wave_section_ntFccT",
     "76cc895e-4cdb-4512-a4b6-0dca61f30110",
     "custom_liquid_pPMXFH",
     "wave_section_WyDEf3",
