@@ -197,6 +197,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/switch-icon.png",
             "media_scale": 100,
             "heading": "Hospital-Grade Quality",
             "text": "<p>Ameda pumps are inspired by our award-winning hospital-grade technology, ensuring that you get the best quality for efficient and comfortable milk expression.</p>",
@@ -208,6 +209,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/switch-icon.png",
             "media_scale": 100,
             "heading": "Customizable Comfort",
             "text": "<p>Our pumps feature adjustable suction levels and multiple pumping modes, allowing you to tailor your experience to meet your comfort needs.</p>",
@@ -219,6 +221,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/switch-icon.png",
             "media_scale": 100,
             "heading": "Trusted by Healthcare Professionals",
             "text": "<p>Ameda breast pumps are trusted by healthcare providers worldwide, with a reputation for reliability and efficiency. Over 1,000 hospitals use Ameda pumps to support breastfeeding moms.</p>",
@@ -230,6 +233,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/switch-icon.png",
             "media_scale": 100,
             "heading": "Comprehensive Support",
             "text": "<p>In addition to our high-quality breast pumps, Ameda offers award-winning customer support through our ParentCare program, providing you with guidance and assistance whenever you need it.</p>",
@@ -241,6 +245,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/switch-icon.png",
             "media_scale": 100,
             "heading": "Commitment to Safety",
             "text": "<p>All Ameda products are designed with safety in mind, using BPA-free materials to ensure that your milk remains pure and healthy for your baby.</p>",
@@ -252,6 +257,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/switch-icon.png",
             "media_scale": 100,
             "heading": "Insurance Compatibility",
             "text": "<p>We work with a wide range of providers to help moms obtain their breast pumps at little to no cost, making it easier for you to access the tools you need for successful breastfeeding.</p>",
@@ -311,7 +317,11 @@
         "heading_La6Lww",
         "text_pt9KDz"
       ],
+      "custom_css": [
+        "img {border-radius: 1rem;}"
+      ],
       "settings": {
+        "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -373,7 +383,8 @@
         "button_eH7yER"
       ],
       "custom_css": [
-        ".section--padded {background: #fff; padding-top: 0;}"
+        ".section--padded {background: #fff; padding-top: 0;}",
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
@@ -423,7 +434,8 @@
         "button_J4ahQN"
       ],
       "custom_css": [
-        ".section--padded {background: #fff; padding-top: 0;}"
+        ".section--padded {background: #fff; padding-top: 0;}",
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
@@ -473,7 +485,8 @@
         "button_jDyj9n"
       ],
       "custom_css": [
-        ".section--padded {background: #fff; padding-top: 0;}"
+        ".section--padded {background: #fff; padding-top: 0;}",
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
@@ -523,7 +536,8 @@
         "button_r79CXP"
       ],
       "custom_css": [
-        ".section--padded {background: #fff; padding-top: 0;}"
+        ".section--padded {background: #fff; padding-top: 0;}",
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
@@ -573,7 +587,8 @@
         "button_RdwcmT"
       ],
       "custom_css": [
-        ".section--padded {background: #fff; padding-top: 0;}"
+        ".section--padded {background: #fff; padding-top: 0;}",
+        "img {border-radius: 1rem;}"
       ],
       "settings": {
         "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
@@ -742,7 +757,7 @@
           "settings": {
             "icon": "none",
             "heading": "How Are Breast Pumps & The Affordable Care Act (ACA) Related?",
-            "text": "<p>The Affordable Care Act (ACA), established in March 2010, mandates that most health insurance plans cover breastfeeding support, counseling, and supplies. This includes access to a free insurance-covered breast pump, lactation consultant services, and pregnancy counseling. The ACA aims to support breastfeeding mothers by ensuring they have the necessary tools and resources throughout their breastfeeding journey. By working with your insurance company, you can take advantage of these benefits and receive the support you need to breastfeed your baby successfully.<br/></p>"
+            "text": "<p>The Affordable Care Act (ACA), established in March 2010, mandates that most health insurance plans cover breastfeeding support, counseling, and supplies. This includes access to a free insurance-covered breast pump, lactation consultant services, and pregnancy counseling. The ACA aims to support breastfeeding mothers by ensuring they have the necessary tools and resources throughout their breastfeeding journey. By working with your insurance company, you can take advantage of these benefits and receive the support you need to breastfeed your baby successfully.</p>"
           }
         },
         "question_Lz7pyL": {
@@ -750,7 +765,7 @@
           "settings": {
             "icon": "none",
             "heading": "Are Breast Pumps Covered By Most Insurance Plans?",
-            "text": "<p>Yes, under the Affordable Care Act (ACA), most health insurance plans are required to cover the cost of a breast pump for new mothers. Coverage may vary depending on your specific insurance provider and plan, but Ameda works with a wide range of insurance companies to help you get a breast pump at little to no cost. We recommend contacting your insurance company to understand your specific benefits and eligibility.<br/></p>"
+            "text": "<p>Yes, under the Affordable Care Act (ACA), most health insurance plans are required to cover the cost of a breast pump for new mothers. Coverage may vary depending on your specific insurance provider and plan, but Ameda works with a wide range of insurance companies to help you get a breast pump at little to no cost. We recommend contacting your insurance company to understand your specific benefits and eligibility.</p>"
           }
         },
         "question_J7hNmL": {
@@ -758,7 +773,7 @@
           "settings": {
             "icon": "none",
             "heading": "Do I Have to Pay Any Out-of-Pocket Expenses for My Breast Pump?",
-            "text": "<p>In most cases, insurance will cover the full cost of your breast pump. However, depending on your specific insurance plan, there may be some out-of-pocket expenses such as co-pays or deductibles. Our team will work with you and your insurance company to minimize any costs and help ensure you receive your breast pump with as little expense as possible. We recommend checking with your insurance company for more details on potential costs.<br/></p>"
+            "text": "<p>In most cases, insurance will cover the full cost of your breast pump. However, depending on your specific insurance plan, there may be some out-of-pocket expenses such as co-pays or deductibles. Our team will work with you and your insurance company to minimize any costs and help ensure you receive your breast pump with as little expense as possible. We recommend checking with your insurance company for more details on potential costs.</p>"
           }
         }
       },
