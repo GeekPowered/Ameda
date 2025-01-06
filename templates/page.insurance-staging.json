@@ -269,7 +269,7 @@
         "column_xjpcMg"
       ],
       "custom_css": [
-        "#template--23865619906875__multi_column_BfTGiE {margin-top: 0rem; padding-top: 2rem; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5)); background-color: #fff;}",
+        "#template--23865619906875__multi_column_BfTGiE {margin: 0rem; padding-top: 2rem; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5)); background-color: #fff;}",
         ".card {flex-direction: row; gap: 2rem;}",
         ".card__media {padding-top: 0 !important; height: 5rem; width: 5rem; flex-shrink: 0; margin-top: 0.5em;}"
       ],
@@ -331,7 +331,7 @@
         ".section--padded-default {background: #fff;}"
       ],
       "settings": {
-        "custom_liquid": "<h2>Why Choose Ameda For Your Breast Pump?</h2>\n<p style=\"margin: 0;\">Ameda was founded by the inventor of the hospital-grade breast pump over 80 years ago, and we’re still dedicated to supporting breastfeeding mothers with high-quality, innovative products. Here are a few reasons why Ameda is the best choice for your breast pump needs:</p>",
+        "custom_liquid": "<center><h2>Why Choose Ameda For Your Breast Pump?</h2>\n<p style=\"margin: 0;\">Ameda was founded by the inventor of the hospital-grade breast pump over 80 years ago, and we’re still dedicated to supporting breastfeeding mothers with high-quality, innovative products. Here are a few reasons why Ameda is the best choice for your breast pump needs:</p></center>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -371,6 +371,9 @@
         "heading_RX86CE",
         "text_LttrHb",
         "button_eH7yER"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff; padding-top: 0;}"
       ],
       "settings": {
         "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
