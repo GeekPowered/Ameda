@@ -126,7 +126,8 @@
       ],
       "custom_css": [
         ".multi-column .card {border-radius: 1rem; max-width: none;}",
-        ".multi-column {width: 100% !important; position: relative;}"
+        ".multi-column {width: 100% !important; position: relative;}",
+        "h2 + a {display: none;}"
       ],
       "settings": {
         "title": "See If You Qualify For A Free Breast Pump Through Insurance Immediately",
