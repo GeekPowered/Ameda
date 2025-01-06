@@ -23,7 +23,7 @@
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Receive FREE or Discounted Ameda Pumps Through Insurance",
+            "heading": "Get A Free Breast Pump Through Insurance",
             "heading_size": "h1",
             "heading_h1": true
           }
@@ -31,7 +31,7 @@
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Experience powerful pumping on the go with the Ameda family of pumps.</p>",
+            "text": "<p>Receive A Free or Discounted Ameda Breast Pump Through Your Insurance Provider</p>",
             "enlarge_text": true
           }
         },
@@ -68,27 +68,6 @@
         "tint_color": "#000000",
         "tint_opacity": 0,
         "prevent_animation": false
-      }
-    },
-    "featured_collection_jTcgdm": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Experience powerful pumping on the go with the Ameda family of breast pumps.",
-        "heading_align": "text-start",
-        "show_view_all": false,
-        "collection": "breast-pumps",
-        "layout": "carousel",
-        "card_size_mobile": "small",
-        "card_size": "small",
-        "products_to_show": 8,
-        "show_promo_info": false,
-        "image_ratio": "fill",
-        "promo_title": "A headline to grab attention",
-        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
-        "link_url": "",
-        "button_label": "Button",
-        "color_scheme": "2",
-        "button_style": "btn btn--primary"
       }
     },
     "70b6796a-4aa7-4791-9ea6-72e90afed64c": {
@@ -137,18 +116,39 @@
         ".multi-column .card {border-radius: 1rem;}"
       ],
       "settings": {
-        "title": "See If You Qualify For A Free Breast Pump Through Insurance Immediately ",
+        "title": "See If You Qualify For A Free Breast Pump Through Insurance Immediately",
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
         "layout": "grid",
-        "column_size": "small",
+        "column_size": "large",
         "column_align": "left",
         "media_align": "text-center",
         "image_ratio": "1",
         "color_scheme": "1",
         "baby_patterns": false,
         "button_style": "btn btn--secondary"
+      }
+    },
+    "featured_collection_jTcgdm": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Experience powerful pumping on the go with the Ameda family of breast pumps.",
+        "heading_align": "text-start",
+        "show_view_all": false,
+        "collection": "breast-pumps",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
       }
     },
     "custom_liquid_tRmdKP": {
@@ -348,8 +348,8 @@
   "order": [
     "main",
     "329e5978-de6e-4b2d-9322-d45d0e244c4b",
-    "featured_collection_jTcgdm",
     "70b6796a-4aa7-4791-9ea6-72e90afed64c",
+    "featured_collection_jTcgdm",
     "custom_liquid_tRmdKP",
     "76cc895e-4cdb-4512-a4b6-0dca61f30110",
     "custom_liquid_pPMXFH",
