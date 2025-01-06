@@ -188,8 +188,8 @@
           "settings": {
             "enable_media": true,
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "Hospital-Grade Quality",
+            "text": "<p>Ameda pumps are inspired by our award-winning hospital-grade technology, ensuring that you get the best quality for efficient and comfortable milk expression.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -199,8 +199,8 @@
           "settings": {
             "enable_media": true,
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "Customizable Comfort",
+            "text": "<p>Our pumps feature adjustable suction levels and multiple pumping modes, allowing you to tailor your experience to meet your comfort needs.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -210,8 +210,8 @@
           "settings": {
             "enable_media": true,
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "Trusted by Healthcare Professionals",
+            "text": "<p>Ameda breast pumps are trusted by healthcare providers worldwide, with a reputation for reliability and efficiency. Over 1,000 hospitals use Ameda pumps to support breastfeeding moms.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -228,12 +228,12 @@
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
-        "layout": "carousel",
+        "layout": "grid",
         "column_size": "medium",
         "column_align": "left",
-        "media_align": "text-center",
+        "media_align": "text-left",
         "image_ratio": "1",
-        "color_scheme": "1",
+        "color_scheme": "none",
         "baby_patterns": false,
         "button_style": "btn btn--secondary"
       }
