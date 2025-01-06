@@ -165,13 +165,23 @@
         "button_style": "btn btn--primary"
       }
     },
+    "611733a1-7260-4231-a0db-d622d34c311f": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
     "custom_liquid_U8iDYi": {
       "type": "custom-liquid",
       "custom_css": [
+        ".section--padded-default {background: #fff;}",
         ".section--padded-default {padding-bottom: 0; margin-bottom: 0;}"
       ],
       "settings": {
-        "custom_liquid": "<h2>Why Choose Ameda For Your Breast Pump?</h2>\n<p>Ameda was founded by the inventor of the hospital-grade breast pump over 80 years ago, and we’re still dedicated to supporting breastfeeding mothers with high-quality, innovative products. Here are a few reasons why Ameda is the best choice for your breast pump needs:</p>",
+        "custom_liquid": "<h2>Why Choose Ameda For Your Breast Pump?</h2>\n<p style=\"margin: 0;\">Ameda was founded by the inventor of the hospital-grade breast pump over 80 years ago, and we’re still dedicated to supporting breastfeeding mothers with high-quality, innovative products. Here are a few reasons why Ameda is the best choice for your breast pump needs:</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -259,7 +269,7 @@
         "column_xjpcMg"
       ],
       "custom_css": [
-        "#template--23865619906875__multi_column_BfTGiE {margin-top: 2rem;}",
+        "#template--23865619906875__multi_column_BfTGiE {margin-top: 0rem; padding-top: 2rem; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5)); background-color: #fff;}",
         ".card {flex-direction: row; gap: 2rem;}",
         ".card__media {padding-top: 0 !important; height: 5rem; width: 5rem; flex-shrink: 0; margin-top: 0.5em;}"
       ],
@@ -276,6 +286,105 @@
         "color_scheme": "none",
         "baby_patterns": false,
         "button_style": "btn btn--secondary"
+      }
+    },
+    "media_with_text_rpzKKz": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_La6Lww": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choosing the Right Breast Pump",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_pt9KDz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Selecting the right breast pump can feel overwhelming, especially for first-time mothers. It’s important to consider factors such as how often you’ll be using the pump, its portability, and your comfort. Hands-free breast pumps are a fantastic option for busy moms who need to pump while multitasking or have limited time. These pumps allow you to express milk without using your hands, providing complete mobility. Additionally, many insurance plans cover the cost of breast pumps, making it easier to obtain a high-quality device with minimal out-of-pocket expenses. Explore the kinds of breast pumps offered by Ameda below. </p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_La6Lww",
+        "text_pt9KDz"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "3",
+        "only_content_color_scheme": false,
+        "baby_patterns": true
+      }
+    },
+    "custom_liquid_DNwP9D": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".section--padded-default {background: #fff;}"
+      ],
+      "settings": {
+        "custom_liquid": "<h2>Why Choose Ameda For Your Breast Pump?</h2>\n<p style=\"margin: 0;\">Ameda was founded by the inventor of the hospital-grade breast pump over 80 years ago, and we’re still dedicated to supporting breastfeeding mothers with high-quality, innovative products. Here are a few reasons why Ameda is the best choice for your breast pump needs:</p>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "media_with_text_ArF8qh": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_RX86CE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hands-Free Breast Pumps Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_LttrHb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hands-free pumps offer the ultimate convenience for moms who are always on the move. These pumps are designed to be worn inside your bra, allowing you to go about your day with complete mobility. Ameda’s hands-free breast pumps offer powerful suction, comfort, and discretion, making them ideal for multitasking moms.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_eH7yER": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Hands Free Breast Pumps",
+            "button_link": "shopify://collections/breast-pumps",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RX86CE",
+        "text_LttrHb",
+        "button_eH7yER"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "76cc895e-4cdb-4512-a4b6-0dca61f30110": {
@@ -313,7 +422,7 @@
         "prevent_animation": false
       }
     },
-    "611733a1-7260-4231-a0db-d622d34c311f": {
+    "wave_section_WyDEf3": {
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
@@ -466,11 +575,15 @@
     "custom_liquid_tRmdKP",
     "70b6796a-4aa7-4791-9ea6-72e90afed64c",
     "featured_collection_jTcgdm",
+    "611733a1-7260-4231-a0db-d622d34c311f",
     "custom_liquid_U8iDYi",
     "multi_column_BfTGiE",
+    "media_with_text_rpzKKz",
+    "custom_liquid_DNwP9D",
+    "media_with_text_ArF8qh",
     "76cc895e-4cdb-4512-a4b6-0dca61f30110",
     "custom_liquid_pPMXFH",
-    "611733a1-7260-4231-a0db-d622d34c311f",
+    "wave_section_WyDEf3",
     "084c9bf7-9db6-4b91-9bf9-e234e1a59348",
     "d28ea09b-3af1-4fab-aa1d-888bd02ef647",
     "1ff950cf-34b7-4e69-b8e2-53d2fadb9987",
