@@ -327,7 +327,7 @@
         "video_autoplay": false,
         "layout": "right",
         "image_fit": "contain",
-        "media_width": 50,
+        "media_width": 40,
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "3",
