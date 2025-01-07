@@ -448,7 +448,10 @@
         "column_3TYcUx",
         "column_gpfbq7"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "#template--23994632307003__multi_column_UdJLh7 {margin: 0; background: #fff; padding-top: calc(var(--section-gap) * var(--fluid-1-5)); padding-bottom: calc(var(--section-gap) * var(--fluid-1-5));}",
+        ".card__info {background: rgb(251, 246, 239); border-radius: 1rem;}"
+      ],
       "settings": {
         "title": "Additional Lactation Support Resources",
         "heading_align": "text-start",
