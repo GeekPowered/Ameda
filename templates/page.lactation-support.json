@@ -411,6 +411,9 @@
         "question_FewbJQ",
         "question_tyjcnM"
       ],
+      "custom_css": [
+        ".reading-width {max-width: 100%;}"
+      ],
       "settings": {
         "heading": "Frequently Asked Questions (FAQ)",
         "heading_align": "text-start",
