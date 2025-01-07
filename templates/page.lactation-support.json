@@ -278,6 +278,8 @@
         "49895fd3-000e-42d9-b379-e4cc79369f0f"
       ],
       "settings": {
+        "section_heading": "We're Here For You",
+        "heading_align": "text-start",
         "section_content": ""
       }
     },
@@ -488,7 +490,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": ""
       }
