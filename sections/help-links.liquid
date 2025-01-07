@@ -3,7 +3,7 @@
 <div class="section section--padded helpful-links">
     <div class="container">
         <h2 class="section__heading text-center{% if section.settings.section_content != blank %}{{ ' mb-0' }}{% endif %}">{{ section.settings.section_heading }}</h2>
-        {% if section.settings.section_content %}<p class="enlarge-text text-center  mb-10">{{ section.settings.section_content }}</p>{% endif %}
+        {% if section.settings.section_content %}<p class="enlarge-text {{ section.settings.heading_align }} mb-10">{{ section.settings.section_content }}</p>{% endif %}
         <div class="helpful-links_list">
             {% for block in section.blocks %}
                 <div class="helpful-links_item"{% if block.settings.hash != blank %} id="{{ block.settings.hash }}"{% endif %}>
@@ -49,6 +49,26 @@
       "label": "Section Heading",
       "id": "section_heading",
       "default": "We're Here For You"
+    },
+    {
+      "type": "select",
+      "id": "heading_align",
+      "label": "Heading alignment",
+      "options": [
+        {
+          "value": "text-start",
+          "label": "Left"
+        },
+        {
+          "value": "text-center",
+          "label": "Center"
+        },
+        {
+          "value": "text-end",
+          "label": "Right"
+        }
+      ],
+      "default": "text-center"
     },
     {
       "type": "text",
