@@ -23,7 +23,7 @@
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Receive FREE or Discounted Ameda Pumps Through Insurance",
+            "heading": "Professional Lactation Support",
             "heading_size": "h1",
             "heading_h1": true
           }
@@ -31,26 +31,14 @@
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Experience powerful pumping on the go with the Ameda family of pumps.</p>",
+            "text": "<p>Online Lactation Support Resources</p>",
             "enlarge_text": true
-          }
-        },
-        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-button-1": {
-          "type": "button",
-          "settings": {
-            "button_1_label": "Compare Options",
-            "button_1_link": "https://www.ameda.com/pages/insurance#options",
-            "button_1_style": "btn btn--secondary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary"
           }
         }
       },
       "block_order": [
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-heading-1",
-        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1",
-        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-button-1"
+        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1"
       ],
       "settings": {
         "image_desktop": "shopify://shop_images/inscopy.jpg",
@@ -70,144 +58,187 @@
         "prevent_animation": false
       }
     },
-    "70b6796a-4aa7-4791-9ea6-72e90afed64c": {
-      "type": "multi-column",
-      "blocks": {
-        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-1": {
-          "type": "column",
-          "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Step 1",
-            "text": "<p>Submit Contact Form</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-2": {
-          "type": "column",
-          "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Step 2",
-            "text": "<p>Supply Additional Patient Information</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-3": {
-          "type": "column",
-          "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Step 3",
-            "text": "<p>Our Providers Will Contact You!<br/></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-1",
-        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-2",
-        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-3"
-      ],
-      "custom_css": [
-        ".multi-column .card {border-radius: 1rem;}"
-      ],
-      "settings": {
-        "title": "Let's Get You Qualified",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "grid",
-        "column_size": "small",
-        "column_align": "center",
-        "media_align": "text-center",
-        "image_ratio": "1",
-        "color_scheme": "1",
-        "baby_patterns": false,
-        "button_style": "btn btn--secondary"
-      }
-    },
-    "76cc895e-4cdb-4512-a4b6-0dca61f30110": {
-      "type": "rich-text",
-      "blocks": {
-        "template--21965917618491__76cc895e-4cdb-4512-a4b6-0dca61f30110-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Fill out the following form to see if you qualify for a free Ameda pump through your insurance. One of our trusted partners will be in contact with you once your form has been completed and received.</p>",
-            "enlarge_text": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21965917618491__76cc895e-4cdb-4512-a4b6-0dca61f30110-text-1"
-      ],
-      "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
-        "color_scheme": "none",
-        "full_width": true,
-        "prevent_animation": false
-      }
-    },
-    "custom_liquid_pPMXFH": {
+    "custom_liquid_UAWcT4": {
       "type": "custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-bottom: 0;}",
+        "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
+      ],
       "settings": {
-        "custom_liquid": "<h3 class=\"text-center mb-10\">The journey to an insurance-covered pump starts here.</h3>\n<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div style=\"margin:0 auto -5rem auto;\" class=\"pxFormGenerator\" id=\"S6JyNwYUyN12xu6yEI_d8Q\"></div>\n<p style=\"\n    margin-bottom: 0;\n    opacity: .75;\n    font-style: italic;\n\">*By clicking \"Complete Step 1\", you are agreeing that Ameda can contact you with updates about qualifying for your free pump.</p>\n</div>",
+        "custom_liquid": "<h2>What Is Lactation Support?</h2>\n<p>Lactation support refers to the guidance, resources, and professional care that help parents establish and maintain a healthy breastfeeding relationship. This includes everything from learning proper latch techniques to troubleshooting common concerns such as low milk supply or nipple pain. At Ameda, we believe that every family deserves access to expert Lactation Support to ensure a positive breastfeeding experience through comprehensive breastfeeding assistance.</p>\n<hr>\n<br>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
-        "color_scheme": "none",
+        "color_scheme": "1",
         "baby_patterns": false,
         "prevent_animation": false
+      }
+    },
+    "media_with_text_3q7MDT": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_GQj9Fy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Lactation Support Matters",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_Y8CJKe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Many new moms and new parents benefit greatly from timely, professional breastfeeding support. Studies show that having the right Lactation Support Resources can improve breastfeeding success rates and help parents feel more confident along their journey. That’s why Ameda partners with trusted providers, including lactation consultants, to make sure you receive the expertise you need—exactly when you need it.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GQj9Fy",
+        "text_Y8CJKe"
+      ],
+      "custom_css": [
+        ".section--padded {padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Pumpease_2.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_6QBKBn": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_hcitUc": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Is a Lactation Consultant?",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_ghagq9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A lactation consultant is a healthcare professional who specializes in breastfeeding support and guidance. These experts are trained to help new mothers overcome common breastfeeding challenges and provide personalized advice on various aspects of breastfeeding. Whether you are dealing with latch issues, managing milk supply, or simply seeking reassurance, a lactation consultant can offer the support you need.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hcitUc",
+        "text_ghagq9"
+      ],
+      "custom_css": [
+        ".section--padded {padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Pumpease_2.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "custom_liquid_WCPPy7": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-top: 0;}",
+        "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<p style=\"margin-bottom: 0;\">Lactation consultants can be an invaluable resource at any stage of your breastfeeding journey. You can consult with them during pregnancy to prepare for breastfeeding, immediately after birth to establish a good latch, or several months into breastfeeding to address any ongoing concerns. Their services include breastfeeding education, hands-on assistance with latch and positioning, and strategies to boost milk supply. By working with a lactation consultant, you can gain confidence and ensure a positive breastfeeding experience.</p>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "custom_liquid_AdDxg6": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-bottom: 0;}",
+        "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<h2>Understanding Your Breastfeeding Benefits</h2>\n<hr>\n<br>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "media_with_text_i3kJhw": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_dh6Hhg": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Affordable Care Act (ACA)",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_Hq4Qc8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Under the Affordable Care Act (ACA), most health insurance plans are required to cover breastfeeding support, counseling, and <a href=\"https://www.ameda.com/pages/insurance\"><span style=\"text-decoration:underline\">free or reduced-cost breast pumps</span></a> for the duration of breastfeeding. This includes both Marketplace plans and other health insurance plans, although some grandfathered plans may not offer the same coverage. Knowing that these services are often covered by your healthcare provider can significantly reduce out-of-pocket costs and make it easier to access high-quality Lactation Support. Learn more about getting a <a href=\"https://www.ameda.com/pages/insurance\"><span style=\"text-decoration:underline\">breast pump through insurance</span></a> <a href=\"https://www.ameda.com/pages/insurance\"><span style=\"text-decoration:underline\">here</span></a>. </p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dh6Hhg",
+        "text_Hq4Qc8"
+      ],
+      "custom_css": [
+        ".section--padded {padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Pumpease_2.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "611733a1-7260-4231-a0db-d622d34c311f": {
       "type": "wave-section",
       "settings": {
-        "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#fbf6ef",
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "#ffffff",
         "wavetype": "bottom",
         "waveposition": ""
-      }
-    },
-    "084c9bf7-9db6-4b91-9bf9-e234e1a59348": {
-      "type": "video",
-      "blocks": {
-        "template--21965917618491__084c9bf7-9db6-4b91-9bf9-e234e1a59348-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Congratulations mama on your decision to provide breast milk to your baby. Let’s see if you qualify for an Ameda breast pump at no charge!</p>",
-            "enlarge_text": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21965917618491__084c9bf7-9db6-4b91-9bf9-e234e1a59348-text-1"
-      ],
-      "custom_css": [
-        ".video-section__media {border-radius: 1rem;}"
-      ],
-      "settings": {
-        "video_external": "https://www.youtube.com/watch?v=iN3I3sva8Uw",
-        "video_description": "",
-        "poster_image": "shopify://shop_images/hqdefault.webp",
-        "video_size": "sm",
-        "video_autoplay": false,
-        "text_align": "text-center",
-        "color_scheme": "1"
-      }
-    },
-    "d28ea09b-3af1-4fab-aa1d-888bd02ef647": {
-      "type": "wave-section",
-      "settings": {
-        "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#fbf6ef",
-        "wavetype": "top",
-        "waveposition": "top"
       }
     },
     "1ff950cf-34b7-4e69-b8e2-53d2fadb9987": {
@@ -216,12 +247,12 @@
         "e37a882a-f355-4d2b-a7c2-b81f8dc58268": {
           "type": "link",
           "settings": {
-            "title": "Milk 101",
+            "title": "International Board-Certified Lactation Consultants (IBCLCs)",
             "icon": "",
-            "content": "The easy guide to getting a free breast pump through insurance.",
+            "content": "Under the Affordable Care Act (ACA), most health insurance plans are required to cover breastfeeding support, counseling, and free or reduced-cost breast pumps for the duration of breastfeeding. This includes both Marketplace plans and other health insurance plans, although some grandfathered plans may not offer the same coverage. Knowing that these services are often covered by your healthcare provider can significantly reduce out-of-pocket costs and make it easier to access high-quality Lactation Support. Learn more about getting a breast pump through insurance here.",
             "custom_liquid": "",
-            "link_text": "Learn More",
-            "url": "https://www.ameda.com/blogs/posts",
+            "link_text": "",
+            "url": "",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -230,12 +261,12 @@
         "49895fd3-000e-42d9-b379-e4cc79369f0f": {
           "type": "link",
           "settings": {
-            "title": "FAQS",
+            "title": "Ameda’s Trusted Providers",
             "icon": "",
-            "content": "Got questions? We got answers! Check some of our most common questions and answers.",
-            "custom_liquid": "",
-            "link_text": "Learn More",
-            "url": "https://www.ameda.com/pages/faq",
+            "content": "",
+            "custom_liquid": "<a target=\"_blank\" href=\"https://book.nestcollaborative.com/1?partner=ameda\" style=\"height: 3rem; width: auto;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/NEST-Logo.webp?v=1730213068\" style=\"height: 3rem; margin-bottom: 1rem;\" />\n</a>\n<h6>The Nest</h6>\n<p>The Nest offers personalized breastfeeding support tailored to meet specific breastfeeding needs through a network of lactation consultants, providing in-home, in-office, and online consultations. They simplify the process for new parents by handling insurance billing and making expert lactation care accessible and stress-free. Friendly and knowledgeable, The Nest’s lactation consultants guide parents step-by-step through latch techniques, pumping schedules, and more.</p>\n<a target=\"_blank\" href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\" style=\"height: 3rem; width: auto;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/TLN_Horizontal_Green-TM.svg?v=1730213068\" style=\"height: 3rem;\" />\n</a>\n<h6 style=\"margin-top:.5rem;\">The Lactation Network (TLN)</h6>\n<p>The Lactation Network (TLN) connects parents with insurance-covered lactation support resources. With a nationwide directory of lactation consultants, TLN offers in-home, in-office, and telehealth consultations while managing insurance claims and answering breastfeeding questions. Their streamlined process ensures easy scheduling and maximized coverage benefits, helping parents avoid hidden surprises or unexpected costs.</p>",
+            "link_text": "",
+            "url": "",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -250,13 +281,86 @@
         "section_content": ""
       }
     },
-    "4e60b54a-b466-4694-9f93-58db2af8ec6d": {
-      "type": "custom-liquid",
+    "70b6796a-4aa7-4791-9ea6-72e90afed64c": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Choose Your Provider",
+            "text": "<p>Select either The Nest or The Lactation Network based on your preference.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Verify Coverage",
+            "text": "<p>Provide your insurance information so the provider can confirm your benefits.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Book Your Appointment",
+            "text": "<p>Schedule the type of consultation that best suits your needs—in-home, in-office, or telehealth.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_zVp3Rb": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Prepare for Your Session",
+            "text": "<p>Note any specific questions or concerns you have in advance so you can discuss them during your appointment.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-1",
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-2",
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-3",
+        "column_zVp3Rb"
+      ],
       "custom_css": [
-        ".section--padded-default {padding-top: 0;}"
+        ".multi-column .card {border-radius: 1rem;}"
       ],
       "settings": {
-        "custom_liquid": "<div id=\"options\"></div>\n<h2 style=\"margin-bottom: 3rem;\">Meet Joy: Pump On-The-Go.</h2>\n{% render 'joy-joyplus-chart' %}\n<p style=\"margin-top:2rem;\">*Only Use the Diaphragms and Valves that come inside the Joy pumps.</p>",
+        "title": "Accessing Your Lactation Support",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "custom_liquid_cdpWVf": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-top: 0;}",
+        "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; text-align: center; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<hr>\n<h3>Verification & Billing Process</h3>\n<p style=\"margin-bottom: 0;\">After you’ve submitted your insurance details, your chosen provider will confirm your coverage and let you know about any copays or out-of-pocket expenses. If your insurance plan is grandfathered or lacks breastfeeding support coverage, you can still work with The Nest or The Lactation Network on a self-pay or cash-pay basis.</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -265,24 +369,141 @@
         "prevent_animation": false
       }
     },
-    "global_footer_cta_tD8LVQ": {
-      "type": "global-footer-cta",
+    "d28ea09b-3af1-4fab-aa1d-888bd02ef647": {
+      "type": "wave-section",
       "settings": {
-        "svg_fill_override": "#fbf6ef"
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "top",
+        "waveposition": "top"
+      }
+    },
+    "faq_KxDHU9": {
+      "type": "faq",
+      "blocks": {
+        "question_EaUFkH": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What if My Plan Is Grandfathered?",
+            "text": "<p>If your insurance plan does not cover lactation services under the ACA, contact The Nest or The Lactation Network to discuss self-pay options. Some providers offer discounted rates or sliding scale fees for parents paying out of pocket.</p>"
+          }
+        },
+        "question_FewbJQ": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What Should I Expect During a Lactation Consultation?",
+            "text": "<p>During a typical consultation, a lactation consultant will assess your baby’s latch, answer questions about milk supply, and provide guidance on pumping or supplementing if needed. They’ll also help you feel more confident about handling common breastfeeding concerns at home.</p>"
+          }
+        },
+        "question_tyjcnM": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What Equipment Is Covered Under the ACA?",
+            "text": "<p>Many insurance plans cover the cost of breast pumps and related breastfeeding supplies. Ameda’s wide range of breastfeeding products is also available for parents seeking high-quality pumps and accessories. Learn more about how to get a <a href=\"https://www.ameda.com/pages/insurance\"><span style=\"text-decoration:underline\">FREE breast pump through insurance</span></a> <a href=\"https://www.ameda.com/pages/insurance\"><span style=\"text-decoration:underline\">here</span></a>. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_EaUFkH",
+        "question_FewbJQ",
+        "question_tyjcnM"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions (FAQ)",
+        "heading_align": "text-start",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "multi_column_UdJLh7": {
+      "type": "multi-column",
+      "blocks": {
+        "column_3TYcUx": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Ongoing Education & Support Groups",
+            "text": "<p>Breastfeeding is an ongoing journey that can be more enjoyable with consistent, reliable support from a support group. We encourage you to explore local or virtual breastfeeding support groups where you can connect with other parents facing similar challenges and triumphs.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_gpfbq7": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Helpful Tips & Articles from Ameda",
+            "text": "<p>Explore our library of blogs, videos, and how-to guides for detailed information on pumping schedules, breast milk storage guidelines, and more. These resources are designed to help you get the most out of your breastfeeding experience with confidence and ease.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_3TYcUx",
+        "column_gpfbq7"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Additional Lactation Support Resources",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "latest_posts_TMWF6R": {
+      "type": "latest-posts",
+      "settings": {
+        "title": "Milk 101 Blog",
+        "description": "",
+        "show_button": true,
+        "button_link": "/blogs/posts/",
+        "button_text": "All Posts",
+        "button_style": "btn--primary",
+        "top_content_visible": true,
+        "blog_tag": ""
+      }
+    },
+    "wave_section_FbTK7C": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "top",
+        "waveposition": ""
       }
     }
   },
   "order": [
     "main",
     "329e5978-de6e-4b2d-9322-d45d0e244c4b",
-    "70b6796a-4aa7-4791-9ea6-72e90afed64c",
-    "76cc895e-4cdb-4512-a4b6-0dca61f30110",
-    "custom_liquid_pPMXFH",
+    "custom_liquid_UAWcT4",
+    "media_with_text_3q7MDT",
+    "media_with_text_6QBKBn",
+    "custom_liquid_WCPPy7",
+    "custom_liquid_AdDxg6",
+    "media_with_text_i3kJhw",
     "611733a1-7260-4231-a0db-d622d34c311f",
-    "084c9bf7-9db6-4b91-9bf9-e234e1a59348",
-    "d28ea09b-3af1-4fab-aa1d-888bd02ef647",
     "1ff950cf-34b7-4e69-b8e2-53d2fadb9987",
-    "4e60b54a-b466-4694-9f93-58db2af8ec6d",
-    "global_footer_cta_tD8LVQ"
+    "70b6796a-4aa7-4791-9ea6-72e90afed64c",
+    "custom_liquid_cdpWVf",
+    "d28ea09b-3af1-4fab-aa1d-888bd02ef647",
+    "faq_KxDHU9",
+    "multi_column_UdJLh7",
+    "latest_posts_TMWF6R",
+    "wave_section_FbTK7C"
   ]
 }
