@@ -99,7 +99,7 @@
       ],
       "custom_css": [
         ".section--padded {padding-top: 0;}",
-        "img {border-radius: 1rem;}"
+        "img {border-radius: 1rem; transform: rotateY(180deg);}"
       ],
       "settings": {
         "image": "shopify://shop_images/Pumpease_2.png",
@@ -144,7 +144,7 @@
         "img {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Pumpease_2.png",
+        "image": "shopify://shop_images/lactation-consultant.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -218,7 +218,7 @@
         "img {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Pumpease_2.png",
+        "image": "shopify://shop_images/aca.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -289,8 +289,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Choose Your Provider",
-            "text": "<p>Select either The Nest or The Lactation Network based on your preference.</p>",
+            "heading": "1",
+            "text": "<h4>Choose Your Provider</h4><p>Select either The Nest or The Lactation Network based on your preference.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -300,8 +300,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Verify Coverage",
-            "text": "<p>Provide your insurance information so the provider can confirm your benefits.</p>",
+            "heading": "2",
+            "text": "<h4>Verify Coverage</h4><p>Provide your insurance information so the provider can confirm your benefits.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -311,8 +311,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Book Your Appointment",
-            "text": "<p>Schedule the type of consultation that best suits your needs—in-home, in-office, or telehealth.</p>",
+            "heading": "3",
+            "text": "<h4>Book Your Appointment</h4><p>Schedule the type of consultation that best suits your needs—in-home, in-office, or telehealth.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -322,8 +322,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Prepare for Your Session",
-            "text": "<p>Note any specific questions or concerns you have in advance so you can discuss them during your appointment.</p>",
+            "heading": "4",
+            "text": "<h4>Prepare for Your Session</h4><p>Note any specific questions or concerns you have in advance so you can discuss them during your appointment.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -336,7 +336,8 @@
         "column_zVp3Rb"
       ],
       "custom_css": [
-        ".multi-column .card {border-radius: 1rem;}"
+        ".multi-column .card {border-radius: 1rem;}",
+        "h3 {color: #fff; background: #ef9aa0; width: 4rem; height: 4rem; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 50%;}"
       ],
       "settings": {
         "title": "Accessing Your Lactation Support",
@@ -360,7 +361,7 @@
         "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; text-align: center; }}"
       ],
       "settings": {
-        "custom_liquid": "<hr>\n<h3>Verification & Billing Process</h3>\n<p style=\"margin-bottom: 0;\">After you’ve submitted your insurance details, your chosen provider will confirm your coverage and let you know about any copays or out-of-pocket expenses. If your insurance plan is grandfathered or lacks breastfeeding support coverage, you can still work with The Nest or The Lactation Network on a self-pay or cash-pay basis.</p>",
+        "custom_liquid": "<hr>\n<h4>Verification & Billing Process</h4>\n<p style=\"margin-bottom: 0;\">After you’ve submitted your insurance details, your chosen provider will confirm your coverage and let you know about any copays or out-of-pocket expenses. If your insurance plan is grandfathered or lacks breastfeeding support coverage, you can still work with The Nest or The Lactation Network on a self-pay or cash-pay basis.</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
