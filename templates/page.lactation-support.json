@@ -54,7 +54,7 @@
         "full_width": true,
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
-        "tint_opacity": 0,
+        "tint_opacity": 35,
         "prevent_animation": false
       }
     },
