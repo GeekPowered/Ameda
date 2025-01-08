@@ -338,10 +338,11 @@
     "custom_liquid_DNwP9D": {
       "type": "custom-liquid",
       "custom_css": [
-        ".section--padded-default {background: #fff;}"
+        ".section--padded-default {background: #fff;}",
+        "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
       ],
       "settings": {
-        "custom_liquid": "<center><h2>Why Choose Ameda For Your Breast Pump?</h2>\n<p style=\"margin: 0;\">Ameda was founded by the inventor of the hospital-grade breast pump over 80 years ago, and we’re still dedicated to supporting breastfeeding mothers with high-quality, innovative products. Here are a few reasons why Ameda is the best choice for your breast pump needs:</p></center>",
+        "custom_liquid": "<h2>Types of Breast Pumps Available Through Insurance Coverage</h2>\n<p style=\"margin: 0;\">Navigating the types of breast pumps that are available through insurance can feel overwhelming, but Ameda makes it easy by offering a variety of options that cater to different needs and lifestyles. Here’s a breakdown of the different types of breast pumps available through insurance from Ameda:\n</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
