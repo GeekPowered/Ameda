@@ -477,7 +477,7 @@
       ],
       "settings": {
         "title": "Additional Lactation Support Resources",
-        "use_h4_class": true,
+        "use_h4_class": false,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
