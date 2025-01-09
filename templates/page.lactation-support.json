@@ -343,12 +343,12 @@
       ],
       "settings": {
         "title": "Accessing Your Lactation Support",
-        "heading_align": "text-center",
+        "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
         "layout": "grid",
         "column_size": "large",
-        "column_align": "center",
+        "column_align": "left",
         "media_align": "text-center",
         "image_ratio": "1",
         "color_scheme": "1",
@@ -360,7 +360,7 @@
       "type": "custom-liquid",
       "custom_css": [
         ".section--padded-default {padding-top: 0;}",
-        "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; text-align: center; }}"
+        "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; /* max-width: 1088px; width: 100%; padding: 0; */ }}"
       ],
       "settings": {
         "custom_liquid": "<hr>\n<h4>Verification & Billing Process</h4>\n<p style=\"margin-bottom: 0;\">After you’ve submitted your insurance details, your chosen provider will confirm your coverage and let you know about any copays or out-of-pocket expenses. If your insurance plan is grandfathered or lacks breastfeeding support coverage, you can still work with The Nest or The Lactation Network on a self-pay or cash-pay basis.</p>",
