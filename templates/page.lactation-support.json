@@ -436,6 +436,7 @@
       ],
       "settings": {
         "heading": "Frequently Asked Questions (FAQ)",
+        "use_h4_class": false,
         "heading_align": "text-start",
         "color_scheme": "1",
         "full_width": true
