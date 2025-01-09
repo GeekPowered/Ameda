@@ -249,7 +249,7 @@
           "settings": {
             "title": "International Board-Certified Lactation Consultants (IBCLCs)",
             "icon": "",
-            "content": "Under the Affordable Care Act (ACA), most health insurance plans are required to cover breastfeeding support, counseling, and free or reduced-cost breast pumps for the duration of breastfeeding. This includes both Marketplace plans and other health insurance plans, although some grandfathered plans may not offer the same coverage. Knowing that these services are often covered by your healthcare provider can significantly reduce out-of-pocket costs and make it easier to access high-quality Lactation Support. Learn more about getting a breast pump through insurance here.",
+            "content": "IBCLCs are the Gold Standard in lactation care, having completed extensive education and clinical training in breastfeeding management. Whether you need an in-home visit, an in-office appointment, or a virtual consultation via telehealth, lactation consultants from the IBCLCs can offer personalized strategies tailored to your needs.",
             "custom_liquid": "",
             "link_text": "",
             "url": "",
@@ -379,7 +379,7 @@
         "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; /* max-width: 1088px; width: 100%; padding: 0; */ }}"
       ],
       "settings": {
-        "custom_liquid": "<hr>\n<h4>Verification & Billing Process</h4>\n<p style=\"margin-bottom: 0;\">After you’ve submitted your insurance details, your chosen provider will confirm your coverage and let you know about any copays or out-of-pocket expenses. If your insurance plan is grandfathered or lacks breastfeeding support coverage, you can still work with The Nest or The Lactation Network on a self-pay or cash-pay basis.</p>",
+        "custom_liquid": "<a href=\"#\" class=\"btn btn--primary\">Get started</a>\n<hr>\n<h4>Verification & Billing Process</h4>\n<p style=\"margin-bottom: 0;\">After you’ve submitted your insurance details, your chosen provider will confirm your coverage and let you know about any copays or out-of-pocket expenses. If your insurance plan is grandfathered or lacks breastfeeding support coverage, you can still work with <a target=\"_blank\" href=\"https://book.nestcollaborative.com/1?partner=ameda\" style=\"\">The Nest</a> or <a href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\">The Lactation Network</a> on a self-pay or cash-pay basis.</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
