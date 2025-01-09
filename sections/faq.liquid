@@ -32,7 +32,7 @@
     <div class="container">
       <div class="reading-width"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
         {%- if section.settings.heading != blank -%}
-          <h2 class="h4 section__heading mb-12 {{ section.settings.heading_align }}">{{ section.settings.heading | escape }}</h2>
+          <h2 class="{% if section.settings.use_h4_class %}h4{% endif %} section__heading mb-12 {{ section.settings.heading_align }}">{{ section.settings.heading | escape }}</h2>
         {%- endif -%}
 
         {%- for block in section.blocks -%}
@@ -97,6 +97,12 @@
       "id": "heading",
       "label": "Heading",
       "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_h4_class",
+      "label": "Use h4 class on title",
+      "default": true
     },
     {
       "type": "select",
