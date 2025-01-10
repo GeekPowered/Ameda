@@ -63,10 +63,8 @@
     In Shopify: article.metafields.namespace.key 
     => here we assume namespace = custom, key = related_product
   {%- endcomment %}
-
-  {{ article.metafields.custom.related_product | json }}
   
-  {% assign related_products = article.metafields['custom']['related_product'] %}
+  {% assign related_products = article.metafields.custom.related_product.values %}
   {% assign product_count = section.settings.products_to_show %}
   {% assign counter = 0 %}
   
