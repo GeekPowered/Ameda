@@ -278,7 +278,8 @@
         "49895fd3-000e-42d9-b379-e4cc79369f0f"
       ],
       "custom_css": [
-        "@media (min-width: 768px) {.splitted {display: flex; gap: 1rem; }}"
+        ".splitted {display: flex; gap: 5rem; flex-direction: column;}",
+        "@media (min-width: 768px) {.splitted {flex-direction: row; gap: 1rem; }}"
       ],
       "settings": {
         "section_heading": "Our Lactation Support Resources",
