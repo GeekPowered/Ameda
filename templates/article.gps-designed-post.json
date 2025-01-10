@@ -26,6 +26,9 @@
     },
     "blog_post_products_pFgHEz": {
       "type": "blog-post-products",
+      "custom_css": [
+        ".section--padded {padding-top: 0;}"
+      ],
       "settings": {
         "eyebrow-heading": "",
         "heading": "Related Products",
