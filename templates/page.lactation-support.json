@@ -264,23 +264,9 @@
             "title": "Ameda Trusted Providers",
             "icon": "",
             "content": "",
-            "custom_liquid": "<div class=\"splitted\">\n    <div>\n        <a target=\"_blank\" href=\"https://book.nestcollaborative.com/1?partner=ameda\" style=\"height: 6rem; width: auto;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/NEST-Logo.webp?v=1730213068\" style=\"height: 6rem; margin-bottom: 1rem;\" />\n        </a>\n        <h6>The Nest</h6>\n        <p>The Nest offers personalized breastfeeding support tailored to meet specific breastfeeding needs through a network of lactation consultants, providing in-home, in-office, and online consultations. They simplify the process for new parents by handling insurance billing and making expert lactation care accessible and stress-free. Friendly and knowledgeable, The Nest’s lactation consultants guide parents step-by-step through latch techniques, pumping schedules, and more.</p>\n    </div>\n    <div>\n        <a target=\"_blank\" href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\" style=\"height: 6rem; width: auto;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/TLN_Horizontal_Green-TM.svg?v=1730213068\" style=\"height: 6rem;\" />\n        </a>\n        <h6 style=\"margin-top: 1rem;\">The Lactation Network</h6>\n        <p>The Lactation Network (TLN) connects parents with insurance-covered lactation support resources. With a nationwide directory of lactation consultants, TLN offers in-home, in-office, and telehealth consultations while managing insurance claims and answering breastfeeding questions. Their streamlined process ensures easy scheduling and maximized coverage benefits, helping parents avoid hidden surprises or unexpected costs.</p>\n    </div>\n</div>",
-            "link_text": "The Nest",
-            "url": "https://book.nestcollaborative.com/1?partner=ameda",
-            "link_text_2": "TLN",
-            "url_2": "https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda",
-            "hash": ""
-          }
-        },
-        "link_zz3YfB": {
-          "type": "link",
-          "settings": {
-            "title": "Ameda Trusted Providers: The Lactation Network",
-            "icon": "",
-            "content": "",
-            "custom_liquid": "<a target=\"_blank\" href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\" style=\"height: 6rem; width: auto;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/TLN_Horizontal_Green-TM.svg?v=1730213068\" style=\"height: 6rem;\" />\n</a>\n<p style=\"margin-top: 1rem;\">The Lactation Network (TLN) connects parents with insurance-covered lactation support resources. With a nationwide directory of lactation consultants, TLN offers in-home, in-office, and telehealth consultations while managing insurance claims and answering breastfeeding questions. Their streamlined process ensures easy scheduling and maximized coverage benefits, helping parents avoid hidden surprises or unexpected costs.</p>",
-            "link_text": "TLN",
-            "url": "https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda",
+            "custom_liquid": "<div class=\"splitted\">\n    <div>\n        <a target=\"_blank\" href=\"https://book.nestcollaborative.com/1?partner=ameda\" style=\"height: 6rem; width: auto;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/NEST-Logo.webp?v=1730213068\" style=\"height: 6rem; margin-bottom: 1rem;\" />\n        </a>\n        <h6>The Nest</h6>\n        <p>The Nest offers personalized breastfeeding support tailored to meet specific breastfeeding needs through a network of lactation consultants, providing in-home, in-office, and online consultations. They simplify the process for new parents by handling insurance billing and making expert lactation care accessible and stress-free. Friendly and knowledgeable, The Nest’s lactation consultants guide parents step-by-step through latch techniques, pumping schedules, and more.</p>\n<a href=\"https://book.nestcollaborative.com/1?partner=ameda\" class=\"inline-flex card__collection--arrow\">\n    The Nest\n    <span class=\"has-ltr-icon flex items-center mis-2\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon\"><path d=\"M4.696 12h14.686m-7.007-7.5 7.5 7.5-7.5 7.5\"></path></svg></span>\n</a>\n    </div>\n    <div>\n        <a target=\"_blank\" href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\" style=\"height: 6rem; width: auto;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/TLN_Horizontal_Green-TM.svg?v=1730213068\" style=\"height: 6rem;\" />\n        </a>\n        <h6 style=\"margin-top: 1rem;\">The Lactation Network</h6>\n        <p>The Lactation Network (TLN) connects parents with insurance-covered lactation support resources. With a nationwide directory of lactation consultants, TLN offers in-home, in-office, and telehealth consultations while managing insurance claims and answering breastfeeding questions. Their streamlined process ensures easy scheduling and maximized coverage benefits, helping parents avoid hidden surprises or unexpected costs.</p>\n<a href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\" class=\"inline-flex card__collection--arrow\">\n    TLN\n    <span class=\"has-ltr-icon flex items-center mis-2\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon\"><path d=\"M4.696 12h14.686m-7.007-7.5 7.5 7.5-7.5 7.5\"></path></svg></span>\n</a>\n    </div>\n</div>",
+            "link_text": "",
+            "url": "",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -289,8 +275,7 @@
       },
       "block_order": [
         "e37a882a-f355-4d2b-a7c2-b81f8dc58268",
-        "49895fd3-000e-42d9-b379-e4cc79369f0f",
-        "link_zz3YfB"
+        "49895fd3-000e-42d9-b379-e4cc79369f0f"
       ],
       "custom_css": [
         "@media (min-width: 768px) {.splitted {display: flex; gap: 1rem; }}"
