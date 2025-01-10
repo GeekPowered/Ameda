@@ -68,7 +68,7 @@
   {% assign product_count = section.settings.products_to_show %}
   {% assign counter = 0 %}
   
-  {%- if related_products and related_products.size > 0 -%}
+  {%- if related_products != blank -%}
     {%- if section.settings.heading != blank -%}
       <div class="container">
         <p class="h5 {{ section.settings.heading_align }}">{{ section.settings.eyebrow-heading | escape }}</p>
