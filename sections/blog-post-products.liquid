@@ -64,7 +64,7 @@
     => here we assume namespace = custom, key = related_product
   {%- endcomment %}
   
-  {% assign related_products = article.metafields.custom.related_product.values %}
+  {% assign related_products = article.metafields.custom.related_product.value %}
   {% assign product_count = section.settings.products_to_show %}
   {% assign counter = 0 %}
   
