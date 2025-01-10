@@ -32,7 +32,7 @@
         "heading_align": "text-start",
         "layout": "carousel",
         "card_size_mobile": "small",
-        "card_size": "small",
+        "card_size": "large",
         "products_to_show": 8
       }
     },
