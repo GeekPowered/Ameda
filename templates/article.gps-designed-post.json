@@ -24,6 +24,18 @@
         "pagination": "none"
       }
     },
+    "blog_post_products_pFgHEz": {
+      "type": "blog-post-products",
+      "settings": {
+        "eyebrow-heading": "",
+        "heading": "Related Products",
+        "heading_align": "text-start",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8
+      }
+    },
     "global_footer_cta_dUChzP": {
       "type": "global-footer-cta",
       "settings": {
@@ -33,6 +45,7 @@
   },
   "order": [
     "main",
+    "blog_post_products_pFgHEz",
     "global_footer_cta_dUChzP"
   ]
 }
