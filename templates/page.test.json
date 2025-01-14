@@ -23,6 +23,7 @@
         "slide_DdRK7g": {
           "type": "slide",
           "settings": {
+            "image_desktop": "shopify://shop_images/Untitled_8_1.jpg",
             "url": "",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
@@ -55,6 +56,7 @@
         "slide_7mrkWe": {
           "type": "slide",
           "settings": {
+            "image_desktop": "shopify://shop_images/myajoy-pattern_c1952174-f4c5-42e3-9809-66adef2e72ec.jpg",
             "url": "",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
