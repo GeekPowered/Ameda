@@ -72,7 +72,7 @@
             "button_2_link": "",
             "button_2_style": "btn btn--primary",
             "transparent_content_color": "#ffffff",
-            "countdown_show": true,
+            "countdown_show": false,
             "countdown_end_date": "",
             "countdown_end_time": "",
             "countdown_end_text": "",
