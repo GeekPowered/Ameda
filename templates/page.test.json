@@ -17,6 +17,98 @@
         "heading_align": "text-start"
       }
     },
+    "slideshow_MNrW8D": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_DdRK7g": {
+          "type": "slide",
+          "settings": {
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "Subheading",
+            "heading": "Slideshow",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "<p>Share announcements and information with your customers and welcome them to your store.</p>",
+            "enlarge_text": true,
+            "button_1_label": "Optional button",
+            "button_1_link": "#",
+            "button_1_style": "btn btn--secondary",
+            "button_2_label": "Optional button",
+            "button_2_link": "#",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#fff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
+        "slide_7mrkWe": {
+          "type": "slide",
+          "settings": {
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "Subheading",
+            "heading": "Slideshow",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "<p>Share announcements and information with your customers and welcome them to your store.</p>",
+            "enlarge_text": true,
+            "button_1_label": "Optional button",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Optional button",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#fff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_DdRK7g",
+        "slide_7mrkWe"
+      ],
+      "settings": {
+        "height_mode": "auto",
+        "fixed_height_desktop": 600,
+        "fixed_height_mobile": 350,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-center",
+        "transition": "slide-fade",
+        "autoplay": false,
+        "slider_pause": false,
+        "autoplay_speed": 5,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
     "timed_custom_liquid_XnwwX4": {
       "type": "timed-custom-liquid",
       "settings": {
@@ -44,21 +136,12 @@
         "baby_patterns": false,
         "prevent_animation": false
       }
-    },
-    "wave_section_eT6bA3": {
-      "type": "wave-section",
-      "settings": {
-        "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#fbf6ef",
-        "wavetype": "top",
-        "waveposition": ""
-      }
     }
   },
   "order": [
     "main",
+    "slideshow_MNrW8D",
     "timed_custom_liquid_XnwwX4",
-    "timed_custom_liquid_g98X9h",
-    "wave_section_eT6bA3"
+    "timed_custom_liquid_g98X9h"
   ]
 }
