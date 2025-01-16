@@ -199,32 +199,42 @@
           <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}/{{ collection.handle }}" aria-current="page">{{ collection.title | escape }}</a>
         </li>
 
-      {%- elsif template.name == 'product' -%}
-        {%- if collection -%}
-          {%- if show_collection_listing_link -%}
+        {%- elsif template.name == 'product' -%}
+          {%- assign primary_collection = product.metafields.custom.primary_collection.value -%}
+          {%- if primary_collection -%}
+            {%- if show_collection_listing_link -%}
+              <li class="flex items-center">
+                <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}">{{ collections_title | escape }}</a> {{ divider }}
+              </li>
+            {%- endif -%}
             <li class="flex items-center">
-              <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}">{{ collections_title | escape }}</a> {{ divider }}
+              <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ primary_collection.url }}">{{ primary_collection.title | escape }}</a> {{ divider }}
+            </li>
+          {%- elsif collection -%}
+            {%- if show_collection_listing_link -%}
+              <li class="flex items-center">
+                <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}">{{ collections_title | escape }}</a> {{ divider }}
+              </li>
+            {%- endif -%}
+            <li class="flex items-center">
+              <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ collection.url }}">{{ collection.title | escape }}</a> {{ divider }}
             </li>
           {%- endif -%}
           <li class="flex items-center">
-            <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ collection.url }}">{{ collection.title | escape }}</a> {{ divider }}
+            <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ product.url }}" aria-current="page">{{ product.title | escape }}</a>
           </li>
-        {%- endif -%}
-        <li class="flex items-center">
-          <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ product.url }}" aria-current="page">{{ product.title | escape }}</a>
-        </li>
-
-      {%- elsif template.name == 'blog' and current_tags -%}
-        <li class="flex items-center">
-          <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ blog.url }}">{{ blog.title | escape }}</a> {{ divider }}
-        </li>
-        <li class="flex items-center">
-          <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ blog_tag_url }}" aria-current="page">{{ current_tags | join: ", " }}</a>
-
-          {%- if show_rss_link -%}
-            <a class="breadcrumbs-list__link breadcrumbs-list__link--rss" href="{{ shop.url }}{{ blog.url }}.atom" title="RSS" arial-label="RSS">{% render 'icon-rss' %}</a>
-          {%- endif -%}
-        </li>
+        
+        {%- elsif template.name == 'blog' and current_tags -%}
+          <li class="flex items-center">
+            <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ blog.url }}">{{ blog.title | escape }}</a> {{ divider }}
+          </li>
+          <li class="flex items-center">
+            <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ blog_tag_url }}" aria-current="page">{{ current_tags | join: ", " }}</a>
+        
+            {%- if show_rss_link -%}
+              <a class="breadcrumbs-list__link breadcrumbs-list__link--rss" href="{{ shop.url }}{{ blog.url }}.atom" title="RSS" aria-label="RSS">{% render 'icon-rss' %}</a>
+            {%- endif -%}
+          </li>        
 
       {%- elsif template.name == 'article' -%}
         <li class="flex items-center">
