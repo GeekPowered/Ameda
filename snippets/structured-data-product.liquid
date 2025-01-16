@@ -101,6 +101,19 @@
             "sameAs": [
               {{ sameAs_json | remove_last: ',' }}
             ]
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": {% if cart.total_price < 2500 %} "5.00" {% else %} "0.00" {% endif %},
+              "currency": "USD"
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/RefundOrExchangePolicy",
+            "url": "https://www.ameda.com/pages/return-policy"
           }
         }{% unless forloop.last %},{% endunless %}
       {%- endfor -%}
