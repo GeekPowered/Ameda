@@ -100,36 +100,46 @@
             "item": {{ shop.url | append: collection.url | json }}
           }
 
-        {%- elsif template.name == 'product' -%}
-          {%- assign product_position = 2 -%}
-          {%- if collection -%}
-            {%- if show_collection_listing_link -%}
+          {%- elsif template.name == 'product' -%}
+            {%- assign product_position = 2 -%}
+            {%- assign primary_collection = product.metafields.custom.primary_collection -%}
+            {%- if primary_collection -%}
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": {{ collections_title | json }},
-                "item": {{ shop.url | append: routes.collections_url | json }}
+                "name": {{ primary_collection.title | json }},
+                "item": {{ shop.url | append: primary_collection.url | json }}
               },
               {%- assign product_position = 3 -%}
+            {%- elsif collection -%}
+              {%- if show_collection_listing_link -%}
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": {{ collections_title | json }},
+                  "item": {{ shop.url | append: routes.collections_url | json }}
+                },
+                {%- assign product_position = 3 -%}
+              {%- endif -%}
+              {
+                "@type": "ListItem",
+                "position": {{ product_position }},
+                "name": {{ collection.title | json }},
+                "item": {{ shop.url | append: collection.url | json }}
+              },
+              {%- if show_collection_listing_link -%}
+                {%- assign product_position = 4 -%}
+              {%- else -%}
+                {%- assign product_position = 3 -%}
+              {%- endif -%}
             {%- endif -%}
             {
               "@type": "ListItem",
               "position": {{ product_position }},
-              "name": {{ collection.title | json }},
-              "item": {{ shop.url | append: collection.url | json }}
-            },
-            {%- if show_collection_listing_link -%}
-              {%- assign product_position = 4 -%}
-            {%- else -%}
-              {%- assign product_position = 3 -%}
-            {%- endif -%}
-          {%- endif -%}
-          {
-            "@type": "ListItem",
-            "position": {{ product_position }},
-            "name": {{ product.title | json }},
-            "item": {{ shop.url | append: product.url | json }}
-          }
+              "name": {{ product.title | json }},
+              "item": {{ shop.url | append: product.url | json }}
+            }
+          
 
         {%- elsif template.name == 'blog' and current_tags -%}
           {
