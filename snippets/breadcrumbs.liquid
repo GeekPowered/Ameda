@@ -102,7 +102,7 @@
 
           {%- elsif template.name == 'product' -%}
             {%- assign product_position = 2 -%}
-            {%- assign primary_collection = product.metafields.custom.primary_collection -%}
+            {%- assign primary_collection = product.metafields.custom.primary_collection.value -%}
             {%- if primary_collection -%}
               {
                 "@type": "ListItem",
