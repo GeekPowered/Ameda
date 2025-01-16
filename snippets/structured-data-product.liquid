@@ -106,7 +106,7 @@
             "@type": "OfferShippingDetails",
             "shippingRate": {
               "@type": "MonetaryAmount",
-              "value": {% if cart.total_price < 2500 %} "5.00" {% else %} "0.00" {% endif %},
+              "value": {% if variant.price < 2500 %} "5.00" {% else %} "0.00" {% endif %},
               "currency": "USD"
             }
           },
