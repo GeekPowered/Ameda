@@ -65,7 +65,7 @@
         "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
       ],
       "settings": {
-        "custom_liquid": "<h2>What Is Lactation Support?</h2>\n<p>Lactation support refers to the guidance, resources, and professional care that help parents establish and maintain a healthy breastfeeding relationship. This includes everything from learning proper latch techniques to troubleshooting common concerns such as low milk supply or nipple pain. At Ameda, we believe that every family deserves access to expert Lactation Support to ensure a positive breastfeeding experience through comprehensive breastfeeding assistance.</p>\n<hr>\n<br>",
+        "custom_liquid": "<h2>What Is Lactation Support?</h2>\n<p>Lactation support refers to the guidance, resources, and professional care that help parents establish and maintain a healthy breastfeeding relationship. This includes everything from learning proper latch techniques to troubleshooting common concerns such as low milk supply or nipple pain. At Ameda, we believe that every family deserves access to expert lactation support to ensure a positive breastfeeding experience.</p>\n<hr>\n<br>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
