@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -17,27 +17,15 @@
         "heading_align": "text-center"
       }
     },
-    "rich_text_yepjCH": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_MQCntY": {
-          "type": "heading",
-          "settings": {
-            "heading": "Press Room",
-            "heading_size": "h0",
-            "heading_h1": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_MQCntY"
-      ],
+    "custom_liquid_wC7CPb": {
+      "type": "custom-liquid",
       "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
+        "custom_liquid": "{% render 'gps-breadcrumb', extraclass: \"justify-center\" %}\n<h1 class=\"text-center\">Press Room</h1>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
         "color_scheme": "none",
-        "full_width": true,
+        "baby_patterns": false,
         "prevent_animation": false
       }
     },
@@ -48,7 +36,7 @@
         ".flex > a {flex: 0 0 auto;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"flex flex-wrap gap-theme justify-center\">\n  <a target=\"_blank\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/ameda-logo.webp?v=1703714431\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/ameda-logo.webp?v=1703714431\" alt=\"Ameda Logo on white background\"><\/a>\n  <a target=\"_blank\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMED_Green_logo.png?v=1707849277\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMED_Green_logo.png?v=1707849277\" alt=\"Dark green Ameda logo on white background\"><\/a>\n  <a target=\"_blank\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMEDA_White_logo.png?v=1707849305\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0849\/8062\/9819\/files\/AMEDA_White_logo.png?v=1707849305\" alt=\"White Ameda Logo on light blue background\"><\/a>\n<\/div>",
+        "custom_liquid": "<div class=\"flex flex-wrap gap-theme justify-center\">\n  <a target=\"_blank\" href=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/ameda-logo.webp?v=1703714431\"><img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/ameda-logo.webp?v=1703714431\" alt=\"Ameda Logo on white background\"></a>\n  <a target=\"_blank\" href=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/AMED_Green_logo.png?v=1707849277\"><img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/AMED_Green_logo.png?v=1707849277\" alt=\"Dark green Ameda logo on white background\"></a>\n  <a target=\"_blank\" href=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/AMEDA_White_logo.png?v=1707849305\"><img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/AMEDA_White_logo.png?v=1707849305\" alt=\"White Ameda Logo on light blue background\"></a>\n</div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -64,7 +52,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-acq.jpg",
+            "image": "shopify://shop_images/press-acq.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
@@ -76,7 +64,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-pearl.jpg",
+            "image": "shopify://shop_images/press-pearl.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
@@ -88,10 +76,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-mya-joy.jpg",
+            "image": "shopify://shop_images/press-mya-joy.jpg",
             "media_scale": 100,
             "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -100,10 +88,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-2.jpg",
+            "image": "shopify://shop_images/press-2.jpg",
             "media_scale": 100,
             "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -112,10 +100,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-3.jpg",
+            "image": "shopify://shop_images/press-3.jpg",
             "media_scale": 100,
             "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -124,10 +112,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-4.jpg",
+            "image": "shopify://shop_images/press-4.jpg",
             "media_scale": 100,
             "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -136,10 +124,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-5.jpg",
+            "image": "shopify://shop_images/press-5.jpg",
             "media_scale": 100,
             "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -148,10 +136,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-6.jpg",
+            "image": "shopify://shop_images/press-6.jpg",
             "media_scale": 100,
             "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -160,10 +148,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-7.jpg",
+            "image": "shopify://shop_images/press-7.jpg",
             "media_scale": 100,
             "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -172,10 +160,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/press-8.jpg",
+            "image": "shopify://shop_images/press-8.jpg",
             "media_scale": 100,
             "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -200,6 +188,7 @@
       ],
       "settings": {
         "title": "Licensed Photography",
+        "use_h4_class": true,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -221,7 +210,7 @@
         ".slider.is-grabbable * {pointer-events: all;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"section__header items-center flex flex-row flex-wrap gap-x-theme\" data-cc-animate=\"\"><h2 class=\"h4 section__heading mb-0 flex-auto text-start\">Brand Colors<\/h2><\/div>\n<carousel-slider class=\"carousel block\">\n  <div class=\"relative\">\n    <div class=\"slider is-grabbable\" id=\"slider-template--22181264720187__multi_column_ghd66j\">\n      <div class=\"container\">\n        <ul\n          class=\"slider__grid grid grid-flow-col auto-cols-1 sm:auto-cols-2 md:auto-cols-3 lg:auto-cols-4  gap-x-theme gap-y-6\"\n          role=\"list\">\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #ef9aa0;\">\n                <p>HEX #ef9aa0<\/p>\n              <\/div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              <\/div>\n            <\/div>\n          <\/li>\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #1a4049;\">\n                <p style=\"color:#fff;\">HEX #1a4049<\/p>\n              <\/div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              <\/div>\n            <\/div>\n          <\/li>\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #fbf6ef;\">\n                <p>HEX #fbf6ef<\/p>\n              <\/div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              <\/div>\n            <\/div>\n          <\/li>\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #c6d6e3;\">\n                <p>HEX #c6d6e3<\/p>\n              <\/div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              <\/div>\n            <\/div>\n          <\/li>\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #768591;\">\n                <p style=\"color:#fff;\">HEX #768591<\/p>\n              <\/div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              <\/div>\n            <\/div>\n          <\/li>\n        <\/ul>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/carousel-slider>",
+        "custom_liquid": "<div class=\"section__header items-center flex flex-row flex-wrap gap-x-theme\" data-cc-animate=\"\"><h2 class=\"h4 section__heading mb-0 flex-auto text-start\">Brand Colors</h2></div>\n<carousel-slider class=\"carousel block\">\n  <div class=\"relative\">\n    <div class=\"slider is-grabbable\" id=\"slider-template--22181264720187__multi_column_ghd66j\">\n      <div class=\"container\">\n        <ul\n          class=\"slider__grid grid grid-flow-col auto-cols-1 sm:auto-cols-2 md:auto-cols-3 lg:auto-cols-4  gap-x-theme gap-y-6\"\n          role=\"list\">\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #ef9aa0;\">\n                <p>HEX #ef9aa0</p>\n              </div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              </div>\n            </div>\n          </li>\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #1a4049;\">\n                <p style=\"color:#fff;\">HEX #1a4049</p>\n              </div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              </div>\n            </div>\n          </li>\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #fbf6ef;\">\n                <p>HEX #fbf6ef</p>\n              </div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              </div>\n            </div>\n          </li>\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #c6d6e3;\">\n                <p>HEX #c6d6e3</p>\n              </div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              </div>\n            </div>\n          </li>\n          <li class=\"multi-column grow w-full max-w-none slider__item\" data-cc-animate=\"\" data-cc-animate-delay=\"0.07s\">\n            <div class=\"card color-scheme color-scheme--1 relative flex flex-col h-full \">\n              <div class=\"card__media media relative w-full text-center font-bold\"\n                style=\"padding-top: 100%;background: #768591;\">\n                <p style=\"color:#fff;\">HEX #768591</p>\n              </div>\n              <div class=\"card__info flex flex-col flex-auto items-start pt-6\">\n              </div>\n            </div>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</carousel-slider>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -239,7 +228,7 @@
   },
   "order": [
     "main",
-    "rich_text_yepjCH",
+    "custom_liquid_wC7CPb",
     "custom_liquid_68z4DL",
     "multi_column_ghd66j",
     "custom_liquid_HXEMkC",

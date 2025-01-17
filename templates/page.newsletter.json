@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -6,6 +15,18 @@
       "settings": {
         "show_page_title": true,
         "heading_align": "text-start"
+      }
+    },
+    "custom_liquid_DyK6cc": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'gps-breadcrumb', extraclass: \"justify-center\" %}",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
       }
     },
     "rich_text_q8XnkM": {
@@ -23,9 +44,7 @@
       "block_order": [
         "heading_UBMXXK"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "text_position": "justify-center",
         "text_align": "text-center",
@@ -37,11 +56,9 @@
     },
     "custom_liquid_3XAkmD": {
       "type": "custom-liquid",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
-        "custom_liquid": "<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div><\/div><div style=\"margin:0 auto -6rem auto;\" class=\"pxFormGenerator\" id=\"nN21y5C-s2lc_Or7QEKn_g\"><\/div>\n<\/div>",
+        "custom_liquid": "<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div></div><div style=\"margin:0 auto -6rem auto;\" class=\"pxFormGenerator\" id=\"nN21y5C-s2lc_Or7QEKn_g\"></div>\n</div>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
@@ -71,6 +88,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_DyK6cc",
     "rich_text_q8XnkM",
     "custom_liquid_3XAkmD",
     "custom_liquid_KFqGpQ",
