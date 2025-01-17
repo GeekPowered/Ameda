@@ -25,23 +25,23 @@
     <!-- Home Breadcrumb -->
     <li class="flex items-center">
       <a class="breadcrumbs-list__link" href="{{ shop.url }}">Home</a>
-      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation" class="icon">
-        <path d="m9.693 4.5 7.5 7.5-7.5 7.5" stroke="currentColor" stroke-width="1.5" fill="none"></path>
-      </svg>
     </li>
 
     <!-- Parent Page Breadcrumb (if exists) -->
     {% if parent_breadcrumb_link and parent_breadcrumb_title %}
       <li class="flex items-center">
-        <a class="breadcrumbs-list__link" href="{{ parent_breadcrumb_link }}">{{ parent_breadcrumb_title }}</a>
         <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation" class="icon">
           <path d="m9.693 4.5 7.5 7.5-7.5 7.5" stroke="currentColor" stroke-width="1.5" fill="none"></path>
         </svg>
+        <a class="breadcrumbs-list__link" href="{{ parent_breadcrumb_link }}">{{ parent_breadcrumb_title }}</a>
       </li>
     {% endif %}
 
     <!-- Current Page or Collection Breadcrumb -->
     <li class="flex items-center">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation" class="icon">
+        <path d="m9.693 4.5 7.5 7.5-7.5 7.5" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+      </svg>
       <a class="breadcrumbs-list__link" href="{{ breadcrumb_link }}" aria-current="page">{{ breadcrumb_title }}</a>
     </li>
   </ol>
