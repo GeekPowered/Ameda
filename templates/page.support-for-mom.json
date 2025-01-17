@@ -35,6 +35,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/support-for-mom-banner.jpg",
         "url": "",
+        "breadcrumbs": true,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
@@ -204,6 +206,8 @@
         ".section--padded {padding-top: 0;}"
       ],
       "settings": {
+        "section_heading": "We're Here For You",
+        "heading_align": "text-center",
         "section_content": ""
       }
     },
@@ -318,6 +322,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/myajoy-pattern.jpg",
         "url": "",
+        "breadcrumbs": false,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
