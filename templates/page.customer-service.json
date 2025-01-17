@@ -35,6 +35,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/customer-service-banner.jpg",
         "url": "",
+        "breadcrumbs": true,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
@@ -97,6 +99,7 @@
       ],
       "settings": {
         "title": "How can we help you in your breastfeeding journey?",
+        "use_h4_class": true,
         "heading_align": "text-center",
         "button_label": "",
         "button_link": "",
@@ -161,6 +164,7 @@
       ],
       "settings": {
         "title": "",
+        "use_h4_class": true,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",

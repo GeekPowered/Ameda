@@ -35,6 +35,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/about.jpg",
         "url": "",
+        "breadcrumbs": true,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
@@ -275,6 +277,7 @@
       ],
       "settings": {
         "title": "Trusted by Hospitals",
+        "use_h4_class": true,
         "heading_align": "text-center",
         "button_label": "",
         "button_link": "",
@@ -333,6 +336,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/about-section3.jpg",
         "url": "",
+        "breadcrumbs": false,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
@@ -408,6 +413,7 @@
       ],
       "settings": {
         "title": "Loved By Moms",
+        "use_h4_class": true,
         "heading_align": "text-center",
         "button_label": "",
         "button_link": "",
@@ -507,6 +513,7 @@
       ],
       "settings": {
         "heading": "",
+        "use_h4_class": true,
         "heading_align": "text-center",
         "color_scheme": "none",
         "full_width": true

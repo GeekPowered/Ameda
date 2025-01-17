@@ -9,8 +9,21 @@
  */
 {
   "sections": {
+    "custom_liquid_XkWDit": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'gps-breadcrumb', extraclass: 'justify-center' %}\n<h1 class=\"text-center\">Exclusive Deals</h1>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
         "h1 {margin-bottom: -5rem;}"
       ],
@@ -115,6 +128,7 @@
     }
   },
   "order": [
+    "custom_liquid_XkWDit",
     "main",
     "rich_text_twp7Pc",
     "rich_text_Kyhk7N",

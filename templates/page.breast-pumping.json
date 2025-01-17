@@ -35,6 +35,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/Breastpumpingguide.jpg",
         "url": "",
+        "breadcrumbs": true,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
@@ -288,6 +290,7 @@
       ],
       "settings": {
         "heading": "Frequently Asked Questions",
+        "use_h4_class": true,
         "heading_align": "text-center",
         "color_scheme": "1",
         "full_width": true

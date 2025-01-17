@@ -35,6 +35,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/myajoy-pattern.jpg",
         "url": "",
+        "breadcrumbs": true,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
@@ -256,6 +258,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/myajoy-pattern.jpg",
         "url": "",
+        "breadcrumbs": false,
+        "breadcrumb_align": "justify-center",
         "height_mode": "auto",
         "fixed_height_desktop": 600,
         "fixed_height_mobile": 350,
