@@ -14,7 +14,7 @@
 {% comment %}
   Check if the metafield `parent.page` is set for the current page
 {% endcomment %}
-{% if page.metafields.parent.page.value %}
+{% if page.metafields.parent.page %}
   {% assign parent_breadcrumb_link = page.metafields.parent.page.url %}
   {% assign parent_breadcrumb_title = page.metafields.parent.page.title %}
 {% endif %}
