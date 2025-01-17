@@ -55,6 +55,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/inscopy.jpg",
         "url": "",
+        "breadcrumbs": true,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
@@ -117,6 +119,7 @@
       ],
       "settings": {
         "title": "Let's Get You Qualified",
+        "use_h4_class": true,
         "heading_align": "text-center",
         "button_label": "",
         "button_link": "",
@@ -247,6 +250,8 @@
         "49895fd3-000e-42d9-b379-e4cc79369f0f"
       ],
       "settings": {
+        "section_heading": "We're Here For You",
+        "heading_align": "text-center",
         "section_content": ""
       }
     },
