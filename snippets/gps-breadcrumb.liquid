@@ -15,8 +15,11 @@
   Check if the metafield `parent.page` is set for the current page
 {% endcomment %}
 {% if page.metafields.parent.page %}
-  {% assign parent_breadcrumb_link = page.metafields.parent.page.url %}
-  {% assign parent_breadcrumb_title = page.metafields.parent.page.title %}
+  {% assign parent_page = page.metafields.parent.page %}
+  {% if parent_page.url and parent_page.title %}
+    {% assign parent_breadcrumb_link = parent_page.url %}
+    {% assign parent_breadcrumb_title = parent_page.title %}
+  {% endif %}
 {% endif %}
 
 <nav class="breadcrumbs flex justify-between w-full" aria-label="Breadcrumbs">
