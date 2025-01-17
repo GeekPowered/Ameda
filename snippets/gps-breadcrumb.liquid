@@ -28,7 +28,7 @@
     </li>
 
     <!-- Parent Page Breadcrumb (if exists) -->
-    {% if parent_breadcrumb_link.value != blank and parent_breadcrumb_title.value != blank %}
+    {% if parent_breadcrumb_link != blank and parent_breadcrumb_title != blank %}
       <li class="flex items-center">
         <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation" class="icon">
           <path d="m9.693 4.5 7.5 7.5-7.5 7.5" stroke="currentColor" stroke-width="1.5" fill="none"></path>
@@ -58,7 +58,7 @@
             "name": "Home",
             "item": "{{ shop.url }}"
         },
-        {% if parent_breadcrumb_link.value != blank and parent_breadcrumb_title.value != blank %}
+        {% if parent_breadcrumb_link != blank and parent_breadcrumb_title != blank %}
         {
             "@type": "ListItem",
             "position": 2,
