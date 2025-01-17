@@ -1,0 +1,45 @@
+{% assign breadcrumb_link = "" %}
+{% assign breadcrumb_title = "" %}
+
+{% if collection %}
+  {% assign breadcrumb_link = collection.url %}
+{% assign breadcrumb_title = collection.title %}
+{% elsif page %}
+  {% assign breadcrumb_link = page.url %}
+  {% assign breadcrumb_title = page.title %}
+{% endif %}
+
+<nav class="breadcrumbs flex justify-between w-full" aria-label="Breadcrumbs">
+  <ol class="breadcrumbs-list flex has-ltr-icon {{ extraclass }}">
+    <li class="flex items-center">
+      <a class="breadcrumbs-list__link" href="{{ shop.url }}">Home</a>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation" class="icon">
+        <path d="m9.693 4.5 7.5 7.5-7.5 7.5" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+      </svg>
+    </li>
+    <li class="flex items-center">
+      <a class="breadcrumbs-list__link" href="{{ breadcrumb_link }}" aria-current="page">{{ breadcrumb_title }}</a>
+    </li>
+  </ol>
+</nav>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ shop.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ breadcrumb_title }}",
+            "item": "{{ shop.url }}{{ breadcrumb_link }}"
+        }
+    ]
+}
+</script>
