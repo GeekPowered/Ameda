@@ -1,12 +1,22 @@
 {% assign breadcrumb_link = "" %}
 {% assign breadcrumb_title = "" %}
+{% assign current_page_link = "" %}
+{% assign current_page_title = "" %}
 
 {% if collection %}
   {% assign breadcrumb_link = collection.url %}
-{% assign breadcrumb_title = collection.title %}
+  {% assign breadcrumb_title = collection.title %}
 {% elsif page %}
-  {% assign breadcrumb_link = page.url %}
-  {% assign breadcrumb_title = page.title %}
+  {% assign parent_page_handle = page.handle | split: "/" | slice: 0, page.handle | split: "/" | size | minus: 1 %}
+  {% assign parent_page = pages[parent_page_handle] %}
+  
+  {% if parent_page %}
+    {% assign breadcrumb_link = parent_page.url %}
+    {% assign breadcrumb_title = parent_page.title %}
+  {% endif %}
+  
+  {% assign current_page_link = page.url %}
+  {% assign current_page_title = page.title %}
 {% endif %}
 
 <nav class="breadcrumbs flex justify-between w-full" aria-label="Breadcrumbs">
@@ -17,8 +27,16 @@
         <path d="m9.693 4.5 7.5 7.5-7.5 7.5" stroke="currentColor" stroke-width="1.5" fill="none"></path>
       </svg>
     </li>
+    {% if breadcrumb_link and breadcrumb_title %}
     <li class="flex items-center">
-      <a class="breadcrumbs-list__link" href="{{ breadcrumb_link }}" aria-current="page">{{ breadcrumb_title }}</a>
+      <a class="breadcrumbs-list__link" href="{{ breadcrumb_link }}">{{ breadcrumb_title }}</a>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation" class="icon">
+        <path d="m9.693 4.5 7.5 7.5-7.5 7.5" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+      </svg>
+    </li>
+    {% endif %}
+    <li class="flex items-center">
+      <span class="breadcrumbs-list__current" aria-current="page">{{ current_page_title }}</span>
     </li>
   </ol>
 </nav>
@@ -34,11 +52,19 @@
             "name": "Home",
             "item": "{{ shop.url }}"
         },
+        {% if breadcrumb_title and breadcrumb_link %}
         {
             "@type": "ListItem",
             "position": 2,
             "name": "{{ breadcrumb_title }}",
             "item": "{{ shop.url }}{{ breadcrumb_link }}"
+        },
+        {% endif %}
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{ current_page_title }}",
+            "item": "{{ shop.url }}{{ current_page_link }}"
         }
     ]
 }
