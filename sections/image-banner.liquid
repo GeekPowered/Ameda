@@ -195,6 +195,11 @@
     {%- if section.blocks.size > 0 -%}
       <div class="container{% unless bg_color %}{% if section.settings.full_width or section.settings.mobile_stacked %} md-down:p-xl{% endif %}{% endunless %} flex {{ overlay_position | first }}{% if section.settings.mob_center_text %} md-down:center{% endif %}">
         <div class="text-overlay{% if bg_color %} text-overlay--bg{% endif %} {{ section.settings.overlay_text_align }} {% if section.settings.mob_center_text %} md-down:text-center{% endif %}"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
+
+          {% if section.settings.breadcrumbs == true %}
+            {% render 'gps-breadcrumb', extraclass: section.settings.breadcrumb_align %}
+          {% endif %}
+          
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'subheading' -%}
@@ -262,6 +267,32 @@
       "type": "url",
       "id": "url",
       "label": "Image link (optional)"
+    },
+    {
+      "type": "checkbox",
+      "id": "breadcrumbs",
+      "label": "Show breadcrumbs",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "breadcrumb_align",
+      "label": "Breadcrumb alignment",
+      "options": [
+        {
+          "value": "justify-start",
+          "label": "Left"
+        },
+        {
+          "value": "justify-center",
+          "label": "Center"
+        },
+        {
+          "value": "justify-end",
+          "label": "Right"
+        }
+      ],
+      "default": "justify-center"
     },
     {
       "type": "header",
