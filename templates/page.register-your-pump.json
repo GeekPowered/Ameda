@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -24,8 +33,10 @@
         "heading_GxhDPU"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/register-pump-banner.jpg",
+        "image_desktop": "shopify://shop_images/register-pump-banner.jpg",
         "url": "",
+        "breadcrumbs": true,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
         "fixed_height_mobile": 250,
@@ -61,7 +72,7 @@
         "text_GbAQtb": {
           "type": "text",
           "settings": {
-            "text": "<p>Choosing a pump can be a difficult decision, but we’re pumped to know you’ve chosen Ameda for all of your breastfeeding and pumping needs.<br\/><br\/>To register your pump, please submit the following form so that we have your pump in our system.<\/p>",
+            "text": "<p>Choosing a pump can be a difficult decision, but we’re pumped to know you’ve chosen Ameda for all of your breastfeeding and pumping needs.<br/><br/>To register your pump, please submit the following form so that we have your pump in our system.</p>",
             "enlarge_text": true
           }
         }
@@ -92,7 +103,7 @@
     "custom_liquid_49Pxdh": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h2 class=\"text-center\">Pump Registration<\/h2>\n<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div style=\"margin:0 auto -6rem auto;\" class=\"pxFormGenerator\" id=\"3A_eDfckU59IIPw02qc04w\"><\/div>\n<\/div>",
+        "custom_liquid": "<h2 class=\"text-center\">Pump Registration</h2>\n<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div style=\"margin:0 auto -6rem auto;\" class=\"pxFormGenerator\" id=\"3A_eDfckU59IIPw02qc04w\"></div>\n</div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
