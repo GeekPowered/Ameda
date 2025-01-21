@@ -149,7 +149,41 @@
                         "priceValidUntil": "{{ 'now' | date: '%Y-%m-%d' }}",
                         "itemCondition": "https://schema.org/NewCondition",
                         "availability": "https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
-                        "url": "{{ shop.url }}{{ product.url }}"
+                        "url": "{{ shop.url }}{{ product.url }}",
+                        "shippingDetails": {
+                          "@type": "OfferShippingDetails",
+                          "shippingRate": {
+                            "@type": "MonetaryAmount",
+                            "value": {% if product.price < 2500 %} "5.00" {% else %} "0.00" {% endif %},
+                            "currency": "USD"
+                          },
+                          "shippingDestination": {
+                            "@type": "DefinedRegion",
+                            "addressCountry": "US"
+                          },
+                          "deliveryTime": {
+                            "@type": "ShippingDeliveryTime",
+                            "handlingTime": {
+                              "@type": "QuantitativeValue",
+                              "minValue": 1,
+                              "maxValue": 1,
+                              "unitCode": "DAY"
+                            },
+                            "transitTime": {
+                              "@type": "QuantitativeValue",
+                              "minValue": 5,
+                              "maxValue": 7,
+                              "unitCode": "DAY"
+                            }
+                          }
+                        },
+                        "hasMerchantReturnPolicy": {
+                          "@type": "MerchantReturnPolicy",
+                          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                          "applicableCountry": "US",
+                          "merchantReturnDays": 7,
+                          "url": "https://www.ameda.com/pages/return-policy"
+                        }
                     }
                     {% if product.metafields.okendo.summaryData.reviewCount > 0 %}
                     ,"aggregateRating": {
