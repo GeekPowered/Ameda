@@ -131,8 +131,9 @@
           },
           "hasMerchantReturnPolicy": {
             "@type": "MerchantReturnPolicy",
-            "returnPolicyCategory": "https://schema.org/RefundOrExchangePolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
             "applicableCountry": "US",
+            "merchantReturnDays": 7,
             "url": "https://www.ameda.com/pages/return-policy"
           }
         }{% unless forloop.last %},{% endunless %}
