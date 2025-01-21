@@ -108,11 +108,31 @@
               "@type": "MonetaryAmount",
               "value": {% if variant.price < 2500 %} "5.00" {% else %} "0.00" {% endif %},
               "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 5,
+                "maxValue": 7,
+                "unitCode": "DAY"
+              }
             }
           },
           "hasMerchantReturnPolicy": {
             "@type": "MerchantReturnPolicy",
             "returnPolicyCategory": "https://schema.org/RefundOrExchangePolicy",
+            "applicableCountry": "US",
             "url": "https://www.ameda.com/pages/return-policy"
           }
         }{% unless forloop.last %},{% endunless %}
