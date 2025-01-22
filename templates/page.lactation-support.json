@@ -60,6 +60,62 @@
         "prevent_animation": false
       }
     },
+    "1ff950cf-34b7-4e69-b8e2-53d2fadb9987": {
+      "type": "help-links",
+      "blocks": {
+        "e37a882a-f355-4d2b-a7c2-b81f8dc58268": {
+          "type": "link",
+          "settings": {
+            "title": "International Board-Certified Lactation Consultants (IBCLCs)",
+            "icon": "",
+            "content": "IBCLCs are the gold standard in lactation care, having completed extensive education and clinical training in breastfeeding management. Whether you need an in-home visit, an in-office appointment, or a virtual consultation via telehealth, lactation consultants can offer personalized strategies tailored to your needs.",
+            "custom_liquid": "",
+            "link_text": "",
+            "url": "",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "49895fd3-000e-42d9-b379-e4cc79369f0f": {
+          "type": "link",
+          "settings": {
+            "title": "Ameda Trusted Providers",
+            "icon": "",
+            "content": "",
+            "custom_liquid": "<div class=\"splitted\">\n    <div>\n        <a target=\"_blank\" href=\"https://book.nestcollaborative.com/1?partner=ameda\" style=\"height: 6rem; width: auto;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/NEST-Logo.webp?v=1730213068\" style=\"height: 6rem; margin-bottom: 1rem;\" />\n        </a>\n        <h6>The Nest</h6>\n        <p>The Nest offers personalized breastfeeding support tailored to meet specific breastfeeding needs through a network of lactation consultants, providing in-home, in-office, and online consultations. They simplify the process for new parents by handling insurance billing and making expert lactation care accessible and stress-free. Friendly and knowledgeable, The Nest’s lactation consultants guide parents step-by-step through latch techniques, pumping schedules, and more.</p>\n<a href=\"https://book.nestcollaborative.com/1?partner=ameda\" class=\"btn btn--primary\">The Nest</a>\n    </div>\n    <div>\n        <a target=\"_blank\" href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\" style=\"height: 6rem; width: auto;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/TLN_Horizontal_Green-TM.svg?v=1730213068\" style=\"height: 6rem;\" />\n        </a>\n        <h6 style=\"margin-top: 1rem;\">The Lactation Network</h6>\n        <p>The Lactation Network (TLN) connects parents with insurance-covered lactation support resources. With a nationwide directory of lactation consultants, TLN offers in-home, in-office, and telehealth consultations while managing insurance claims and answering breastfeeding questions. Their streamlined process ensures easy scheduling and maximized coverage benefits, helping parents avoid hidden surprises or unexpected costs.</p>\n<a href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\" class=\"btn btn--primary\">TLN</a>\n    </div>\n</div>",
+            "link_text": "",
+            "url": "",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        }
+      },
+      "block_order": [
+        "e37a882a-f355-4d2b-a7c2-b81f8dc58268",
+        "49895fd3-000e-42d9-b379-e4cc79369f0f"
+      ],
+      "custom_css": [
+        ".helpful-links {margin-top: 0; margin-bottom: 0;}",
+        ".splitted {display: flex; gap: 5rem; flex-direction: column;}",
+        "@media (min-width: 768px) {.splitted {flex-direction: row; gap: 1rem; }}"
+      ],
+      "settings": {
+        "section_heading": "Book a consultation with a Lactation Consultant",
+        "heading_align": "text-left",
+        "section_content": ""
+      }
+    },
+    "wave_section_9ctqgV": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
     "custom_liquid_UAWcT4": {
       "type": "custom-liquid",
       "custom_css": [
@@ -243,52 +299,6 @@
         "waveposition": ""
       }
     },
-    "1ff950cf-34b7-4e69-b8e2-53d2fadb9987": {
-      "type": "help-links",
-      "blocks": {
-        "e37a882a-f355-4d2b-a7c2-b81f8dc58268": {
-          "type": "link",
-          "settings": {
-            "title": "International Board-Certified Lactation Consultants (IBCLCs)",
-            "icon": "",
-            "content": "IBCLCs are the gold standard in lactation care, having completed extensive education and clinical training in breastfeeding management. Whether you need an in-home visit, an in-office appointment, or a virtual consultation via telehealth, lactation consultants can offer personalized strategies tailored to your needs.",
-            "custom_liquid": "",
-            "link_text": "",
-            "url": "",
-            "link_text_2": "",
-            "url_2": "",
-            "hash": ""
-          }
-        },
-        "49895fd3-000e-42d9-b379-e4cc79369f0f": {
-          "type": "link",
-          "settings": {
-            "title": "Ameda Trusted Providers",
-            "icon": "",
-            "content": "",
-            "custom_liquid": "<div class=\"splitted\">\n    <div>\n        <a target=\"_blank\" href=\"https://book.nestcollaborative.com/1?partner=ameda\" style=\"height: 6rem; width: auto;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/NEST-Logo.webp?v=1730213068\" style=\"height: 6rem; margin-bottom: 1rem;\" />\n        </a>\n        <h6>The Nest</h6>\n        <p>The Nest offers personalized breastfeeding support tailored to meet specific breastfeeding needs through a network of lactation consultants, providing in-home, in-office, and online consultations. They simplify the process for new parents by handling insurance billing and making expert lactation care accessible and stress-free. Friendly and knowledgeable, The Nest’s lactation consultants guide parents step-by-step through latch techniques, pumping schedules, and more.</p>\n<a href=\"https://book.nestcollaborative.com/1?partner=ameda\" class=\"inline-flex card__collection--arrow\">\n    The Nest\n    <span class=\"has-ltr-icon flex items-center mis-2\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon\"><path d=\"M4.696 12h14.686m-7.007-7.5 7.5 7.5-7.5 7.5\"></path></svg></span>\n</a>\n    </div>\n    <div>\n        <a target=\"_blank\" href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\" style=\"height: 6rem; width: auto;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/TLN_Horizontal_Green-TM.svg?v=1730213068\" style=\"height: 6rem;\" />\n        </a>\n        <h6 style=\"margin-top: 1rem;\">The Lactation Network</h6>\n        <p>The Lactation Network (TLN) connects parents with insurance-covered lactation support resources. With a nationwide directory of lactation consultants, TLN offers in-home, in-office, and telehealth consultations while managing insurance claims and answering breastfeeding questions. Their streamlined process ensures easy scheduling and maximized coverage benefits, helping parents avoid hidden surprises or unexpected costs.</p>\n<a href=\"https://registration.mytln.care/?utm_source=partner_referral&utm_medium=interlink&utm_campaign=Ameda\" class=\"inline-flex card__collection--arrow\">\n    TLN\n    <span class=\"has-ltr-icon flex items-center mis-2\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon\"><path d=\"M4.696 12h14.686m-7.007-7.5 7.5 7.5-7.5 7.5\"></path></svg></span>\n</a>\n    </div>\n</div>",
-            "link_text": "",
-            "url": "",
-            "link_text_2": "",
-            "url_2": "",
-            "hash": ""
-          }
-        }
-      },
-      "block_order": [
-        "e37a882a-f355-4d2b-a7c2-b81f8dc58268",
-        "49895fd3-000e-42d9-b379-e4cc79369f0f"
-      ],
-      "custom_css": [
-        ".splitted {display: flex; gap: 5rem; flex-direction: column;}",
-        "@media (min-width: 768px) {.splitted {flex-direction: row; gap: 1rem; }}"
-      ],
-      "settings": {
-        "section_heading": "Our Lactation Support Resources",
-        "heading_align": "text-left",
-        "section_content": ""
-      }
-    },
     "70b6796a-4aa7-4791-9ea6-72e90afed64c": {
       "type": "multi-column",
       "blocks": {
@@ -344,7 +354,7 @@
         "column_zVp3Rb"
       ],
       "custom_css": [
-        ".multi-column .card {border-radius: 1rem;}",
+        ".multi-column .card {border-radius: 1rem; }",
         "h3 {color: #fff; background: #ef9aa0; width: 3rem; height: 3rem; display: flex; justify-content: center; text-align: center; border-radius: 50%; flex-shrink: 0; margin-top: 0.25rem;}",
         ".card .card__info {padding: calc(6 * var(--space-unit)); display: flex; flex-direction: row; gap: 1rem; align-items: flex-start;}"
       ],
@@ -509,6 +519,8 @@
   "order": [
     "main",
     "329e5978-de6e-4b2d-9322-d45d0e244c4b",
+    "1ff950cf-34b7-4e69-b8e2-53d2fadb9987",
+    "wave_section_9ctqgV",
     "custom_liquid_UAWcT4",
     "media_with_text_3q7MDT",
     "media_with_text_6QBKBn",
@@ -516,7 +528,6 @@
     "custom_liquid_AdDxg6",
     "media_with_text_i3kJhw",
     "611733a1-7260-4231-a0db-d622d34c311f",
-    "1ff950cf-34b7-4e69-b8e2-53d2fadb9987",
     "70b6796a-4aa7-4791-9ea6-72e90afed64c",
     "custom_liquid_cdpWVf",
     "d28ea09b-3af1-4fab-aa1d-888bd02ef647",
