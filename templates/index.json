@@ -50,6 +50,8 @@
       "settings": {
         "image_desktop": "shopify://shop_images/breastfeeding-hero.jpg",
         "url": "",
+        "breadcrumbs": false,
+        "breadcrumb_align": "justify-center",
         "height_mode": "fixed",
         "fixed_height_desktop": 550,
         "fixed_height_mobile": 500,
@@ -118,6 +120,7 @@
       ],
       "settings": {
         "title": "",
+        "use_h4_class": true,
         "heading_align": "text-center",
         "button_label": "",
         "button_link": "",
@@ -560,6 +563,8 @@
         ".section--padded {margin-top: 0;}"
       ],
       "settings": {
+        "section_heading": "We're Here For You",
+        "heading_align": "text-center",
         "section_content": "From finding the right pump to usage instructions and general breastfeeding tips, explore our resources for moms below."
       }
     },
