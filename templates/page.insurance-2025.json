@@ -596,7 +596,7 @@
         "video_autoplay": false,
         "layout": "left",
         "image_fit": "cover",
-        "media_width": 50,
+        "media_width": 47,
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
