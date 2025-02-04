@@ -12,6 +12,10 @@
     assign og_type = 'product.group'
   elsif request.page_type == 'password'
     assign og_url = shop.url
+  elsif request.path contains '/search'
+    assign og_description = settings.search_meta
+  elsif request.path == '/collections'
+    assign og_description = settings.collections_meta
   endif
 
   if current_tags.size > 0
