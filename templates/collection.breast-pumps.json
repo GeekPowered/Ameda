@@ -328,7 +328,8 @@
         "text_8h4ebQ"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem;}"
+        ".media {border-radius: 1rem;}",
+        ".section--padded > div {padding-bottom: 5rem}"
       ],
       "settings": {
         "video_external": "",
