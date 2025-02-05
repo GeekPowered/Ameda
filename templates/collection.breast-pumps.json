@@ -85,6 +85,101 @@
         "prevent_animation": false
       }
     },
+    "wave_section_YNHBQM": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "rgba(0,0,0,0)",
+        "wavetype": "bottom",
+        "waveposition": "top"
+      }
+    },
+    "media_with_text_Hnawhq": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_3PQKqU": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Ameda Breast Pumps",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_DAL6Jy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We offer both personal and hospital-grade breast pumps, all of which are available through insurance. Our collection includes a wide variety of pumps that are designed to cater to different preferences and needs. Whether you need a multi-user pump to rent or want to purchase a single-user pump through your insurance, Ameda’s products help you extract milk and store it comfortably and conveniently. We are committed to making your breastfeeding journey as easy and effective as possible, with options tailored to your unique lifestyle. Our breast pumps are built to be durable, efficient, and easy to use, ensuring that you can express milk whenever you need to, whether you’re at home, at work, or on the go. Additionally, Ameda offers a range of accessories that complement our breast pumps, providing added convenience and comfort to your pumping sessions.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3PQKqU",
+        "text_DAL6Jy"
+      ],
+      "custom_css": [
+        ".media {border-radius: 1rem; overflow: hidden;}"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "3",
+        "only_content_color_scheme": false,
+        "baby_patterns": true
+      }
+    },
+    "wave_section_VnEjMB": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "rgba(0,0,0,0)",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "top",
+        "waveposition": "bottom"
+      }
+    },
+    "media_with_text_pqTeFf": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_UUPDaE": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Ameda Breast Pumps",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_rDzkTQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We offer both personal and hospital-grade breast pumps, all of which are available through insurance. Our collection includes a wide variety of pumps that are designed to cater to different preferences and needs. Whether you need a multi-user pump to rent or want to purchase a single-user pump through your insurance, Ameda’s products help you extract milk and store it comfortably and conveniently. We are committed to making your breastfeeding journey as easy and effective as possible, with options tailored to your unique lifestyle. Our breast pumps are built to be durable, efficient, and easy to use, ensuring that you can express milk whenever you need to, whether you’re at home, at work, or on the go. Additionally, Ameda offers a range of accessories that complement our breast pumps, providing added convenience and comfort to your pumping sessions.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UUPDaE",
+        "text_rDzkTQ"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
     "global_footer_cta_VcTUnt": {
       "type": "global-footer-cta",
       "settings": {
@@ -98,6 +193,10 @@
     "collection-banner",
     "collection-products",
     "custom_liquid_7BngVk",
+    "wave_section_YNHBQM",
+    "media_with_text_Hnawhq",
+    "wave_section_VnEjMB",
+    "media_with_text_pqTeFf",
     "global_footer_cta_VcTUnt"
   ]
 }
