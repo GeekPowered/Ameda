@@ -119,7 +119,7 @@
       ],
       "custom_css": [
         ".media {border-radius: 1rem; overflow: hidden;}",
-        ".baby-pattern > div {padding: 3rem 0;}"
+        ".baby-pattern > div {padding: 5rem 0;}"
       ],
       "settings": {
         "video_external": "",
@@ -329,7 +329,7 @@
       ],
       "custom_css": [
         ".media {border-radius: 1rem;}",
-        ".section--padded > div {padding-bottom: 5rem}"
+        ".section--padded > div {padding-bottom: 5rem;}"
       ],
       "settings": {
         "video_external": "",
