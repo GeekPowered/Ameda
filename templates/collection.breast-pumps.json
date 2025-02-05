@@ -88,8 +88,8 @@
     "wave_section_YNHBQM": {
       "type": "wave-section",
       "settings": {
-        "wavebgcolor": "#fbf6ef",
-        "wavesvgcolor": "rgba(0,0,0,0)",
+        "wavebgcolor": "rgba(0,0,0,0)",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": "top"
       }
@@ -118,7 +118,8 @@
         "text_DAL6Jy"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem; overflow: hidden;}"
+        ".media {border-radius: 1rem; overflow: hidden;}",
+        ".baby-pattern > div {padding: 3rem 0;}"
       ],
       "settings": {
         "video_external": "",
