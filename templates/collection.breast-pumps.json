@@ -39,6 +39,9 @@
     },
     "collection-banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-banner__content {width: 100%;}"
+      ],
       "settings": {
         "show_collection_title": true,
         "show_product_count": true,
