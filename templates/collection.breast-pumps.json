@@ -9,34 +9,6 @@
  */
 {
   "sections": {
-    "timed_custom_liquid_ntbmja": {
-      "type": "timed-custom-liquid",
-      "settings": {
-        "custom_liquid": "{% if collection.metafields.custom.enable_sale_banner == true %}\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/bfbv2.jpg?v=1732202782\" width=\"100%\" height=\"auto\" alt=\"Black Friday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n{% endif %}",
-        "iso_start_date_time": "2024-11-21T14:34:00.000Z",
-        "iso_end_date_time": "2024-12-02T05:59:00.000Z",
-        "section_height": "tight",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
-    "timed_custom_liquid_AW9C33": {
-      "type": "timed-custom-liquid",
-      "settings": {
-        "custom_liquid": "{% if collection.metafields.custom.enable_sale_banner == true %}\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/CMV2.jpg?v=1732204225\" width=\"100%\" height=\"auto\" alt=\"Cyber Monday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n{% endif %}",
-        "iso_start_date_time": "2024-12-02T05:59:00.000Z",
-        "iso_end_date_time": "2024-12-03T05:59:00.000Z",
-        "section_height": "tight",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
     "collection-banner": {
       "type": "main-collection-banner",
       "custom_css": [
@@ -119,14 +91,16 @@
       ],
       "custom_css": [
         ".media {border-radius: 1rem; overflow: hidden;}",
-        ".baby-pattern > div {padding: 5rem 0;}"
+        ".media img {object-position: 10% 33% !important;}",
+        ".baby-pattern > div {padding-top: 5rem !important; padding-bottom: 5rem !important;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/mya-joy-plus-baby.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "left",
-        "image_fit": "contain",
+        "image_fit": "cover",
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
@@ -171,6 +145,7 @@
         ".media {border-radius: 1rem;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/sku_131a40_010_rgb_2.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -208,9 +183,11 @@
         "text_A7fFxQ"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem;}"
+        ".media {border-radius: 1rem;}",
+        ".section--padded {padding-top: 0 !important;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -248,9 +225,11 @@
         "text_djDRF9"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem;}"
+        ".media {border-radius: 1rem;}",
+        ".section--padded {padding-top: 0 !important;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/01.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -288,9 +267,11 @@
         "text_JmCMib"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem;}"
+        ".media {border-radius: 1rem;}",
+        ".section--padded {padding-top: 0 !important;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/joykit_2.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -332,6 +313,7 @@
         ".section--padded > div {padding-bottom: 5rem;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/pearl-with-award.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -378,7 +360,7 @@
         "text_z9mzwi"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem;}"
+        ".media,iframe {border-radius: 1rem;}"
       ],
       "settings": {
         "video_external": "https://www.youtube.com/watch?v=2U0s5D8maNk",
@@ -412,6 +394,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/accessible.png",
             "media_scale": 100,
             "heading": "Accessibility",
             "text": "<p>Pump comfortably and confidently wherever you are. Ameda’s focus on user-friendly designs means that every mom can easily incorporate pumping into her routine.</p>",
@@ -423,6 +406,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/comfort.png",
             "media_scale": 100,
             "heading": "Comfort",
             "text": "<p>We prioritize your comfort. Each Ameda pump has adjustable settings, so you can personalize your experience to match your body and needs for a pain-free, natural feel.</p>",
@@ -434,6 +418,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/convenience.png",
             "media_scale": 100,
             "heading": "Convenience",
             "text": "<p>Pump on your schedule, no matter where you are, and make each pumping session efficient and stress-free. Ameda’s range of pumps is designed to help make pumping a hassle-free part of your day.</p>",
@@ -446,6 +431,10 @@
         "column_46tWVB",
         "column_FzyVi9",
         "column_YwUGqD"
+      ],
+      "custom_css": [
+        ".card__media {border-radius: 0; overflow: hidden; padding-top: 0 !important; height: 6rem;}",
+        ".card__media img {width: auto; height: 100%; border: 2px solid #ef8d96; border-radius: 50%; background: #fff;}"
       ],
       "settings": {
         "title": "",
@@ -514,6 +503,272 @@
         "waveposition": "bottom"
       }
     },
+    "custom_liquid_dpk6xA": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-bottom: 0 !important;}"
+      ],
+      "settings": {
+        "custom_liquid": "<style>\n.section:has(h2 + a) {\nbackground: #fff !important;\nmargin-top: 0 !important;\nmargin-bottom: 0 !important;\npadding-bottom: calc(var(--section-gap) * var(--fluid-1-5));\n}\n.section:has(h2 + a) .card {\nbackground-color: #fbf6ef;\n}\n.section:has(h2 + a) .multi-column::before {\n  content: '1';\n  position: absolute;\n  top: -1rem;\n  left: -1rem;\n  z-index: 1;\n  padding: 0.5rem;\n  width: 3rem;\n  height: 3rem;\n  text-align: center;\n  background: rgba(var(--link-color));\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #fff;\n  font-weight: bold;\n  border-radius: 50%;\n}\n\n.section:has(h2 + a) .multi-column:nth-child(2)::before {\n  content: '2';\n}\n\n.section:has(h2 + a) .multi-column:nth-child(3)::before {\n  content: '3';\n}\n</style>\n\n<div style=\"text-align:center;\">\n<h2>How Does the Insurance Process Work?</h2>\n<p class=\"mb-0 enlarge-text\">Getting your Ameda breast pump through insurance is simple and hassle-free:</p>\n</div>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "multi_column_AwtHbn": {
+      "type": "multi-column",
+      "blocks": {
+        "column_fwLaf8": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Submit the Contact Form",
+            "text": "<p>Start by filling out the contact form on our website’s Insurance Page. This step helps us gather the information needed to assess your eligibility and connect you with the appropriate resources.</p>",
+            "button_label": "Fill Out The Form",
+            "button_link": "https://www.ameda.com/pages/insurance"
+          }
+        },
+        "column_inYnFi": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Provide Additional Information",
+            "text": "<p>After submitting the form, you may need to provide more details, such as your insurance plan information, prescription requirements, or other supporting documents. These details help us ensure a smooth approval process with your insurance provider.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_wzJtab": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Receive Contact from Our Providers",
+            "text": "<p>Once all necessary information is submitted, our providers will reach out to guide you through the final steps. They will confirm any additional details, assist with ordering, and arrange for your pump to be shipped directly to you—often with free shipping.</p><p>Our customer service team is available to answer your questions and assist you throughout the process. Depending on your insurance coverage, you may also have access to hospital-based purchasing or rental options for added convenience.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_fwLaf8",
+        "column_inYnFi",
+        "column_wzJtab"
+      ],
+      "custom_css": [
+        ".multi-column .card {border-radius: 1rem; max-width: none;}",
+        ".multi-column {width: 100% !important; position: relative;}",
+        "h2,h2 + a {display: none;}"
+      ],
+      "settings": {
+        "title": "Insurance Process",
+        "use_h4_class": false,
+        "heading_align": "text-start",
+        "button_label": "link",
+        "button_link": "#",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "media_with_text_YrKhWd": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_anD9DM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Choose Ameda?",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_KVerg6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every mom's breastfeeding journey is unique, which is why Ameda offers a wide range of breast pumps to suit different needs and preferences. Our trusted collection empowers moms to enjoy a comfortable and efficient breastfeeding experience. Additionally, we partner with many insurance providers to help you get a breast pump at no cost if you qualify.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_anD9DM",
+        "text_KVerg6"
+      ],
+      "custom_css": [
+        ".media {border-radius: 1rem;}",
+        ".section--padded {padding-top: 0 !important;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/17EA9B0C-2F0D-463A-BDB0-B1D2417BD4CA-279036_c460d620-0b27-4541-b6bf-a7107b012136.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "wave_section_e6T8XX": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "top",
+        "waveposition": "top"
+      }
+    },
+    "multi_column_hx4gVz": {
+      "type": "multi-column",
+      "blocks": {
+        "column_3X7pxT": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/nipple-shield_1_3.jpg",
+            "media_scale": 100,
+            "heading": "Breast Shields",
+            "text": "<p>Available in multiple sizes, Ameda’s breast shields ensure a comfortable fit, helping to make your pumping sessions as efficient as possible.</p><p><a href=\"/products/ameda-washable-skin-to-skin-nipple-shield-for-breastfeeding\" title=\"Ameda Washable Skin-to-Skin Nipple Shield for Breastfeeding, Ultra-Thin Flexible Silicone, Cut-Out\">Breast Shields</a></p>",
+            "button_label": "Breast Shields",
+            "button_link": ""
+          }
+        },
+        "column_zYErNb": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/2-pack-5oz-milk-storage-bottles_2_1.jpg",
+            "media_scale": 100,
+            "heading": "Breast Milk Storage",
+            "text": "<p>Safely store your expressed milk with Ameda’s storage bags and bottles, designed to protect the nutrients and freshness of your milk.</p><p><a href=\"/collections/breast-milk-storage\" title=\"Breast Milk Storage\">Breast Milk Storage</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_CyhCqm": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/custom_fit_flanges_2xl-2xxl-500x500.jpg",
+            "media_scale": 100,
+            "heading": "Breast Pump Flanges",
+            "text": "<p>Our flanges are available in various sizes to provide a secure and comfortable fit, helping to maximize milk flow during pumping.</p><p><a href=\"/products/ameda-customfit-breast-pump-flanges-and-inserts-comfort-fit-angled-flange\" title=\"Ameda CustomFit Breast Pump Flanges™ and Inserts; Comfort Fit Angled Flange\">Flanges</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_WBkXGw": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/mya-kit.jpg",
+            "media_scale": 100,
+            "heading": "Accessories",
+            "text": "<p>Explore our full range of <a href=\"https://www.ameda.com/collections/accessories\"><span style=\"text-decoration:underline\">breast pump parts and accessories</span></a>, including <a href=\"https://www.ameda.com/products/ameda-hygienikit-silicone-replacement-tubing-2-count\"><span style=\"text-decoration:underline\">tubing</span></a>, <a href=\"https://www.ameda.com/products/ameda-hygienikit-silicone-replacement-valves-2-count\"><span style=\"text-decoration:underline\">valves</span></a>, and <a href=\"https://www.ameda.com/products/ameda-hygienikit-spare-parts-kit-for-breast-pump\"><span style=\"text-decoration:underline\">spare parts</span></a>, to keep your breast pump running smoothly and enhance your overall pumping experience.</p><p><a href=\"/collections/accessories\" title=\"Pump Parts & Accessories\">Accessories</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_3X7pxT",
+        "column_zYErNb",
+        "column_CyhCqm",
+        "column_WBkXGw"
+      ],
+      "custom_css": [
+        ".media {background: #fff;}",
+        "img {object-fit: contain;}"
+      ],
+      "settings": {
+        "title": "Explore Our Other Products",
+        "use_h4_class": false,
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "#",
+        "layout": "carousel",
+        "column_size": "small",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--primary"
+      }
+    },
+    "faq_D7XQMe": {
+      "type": "faq",
+      "blocks": {
+        "question_z4yEFm": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How Can I Get a Breast Pump Through Insurance?",
+            "text": "<p>Most health insurance plans cover one double electric breast pump per pregnancy. Since coverage varies, it is best to contact your provider to learn the specifics of your plan and find out which pumps are covered.</p>"
+          }
+        },
+        "question_RqnkCj": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Do I Need a Prescription to Order a Breast Pump Through Insurance?",
+            "text": "<p>This depends on your insurance plan. Some require a prescription, which you can get from your doctor. To find out if you need one, check with your insurance provider for their specific requirements.</p>"
+          }
+        },
+        "question_PjjkWj": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How Many Free Breast Pumps Can I Get Through Insurance?",
+            "text": "<p>Most insurance providers cover one breast pump per pregnancy. If your previous pump was properly cleaned, sanitized, and stored, it may still work with new parts. However, breast pumps can lose efficiency over time, so you may want to confirm your eligibility for a new pump with your provider.</p>"
+          }
+        },
+        "question_7RQk6w": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How Far Along Do I Have to Be to Order a Breast Pump Through Insurance?",
+            "text": "<p>Most moms order their breast pump around 30 weeks of pregnancy, though the timing will vary depending on your insurance plan. Typically, mothers qualify for a free breast pump through insurance until up to a year postpartum, so it is important to order your Ameda pump before eligibility expires.</p>"
+          }
+        },
+        "question_7gF6zq": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What Are Some Breast Pump Care and Maintenance Tips? ",
+            "text": "<p>Proper cleaning and sanitizing of breast pump parts are crucial for maintaining hygiene and preventing the growth of harmful bacteria. Ameda breast pumps feature dishwasher-safe parts, making cleaning quick and convenient. For more delicate components, hand-washing with warm soapy water is an effective alternative, ensuring that every piece is cleaned thoroughly without damage.</p><p>Sanitizing pump parts can be easily done using Ameda’s CleanEase Microwaveable Steam Sanitization Bags or a sanitizing solution designed specifically for breast pumps. Regular sanitization helps to protect your baby by eliminating bacteria and mold while also extending the lifespan of your pump. It’s important to allow all parts to air dry completely after cleaning to prevent moisture build-up, which could lead to bacterial growth.</p><p>Many Ameda breast pumps come with cleaning accessories, such as brushes, to help you clean those hard-to-reach areas. By maintaining a consistent cleaning routine, you ensure that your breast pump remains in optimal working condition, providing a safe, hygienic pumping experience for both you and your baby.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_z4yEFm",
+        "question_RqnkCj",
+        "question_PjjkWj",
+        "question_7RQk6w",
+        "question_7gF6zq"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "use_h4_class": false,
+        "heading_align": "text-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "global_footer_cta_VcTUnt": {
       "type": "global-footer-cta",
       "settings": {
@@ -522,8 +777,6 @@
     }
   },
   "order": [
-    "timed_custom_liquid_ntbmja",
-    "timed_custom_liquid_AW9C33",
     "collection-banner",
     "collection-products",
     "custom_liquid_7BngVk",
@@ -541,6 +794,12 @@
     "multi_column_eEEejx",
     "help_links_DHXdie",
     "wave_section_M3zyt7",
+    "custom_liquid_dpk6xA",
+    "multi_column_AwtHbn",
+    "media_with_text_YrKhWd",
+    "wave_section_e6T8XX",
+    "multi_column_hx4gVz",
+    "faq_D7XQMe",
     "global_footer_cta_VcTUnt"
   ]
 }
