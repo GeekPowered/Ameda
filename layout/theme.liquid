@@ -494,7 +494,7 @@
     <!-- End Google Tag Manager (noscript) -->
   {% endif %}
 
-  {% unless request.path contains 'instructions-for-use' %}
+  {% unless request.path contains 'instructions-for-use' or request.path contains 'product-locator' %}
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // Select all anchor links with a hash but ignore those that are just "#"
