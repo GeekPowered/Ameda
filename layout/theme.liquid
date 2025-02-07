@@ -604,7 +604,7 @@
           // Wait for the page to fully load (important for accurate scroll position)
           setTimeout(function() {
             scrollToTarget(window.location.hash);
-          }, 0); // A small delay to ensure elements are fully loaded
+          }, 1000); // A small delay to ensure elements are fully loaded
         }
       
         // Select all .state-link list items
