@@ -599,9 +599,12 @@
           }
         }
       
-        // Check if there's a hash in the URL and scroll to the target element if it exists
+        // Check if there's a hash in the URL on page load
         if (window.location.hash) {
-          scrollToTarget(window.location.hash);
+          // Wait for the page to fully load (important for accurate scroll position)
+          setTimeout(function() {
+            scrollToTarget(window.location.hash);
+          }, 0); // A small delay to ensure elements are fully loaded
         }
       
         // Select all .state-link list items
@@ -620,6 +623,7 @@
           });
         });
       });
+
     </script>
   {% endif %}
 
