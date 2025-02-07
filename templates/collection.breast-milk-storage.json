@@ -310,7 +310,7 @@
       ],
       "custom_css": [
         ".media {border-radius: 1rem;}",
-        ".section--padded > div {padding-bottom: 5rem;}"
+        ".section--padded > div {padding-bottom: 10rem;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Pump_NProtect_edited.jpg",
