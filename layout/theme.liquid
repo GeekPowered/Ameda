@@ -578,6 +578,12 @@
     </script>
   {% endunless %}
 
+  {% if request.path contains 'product-locator' %}
+    <script>
+      console.log('hello');      
+    </script>
+  {% endif %}
+
   <script>
     // Helper function to set a cookie without encoding
     function setCookie(name, value, days) {
