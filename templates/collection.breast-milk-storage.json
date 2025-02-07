@@ -268,7 +268,7 @@
       ],
       "custom_css": [
         ".media {border-radius: 1rem;}",
-        ".section--padded {padding-top: 0 !important;}"
+        ".section--padded {}"
       ],
       "settings": {
         "image": "shopify://shop_images/milk-bags.jpg",
