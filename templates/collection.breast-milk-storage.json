@@ -575,7 +575,7 @@
         "video_description": "",
         "video_autoplay": false,
         "layout": "right",
-        "image_fit": "cover",
+        "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
