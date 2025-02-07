@@ -581,24 +581,6 @@
   {% if request.path contains 'product-locator' %}
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Function to handle scroll behavior
-        function scrollToTarget(targetId) {
-          var targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            // Get the height of .shopify-section-group-header-group
-            var headerHeight = document.querySelector('.shopify-section-group-header-group').offsetHeight;
-      
-            // Calculate the scroll position minus the header height and an additional 32px
-            var scrollToPosition = targetElement.offsetTop - headerHeight - 48;
-      
-            // Scroll the window to the target position with smooth behavior
-            window.scrollTo({
-              top: scrollToPosition,
-              behavior: 'smooth'
-            });
-          }
-        }
-      
         // Select all .state-link list items
         var stateLinks = document.querySelectorAll('li.state-link');
       
@@ -609,13 +591,22 @@
       
             // Get the anchor tag inside the li and its href attribute (e.g., '#DC')
             var targetId = this.querySelector('a').getAttribute('href');
+            var targetElement = document.querySelector(targetId);
       
-            // Scroll to the target element
-            scrollToTarget(targetId);
+            // Get the height of .shopify-section-group-header-group
+            var headerHeight = document.querySelector('.shopify-section-group-header-group').offsetHeight;
+      
+            // Calculate the scroll position minus the header height and an additional 32px
+            var scrollToPosition = targetElement.offsetTop - headerHeight - 32;
+      
+            // Scroll the window to the target position with smooth behavior
+            window.scrollTo({
+              top: scrollToPosition,
+              behavior: 'smooth'
+            });
           });
         });
       });
-
     </script>
   {% endif %}
 
