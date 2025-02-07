@@ -594,10 +594,10 @@
             var targetElement = document.querySelector(targetId);
       
             // Get the height of .shopify-section-group-header-group
-            var headerHeight = document.querySelector('.shopify-section-group-header-group').offsetHeight;
+            var headerHeight = (document.querySelector('.shopify-section-group-header-group').offsetHeight) + 32;
       
             // Calculate the scroll position minus the header height and an additional 32px
-            var scrollToPosition = targetElement.offsetTop - headerHeight - 32;
+            var scrollToPosition = targetElement.offsetTop - headerHeight;
       
             // Scroll the window to the target position with smooth behavior
             window.scrollTo({
