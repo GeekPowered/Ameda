@@ -570,7 +570,7 @@
         ".media {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/17076PM.png",
+        "image": "shopify://shop_images/17076PM.webp",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
