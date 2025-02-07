@@ -72,15 +72,15 @@
         "heading_3PQKqU": {
           "type": "heading",
           "settings": {
-            "heading": "About Ameda Breast Pumps",
-            "heading_size": "h0",
+            "heading": "About Ameda’s Breast Milk Storage Products",
+            "heading_size": "h2",
             "heading_h1": false
           }
         },
         "text_DAL6Jy": {
           "type": "text",
           "settings": {
-            "text": "<p>We offer both personal and hospital-grade breast pumps, all of which are available through insurance. Our collection includes a wide variety of pumps that are designed to cater to different preferences and needs. Whether you need a multi-user pump to rent or want to purchase a single-user pump through your insurance, Ameda’s products help you extract milk and store it comfortably and conveniently. We are committed to making your breastfeeding journey as easy and effective as possible, with options tailored to your unique lifestyle. Our breast pumps are built to be durable, efficient, and easy to use, ensuring that you can express milk whenever you need to, whether you’re at home, at work, or on the go. Additionally, Ameda offers a range of accessories that complement our breast pumps, providing added convenience and comfort to your pumping sessions.</p>",
+            "text": "<p>Ameda offers a range of storage solutions designed to help you store breast milk safely and conveniently. Our <a href=\"https://www.ameda.com/products/ameda-pump-n-protect-6-ounce-milk-storage-bags\"><span style=\"text-decoration:underline\">storage bags</span></a> and <a href=\"https://www.ameda.com/products/ameda-hygienikit-breast-milk-storage-bottle-with-lock-tight-cap-4-count\"><span style=\"text-decoration:underline\">bottles</span></a> are durable, easy to use, and help maintain the freshness of your milk. With thoughtfully designed features, Ameda’s breast milk storage products support your breastfeeding journey, providing reliable options for storing and feeding your expressed milk.</p>",
             "enlarge_text": false
           }
         }
@@ -95,7 +95,6 @@
         ".baby-pattern > div {padding-top: 5rem !important; padding-bottom: 5rem !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/mya-joy-plus-baby.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -124,7 +123,7 @@
         "heading_UUPDaE": {
           "type": "heading",
           "settings": {
-            "heading": "Electric Breast Pumps",
+            "heading": "Breast Milk Storage Bags",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -132,7 +131,7 @@
         "text_rDzkTQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Ameda's <a href=\"https://www.ameda.com/products/ameda-mya-joy-hospital-strength-portable-electric-breast-pump\"><span style=\"text-decoration:underline\">electric breast pumps</span></a> are designed for maximum efficiency and ease of use. With powerful suction and customizable settings, these pumps allow moms to express milk comfortably and quickly. Our electric pumps are ideal for moms who need to pump frequently or are looking for a reliable solution for use at home or on the go. These pumps come equipped with multiple suction levels and speeds, allowing you to personalize your pumping experience for optimal comfort and effectiveness. Whether you're establishing your milk supply or maintaining it, Ameda's electric breast pumps are here to support you throughout your breastfeeding journey. The portability and reliability of our electric models make them a trusted choice for many moms.</p>",
+            "text": "<p>Ameda’s <a href=\"https://www.ameda.com/products/ameda-pump-n-protect-6-ounce-milk-storage-bags\"><span style=\"text-decoration:underline\">breast milk storage bags</span></a> feature a double-zipper seal and reinforced seams to help prevent leaks and spills, ensuring your milk stays secure. These pre-sterilized, BPA-free bags are designed to keep your milk safe and hygienic. With clear measurement markings and a writable label section, tracking the date and quantity of stored milk is simple. The bags are also easy to freeze and thaw, offering a convenient solution for moms storing milk for future use.</p>",
             "enlarge_text": false
           }
         }
@@ -145,12 +144,12 @@
         ".media {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/sku_131a40_010_rgb_2.jpg",
+        "image": "shopify://shop_images/PumpN_Protect_MILK_new.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "right",
-        "image_fit": "cover",
+        "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
@@ -165,7 +164,7 @@
         "heading_DgTLNx": {
           "type": "heading",
           "settings": {
-            "heading": "Manual Breast Pumps",
+            "heading": "Breast Milk Storage Bottles",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -173,7 +172,7 @@
         "text_A7fFxQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Our <a href=\"https://www.ameda.com/products/ameda-portable-manual-breast-pump\"><span style=\"text-decoration:underline\">manual breast pumps</span></a> provide a portable and affordable option for moms who need occasional pumping. Lightweight and easy to use, these pumps give you complete control over suction and speed, making them a great choice for moms who want a simple, hands-on pumping experience. Manual pumps are perfect for those moments when you need a quick and quiet pumping solution, without relying on electricity or batteries. Their compact size also makes them ideal for travel or keeping in your bag for unexpected pumping needs. With Ameda's manual pumps, you can achieve efficient milk expression at your own pace, wherever and whenever you need to.</p>",
+            "text": "<p>Ameda’s <a href=\"https://www.ameda.com/products/ameda-hygienikit-breast-milk-storage-bottle-with-lock-tight-cap-4-count\"><span style=\"text-decoration:underline\">breast milk storage bottles</span></a> provide a safe and convenient solution for storing and feeding expressed milk. Made without BPA, these bottles feature clear measurement markings for accurate portioning. Designed for compatibility with Ameda breast pumps and nipples, they allow for an easy transfer from pumping to feeding, ensuring every drop of milk is preserved.</p>",
             "enlarge_text": false
           }
         }
@@ -187,12 +186,12 @@
         ".section--padded {padding-top: 0 !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
+        "image": "shopify://shop_images/2-pack-5oz-milk-storage-bottles_2_1.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "left",
-        "image_fit": "cover",
+        "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
@@ -627,7 +626,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": "top"
       }
