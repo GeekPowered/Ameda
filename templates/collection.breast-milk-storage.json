@@ -448,7 +448,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/accessible.png",
+            "image": "shopify://shop_images/room-temp.jpg",
             "media_scale": 100,
             "heading": "Room Temperature",
             "text": "<p>Freshly expressed breast milk can be kept at room temperature (up to 77°F or 25°C) for 4-6 hours. If the room is warmer, it’s best to refrigerate the milk sooner.</p>",
@@ -460,7 +460,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/comfort.png",
+            "image": "shopify://shop_images/fridge.jpg",
             "media_scale": 100,
             "heading": "Refrigerator",
             "text": "<p>In the refrigerator (at 39°F or 4°C), expressed breast milk can be stored for 3-8 days. For optimal quality, use the milk within 3 days.</p>",
@@ -472,7 +472,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/convenience.png",
+            "image": "shopify://shop_images/freeze.jpg",
             "media_scale": 100,
             "heading": "Freezer",
             "text": "<p>In a standard freezer (at 0°F or -18°C), breast milk can be stored for 3-6 months. For best quality, use within 3 months.</p>",
@@ -484,7 +484,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/convenience.png",
+            "image": "shopify://shop_images/deep-freeze.jpg",
             "media_scale": 100,
             "heading": "Deep Freezer",
             "text": "<p>In a deep freezer (at -4°F or -20°C), breast milk can be stored for 6-12 months. For best quality, use within 6 months.</p>",
