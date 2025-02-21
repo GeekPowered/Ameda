@@ -23,22 +23,26 @@
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Get A Free Breast Pump Through Insurance",
+            "heading": "Get a TRICARE-Covered Breast Pump for Military Moms or Spouses",
             "heading_size": "h1",
             "heading_h1": true
           }
         },
-        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1": {
-          "type": "text",
+        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-button-1": {
+          "type": "button",
           "settings": {
-            "text": "<p>Receive A Free or Discounted Ameda Breast Pump Through Your Insurance Provider</p>",
-            "enlarge_text": true
+            "button_1_label": "Compare Options",
+            "button_1_link": "#options",
+            "button_1_style": "btn btn--secondary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
           }
         }
       },
       "block_order": [
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-heading-1",
-        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1"
+        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-button-1"
       ],
       "settings": {
         "image_desktop": "shopify://shop_images/inscopy.jpg",
@@ -58,6 +62,48 @@
         "tint_color": "#000000",
         "tint_opacity": 0,
         "prevent_animation": false
+      }
+    },
+    "media_with_text_wRGV7H": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_FyJcxt": {
+          "type": "heading",
+          "settings": {
+            "heading": "How to Get a Free Breast Pump for Active Duty Soldiers or a Military Spouse",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_giqHAz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As an active-duty service member or military spouse, you may be eligible for a free or discounted breast pump through TRICARE and other military insurance plans. TRICARE coverage ensures that new and expectant mothers have access to high-quality breast pumps. Ameda is committed to supporting military families by making it easy to access the breastfeeding supplies you need. Our process ensures that you receive a hospital-grade breast pump when you need it.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FyJcxt",
+        "text_giqHAz"
+      ],
+      "custom_css": [
+        "img {border-radius: 1rem;}",
+        ".section--padded {padding-bottom: 0;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/military-mother-1.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "custom_liquid_tRmdKP": {
@@ -80,8 +126,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Submit The Contact Form Below",
-            "text": "<p>The first step in obtaining your insurance-covered breast pump is to fill out our contact form. This form is simple and quick to complete and helps us gather your basic information to start the process. By providing your contact details, we can understand your needs and determine how best to support you. Once submitted, our team will begin reviewing your details to help expedite your order.</p>",
+            "heading": "Submit The Contact Form",
+            "text": "<p>To get started, complete our quick and easy contact form. This step helps us collect your basic information to verify your TRICARE coverage and determine your eligibility for a TRICARE-covered breast pump. Once submitted, our team will process your request and move forward with your order.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -91,8 +137,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Supply Additional Patient Insurance Information",
-            "text": "<p>Once we receive your contact form, we may need some additional patient information to proceed with your insurance verification. Our team will handle all insurance-related paperwork once you provide everything we need. This may include your insurance policy details, prescription information if required, and any other relevant personal details. Rest assured, our process is secure, and we take privacy seriously. Providing accurate and complete information ensures that we can verify your eligibility smoothly and without delays.<br/></p>",
+            "heading": "Provide Military Insurance Information",
+            "text": "<p>After we receive your form, we may need additional details to confirm your TRICARE breast pump coverage. This may include:</p><ul><li><strong>Proof of TRICARE coverage, such as an ID or policy details</strong></li><li><strong>A breast pump prescription from a TRICARE-authorized doctor, nurse practitioner, or midwife</strong></li><li><strong>Listing your OBGYN or midwife</strong></li></ul><p>Our team will handle all the necessary paperwork, working together with a TRICARE authorized provider, to ensure a smooth process while maintaining your privacy and security.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -102,8 +148,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Our Providers Will Contact You!",
-            "text": "<p>After receiving and reviewing all necessary information, one of our dedicated providers will reach out to you directly. During this contact, we’ll discuss your options, confirm your insurance eligibility, and help you choose the best breast pump for your needs. Our providers will be there to answer any questions and guide you through the final steps to ensure you get your breast pump quickly and without hassle. We are committed to making this process as seamless as possible, so you can focus on what matters most—caring for your baby.</p>",
+            "heading": "We Contact You with Your Options",
+            "text": "<p>Once approved, an Ameda representative will reach out to you to discuss your options, including the most popular breast pumps available through TRICARE coverage. Whether you need a hospital-grade pump, a standard electric pump, or a portable pump, we’ll help you select the best option for your breastfeeding needs. Your TRICARE-covered breast pump will then be shipped directly to you at no cost.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -120,7 +166,7 @@
         "h2 + a {display: none;}"
       ],
       "settings": {
-        "title": "See If You Qualify For A Free Breast Pump Through Insurance Immediately",
+        "title": "See If You Qualify for a Free Breast Pump Through Military Insurance",
         "use_h4_class": true,
         "heading_align": "text-start",
         "button_label": "link",
@@ -166,7 +212,7 @@
         ".section--padded-default {padding-bottom: 0; margin-bottom: 0;}"
       ],
       "settings": {
-        "custom_liquid": "<h2>Why Choose Ameda For Your Breast Pump?</h2>\n<p style=\"margin: 0;\">Ameda was founded by the inventor of the hospital-grade breast pump over 80 years ago, and we’re still dedicated to supporting breastfeeding mothers with high-quality, innovative products. Here are a few reasons why Ameda is the best choice for your breast pump needs:</p>",
+        "custom_liquid": "<h2>Why Choose Ameda for Your Military Breast Pump?</h2>\n<p style=\"margin: 0;\">For over 80 years, Ameda has been a trusted name in hospital-grade breast pumps, supporting military families, new mothers, and healthcare providers worldwide. Our pumps are designed for efficiency, comfort, and durability, ensuring that you get the best quality for your breastfeeding needs.</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -184,8 +230,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/icons-healthcare.png",
             "media_scale": 100,
-            "heading": "Hospital-Grade Quality",
-            "text": "<p>Ameda pumps are inspired by our award-winning hospital-grade technology, ensuring that you get the best quality for efficient and comfortable milk expression.</p>",
+            "heading": "Hospital-Grade Technology",
+            "text": "<p>Ameda breast pumps are inspired by our award-winning hospital-grade designs, ensuring that you receive the most advanced, high-performance pump available.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -196,8 +242,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/icons-settings.png",
             "media_scale": 100,
-            "heading": "Customizable Comfort",
-            "text": "<p>Our pumps feature adjustable suction levels and multiple pumping modes, allowing you to tailor your experience to meet your comfort needs.</p>",
+            "heading": "Customizable Pumping Experience",
+            "text": "<p>With adjustable suction levels and multiple pumping modes, Ameda pumps allow you to tailor your pump operation and overall breastfeeding experience for maximum comfort and efficiency.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -208,8 +254,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/icons-doctor.png",
             "media_scale": 100,
-            "heading": "Trusted by Healthcare Professionals",
-            "text": "<p>Ameda breast pumps are trusted by healthcare providers worldwide, with a reputation for reliability and efficiency. Over 1,000 hospitals use Ameda pumps to support breastfeeding moms.</p>",
+            "heading": "Trusted by Military Healthcare Providers",
+            "text": "<p>Our hospital-grade pumps are trusted by TRICARE-authorized doctors, nurse practitioners, and lactation consultants. We are dedicated to supporting U.S. Family Health Plan beneficiaries, active-duty service members, and military families with the best breastfeeding solutions.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -220,8 +266,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/icons-support.png",
             "media_scale": 100,
-            "heading": "Comprehensive Support",
-            "text": "<p>In addition to our high-quality breast pumps, Ameda offers award-winning customer support through our ParentCare program, providing you with guidance and assistance whenever you need it.</p>",
+            "heading": "Comprehensive Parent Support",
+            "text": "<p>Our ParentCare program provides expert customer support, ensuring that military families have access to the guidance and assistance they need at every stage of their breastfeeding journey in addition to receiving a breast pump through insurance.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -232,8 +278,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/icons-shield.png",
             "media_scale": 100,
-            "heading": "Commitment to Safety",
-            "text": "<p>All Ameda products are designed with safety in mind, using BPA-free materials to ensure that your milk remains pure and healthy for your baby.</p>",
+            "heading": "Safe and BPA-Free Materials",
+            "text": "<p>Ameda breast pumps and breast pump supplies are made with BPA-free, medical-grade materials, guaranteeing that your baby’s milk remains pure, safe, and free from harmful chemicals.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -244,8 +290,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/icons-approved.png",
             "media_scale": 100,
-            "heading": "Insurance Compatibility",
-            "text": "<p>We work with a wide range of providers to help moms obtain their breast pumps at little to no cost, making it easier for you to access the tools you need for successful breastfeeding.</p>",
+            "heading": "Covered by Military Insurance Plans",
+            "text": "<p>We work directly with TRICARE and other military insurance providers to ensure that moms receive their breast pumps at little to no cost.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -280,47 +326,6 @@
         "button_style": "btn btn--secondary"
       }
     },
-    "media_with_text_rpzKKz": {
-      "type": "media-with-text",
-      "blocks": {
-        "heading_La6Lww": {
-          "type": "heading",
-          "settings": {
-            "heading": "Choosing the Right Breast Pump",
-            "heading_size": "h3",
-            "heading_h1": false
-          }
-        },
-        "text_pt9KDz": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Selecting the right breast pump can feel overwhelming, especially for first-time mothers. It’s important to consider factors such as how often you’ll be using the pump, its portability, and your comfort. Hands-free breast pumps are a fantastic option for busy moms who need to pump while multitasking or have limited time. These pumps allow you to express milk without using your hands, providing complete mobility. Additionally, many insurance plans cover the cost of breast pumps, making it easier to obtain a high-quality device with minimal out-of-pocket expenses. Explore the kinds of breast pumps offered by Ameda below. </p>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_La6Lww",
-        "text_pt9KDz"
-      ],
-      "custom_css": [
-        "img {border-radius: 1rem;}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/productshot-259200_1.png",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "right",
-        "image_fit": "contain",
-        "media_width": 40,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "3",
-        "only_content_color_scheme": false,
-        "baby_patterns": true
-      }
-    },
     "custom_liquid_DNwP9D": {
       "type": "custom-liquid",
       "custom_css": [
@@ -328,7 +333,7 @@
         "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
       ],
       "settings": {
-        "custom_liquid": "<h2>Types of Breast Pumps Available Through Insurance Coverage</h2>\n<p style=\"margin: 0;\">Navigating the types of breast pumps that are available through insurance can feel overwhelming, but Ameda makes it easy by offering a variety of options that cater to different needs and lifestyles. Here’s a breakdown of the different types of breast pumps available through insurance from Ameda:\n</p>",
+        "custom_liquid": "<h2>Types of Breast Pumps Available</h2>\n<p style=\"margin: 0;\">Choosing the right breast pump is essential to your breastfeeding success. Ameda offers a variety of pumps, including hands-free, wearable, double electric, and manual pumps.</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -343,7 +348,7 @@
         "heading_RX86CE": {
           "type": "heading",
           "settings": {
-            "heading": "Hands-Free Breast Pumps Through Insurance",
+            "heading": "Hands-Free Breast Pumps for Active Moms",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -351,7 +356,7 @@
         "text_LttrHb": {
           "type": "text",
           "settings": {
-            "text": "<p>Hands-free pumps offer the ultimate convenience for moms who are always on the move. These pumps are designed to be worn inside your bra, allowing you to go about your day with complete mobility. Ameda’s hands-free breast pumps offer powerful suction, comfort, and discretion, making them ideal for multitasking moms.</p>",
+            "text": "<p>For busy moms who need the ultimate mobility, our hands-free pumps fit seamlessly into your bra, allowing you to pump while on the go. These pumps are perfect for military spouses balancing multiple responsibilities or active-duty mothers returning to work.</p>",
             "enlarge_text": false
           }
         },
@@ -394,7 +399,7 @@
         "heading_7whQpe": {
           "type": "heading",
           "settings": {
-            "heading": "Wearable Breast Pumps Through Insurance",
+            "heading": "Wearable Breast Pumps for Discreet Pumping",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -402,7 +407,7 @@
         "text_w9idEN": {
           "type": "text",
           "settings": {
-            "text": "<p>Wearable breast pumps provide freedom and flexibility to pump whenever and wherever you need to. With lightweight and compact designs, wearable pumps fit seamlessly under clothing, allowing you to express milk discreetly. Ameda's wearable breast pumps are covered by many insurance plans, ensuring moms can enjoy hands-free pumping with hospital-grade efficiency.</p>",
+            "text": "<p>Our wearable breast pumps offer a lightweight and compact design, making them ideal for moms who need discreet, on-the-go pumping. These pumps provide powerful suction while fitting comfortably under clothing, ensuring flexibility and freedom.</p>",
             "enlarge_text": false
           }
         },
@@ -445,7 +450,7 @@
         "heading_Bc9tUi": {
           "type": "heading",
           "settings": {
-            "heading": "Double Breast Pumps Through Insurance",
+            "heading": "Double Breast Pumps for Maximum Efficiency",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -453,7 +458,7 @@
         "text_t7AQac": {
           "type": "text",
           "settings": {
-            "text": "<p>Double breast pumps allow moms to pump from both breasts simultaneously, significantly reducing pumping time. These pumps are perfect for moms who need to express milk quickly and efficiently. Ameda’s double breast pumps provide customizable suction levels and pumping modes, making it easy to find the perfect settings for comfort and effective milk expression.</p>",
+            "text": "<p>Ameda’s double electric breast pumps allow for simultaneous pumping from both breasts, reducing the time needed for milk expression. These hospital-strength pumps are ideal for moms who need to pump frequently or establish a strong milk supply.</p>",
             "enlarge_text": false
           }
         },
@@ -496,7 +501,7 @@
         "heading_9BQfaj": {
           "type": "heading",
           "settings": {
-            "heading": "Manual Breast Pumps Through Insurance",
+            "heading": "Manual Breast Pumps for Convenience",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -504,7 +509,7 @@
         "text_pWnxkT": {
           "type": "text",
           "settings": {
-            "text": "<p>Manual breast pumps are a great option for moms who need a simple, portable solution for occasional pumping. These pumps are lightweight, easy to use, and do not require electricity, making them convenient for travel or when on the go. Ameda’s manual pumps are designed for comfort and ease, providing an affordable and effective way to express milk through insurance.</p>",
+            "text": "<p>For moms who prefer a lightweight, travel-friendly solution, our manual breast pumps provide an easy-to-use, affordable option. These pumps are perfect for occasional pumping or backup use when away from an electric pump.</p>",
             "enlarge_text": false
           }
         },
@@ -547,7 +552,7 @@
         "heading_gHNfEw": {
           "type": "heading",
           "settings": {
-            "heading": "Other Breastfeeding Essentials Through Insurance",
+            "heading": "Other Military Breastfeeding Essentials Available",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -555,7 +560,7 @@
         "text_QcALed": {
           "type": "text",
           "settings": {
-            "text": "<p>In addition to breast pumps, many breastfeeding essentials are also available through insurance to help support your breastfeeding journey. These essentials include accessories like extra breast milk storage bottles, breast pump flanges in different sizes, silicone inserts, valves, and cleaning supplies. Having the right accessories can make a significant difference in the comfort and efficiency of your pumping sessions. Ameda works with insurance companies to help you get these essential items covered, making sure you have everything you need for a successful breastfeeding experience.</p>",
+            "text": "<p>In addition to breast pumps, TRICARE and other military insurance plans may cover breastfeeding and breast pump accessories, such as:</p><ul><li><strong>Extra breast milk storage bottles</strong></li><li><strong>Replacement pump parts (valves, tubing, flanges)</strong></li><li><strong>Silicone inserts for personalized comfort</strong></li><li><strong>Cleaning supplies to maintain pump hygiene</strong></li></ul><p>Having these essentials ensures that you’re fully equipped for a successful breastfeeding journey, whether at home, on base, or during deployments.</p>",
             "enlarge_text": false
           }
         },
@@ -595,10 +600,10 @@
     "wave_section_ntFccT": {
       "type": "wave-section",
       "settings": {
-        "wavebgcolor": "#fbf6ef",
-        "wavesvgcolor": "#ffffff",
-        "wavetype": "bottom",
-        "waveposition": ""
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "top",
+        "waveposition": "top"
       }
     },
     "1ff950cf-34b7-4e69-b8e2-53d2fadb9987": {
@@ -684,34 +689,52 @@
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "How Are Breast Pumps & The Affordable Care Act (ACA) Related?",
-            "text": "<p>The Affordable Care Act (ACA), established in March 2010, mandates that most health insurance plans cover breastfeeding support, counseling, and supplies. This includes access to a free insurance-covered breast pump, lactation consultant services, and pregnancy counseling. The ACA aims to support breastfeeding mothers by ensuring they have the necessary tools and resources throughout their breastfeeding journey. By working with your insurance company, you can take advantage of these benefits and receive the support you need to breastfeed your baby successfully.</p>"
+            "heading": "How Does TRICARE Cover Breast Pumps?",
+            "text": "<p>TRICARE may cover one breast pump per birth, along with select breastfeeding supplies. Coverage applies to active-duty service members, military spouses, and dependents under TRICARE Prime, TRICARE Select, and other TRICARE plans. Check with your insurance representative to be sure what is covered under your plan.</p>"
           }
         },
         "question_Lz7pyL": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Are Breast Pumps Covered By Most Insurance Plans?",
-            "text": "<p>Yes, under the Affordable Care Act (ACA), most health insurance plans are required to cover the cost of a breast pump for new mothers. Coverage may vary depending on your specific insurance provider and plan, but Ameda works with a wide range of insurance companies to help you get a breast pump at little to no cost. We recommend contacting your insurance company to understand your specific benefits and eligibility.</p>"
+            "heading": "Is There a Cost for Military Moms to Get a Breast Pump?",
+            "text": "<p>In most cases, TRICARE and other military insurance providers cover the full cost of a new breast pump. Some plans may require a prescription or minor out-of-pocket costs, but our team will help you navigate the process to minimize expenses.</p>"
           }
         },
         "question_J7hNmL": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Do I Have to Pay Any Out-of-Pocket Expenses for My Breast Pump?",
-            "text": "<p>In most cases, insurance will cover the full cost of your breast pump. However, depending on your specific insurance plan, there may be some out-of-pocket expenses such as co-pays or deductibles. Our team will work with you and your insurance company to minimize any costs and help ensure you receive your breast pump with as little expense as possible. We recommend checking with your insurance company for more details on potential costs.</p>"
+            "heading": "What Documents Are Needed for Military Breast Pump Approval?",
+            "text": "<p>Most military insurance providers require:</p><ul><li>Proof of TRICARE coverage</li><li>A prescription from a healthcare provider</li><li>Basic personal and military service details</li></ul><p>Our team will assist you in gathering and submitting all required paperwork to make the approval process as smooth as possible.</p>"
+          }
+        },
+        "question_hTjYkK": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "When Can I Order My Breast Pump?",
+            "text": "<p>You can request your pump anytime during pregnancy or after birth. TRICARE allows moms to receive their pump as early as the third trimester to ensure they’re prepared before the baby arrives.</p>"
+          }
+        },
+        "question_TLqVmB": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How Long Does It Take to Get My Breast Pump?",
+            "text": "<p>Once all required documents are submitted, most military moms receive their breast pump within a few business days. Ameda works quickly to process your order so you can start your breastfeeding journey without delay.</p>"
           }
         }
       },
       "block_order": [
         "question_q4wELk",
         "question_Lz7pyL",
-        "question_J7hNmL"
+        "question_J7hNmL",
+        "question_hTjYkK",
+        "question_TLqVmB"
       ],
       "settings": {
-        "heading": "Frequently Asked Questions",
+        "heading": "Frequently Asked Questions Insurance Coverage",
         "use_h4_class": true,
         "heading_align": "text-start",
         "color_scheme": "none",
@@ -728,13 +751,13 @@
   "order": [
     "main",
     "329e5978-de6e-4b2d-9322-d45d0e244c4b",
+    "media_with_text_wRGV7H",
     "custom_liquid_tRmdKP",
     "70b6796a-4aa7-4791-9ea6-72e90afed64c",
     "custom_liquid_pPMXFH",
     "611733a1-7260-4231-a0db-d622d34c311f",
     "custom_liquid_U8iDYi",
     "multi_column_BfTGiE",
-    "media_with_text_rpzKKz",
     "custom_liquid_DNwP9D",
     "media_with_text_ArF8qh",
     "media_with_text_QWrBef",
