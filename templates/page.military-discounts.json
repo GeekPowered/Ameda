@@ -166,7 +166,7 @@
       ],
       "custom_css": [
         ".multi-column .card {border-radius: 1rem; max-width: none;}",
-        ".multi-column {width: 100% !important; position: relative;}",
+        ".multi-column {position: relative;}",
         "h2 + a {display: none;}"
       ],
       "settings": {
