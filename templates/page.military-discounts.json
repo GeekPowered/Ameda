@@ -165,8 +165,9 @@
         "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-3"
       ],
       "custom_css": [
+        ".container {width: 100rem;}",
         ".multi-column .card {border-radius: 1rem; max-width: none;}",
-        ".multi-column {position: relative;}",
+        ".multi-column {width: 100% !important; position: relative;}",
         "h2 + a {display: none;}"
       ],
       "settings": {
