@@ -209,14 +209,17 @@
         "waveposition": ""
       }
     },
-    "custom_liquid_U8iDYi": {
+    "custom_liquid_NF4jNd": {
       "type": "custom-liquid",
       "custom_css": [
         ".section--padded-default {background: #fff;}",
-        ".section--padded-default {padding-bottom: 0; margin-bottom: 0;}"
+        ".section--padded-default {padding-bottom: 0; margin-bottom: 0;}",
+        ".split-text {display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem;}",
+        ".split-text h2 {flex-shrink: 0; width: calc(50% - 1rem);}",
+        "@media (max-width: 768px) {.split-text {flex-direction: column; gap: 0; } .split-text h2 {width: auto; }}"
       ],
       "settings": {
-        "custom_liquid": "<h2>Why Choose Ameda for Your Military Breast Pump?</h2>\n<p style=\"margin: 0;\">For over 80 years, Ameda has been a trusted name in hospital-grade breast pumps, supporting military families, new mothers, and healthcare providers worldwide. Our pumps are designed for efficiency, comfort, and durability, ensuring that you get the best quality for your breastfeeding needs.</p>",
+        "custom_liquid": "<div class=\"split-text\">\n    <h2>Why Choose Ameda for Your Military Breast Pump?</h2>\n    <div>\n        <p style=\"margin: 0;\">For over 80 years, Ameda has been a trusted name in hospital-grade breast pumps,\n            supporting military families, new mothers, and healthcare providers worldwide. Our pumps are designed for\n            efficiency, comfort, and durability, ensuring that you get the best quality for your breastfeeding needs.\n        </p>\n    </div>\n</div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -330,14 +333,17 @@
         "button_style": "btn btn--secondary"
       }
     },
-    "custom_liquid_DNwP9D": {
+    "custom_liquid_4KRBXB": {
       "type": "custom-liquid",
       "custom_css": [
         ".section--padded-default {background: #fff;}",
-        "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
+        ".section--padded-default {margin-bottom: 0;}",
+        ".split-text {display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem;}",
+        ".split-text h2 {flex-shrink: 0; width: calc(50% - 1rem);}",
+        "@media (max-width: 768px) {.split-text {flex-direction: column; gap: 0; } .split-text h2 {width: auto; }}"
       ],
       "settings": {
-        "custom_liquid": "<h2>Types of Breast Pumps Available</h2>\n<p style=\"margin: 0;\">Choosing the right breast pump is essential to your breastfeeding success. Ameda offers a variety of pumps, including hands-free, wearable, double electric, and manual pumps.</p>",
+        "custom_liquid": "<div class=\"split-text\">\n    <h2>Types of Breast Pumps Available</h2>\n    <div>\n        <p style=\"margin: 0;\">Choosing the right breast pump is essential to your breastfeeding success. Ameda offers a variety of pumps, including hands-free, wearable, double electric, and manual pumps.\n        </p>\n    </div>\n</div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -380,7 +386,8 @@
       ],
       "custom_css": [
         ".section--padded {background: #fff; padding-top: 0;}",
-        "img {border-radius: 1rem;}"
+        "img {border-radius: 1rem;}",
+        ".media-with-text {max-width: 100% !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/simone-barros-sibarros_-CD188523-3C-278201_4401bfeb-c630-4641-a44d-20d7f6093495.png",
@@ -431,7 +438,8 @@
       ],
       "custom_css": [
         ".section--padded {background: #fff; padding-top: 0;}",
-        "img {border-radius: 1rem;}"
+        "img {border-radius: 1rem;}",
+        ".media-with-text {max-width: 100% !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/mother-pumping-on-couch-with-baby.jpg",
@@ -481,8 +489,9 @@
         "button_jDyj9n"
       ],
       "custom_css": [
-        ".section--padded {background: #fff; padding-top: 0;}",
-        "img {border-radius: 1rem;}"
+        ".section--padded {background: #fff; padding-top: 0; padding-bottom: 0;}",
+        "img {border-radius: 1rem;}",
+        ".media-with-text {max-width: 100% !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/MJP_8.png",
@@ -532,8 +541,9 @@
         "button_r79CXP"
       ],
       "custom_css": [
-        ".section--padded {background: #fff; padding-top: 0;}",
-        "img {border-radius: 1rem;}"
+        ".section--padded {background: #fff;}",
+        "img {border-radius: 1rem; object-fit: contain !important;}",
+        ".media-with-text {max-width: 100% !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
@@ -584,7 +594,8 @@
       ],
       "custom_css": [
         ".section--padded {background: #fff; padding-top: 0;}",
-        "img {border-radius: 1rem;}"
+        "img {border-radius: 1rem;}",
+        ".media-with-text {max-width: 100% !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Other_Breastfeeding_Essentials_Through_Insurance.jpg",
@@ -760,9 +771,9 @@
     "70b6796a-4aa7-4791-9ea6-72e90afed64c",
     "custom_liquid_pPMXFH",
     "611733a1-7260-4231-a0db-d622d34c311f",
-    "custom_liquid_U8iDYi",
+    "custom_liquid_NF4jNd",
     "multi_column_BfTGiE",
-    "custom_liquid_DNwP9D",
+    "custom_liquid_4KRBXB",
     "media_with_text_ArF8qh",
     "media_with_text_QWrBef",
     "media_with_text_aYH4hm",
