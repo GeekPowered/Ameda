@@ -92,7 +92,8 @@
       ],
       "custom_css": [
         "img {border-radius: 1rem;}",
-        ".section--padded {padding-bottom: 0;}"
+        ".section--padded {padding-bottom: 0;}",
+        ".media-with-text {max-width: 100% !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/military-mother-1.jpg",
