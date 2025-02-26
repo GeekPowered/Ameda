@@ -29,8 +29,8 @@
         "prevent_animation": false
       }
     },
-    "product_locator_x7JikG": {
-      "type": "product-locator",
+    "csv_product_locator_4Df8nU": {
+      "type": "csv-product-locator",
       "settings": {}
     },
     "global_footer_cta_4Vkbyc": {
@@ -43,7 +43,7 @@
   "order": [
     "main",
     "custom_liquid_gVRCb6",
-    "product_locator_x7JikG",
+    "csv_product_locator_4Df8nU",
     "global_footer_cta_4Vkbyc"
   ]
 }
