@@ -4,7 +4,7 @@
 {% assign state_provinces = us_locations | map: 'state_province' %}
 {% assign unique_sorted_states = state_provinces | uniq | sort %}
 
-{% assign global_locations = shop.metaobjects.store_locations["global-locations"].all.value | sort: 'country' %}
+{% assign global_locations = shop.metaobjects.store_locations["global-test"].all.value | sort: 'country' %}
 {% assign global_countries = global_locations | map: 'country' %}
 {% assign sorted_global_countries = global_countries | uniq | sort %}
 
