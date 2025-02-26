@@ -37,80 +37,106 @@
 </div>
 
 <script>
-  const usCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJvcZLYkSdcfoaZn6xyXN3j931r-vJghDEyEdWcUMRGVTGOqVhXet059aLhIJasjgIW97xPYfxrj3K/pub?output=csv";
-  const globalCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmq_Q0m6Uq9eL7LQhZ7h8ztHTtHC3iTJUPhdh215exVNPO5LCPas50U4KWRWEdIiunu2tvve4RxeVs/pub?output=csv";
+    const usCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJvcZLYkSdcfoaZn6xyXN3j931r-vJghDEyEdWcUMRGVTGOqVhXet059aLhIJasjgIW97xPYfxrj3K/pub?output=csv";
+    const globalCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmq_Q0m6Uq9eL7LQhZ7h8ztHTtHC3iTJUPhdh215exVNPO5LCPas50U4KWRWEdIiunu2tvve4RxeVs/pub?output=csv";
 
-  async function fetchCSV(url) {
-    const response = await fetch(url);
-    const text = await response.text();
-    return parseCSV(text);
-  }
+    async function fetchCSV(url) {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            const text = await response.text();
+            return parseCSV(text);
+        } catch (error) {
+            console.error("Error fetching CSV:", error);
+            return [];
+        }
+    }
 
-  function parseCSV(csvText) {
-    const rows = csvText.split("\n").map(row => row.split(","));
-    const headers = rows.shift();
-    return rows.map(row => {
-      let obj = {};
-      row.forEach((val, idx) => {
-        obj[headers[idx].trim()] = val.trim();
-      });
-      return obj;
-    });
-  }
+    function parseCSV(csvText) {
+        const rows = csvText.split("\n").map(row => row.split(","));
+        const headers = rows.shift().map(header => header.trim());
 
-  function populateLocations(data, containerId, listId, key) {
-    const container = document.getElementById(containerId);
-    const list = document.getElementById(listId);
-    const groupedData = {};
+        return rows.map(row => {
+            let obj = {};
+            row.forEach((val, idx) => {
+                obj[headers[idx]] = val ? val.trim() : ""; // Ensure val is defined
+            });
+            return obj;
+        });
+    }
 
-    data.forEach(location => {
-      if (!groupedData[location[key]]) {
-        groupedData[location[key]] = [];
-      }
-      groupedData[location[key]].push(location);
-    });
+    function populateLocations(data, containerId, listId, key) {
+        const container = document.getElementById(containerId);
+        const list = document.getElementById(listId);
+        
+        if (!container || !list) {
+            console.error(`Error: Missing container or list element for ${containerId}`);
+            return;
+        }
 
-    Object.keys(groupedData).sort().forEach(category => {
-      if (category) {
-        const listItem = document.createElement("li");
-        listItem.className = "state-link";
-        listItem.innerHTML = `<a href="#${category}">${category}</a>`;
-        list.appendChild(listItem);
+        container.innerHTML = ""; // Clear existing content
+        list.innerHTML = ""; // Clear existing list
 
-        const locationContainer = document.createElement("div");
-        locationContainer.className = "store-location";
-        locationContainer.id = category;
+        const groupedData = {};
 
-        groupedData[category].forEach(location => {
-          locationContainer.innerHTML += `
-            <div class="location-content">
-              <h3 class="store-title h5">${location["title"] || ""}</h3>
-              <p class="mb-0">
-                ${location["address"] || ""}<br>
-                ${location["city"] || ""} ${location["state_province"] || ""} ${location["zip"] || ""}<br>
-                ${location["country"] || ""}
-              </p>
-              ${location["email"] ? `<a class="btn btn--primary" href="mailto:${location["email"]}">Email</a>` : ""}
-              ${location["phone_number"] ? `<a class="btn btn--primary" href="tel:${location["phone_number"]}">Call</a>` : ""}
-              ${location["website"] ? `<a class="btn btn--primary" href="${location["website"]}" target="_blank">Visit Website</a>` : ""}
-            </div>
-          `;
+        data.forEach(location => {
+            if (location[key]) {  // Ensure key exists before using it
+                if (!groupedData[location[key]]) {
+                    groupedData[location[key]] = [];
+                }
+                groupedData[location[key]].push(location);
+            }
         });
 
-        container.appendChild(locationContainer);
-      }
-    });
-  }
+        Object.keys(groupedData).sort().forEach(category => {
+            if (category) {
+                const listItem = document.createElement("li");
+                listItem.className = "state-link";
+                listItem.innerHTML = `<a href="#${category}">${category}</a>`;
+                list.appendChild(listItem);
 
-  async function loadLocations() {
-    const usData = await fetchCSV(usCsvUrl);
-    populateLocations(usData, "usLocations", "stateList", "state_province");
+                const locationContainer = document.createElement("div");
+                locationContainer.className = "store-location";
+                locationContainer.id = category;
 
-    const globalData = await fetchCSV(globalCsvUrl);
-    populateLocations(globalData, "globalLocations", "countryList", "country");
-  }
+                groupedData[category].forEach(location => {
+                    locationContainer.innerHTML += `
+                        <div class="location-content">
+                            <h3 class="store-title h5">${location["title"] || "No Title"}</h3>
+                            <p class="mb-0">
+                                ${location["address"] || ""}<br>
+                                ${location["city"] || ""} ${location["state_province"] || ""} ${location["zip"] || ""}<br>
+                                ${location["country"] || ""}
+                            </p>
+                            ${location["email"] ? `<a class="btn btn--primary" href="mailto:${location["email"]}">Email</a>` : ""}
+                            ${location["phone_number"] ? `<a class="btn btn--primary" href="tel:${location["phone_number"]}">Call</a>` : ""}
+                            ${location["website"] ? `<a class="btn btn--primary" href="${location["website"]}" target="_blank">Visit Website</a>` : ""}
+                        </div>
+                    `;
+                });
 
-  document.addEventListener("DOMContentLoaded", loadLocations);
+                container.appendChild(locationContainer);
+            }
+        });
+    }
+
+    async function loadLocations() {
+        try {
+            const usData = await fetchCSV(usCsvUrl);
+            console.log("US Data Loaded:", usData); // Debug: Log US data to check structure
+            populateLocations(usData, "usLocations", "stateList", "state_province");
+
+            const globalData = await fetchCSV(globalCsvUrl);
+            console.log("Global Data Loaded:", globalData); // Debug: Log Global data to check structure
+            populateLocations(globalData, "globalLocations", "countryList", "country");
+        } catch (error) {
+            console.error("Error loading locations:", error);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadLocations);
 </script>
 
 <script>
