@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{ 'store-locator.css' | asset_url }}" media="print" onload="this.media='all'">
 
-{% assign us_locations = shop.metaobjects.store_locations["us-locations"].all.value | sort: 'state_province' %}
+{% assign us_locations = shop.metaobjects.store_locations["us-test"].all.value | sort: 'state_province' %}
 {% assign state_provinces = us_locations | map: 'state_province' %}
 {% assign unique_sorted_states = state_provinces | uniq | sort %}
 
