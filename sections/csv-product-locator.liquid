@@ -54,14 +54,19 @@
         }
     }
 
+    function cleanValue(value) {
+        if (!value) return "";
+        return value.replace(/^"|"$/g, "").trim(); // Remove leading/trailing quotes and trim whitespace
+    }
+
     function parseCSV(csvText) {
         const rows = csvText.split("\n").map(row => row.split(","));
-        const headers = rows.shift().map(header => header.trim());
+        const headers = rows.shift().map(header => cleanValue(header));
 
         return rows.map(row => {
             let obj = {};
             row.forEach((val, idx) => {
-                obj[headers[idx]] = val ? val.trim() : ""; // Ensure val is defined
+                obj[headers[idx]] = cleanValue(val);
             });
             return obj;
         });
@@ -110,8 +115,8 @@
                                 ${location["city"] || ""} ${location["state_province"] || ""} ${location["zip"] || ""}<br>
                                 ${location["country"] || ""}
                             </p>
-                            ${location["email"] ? `<a class="btn btn--primary" href="mailto:${location["email"]}">Email</a>` : ""}
-                            ${location["phone_number"] ? `<a class="btn btn--primary" href="tel:${location["phone_number"]}">Call</a>` : ""}
+                            ${location["email"] ? `<a class="btn btn--primary" href="mailto:${location["email"]}">${location["email"]}</a>` : ""}
+                            ${location["phone_number"] ? `<a class="btn btn--primary" href="tel:${location["phone_number"]}">${location["phone_number"]}</a>` : ""}
                             ${location["website"] ? `<a class="btn btn--primary" href="${location["website"]}" target="_blank">Visit Website</a>` : ""}
                         </div>
                     `;
@@ -125,11 +130,11 @@
     async function loadLocations() {
         try {
             const usData = await fetchCSV(usCsvUrl);
-            console.log("US Data Loaded:", usData); // Debug: Log US data to check structure
+            console.log("US Data Loaded:", usData);
             populateLocations(usData, "usLocations", "stateList", "state_province");
 
             const globalData = await fetchCSV(globalCsvUrl);
-            console.log("Global Data Loaded:", globalData); // Debug: Log Global data to check structure
+            console.log("Global Data Loaded:", globalData);
             populateLocations(globalData, "globalLocations", "countryList", "country");
         } catch (error) {
             console.error("Error loading locations:", error);
