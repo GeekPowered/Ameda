@@ -1,5 +1,14 @@
 <link rel="stylesheet" href="{{ 'store-locator.css' | asset_url }}" media="print" onload="this.media='all'">
 
+{% assign us_locations = shop.metaobjects.store_locations["us-locations"].all.value | sort: 'state_province' %}
+{% assign state_provinces = us_locations | map: 'state_province' %}
+{% assign unique_sorted_states = state_provinces | uniq | sort %}
+
+{% assign global_locations = shop.metaobjects.store_locations["global-locations"].all.value | sort: 'country' %}
+{% assign global_countries = global_locations | map: 'country' %}
+{% assign sorted_global_countries = global_countries | uniq | sort %}
+
+
 <div class="section section--padding" style="margin-top:-4rem;">
   <div class="container">
     <p class="text-center h5 mb-0">E = Elites</p>
@@ -8,165 +17,192 @@
     <p class="text-center h5 mb-0">LE = LACT-E</p>
     <p class="text-center h5 mb-0">EPP = EPP</p>
     <p class="text-center h5" style="margin-bottom: calc(10 * var(--space-unit));">SMB = SMB</p>
-
+    
     <div class="country-selector">
       <div class="country active" data-location-target="usa"><span>🇺🇸 USA</span></div>
       <div class="country" data-location-target="global"><span>🌐 Global</span></div>
     </div>
-
     <div class="find-locations" data-location="usa">
       <p class="text-center"><strong>FIND BY STATE/PROVINCE:</strong></p>
-      <ul class="state-selector" id="stateList"></ul>
+      <ul class="state-selector" id="stateList">
+        {% for state in unique_sorted_states %}
+          {% if state != blank %}
+            <li class="state-link"><a href="#{{ state }}">{{ state }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
-    
     <div class="find-locations hidden" data-location="global">
       <p class="text-center"><strong>FIND BY COUNTRY:</strong></p>
-      <ul class="state-selector" id="countryList"></ul>
+      <ul class="state-selector">
+        {% for country in sorted_global_countries %}
+          {% if country != blank %}
+            <li class="state-link"><a href="#{{ country }}">{{ country }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </div>
 
 <div class="section section--padding" data-location="usa">
   <div class="container">
-    <div class="store-locations" id="usLocations"></div>
+    <div class="store-locations">
+          {% assign current_state = '' %}
+          {% assign is_first_item = true %}
+          {% for store_location in us_locations %}
+          {% if current_state != store_location.state_province %}
+            {% assign current_state = store_location.state_province %}
+            {% assign is_first_item = true %}
+          {% endif %}
+          <div class="store-location" {% if is_first_item %}id="{{ current_state | strip }}"{% assign is_first_item = false %}{% endif %}>
+            <div class="location-content">
+                <h3 class="store-title h5">{{ store_location.title }}</h3>
+            
+                {% if store_location.short_description != '' %}
+                  <div class="popover-wrapper">
+                    <span class="short-desc">{{ store_location.short_description }}</span>
+                    {% if store_location.rentals != '' %}<span class="short-desc">{{ store_location.rentals }}</span>{% endif %}
+                    {% if store_location.description != '' %}
+                      <div class="popover-content">
+                        <span>{{ store_location.description }}</span>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+                
+                <p class="mb-0">
+                  {% if store_location.address != '' %}{{ store_location.address }}{% endif %}
+                    <br>
+                  {% if store_location.city != '' %} {{ store_location.city }}{% endif %}
+                  {% if store_location.state_province != '' %} {{ store_location.state_province }}{% endif %}
+                  {% if store_location.zip != '' %} {{ store_location.zip }}{% endif %}
+                  <br>
+                  {% if store_location.country != '' %} {{ store_location.country }}{% endif %}
+                </p>
+            </div>
+        
+            <div class="location-content">
+              {% if store_location.email != '' %}
+                {% assign emails = store_location.email | split: ',' %}
+                {% for email in emails %}
+                  <a class="link-with-icon btn btn--primary" href="mailto:{{ email | strip }}">
+                    {% render 'icon-mail' %} {{ email | strip }}
+                  </a>
+                {% endfor %}
+              {% endif %}
+            
+              {% if store_location.phone_number != '' %}
+                {% assign phone_numbers = store_location.phone_number | split: ',' %}
+                {% for phone_number in phone_numbers %}
+                  <a class="link-with-icon btn btn--primary" href="tel:{{ phone_number | strip }}">
+                    {% render 'icon-phone' %} {{ phone_number | strip }}
+                  </a>
+                {% endfor %}
+              {% endif %}
+        
+              {% if store_location.website != '' %}
+                <a class="link-with-icon btn btn--primary" target="_blank" href="{{ store_location.website }}">{% render 'icon-link' %} Visit Website</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+    </div>
   </div>
 </div>
-
 <div class="section section--padding hidden" data-location="global">
   <div class="container">
-    <div class="store-locations" id="globalLocations"></div>
+    <div class="store-locations">
+          {% assign current_country = '' %}
+          {% assign is_first_item = true %}
+          {% for global_location in global_locations %}
+          {% if current_country != global_location.country %}
+            {% assign current_country = global_location.country %}
+            {% assign is_first_item = true %}
+          {% endif %}
+          <div class="store-location" {% if is_first_item %}id="{{ current_country | strip }}"{% assign is_first_item = false %}{% endif %}>
+            <div class="location-content">
+                <h3 class="store-title h5">{{ global_location.title }}</h3>
+            
+                {% if global_location.short_description != '' %}
+                  <div class="popover-wrapper">
+                    <span class="short-desc">{{ global_location.short_description }}</span>
+                    {% if global_location.rentals != '' %}<span class="short-desc">{{ global_location.rentals }}</span>{% endif %}
+                    {% if global_location.description != '' %}
+                      <div class="popover-content">
+                        <span>{{ global_location.description }}</span>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+                
+                <p class="mb-0">
+                  {% if global_location.address != '' %}{{ global_location.address }}{% endif %}
+                    <br>
+                  {% if global_location.city != '' %} {{ global_location.city }}{% endif %}
+                  {% if global_location.state_province != '' %} {{ global_location.state_province }}{% endif %}
+                  {% if global_location.zip != '' %} {{ global_location.zip }}{% endif %}
+                  <br>
+                  {% if global_location.country != '' %} {{ global_location.country }}{% endif %}
+                </p>
+            </div>
+        
+            <div class="location-content">
+              {% if global_location.email != '' %}
+                {% assign emails = global_location.email | split: ',' %}
+                {% for email in emails %}
+                  <a class="link-with-icon btn btn--primary" href="mailto:{{ email | strip }}">
+                    {% render 'icon-mail' %} {{ email | strip }}
+                  </a>
+                {% endfor %}
+              {% endif %}
+            
+              {% if global_location.phone_number != '' %}
+                {% assign phone_numbers = global_location.phone_number | split: ',' %}
+                {% for phone_number in phone_numbers %}
+                  <a class="link-with-icon btn btn--primary" href="tel:{{ phone_number | strip }}">
+                    {% render 'icon-phone' %} {{ phone_number | strip }}
+                  </a>
+                {% endfor %}
+              {% endif %}
+        
+              {% if global_location.website != '' %}
+                <a class="link-with-icon btn btn--primary" target="_blank" href="{{ global_location.website }}">{% render 'icon-link' %} Visit Website</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+    </div>
   </div>
 </div>
 
+
 <script>
-  const usCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJvcZLYkSdcfoaZn6xyXN3j931r-vJghDEyEdWcUMRGVTGOqVhXet059aLhIJasjgIW97xPYfxrj3K/pub?output=csv";
-  const globalCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmq_Q0m6Uq9eL7LQhZ7h8ztHTtHC3iTJUPhdh215exVNPO5LCPas50U4KWRWEdIiunu2tvve4RxeVs/pub?output=csv";
-
-  async function fetchCSV(url) {
-      try {
-          const response = await fetch(url);
-          if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-          const text = await response.text();
-          return parseCSV(text);
-      } catch (error) {
-          console.error("Error fetching CSV:", error);
-          return [];
-      }
-  }
-
-  function parseCSV(csvText) {
-      const rows = csvText.split("\n").map(row => row.split(","));
-      const headers = rows.shift().map(header => header.trim());
-
-      return rows.map(row => {
-          let obj = {};
-          row.forEach((val, idx) => {
-              obj[headers[idx]] = val ? val.trim().replace(/^"|"$/g, "") : "";
-          });
-          return obj;
-      });
-  }
-
-  function populateLocations(data, containerId, listId, key) {
-      const container = document.getElementById(containerId);
-      const list = document.getElementById(listId);
-
-      if (!container || !list) {
-          console.error(`Error: Missing container or list element for ${containerId}`);
-          return;
-      }
-
-      container.innerHTML = "";
-      list.innerHTML = "";
-
-      const groupedData = {};
-
-      data.forEach(location => {
-          if (location[key]) {
-              if (!groupedData[location[key]]) groupedData[location[key]] = [];
-              groupedData[location[key]].push(location);
-          }
-      });
-
-      Object.keys(groupedData).sort().forEach(category => {
-          if (category) {
-              const listItem = document.createElement("li");
-              listItem.className = "state-link";
-              listItem.innerHTML = `<a href="#${category}">${category}</a>`;
-              list.appendChild(listItem);
-
-              const locationContainer = document.createElement("div");
-              locationContainer.className = "store-location";
-              locationContainer.id = category;
-
-              groupedData[category].forEach(location => {
-                  let categoryTag = location["short_description"] ? `<span class="location-tag">${location["short_description"]}</span>` : "";
-                  
-                  let phoneNumbers = location["phone_number"] ? location["phone_number"].split(",").map(phone => `<a class="btn btn--primary" href="tel:${phone.trim()}"><i class="icon-phone"></i> ${phone.trim()}</a>`).join(" ") : "";
-                  
-                  let emails = location["email"] ? location["email"].split(",").map(email => `<a class="btn btn--primary" href="mailto:${email.trim()}"><i class="icon-mail"></i> ${email.trim()}</a>`).join(" ") : "";
-                  
-                  let website = location["website"] ? `<a class="btn btn--primary" href="${location["website"]}" target="_blank"><i class="icon-link"></i> Visit Website</a>` : "";
-                  
-                  locationContainer.innerHTML += `
-                      <div class="location-content">
-                          <h3 class="store-title h5">${location["title"] || "No Title"} ${categoryTag}</h3>
-                          <p class="mb-0">
-                              ${location["address"] || ""}<br>
-                              ${location["city"] ? location["city"] + "," : ""} ${location["state_province"] || ""} ${location["zip"] || ""}<br>
-                              ${location["country"] || ""}
-                          </p>
-                          <div class="contact-options">
-                              ${emails}
-                              ${phoneNumbers}
-                              ${website}
-                          </div>
-                      </div>
-                  `;
-              });
-
-              container.appendChild(locationContainer);
-          }
-      });
-  }
-
-  async function loadLocations() {
-      try {
-          const usData = await fetchCSV(usCsvUrl);
-          console.log("US Data Loaded:", usData);
-          populateLocations(usData, "usLocations", "stateList", "state_province");
-
-          const globalData = await fetchCSV(globalCsvUrl);
-          console.log("Global Data Loaded:", globalData);
-          populateLocations(globalData, "globalLocations", "countryList", "country");
-      } catch (error) {
-          console.error("Error loading locations:", error);
-      }
-  }
-
-  document.addEventListener("DOMContentLoaded", loadLocations);
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
     const countries = document.querySelectorAll(".country");
     const findLocations = document.querySelectorAll("[data-location]");
 
     countries.forEach(country => {
-        country.addEventListener("click", function() {
-            const targetLocation = this.getAttribute("data-location-target");
+      country.addEventListener("click", function() {
+        const targetLocation = this.getAttribute("data-location-target");
 
-            if (this.classList.contains("active")) return;
+        // If the clicked country already has the active class, do nothing
+        if (this.classList.contains("active")) {
+          return;
+        }
 
-            countries.forEach(country => {
-                country.classList.toggle("active", country === this);
-            });
-
-            findLocations.forEach(location => {
-                location.classList.toggle("hidden", location.getAttribute("data-location") !== targetLocation);
-            });
+        // Toggle active class on countries
+        countries.forEach(country => {
+          country.classList.toggle("active", country === this);
         });
+
+        // Toggle hidden class on find-locations elements
+        findLocations.forEach(location => {
+          location.classList.toggle("hidden", location.getAttribute("data-location") !== targetLocation);
+        });
+      });
     });
-});
+  });
 </script>
 
 {% schema %}
