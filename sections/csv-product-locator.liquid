@@ -87,7 +87,7 @@
         const groupedData = {};
 
         data.forEach(location => {
-            if (location[key]) {  // Ensure key exists before using it
+            if (location[key]) {  
                 if (!groupedData[location[key]]) {
                     groupedData[location[key]] = [];
                 }
@@ -107,17 +107,24 @@
                 locationContainer.id = category;
 
                 groupedData[category].forEach(location => {
+                    let categoryTag = location["category"] ? `<span class="location-tag">${location["category"]}</span>` : "";
+                    let phone = location["phone_number"] ? `<a class="btn btn--primary" href="tel:${location["phone_number"]}"><i class="icon-phone"></i> ${location["phone_number"]}</a>` : "";
+                    let email = location["email"] ? `<a class="btn btn--primary" href="mailto:${location["email"]}"><i class="icon-mail"></i> ${location["email"]}</a>` : "";
+                    let website = location["website"] ? `<a class="btn btn--primary" href="${location["website"]}" target="_blank"><i class="icon-link"></i> Visit Website</a>` : "";
+                    
                     locationContainer.innerHTML += `
                         <div class="location-content">
-                            <h3 class="store-title h5">${location["title"] || "No Title"}</h3>
+                            <h3 class="store-title h5">${location["title"] || "No Title"} ${categoryTag}</h3>
                             <p class="mb-0">
                                 ${location["address"] || ""}<br>
-                                ${location["city"] || ""} ${location["state_province"] || ""} ${location["zip"] || ""}<br>
+                                ${location["city"] ? location["city"] + "," : ""} ${location["state_province"] || ""} ${location["zip"] || ""}<br>
                                 ${location["country"] || ""}
                             </p>
-                            ${location["email"] ? `<a class="btn btn--primary" href="mailto:${location["email"]}">${location["email"]}</a>` : ""}
-                            ${location["phone_number"] ? `<a class="btn btn--primary" href="tel:${location["phone_number"]}">${location["phone_number"]}</a>` : ""}
-                            ${location["website"] ? `<a class="btn btn--primary" href="${location["website"]}" target="_blank">Visit Website</a>` : ""}
+                            <div class="contact-options">
+                                ${email}
+                                ${phone}
+                                ${website}
+                            </div>
                         </div>
                     `;
                 });
