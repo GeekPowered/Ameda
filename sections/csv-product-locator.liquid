@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="{{ 'store-locator.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<div class="section section--padding" style="margin-top:-4rem;">
+  <div class="container">
+    <p class="text-center h5 mb-0">E = Elites</p>
+    <p class="text-center h5 mb-0">P = Platinums</p>
+    <p class="text-center h5 mb-0">PRL = Pearl</p>
+    <p class="text-center h5 mb-0">LE = LACT-E</p>
+    <p class="text-center h5 mb-0">EPP = EPP</p>
+    <p class="text-center h5" style="margin-bottom: calc(10 * var(--space-unit));">SMB = SMB</p>
+    
+    <div class="country-selector">
+      <div class="country active" data-location-target="usa"><span>🇺🇸 USA</span></div>
+      <div class="country" data-location-target="global"><span>🌐 Global</span></div>
+    </div>
+    <div class="find-locations" data-location="usa">
+      <p class="text-center"><strong>FIND BY STATE/PROVINCE:</strong></p>
+      <ul class="state-selector" id="stateList"></ul>
+    </div>
+    <div class="find-locations hidden" data-location="global">
+      <p class="text-center"><strong>FIND BY COUNTRY:</strong></p>
+      <ul class="state-selector" id="countryList"></ul>
+    </div>
+  </div>
+</div>
+
+<div class="section section--padding" data-location="usa">
+  <div class="container">
+    <div class="store-locations" id="usLocations"></div>
+  </div>
+</div>
+
+<div class="section section--padding hidden" data-location="global">
+  <div class="container">
+    <div class="store-locations" id="globalLocations"></div>
+  </div>
+</div>
+
+<script>
+  const usCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJvcZLYkSdcfoaZn6xyXN3j931r-vJghDEyEdWcUMRGVTGOqVhXet059aLhIJasjgIW97xPYfxrj3K/pub?output=csv";
+  const globalCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmq_Q0m6Uq9eL7LQhZ7h8ztHTtHC3iTJUPhdh215exVNPO5LCPas50U4KWRWEdIiunu2tvve4RxeVs/pub?output=csv";
+
+  async function fetchCSV(url) {
+    const response = await fetch(url);
+    const text = await response.text();
+    return parseCSV(text);
+  }
+
+  function parseCSV(csvText) {
+    const rows = csvText.split("\n").map(row => row.split(","));
+    const headers = rows.shift();
+    return rows.map(row => {
+      let obj = {};
+      row.forEach((val, idx) => {
+        obj[headers[idx].trim()] = val.trim();
+      });
+      return obj;
+    });
+  }
+
+  function populateLocations(data, containerId, listId, key) {
+    const container = document.getElementById(containerId);
+    const list = document.getElementById(listId);
+    const groupedData = {};
+
+    data.forEach(location => {
+      if (!groupedData[location[key]]) {
+        groupedData[location[key]] = [];
+      }
+      groupedData[location[key]].push(location);
+    });
+
+    Object.keys(groupedData).sort().forEach(category => {
+      if (category) {
+        const listItem = document.createElement("li");
+        listItem.className = "state-link";
+        listItem.innerHTML = `<a href="#${category}">${category}</a>`;
+        list.appendChild(listItem);
+
+        const locationContainer = document.createElement("div");
+        locationContainer.className = "store-location";
+        locationContainer.id = category;
+
+        groupedData[category].forEach(location => {
+          locationContainer.innerHTML += `
+            <div class="location-content">
+              <h3 class="store-title h5">${location["title"] || ""}</h3>
+              <p class="mb-0">
+                ${location["address"] || ""}<br>
+                ${location["city"] || ""} ${location["state_province"] || ""} ${location["zip"] || ""}<br>
+                ${location["country"] || ""}
+              </p>
+              ${location["email"] ? `<a class="btn btn--primary" href="mailto:${location["email"]}">Email</a>` : ""}
+              ${location["phone_number"] ? `<a class="btn btn--primary" href="tel:${location["phone_number"]}">Call</a>` : ""}
+              ${location["website"] ? `<a class="btn btn--primary" href="${location["website"]}" target="_blank">Visit Website</a>` : ""}
+            </div>
+          `;
+        });
+
+        container.appendChild(locationContainer);
+      }
+    });
+  }
+
+  async function loadLocations() {
+    const usData = await fetchCSV(usCsvUrl);
+    populateLocations(usData, "usLocations", "stateList", "state_province");
+
+    const globalData = await fetchCSV(globalCsvUrl);
+    populateLocations(globalData, "globalLocations", "countryList", "country");
+  }
+
+  document.addEventListener("DOMContentLoaded", loadLocations);
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const countries = document.querySelectorAll(".country");
+    const findLocations = document.querySelectorAll("[data-location]");
+
+    countries.forEach(country => {
+      country.addEventListener("click", function() {
+        const targetLocation = this.getAttribute("data-location-target");
+
+        if (this.classList.contains("active")) return;
+
+        countries.forEach(country => {
+          country.classList.toggle("active", country === this);
+        });
+
+        findLocations.forEach(location => {
+          location.classList.toggle("hidden", location.getAttribute("data-location") !== targetLocation);
+        });
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "CSV Locations",
+  "presets": [
+    {
+      "name": "CSV Locations",
+      "category": "Template"
+    }
+  ]
+}
+{% endschema %}
