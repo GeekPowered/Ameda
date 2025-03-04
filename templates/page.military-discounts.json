@@ -67,6 +67,18 @@
         "prevent_animation": false
       }
     },
+    "custom_liquid_wCYBgk": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<p class=\"mb-0 text-center\"><strong>Shop Accessories for 10% Off for Military! Use code: <span style=\"background: #fff; color: #000;display:inline-block;padding: 0 .5rem;border-radius: .25em;\">Military10</span></p>",
+        "section_height": "small",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "2",
+        "baby_patterns": true,
+        "prevent_animation": false
+      }
+    },
     "media_with_text_wRGV7H": {
       "type": "media-with-text",
       "blocks": {
@@ -767,6 +779,7 @@
   "order": [
     "main",
     "329e5978-de6e-4b2d-9322-d45d0e244c4b",
+    "custom_liquid_wCYBgk",
     "media_with_text_wRGV7H",
     "custom_liquid_tRmdKP",
     "70b6796a-4aa7-4791-9ea6-72e90afed64c",
