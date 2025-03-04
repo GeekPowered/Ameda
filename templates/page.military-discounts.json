@@ -220,7 +220,7 @@
         "@media (max-width: 768px) {.split-text {flex-direction: column; gap: 0; } .split-text h2 {width: auto; }}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"split-text\">\n    <h2>Why Choose Ameda for Your Military Breast Pump?</h2>\n    <div>\n        <p style=\"margin: 0;\">For over 80 years, Ameda has been a trusted name in hospital-grade breast pumps,\n            supporting military families, new mothers, and healthcare providers worldwide. Our pumps are designed for\n            efficiency, comfort, and durability, ensuring that you get the best quality for your breastfeeding needs.\n        </p>\n    </div>\n</div>",
+        "custom_liquid": "<div class=\"split-text\">\n    <h2>Why Choose Ameda for Your Military Breast Pump?</h2>\n    <div>\n        <p style=\"margin: 0;\">For over 80 years, Ameda has been a trusted name in hospital-grade breast pumps,\n            supporting military families, new mothers, and healthcare providers worldwide. Our pumps are designed for\n            efficiency, comfort, portability, and durability, ensuring that you get the best quality for your breastfeeding needs.\n        </p>\n    </div>\n</div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
