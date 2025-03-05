@@ -56,6 +56,31 @@
 <meta name="twitter:description" content="{{ og_description | escape }}">
 
 
+{% if template == 'index' %}
+
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/breastfeeding-hero.jpg?v=1703715478&width=480">
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/breastfeeding-hero.jpg?v=1703715478&width=980">
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/breastfeeding-hero.jpg?v=1703715478&width=1200">
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/breastfeeding-hero.jpg?v=1703715478&width=1400">
+
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/mother-pumping-on-couch-with-baby.jpg?v=1727977897&width=460">
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/mother-pumping-on-couch-with-baby.jpg?v=1727977897&width=700">
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/mother-pumping-on-couch-with-baby.jpg?v=1727977897&width=860">
+
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/for-hospitals.jpg?v=1703875610&width=460">
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/for-hospitals.jpg?v=1703875610&width=700">
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/for-hospitals.jpg?v=1703875610&width=860">
+
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/mother-holding-pump.jpg?v=1727978175&width=460">
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/mother-holding-pump.jpg?v=1727978175&width=700">
+<link rel="preload" as="image" href="https://www.ameda.com/cdn/shop/files/mother-holding-pump.jpg?v=1727978175&width=860">
+
+
+{% endif %}
+
+
+
+
 {% comment %}
 {%- liquid
   assign og_title = page_title | default: shop.name
