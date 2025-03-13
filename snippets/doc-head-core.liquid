@@ -69,6 +69,12 @@
   {% endif %}
 {% endif %}
 
+{% if template == 'collection' %}
+  {% if page.metafields.page.seo_hidden == 1 %}
+    <meta name="robots" content="noindex, nofollow" />
+  {% endif %}
+{% endif %}
+
 {%- if settings.favicon != blank -%}
   {%- liquid
     assign image_type = settings.favicon | split: '?' | first | split: '.' | last | downcase
