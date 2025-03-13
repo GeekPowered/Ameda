@@ -72,7 +72,7 @@
         "heading_3PQKqU": {
           "type": "heading",
           "settings": {
-            "heading": "About Ameda Breast Pumps",
+            "heading": "About Ameda’s Breast Pump Flange Products",
             "heading_size": "h0",
             "heading_h1": false
           }
@@ -80,7 +80,7 @@
         "text_DAL6Jy": {
           "type": "text",
           "settings": {
-            "text": "<p>We offer both personal and hospital-grade breast pumps, all of which are available through insurance. Our collection includes a wide variety of pumps that are designed to cater to different preferences and needs. Whether you need a multi-user pump to rent or want to purchase a single-user pump through your insurance, Ameda’s products help you extract milk and store it comfortably and conveniently. We are committed to making your breastfeeding journey as easy and effective as possible, with options tailored to your unique lifestyle. Our breast pumps are built to be durable, efficient, and easy to use, ensuring that you can express milk whenever you need to, whether you’re at home, at work, or on the go. Additionally, Ameda offers a range of accessories that complement our breast pumps, providing added convenience and comfort to your pumping sessions.</p>",
+            "text": "<p>Ameda’s breast pump flanges are designed to enhance your comfort while maximizing milk expression. We know that a poor-fitting flange can lead to discomfort and reduced milk flow, which is why we offer multiple size options and styles to ensure you have the perfect fit.</p>",
             "enlarge_text": false
           }
         }
@@ -95,7 +95,6 @@
         ".baby-pattern > div {padding-top: 5rem !important; padding-bottom: 5rem !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/mya-joy-plus-baby.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -124,7 +123,7 @@
         "heading_UUPDaE": {
           "type": "heading",
           "settings": {
-            "heading": "Electric Breast Pumps",
+            "heading": "Ameda Universal Soft Breast Pump Flange Inserts",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -132,7 +131,7 @@
         "text_rDzkTQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Ameda's <a href=\"https://www.ameda.com/products/ameda-mya-joy-hospital-strength-portable-electric-breast-pump\"><span style=\"text-decoration:underline\">electric breast pumps</span></a> are designed for maximum efficiency and ease of use. With powerful suction and customizable settings, these pumps allow moms to express milk comfortably and quickly. Our electric pumps are ideal for moms who need to pump frequently or are looking for a reliable solution for use at home or on the go. These pumps come equipped with multiple suction levels and speeds, allowing you to personalize your pumping experience for optimal comfort and effectiveness. Whether you're establishing your milk supply or maintaining it, Ameda's electric breast pumps are here to support you throughout your breastfeeding journey. The portability and reliability of our electric models make them a trusted choice for many moms.</p>",
+            "text": "<p>The Universal Soft Breast Pump Flange Inserts are made from soft, flexible material to conform gently to your breast shape. These silicone insert pieces fit snugly into the standard Ameda flange, offering a cushioned surface that can help minimize discomfort during pumping. Ideal for new moms or anyone who experiences nipple pain or friction, these inserts support comfortable pumping sessions without compromising suction strength.</p>",
             "enlarge_text": false
           }
         }
@@ -145,7 +144,6 @@
         ".media {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/sku_131a40_010_rgb_2.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -165,7 +163,7 @@
         "heading_DgTLNx": {
           "type": "heading",
           "settings": {
-            "heading": "Manual Breast Pumps",
+            "heading": "Ameda CustomFit Breast Pump Flanges™ and Inserts",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -173,7 +171,7 @@
         "text_A7fFxQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Our <a href=\"https://www.ameda.com/products/ameda-portable-manual-breast-pump\"><span style=\"text-decoration:underline\">manual breast pumps</span></a> provide a portable and affordable option for moms who need occasional pumping. Lightweight and easy to use, these pumps give you complete control over suction and speed, making them a great choice for moms who want a simple, hands-on pumping experience. Manual pumps are perfect for those moments when you need a quick and quiet pumping solution, without relying on electricity or batteries. Their compact size also makes them ideal for travel or keeping in your bag for unexpected pumping needs. With Ameda's manual pumps, you can achieve efficient milk expression at your own pace, wherever and whenever you need to.</p>",
+            "text": "<p>Every mom is unique — and so are her pumping needs. That’s why Ameda offers the CustomFit Breast Pump Flanges™ and Inserts, a versatile range of multiple size options to help most moms find their right flange size. Whether you need a smaller flange tunnel for a more secure vacuum seal or a larger funnel shape for better comfort, this customizable system ensures that your breast pump flange works for you. A proper fit not only supports better milk flow but also helps prevent soreness, elastic nipples, and potential discomfort around the areola.</p>",
             "enlarge_text": false
           }
         }
@@ -187,138 +185,11 @@
         ".section--padded {padding-top: 0 !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "left",
         "image_fit": "cover",
-        "media_width": 50,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "1",
-        "only_content_color_scheme": false,
-        "baby_patterns": false
-      }
-    },
-    "media_with_text_RGVTzq": {
-      "type": "media-with-text",
-      "blocks": {
-        "heading_HRqWaf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Double Breast Pumps",
-            "heading_size": "h3",
-            "heading_h1": false
-          }
-        },
-        "text_djDRF9": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"https://www.ameda.com/products/ameda-mya-joy-plus-rechargeable-quiet-and-portable-double-breast-pump\"><span style=\"text-decoration:underline\">Double breast pumps</span></a> allow you to pump both breasts simultaneously, which can save time and help boost milk production. Ameda's double breast pumps are designed to provide efficient and comfortable pumping sessions, helping busy moms make the most of their time while ensuring that they can provide enough milk for their babies. By using a double pump, you can cut pumping time in half compared to single pumping, which is especially beneficial for moms with tight schedules. Additionally, double pumping has been shown to help increase milk output by stimulating both breasts at once, which can be particularly useful when trying to build or maintain a healthy milk supply. Ameda's double pumps are crafted with comfort in mind, featuring adjustable settings that allow you to customize your pumping experience.</p>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_HRqWaf",
-        "text_djDRF9"
-      ],
-      "custom_css": [
-        ".media {border-radius: 1rem;}",
-        ".section--padded {padding-top: 0 !important;}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/01.jpg",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "right",
-        "image_fit": "cover",
-        "media_width": 50,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "1",
-        "only_content_color_scheme": false,
-        "baby_patterns": false
-      }
-    },
-    "media_with_text_MBXhpQ": {
-      "type": "media-with-text",
-      "blocks": {
-        "heading_nNWBya": {
-          "type": "heading",
-          "settings": {
-            "heading": "Portable Breast Pumps",
-            "heading_size": "h3",
-            "heading_h1": false
-          }
-        },
-        "text_JmCMib": {
-          "type": "text",
-          "settings": {
-            "text": "<p>For moms on the move, Ameda’s portable breast pumps are lightweight and easy to carry, with battery options that allow for pumping anytime, anywhere. These pumps offer the flexibility to keep up with your busy lifestyle, making it easier to balance breastfeeding with work, travel, and other activities. Ameda’s portable pumps are designed for convenience, featuring compact size and battery-powered operation, so you can pump whenever and wherever you need to. Whether you’re traveling, at the office, or simply out and about, our portable pumps provide the freedom and flexibility to maintain your milk supply without being tied to an outlet. With features like easy-to-clean parts and discreet carrying cases, Ameda’s portable pumps are perfect for moms who need a versatile pumping solution. Wearable breast pumps offer an additional discreet, hands-free option that can be worn inside a regular bra, making them ideal for use during commutes or while engaging in daily activities.</p>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_nNWBya",
-        "text_JmCMib"
-      ],
-      "custom_css": [
-        ".media {border-radius: 1rem;}",
-        ".section--padded {padding-top: 0 !important;}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/joykit_2.jpg",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "left",
-        "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "1",
-        "only_content_color_scheme": false,
-        "baby_patterns": false
-      }
-    },
-    "media_with_text_QUfFa6": {
-      "type": "media-with-text",
-      "blocks": {
-        "heading_MgQgny": {
-          "type": "heading",
-          "settings": {
-            "heading": "Hospital Grade Breast Pumps",
-            "heading_size": "h3",
-            "heading_h1": false
-          }
-        },
-        "text_8h4ebQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Ameda's hospital-grade breast pumps are designed for multi-user environments, providing the highest level of efficiency and comfort. Hospital-grade pumps are ideal for moms who need extra support in establishing or maintaining their milk supply, especially in challenging situations like premature births or breastfeeding difficulties. Hospital-grade pumps are known for their powerful suction and consistent performance, which can make a significant difference in helping moms successfully express milk. Available for rent through insurance, these pumps offer the strength and reliability needed for effective milk expression, particularly for moms facing unique challenges. Ameda's hospital-grade pumps feature advanced technology that closely mimics an infant's natural nursing pattern, promoting optimal milk flow and comfort. Whether you're in a hospital setting or at home, our hospital-grade pumps provide the robust support you need to achieve your breastfeeding goals.</p>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_MgQgny",
-        "text_8h4ebQ"
-      ],
-      "custom_css": [
-        ".media {border-radius: 1rem;}",
-        ".section--padded > div {padding-bottom: 5rem;}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/pearl-with-award.jpg",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "right",
-        "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
@@ -336,49 +207,10 @@
         "waveposition": "bottom"
       }
     },
-    "video_jMcjHJ": {
-      "type": "video",
-      "blocks": {
-        "heading_FekL7B": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Story of Ameda – The Breast Pump Originator",
-            "heading_size": "h2",
-            "heading_h1": false
-          }
-        },
-        "text_z9mzwi": {
-          "type": "text",
-          "settings": {
-            "text": "<p>In 1942, Ameda's founder, Swedish engineer Einar Egnell, was challenged by a leading gynecologist to create a better breast pump. After extensive research and trials, Egnell developed the first hospital-grade pump that mimicked an infant's natural suckling rhythm, making it more comfortable for moms while ensuring effective milk expression.</p><p>Egnell's commitment to improving breastfeeding technology led to the creation of Ameda, and he established the vacuum and cycling standards that are still the industry benchmark today. For over 80 years, we have continued his mission to innovate and deliver the highest quality breast pump technology.</p>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_FekL7B",
-        "text_z9mzwi"
-      ],
-      "custom_css": [
-        ".media,iframe {border-radius: 1rem;}"
-      ],
-      "settings": {
-        "video_external": "https://www.youtube.com/watch?v=2U0s5D8maNk",
-        "video_description": "",
-        "poster_image": "shopify://shop_images/Einar_Egnell.jpg",
-        "video_size": "md",
-        "video_autoplay": false,
-        "text_align": "text-start",
-        "color_scheme": "default"
-      }
-    },
-    "custom_liquid_U7gAiB": {
+    "custom_liquid_gFpKTF": {
       "type": "custom-liquid",
-      "custom_css": [
-        ".section--padded-default {padding-bottom: 0 !important;}"
-      ],
       "settings": {
-        "custom_liquid": "<h2>The Benefits of Using Ameda Breast Pumps</h2>\n<p>At Ameda, we offer a variety of breast pumps to meet the needs of every mom. As the pioneers of hospital-grade breast pumps, we pride ourselves on providing products that are comfortable, efficient, and designed to fit seamlessly into your life, whether you’re at home, on the go, or in a hospital setting.\n</p>",
+        "custom_liquid": "<h2>Why Flange Fit Matters for Successful Pumping</h2>\n<p>The right flange size can make all the difference in your pumping success. If your flange is too small, it can pinch, restrict milk flow, and potentially cause nipple pain. If it’s too large, it may not create a vacuum seal, resulting in reduced suction and inefficient pumping.</p>\n<p class=\"mb-0\">With Ameda’s CustomFit Breast Pump Flanges™ and Universal Soft Breast Pump Flange Inserts, you can customize your fit to maximize comfort and pumping efficiency. A secure yet gentle flange tunnel helps position your nipple without drawing in excess breast tissue or ducts. Comfortable pumping sessions are more productive and less stressful, making it easier to meet your breastfeeding goals.</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -396,8 +228,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/accessible.png",
             "media_scale": 100,
-            "heading": "Accessibility",
-            "text": "<p>Pump comfortably and confidently wherever you are. Ameda’s focus on user-friendly designs means that every mom can easily incorporate pumping into her routine.</p>",
+            "heading": "Start with the Right Fit",
+            "text": "<p>Begin by taking a measurement of your nipple size (diameter) and comparing it to Ameda’s flange sizing chart. Remember, your nipple should move freely within the flange tunnel without rubbing against the sides. If your breast tissue or areola is pulled in, or if the elastic causes your nipples to stretch uncomfortably, the flange may be too large.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -408,8 +240,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/comfort.png",
             "media_scale": 100,
-            "heading": "Comfort",
-            "text": "<p>We prioritize your comfort. Each Ameda pump has adjustable settings, so you can personalize your experience to match your body and needs for a pain-free, natural feel.</p>",
+            "heading": "Consider Comfort & Positioning",
+            "text": "<p>If pumping feels uncomfortable or painful, even with the proper size, soft silicone piece inserts like the Universal Soft Breast Pump Flange Inserts can add an extra layer of cushioning. Angled flanges also improve your posture during pumping, helping you maintain a relaxed and effective position.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -420,8 +252,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/convenience.png",
             "media_scale": 100,
-            "heading": "Convenience",
-            "text": "<p>Pump on your schedule, no matter where you are, and make each pumping session efficient and stress-free. Ameda’s range of pumps is designed to help make pumping a hassle-free part of your day.</p>",
+            "heading": "Seek Professional Guidance",
+            "text": "<p>If you’re unsure about your fit, working with a lactation consultant can help you identify the size and style specifically designed for your needs. This is especially helpful for new moms who are still adjusting after pregnancy. For help finding a lactation consultant, visit our <a href=\"https://www.ameda.com/pages/lactation-support\"><span style=\"text-decoration:underline\">lactation support page</span></a>.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -437,8 +269,85 @@
         ".card__media img {width: auto; height: 100%; border: 2px solid #ef8d96; border-radius: 50%; background: #fff;}"
       ],
       "settings": {
-        "title": "",
+        "title": "How to Choose the Right Breast Pump Flange Size",
         "use_h4_class": true,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-left",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "custom_liquid_t9aVJm": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"background:#fff;padding:1.5rem 2rem;border-radius:1rem;border:2px solid #ef8d96;\"><h2>Material Matters: Hard Plastic vs. Soft Silicone\n</h2>\n<p class=\"mb-0\">Most Ameda flanges use a combination of hard plastic outer shells with silicone insert options to ensure a vacuum seal without sacrificing comfort. The silicone piece is specifically designed to offer a gentle surface against your skin, reducing friction and the likelihood of nipple pain. Meanwhile, the hard plastic structure provides durability and helps the flange maintain its shape.\n</p></div>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "multi_column_aw7EBy": {
+      "type": "multi-column",
+      "blocks": {
+        "column_QwQ7PT": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/accessible.png",
+            "media_scale": 100,
+            "heading": "Start with the Right Fit",
+            "text": "<p>Begin by taking a measurement of your nipple size (diameter) and comparing it to Ameda’s flange sizing chart. Remember, your nipple should move freely within the flange tunnel without rubbing against the sides. If your breast tissue or areola is pulled in, or if the elastic causes your nipples to stretch uncomfortably, the flange may be too large.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_pLekhX": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/comfort.png",
+            "media_scale": 100,
+            "heading": "Consider Comfort & Positioning",
+            "text": "<p>If pumping feels uncomfortable or painful, even with the proper size, soft silicone piece inserts like the Universal Soft Breast Pump Flange Inserts can add an extra layer of cushioning. Angled flanges also improve your posture during pumping, helping you maintain a relaxed and effective position.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_7JtdpW": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/convenience.png",
+            "media_scale": 100,
+            "heading": "Seek Professional Guidance",
+            "text": "<p>If you’re unsure about your fit, working with a lactation consultant can help you identify the size and style specifically designed for your needs. This is especially helpful for new moms who are still adjusting after pregnancy. For help finding a lactation consultant, visit our <a href=\"https://www.ameda.com/pages/lactation-support\"><span style=\"text-decoration:underline\">lactation support page</span></a>.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_QwQ7PT",
+        "column_pLekhX",
+        "column_7JtdpW"
+      ],
+      "custom_css": [
+        ".card__media {border-radius: 0; overflow: hidden; padding-top: 0 !important; height: 6rem;}",
+        ".card__media img {width: auto; height: 100%; border: 2px solid #ef8d96; border-radius: 50%; background: #fff;}"
+      ],
+      "settings": {
+        "title": "Tips for Using Your Ameda Breast Pump Flanges",
+        "use_h4_class": false,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -627,7 +536,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": "top"
       }
@@ -785,13 +694,11 @@
     "wave_section_VnEjMB",
     "media_with_text_pqTeFf",
     "media_with_text_CKF9Tw",
-    "media_with_text_RGVTzq",
-    "media_with_text_MBXhpQ",
-    "media_with_text_QUfFa6",
     "wave_section_xjhnQC",
-    "video_jMcjHJ",
-    "custom_liquid_U7gAiB",
+    "custom_liquid_gFpKTF",
     "multi_column_eEEejx",
+    "custom_liquid_t9aVJm",
+    "multi_column_aw7EBy",
     "help_links_DHXdie",
     "wave_section_M3zyt7",
     "custom_liquid_dpk6xA",
