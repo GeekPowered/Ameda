@@ -81,7 +81,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Ameda’s breast pump flanges are designed to enhance your comfort while maximizing milk expression. We know that a poor-fitting flange can lead to discomfort and reduced milk flow, which is why we offer multiple size options and styles to ensure you have the perfect fit.</p>",
-            "enlarge_text": false
+            "enlarge_text": true
           }
         }
       },
@@ -253,7 +253,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/accessible.png",
+            "image": "shopify://shop_images/measure.jpg",
             "media_scale": 100,
             "heading": "Start with the Right Fit",
             "text": "<p>Begin by taking a measurement of your nipple size (diameter) and comparing it to Ameda’s flange sizing chart. Remember, your nipple should move freely within the flange tunnel without rubbing against the sides. If your breast tissue or areola is pulled in, or if the elastic causes your nipples to stretch uncomfortably, the flange may be too large.</p>",
@@ -265,7 +265,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/comfort.png",
+            "image": "shopify://shop_images/position.jpg",
             "media_scale": 100,
             "heading": "Consider Comfort & Positioning",
             "text": "<p>If pumping feels uncomfortable or painful, even with the proper size, soft silicone piece inserts like the Universal Soft Breast Pump Flange Inserts can add an extra layer of cushioning. Angled flanges also improve your posture during pumping, helping you maintain a relaxed and effective position.</p>",
@@ -277,7 +277,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/convenience.png",
+            "image": "shopify://shop_images/guidance.jpg",
             "media_scale": 100,
             "heading": "Seek Professional Guidance",
             "text": "<p>If you’re unsure about your fit, working with a lactation consultant can help you identify the size and style specifically designed for your needs. This is especially helpful for new moms who are still adjusting after pregnancy. For help finding a lactation consultant, visit our <a href=\"https://www.ameda.com/pages/lactation-support\"><span style=\"text-decoration:underline\">lactation support page</span></a>.</p>",
@@ -330,7 +330,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/accessible.png",
+            "image": "shopify://shop_images/clean.jpg",
             "media_scale": 100,
             "heading": "Clean Before First Use",
             "text": "<p>Always wash your breast pump flanges, inserts, and other parts before the first use and after every pumping session. Many moms find it convenient that Ameda flanges and inserts can be placed on the top rack of a dishwasher (check product guidelines) or simply hand-washed. Follow Ameda’s cleaning steps to keep your equipment safe for your baby.</p>",
@@ -342,7 +342,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/comfort.png",
+            "image": "shopify://shop_images/re-check-fit.jpg",
             "media_scale": 100,
             "heading": "Check the Fit Regularly",
             "text": "<p>Your breast size can change throughout your breastfeeding journey — typically as your milk supply adjusts post-pregnancy. Reassess your flange size if pumping becomes uncomfortable or if milk flow decreases. Making sure the flange fits directly around your areola without tugging too much breast tissue can protect against damage.</p>",
@@ -354,7 +354,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/convenience.png",
+            "image": "shopify://shop_images/options.jpg",
             "media_scale": 100,
             "heading": "Try Different Options",
             "text": "<p>If one flange type isn’t working for you, don’t hesitate to try Ameda’s CustomFit Flanges™ or the Comfort Fit Angled Flange. This can ensure the proper size and maintain optimal pumping efficiency as you progress in your breastfeeding journey.</p>",
