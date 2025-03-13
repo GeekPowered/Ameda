@@ -145,6 +145,7 @@
         ".media {border-radius: 1rem;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/AmedaUniversalSoftBreastPumpFlangeInserts1.webp",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -186,6 +187,7 @@
         ".section--padded {padding-top: 0 !important;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/CFF_l_45561927-d0dd-42d5-bf9b-e51cda6c57dc.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -295,7 +297,7 @@
       ],
       "settings": {
         "title": "How to Choose the Right Breast Pump Flange Size",
-        "use_h4_class": true,
+        "use_h4_class": false,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -372,7 +374,7 @@
       ],
       "settings": {
         "title": "Tips for Using Your Ameda Breast Pump Flanges",
-        "use_h4_class": true,
+        "use_h4_class": false,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -482,6 +484,7 @@
         ".media {border-radius: 1rem;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/Areola_3_a4a5dc9a-d235-4514-a483-3bb7f00554cb.webp",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -519,9 +522,11 @@
         "text_REdFVY"
       ],
       "custom_css": [
-        ".section--padded {padding-top: 0 !important;}"
+        ".section--padded {padding-top: 0 !important;}",
+        ".media {border-radius: 1rem;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/Flange_Size_Graphic_3.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
