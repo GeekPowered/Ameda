@@ -73,7 +73,7 @@
           "type": "heading",
           "settings": {
             "heading": "About Ameda’s Breast Pump Flange Products",
-            "heading_size": "h0",
+            "heading_size": "h2",
             "heading_h1": false
           }
         },
@@ -95,11 +95,12 @@
         ".baby-pattern > div {padding-top: 5rem !important; padding-bottom: 5rem !important;}"
       ],
       "settings": {
+        "image": "shopify://shop_images/flanges.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "left",
-        "image_fit": "cover",
+        "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
@@ -201,22 +202,46 @@
     "wave_section_xjhnQC": {
       "type": "wave-section",
       "settings": {
-        "wavebgcolor": "rgba(0,0,0,0)",
+        "wavebgcolor": "#ffffff",
         "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
-        "waveposition": "bottom"
+        "waveposition": "top"
       }
     },
-    "custom_liquid_gFpKTF": {
-      "type": "custom-liquid",
+    "video_URYbRD": {
+      "type": "video",
+      "blocks": {
+        "heading_nqL7yx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Flange Fit Matters for Successful Pumping",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "text_q6Rnyn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The right flange size can make all the difference in your pumping success. If your flange is too small, it can pinch, restrict milk flow, and potentially cause nipple pain. If it’s too large, it may not create a vacuum seal, resulting in reduced suction and inefficient pumping.</p><p>With Ameda’s CustomFit Breast Pump Flanges™ and Universal Soft Breast Pump Flange Inserts, you can customize your fit to maximize comfort and pumping efficiency. A secure yet gentle flange tunnel helps position your nipple without drawing in excess breast tissue or ducts. Comfortable pumping sessions are more productive and less stressful, making it easier to meet your breastfeeding goals.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nqL7yx",
+        "text_q6Rnyn"
+      ],
+      "custom_css": [
+        ".media {border-radius: 1rem;}"
+      ],
       "settings": {
-        "custom_liquid": "<h2>Why Flange Fit Matters for Successful Pumping</h2>\n<p>The right flange size can make all the difference in your pumping success. If your flange is too small, it can pinch, restrict milk flow, and potentially cause nipple pain. If it’s too large, it may not create a vacuum seal, resulting in reduced suction and inefficient pumping.</p>\n<p class=\"mb-0\">With Ameda’s CustomFit Breast Pump Flanges™ and Universal Soft Breast Pump Flange Inserts, you can customize your fit to maximize comfort and pumping efficiency. A secure yet gentle flange tunnel helps position your nipple without drawing in excess breast tissue or ducts. Comfortable pumping sessions are more productive and less stressful, making it easier to meet your breastfeeding goals.</p>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
+        "video_external": "http://youtube.com/watch?v=28TlQWd_UPo",
+        "video_description": "",
+        "poster_image": "shopify://shop_images/flange-thumb.jpg",
+        "video_size": "lg",
+        "video_autoplay": false,
+        "text_align": "text-start",
+        "color_scheme": "default"
       }
     },
     "multi_column_eEEejx": {
@@ -305,8 +330,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/accessible.png",
             "media_scale": 100,
-            "heading": "Start with the Right Fit",
-            "text": "<p>Begin by taking a measurement of your nipple size (diameter) and comparing it to Ameda’s flange sizing chart. Remember, your nipple should move freely within the flange tunnel without rubbing against the sides. If your breast tissue or areola is pulled in, or if the elastic causes your nipples to stretch uncomfortably, the flange may be too large.</p>",
+            "heading": "Clean Before First Use",
+            "text": "<p>Always wash your breast pump flanges, inserts, and other parts before the first use and after every pumping session. Many moms find it convenient that Ameda flanges and inserts can be placed on the top rack of a dishwasher (check product guidelines) or simply hand-washed. Follow Ameda’s cleaning steps to keep your equipment safe for your baby.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -317,8 +342,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/comfort.png",
             "media_scale": 100,
-            "heading": "Consider Comfort & Positioning",
-            "text": "<p>If pumping feels uncomfortable or painful, even with the proper size, soft silicone piece inserts like the Universal Soft Breast Pump Flange Inserts can add an extra layer of cushioning. Angled flanges also improve your posture during pumping, helping you maintain a relaxed and effective position.</p>",
+            "heading": "Check the Fit Regularly",
+            "text": "<p>Your breast size can change throughout your breastfeeding journey — typically as your milk supply adjusts post-pregnancy. Reassess your flange size if pumping becomes uncomfortable or if milk flow decreases. Making sure the flange fits directly around your areola without tugging too much breast tissue can protect against damage.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -329,8 +354,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/convenience.png",
             "media_scale": 100,
-            "heading": "Seek Professional Guidance",
-            "text": "<p>If you’re unsure about your fit, working with a lactation consultant can help you identify the size and style specifically designed for your needs. This is especially helpful for new moms who are still adjusting after pregnancy. For help finding a lactation consultant, visit our <a href=\"https://www.ameda.com/pages/lactation-support\"><span style=\"text-decoration:underline\">lactation support page</span></a>.</p>",
+            "heading": "Try Different Options",
+            "text": "<p>If one flange type isn’t working for you, don’t hesitate to try Ameda’s CustomFit Flanges™ or the Comfort Fit Angled Flange. This can ensure the proper size and maintain optimal pumping efficiency as you progress in your breastfeeding journey.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -347,7 +372,7 @@
       ],
       "settings": {
         "title": "Tips for Using Your Ameda Breast Pump Flanges",
-        "use_h4_class": false,
+        "use_h4_class": true,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -361,133 +386,73 @@
         "button_style": "btn btn--secondary"
       }
     },
-    "help_links_DHXdie": {
-      "type": "help-links",
+    "faq_D7XQMe": {
+      "type": "faq",
       "blocks": {
-        "link_DxVWet": {
-          "type": "link",
+        "question_z4yEFm": {
+          "type": "question",
           "settings": {
-            "title": "Suction & Comfort",
-            "icon": "",
-            "content": "",
-            "custom_liquid": "<p>Suction power is a key consideration when choosing a breast pump, as it directly affects both comfort and efficiency. Ameda breast pumps feature adjustable suction settings, allowing you to customize the pressure to your comfort level&mdash;a particularly helpful feature for new moms getting accustomed to pumping.</p>\n<p><a href=\"https://www.ameda.com/products/ameda-mya-joy-plus-rechargeable-quiet-and-portable-double-breast-pump\">Double electric breast pumps</a> provide more powerful suction compared to single electric or <a href=\"https://www.ameda.com/products/ameda-portable-manual-breast-pump\">manual pumps</a>, making them ideal for moms who pump frequently. For those needing extra support, Ameda&rsquo;s hospital-grade pumps offer advanced suction technology that mimics a baby&rsquo;s natural nursing rhythm, delivering a more comfortable and effective pumping experience.</p>\n<p>Comfort is at the heart of Ameda&rsquo;s design. With features like soft, flexible tubing and customizable settings, our pumps are crafted to minimize discomfort and make each session as gentle and efficient as possible.</p>",
-            "link_text": "",
-            "url": "",
-            "link_text_2": "",
-            "url_2": "",
-            "hash": ""
+            "icon": "none",
+            "heading": "What Happens If My Flange Doesn’t Fit Correctly?",
+            "text": "<p>An ill-fitting flange can cause discomfort, soreness, and reduced milk output. If your nipple rubs against the sides, or if your areola is being pulled into the flange tunnel, it’s time to try a different size. Having the right flange size helps maintain a secure vacuum seal and prevent nipple pain.</p>"
           }
         },
-        "link_QgTgAw": {
-          "type": "link",
+        "question_RqnkCj": {
+          "type": "question",
           "settings": {
-            "title": "Flange Sizes and Fit",
-            "icon": "",
-            "content": "",
-            "custom_liquid": "<p>Ensuring a proper fit with the right flange size is crucial for a comfortable and effective pumping experience. Breast pumps come with various flange sizes, typically ranging from 21mm to 36mm, to accommodate different breast shapes and sizes. Choosing a flange that fits comfortably around your nipple is essential, as a poor fit can cause discomfort and reduce milk flow.</p>\n<p>Ameda offers <a href=\"https://www.ameda.com/products/ameda-custom-fit-kits\">custom fit breast pump flanges</a>, allowing you to switch between different sizes as needed. This flexibility ensures that you can find the perfect fit for your body, enhancing both comfort and milk expression.&nbsp;</p>\n<p>For moms requiring smaller sizes, Ameda&rsquo;s <a href=\"https://www.ameda.com/collections/accessories/products/soft-breast-pump-flange-inserts\">Soft Flange Inserts</a> provide a customizable solution. Available in sizes from 11mm to 21mm, these soft silicone inserts fit easily into Ameda&rsquo;s standard 25mm flanges, allowing for quick adjustments to find the perfect fit. This flexibility enhances both comfort and milk expression, ensuring a gentle and effective pumping experience tailored to your needs.</p>",
-            "link_text": "",
-            "url": "",
-            "link_text_2": "",
-            "url_2": "",
-            "hash": ""
+            "icon": "none",
+            "heading": "Can I Use Ameda Flanges with Other Pumps?",
+            "text": "<p>Ameda flanges are specifically designed to work with Ameda breast pumps, ensuring the best performance and compatibility. Using them with non-Ameda pumps may not produce optimal results, as they might not fit directly or maintain the appropriate suction level.</p>"
+          }
+        },
+        "question_PjjkWj": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Are Soft Inserts Necessary?",
+            "text": "<p>Soft inserts, like the Ameda Universal Soft Breast Pump Flange Inserts, are especially helpful for new moms, those with sensitive skin, or anyone struggling with elastic nipples and nipple pain. They can add comfort without compromising pumping efficiency.</p>"
+          }
+        },
+        "question_7RQk6w": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Why Choose Ameda for Breast Pump Flanges?",
+            "text": "<p>Ameda has supported breastfeeding moms for decades with high-quality products designed to make every step of the pumping journey more comfortable and efficient. From CustomFit Flanges™ to Comfort Fit Angled Flanges, every product is developed to help you reach your breastfeeding goals and maintain confidence in your routine. With Ameda breast pump flanges, you can pump knowing your equipment is specifically designed to fit your body and lifestyle.</p>"
+          }
+        },
+        "question_7gF6zq": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What Are Some Breast Pump Care and Maintenance Tips? ",
+            "text": "<p>Proper cleaning and sanitizing of breast pump parts are crucial for maintaining hygiene and preventing the growth of harmful bacteria. Ameda breast pumps feature dishwasher-safe parts, making cleaning quick and convenient. For more delicate components, hand-washing with warm soapy water is an effective alternative, ensuring that every piece is cleaned thoroughly without damage.</p><p>Sanitizing pump parts can be easily done using Ameda’s CleanEase Microwaveable Steam Sanitization Bags or a sanitizing solution designed specifically for breast pumps. Regular sanitization helps to protect your baby by eliminating bacteria and mold while also extending the lifespan of your pump. It’s important to allow all parts to air dry completely after cleaning to prevent moisture build-up, which could lead to bacterial growth.</p><p>Many Ameda breast pumps come with cleaning accessories, such as brushes, to help you clean those hard-to-reach areas. By maintaining a consistent cleaning routine, you ensure that your breast pump remains in optimal working condition, providing a safe, hygienic pumping experience for both you and your baby.</p>"
           }
         }
       },
       "block_order": [
-        "link_DxVWet",
-        "link_QgTgAw"
+        "question_z4yEFm",
+        "question_RqnkCj",
+        "question_PjjkWj",
+        "question_7RQk6w",
+        "question_7gF6zq"
       ],
+      "custom_css": [],
       "settings": {
-        "section_heading": "Ameda Breast Pump Features",
-        "heading_align": "text-center",
-        "section_content": ""
+        "heading": "FAQs About Our Flanges",
+        "use_h4_class": false,
+        "heading_align": "text-start",
+        "color_scheme": "none",
+        "full_width": true
       }
     },
     "wave_section_M3zyt7": {
       "type": "wave-section",
       "settings": {
-        "wavebgcolor": "rgba(0,0,0,0)",
+        "wavebgcolor": "#fbf6ef",
         "wavesvgcolor": "#ffffff",
         "wavetype": "top",
-        "waveposition": "bottom"
-      }
-    },
-    "custom_liquid_dpk6xA": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".section--padded-default {padding-bottom: 0 !important;}"
-      ],
-      "settings": {
-        "custom_liquid": "<style>\n.section:has(h2 + a) {\nbackground: #fff !important;\nmargin-top: 0 !important;\nmargin-bottom: 0 !important;\npadding-bottom: calc(var(--section-gap) * var(--fluid-1-5));\n}\n.section:has(h2 + a) .card {\nbackground-color: #fbf6ef;\n}\n.section:has(h2 + a) .multi-column::before {\n  content: '1';\n  position: absolute;\n  top: -1rem;\n  left: -1rem;\n  z-index: 1;\n  padding: 0.5rem;\n  width: 3rem;\n  height: 3rem;\n  text-align: center;\n  background: rgba(var(--link-color));\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #fff;\n  font-weight: bold;\n  border-radius: 50%;\n}\n\n.section:has(h2 + a) .multi-column:nth-child(2)::before {\n  content: '2';\n}\n\n.section:has(h2 + a) .multi-column:nth-child(3)::before {\n  content: '3';\n}\n</style>\n\n<div style=\"text-align:center;\">\n<h2>How Does the Insurance Process Work?</h2>\n<p class=\"mb-0 enlarge-text\">Getting your Ameda breast pump through insurance is simple and hassle-free:</p>\n</div>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "1",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
-    "multi_column_AwtHbn": {
-      "type": "multi-column",
-      "blocks": {
-        "column_fwLaf8": {
-          "type": "column",
-          "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Submit the Contact Form",
-            "text": "<p>Start by filling out the contact form on our website’s Insurance Page. This step helps us gather the information needed to assess your eligibility and connect you with the appropriate resources.</p>",
-            "button_label": "Fill Out The Form",
-            "button_link": "https://www.ameda.com/pages/insurance"
-          }
-        },
-        "column_inYnFi": {
-          "type": "column",
-          "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Provide Additional Information",
-            "text": "<p>After submitting the form, you may need to provide more details, such as your insurance plan information, prescription requirements, or other supporting documents. These details help us ensure a smooth approval process with your insurance provider.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_wzJtab": {
-          "type": "column",
-          "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Receive Contact from Our Providers",
-            "text": "<p>Once all necessary information is submitted, our providers will reach out to guide you through the final steps. They will confirm any additional details, assist with ordering, and arrange for your pump to be shipped directly to you—often with free shipping.</p><p>Our customer service team is available to answer your questions and assist you throughout the process. Depending on your insurance coverage, you may also have access to hospital-based purchasing or rental options for added convenience.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_fwLaf8",
-        "column_inYnFi",
-        "column_wzJtab"
-      ],
-      "custom_css": [
-        ".multi-column .card {border-radius: 1rem; max-width: none;}",
-        ".multi-column {width: 100% !important; position: relative;}",
-        "h2,h2 + a {display: none;}"
-      ],
-      "settings": {
-        "title": "Insurance Process",
-        "use_h4_class": false,
-        "heading_align": "text-start",
-        "button_label": "link",
-        "button_link": "#",
-        "layout": "grid",
-        "column_size": "large",
-        "column_align": "left",
-        "media_align": "text-center",
-        "image_ratio": "1",
-        "color_scheme": "1",
-        "baby_patterns": false,
-        "button_style": "btn btn--secondary"
+        "waveposition": "top"
       }
     },
     "media_with_text_YrKhWd": {
@@ -496,7 +461,7 @@
         "heading_anD9DM": {
           "type": "heading",
           "settings": {
-            "heading": "Why Choose Ameda?",
+            "heading": "Pumping Efficiency",
             "heading_size": "h2",
             "heading_h1": false
           }
@@ -504,8 +469,8 @@
         "text_KVerg6": {
           "type": "text",
           "settings": {
-            "text": "<p>Every mom's breastfeeding journey is unique, which is why Ameda offers a wide range of breast pumps to suit different needs and preferences. Our trusted collection empowers moms to enjoy a comfortable and efficient breastfeeding experience. Additionally, we partner with many insurance providers to help you get a breast pump at no cost if you qualify.</p>",
-            "enlarge_text": true
+            "text": "<p>Achieving pumping efficiency begins with choosing the right flange size. This ensures the flange tunnel properly aligns with your nipple and creates a strong vacuum seal without causing discomfort. When your flange fits correctly, you can express the maximum amount of milk in less time, reducing the risk of nipple pain or friction. For most moms, a well-fitting flange significantly boosts milk output and shortens pumping sessions, making it easier to keep up with your baby’s needs.</p>",
+            "enlarge_text": false
           }
         }
       },
@@ -514,15 +479,53 @@
         "text_KVerg6"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem;}",
-        ".section--padded {padding-top: 0 !important;}"
+        ".media {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/17EA9B0C-2F0D-463A-BDB0-B1D2417BD4CA-279036_c460d620-0b27-4541-b6bf-a7107b012136.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_fHBbiQ": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_jzXwU7": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Learning Curve for Moms",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_REdFVY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For new moms, finding the best flange fit can feel overwhelming. There’s a natural learning curve, especially right after pregnancy, when breasts are still adjusting to milk production. Even most moms who have pumped before may need to reassess size and comfort as they progress through their breastfeeding journey. By experimenting with multiple size options and consulting resources like lactation experts, you’ll set yourself up for a smoother, more confident start.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jzXwU7",
+        "text_REdFVY"
+      ],
+      "custom_css": [
+        ".section--padded {padding-top: 0 !important;}"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
         "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
@@ -551,8 +554,19 @@
             "image": "shopify://shop_images/nipple-shield_1_3.jpg",
             "media_scale": 100,
             "heading": "Breast Shields",
-            "text": "<p>Available in multiple sizes, Ameda’s breast shields ensure a comfortable fit, helping to make your pumping sessions as efficient as possible.</p><p><a href=\"/products/ameda-washable-skin-to-skin-nipple-shield-for-breastfeeding\" title=\"Ameda Washable Skin-to-Skin Nipple Shield for Breastfeeding, Ultra-Thin Flexible Silicone, Cut-Out\">Breast Shields</a></p>",
+            "text": "<p>Ameda’s breast shields are thoughtfully designed to provide a secure and comfortable fit. Compatible with Ameda’s CustomFit Breast Pump Flanges™.</p><p><a href=\"/products/ameda-washable-skin-to-skin-nipple-shield-for-breastfeeding\" title=\"Ameda Washable Skin-to-Skin Nipple Shield for Breastfeeding, Ultra-Thin Flexible Silicone, Cut-Out\">Breast Shields</a></p>",
             "button_label": "Breast Shields",
+            "button_link": ""
+          }
+        },
+        "column_CyhCqm": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Breast Pumps",
+            "text": "<p>Pair your CustomFit Breast Pump Flanges™ with Ameda’s hospital-grade breast pumps, designed for comfort and efficiency at home or on the go.</p><p><a href=\"/products/ameda-customfit-breast-pump-flanges-and-inserts-comfort-fit-angled-flange\" title=\"Ameda CustomFit Breast Pump Flanges™ and Inserts; Comfort Fit Angled Flange\">Flanges</a></p>",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -563,19 +577,7 @@
             "image": "shopify://shop_images/2-pack-5oz-milk-storage-bottles_2_1.jpg",
             "media_scale": 100,
             "heading": "Breast Milk Storage",
-            "text": "<p>Safely store your expressed milk with Ameda’s storage bags and bottles, designed to protect the nutrients and freshness of your milk.</p><p><a href=\"/collections/breast-milk-storage\" title=\"Breast Milk Storage\">Breast Milk Storage</a></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_CyhCqm": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/custom_fit_flanges_2xl-2xxl-500x500.jpg",
-            "media_scale": 100,
-            "heading": "Breast Pump Flanges",
-            "text": "<p>Our flanges are available in various sizes to provide a secure and comfortable fit, helping to maximize milk flow during pumping.</p><p><a href=\"/products/ameda-customfit-breast-pump-flanges-and-inserts-comfort-fit-angled-flange\" title=\"Ameda CustomFit Breast Pump Flanges™ and Inserts; Comfort Fit Angled Flange\">Flanges</a></p>",
+            "text": "<p>Once you’ve pumped, store your milk safely with Ameda’s durable breast milk storage bags and bottles, designed to protect every drop.</p><p><a href=\"/collections/breast-milk-storage\" title=\"Breast Milk Storage\">Breast Milk Storage</a></p>",
             "button_label": "",
             "button_link": ""
           }
@@ -586,8 +588,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/mya-kit.jpg",
             "media_scale": 100,
-            "heading": "Accessories",
-            "text": "<p>Explore our full range of <a href=\"https://www.ameda.com/collections/accessories\"><span style=\"text-decoration:underline\">breast pump parts and accessories</span></a>, including <a href=\"https://www.ameda.com/products/ameda-hygienikit-silicone-replacement-tubing-2-count\"><span style=\"text-decoration:underline\">tubing</span></a>, <a href=\"https://www.ameda.com/products/ameda-hygienikit-silicone-replacement-valves-2-count\"><span style=\"text-decoration:underline\">valves</span></a>, and <a href=\"https://www.ameda.com/products/ameda-hygienikit-spare-parts-kit-for-breast-pump\"><span style=\"text-decoration:underline\">spare parts</span></a>, to keep your breast pump running smoothly and enhance your overall pumping experience.</p><p><a href=\"/collections/accessories\" title=\"Pump Parts & Accessories\">Accessories</a></p>",
+            "heading": "Breastfeeding Accessories",
+            "text": "<p>Explore Ameda’s full line of accessories, from tubing and valves to spare parts, ensuring your pump stays in top condition.</p><p><a href=\"/collections/accessories\" title=\"Pump Parts & Accessories\">Accessories</a></p>",
             "button_label": "",
             "button_link": ""
           }
@@ -595,8 +597,8 @@
       },
       "block_order": [
         "column_3X7pxT",
-        "column_zYErNb",
         "column_CyhCqm",
+        "column_zYErNb",
         "column_WBkXGw"
       ],
       "custom_css": [
@@ -604,7 +606,7 @@
         "img {object-fit: contain;}"
       ],
       "settings": {
-        "title": "Explore Our Other Products",
+        "title": "Explore More Breastfeeding Essentials",
         "use_h4_class": false,
         "heading_align": "text-center",
         "button_label": "",
@@ -617,65 +619,6 @@
         "color_scheme": "none",
         "baby_patterns": false,
         "button_style": "btn btn--primary"
-      }
-    },
-    "faq_D7XQMe": {
-      "type": "faq",
-      "blocks": {
-        "question_z4yEFm": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "How Can I Get a Breast Pump Through Insurance?",
-            "text": "<p>Most health insurance plans cover one double electric breast pump per pregnancy. Since coverage varies, it is best to contact your provider to learn the specifics of your plan and find out which pumps are covered.</p>"
-          }
-        },
-        "question_RqnkCj": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "Do I Need a Prescription to Order a Breast Pump Through Insurance?",
-            "text": "<p>This depends on your insurance plan. Some require a prescription, which you can get from your doctor. To find out if you need one, check with your insurance provider for their specific requirements.</p>"
-          }
-        },
-        "question_PjjkWj": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "How Many Free Breast Pumps Can I Get Through Insurance?",
-            "text": "<p>Most insurance providers cover one breast pump per pregnancy. If your previous pump was properly cleaned, sanitized, and stored, it may still work with new parts. However, breast pumps can lose efficiency over time, so you may want to confirm your eligibility for a new pump with your provider.</p>"
-          }
-        },
-        "question_7RQk6w": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "How Far Along Do I Have to Be to Order a Breast Pump Through Insurance?",
-            "text": "<p>Most moms order their breast pump around 30 weeks of pregnancy, though the timing will vary depending on your insurance plan. Typically, mothers qualify for a free breast pump through insurance until up to a year postpartum, so it is important to order your Ameda pump before eligibility expires.</p>"
-          }
-        },
-        "question_7gF6zq": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "What Are Some Breast Pump Care and Maintenance Tips? ",
-            "text": "<p>Proper cleaning and sanitizing of breast pump parts are crucial for maintaining hygiene and preventing the growth of harmful bacteria. Ameda breast pumps feature dishwasher-safe parts, making cleaning quick and convenient. For more delicate components, hand-washing with warm soapy water is an effective alternative, ensuring that every piece is cleaned thoroughly without damage.</p><p>Sanitizing pump parts can be easily done using Ameda’s CleanEase Microwaveable Steam Sanitization Bags or a sanitizing solution designed specifically for breast pumps. Regular sanitization helps to protect your baby by eliminating bacteria and mold while also extending the lifespan of your pump. It’s important to allow all parts to air dry completely after cleaning to prevent moisture build-up, which could lead to bacterial growth.</p><p>Many Ameda breast pumps come with cleaning accessories, such as brushes, to help you clean those hard-to-reach areas. By maintaining a consistent cleaning routine, you ensure that your breast pump remains in optimal working condition, providing a safe, hygienic pumping experience for both you and your baby.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "question_z4yEFm",
-        "question_RqnkCj",
-        "question_PjjkWj",
-        "question_7RQk6w",
-        "question_7gF6zq"
-      ],
-      "settings": {
-        "heading": "Frequently Asked Questions",
-        "use_h4_class": false,
-        "heading_align": "text-center",
-        "color_scheme": "none",
-        "full_width": true
       }
     },
     "global_footer_cta_VcTUnt": {
@@ -695,18 +638,16 @@
     "media_with_text_pqTeFf",
     "media_with_text_CKF9Tw",
     "wave_section_xjhnQC",
-    "custom_liquid_gFpKTF",
+    "video_URYbRD",
     "multi_column_eEEejx",
     "custom_liquid_t9aVJm",
     "multi_column_aw7EBy",
-    "help_links_DHXdie",
+    "faq_D7XQMe",
     "wave_section_M3zyt7",
-    "custom_liquid_dpk6xA",
-    "multi_column_AwtHbn",
     "media_with_text_YrKhWd",
+    "media_with_text_fHBbiQ",
     "wave_section_e6T8XX",
     "multi_column_hx4gVz",
-    "faq_D7XQMe",
     "global_footer_cta_VcTUnt"
   ]
 }
