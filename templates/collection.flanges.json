@@ -388,6 +388,18 @@
         "button_style": "btn btn--secondary"
       }
     },
+    "custom_liquid_9fkegJ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"What Happens If My Flange Doesn’t Fit Correctly?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"An ill-fitting flange can cause discomfort, soreness, and reduced milk output. If your nipple rubs against the sides, or if your areola is being pulled into the flange tunnel, it’s time to try a different size. Having the right flange size helps maintain a secure vacuum seal and prevent nipple pain.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Can I Use Ameda Flanges with Other Pumps?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Ameda flanges are specifically designed to work with Ameda breast pumps, ensuring the best performance and compatibility. Using them with non-Ameda pumps may not produce optimal results, as they might not fit directly or maintain the appropriate suction level.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Are Soft Inserts Necessary?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Soft inserts, like the Ameda Universal Soft Breast Pump Flange Inserts, are especially helpful for new moms, those with sensitive skin, or anyone struggling with elastic nipples and nipple pain. They can add comfort without compromising pumping efficiency.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Why Choose Ameda for Breast Pump Flanges?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Ameda has supported breastfeeding moms for decades with high-quality products designed to make every step of the pumping journey more comfortable and efficient. From CustomFit Flanges™ to Comfort Fit Angled Flanges, every product is developed to help you reach your breastfeeding goals and maintain confidence in your routine. With Ameda breast pump flanges, you can pump knowing your equipment is specifically designed to fit your body and lifestyle.\"\n      }\n    }\n  ]\n}\n</script>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "faq_D7XQMe": {
       "type": "faq",
       "blocks": {
@@ -648,6 +660,7 @@
     "multi_column_eEEejx",
     "custom_liquid_t9aVJm",
     "multi_column_aw7EBy",
+    "custom_liquid_9fkegJ",
     "faq_D7XQMe",
     "wave_section_M3zyt7",
     "media_with_text_YrKhWd",
