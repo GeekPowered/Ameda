@@ -70,7 +70,7 @@
 {% endif %}
 
 {% if template == 'collection' %}
-  {% if page.metafields.page.seo_hidden == 1 %}
+  {% if collection.metafields.seo.hidden == 1 %}
     <meta name="robots" content="noindex, nofollow" />
   {% endif %}
 {% endif %}
