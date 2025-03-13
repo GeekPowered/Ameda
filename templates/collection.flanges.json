@@ -297,7 +297,7 @@
       ],
       "settings": {
         "title": "How to Choose the Right Breast Pump Flange Size",
-        "use_h4_class": false,
+        "use_h4_class": true,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -314,7 +314,7 @@
     "custom_liquid_t9aVJm": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"background:#fff;padding:1.5rem 2rem;border-radius:1rem;border:2px solid #ef8d96;\"><h2>Material Matters: Hard Plastic vs. Soft Silicone\n</h2>\n<p class=\"mb-0\">Most Ameda flanges use a combination of hard plastic outer shells with silicone insert options to ensure a vacuum seal without sacrificing comfort. The silicone piece is specifically designed to offer a gentle surface against your skin, reducing friction and the likelihood of nipple pain. Meanwhile, the hard plastic structure provides durability and helps the flange maintain its shape.\n</p></div>",
+        "custom_liquid": "<div style=\"background:#fff;padding:1.5rem 2rem;border-radius:1rem;border:2px dashed #ef8d96;\"><h2>Material Matters: Hard Plastic vs. Soft Silicone\n</h2>\n<p class=\"mb-0\">Most Ameda flanges use a combination of hard plastic outer shells with silicone insert options to ensure a vacuum seal without sacrificing comfort. The silicone piece is specifically designed to offer a gentle surface against your skin, reducing friction and the likelihood of nipple pain. Meanwhile, the hard plastic structure provides durability and helps the flange maintain its shape.\n</p></div>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
@@ -374,7 +374,7 @@
       ],
       "settings": {
         "title": "Tips for Using Your Ameda Breast Pump Flanges",
-        "use_h4_class": false,
+        "use_h4_class": true,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
