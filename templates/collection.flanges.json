@@ -568,9 +568,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/joy-plus-on.jpg",
             "media_scale": 100,
             "heading": "Breast Pumps",
-            "text": "<p>Pair your CustomFit Breast Pump Flanges™ with Ameda’s hospital-grade breast pumps, designed for comfort and efficiency at home or on the go.</p><p><a href=\"/products/ameda-customfit-breast-pump-flanges-and-inserts-comfort-fit-angled-flange\" title=\"Ameda CustomFit Breast Pump Flanges™ and Inserts; Comfort Fit Angled Flange\">Flanges</a></p>",
+            "text": "<p>Pair your CustomFit Breast Pump Flanges™ with Ameda’s hospital-grade breast pumps, designed for comfort and efficiency at home or on the go.</p><p><a href=\"/collections/breast-pumps\" title=\"Breast Pumps\">Breast Pumps</a></p>",
             "button_label": "",
             "button_link": ""
           }
