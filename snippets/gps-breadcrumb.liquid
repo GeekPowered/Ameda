@@ -24,7 +24,7 @@
   <ol class="breadcrumbs-list flex has-ltr-icon {{ extraclass }}">
     <!-- Home Breadcrumb -->
     <li class="flex items-center">
-      <a class="breadcrumbs-list__link" href="{{ shop.url }}">Home</a>
+      <a class="breadcrumbs-list__link" href="{{ shop.url }}">{% if parent_breadcrumb_link != blank and parent_breadcrumb_title != blank %}"Home"{% else %}"Breastfeeding Solutions"{% endif %}</a>
     </li>
 
     <!-- Parent Page Breadcrumb (if exists) -->
