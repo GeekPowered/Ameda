@@ -73,33 +73,26 @@
 {%- assign only_two_crumbs = false -%}
 {%- if template.name == 'collection' and collection.handle -%}
   {%- if show_collection_listing_link -%}
-    {# In this case, you generate "Home" + "All Collections" + "Collection" => 3 total #}
   {%- else -%}
-    {# "Home" + "Collection" => 2 total #}
+    
     {%- assign only_two_crumbs = true -%}
   {%- endif -%}
 
 {%- elsif template.name == 'product' -%}
   {%- assign primary_collection = product.metafields.custom.primary_collection.value -%}
   {%- if primary_collection or collection -%}
-    {# "Home" + ("Collections" link?) + "Some Collection" + "Product" => 3+ total #}
   {%- else -%}
-    {# No collection, just "Home" + "Product" => 2 total #}
     {%- assign only_two_crumbs = true -%}
   {%- endif -%}
 
 {%- elsif template.name == 'blog' and current_tags -%}
-  {# "Home" + "Blog" + "Tags" => 3 total #}
 
 {%- elsif template.name == 'blog' -%}
-  {# "Home" + "Blog" => 2 total #}
   {%- assign only_two_crumbs = true -%}
 
 {%- elsif template.name == 'article' -%}
-  {# "Home" + "Blog" + "Article" => 3 total #}
 
 {%- elsif other_templates contains template.name or template.directory == 'customers' -%}
-  {# "Home" + "Page" (or "Search" or "Cart" or "Account") => 2 total #}
   {%- assign only_two_crumbs = true -%}
 {%- endif -%}
 
