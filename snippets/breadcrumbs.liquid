@@ -6,12 +6,6 @@
   - divider {String} - Markup to use for the divider (optional).
   - prev_icon {String} - Markup to use for the previous product button (optional).
   - next_icon {String} - Markup to use for the next product button (optional).
-
-  Usage:
-  {%- capture divider -%}
-    <span class="icon">{% render 'icon-chevron-right' %}</span>
-  {%- endcapture -%}
-  {% render 'breadcrumbs', divider: divider, show_next_prev: true %}
 {%- endcomment -%}
 
 {%- liquid
@@ -69,21 +63,100 @@
   endunless
 -%}
 
+{%- comment %}
+  -------------
+  DETECT IF THERE ARE EXACTLY TWO CRUMBS TOTAL
+  -------------
+  We do this by checking whether the code below will generate exactly
+  one additional crumb beyond "Home."
+{%- endcomment -%}
+{%- assign only_two_crumbs = false -%}
+{%- if template.name == 'collection' and collection.handle -%}
+  {%- if show_collection_listing_link -%}
+    {# In this case, you generate "Home" + "All Collections" + "Collection" => 3 total #}
+  {%- else -%}
+    {# "Home" + "Collection" => 2 total #}
+    {%- assign only_two_crumbs = true -%}
+  {%- endif -%}
+
+{%- elsif template.name == 'product' -%}
+  {%- assign primary_collection = product.metafields.custom.primary_collection.value -%}
+  {%- if primary_collection or collection -%}
+    {# "Home" + ("Collections" link?) + "Some Collection" + "Product" => 3+ total #}
+  {%- else -%}
+    {# No collection, just "Home" + "Product" => 2 total #}
+    {%- assign only_two_crumbs = true -%}
+  {%- endif -%}
+
+{%- elsif template.name == 'blog' and current_tags -%}
+  {# "Home" + "Blog" + "Tags" => 3 total #}
+
+{%- elsif template.name == 'blog' -%}
+  {# "Home" + "Blog" => 2 total #}
+  {%- assign only_two_crumbs = true -%}
+
+{%- elsif template.name == 'article' -%}
+  {# "Home" + "Blog" + "Article" => 3 total #}
+
+{%- elsif other_templates contains template.name or template.directory == 'customers' -%}
+  {# "Home" + "Page" (or "Search" or "Cart" or "Account") => 2 total #}
+  {%- assign only_two_crumbs = true -%}
+{%- endif -%}
+
+{%- comment %}
+  Decide how the "home" crumb should read:
+  - If only_two_crumbs is true => "Breastfeeding Solutions"
+  - Else => the normal home_title
+{%- endcomment -%}
+{%- assign custom_home_text = home_title -%}
+{%- if only_two_crumbs == true -%}
+  {%- assign custom_home_text = 'Breastfeeding Solutions' -%}
+{%- endif -%}
+
 {%- capture crumbs_structured_data -%}
+  {%- if show_structured_data -%}
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": {% if only_two_crumbs %}"Breastfeeding Solutions"{% else %}{{ home_title | json }}{% endif %},
+        "item": {{ shop.url | append: routes.root_url | json }}
+      },
+
+      {%- if template.name == 'collection' and collection.handle -%}
+        {%- assign collection_position = 2 -%}
+        {%- if show_collection_listing_link -%}
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ collections_title | json }},
+            "item": {{ shop.url | append: routes.collections_url | json }}
+          },
+          {%- assign collection_position = 3 -%}
+        {%- endif -%}
         {
           "@type": "ListItem",
-          "position": 1,
-          "name": {{ home_title | json }},
-          "item": {{ shop.url | append: routes.root_url | json }}
-        },
+          "position": {{ collection_position }},
+          "name": {{ collection.title | json }},
+          "item": {{ shop.url | append: collection.url | json }}
+        }
 
-        {%- if template.name == 'collection' and collection.handle -%}
-          {%- assign collection_position = 2 -%}
+      {%- elsif template.name == 'product' -%}
+        {%- assign product_position = 2 -%}
+        {%- assign primary_collection = product.metafields.custom.primary_collection.value -%}
+        {%- if primary_collection -%}
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ primary_collection.title | json }},
+            "item": {{ shop.url | append: primary_collection.url | json }}
+          },
+          {%- assign product_position = 3 -%}
+        {%- elsif collection -%}
           {%- if show_collection_listing_link -%}
             {
               "@type": "ListItem",
@@ -91,102 +164,75 @@
               "name": {{ collections_title | json }},
               "item": {{ shop.url | append: routes.collections_url | json }}
             },
-            {%- assign collection_position = 3 -%}
+            {%- assign product_position = 3 -%}
           {%- endif -%}
           {
             "@type": "ListItem",
-            "position": {{ collection_position }},
+            "position": {{ product_position }},
             "name": {{ collection.title | json }},
             "item": {{ shop.url | append: collection.url | json }}
-          }
-
-          {%- elsif template.name == 'product' -%}
-            {%- assign product_position = 2 -%}
-            {%- assign primary_collection = product.metafields.custom.primary_collection.value -%}
-            {%- if primary_collection -%}
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": {{ primary_collection.title | json }},
-                "item": {{ shop.url | append: primary_collection.url | json }}
-              },
-              {%- assign product_position = 3 -%}
-            {%- elsif collection -%}
-              {%- if show_collection_listing_link -%}
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": {{ collections_title | json }},
-                  "item": {{ shop.url | append: routes.collections_url | json }}
-                },
-                {%- assign product_position = 3 -%}
-              {%- endif -%}
-              {
-                "@type": "ListItem",
-                "position": {{ product_position }},
-                "name": {{ collection.title | json }},
-                "item": {{ shop.url | append: collection.url | json }}
-              },
-              {%- if show_collection_listing_link -%}
-                {%- assign product_position = 4 -%}
-              {%- else -%}
-                {%- assign product_position = 3 -%}
-              {%- endif -%}
-            {%- endif -%}
-            {
-              "@type": "ListItem",
-              "position": {{ product_position }},
-              "name": {{ product.title | json }},
-              "item": {{ shop.url | append: product.url | json }}
-            }
-          
-
-        {%- elsif template.name == 'blog' and current_tags -%}
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": {{ blog.title | json }},
-            "item": {{ shop.url | append: blog.url | json }}
           },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": {{ current_tags | join: ", " | json }},
-            "item": {{ shop.url | append: blog_tag_url | json }}
-          }
-
-        {%- elsif template.name == 'article' -%}
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": {{ blog.title | json }},
-            "item": {{ shop.url | append: blog.url | json }}
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": {{ article.title | json }},
-            "item": {{ shop.url | append: article.url | json }}
-          }
-
-        {%- else -%}
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": {{ item_title | json }},
-            "item": {{ shop.url | append: item_url | json }}
-          }
+          {%- if show_collection_listing_link -%}
+            {%- assign product_position = 4 -%}
+          {%- else -%}
+            {%- assign product_position = 3 -%}
+          {%- endif -%}
         {%- endif -%}
-      ]
-    }
+        {
+          "@type": "ListItem",
+          "position": {{ product_position }},
+          "name": {{ product.title | json }},
+          "item": {{ shop.url | append: product.url | json }}
+        }
+
+      {%- elsif template.name == 'blog' and current_tags -%}
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ blog.title | json }},
+          "item": {{ shop.url | append: blog.url | json }}
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ current_tags | join: ", " | json }},
+          "item": {{ shop.url | append: blog_tag_url | json }}
+        }
+
+      {%- elsif template.name == 'article' -%}
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ blog.title | json }},
+          "item": {{ shop.url | append: blog.url | json }}
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ article.title | json }},
+          "item": {{ shop.url | append: article.url | json }}
+        }
+
+      {%- else -%}
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ item_title | json }},
+          "item": {{ shop.url | append: item_url | json }}
+        }
+      {%- endif -%}
+    ]
+  }
   </script>
+  {%- endif -%}
 {%- endcapture -%}
 
 {%- capture crumbs_html -%}
   <nav class="breadcrumbs flex justify-between w-full" aria-label="{{ breadcrumbs_title }}">
     <ol class="breadcrumbs-list flex has-ltr-icon">
+      <!-- 1) The first crumb text now uses custom_home_text -->
       <li class="flex items-center">
-        <a class="breadcrumbs-list__link" href="{{ routes.root_url }}">{{ home_title | escape }}</a> {{ divider }}
+        <a class="breadcrumbs-list__link" href="{{ routes.root_url }}">{{ custom_home_text }}</a> {{ divider }}
       </li>
 
       {%- if template.name == 'collection' and collection.handle -%}
@@ -199,42 +245,42 @@
           <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}/{{ collection.handle }}" aria-current="page">{{ collection.title | escape }}</a>
         </li>
 
-        {%- elsif template.name == 'product' -%}
-          {%- assign primary_collection = product.metafields.custom.primary_collection.value -%}
-          {%- if primary_collection -%}
-            {%- if show_collection_listing_link -%}
-              <li class="flex items-center">
-                <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}">{{ collections_title | escape }}</a> {{ divider }}
-              </li>
-            {%- endif -%}
+      {%- elsif template.name == 'product' -%}
+        {%- assign primary_collection = product.metafields.custom.primary_collection.value -%}
+        {%- if primary_collection -%}
+          {%- if show_collection_listing_link -%}
             <li class="flex items-center">
-              <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ primary_collection.url }}">{{ primary_collection.title | escape }}</a> {{ divider }}
-            </li>
-          {%- elsif collection -%}
-            {%- if show_collection_listing_link -%}
-              <li class="flex items-center">
-                <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}">{{ collections_title | escape }}</a> {{ divider }}
-              </li>
-            {%- endif -%}
-            <li class="flex items-center">
-              <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ collection.url }}">{{ collection.title | escape }}</a> {{ divider }}
+              <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}">{{ collections_title | escape }}</a> {{ divider }}
             </li>
           {%- endif -%}
           <li class="flex items-center">
-            <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ product.url }}" aria-current="page">{{ product.title | escape }}</a>
+            <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ primary_collection.url }}">{{ primary_collection.title | escape }}</a> {{ divider }}
           </li>
-        
-        {%- elsif template.name == 'blog' and current_tags -%}
+        {%- elsif collection -%}
+          {%- if show_collection_listing_link -%}
+            <li class="flex items-center">
+              <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}">{{ collections_title | escape }}</a> {{ divider }}
+            </li>
+          {%- endif -%}
           <li class="flex items-center">
-            <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ blog.url }}">{{ blog.title | escape }}</a> {{ divider }}
+            <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ collection.url }}">{{ collection.title | escape }}</a> {{ divider }}
           </li>
-          <li class="flex items-center">
-            <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ blog_tag_url }}" aria-current="page">{{ current_tags | join: ", " }}</a>
+        {%- endif -%}
+        <li class="flex items-center">
+          <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ product.url }}" aria-current="page">{{ product.title | escape }}</a>
+        </li>
+      
+      {%- elsif template.name == 'blog' and current_tags -%}
+        <li class="flex items-center">
+          <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ blog.url }}">{{ blog.title | escape }}</a> {{ divider }}
+        </li>
+        <li class="flex items-center">
+          <a class="breadcrumbs-list__link" href="{{ shop.url }}{{ blog_tag_url }}" aria-current="page">{{ current_tags | join: ", " }}</a>
         
-            {%- if show_rss_link -%}
-              <a class="breadcrumbs-list__link breadcrumbs-list__link--rss" href="{{ shop.url }}{{ blog.url }}.atom" title="RSS" aria-label="RSS">{% render 'icon-rss' %}</a>
-            {%- endif -%}
-          </li>        
+          {%- if show_rss_link -%}
+            <a class="breadcrumbs-list__link breadcrumbs-list__link--rss" href="{{ shop.url }}{{ blog.url }}.atom" title="RSS" aria-label="RSS">{% render 'icon-rss' %}</a>
+          {%- endif -%}
+        </li>
 
       {%- elsif template.name == 'article' -%}
         <li class="flex items-center">
@@ -276,8 +322,6 @@
 {%- endcapture -%}
 
 {%- if show_crumbs -%}
-  {%- if show_structured_data -%}
-    {{ crumbs_structured_data }}
-  {%- endif -%}
+  {{ crumbs_structured_data }}
   {{ crumbs_html }}
 {%- endif -%}
