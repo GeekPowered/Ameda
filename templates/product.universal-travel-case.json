@@ -166,6 +166,104 @@
       ],
       "settings": {}
     },
+    "wave_section_NxyUfh": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "top",
+        "waveposition": "top"
+      }
+    },
+    "media_with_text_wzMf4K": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_XzrWhq": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.title }}",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_U6BBKW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Crafted from high quality materials with smart storage compartments and an insulated section to store milk, this practical solution is a must-have for any pumping mom who values convenience, organization, and a bag with a spacious interior. Comparable to other breast pump bags, this stylish, portable carryall doubles as a regular bag or even a diaper bag, thanks to its multiple pockets and ample space inside for pump parts, baby essentials, and more. It’s also sleek enough to be carried as a tote or backpack alternative, making it a functional accessory that can truly enhance your day-to-day routine.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XzrWhq",
+        "text_U6BBKW"
+      ],
+      "custom_css": [
+        ".media {border-radius: 1rem;}",
+        ".section--padded {padding-bottom: 0;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/amedaglo-product-01460-v2.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 45,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_CzDYGX": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_jyUw3d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Key Features",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_zAC33L": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Designed to fit Ameda Mya Joy and Mya Joy PLUS, plus other standard breast pumps. Perfect for a double pump setup or single unit, so you have enough space for pump parts and accessories.</li><li>Thoughtfully organized interior with dedicated compartments for flanges, bottles, tubing, charger, and accessories. With multiple pouches like a diaper bag, it helps you stay organized and makes it easy to quickly find what you need.</li><li>Lightweight and compact for easy portability, whether you’re commuting to work or heading out for the day. A portable design that looks great, but functions even better as a pump bag.</li><li>Made from durable, easy-to-clean fabric that stands up to daily use.</li><li>High quality materials ensure longevity, and it’s simple to wipe down after a long day.</li><li>Built-in insulated compartment keeps expressed milk cool when used with ice packs (ice packs not included). Keep your baby’s milk fresher for longer—perfect for busy schedules and travel.</li><li>Stylish enough to use as an everyday bag, with the functionality to keep pumping essentials organized and accessible.</li></ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jyUw3d",
+        "text_zAC33L"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/amedaglo-product-01488-v2.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 45,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "wave_section_xKwxKb": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "bottom",
+        "waveposition": "bottom"
+      }
+    },
     "compatible_products_783dhj": {
       "type": "compatible-products",
       "settings": {
@@ -181,7 +279,7 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<h3 class=\"\">Product Reviews</h3>\n<div style=\"padding: 2rem; background: #fff; border-radius: 1rem;\">\n{% render 'okendo-reviews-widget' %}\n</div>",
-        "section_height": "xsmall",
+        "section_height": "default",
         "full_width": false,
         "dividers": "none",
         "color_scheme": "none",
@@ -222,6 +320,10 @@
   "order": [
     "main",
     "details",
+    "wave_section_NxyUfh",
+    "media_with_text_wzMf4K",
+    "media_with_text_CzDYGX",
+    "wave_section_xKwxKb",
     "compatible_products_783dhj",
     "custom_liquid_DnXFqh",
     "recommendations",
