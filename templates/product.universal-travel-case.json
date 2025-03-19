@@ -102,46 +102,6 @@
             "open": false
           }
         },
-        "collapsible-content-1": {
-          "type": "collapsible-content",
-          "settings": {
-            "heading": "Key Features",
-            "icon": "none",
-            "text": "{{ product.metafields.product.key_features | metafield_tag }}",
-            "page": "",
-            "open": false
-          }
-        },
-        "collapsible-content-2": {
-          "type": "collapsible-content",
-          "settings": {
-            "heading": "Technical Features",
-            "icon": "none",
-            "text": "{{ product.metafields.product.technical_features | metafield_tag }}",
-            "page": "",
-            "open": false
-          }
-        },
-        "collapsible_content_7hHFzf": {
-          "type": "collapsible-content",
-          "settings": {
-            "heading": "FAQs",
-            "icon": "none",
-            "text": "{{ product.metafields.product.faq | metafield_tag }}",
-            "page": "",
-            "open": false
-          }
-        },
-        "collapsible_content_kz7QM6": {
-          "type": "collapsible-content",
-          "settings": {
-            "heading": "Resources",
-            "icon": "none",
-            "text": "{{ product.metafields.product.resources | metafield_tag }}",
-            "page": "",
-            "open": false
-          }
-        },
         "share": {
           "type": "share",
           "settings": {}
@@ -159,10 +119,6 @@
         "buy-buttons",
         "message-2",
         "31d2610e-0024-4377-b9d0-8bda2ca7b310",
-        "collapsible-content-1",
-        "collapsible-content-2",
-        "collapsible_content_7hHFzf",
-        "collapsible_content_kz7QM6",
         "share"
       ],
       "custom_css": [
@@ -174,7 +130,7 @@
       "settings": {
         "stick_on_scroll": true,
         "sticky_atc_panel": false,
-        "sticky_atc_position": "end",
+        "sticky_atc_position": "start",
         "sticky_atc_mobile": false,
         "media_layout": "slider",
         "media_size": "default",
@@ -214,17 +170,17 @@
       "type": "compatible-products",
       "settings": {
         "heading": "Compatible Products",
-        "heading_align": "text-center",
-        "layout": "carousel",
+        "heading_align": "text-start",
+        "layout": "grid",
         "card_size_mobile": "small",
-        "card_size": "small",
+        "card_size": "large",
         "products_to_show": 8
       }
     },
     "custom_liquid_DnXFqh": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h3 class=\"text-center\">Product Reviews</h3>\n<div style=\"padding: 2rem; background: #fff; border-radius: 1rem;\">\n{% render 'okendo-reviews-widget' %}\n</div>",
+        "custom_liquid": "<h3 class=\"\">Product Reviews</h3>\n<div style=\"padding: 2rem; background: #fff; border-radius: 1rem;\">\n{% render 'okendo-reviews-widget' %}\n</div>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",
