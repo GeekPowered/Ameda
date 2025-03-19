@@ -255,6 +255,112 @@
         "baby_patterns": false
       }
     },
+    "multi_column_E8cVUb": {
+      "type": "multi-column",
+      "blocks": {
+        "column_fH37A7": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/checkmark.svg",
+            "media_scale": 100,
+            "heading": "Universal Fit",
+            "text": "<p>Works seamlessly with Ameda pumps and comparable breast pump bags.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_TMtGVt": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/checkmark.svg",
+            "media_scale": 100,
+            "heading": "Durable & Easy to Clean",
+            "text": "<p>High quality materials designed for daily use.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_dafiJf": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/checkmark.svg",
+            "media_scale": 100,
+            "heading": "Compact & Lightweight",
+            "text": "<p>An ideal choice when you need a practical solution for travel or commutes.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_6nLtUq": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/checkmark.svg",
+            "media_scale": 100,
+            "heading": "Smart Storage Layout",
+            "text": "<p>Multiple pouches keep your pumping equipment neatly arranged inside.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_exywqU": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/checkmark.svg",
+            "media_scale": 100,
+            "heading": "Insulated Compartment",
+            "text": "<p>Helps you store milk at a safe temperature (with ice packs).</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_pVjBAT": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/checkmark.svg",
+            "media_scale": 100,
+            "heading": "Stylish & Discreet",
+            "text": "<p>An ideal choice when you need a practical solution for travel or commutes.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_fH37A7",
+        "column_TMtGVt",
+        "column_dafiJf",
+        "column_6nLtUq",
+        "column_exywqU",
+        "column_pVjBAT"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {margin: 0rem; padding-top: 0rem; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5)); background: #fff;}",
+        ".card {flex-direction: row; gap: 2rem;}",
+        ".card__media {padding-top: 0 !important; height: 3rem; width: 3rem; flex-shrink: 0; margin-top: 1rem;}",
+        ".card .card__info {padding: 1rem !important;}"
+      ],
+      "settings": {
+        "title": "Benefits of the Ameda Universal Breast Pump Travel Case",
+        "use_h4_class": false,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-left",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
     "wave_section_xKwxKb": {
       "type": "wave-section",
       "settings": {
@@ -323,6 +429,7 @@
     "wave_section_NxyUfh",
     "media_with_text_wzMf4K",
     "media_with_text_CzDYGX",
+    "multi_column_E8cVUb",
     "wave_section_xKwxKb",
     "compatible_products_783dhj",
     "custom_liquid_DnXFqh",
