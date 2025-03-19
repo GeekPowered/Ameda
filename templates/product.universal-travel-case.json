@@ -181,8 +181,8 @@
         "heading_XzrWhq": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.title }}",
-            "heading_size": "h3",
+            "heading": "Style Meets Function",
+            "heading_size": "h2",
             "heading_h1": false
           }
         },
@@ -199,7 +199,6 @@
         "text_U6BBKW"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem;}",
         ".section--padded {padding-bottom: 0;}"
       ],
       "settings": {
@@ -224,7 +223,7 @@
           "type": "heading",
           "settings": {
             "heading": "Key Features",
-            "heading_size": "h3",
+            "heading_size": "h2",
             "heading_h1": false
           }
         },
@@ -239,6 +238,9 @@
       "block_order": [
         "heading_jyUw3d",
         "text_zAC33L"
+      ],
+      "custom_css": [
+        ".section--padded {padding-top: 0;}"
       ],
       "settings": {
         "image": "shopify://shop_images/amedaglo-product-01488-v2.jpg",
@@ -367,7 +369,7 @@
         "wavebgcolor": "#fbf6ef",
         "wavesvgcolor": "#ffffff",
         "wavetype": "bottom",
-        "waveposition": "bottom"
+        "waveposition": ""
       }
     },
     "compatible_products_783dhj": {
@@ -379,6 +381,65 @@
         "card_size_mobile": "small",
         "card_size": "large",
         "products_to_show": 8
+      }
+    },
+    "faq_WT7f3T": {
+      "type": "faq",
+      "blocks": {
+        "question_PTJrBd": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Will the Ameda Universal Breast Pump Travel Case fit all Ameda pumps?",
+            "text": "<p>Yes! The Ameda Universal Breast Pump Travel Case is designed to perfectly fit both the Ameda Mya Joy and Mya Joy PLUS pumps, along with their accessories. Its flexible compartments and ample space provide convenient storage for your pump, flanges, bottles, and charger—keeping everything organized and ready for use wherever you go.</p>"
+          }
+        },
+        "question_UyiqeJ": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Can I use the insulated compartment without ice packs?",
+            "text": "<p>The insulated compartment helps maintain a cooler temperature, but for optimal milk storage, we recommend using ice packs (not included) to keep your milk at a safe temperature during longer outings.</p>"
+          }
+        },
+        "question_HeCVrf": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Is the fabric easy to clean?",
+            "text": "<p>Yes! The Ameda Universal Breast Pump Travel Case is made from durable, easy-to-clean fabric. Simply wipe the exterior and interior with a damp cloth to keep your bag fresh and ready for daily use.</p>"
+          }
+        },
+        "question_YVK7m7": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Can I carry the case as a shoulder bag?",
+            "text": "<p>Absolutely. The case comes with an adjustable shoulder strap, making it easy to carry hands-free whether you’re navigating the office, daycare drop-off, or airport security.</p>"
+          }
+        },
+        "question_wKMAtC": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What’s the advantage of having a universal fit case?",
+            "text": "<p>A universal fit allows you to continue using the same case even if you switch breast pumps in the future. Whether you upgrade your pump or change brands, your Ameda Universal Breast Pump Travel Case will remain your go-to for organized, discreet transport—making it a worthwhile purchase for the long term.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_PTJrBd",
+        "question_UyiqeJ",
+        "question_HeCVrf",
+        "question_YVK7m7",
+        "question_wKMAtC"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "use_h4_class": false,
+        "heading_align": "text-start",
+        "color_scheme": "1",
+        "full_width": true
       }
     },
     "custom_liquid_DnXFqh": {
@@ -432,6 +493,7 @@
     "multi_column_E8cVUb",
     "wave_section_xKwxKb",
     "compatible_products_783dhj",
+    "faq_WT7f3T",
     "custom_liquid_DnXFqh",
     "recommendations",
     "custom_liquid_6FwBVC",
