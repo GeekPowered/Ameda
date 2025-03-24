@@ -96,18 +96,6 @@
             "button_link": ""
           }
         },
-        "column_UGiTzU": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/press-3.jpg",
-            "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
         "column_L4RR6i": {
           "type": "column",
           "settings": {
@@ -174,7 +162,6 @@
         "column_pJEQhG",
         "column_g8bffN",
         "column_mPxwt6",
-        "column_UGiTzU",
         "column_L4RR6i",
         "column_C8kpMF",
         "column_CixqWm",
