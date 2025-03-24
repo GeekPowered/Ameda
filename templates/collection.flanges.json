@@ -145,12 +145,12 @@
         ".media {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/AmedaUniversalSoftBreastPumpFlangeInserts1.webp",
+        "image": "shopify://shop_images/flange-blob-2.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "right",
-        "image_fit": "cover",
+        "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
@@ -187,12 +187,12 @@
         ".section--padded {padding-top: 0 !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/CFF_l_45561927-d0dd-42d5-bf9b-e51cda6c57dc.png",
+        "image": "shopify://shop_images/flange-blob.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "left",
-        "image_fit": "cover",
+        "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
@@ -256,7 +256,7 @@
             "image": "shopify://shop_images/measure.jpg",
             "media_scale": 100,
             "heading": "Start with the Right Fit",
-            "text": "<p>Begin by taking a measurement of your nipple size (diameter) and comparing it to Ameda’s flange sizing chart. Remember, your nipple should move freely within the flange tunnel without rubbing against the sides. If your breast tissue or areola is pulled in, or if the elastic causes your nipples to stretch uncomfortably, the flange may be too large.</p>",
+            "text": "<p>Begin by taking a measurement of your nipple size (diameter) and comparing it to <a href=\"https://www.ameda.com/cdn/shop/files/Ameda_Flange_Size_Guide.pdf?v=8656739755394763194\" target=\"_blank\" title=\"https://www.ameda.com/cdn/shop/files/Ameda_Flange_Size_Guide.pdf?v=8656739755394763194\">Ameda’s flange sizing chart</a>. Remember, your nipple should move freely within the flange tunnel without rubbing against the sides. If your breast tissue or areola is pulled in, or if the elastic causes your nipples to stretch uncomfortably, the flange may be too large.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -314,7 +314,7 @@
     "custom_liquid_t9aVJm": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"background:#fff;padding:1.5rem 2rem;border-radius:1rem;border:2px dashed #ef8d96;\"><h2>Material Matters: Hard Plastic vs. Soft Silicone\n</h2>\n<p class=\"mb-0\">Most Ameda flanges use a combination of hard plastic outer shells with silicone insert options to ensure a vacuum seal without sacrificing comfort. The silicone piece is specifically designed to offer a gentle surface against your skin, reducing friction and the likelihood of nipple pain. Meanwhile, the hard plastic structure provides durability and helps the flange maintain its shape.\n</p></div>",
+        "custom_liquid": "<div style=\"background:#fff;padding:1.5rem 2rem;border-radius:1rem;border:2px dashed #ef8d96;\"><h2 class=\"mb-0\">Material Matters: Hard Plastic vs. Soft Silicone\n</h2>\n<p class=\"mb-0\">Most Ameda flanges use a combination of hard plastic outer shells with silicone insert options to ensure a vacuum seal without sacrificing comfort. The silicone piece is specifically designed to offer a gentle surface against your skin, reducing friction and the likelihood of nipple pain. Meanwhile, the hard plastic structure provides durability and helps the flange maintain its shape.\n</p></div>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
