@@ -48,18 +48,6 @@
     "multi_column_ghd66j": {
       "type": "multi-column",
       "blocks": {
-        "column_mwQJQX": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/press-acq.jpg",
-            "media_scale": 100,
-            "heading": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
         "column_pJEQhG": {
           "type": "column",
           "settings": {
@@ -84,54 +72,6 @@
             "button_link": ""
           }
         },
-        "column_mPxwt6": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/press-2.jpg",
-            "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_L4RR6i": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/press-4.jpg",
-            "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_C8kpMF": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/press-5.jpg",
-            "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_CixqWm": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/press-6.jpg",
-            "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
         "column_fBVjRM": {
           "type": "column",
           "settings": {
@@ -143,30 +83,12 @@
             "button_label": "",
             "button_link": ""
           }
-        },
-        "column_KK74ja": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/press-8.jpg",
-            "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
-        "column_mwQJQX",
         "column_pJEQhG",
         "column_g8bffN",
-        "column_mPxwt6",
-        "column_L4RR6i",
-        "column_C8kpMF",
-        "column_CixqWm",
-        "column_fBVjRM",
-        "column_KK74ja"
+        "column_fBVjRM"
       ],
       "custom_css": [
         ".card__media + * {display: none;}",
