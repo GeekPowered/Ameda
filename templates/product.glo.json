@@ -321,6 +321,18 @@
         "button_style": "btn btn--secondary"
       }
     },
+    "custom_liquid_Hc7NTY": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "image_banner_4CKUcC": {
       "type": "image-banner",
       "settings": {
@@ -434,7 +446,7 @@
         "column_GkkGFj"
       ],
       "custom_css": [
-        "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
+        "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5)); padding-bottom: calc(var(--section-gap) * var(--fluid-1-5));}",
         "li.multi-column:last-child {flex-grow: 0;}",
         ".card {flex-direction: row; gap: 2rem; padding-left: 2rem; border-left: 2px solid rgb(var(--link-color));}",
         ".card .card__info {padding-top: 0;}",
@@ -462,6 +474,27 @@
         "wavebgcolor": "#ffffff",
         "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "custom_liquid_xwRMbB": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "wave_section_Hw3QH8": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "top",
         "waveposition": ""
       }
     },
@@ -576,9 +609,12 @@
     "featured_testimonial_Fn3weA",
     "image_banner_icXtMq",
     "multi_column_MmQ4Pc",
+    "custom_liquid_Hc7NTY",
     "image_banner_4CKUcC",
     "multi_column_6hYJ3x",
     "wave_section_xKwxKb",
+    "custom_liquid_xwRMbB",
+    "wave_section_Hw3QH8",
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
     "recommendations",
