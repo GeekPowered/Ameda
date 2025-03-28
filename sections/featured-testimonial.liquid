@@ -27,13 +27,16 @@
         {%- endif -%}
     </div>
     <div class="reviewer-content">
-        {%- if section.settings.name != blank -%}
-            <p class="font-bold">{{ section.settings.name }}</p>
-        {%- endif -%}
         {%- if section.settings.testimonial != blank -%}
             <blockquote class="">
             {{ section.settings.testimonial }}
             </blockquote>
+        {%- endif -%}
+        {%- if section.settings.reviewer != blank -%}
+            <p class="font-bold">{{ section.settings.reviewer }}</p>
+        {%- endif -%}
+        {%- if section.settings.reviewer_location != blank -%}
+            <p>{{ section.settings.reviewer_location }}</p>
         {%- endif -%}
     </div>
   </div>
