@@ -79,29 +79,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "message-2": {
-          "type": "message",
-          "disabled": true,
-          "settings": {
-            "icon": "price_tag",
-            "title": "<p><strong>Selling fast!<br/></strong>Grab yours while you can</p>",
-            "close": "once",
-            "show_over_media": true,
-            "visibility_duration": 5,
-            "bg_color": "#e4edfa",
-            "text_color": "#1a66d2"
-          }
-        },
-        "31d2610e-0024-4377-b9d0-8bda2ca7b310": {
-          "type": "collapsible-content",
-          "settings": {
-            "heading": "Package Includes",
-            "icon": "none",
-            "text": "{{ product.metafields.product.package_includes | metafield_tag }}",
-            "page": "",
-            "open": false
-          }
-        },
         "share": {
           "type": "share",
           "settings": {}
@@ -117,8 +94,6 @@
         "variant-picker",
         "divider-1",
         "buy-buttons",
-        "message-2",
-        "31d2610e-0024-4377-b9d0-8bda2ca7b310",
         "share"
       ],
       "custom_css": [
@@ -164,6 +139,7 @@
       "block_order": [
         "custom_liquid_x4cYxH"
       ],
+      "disabled": true,
       "settings": {}
     },
     "wave_section_NxyUfh": {
@@ -175,45 +151,19 @@
         "waveposition": "top"
       }
     },
-    "media_with_text_wzMf4K": {
-      "type": "media-with-text",
-      "blocks": {
-        "heading_XzrWhq": {
-          "type": "heading",
-          "settings": {
-            "heading": "Portable & Built to Last",
-            "heading_size": "h2",
-            "heading_h1": false
-          }
-        },
-        "text_U6BBKW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Crafted from high quality materials with smart storage compartments and an insulated section to store milk, this practical solution is a must-have for any pumping mom who values convenience, organization, and a bag with a spacious interior. Comparable to other breast pump bags, this stylish, portable carryall doubles as a regular bag or even a diaper bag, thanks to its multiple pockets and ample space inside for pump parts, baby essentials, and more. It’s also sleek enough to be carried as a tote or backpack alternative, making it a functional accessory that can truly enhance your day-to-day routine.</p>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_XzrWhq",
-        "text_U6BBKW"
-      ],
-      "custom_css": [
-        ".section--padded {padding-bottom: 0;}"
-      ],
+    "featured_testimonial_Fn3weA": {
+      "type": "featured-testimonial",
       "settings": {
-        "image": "shopify://shop_images/amedaglo-product-01460-v2.jpg",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "left",
-        "image_fit": "contain",
-        "media_width": 45,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "1",
-        "only_content_color_scheme": false,
-        "baby_patterns": false
+        "testimonial": "\"It's very easy to wear under your shirt- I love that it's easy to do \"normal\" life things while pumping. And it's not painful to use. It's also easier to travel with than my other pump.\"",
+        "reviewer": "L.M.",
+        "reviewer_location": "Washington D.C.",
+        "reviewer_image": "shopify://shop_images/bottles-4.jpg",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
       }
     },
     "media_with_text_CzDYGX": {
@@ -492,8 +442,8 @@
     "main",
     "details",
     "wave_section_NxyUfh",
-    "media_with_text_wzMf4K",
     "media_with_text_CzDYGX",
+    "featured_testimonial_Fn3weA",
     "multi_column_E8cVUb",
     "wave_section_xKwxKb",
     "compatible_products_783dhj",
