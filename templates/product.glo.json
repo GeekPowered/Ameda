@@ -142,15 +142,6 @@
       "disabled": true,
       "settings": {}
     },
-    "wave_section_NxyUfh": {
-      "type": "wave-section",
-      "settings": {
-        "wavebgcolor": "#fbf6ef",
-        "wavesvgcolor": "#ffffff",
-        "wavetype": "top",
-        "waveposition": "top"
-      }
-    },
     "featured_testimonial_Fn3weA": {
       "type": "featured-testimonial",
       "settings": {
@@ -166,151 +157,25 @@
         "prevent_animation": false
       }
     },
-    "media_with_text_CzDYGX": {
-      "type": "media-with-text",
-      "blocks": {
-        "heading_jyUw3d": {
-          "type": "heading",
-          "settings": {
-            "heading": "Key Features",
-            "heading_size": "h2",
-            "heading_h1": false
-          }
-        },
-        "text_zAC33L": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li>Designed to fit Ameda Mya Joy and Mya Joy PLUS, plus other standard breast pumps. Perfect for a double pump setup or single unit, so you have enough space for pump parts and accessories.</li><li>Thoughtfully organized interior with dedicated compartments for flanges, bottles, tubing, charger, and accessories. With multiple pouches like a diaper bag, it helps you stay organized and makes it easy to quickly find what you need.</li><li>Lightweight and compact for easy portability, whether you’re commuting to work or heading out for the day. A portable design that looks great, but functions even better as a pump bag.</li><li>Made from durable, easy-to-clean fabric that stands up to daily use.</li><li>High quality materials ensure longevity, and it’s simple to wipe down after a long day.</li><li>Built-in insulated compartment keeps expressed milk cool when used with ice packs (ice packs not included). Keep your baby’s milk fresher for longer—perfect for busy schedules and travel.</li><li>Stylish enough to use as an everyday bag, with the functionality to keep pumping essentials organized and accessible.</li></ul>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_jyUw3d",
-        "text_zAC33L"
-      ],
-      "custom_css": [
-        ".section--padded {padding-top: 0;}"
-      ],
+    "image_banner_icXtMq": {
+      "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/amedaglo-product-01488-v2.jpg",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "right",
-        "image_fit": "cover",
-        "media_width": 45,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "1",
-        "only_content_color_scheme": false,
-        "baby_patterns": false
-      }
-    },
-    "multi_column_E8cVUb": {
-      "type": "multi-column",
-      "blocks": {
-        "column_fH37A7": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
-            "media_scale": 100,
-            "heading": "Universal Fit",
-            "text": "<p>Works seamlessly with Ameda pumps and comparable breast pump bags.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_TMtGVt": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
-            "media_scale": 100,
-            "heading": "Durable & Easy to Clean",
-            "text": "<p>High quality materials designed for daily use.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_dafiJf": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
-            "media_scale": 100,
-            "heading": "Compact & Lightweight",
-            "text": "<p>An ideal choice when you need a practical solution for travel or commutes.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_6nLtUq": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
-            "media_scale": 100,
-            "heading": "Smart Storage Layout",
-            "text": "<p>Multiple pouches keep your pumping equipment neatly arranged inside.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_exywqU": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
-            "media_scale": 100,
-            "heading": "Insulated Compartment",
-            "text": "<p>Helps you store milk at a safe temperature (with ice packs).</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_pVjBAT": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
-            "media_scale": 100,
-            "heading": "Stylish & Discreet",
-            "text": "<p>An ideal choice when you need a practical solution for travel or commutes.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_fH37A7",
-        "column_TMtGVt",
-        "column_dafiJf",
-        "column_6nLtUq",
-        "column_exywqU",
-        "column_pVjBAT"
-      ],
-      "custom_css": [
-        "[id*=\"multi_column\"] {margin: 0rem; padding-top: 0rem; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5)); background: #fff;}",
-        ".card {flex-direction: row; gap: 2rem;}",
-        ".card__media {padding-top: 0 !important; height: 3rem; width: 3rem; flex-shrink: 0; margin-top: 1rem;}",
-        ".card .card__info {padding: 1rem !important;}"
-      ],
-      "settings": {
-        "title": "Benefits of the Ameda Universal Breast Pump Travel Case",
-        "use_h4_class": false,
-        "heading_align": "text-start",
-        "button_label": "",
-        "button_link": "",
-        "layout": "grid",
-        "column_size": "medium",
-        "column_align": "left",
-        "media_align": "text-left",
-        "image_ratio": "1",
-        "color_scheme": "1",
-        "baby_patterns": false,
-        "button_style": "btn btn--secondary"
+        "url": "",
+        "breadcrumbs": false,
+        "breadcrumb_align": "justify-center",
+        "height_mode": "auto",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "prevent_animation": false
       }
     },
     "wave_section_xKwxKb": {
@@ -320,17 +185,6 @@
         "wavesvgcolor": "#ffffff",
         "wavetype": "bottom",
         "waveposition": ""
-      }
-    },
-    "compatible_products_783dhj": {
-      "type": "compatible-products",
-      "settings": {
-        "heading": "Compatible Products",
-        "heading_align": "text-start",
-        "layout": "grid",
-        "card_size_mobile": "small",
-        "card_size": "large",
-        "products_to_show": 8
       }
     },
     "faq_WT7f3T": {
@@ -441,12 +295,9 @@
   "order": [
     "main",
     "details",
-    "wave_section_NxyUfh",
-    "media_with_text_CzDYGX",
     "featured_testimonial_Fn3weA",
-    "multi_column_E8cVUb",
+    "image_banner_icXtMq",
     "wave_section_xKwxKb",
-    "compatible_products_783dhj",
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
     "recommendations",
