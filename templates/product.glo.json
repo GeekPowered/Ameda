@@ -343,6 +343,119 @@
         "prevent_animation": false
       }
     },
+    "multi_column_6hYJ3x": {
+      "type": "multi-column",
+      "blocks": {
+        "column_K8UkRw": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Universal Fit",
+            "text": "<p>Compatible with Glo, Ameda Mya Joy and Ameda Mya Joy PLUS pumps</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_K9UWH7": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Insulated Compartment",
+            "text": "<p>Built-in compartment ensures pumped milk stays at the ideal temperature when paired with a cooling element (not included).</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_PHfezF": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Durable Material",
+            "text": "<p>Made from high-quality, easy-to-clean fabric for long-lasting use.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_ahjP8U": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Insulated Compartment",
+            "text": "<p>Made from high-quality, easy-to-clean fabric for long-lasting use.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_k8zh8b": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Compact Design",
+            "text": "<p>Lightweight and portable, perfect for effortless travel anywhere.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_p3jeEi": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Stylish & Discreet",
+            "text": "<p>Fashion-forward design allows you to pump confidently without drawing attention.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_GkkGFj": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Smart Storage",
+            "text": "<p>Thoughtfully designed compartments keep accessories, flanges, charger and bottles organized and within easy reach.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_K8UkRw",
+        "column_K9UWH7",
+        "column_PHfezF",
+        "column_ahjP8U",
+        "column_k8zh8b",
+        "column_p3jeEi",
+        "column_GkkGFj"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
+        "li.multi-column:last-child {flex-grow: 0;}",
+        ".card {flex-direction: row; gap: 2rem; padding-left: 2rem; border-left: 2px solid rgb(var(--link-color));}",
+        ".card .card__info {padding-top: 0;}",
+        ".card .card__info h3 + div {flex-grow: 0;}"
+      ],
+      "settings": {
+        "title": "Ameda Universal Breast Pump Travel Case",
+        "use_h4_class": true,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
     "wave_section_xKwxKb": {
       "type": "wave-section",
       "settings": {
@@ -464,6 +577,7 @@
     "image_banner_icXtMq",
     "multi_column_MmQ4Pc",
     "image_banner_4CKUcC",
+    "multi_column_6hYJ3x",
     "wave_section_xKwxKb",
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
