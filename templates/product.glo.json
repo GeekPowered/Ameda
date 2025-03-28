@@ -479,12 +479,236 @@
     },
     "custom_liquid_xwRMbB": {
       "type": "custom-liquid",
+      "custom_css": [
+        "h2 span {color: rgb(var(--link-color));}"
+      ],
       "settings": {
-        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "custom_liquid": "<h2 class=\"text-center\">Trusted By Hospitals, <span>Loved By Moms</span></h2>\n<h1 class=\"text-center\">{FEATURES TO BE BUILT HERE}</h1>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
         "color_scheme": "1",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "multi_column_nQPdYB": {
+      "type": "multi-column",
+      "blocks": {
+        "column_Mj9wgQ": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_VbDw8i": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_c7f4g8": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_EBxTTi": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_eDEkTX": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_RQeYig": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_Qrcrrw": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Mj9wgQ",
+        "column_VbDw8i",
+        "column_c7f4g8",
+        "column_EBxTTi",
+        "column_eDEkTX",
+        "column_RQeYig",
+        "column_Qrcrrw"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {background: #fff; margin: 0;}",
+        ".card__media + * {display: none;}",
+        ".card {background: transparent;}",
+        ".slider.is-grabbable img {pointer-events: all;}"
+      ],
+      "settings": {
+        "title": "",
+        "use_h4_class": true,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "small",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "help_links_QamkFq": {
+      "type": "help-links",
+      "blocks": {
+        "link_gWbDkb": {
+          "type": "link",
+          "settings": {
+            "title": "Quick Start Guide",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Read Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_whriK3": {
+          "type": "link",
+          "settings": {
+            "title": "User Manual (English)",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Read Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_BAxJcc": {
+          "type": "link",
+          "settings": {
+            "title": "User Manual (Spanish)",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Read Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_jWRfTB": {
+          "type": "link",
+          "settings": {
+            "title": "User Manual (French)",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Read Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_TTrrYd": {
+          "type": "link",
+          "settings": {
+            "title": "Video Tutorial",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Watch Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_gWbDkb",
+        "link_whriK3",
+        "link_BAxJcc",
+        "link_jWRfTB",
+        "link_TTrrYd"
+      ],
+      "custom_css": [
+        ".section--padded {margin: 0; background: #fff !important;}"
+      ],
+      "settings": {
+        "section_heading": "Ameda GLO Resources",
+        "heading_align": "text-center",
+        "section_content": ""
+      }
+    },
+    "featured_testimonial_gnaGKP": {
+      "type": "featured-testimonial",
+      "custom_css": [
+        ".section--padded-default {background: #fff !important;}",
+        ".featured-review-card {background-color: rgba(var(--bg-color));}"
+      ],
+      "settings": {
+        "testimonial": "\"It’s lightweight and allows you to discreetly pump anywhere. It’s a comfortable suction and gets lots of milk. The settings are easy to manage and don’t have to be readjusted each time you use it.\"",
+        "reviewer": "N.V.",
+        "reviewer_location": "Miami, Florida",
+        "reviewer_image": "shopify://shop_images/glo-mom-2.jpg",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
         "baby_patterns": false,
         "prevent_animation": false
       }
@@ -614,6 +838,9 @@
     "multi_column_6hYJ3x",
     "wave_section_xKwxKb",
     "custom_liquid_xwRMbB",
+    "multi_column_nQPdYB",
+    "help_links_QamkFq",
+    "featured_testimonial_gnaGKP",
     "wave_section_Hw3QH8",
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
