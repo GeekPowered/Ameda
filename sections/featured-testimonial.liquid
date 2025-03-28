@@ -13,7 +13,38 @@
   if bg_color == settings.bg_color or bg_color == 'rgba(0,0,0,0)'
     assign bg_color = false
   endif
+
+  if image_ratio == nil
+    if section.settings.image_ratio == 'shortest' or section.settings.image_ratio == 'tallest'
+      assign image_ratio = 1
+    else
+      assign image_ratio = section.settings.image_ratio
+    endif
+  elsif image_ratio == 0 or image_ratio == 99
+    assign image_ratio = 1
+  endif
+
+  if section.settings.reviewer_image
+    if large_image
+      capture sizes
+        render 'sizes-attribute', grid: true, min: 1
+      endcapture
+    elsif section.settings.card_size == 'small'
+      capture sizes
+        render 'sizes-attribute', grid: true, min: 2, md: 3, lg: 4, xl: 5
+      endcapture
+    elsif section.settings.card_size == 'medium'
+      capture sizes
+        render 'sizes-attribute', grid: true, min: 1, sm: 2, lg: 3, xl: 4
+      endcapture
+    else
+      capture sizes
+        render 'sizes-attribute', grid: true, min: 1, sm: 2, lg: 3
+      endcapture
+    endif
+  endif
 -%}
+
 
 <div class="section relative section--full-width{% unless section.settings.section_height == "tight" %} section--padded-{{ section.settings.section_height }}{% endunless %}{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_patterns == true %} baby-pattern{% endif %}"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
   {%- unless section.settings.full_width -%}
@@ -22,8 +53,15 @@
 
   <div class="review-card">
     <div class="reviewer-image">
-        {%- if section.settings.image -%}
-          <img class="" src="{{ section.settings.reviewer_image | img_url: '1024x1024' }}" alt="" />
+        {%- if section.settings.reviewer_image -%}
+            {% render 'image',
+            image: section.settings.reviewer_image,
+            widths: '320, 460, 600, 700, 800, 900, 1200',
+            src_width: 460,
+            src_placeholder: true,
+            sizes: sizes,
+            class: class
+          %}
         {%- endif -%}
     </div>
     <div class="reviewer-content">
