@@ -151,6 +151,21 @@
         "waveposition": "top"
       }
     },
+    "featured_testimonial_Fn3weA": {
+      "type": "featured-testimonial",
+      "settings": {
+        "testimonial": "\"It's very easy to wear under your shirt- I love that it's easy to do \"normal\" life things while pumping. And it's not painful to use. It's also easier to travel with than my other pump.\"",
+        "reviewer": "L.M.",
+        "reviewer_location": "Washington D.C.",
+        "reviewer_image": "shopify://shop_images/bottles-4.jpg",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "media_with_text_CzDYGX": {
       "type": "media-with-text",
       "blocks": {
@@ -428,6 +443,7 @@
     "details",
     "wave_section_NxyUfh",
     "media_with_text_CzDYGX",
+    "featured_testimonial_Fn3weA",
     "multi_column_E8cVUb",
     "wave_section_xKwxKb",
     "compatible_products_783dhj",
