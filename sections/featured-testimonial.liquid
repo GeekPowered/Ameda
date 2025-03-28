@@ -46,17 +46,17 @@
 -%}
 
 <style>
-    .review-card {
+    .featured-review-card {
         display: flex;
         background: #fff;
         border-radius: 1rem;
         padding: 2rem;
     }
-    .review-card .reviewer-image {
+    .featured-review-card .featured-reviewer-image {
         width: 30rem;
         flex-shrink: 0;
     }
-    .review-card .reviewer-content {
+    .featured-review-card .reviewer-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -69,8 +69,8 @@
     <div class="container">
   {%- endunless -%}
 
-  <div class="review-card">
-    <div class="reviewer-image">
+  <div class="featured-review-card">
+    <div class="featured-reviewer-image">
         {%- if section.settings.reviewer_image -%}
             {% render 'image',
             image: section.settings.reviewer_image,
