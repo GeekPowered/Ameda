@@ -55,6 +55,12 @@
         width: 30rem;
         flex-shrink: 0;
     }
+    .featured-review-card .featured-reviewer-image img {
+        border-radius: 50%;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
     .featured-review-card .reviewer-content {
         display: flex;
         flex-direction: column;
@@ -88,10 +94,10 @@
             </p>
         {%- endif -%}
         {%- if section.settings.reviewer != blank -%}
-            <p class="font-bold">{{ section.settings.reviewer }}</p>
+            <p class="font-bold mb-0">{{ section.settings.reviewer }}</p>
         {%- endif -%}
         {%- if section.settings.reviewer_location != blank -%}
-            <p>{{ section.settings.reviewer_location }}</p>
+            <p class="mb-0">{{ section.settings.reviewer_location }}</p>
         {%- endif -%}
     </div>
   </div>
