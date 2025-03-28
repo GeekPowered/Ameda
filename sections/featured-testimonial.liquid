@@ -45,6 +45,24 @@
   endif
 -%}
 
+<style>
+    .review-card {
+        display: flex;
+        background: #fff;
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+    .review-card .reviewer-image {
+        width: 30rem;
+        flex-shrink: 0;
+    }
+    .review-card .reviewer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+    }
+</style>
 
 <div class="section relative section--full-width{% unless section.settings.section_height == "tight" %} section--padded-{{ section.settings.section_height }}{% endunless %}{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_patterns == true %} baby-pattern{% endif %}"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
   {%- unless section.settings.full_width -%}
@@ -66,9 +84,9 @@
     </div>
     <div class="reviewer-content">
         {%- if section.settings.testimonial != blank -%}
-            <blockquote class="">
+            <p class="h4">
             {{ section.settings.testimonial }}
-            </blockquote>
+            </p>
         {%- endif -%}
         {%- if section.settings.reviewer != blank -%}
             <p class="font-bold">{{ section.settings.reviewer }}</p>
