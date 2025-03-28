@@ -335,6 +335,11 @@
     },
     "image_banner_4CKUcC": {
       "type": "image-banner",
+      "custom_css": [
+        ".image-banner {width: 100%; max-width: calc(1320px + var(--gutter) * 2); margin: 0 auto; padding: 0 var(--gutter);}",
+        ".media {overflow: auto !important; width: auto; height: auto; position: relative;}",
+        "img {position: relative !important;}"
+      ],
       "settings": {
         "image_desktop": "shopify://shop_images/glo-bag.png",
         "url": "",
