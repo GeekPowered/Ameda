@@ -159,7 +159,24 @@
     },
     "image_banner_icXtMq": {
       "type": "image-banner",
+      "blocks": {
+        "text_DfwfWr": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Pump <strong>Anywhere.</strong></h2>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_DfwfWr"
+      ],
+      "custom_css": [
+        "h2 {font-size: 5cqw;}",
+        "h2 strong {color: rgb(var(--link-color));}"
+      ],
       "settings": {
+        "image_desktop": "shopify://shop_images/glo-disassembled.png",
         "url": "",
         "breadcrumbs": false,
         "breadcrumb_align": "justify-center",
@@ -172,17 +189,143 @@
         "mobile_stacked": false,
         "color_scheme": "white",
         "full_width": true,
-        "transparent_content_color": "#ffffff",
+        "transparent_content_color": "{{ shop.brand.colors.secondary[0].background }}",
         "tint_color": "#000000",
         "tint_opacity": 0,
         "prevent_animation": false
       }
     },
+    "multi_column_MmQ4Pc": {
+      "type": "multi-column",
+      "blocks": {
+        "column_7DFkMK": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "{{ product.featured_image }}",
+            "media_scale": 100,
+            "heading": "Ameda Glo Breast Pump (2)",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_zLP6UY": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda GLO Collection Cup (1)",
+            "text": "<p>SKU: 120G15<br/><strong>Retail Price: $13.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_wF7CKW": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda Universal Breast Pump Travel Case (1)",
+            "text": "<p>SKU: 120G02<br/><strong>Retail Price: $29.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_cQwJpY": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda GLO Diaphragm (1)",
+            "text": "<p>SKU: 120G05<br/><strong>Retail Price: $4.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_FCjhRp": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda GLO 24mm Flanges (1 pair)",
+            "text": "<p>SKU: 120G03<br/><strong>Retail Price: $12.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_dVPGFb": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda GLO 27mm Flanges (1 pair)",
+            "text": "<p>SKU: 120G04<br/><strong>Retail Price: $12.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_xp38tA": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda GLO Valves (2)",
+            "text": "<p>SKU: 120G06<br/><strong>Retail Price: $3.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_xFeQKa": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda GLO Bra Adjustment Buckles (2)",
+            "text": "<p>SKU: 120G08<br/><strong>Retail Price: $6.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7DFkMK",
+        "column_zLP6UY",
+        "column_wF7CKW",
+        "column_cQwJpY",
+        "column_FCjhRp",
+        "column_dVPGFb",
+        "column_xp38tA",
+        "column_xFeQKa"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
+        ".card {flex-direction: row; gap: 2rem;}",
+        ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
+        ".card .card__info {padding: 1rem !important; justify-content: center !important;}",
+        ".card .card__info h3 + div {flex-grow: 0;}"
+      ],
+      "settings": {
+        "title": "Included With Every Purchase",
+        "use_h4_class": true,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
     "wave_section_xKwxKb": {
       "type": "wave-section",
       "settings": {
-        "wavebgcolor": "#fbf6ef",
-        "wavesvgcolor": "#ffffff",
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": ""
       }
@@ -297,6 +440,7 @@
     "details",
     "featured_testimonial_Fn3weA",
     "image_banner_icXtMq",
+    "multi_column_MmQ4Pc",
     "wave_section_xKwxKb",
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
