@@ -321,6 +321,28 @@
         "button_style": "btn btn--secondary"
       }
     },
+    "image_banner_4CKUcC": {
+      "type": "image-banner",
+      "settings": {
+        "image_desktop": "shopify://shop_images/glo-bag.png",
+        "url": "",
+        "breadcrumbs": false,
+        "breadcrumb_align": "justify-center",
+        "height_mode": "auto",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "prevent_animation": false
+      }
+    },
     "wave_section_xKwxKb": {
       "type": "wave-section",
       "settings": {
@@ -441,6 +463,7 @@
     "featured_testimonial_Fn3weA",
     "image_banner_icXtMq",
     "multi_column_MmQ4Pc",
+    "image_banner_4CKUcC",
     "wave_section_xKwxKb",
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
