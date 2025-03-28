@@ -28,11 +28,11 @@
     </div>
     <div class="reviewer-content">
         {%- if section.settings.name -%}
-            <p class="font-bold">{{ section.settings.name }}</p>
+            <p class="font-bold">{{ section.settings.name.value }}</p>
         {%- endif -%}
         {%- if section.settings.testimonial -%}
             <blockquote class="">
-            {{ section.settings.testimonial }}
+            {{ section.settings.testimonial.value }}
             </blockquote>
         {%- endif -%}
     </div>
