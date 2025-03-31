@@ -20,6 +20,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .gps-product-feature, .spacer-for-image {
+      width: 30%;
+  }
 </style>
 
 <div class="section relative section--full-width{% unless section.settings.section_height == "tight" %} section--padded-{{ section.settings.section_height }}{% endunless %}{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_patterns == true %} baby-pattern{% endif %}"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
