@@ -67,6 +67,14 @@
         justify-content: center;
         padding: 2rem 6rem 2rem 2rem;
     }
+    @media (max-width: 900px) {
+        .featured-review-card {
+            flex-direction: column;
+        }
+        .featured-review-card .reviewer-content {
+            padding: 2rem;
+        }
+    }
 </style>
 
 <div class="section relative section--full-width{% unless section.settings.section_height == "tight" %} section--padded-{{ section.settings.section_height }}{% endunless %}{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_patterns == true %} baby-pattern{% endif %}"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
