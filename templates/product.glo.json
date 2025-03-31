@@ -594,9 +594,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-1.jpg",
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -605,9 +606,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-2.jpg",
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -616,9 +618,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-3.jpg",
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -627,9 +630,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-4.jpg",
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -638,9 +642,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-5.jpg",
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -649,9 +654,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-6.jpg",
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -660,9 +666,106 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-7.jpg",
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_MpF6zz": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-8.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_bHeqkW": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-9.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_djQxN7": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-10.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_kiFHLD": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-11.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_hMKCyb": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-12.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_jVixKU": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-13.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_4TnCYj": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-14.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_bdMBkd": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-15.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -675,7 +778,15 @@
         "column_EBxTTi",
         "column_eDEkTX",
         "column_RQeYig",
-        "column_Qrcrrw"
+        "column_Qrcrrw",
+        "column_MpF6zz",
+        "column_bHeqkW",
+        "column_djQxN7",
+        "column_kiFHLD",
+        "column_hMKCyb",
+        "column_jVixKU",
+        "column_4TnCYj",
+        "column_bdMBkd"
       ],
       "custom_css": [
         "[id*=\"multi_column\"] {background: #fff; margin: 0;}",
