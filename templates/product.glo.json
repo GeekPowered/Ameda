@@ -529,6 +529,9 @@
     },
     "gps_product_features_VB9Xpc": {
       "type": "gps-product-features",
+      "custom_css": [
+        ".section--padded-default {padding-top: 0;}"
+      ],
       "settings": {
         "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
         "section_height": "default",
