@@ -31,7 +31,7 @@
   .featured-content h2 {
     font-size: 5cqw;
   }
-  .featured-content h2 span {
+  .featured-image-title strong {
     color: rgb(var(--link-color));
   }
 </style>
@@ -47,7 +47,7 @@
       src_width: 1280,
       class: 'featured-image'
     %}
-    {%- if section.settings.title != blank -%} <h2>{{ section.settings.title }}</h2> {%- endif -%}
+    <div class="featured-image-title">{%- if section.settings.title != blank -%}{{ section.settings.title }}{%- endif -%}</div>
   {%- unless section.settings.full_width -%}
     </div>
   {%- endunless -%}
