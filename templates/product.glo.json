@@ -142,6 +142,86 @@
       "disabled": true,
       "settings": {}
     },
+    "multi_column_X6MbcE": {
+      "type": "multi-column",
+      "blocks": {
+        "column_UH4fDb": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/simulation.png",
+            "media_scale": 100,
+            "heading": "Simulation Mode",
+            "text": "<p>Soft suction gently initiates let-down.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_bqL7zq": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/expression.png",
+            "media_scale": 100,
+            "heading": "Expression Mode",
+            "text": "<p>Customizable suction for optimal milk production.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_XYABkt": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/massage.png",
+            "media_scale": 100,
+            "heading": "Massage Mode",
+            "text": "<p>Quick & gentle suction helps relieve discomfort.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_eFC8Yp": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/auto.png",
+            "media_scale": 100,
+            "heading": "Automatic Mode",
+            "text": "<p>Pre-programmed pumping cycle for ease of use.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UH4fDb",
+        "column_bqL7zq",
+        "column_XYABkt",
+        "column_eFC8Yp"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {padding-bottom: 0;}",
+        ".card {gap: 1rem; padding: 1rem; border-radius: 1rem; border-bottom: 2px solid rgb(var(--link-color));}",
+        ".card__media {padding-top: 0 !important; height: 8rem; width: 8rem; flex-shrink: 0; margin-top: 1rem; margin-left: auto; margin-right: auto;}",
+        ".card .card__info {padding: 1rem !important;}"
+      ],
+      "settings": {
+        "title": "{{ product.title }} Modes",
+        "use_h4_class": false,
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
     "featured_testimonial_Fn3weA": {
       "type": "featured-testimonial",
       "settings": {
@@ -835,6 +915,7 @@
   "order": [
     "main",
     "details",
+    "multi_column_X6MbcE",
     "featured_testimonial_Fn3weA",
     "image_banner_icXtMq",
     "multi_column_MmQ4Pc",
