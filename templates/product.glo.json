@@ -226,7 +226,7 @@
       "type": "featured-image",
       "settings": {
         "featured_image": "shopify://shop_images/glo-disassembled.png",
-        "html_content": "",
+        "html_content": "<h2>Pump <span>Anywhere.</span></h2>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
