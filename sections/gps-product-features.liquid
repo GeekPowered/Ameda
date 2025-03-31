@@ -49,11 +49,19 @@
     justify-content: center;
   }
   .gps-featured-image {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      object-fit: cover;
-      object-position: 44% 50.0% !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    object-position: 44% 50.0% !important;
+  }
+  @media screen and (max-width: 991px) {
+    .gps-product-feature {
+        width: 100%;
+    }
+    .spacer-for-image { 
+      display: none; 
+    }
   }
 </style>
 
@@ -64,6 +72,15 @@
 
   <div class="gps-product-features-container relative">
     <div class="gps-product-features">
+      <div class="gps-product-features-background-image">
+        {% render 'image',
+          image: section.settings.featured_image,
+          widths: '480, 640, 960, 1280',
+          quality: 1,
+          src_width: 1280,
+          class: 'gps-featured-image'
+        %}
+      </div>
       <div class="gps-product-feature">
         <div class="gps-product-feature-icon">
           <svg width=" 100%" height=" 100%" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,15 +146,6 @@
         <div class="h5">Mom Support</div>
         <p class="gps-product-feature-description">Ameda's award-winning ParentCare customer support for a worry-free breastfeeding journey.</p>
       </div>
-    </div>
-    <div class="gps-product-features-background-image">
-      {% render 'image',
-        image: section.settings.featured_image,
-        widths: '480, 640, 960, 1280',
-        quality: 1,
-        src_width: 1280,
-        class: 'gps-featured-image'
-      %}
     </div>
   </div>
 
