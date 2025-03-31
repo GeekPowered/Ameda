@@ -764,40 +764,48 @@
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Will the Ameda Universal Breast Pump Travel Case fit all Ameda pumps?",
-            "text": "<p>Yes! The Ameda Universal Breast Pump Travel Case is designed to perfectly fit both the Ameda Mya Joy and Mya Joy PLUS pumps, along with their accessories. Its flexible compartments and ample space provide convenient storage for your pump, flanges, bottles, and charger—keeping everything organized and ready for use wherever you go.</p>"
+            "heading": "How does the GLO Wearable Breast Pump work?",
+            "text": "<p>The GLO Wearable Breast Pump is a hands-free, hospital-grade pump that uses powerful suction to express breast milk efficiently. Simply insert the pump into your bra, adjust the silicone cups for comfort, and use the user-friendly controls to customize your settings. The pump operates quietly and allows you to move around freely while expressing milk.</p>"
           }
         },
         "question_UyiqeJ": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Can I use the insulated compartment without ice packs?",
-            "text": "<p>The insulated compartment helps maintain a cooler temperature, but for optimal milk storage, we recommend using ice packs (not included) to keep your milk at a safe temperature during longer outings.</p>"
+            "heading": "Can I use the GLO pump for double pumping?",
+            "text": "<p>Yes, the GLO Wearable Breast Pump is designed for both single and double pumping. You can easily switch between modes depending on your needs, making it a versatile choice for busy moms.</p>"
           }
         },
         "question_HeCVrf": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Is the fabric easy to clean?",
-            "text": "<p>Yes! The Ameda Universal Breast Pump Travel Case is made from durable, easy-to-clean fabric. Simply wipe the exterior and interior with a damp cloth to keep your bag fresh and ready for daily use.</p>"
+            "heading": "How many suction levels are available, and how do I customize them?",
+            "text": "<p>The GLO pump features 15 adjustable suction levels in four different modes: Stimulation, Expression, Auto, and Massage. You can easily customize the suction level using the user-friendly controls, allowing you to find the most comfortable setting for efficient milk expression.</p>"
           }
         },
         "question_YVK7m7": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Can I carry the case as a shoulder bag?",
-            "text": "<p>Absolutely. The case comes with an adjustable shoulder strap, making it easy to carry hands-free whether you’re navigating the office, daycare drop-off, or airport security.</p>"
+            "heading": "Is the GLO pump compatible with other Ameda products?",
+            "text": "<p>Yes, the GLO Wearable Breast Pump is compatible with the <a href=\"/products/ameda-hygienikit-universal-kit\" title=\"Ameda HygieniKit® Universal Kit\">Ameda HygeniKit Universal Pumping System</a>. Additionally, the silicone inserts are interchangeable with other Ameda products, making it easy to adapt your setup as needed.</p>"
           }
         },
         "question_wKMAtC": {
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "What’s the advantage of having a universal fit case?",
-            "text": "<p>A universal fit allows you to continue using the same case even if you switch breast pumps in the future. Whether you upgrade your pump or change brands, your Ameda Universal Breast Pump Travel Case will remain your go-to for organized, discreet transport—making it a worthwhile purchase for the long term.</p>"
+            "heading": "How long does the battery last, and how do I recharge it?",
+            "text": "<p>The GLO pump provides up to 100 minutes of uninterrupted pumping on a single charge. To recharge, simply plug in the pump using the provided charging cable. The quick recharge feature ensures you're ready for your next session in no time.</p>"
+          }
+        },
+        "question_6L8nqw": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Is the GLO pump discreet for use in public places?",
+            "text": "<p>Yes, the GLO Wearable Breast Pump is designed with whisper-quiet operation, making it perfect for discreet pumping in public places or while around others. Its lightweight and compact design also makes it easy to wear under clothing without drawing attention.</p>"
           }
         }
       },
@@ -806,7 +814,8 @@
         "question_UyiqeJ",
         "question_HeCVrf",
         "question_YVK7m7",
-        "question_wKMAtC"
+        "question_wKMAtC",
+        "question_6L8nqw"
       ],
       "custom_css": [
         ".color-scheme--1 {background: none;}",
