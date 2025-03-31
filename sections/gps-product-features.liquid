@@ -22,6 +22,7 @@
     justify-content: space-between;
     padding: 4rem 0;
     row-gap: 3rem;
+    text-align: center;
   }
   .gps-product-feature, 
   .spacer-for-image {
@@ -37,6 +38,15 @@
       border-radius: 1rem;
       background: grey;
   }
+  .gps-product-feature-icon {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 auto 1rem;
+    color: rgb(var(--link-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 </style>
 
 <div class="section relative section--full-width{% unless section.settings.section_height == "tight" %} section--padded-{{ section.settings.section_height }}{% endunless %}{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_patterns == true %} baby-pattern{% endif %}"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
@@ -48,36 +58,36 @@
     <div class="gps-product-features">
       <div class="gps-product-feature">
         <div class="gps-product-feature-icon">1</div>
-        <div class="gps-product-feature-title">Hands-Free Design</div>
-        <div class="gps-product-feature-description">Effortlessly pump single or double with sleek, integrated silicone cups, motor, and user-friendly display and controls. Pump discreetly anywhere, anytime.</div>
+        <div class="h5">Hands-Free Design</div>
+        <p class="gps-product-feature-description">Effortlessly pump single or double with sleek, integrated silicone cups, motor, and user-friendly display and controls. Pump discreetly anywhere, anytime.</p>
       </div>
       <div class="spacer-for-image"></div>
       <div class="gps-product-feature">
         <div class="gps-product-feature-icon">2</div>
-        <div class="gps-product-feature-title">Hospital-Grade Suction</div>
-        <div class="gps-product-feature-description">Powerful suction up to 270mmHg ensures efficient milk expression, inspired by Ameda's clinically proven hospital-grade technology.</div>
+        <div class="h5">Hospital-Grade Suction</div>
+        <p class="gps-product-feature-description">Powerful suction up to 270mmHg ensures efficient milk expression, inspired by Ameda's clinically proven hospital-grade technology.</p>
       </div>
       <div class="gps-product-feature">
         <div class="gps-product-feature-icon">3</div>
-        <div class="gps-product-feature-title">Whisper-Quiet Operation</div>
-        <div class="gps-product-feature-description">Discreet pumping anytime, anywhere, even in meetings or around others.</div>
+        <div class="h5">Whisper-Quiet Operation</div>
+        <p class="gps-product-feature-description">Discreet pumping anytime, anywhere, even in meetings or around others.</p>
       </div>
       <div class="spacer-for-image"></div>
       <div class="gps-product-feature">
         <div class="gps-product-feature-icon">4</div>
-        <div class="gps-product-feature-title">Lightweight and Portable</div>
-        <div class="gps-product-feature-description">Weighing just 0.9 lbs, it is designed for moms on the move, providing flexibility and freedom for hassle-free pumping.</div>
+        <div class="h5">Lightweight and Portable</div>
+        <p class="gps-product-feature-description">Weighing just 0.9 lbs, it is designed for moms on the move, providing flexibility and freedom for hassle-free pumping.</p>
       </div>
       <div class="gps-product-feature">
         <div class="gps-product-feature-icon">5</div>
-        <div class="gps-product-feature-title">Peace of Mind Warranty</div>
-        <div class="gps-product-feature-description">Backed by a one-year warranty.</div>
+        <div class="h5">Peace of Mind Warranty</div>
+        <p class="gps-product-feature-description">Backed by a one-year warranty.</p>
       </div>
       <div class="spacer-for-image"></div>
       <div class="gps-product-feature">
         <div class="gps-product-feature-icon">6</div>
-        <div class="gps-product-feature-title">Mom Support</div>
-        <div class="gps-product-feature-description">Ameda's award-winning ParentCare customer support for a worry-free breastfeeding journey.</div>
+        <div class="h5">Mom Support</div>
+        <p class="gps-product-feature-description">Ameda's award-winning ParentCare customer support for a worry-free breastfeeding journey.</p>
       </div>
     </div>
     <div class="gps-product-features-background-image">
