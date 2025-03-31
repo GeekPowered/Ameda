@@ -79,6 +79,16 @@
             "show_gift_card_recipient": false
           }
         },
+        "collapsible_content_LYD7Jj": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Technical Features",
+            "icon": "none",
+            "text": "{{ product.metafields.product.technical_features | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
         "share": {
           "type": "share",
           "settings": {}
@@ -94,6 +104,7 @@
         "variant-picker",
         "divider-1",
         "buy-buttons",
+        "collapsible_content_LYD7Jj",
         "share"
       ],
       "custom_css": [
@@ -355,7 +366,7 @@
             "enable_media": true,
             "image": "shopify://shop_images/usb-charger.jpg",
             "media_scale": 100,
-            "heading": "AC Power Adapter with USB-C cord",
+            "heading": "AC Power Adapter with USB-C Cord (1)",
             "text": "",
             "button_label": "",
             "button_link": ""
@@ -363,6 +374,7 @@
         },
         "column_Q3A6E6": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "enable_media": true,
             "image": "shopify://shop_images/ameda-logo-emblem.jpg",
@@ -768,6 +780,7 @@
         "link_jWRfTB",
         "link_TTrrYd"
       ],
+      "disabled": true,
       "custom_css": [
         ".section--padded {margin: 0; background: #fff !important;}"
       ],
