@@ -142,13 +142,84 @@
       "disabled": true,
       "settings": {}
     },
-    "wave_section_NxyUfh": {
-      "type": "wave-section",
+    "multi_column_X6MbcE": {
+      "type": "multi-column",
+      "blocks": {
+        "column_UH4fDb": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/simulation.png",
+            "media_scale": 100,
+            "heading": "Simulation Mode",
+            "text": "<p>Soft suction gently initiates let-down.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_bqL7zq": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/expression.png",
+            "media_scale": 100,
+            "heading": "Expression Mode",
+            "text": "<p>Customizable suction for optimal milk production.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_XYABkt": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/massage.png",
+            "media_scale": 100,
+            "heading": "Massage Mode",
+            "text": "<p>Quick & gentle suction helps relieve discomfort.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_eFC8Yp": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/auto.png",
+            "media_scale": 100,
+            "heading": "Automatic Mode",
+            "text": "<p>Pre-programmed pumping cycle for ease of use.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UH4fDb",
+        "column_bqL7zq",
+        "column_XYABkt",
+        "column_eFC8Yp"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {padding-bottom: 0;}",
+        ".card {gap: 1rem; padding: 1rem; border-radius: 1rem; border-bottom: 2px solid rgb(var(--link-color));}",
+        ".card__media {padding-top: 0 !important; height: 8rem; width: 8rem; flex-shrink: 0; margin-top: 1rem; margin-left: auto; margin-right: auto;}",
+        ".card .card__info {padding: 1rem !important;}"
+      ],
       "settings": {
-        "wavebgcolor": "#fbf6ef",
-        "wavesvgcolor": "#ffffff",
-        "wavetype": "top",
-        "waveposition": "top"
+        "title": "{{ product.title }} Modes",
+        "use_h4_class": false,
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
       }
     },
     "featured_testimonial_Fn3weA": {
@@ -157,7 +228,7 @@
         "testimonial": "\"It's very easy to wear under your shirt- I love that it's easy to do \"normal\" life things while pumping. And it's not painful to use. It's also easier to travel with than my other pump.\"",
         "reviewer": "L.M.",
         "reviewer_location": "Washington D.C.",
-        "reviewer_image": "shopify://shop_images/bottles-4.jpg",
+        "reviewer_image": "shopify://shop_images/ameda-glo-mom-1.jpg",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -166,149 +237,318 @@
         "prevent_animation": false
       }
     },
-    "media_with_text_CzDYGX": {
-      "type": "media-with-text",
+    "image_banner_icXtMq": {
+      "type": "image-banner",
       "blocks": {
-        "heading_jyUw3d": {
-          "type": "heading",
-          "settings": {
-            "heading": "Key Features",
-            "heading_size": "h2",
-            "heading_h1": false
-          }
-        },
-        "text_zAC33L": {
+        "text_DfwfWr": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Designed to fit Ameda Mya Joy and Mya Joy PLUS, plus other standard breast pumps. Perfect for a double pump setup or single unit, so you have enough space for pump parts and accessories.</li><li>Thoughtfully organized interior with dedicated compartments for flanges, bottles, tubing, charger, and accessories. With multiple pouches like a diaper bag, it helps you stay organized and makes it easy to quickly find what you need.</li><li>Lightweight and compact for easy portability, whether you’re commuting to work or heading out for the day. A portable design that looks great, but functions even better as a pump bag.</li><li>Made from durable, easy-to-clean fabric that stands up to daily use.</li><li>High quality materials ensure longevity, and it’s simple to wipe down after a long day.</li><li>Built-in insulated compartment keeps expressed milk cool when used with ice packs (ice packs not included). Keep your baby’s milk fresher for longer—perfect for busy schedules and travel.</li><li>Stylish enough to use as an everyday bag, with the functionality to keep pumping essentials organized and accessible.</li></ul>",
+            "text": "<h2>Pump <strong>Anywhere.</strong></h2>",
             "enlarge_text": false
           }
         }
       },
       "block_order": [
-        "heading_jyUw3d",
-        "text_zAC33L"
+        "text_DfwfWr"
       ],
       "custom_css": [
-        ".section--padded {padding-top: 0;}"
+        "h2 {font-size: 5cqw;}",
+        "h2 strong {color: rgb(var(--link-color));}"
       ],
       "settings": {
-        "image": "shopify://shop_images/amedaglo-product-01488-v2.jpg",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "right",
-        "image_fit": "cover",
-        "media_width": 45,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "1",
-        "only_content_color_scheme": false,
-        "baby_patterns": false
+        "image_desktop": "shopify://shop_images/glo-disassembled.png",
+        "url": "",
+        "breadcrumbs": false,
+        "breadcrumb_align": "justify-center",
+        "height_mode": "auto",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "prevent_animation": false
       }
     },
-    "multi_column_E8cVUb": {
+    "multi_column_MmQ4Pc": {
       "type": "multi-column",
       "blocks": {
-        "column_fH37A7": {
+        "column_7DFkMK": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
+            "image": "{{ product.featured_image }}",
             "media_scale": 100,
-            "heading": "Universal Fit",
-            "text": "<p>Works seamlessly with Ameda pumps and comparable breast pump bags.</p>",
+            "heading": "Ameda Glo Breast Pump (2)",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
         },
-        "column_TMtGVt": {
+        "column_zLP6UY": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
             "media_scale": 100,
-            "heading": "Durable & Easy to Clean",
-            "text": "<p>High quality materials designed for daily use.</p>",
+            "heading": "Ameda GLO Collection Cup (1)",
+            "text": "<p>SKU: 120G15<br/><strong>Retail Price: $13.99</strong></p>",
             "button_label": "",
             "button_link": ""
           }
         },
-        "column_dafiJf": {
+        "column_wF7CKW": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
             "media_scale": 100,
-            "heading": "Compact & Lightweight",
-            "text": "<p>An ideal choice when you need a practical solution for travel or commutes.</p>",
+            "heading": "Ameda Universal Breast Pump Travel Case (1)",
+            "text": "<p>SKU: 120G02<br/><strong>Retail Price: $29.99</strong></p>",
             "button_label": "",
             "button_link": ""
           }
         },
-        "column_6nLtUq": {
+        "column_cQwJpY": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
             "media_scale": 100,
-            "heading": "Smart Storage Layout",
-            "text": "<p>Multiple pouches keep your pumping equipment neatly arranged inside.</p>",
+            "heading": "Ameda GLO Diaphragm (1)",
+            "text": "<p>SKU: 120G05<br/><strong>Retail Price: $4.99</strong></p>",
             "button_label": "",
             "button_link": ""
           }
         },
-        "column_exywqU": {
+        "column_FCjhRp": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
             "media_scale": 100,
-            "heading": "Insulated Compartment",
-            "text": "<p>Helps you store milk at a safe temperature (with ice packs).</p>",
+            "heading": "Ameda GLO 24mm Flanges (1 pair)",
+            "text": "<p>SKU: 120G03<br/><strong>Retail Price: $12.99</strong></p>",
             "button_label": "",
             "button_link": ""
           }
         },
-        "column_pVjBAT": {
+        "column_dVPGFb": {
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/checkmark.svg",
             "media_scale": 100,
-            "heading": "Stylish & Discreet",
-            "text": "<p>An ideal choice when you need a practical solution for travel or commutes.</p>",
+            "heading": "Ameda GLO 27mm Flanges (1 pair)",
+            "text": "<p>SKU: 120G04<br/><strong>Retail Price: $12.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_xp38tA": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda GLO Valves (2)",
+            "text": "<p>SKU: 120G06<br/><strong>Retail Price: $3.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_xFeQKa": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda GLO Bra Adjustment Buckles (2)",
+            "text": "<p>SKU: 120G08<br/><strong>Retail Price: $6.99</strong></p>",
             "button_label": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "column_fH37A7",
-        "column_TMtGVt",
-        "column_dafiJf",
-        "column_6nLtUq",
-        "column_exywqU",
-        "column_pVjBAT"
+        "column_7DFkMK",
+        "column_zLP6UY",
+        "column_wF7CKW",
+        "column_cQwJpY",
+        "column_FCjhRp",
+        "column_dVPGFb",
+        "column_xp38tA",
+        "column_xFeQKa"
       ],
       "custom_css": [
-        "[id*=\"multi_column\"] {margin: 0rem; padding-top: 0rem; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5)); background: #fff;}",
+        "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
         ".card {flex-direction: row; gap: 2rem;}",
-        ".card__media {padding-top: 0 !important; height: 3rem; width: 3rem; flex-shrink: 0; margin-top: 1rem;}",
-        ".card .card__info {padding: 1rem !important;}"
+        ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
+        ".card .card__info {padding: 1rem !important; justify-content: center !important;}",
+        ".card .card__info h3 + div {flex-grow: 0;}"
       ],
       "settings": {
-        "title": "Benefits of the Ameda Universal Breast Pump Travel Case",
-        "use_h4_class": false,
+        "title": "Included With Every Purchase",
+        "use_h4_class": true,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
         "layout": "grid",
-        "column_size": "medium",
+        "column_size": "large",
         "column_align": "left",
-        "media_align": "text-left",
+        "media_align": "text-center",
         "image_ratio": "1",
-        "color_scheme": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "custom_liquid_Hc7NTY": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "image_banner_4CKUcC": {
+      "type": "image-banner",
+      "custom_css": [
+        ".image-banner {width: 100%; max-width: calc(1320px + var(--gutter) * 2); margin: 0 auto; padding: 0 var(--gutter);}",
+        ".media {overflow: auto !important; width: auto; height: auto; position: relative;}",
+        "img {position: relative !important;}"
+      ],
+      "settings": {
+        "image_desktop": "shopify://shop_images/glo-bag.png",
+        "url": "",
+        "breadcrumbs": false,
+        "breadcrumb_align": "justify-center",
+        "height_mode": "auto",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "prevent_animation": false
+      }
+    },
+    "multi_column_6hYJ3x": {
+      "type": "multi-column",
+      "blocks": {
+        "column_K8UkRw": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Universal Fit",
+            "text": "<p>Compatible with Glo, Ameda Mya Joy and Ameda Mya Joy PLUS pumps</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_K9UWH7": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Insulated Compartment",
+            "text": "<p>Built-in compartment ensures pumped milk stays at the ideal temperature when paired with a cooling element (not included).</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_PHfezF": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Durable Material",
+            "text": "<p>Made from high-quality, easy-to-clean fabric for long-lasting use.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_ahjP8U": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Insulated Compartment",
+            "text": "<p>Made from high-quality, easy-to-clean fabric for long-lasting use.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_k8zh8b": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Compact Design",
+            "text": "<p>Lightweight and portable, perfect for effortless travel anywhere.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_p3jeEi": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Stylish & Discreet",
+            "text": "<p>Fashion-forward design allows you to pump confidently without drawing attention.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_GkkGFj": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Smart Storage",
+            "text": "<p>Thoughtfully designed compartments keep accessories, flanges, charger and bottles organized and within easy reach.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_K8UkRw",
+        "column_K9UWH7",
+        "column_PHfezF",
+        "column_ahjP8U",
+        "column_k8zh8b",
+        "column_p3jeEi",
+        "column_GkkGFj"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5)); padding-bottom: calc(var(--section-gap) * var(--fluid-1-5));}",
+        "li.multi-column:last-child {flex-grow: 0;}",
+        ".card {flex-direction: row; gap: 2rem; padding-left: 2rem; border-left: 2px solid rgb(var(--link-color));}",
+        ".card .card__info {padding-top: 0;}",
+        ".card .card__info h3 + div {flex-grow: 0;}"
+      ],
+      "settings": {
+        "title": "Ameda Universal Breast Pump Travel Case",
+        "use_h4_class": true,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
         "baby_patterns": false,
         "button_style": "btn btn--secondary"
       }
@@ -316,21 +556,255 @@
     "wave_section_xKwxKb": {
       "type": "wave-section",
       "settings": {
-        "wavebgcolor": "#fbf6ef",
-        "wavesvgcolor": "#ffffff",
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": ""
       }
     },
-    "compatible_products_783dhj": {
-      "type": "compatible-products",
+    "custom_liquid_xwRMbB": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "h2 span {color: rgb(var(--link-color));}"
+      ],
       "settings": {
-        "heading": "Compatible Products",
+        "custom_liquid": "<h2 class=\"text-center\">Trusted By Hospitals, <span>Loved By Moms</span></h2>\n<h1 class=\"text-center\">{FEATURES TO BE BUILT HERE}</h1>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "multi_column_nQPdYB": {
+      "type": "multi-column",
+      "blocks": {
+        "column_Mj9wgQ": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_VbDw8i": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_c7f4g8": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_EBxTTi": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_eDEkTX": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_RQeYig": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_Qrcrrw": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Mj9wgQ",
+        "column_VbDw8i",
+        "column_c7f4g8",
+        "column_EBxTTi",
+        "column_eDEkTX",
+        "column_RQeYig",
+        "column_Qrcrrw"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {background: #fff; margin: 0;}",
+        ".card__media + * {display: none;}",
+        ".card {background: transparent;}",
+        ".slider.is-grabbable img {pointer-events: all;}"
+      ],
+      "settings": {
+        "title": "",
+        "use_h4_class": true,
         "heading_align": "text-start",
-        "layout": "grid",
-        "card_size_mobile": "small",
-        "card_size": "large",
-        "products_to_show": 8
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "small",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "help_links_QamkFq": {
+      "type": "help-links",
+      "blocks": {
+        "link_gWbDkb": {
+          "type": "link",
+          "settings": {
+            "title": "Quick Start Guide",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Read Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_whriK3": {
+          "type": "link",
+          "settings": {
+            "title": "User Manual (English)",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Read Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_BAxJcc": {
+          "type": "link",
+          "settings": {
+            "title": "User Manual (Spanish)",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Read Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_jWRfTB": {
+          "type": "link",
+          "settings": {
+            "title": "User Manual (French)",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Read Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_TTrrYd": {
+          "type": "link",
+          "settings": {
+            "title": "Video Tutorial",
+            "icon": "",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "custom_liquid": "",
+            "link_text": "Watch Now",
+            "url": "#",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_gWbDkb",
+        "link_whriK3",
+        "link_BAxJcc",
+        "link_jWRfTB",
+        "link_TTrrYd"
+      ],
+      "custom_css": [
+        ".section--padded {margin: 0; background: #fff !important;}"
+      ],
+      "settings": {
+        "section_heading": "Ameda GLO Resources",
+        "heading_align": "text-center",
+        "section_content": ""
+      }
+    },
+    "featured_testimonial_gnaGKP": {
+      "type": "featured-testimonial",
+      "custom_css": [
+        ".section--padded-default {background: #fff !important;}",
+        ".featured-review-card {background-color: rgba(var(--bg-color));}"
+      ],
+      "settings": {
+        "testimonial": "\"It’s lightweight and allows you to discreetly pump anywhere. It’s a comfortable suction and gets lots of milk. The settings are easy to manage and don’t have to be readjusted each time you use it.\"",
+        "reviewer": "N.V.",
+        "reviewer_location": "Miami, Florida",
+        "reviewer_image": "shopify://shop_images/glo-mom-2.jpg",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "wave_section_Hw3QH8": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "top",
+        "waveposition": ""
       }
     },
     "faq_WT7f3T": {
@@ -441,12 +915,19 @@
   "order": [
     "main",
     "details",
-    "wave_section_NxyUfh",
-    "media_with_text_CzDYGX",
+    "multi_column_X6MbcE",
     "featured_testimonial_Fn3weA",
-    "multi_column_E8cVUb",
+    "image_banner_icXtMq",
+    "multi_column_MmQ4Pc",
+    "custom_liquid_Hc7NTY",
+    "image_banner_4CKUcC",
+    "multi_column_6hYJ3x",
     "wave_section_xKwxKb",
-    "compatible_products_783dhj",
+    "custom_liquid_xwRMbB",
+    "multi_column_nQPdYB",
+    "help_links_QamkFq",
+    "featured_testimonial_gnaGKP",
+    "wave_section_Hw3QH8",
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
     "recommendations",
