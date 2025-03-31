@@ -533,6 +533,7 @@
         ".section--padded-default {padding-top: 0;}"
       ],
       "settings": {
+        "featured_image": "shopify://shop_images/ameda-glo-mom-3.jpg",
         "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
         "section_height": "default",
         "full_width": false,
