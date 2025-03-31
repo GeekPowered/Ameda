@@ -67,6 +67,16 @@
         justify-content: center;
         padding: 2rem 6rem 2rem 2rem;
     }
+    .five-hearts {
+        display: flex;
+        color: rgb(var(--link-color));
+        height: 1em;
+        gap: .25em;
+        margin-bottom: 1rem;
+    }
+    .five-hearts svg {
+        width: auto;
+    }
     @media (max-width: 900px) {
         .featured-review-card {
             flex-direction: column;
@@ -81,6 +91,9 @@
         }
         .featured-review-card .featured-reviewer-image {
             width: 100%;
+        }
+        .five-hearts {
+            justify-content: center;
         }
     }
 </style>
