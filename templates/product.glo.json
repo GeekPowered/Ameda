@@ -562,7 +562,7 @@
         "h2 span {color: rgb(var(--link-color));}"
       ],
       "settings": {
-        "custom_liquid": "<h2 class=\"text-center\">Trusted By Hospitals, <span>Loved By Moms</span></h2>",
+        "custom_liquid": "<h2 class=\"text-center mb-0\">Trusted By Hospitals, <span>Loved By Moms</span></h2>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
