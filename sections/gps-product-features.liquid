@@ -47,6 +47,13 @@
     align-items: center;
     justify-content: center;
   }
+  .gps-featured-image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      object-fit: cover;
+      object-position: 44% 50.0% !important;
+  }
 </style>
 
 <div class="section relative section--full-width{% unless section.settings.section_height == "tight" %} section--padded-{{ section.settings.section_height }}{% endunless %}{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_patterns == true %} baby-pattern{% endif %}"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
@@ -96,7 +103,7 @@
         widths: '480, 640, 960, 1280',
         quality: 1,
         src_width: 1280,
-        class: 'featured-image'
+        class: 'gps-featured-image'
       %}
     </div>
   </div>
