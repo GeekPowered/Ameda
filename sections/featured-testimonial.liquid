@@ -76,7 +76,7 @@
             margin: auto;
         }
         .featured-review-card .reviewer-content {
-            padding: 0 2rem 4rem 2rem;
+            padding: 2rem 2rem 4rem 2rem;
             text-align: center;
         }
         .featured-review-card .featured-reviewer-image {
@@ -104,6 +104,7 @@
         {%- endif -%}
     </div>
     <div class="reviewer-content">
+        <div class="five-hearts">{% render 'icon-heart' %}{% render 'icon-heart' %}{% render 'icon-heart' %}{% render 'icon-heart' %}{% render 'icon-heart' %}</div>
         {%- if section.settings.testimonial != blank -%}
             <p class="h4">
             {{ section.settings.testimonial }}
