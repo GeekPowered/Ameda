@@ -929,6 +929,18 @@
         "waveposition": ""
       }
     },
+    "custom_liquid_BWYHhM": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"How does the GLO Wearable Breast Pump work?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"The GLO Wearable Breast Pump is a hands-free, hospital-grade pump that uses powerful suction to express breast milk efficiently. Simply insert the pump into your bra, adjust the silicone cups for comfort, and use the user-friendly controls to customize your settings. The pump operates quietly and allows you to move around freely while expressing milk.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Can I use the GLO pump for double pumping?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes, the GLO Wearable Breast Pump is designed for both single and double pumping. You can easily switch between modes depending on your needs, making it a versatile choice for busy moms.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"How many suction levels are available, and how do I customize them?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"The GLO pump features 15 adjustable suction levels in four different modes: Stimulation, Expression, Auto, and Massage. You can easily customize the suction level using the user-friendly controls, allowing you to find the most comfortable setting for efficient milk expression.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Is the GLO pump compatible with other Ameda products?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes, the GLO Wearable Breast Pump is compatible with the <a href=\\\"/products/ameda-hygienikit-universal-kit\\\" title=\\\"Ameda HygieniKit® Universal Kit\\\">Ameda HygeniKit Universal Pumping System</a>. Additionally, the silicone inserts are interchangeable with other Ameda products, making it easy to adapt your setup as needed.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"How long does the battery last, and how do I recharge it?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"The GLO pump provides up to 100 minutes of uninterrupted pumping on a single charge. To recharge, simply plug in the pump using the provided charging cable. The quick recharge feature ensures you're ready for your next session in no time.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Is the GLO pump discreet for use in public places?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes, the GLO Wearable Breast Pump is designed with whisper-quiet operation, making it perfect for discreet pumping in public places or while around others. Its lightweight and compact design also makes it easy to wear under clothing without drawing attention.\"\n      }\n    }\n  ]\n}\n</script>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "faq_WT7f3T": {
       "type": "faq",
       "blocks": {
@@ -1059,6 +1071,7 @@
     "help_links_QamkFq",
     "featured_testimonial_gnaGKP",
     "wave_section_Hw3QH8",
+    "custom_liquid_BWYHhM",
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
     "recommendations",
