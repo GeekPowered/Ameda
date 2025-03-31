@@ -55,7 +55,7 @@
       src_width: 1280,
       class: 'featured-image'
     %}
-    {%- if section.settings.title != blank -%}<h2>{{ section.settings.title }}</h2>{%- endif -%}
+    {%- if section.settings.title != blank -%}{{ section.settings.title }}{%- endif -%}
   {%- unless section.settings.full_width -%}
     </div>
   {%- endunless -%}
