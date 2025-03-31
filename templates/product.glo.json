@@ -222,6 +222,19 @@
         "button_style": "btn btn--secondary"
       }
     },
+    "featured_image_PJG3Rw": {
+      "type": "featured-image",
+      "settings": {
+        "featured_image": "shopify://shop_images/glo-disassembled.png",
+        "html_content": "",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "image_banner_icXtMq": {
       "type": "image-banner",
       "blocks": {
@@ -400,18 +413,6 @@
         "color_scheme": "none",
         "baby_patterns": false,
         "button_style": "btn btn--secondary"
-      }
-    },
-    "custom_liquid_Hc7NTY": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
       }
     },
     "image_banner_4CKUcC": {
@@ -917,10 +918,10 @@
     "main",
     "details",
     "multi_column_X6MbcE",
+    "featured_image_PJG3Rw",
     "image_banner_icXtMq",
     "featured_testimonial_Fn3weA",
     "multi_column_MmQ4Pc",
-    "custom_liquid_Hc7NTY",
     "image_banner_4CKUcC",
     "multi_column_6hYJ3x",
     "wave_section_xKwxKb",
