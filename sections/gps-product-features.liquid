@@ -19,10 +19,22 @@
   .gps-product-features {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0;
   }
   .gps-product-feature, 
   .spacer-for-image {
       width: 30%;
+  }
+  .gps-product-features-background-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      border-radius: 1rem;
+      background: grey;
   }
 </style>
 
@@ -31,7 +43,7 @@
     <div class="container">
   {%- endunless -%}
 
-  <div class="gps-product-features-container">
+  <div class="gps-product-features-container relative">
     <div class="gps-product-features">
       <div class="gps-product-feature">
         <div class="gps-product-feature-icon">1</div>
