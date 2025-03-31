@@ -222,21 +222,6 @@
         "button_style": "btn btn--secondary"
       }
     },
-    "featured_testimonial_Fn3weA": {
-      "type": "featured-testimonial",
-      "settings": {
-        "testimonial": "\"It's very easy to wear under your shirt- I love that it's easy to do \"normal\" life things while pumping. And it's not painful to use. It's also easier to travel with than my other pump.\"",
-        "reviewer": "L.M.",
-        "reviewer_location": "Washington D.C.",
-        "reviewer_image": "shopify://shop_images/ameda-glo-mom-1.jpg",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
     "image_banner_icXtMq": {
       "type": "image-banner",
       "blocks": {
@@ -272,6 +257,21 @@
         "transparent_content_color": "{{ shop.brand.colors.secondary[0].background }}",
         "tint_color": "#000000",
         "tint_opacity": 0,
+        "prevent_animation": false
+      }
+    },
+    "featured_testimonial_Fn3weA": {
+      "type": "featured-testimonial",
+      "settings": {
+        "testimonial": "\"It's very easy to wear under your shirt- I love that it's easy to do \"normal\" life things while pumping. And it's not painful to use. It's also easier to travel with than my other pump.\"",
+        "reviewer": "L.M.",
+        "reviewer_location": "Washington D.C.",
+        "reviewer_image": "shopify://shop_images/ameda-glo-mom-1.jpg",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
         "prevent_animation": false
       }
     },
@@ -360,6 +360,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/amedaglo-product-7512-v2.jpg",
             "media_scale": 100,
             "heading": "Ameda GLO Bra Adjustment Buckles (2)",
             "text": "<p>SKU: 120G08<br/><strong>Retail Price: $6.99</strong></p>",
@@ -916,8 +917,8 @@
     "main",
     "details",
     "multi_column_X6MbcE",
-    "featured_testimonial_Fn3weA",
     "image_banner_icXtMq",
+    "featured_testimonial_Fn3weA",
     "multi_column_MmQ4Pc",
     "custom_liquid_Hc7NTY",
     "image_banner_4CKUcC",
