@@ -518,7 +518,22 @@
         "h2 span {color: rgb(var(--link-color));}"
       ],
       "settings": {
-        "custom_liquid": "<h2 class=\"text-center\">Trusted By Hospitals, <span>Loved By Moms</span></h2>\n<h1 class=\"text-center\">{FEATURES TO BE BUILT HERE}</h1>",
+        "custom_liquid": "<h2 class=\"text-center\">Trusted By Hospitals, <span>Loved By Moms</span></h2>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "gps_product_features_VB9Xpc": {
+      "type": "gps-product-features",
+      "custom_css": [
+        ".section--padded-default {padding-top: 0;}"
+      ],
+      "settings": {
+        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -882,6 +897,7 @@
     "multi_column_6hYJ3x",
     "wave_section_xKwxKb",
     "custom_liquid_xwRMbB",
+    "gps_product_features_VB9Xpc",
     "multi_column_nQPdYB",
     "help_links_QamkFq",
     "featured_testimonial_gnaGKP",
