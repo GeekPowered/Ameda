@@ -15,6 +15,27 @@
   endif
 -%}
 
+<style>
+  .featured-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .featured-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .featured-content h2 {
+    font-size: 5cqw;
+  }
+  .featured-content h2 span {
+    color: rgb(var(--link-color));
+  }
+</style>
+
 <div class="section relative section--full-width{% unless section.settings.section_height == "tight" %} section--padded-{{ section.settings.section_height }}{% endunless %}{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if section.settings.baby_patterns == true %} baby-pattern{% endif %}"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
   {%- unless section.settings.full_width -%}
     <div class="container">
@@ -26,6 +47,7 @@
       src_width: 1280,
       class: 'featured-image'
     %}
+    {%- if section.settings.title != blank -%} <h2>{{ section.settings.title }}</h2> {%- endif -%}
   {%- unless section.settings.full_width -%}
     </div>
   {%- endunless -%}
@@ -43,9 +65,9 @@
       "label": "Featured image"
     },
     {
-      "type": "liquid",
-      "id": "html_content",
-      "label": "HTML content"
+      "type": "text",
+      "id": "title",
+      "label": "Title"
     },
     {
       "type": "header",
