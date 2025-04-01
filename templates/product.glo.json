@@ -153,6 +153,19 @@
       "disabled": true,
       "settings": {}
     },
+    "featured_image_PJG3Rw": {
+      "type": "featured-image",
+      "settings": {
+        "featured_image": "shopify://shop_images/glo-disassembled.png",
+        "title": "<h2>Pump <strong>Anywhere.</strong></h2>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "multi_column_X6MbcE": {
       "type": "multi-column",
       "blocks": {
@@ -231,19 +244,6 @@
         "color_scheme": "1",
         "baby_patterns": false,
         "button_style": "btn btn--secondary"
-      }
-    },
-    "featured_image_PJG3Rw": {
-      "type": "featured-image",
-      "settings": {
-        "featured_image": "shopify://shop_images/glo-disassembled.png",
-        "title": "<h2>Pump <strong>Anywhere.</strong></h2>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
       }
     },
     "featured_testimonial_Fn3weA": {
@@ -1058,8 +1058,8 @@
   "order": [
     "main",
     "details",
-    "multi_column_X6MbcE",
     "featured_image_PJG3Rw",
+    "multi_column_X6MbcE",
     "featured_testimonial_Fn3weA",
     "multi_column_MmQ4Pc",
     "featured_image_pg4z9Q",
