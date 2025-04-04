@@ -157,7 +157,7 @@
       "type": "featured-image",
       "settings": {
         "featured_image": "shopify://shop_images/glo-disassembled.png",
-        "title": "<h2>Pump <strong>Anywhere.</strong></h2>",
+        "title": "<h2>Pumping Just Got a GLO up.</h2>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -175,7 +175,7 @@
             "enable_media": true,
             "image": "shopify://shop_images/simulation.png",
             "media_scale": 100,
-            "heading": "Simulation Mode",
+            "heading": "Stimulation",
             "text": "<p>Soft suction gently initiates let-down.</p>",
             "button_label": "",
             "button_link": ""
@@ -423,6 +423,7 @@
     },
     "featured_image_pg4z9Q": {
       "type": "featured-image",
+      "disabled": true,
       "settings": {
         "featured_image": "shopify://shop_images/glo-bag.png",
         "title": "",
@@ -524,6 +525,7 @@
         "column_p3jeEi",
         "column_GkkGFj"
       ],
+      "disabled": true,
       "custom_css": [
         "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5)); padding-bottom: calc(var(--section-gap) * var(--fluid-1-5));}",
         "li.multi-column:last-child {flex-grow: 0;}",
