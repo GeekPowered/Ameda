@@ -157,7 +157,7 @@
       "type": "featured-image",
       "settings": {
         "featured_image": "shopify://shop_images/glo-disassembled.png",
-        "title": "<h2>Pumping Just Got a GLO up.</h2>",
+        "title": "<h2>Pumping Just Got a <strong>GLO up.</strong></h2>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
