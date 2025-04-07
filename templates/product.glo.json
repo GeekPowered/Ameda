@@ -464,8 +464,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/glo-flange.jpg",
             "media_scale": 100,
-            "heading": "11, 13, 15, 17, 19, & 21mm Soft Flange Inserts (2 each)",
-            "text": "<p><strong>Retail Price: $38.99</strong></p>",
+            "heading": "11, 13, 15, 17, 19, & 21mm Soft Flange Insert Multipack (2 each)",
+            "text": "<p>SKU: 120G16</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -530,14 +530,14 @@
         "column_zji3Q4"
       ],
       "custom_css": [
-        "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
+        "[id*=\"multi_column\"] {padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
         ".card {flex-direction: row; gap: 2rem;}",
         ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
         ".card .card__info {padding: 1rem !important; justify-content: center !important;}",
         ".card .card__info h3 + div {flex-grow: 0;}"
       ],
       "settings": {
-        "title": "Additional GLO Parts & Accessories Available",
+        "title": "Optional Accessories",
         "use_h4_class": true,
         "heading_align": "text-start",
         "button_label": "",
@@ -554,7 +554,6 @@
     },
     "featured_image_pg4z9Q": {
       "type": "featured-image",
-      "disabled": true,
       "settings": {
         "featured_image": "shopify://shop_images/glo-bag.png",
         "title": "",
@@ -656,7 +655,6 @@
         "column_p3jeEi",
         "column_GkkGFj"
       ],
-      "disabled": true,
       "custom_css": [
         "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5)); padding-bottom: calc(var(--section-gap) * var(--fluid-1-5));}",
         "li.multi-column:last-child {flex-grow: 0;}",
