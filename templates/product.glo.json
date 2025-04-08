@@ -281,7 +281,7 @@
             "enable_media": true,
             "image": "{{ product.featured_image }}",
             "media_scale": 100,
-            "heading": "Ameda GLO Wearable Breast Pump",
+            "heading": "Ameda GLO Wearable Breast Pump (2)",
             "text": "",
             "button_label": "",
             "button_link": ""
