@@ -198,7 +198,7 @@
             "enable_media": true,
             "image": "shopify://shop_images/expression.png",
             "media_scale": 100,
-            "heading": "Expression Mode",
+            "heading": "Expression",
             "text": "<p>Customizable suction for optimal milk production.</p>",
             "button_label": "",
             "button_link": ""
@@ -210,7 +210,7 @@
             "enable_media": true,
             "image": "shopify://shop_images/massage.png",
             "media_scale": 100,
-            "heading": "Massage Mode",
+            "heading": "Massage",
             "text": "<p>Quick & gentle suction helps relieve discomfort.</p>",
             "button_label": "",
             "button_link": ""
@@ -222,7 +222,7 @@
             "enable_media": true,
             "image": "shopify://shop_images/auto.png",
             "media_scale": 100,
-            "heading": "Automatic Mode",
+            "heading": "Automatic",
             "text": "<p>Pre-programmed pumping cycle for ease of use.</p>",
             "button_label": "",
             "button_link": ""
