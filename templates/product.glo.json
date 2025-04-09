@@ -1082,7 +1082,7 @@
           "settings": {
             "icon": "none",
             "heading": "How does the GLO Wearable Breast Pump work?",
-            "text": "<p>The GLO Wearable Breast Pump is a hands-free, hospital-grade pump that uses powerful suction to express breast milk efficiently. Simply insert the pump into your bra, adjust the silicone cups for comfort, and use the user-friendly controls to customize your settings. The pump operates quietly and allows you to move around freely while expressing milk.</p>"
+            "text": "<p>The GLO Wearable Breast Pump is a hands-free, hospital-grade pump that uses powerful suction to express breast milk efficiently. Simply insert the pump into your bra, adjust the cups for comfort, and use the user-friendly controls to customize your settings. The pump operates quietly and allows you to move around freely while expressing milk.</p>"
           }
         },
         "question_UyiqeJ": {
@@ -1105,8 +1105,8 @@
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Is the GLO pump compatible with other Ameda products?",
-            "text": "<p>Yes, the GLO Wearable Breast Pump is compatible with the <a href=\"/products/ameda-hygienikit-universal-kit\" title=\"Ameda HygieniKit® Universal Kit\">Ameda HygeniKit Universal Pumping System</a>. Additionally, the silicone inserts are interchangeable with other Ameda products, making it easy to adapt your setup as needed.</p>"
+            "heading": "Are different flange sizes available?",
+            "text": "<p>Yes. Each purchase includes 24mm flanges along with soft flange inserts in 17mm, 19mm, and 21mm sizes. Additional flanges and inserts are also available for purchase to help you find the most comfortable and effective fit.</p>"
           }
         },
         "question_wKMAtC": {
