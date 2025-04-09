@@ -405,7 +405,7 @@
       ],
       "settings": {
         "title": "Included With Every Purchase",
-        "use_h4_class": true,
+        "use_h4_class": false,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -422,90 +422,6 @@
     "multi_column_9fzzGN": {
       "type": "multi-column",
       "blocks": {
-        "column_DqV6ic": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/collection-cup.jpg",
-            "media_scale": 100,
-            "heading": "Ameda GLO Collection Cup",
-            "text": "<p>SKU: 120G15<br/><strong>Retail Price: $13.99 ea.</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_yxbG6V": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/glo-flange_e8855c1f-9576-4730-afca-88f844e00a47.jpg",
-            "media_scale": 100,
-            "heading": "24 & 27mm Flange",
-            "text": "<p>SKU: 120G03 | 120G04<br/><strong>Retail Price: $12.99 ea.</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_Wiq7rw": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/glo-flange.jpg",
-            "media_scale": 100,
-            "heading": "11, 13, 15, 17, 19, & 21mm Soft Flange Inserts (2 each)",
-            "text": "<p>SKUs: 120G09 | 120G10 | 120G11 | 120G12 | 120G13 | 120G14<br/><strong>Retail Price: $11.99 </strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_9M8fdC": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/valve.jpg",
-            "media_scale": 100,
-            "heading": "Ameda GLO Valves (2)",
-            "text": "<p>SKU: 120G06<br/><strong>Retail Price: $3.99 </strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_PpCYhy": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/diaphragm.jpg",
-            "media_scale": 100,
-            "heading": "Ameda GLO Diaphragm",
-            "text": "<p>SKU: 120G05<br/><strong>Retail Price: $4.49 ea.</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_EC37d7": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/amedaglo-product-7512-v2.jpg",
-            "media_scale": 100,
-            "heading": "Ameda GLO Bra Adjustment Buckles (2)",
-            "text": "<p>SKU: 120G08<br/><strong>Retail Price: $6.99 </strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_ddYtRV": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/usb-charger.jpg",
-            "media_scale": 100,
-            "heading": "Ameda Glo USB Charging Cable",
-            "text": "<p>SKU: 120G07<br/><strong>Retail Price: $9.99 ea.</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
         "column_zji3Q4": {
           "type": "column",
           "settings": {
@@ -517,17 +433,101 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "column_YFRq6U": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-flange.jpg",
+            "media_scale": 100,
+            "heading": "Ameda Universal Soft Flange Inserts 11mm (2)",
+            "text": "<p>SKU: 120G09<br/><strong>Retail Price: $11.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_EJMUMG": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-flange.jpg",
+            "media_scale": 100,
+            "heading": "Ameda Universal Soft Flange Inserts 13mm (2)",
+            "text": "<p>SKU: 120G10<br/><strong>Retail Price: $11.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_F76JXU": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-flange.jpg",
+            "media_scale": 100,
+            "heading": "Ameda Universal Soft Flange Inserts 15mm (2)",
+            "text": "<p>SKU: 120G11<br/><strong>Retail Price: $11.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_CGkqiz": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-flange.jpg",
+            "media_scale": 100,
+            "heading": "Ameda Universal Soft Flange Inserts 17mm (2)",
+            "text": "<p>SKU: 120G12<br/><strong>Retail Price: $11.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_CUadfz": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-flange.jpg",
+            "media_scale": 100,
+            "heading": "Ameda Universal Soft Flange Inserts 19mm (2)",
+            "text": "<p>SKU: 120G13<br/><strong>Retail Price: $11.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_kaWDcM": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-flange.jpg",
+            "media_scale": 100,
+            "heading": "Ameda Universal Soft Flange Inserts 21mm (2)",
+            "text": "<p>SKU: 120G14<br/><strong>Retail Price: $11.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_Wiq7rw": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-flange.jpg",
+            "media_scale": 100,
+            "heading": "Ameda Soft Flange Inserts Multipack (2 each)",
+            "text": "<p>Sizes: 11mm, 13mm, 15mm, 17mm, 19mm, 21mm<br/>SKU: 120G16</p>",
+            "button_label": "",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
-        "column_DqV6ic",
-        "column_yxbG6V",
-        "column_Wiq7rw",
-        "column_9M8fdC",
-        "column_PpCYhy",
-        "column_EC37d7",
-        "column_ddYtRV",
-        "column_zji3Q4"
+        "column_zji3Q4",
+        "column_YFRq6U",
+        "column_EJMUMG",
+        "column_F76JXU",
+        "column_CGkqiz",
+        "column_CUadfz",
+        "column_kaWDcM",
+        "column_Wiq7rw"
       ],
       "custom_css": [
         "[id*=\"multi_column\"] {padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
@@ -538,7 +538,114 @@
       ],
       "settings": {
         "title": "Optional Accessories",
-        "use_h4_class": true,
+        "use_h4_class": false,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "multi_column_Nb8PBg": {
+      "type": "multi-column",
+      "blocks": {
+        "column_pFfKwi": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/collection-cup.jpg",
+            "media_scale": 100,
+            "heading": "Ameda GLO Collection Cup (1)",
+            "text": "<p>SKU: 120G15<br/><strong>Retail Price: $13.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_yRpBDB": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-flange_e8855c1f-9576-4730-afca-88f844e00a47.jpg",
+            "media_scale": 100,
+            "heading": "24 & 27mm Flange (2)",
+            "text": "<p>SKU: 120G03 | 120G04<br/><strong>Retail Price: $12.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_eyfTDz": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/valve.jpg",
+            "media_scale": 100,
+            "heading": "Ameda GLO Valves (2)",
+            "text": "<p>SKU: 120G06<br/><strong>Retail Price: $3.99 </strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_6CArFW": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/diaphragm.jpg",
+            "media_scale": 100,
+            "heading": "Ameda GLO Diaphragm (1)",
+            "text": "<p>SKU: 120G05<br/><strong>Retail Price: $4.49</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_yhELVV": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/amedaglo-product-7512-v2.jpg",
+            "media_scale": 100,
+            "heading": "Ameda GLO Bra Adjustment Buckles (2)",
+            "text": "<p>SKU: 120G08<br/><strong>Retail Price: $6.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_zMMfg6": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/usb-charger.jpg",
+            "media_scale": 100,
+            "heading": "Ameda Glo USB Charging Cable (1)",
+            "text": "<p>SKU: 120G07<br/><strong>Retail Price: $9.99</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_pFfKwi",
+        "column_yRpBDB",
+        "column_eyfTDz",
+        "column_6CArFW",
+        "column_yhELVV",
+        "column_zMMfg6"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
+        ".card {flex-direction: row; gap: 2rem;}",
+        ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
+        ".card .card__info {padding: 1rem !important; justify-content: center !important;}",
+        ".card .card__info h3 + div {flex-grow: 0;}"
+      ],
+      "settings": {
+        "title": "Replacement Parts",
+        "use_h4_class": false,
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -1196,6 +1303,7 @@
     "featured_testimonial_Fn3weA",
     "multi_column_MmQ4Pc",
     "multi_column_9fzzGN",
+    "multi_column_Nb8PBg",
     "featured_image_pg4z9Q",
     "multi_column_6hYJ3x",
     "wave_section_xKwxKb",
