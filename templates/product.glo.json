@@ -248,7 +248,7 @@
         "button_label": "",
         "button_link": "",
         "layout": "grid",
-        "column_size": "large",
+        "column_size": "small",
         "column_align": "center",
         "media_align": "text-center",
         "image_ratio": "1",
