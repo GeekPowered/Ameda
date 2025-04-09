@@ -236,7 +236,7 @@
         "column_eFC8Yp"
       ],
       "custom_css": [
-        "[id*=\"multi_column\"] {padding-bottom: 0;}",
+        "[id*=\"multi_column\"] {padding-bottom: 0; margin-top: 0;}",
         ".card {gap: 1rem; padding: 1rem; border-radius: 1rem; border-bottom: 2px solid rgb(var(--link-color));}",
         ".card__media {padding-top: 0 !important; height: 8rem; width: 8rem; flex-shrink: 0; margin-top: 1rem; margin-left: auto; margin-right: auto;}",
         ".card .card__info {padding: 1rem !important;}",
