@@ -931,6 +931,30 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-15_0adf7a84-757c-4eff-a37f-83925909c030.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_hD73yG": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/glo-gallery-16.jpg",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_HGWPpW": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
             "image": "shopify://shop_images/glo-gallery-1.jpg",
             "media_scale": 100,
             "heading": "",
@@ -1110,6 +1134,8 @@
       },
       "block_order": [
         "column_Mj9wgQ",
+        "column_hD73yG",
+        "column_HGWPpW",
         "column_VbDw8i",
         "column_c7f4g8",
         "column_EBxTTi",
