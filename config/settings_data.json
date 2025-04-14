@@ -426,7 +426,7 @@
     "show_sold_out_label": false,
     "sold_out_label_bg_color": "{{ shop.brand.colors.secondary[0].background }}",
     "sold_out_label_text_color": "#ffffff",
-    "new_label_bg_color": "{{ shop.brand.colors.secondary[0].background }}",
+    "new_label_bg_color": "{{ shop.brand.colors.primary[0].background }}",
     "new_label_text_color": "#ffffff",
     "show_new_label_days": true,
     "preorder_label_bg_color": "{{ shop.brand.colors.secondary[0].background }}",
