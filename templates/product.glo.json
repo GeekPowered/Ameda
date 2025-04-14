@@ -283,7 +283,7 @@
             "image": "{{ product.featured_image }}",
             "media_scale": 100,
             "heading": "Ameda GLO Wearable Breast Pumps (2)",
-            "text": "<p>SKU: 120G01<br/><strong>Retail Price: $169.99</strong></p>",
+            "text": "<p>SKU: 120G01</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -295,7 +295,7 @@
             "image": "shopify://shop_images/collection-cup.jpg",
             "media_scale": 100,
             "heading": "Ameda GLO Collection Cup (2)",
-            "text": "<p>SKU: 120G15<br/><strong>Retail Price: $13.99 ea.</strong></p>",
+            "text": "<p>SKU: 120G15</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -307,7 +307,7 @@
             "image": "shopify://shop_images/glo-flange_e8855c1f-9576-4730-afca-88f844e00a47.jpg",
             "media_scale": 100,
             "heading": "24mm GLO Flanges (2)",
-            "text": "<p>SKU: 120G03<br/><strong>Retail Price: $12.99 ea.</strong></p>",
+            "text": "<p>SKU: 120G03</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -319,7 +319,7 @@
             "image": "shopify://shop_images/glo-flange.jpg",
             "media_scale": 100,
             "heading": "17, 19, 21mm Soft Flange Inserts (2 each)",
-            "text": "<p>SKUs: 120G12 | 120G13 | 120G14<br/><strong>Retail Price: $11.99 ea.</strong></p>",
+            "text": "<p>SKUs: 120G12 | 120G13 | 120G14</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -331,7 +331,7 @@
             "image": "shopify://shop_images/valve.jpg",
             "media_scale": 100,
             "heading": "Ameda GLO Valves (4)",
-            "text": "<p>SKU: 120G06<br/><strong>Retail Price: $3.99 (2)</strong></p>",
+            "text": "<p>SKU: 120G06</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -343,7 +343,7 @@
             "image": "shopify://shop_images/diaphragm.jpg",
             "media_scale": 100,
             "heading": "Ameda GLO Diaphragm (2)",
-            "text": "<p>SKU: 120G05<br/><strong>Retail Price: $4.49 ea.</strong></p>",
+            "text": "<p>SKU: 120G05</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -355,7 +355,7 @@
             "image": "shopify://shop_images/amedaglo-product-7512-v2.jpg",
             "media_scale": 100,
             "heading": "Ameda GLO Bra Adjustment Buckles (2)",
-            "text": "<p>SKU: 120G08<br/><strong>Retail Price: $6.99 </strong></p>",
+            "text": "<p>SKU: 120G08</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -367,7 +367,7 @@
             "image": "shopify://shop_images/usb-charger.jpg",
             "media_scale": 100,
             "heading": "Ameda Glo USB Charging Cable (2)",
-            "text": "<p>SKU: 120G07<br/><strong>Retail Price: $9.99 ea.</strong></p>",
+            "text": "<p>SKU: 120G07</p>",
             "button_label": "",
             "button_link": ""
           }
