@@ -177,6 +177,18 @@
         "prevent_animation": false
       }
     },
+    "custom_liquid_D3NH9F": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h2 class=\"text-center mb-0\">{{ product.title }} Modes</h2>\n<p class=\"font-bold text-center mb-6\">4 Customizable Modes With 15 Levels Each</p>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "multi_column_X6MbcE": {
       "type": "multi-column",
       "blocks": {
@@ -243,7 +255,7 @@
         "@media (min-width: 769px) {[id*=\"multi_column\"] .multi-column {width: calc((100% / 4) - var(--column-gap)); }}"
       ],
       "settings": {
-        "title": "{{ product.title }} Modes",
+        "title": "",
         "use_h4_class": false,
         "heading_align": "text-center",
         "button_label": "",
@@ -1300,6 +1312,7 @@
     "main",
     "details",
     "featured_image_PJG3Rw",
+    "custom_liquid_D3NH9F",
     "multi_column_X6MbcE",
     "featured_testimonial_Fn3weA",
     "multi_column_MmQ4Pc",
