@@ -187,7 +187,7 @@
             "image": "shopify://shop_images/simulation.png",
             "media_scale": 100,
             "heading": "Stimulation",
-            "text": "<p>Soft suction gently initiates let-down.</p>",
+            "text": "<p>Soft, rhythmic suction helps encourage let-down.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -199,7 +199,7 @@
             "image": "shopify://shop_images/expression.png",
             "media_scale": 100,
             "heading": "Expression",
-            "text": "<p>Customizable suction for optimal milk production.</p>",
+            "text": "<p>Customizable suction supports efficient milk removal once milk is flowing.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -211,7 +211,7 @@
             "image": "shopify://shop_images/massage.png",
             "media_scale": 100,
             "heading": "Massage",
-            "text": "<p>Quick & gentle suction helps relieve discomfort.</p>",
+            "text": "<p>Gentle suction pattern designed to help get milk moving and support comfort.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -223,7 +223,7 @@
             "image": "shopify://shop_images/auto.png",
             "media_scale": 100,
             "heading": "Automatic",
-            "text": "<p>Pre-programmed pumping cycle for ease of use.</p>",
+            "text": "<p>Pre-set cycle that adjusts suction and speed to help moms find what works best.</p>",
             "button_label": "",
             "button_link": ""
           }
