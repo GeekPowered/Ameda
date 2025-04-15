@@ -124,7 +124,7 @@
         ".media-gallery__viewer {border-radius: 1rem; overflow: hidden;}",
         ".media-thumbs__btn {border-radius: 0.5rem;}",
         ".product-label.product-label--new {border-radius: 100rem; font-weight: bold; text-transform: uppercase;}",
-        ".media-viewer__item img,.media-thumbs__btn img {object-fit: cover !important;}"
+        ".media-viewer__item img,.media-thumbs__btn img {object-fit: cover !important; width: 100%; height: 100%;}"
       ],
       "settings": {
         "stick_on_scroll": true,
