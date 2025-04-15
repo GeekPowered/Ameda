@@ -122,7 +122,8 @@
         ".qty-input--secondary-btn .qty-input {border-color: rgb(var(--btn-bg-color));}",
         ".qty-input__input,.qty-input__btn {color: rgb(var(--btn-bg-color));}",
         ".media-gallery__viewer {border-radius: 1rem; overflow: hidden;}",
-        ".media-thumbs__btn {border-radius: 0.5rem;}"
+        ".media-thumbs__btn {border-radius: 0.5rem;}",
+        "span.product-label.product-label--new {border-radius: 100rem; font-weight: bold; text-transform: uppercase;}"
       ],
       "settings": {
         "stick_on_scroll": true,
