@@ -383,19 +383,6 @@
             "button_label": "",
             "button_link": ""
           }
-        },
-        "column_wF7CKW": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/universal-breast-pump-carrying-case.jpg",
-            "media_scale": 100,
-            "heading": "Ameda Universal Breast Pump Travel Case (1)",
-            "text": "<p>SKU: 120G02<br/><strong>Retail Price: $29.99</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
@@ -406,8 +393,7 @@
         "column_xp38tA",
         "column_cQwJpY",
         "column_xFeQKa",
-        "column_bNwmHb",
-        "column_wF7CKW"
+        "column_bNwmHb"
       ],
       "custom_css": [
         "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
@@ -533,7 +519,6 @@
         },
         "column_FMwYQw": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "enable_media": true,
             "image": "shopify://shop_images/collection-cup.jpg",
@@ -546,7 +531,6 @@
         },
         "column_zNGhUE": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "enable_media": true,
             "image": "shopify://shop_images/valve.jpg",
@@ -559,7 +543,6 @@
         },
         "column_L9a6Ep": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "enable_media": true,
             "image": "shopify://shop_images/glo-flange_e8855c1f-9576-4730-afca-88f844e00a47.jpg",
@@ -572,7 +555,6 @@
         },
         "column_ewgQwL": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "enable_media": true,
             "image": "shopify://shop_images/amedaglo-product-7512-v2.jpg",
@@ -585,7 +567,6 @@
         },
         "column_9qUpzk": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "enable_media": true,
             "image": "shopify://shop_images/diaphragm.jpg",
@@ -598,12 +579,11 @@
         },
         "column_HKGPfb": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "enable_media": true,
             "image": "shopify://shop_images/usb-charger.jpg",
             "media_scale": 100,
-            "heading": "Ameda Glo USB Charging Cable (1)",
+            "heading": "Ameda GLO USB Charging Cable (1)",
             "text": "<p>SKU: 120G07<br/><strong>Retail Price: $9.99</strong></p>",
             "button_label": "",
             "button_link": ""
@@ -634,114 +614,7 @@
         ".card .card__info h3 + div {flex-grow: 0;}"
       ],
       "settings": {
-        "title": "Optional Accessories",
-        "use_h4_class": false,
-        "heading_align": "text-start",
-        "button_label": "",
-        "button_link": "",
-        "layout": "grid",
-        "column_size": "large",
-        "column_align": "left",
-        "media_align": "text-center",
-        "image_ratio": "1",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "button_style": "btn btn--secondary"
-      }
-    },
-    "multi_column_Nb8PBg": {
-      "type": "multi-column",
-      "blocks": {
-        "column_pFfKwi": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/collection-cup.jpg",
-            "media_scale": 100,
-            "heading": "Ameda GLO Collection Cup (1)",
-            "text": "<p>SKU: 120G15<br/><strong>Retail Price: $13.99</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_yRpBDB": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/glo-flange_e8855c1f-9576-4730-afca-88f844e00a47.jpg",
-            "media_scale": 100,
-            "heading": "24 & 27mm Flange (2)",
-            "text": "<p>SKU: 120G03 | 120G04<br/><strong>Retail Price: $12.99</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_eyfTDz": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/valve.jpg",
-            "media_scale": 100,
-            "heading": "Ameda GLO Valves (2)",
-            "text": "<p>SKU: 120G06<br/><strong>Retail Price: $3.99 </strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_6CArFW": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/diaphragm.jpg",
-            "media_scale": 100,
-            "heading": "Ameda GLO Diaphragm (1)",
-            "text": "<p>SKU: 120G05<br/><strong>Retail Price: $4.49</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_yhELVV": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/amedaglo-product-7512-v2.jpg",
-            "media_scale": 100,
-            "heading": "Ameda GLO Bra Adjustment Buckles (2)",
-            "text": "<p>SKU: 120G08<br/><strong>Retail Price: $6.99</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_zMMfg6": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/usb-charger.jpg",
-            "media_scale": 100,
-            "heading": "Ameda Glo USB Charging Cable (1)",
-            "text": "<p>SKU: 120G07<br/><strong>Retail Price: $9.99</strong></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_pFfKwi",
-        "column_yRpBDB",
-        "column_eyfTDz",
-        "column_6CArFW",
-        "column_yhELVV",
-        "column_zMMfg6"
-      ],
-      "custom_css": [
-        "[id*=\"multi_column\"] {padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
-        ".card {flex-direction: row; gap: 2rem;}",
-        ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
-        ".card .card__info {padding: 1rem !important; justify-content: center !important;}",
-        ".card .card__info h3 + div {flex-grow: 0;}"
-      ],
-      "settings": {
-        "title": "Replacement Parts",
+        "title": "Optional Accessories & Replacement Parts",
         "use_h4_class": false,
         "heading_align": "text-start",
         "button_label": "",
@@ -1427,7 +1300,6 @@
     "featured_testimonial_Fn3weA",
     "multi_column_MmQ4Pc",
     "multi_column_9fzzGN",
-    "multi_column_Nb8PBg",
     "featured_image_pg4z9Q",
     "multi_column_6hYJ3x",
     "wave_section_xKwxKb",
