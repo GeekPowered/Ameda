@@ -164,7 +164,20 @@
         "custom_liquid_x4cYxH"
       ],
       "disabled": true,
+      "custom_css": [],
       "settings": {}
+    },
+    "custom_liquid_EwYaPb": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.product-info details-disclosure h5 a {\n    margin-bottom: 4rem !important;\n    display: block;\n}\n</style>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
     },
     "featured_image_PJG3Rw": {
       "type": "featured-image",
@@ -1296,6 +1309,7 @@
   "order": [
     "main",
     "details",
+    "custom_liquid_EwYaPb",
     "featured_image_PJG3Rw",
     "custom_liquid_D3NH9F",
     "multi_column_X6MbcE",
