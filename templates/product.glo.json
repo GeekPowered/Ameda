@@ -442,7 +442,7 @@
             "enable_media": true,
             "image": "shopify://shop_images/universal-breast-pump-carrying-case.jpg",
             "media_scale": 100,
-            "heading": "Ameda Universal Breast Pump Travel Case",
+            "heading": "Ameda Universal Breast Pump Travel Case (Coming Soon!)",
             "text": "<p>SKU: 120G02<br/><strong>Retail Price: $29.99</strong></p>",
             "button_label": "",
             "button_link": ""
@@ -469,7 +469,7 @@
             "heading": "Ameda Universal Soft Flange Inserts 13mm (2)",
             "text": "<p>SKU: 120G10<br/><strong>Retail Price: $11.99</strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/soft-breast-pump-flange-inserts"
           }
         },
         "column_F76JXU": {
@@ -481,7 +481,7 @@
             "heading": "Ameda Universal Soft Flange Inserts 15mm (2)",
             "text": "<p>SKU: 120G11<br/><strong>Retail Price: $11.99</strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/soft-breast-pump-flange-inserts"
           }
         },
         "column_CGkqiz": {
@@ -492,8 +492,8 @@
             "media_scale": 100,
             "heading": "Ameda Universal Soft Flange Inserts 17mm (2)",
             "text": "<p>SKU: 120G12<br/><strong>Retail Price: $11.99</strong></p>",
-            "button_label": "",
-            "button_link": ""
+            "button_label": "View Product",
+            "button_link": "shopify://products/soft-breast-pump-flange-inserts"
           }
         },
         "column_CUadfz": {
@@ -505,7 +505,7 @@
             "heading": "Ameda Universal Soft Flange Inserts 19mm (2)",
             "text": "<p>SKU: 120G13<br/><strong>Retail Price: $11.99</strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/soft-breast-pump-flange-inserts"
           }
         },
         "column_kaWDcM": {
@@ -517,7 +517,7 @@
             "heading": "Ameda Universal Soft Flange Inserts 21mm (2)",
             "text": "<p>SKU: 120G14<br/><strong>Retail Price: $11.99</strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/soft-breast-pump-flange-inserts"
           }
         },
         "column_Wiq7rw": {
@@ -627,9 +627,9 @@
         ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
         ".card .card__info {padding: 1rem !important; justify-content: center !important;}",
         ".card .card__info h3 + div {flex-grow: 0;}",
-        ".card .card__info a + div.mt-8.mb-8 {display: none;}",
         ".card .card__info a {color: inherit;}",
-        ".card .card__info a .card__title {text-decoration: underline;}"
+        ".card .card__info a .card__title {text-decoration: underline;}",
+        ".card .card__info a + div.mt-8.mb-8 {display: none;}"
       ],
       "settings": {
         "title": "Optional Accessories & Replacement Parts",
