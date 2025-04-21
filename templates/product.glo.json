@@ -1070,68 +1070,12 @@
         "link_gWbDkb": {
           "type": "link",
           "settings": {
-            "title": "Quick Start Guide",
+            "title": "Instructions For Use",
             "icon": "",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+            "content": "Your Ameda GLO wearable breast pump purchase includes the English Instructions for Use—everything you need to pump confidently and stylishly on the go!",
             "custom_liquid": "",
-            "link_text": "Read Now",
-            "url": "#",
-            "link_text_2": "",
-            "url_2": "",
-            "hash": ""
-          }
-        },
-        "link_whriK3": {
-          "type": "link",
-          "settings": {
-            "title": "User Manual (English)",
-            "icon": "",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-            "custom_liquid": "",
-            "link_text": "Read Now",
-            "url": "#",
-            "link_text_2": "",
-            "url_2": "",
-            "hash": ""
-          }
-        },
-        "link_BAxJcc": {
-          "type": "link",
-          "settings": {
-            "title": "User Manual (Spanish)",
-            "icon": "",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-            "custom_liquid": "",
-            "link_text": "Read Now",
-            "url": "#",
-            "link_text_2": "",
-            "url_2": "",
-            "hash": ""
-          }
-        },
-        "link_jWRfTB": {
-          "type": "link",
-          "settings": {
-            "title": "User Manual (French)",
-            "icon": "",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-            "custom_liquid": "",
-            "link_text": "Read Now",
-            "url": "#",
-            "link_text_2": "",
-            "url_2": "",
-            "hash": ""
-          }
-        },
-        "link_TTrrYd": {
-          "type": "link",
-          "settings": {
-            "title": "Video Tutorial",
-            "icon": "",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-            "custom_liquid": "",
-            "link_text": "Watch Now",
-            "url": "#",
+            "link_text": "View IFU Now",
+            "url": "https://cdn.shopify.com/s/files/1/0849/8062/9819/files/Ameda-Glo-IFU.pdf?v=1745256064",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -1139,13 +1083,8 @@
         }
       },
       "block_order": [
-        "link_gWbDkb",
-        "link_whriK3",
-        "link_BAxJcc",
-        "link_jWRfTB",
-        "link_TTrrYd"
+        "link_gWbDkb"
       ],
-      "disabled": true,
       "custom_css": [
         ".section--padded {margin: 0; background: #fff !important;}"
       ],
