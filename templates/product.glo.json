@@ -626,7 +626,8 @@
         ".card {flex-direction: row; gap: 2rem;}",
         ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
         ".card .card__info {padding: 1rem !important; justify-content: center !important;}",
-        ".card .card__info h3 + div {flex-grow: 0;}"
+        ".card .card__info h3 + div {flex-grow: 0;}",
+        ".card__info a + div.mt-8.mb-8 {display: none;}"
       ],
       "settings": {
         "title": "Optional Accessories & Replacement Parts",
