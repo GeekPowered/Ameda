@@ -136,6 +136,10 @@
     },
     "timed_custom_liquid_ib3aTn": {
       "type": "timed-custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
       "name": "Timed Custom HTML/Liquid",
       "settings": {
         "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/Mother_s_Day_Sale.jpg?v=1746647457\"/>",
