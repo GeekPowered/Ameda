@@ -9,26 +9,16 @@
  */
 {
   "sections": {
-    "timed_custom_liquid_ntbmja": {
-      "type": "timed-custom-liquid",
-      "settings": {
-        "custom_liquid": "{% if collection.metafields.custom.enable_sale_banner == true %}\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/bfbv2.jpg?v=1732202782\" width=\"100%\" height=\"auto\" alt=\"Black Friday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n{% endif %}",
-        "iso_start_date_time": "2024-11-21T14:34:00.000Z",
-        "iso_end_date_time": "2024-12-02T05:59:00.000Z",
-        "section_height": "tight",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
-    },
     "timed_custom_liquid_AW9C33": {
       "type": "timed-custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
       "settings": {
-        "custom_liquid": "{% if collection.metafields.custom.enable_sale_banner == true %}\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/CMV2.jpg?v=1732204225\" width=\"100%\" height=\"auto\" alt=\"Cyber Monday Banner\" style=\"border-radius: .5rem; overflow: hidden; margin-top: calc(var(--section-gap) * var(--fluid-1-5)) !important;\" />\n{% endif %}",
-        "iso_start_date_time": "2024-12-02T05:59:00.000Z",
-        "iso_end_date_time": "2024-12-03T05:59:00.000Z",
+        "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/Mother_s_Day_Sale.jpg?v=1746647457\"/>",
+        "iso_start_date_time": "2025-05-04T19:51:49.888Z",
+        "iso_end_date_time": "2025-05-12T04:59:00.000Z",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
@@ -90,7 +80,6 @@
     }
   },
   "order": [
-    "timed_custom_liquid_ntbmja",
     "timed_custom_liquid_AW9C33",
     "collection-banner",
     "collection-products",
