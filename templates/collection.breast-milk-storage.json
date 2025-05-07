@@ -12,7 +12,7 @@
     "timed_custom_liquid_m78nF9": {
       "type": "timed-custom-liquid",
       "custom_css": [
-        ".section--padded-default {padding-top: 0;}",
+        ".section--padded-default {padding-top: 0; padding-bottom: 0;}",
         "img {border-radius: 1rem;}"
       ],
       "name": "Timed Custom HTML/Liquid",
