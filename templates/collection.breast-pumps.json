@@ -9,6 +9,25 @@
  */
 {
   "sections": {
+    "timed_custom_liquid_WQrpCc": {
+      "type": "timed-custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
+      "name": "Timed Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/Mother_s_Day_Sale.jpg?v=1746647457\"/>",
+        "iso_start_date_time": "2025-05-04T19:51:49.888Z",
+        "iso_end_date_time": "2025-05-12T04:59:00.000Z",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "collection-banner": {
       "type": "main-collection-banner",
       "custom_css": [
@@ -43,18 +62,6 @@
         "enable_sorting": true,
         "show_feat_sort_opt": false,
         "sort_first": true
-      }
-    },
-    "custom_liquid_7BngVk": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "section_height": "medium",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
       }
     },
     "wave_section_YNHBQM": {
@@ -627,7 +634,7 @@
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": "top"
       }
@@ -777,9 +784,9 @@
     }
   },
   "order": [
+    "timed_custom_liquid_WQrpCc",
     "collection-banner",
     "collection-products",
-    "custom_liquid_7BngVk",
     "wave_section_YNHBQM",
     "media_with_text_Hnawhq",
     "wave_section_VnEjMB",
