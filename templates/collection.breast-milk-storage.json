@@ -9,6 +9,25 @@
  */
 {
   "sections": {
+    "timed_custom_liquid_m78nF9": {
+      "type": "timed-custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
+      "name": "Timed Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/Mother_s_Day_Sale.jpg?v=1746647457\"/>",
+        "iso_start_date_time": "2025-05-04T19:51:49.888Z",
+        "iso_end_date_time": "2025-05-12T04:59:00.000Z",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "collection-banner": {
       "type": "main-collection-banner",
       "custom_css": [
@@ -679,6 +698,7 @@
     }
   },
   "order": [
+    "timed_custom_liquid_m78nF9",
     "collection-banner",
     "collection-products",
     "custom_liquid_7BngVk",
