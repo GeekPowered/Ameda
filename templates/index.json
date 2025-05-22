@@ -24,7 +24,7 @@
         "text_Ramntz": {
           "type": "text",
           "settings": {
-            "text": "<p>Get <strong>25% OFF</strong> through May 11th with code <strong>MOM25</strong> during checkout!</p>",
+            "text": "<p>Get <strong>10% OFF</strong> through May 11th during checkout!</p>",
             "enlarge_text": false,
             "show_on_mobile": true,
             "show_on_desktop": true
