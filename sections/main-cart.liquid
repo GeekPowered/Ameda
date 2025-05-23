@@ -163,6 +163,57 @@
   <script src="{{ 'cart-terms.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const FREE_GIFT_VARIANT_ID = 50114903310651;
+    const MESSAGE_KEY = 'freeGiftAdded';
+    const ATTEMPTED_KEY = 'freeGiftAttempted';
+
+    // Show message if gift was just added
+    if (sessionStorage.getItem(MESSAGE_KEY)) {
+      const msg = document.createElement('div');
+      msg.textContent = '🎁 Free gift added!';
+      msg.style.cssText = 'background: #E6FFE6; color: #207E20; padding: 12px; margin: 16px 0; text-align: center; font-weight: bold; border: 2px solid #207E20; border-radius: 4px;';
+      document.body.prepend(msg);
+      sessionStorage.removeItem(MESSAGE_KEY);
+    }
+
+    // Fetch cart and conditionally add gift
+    fetch('/cart.js')
+      .then(response => response.json())
+      .then(cart => {
+        const alreadyHasFreeGift = cart.items.some(item => item.variant_id === FREE_GIFT_VARIANT_ID);
+        const hasOtherItems = cart.items.some(item => item.variant_id !== FREE_GIFT_VARIANT_ID);
+        const alreadyAttempted = sessionStorage.getItem(ATTEMPTED_KEY);
+
+        if (hasOtherItems && !alreadyHasFreeGift && !alreadyAttempted) {
+          sessionStorage.setItem(ATTEMPTED_KEY, 'true');
+
+          setTimeout(() => {
+            fetch('/cart/add.js', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                id: FREE_GIFT_VARIANT_ID,
+                quantity: 1
+              })
+            }).then(response => {
+              if (response.ok) {
+                sessionStorage.setItem(MESSAGE_KEY, 'true');
+                location.reload();
+              } else {
+                console.error('Failed to add free gift:', response);
+              }
+            }).catch(error => {
+              console.error('Error adding free gift:', error);
+            });
+          }, 1500); // Slight delay to avoid Shopify timing issues
+        }
+      });
+  });
+</script>
+
+
 
 
 {% schema %}
