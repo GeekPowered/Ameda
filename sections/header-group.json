@@ -91,11 +91,28 @@
         "text_type_scale": "small",
         "read_time": 7
       }
+    },
+    "timed_custom_liquid_TcQa6P": {
+      "type": "timed-custom-liquid",
+      "disabled": true,
+      "name": "Timed Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"display: flex; gap: 0rem 3rem;justify-content: center;align-items:center;text-align:center;flex-wrap:wrap;\">\n<p class=\"mb-0 h4\">Memorial Day Sale</p>\n<p class=\"mb-0\">\nGet <strong>10% OFF</strong> through May 11th during checkout!\n</p>\n</div>",
+        "iso_start_date_time": "2025-05-25T05:00:02.000Z",
+        "iso_end_date_time": "2025-05-27T04:59:00.000Z",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
     }
   },
   "order": [
     "promo-strip",
     "header",
-    "announcement"
+    "announcement",
+    "timed_custom_liquid_TcQa6P"
   ]
 }
