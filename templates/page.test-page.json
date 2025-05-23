@@ -23,21 +23,6 @@
         "prevent_animation": false
       }
     },
-    "timed_custom_liquid_7Fb8gF": {
-      "type": "timed-custom-liquid",
-      "name": "Timed Custom HTML/Liquid",
-      "settings": {
-        "custom_liquid": "<div style=\"display: flex; gap: 0rem 3rem;justify-content: center;align-items:center;text-align:center;flex-wrap:wrap;\">\n<p class=\"mb-0 h4\">Memorial Day Sale</p>\n<p class=\"mb-0\">\nGet <strong>10% OFF</strong> through May 11th during checkout!\n</p>\n</div>",
-        "iso_start_date_time": "2025-05-25T05:00:02.000Z",
-        "iso_end_date_time": "2025-05-27T04:59:00.000Z",
-        "section_height": "xsmall",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "3",
-        "baby_patterns": true,
-        "prevent_animation": false
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -262,7 +247,6 @@
   },
   "order": [
     "custom_liquid_aVWD3j",
-    "timed_custom_liquid_7Fb8gF",
     "main",
     "slideshow_X7ecHw",
     "multi_column_NHndqk",
