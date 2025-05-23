@@ -9,50 +9,6 @@
  */
 {
   "sections": {
-    "promo_strip_R3ycht": {
-      "type": "promo-strip",
-      "blocks": {
-        "heading_dw7XqX": {
-          "type": "heading",
-          "settings": {
-            "heading": "Memorial Day Sale",
-            "heading_size": "h4",
-            "show_on_mobile": true,
-            "show_on_desktop": true
-          }
-        },
-        "text_Ramntz": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Get <strong>10% OFF</strong> through May 11th during checkout!</p>",
-            "enlarge_text": false,
-            "show_on_mobile": true,
-            "show_on_desktop": true
-          }
-        },
-        "discount_TeN3aw": {
-          "type": "discount",
-          "settings": {
-            "discount_code": "MOM25"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dw7XqX",
-        "text_Ramntz",
-        "discount_TeN3aw"
-      ],
-      "disabled": true,
-      "name": "Promo strip",
-      "settings": {
-        "section_height": "xsmall",
-        "color_scheme": "3",
-        "full_width": true,
-        "baby_pattern": true,
-        "dividers": "border-top",
-        "prevent_animation": false
-      }
-    },
     "a2669460-8635-4e2e-b686-0b839f32114c": {
       "type": "image-banner",
       "blocks": {
@@ -720,7 +676,6 @@
     }
   },
   "order": [
-    "promo_strip_R3ycht",
     "a2669460-8635-4e2e-b686-0b839f32114c",
     "99ad067f-b38f-4c8e-873d-dea943226a60",
     "timed_custom_liquid_ib3aTn",
