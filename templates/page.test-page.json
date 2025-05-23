@@ -9,6 +9,19 @@
  */
 {
   "sections": {
+    "custom_liquid_aVWD3j": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<div>\n10% Off!\n</div>",
+        "section_height": "xsmall",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "3",
+        "baby_patterns": true,
+        "prevent_animation": false
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -232,6 +245,7 @@
     }
   },
   "order": [
+    "custom_liquid_aVWD3j",
     "main",
     "slideshow_X7ecHw",
     "multi_column_NHndqk",
