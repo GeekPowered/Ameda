@@ -115,7 +115,103 @@
         "prevent_animation": true
       }
     },
+    "multi_column_NHndqk": {
+      "type": "multi-column",
+      "blocks": {
+        "column_UFLVfn": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_qbGFtT": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_36eDKh": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UFLVfn",
+        "column_qbGFtT",
+        "column_36eDKh"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "use_h4_class": true,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
     "wave_section_eT6bA3": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "scrolling_banner_3irnGT": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_bhQKjh": {
+          "type": "text",
+          "settings": {
+            "text": "Tell customers about a promotion or make an announcement",
+            "link": "",
+            "font": "heading",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "text_bhQKjh"
+      ],
+      "name": "Scrolling banner",
+      "settings": {
+        "section_height": "medium",
+        "spacing": 40,
+        "speed": 24,
+        "direction": "normal",
+        "pausable": true,
+        "color_scheme": "1",
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "wave_section_6dJ8mj": {
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
@@ -128,6 +224,9 @@
   "order": [
     "main",
     "slideshow_X7ecHw",
-    "wave_section_eT6bA3"
+    "multi_column_NHndqk",
+    "wave_section_eT6bA3",
+    "scrolling_banner_3irnGT",
+    "wave_section_6dJ8mj"
   ]
 }
