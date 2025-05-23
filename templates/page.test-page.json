@@ -92,7 +92,8 @@
         "slide_XRC7pR"
       ],
       "custom_css": [
-        "slide-show {aspect-ratio: 16 / 9; border-radius: 2rem; overflow: hidden;}"
+        "slide-show {aspect-ratio: 16 / 9; border-radius: 2rem; overflow: hidden;}",
+        ".slideshow-section {margin: 3rem auto;}"
       ],
       "name": "Slideshow",
       "settings": {
