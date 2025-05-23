@@ -8,6 +8,21 @@
     "theme_support_url": "https://cleancanvas.co.uk/support/enterprise"
   },
   {
+    "name": "BOGO Script",
+    "settings": [
+      {
+        "type": "product",
+        "label": "Trigger Product",
+        "id": "bogo_trigger"
+      },
+      {
+        "type": "product",
+        "label": "Free Product",
+        "id": "bogo_free"
+      }
+    ]
+  },
+  {
     "name": "Global Footer CTA",
     "settings": [
       {
