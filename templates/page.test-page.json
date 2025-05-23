@@ -123,10 +123,10 @@
           "settings": {
             "enable_media": true,
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
+            "heading": "",
+            "text": "",
+            "button_label": "Support For Moms",
+            "button_link": "#"
           }
         },
         "column_qbGFtT": {
@@ -134,10 +134,10 @@
           "settings": {
             "enable_media": true,
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
+            "heading": "",
+            "text": "",
+            "button_label": "For Clinicians & Hospitals",
+            "button_link": "#"
           }
         },
         "column_36eDKh": {
@@ -145,10 +145,10 @@
           "settings": {
             "enable_media": true,
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
+            "heading": "",
+            "text": "",
+            "button_label": "Insurance",
+            "button_link": "#"
           }
         }
       },
@@ -169,7 +169,7 @@
         "column_align": "left",
         "media_align": "text-center",
         "image_ratio": "1",
-        "color_scheme": "1",
+        "color_scheme": "3",
         "baby_patterns": false,
         "button_style": "btn btn--secondary"
       }
