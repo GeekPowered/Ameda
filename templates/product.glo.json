@@ -310,7 +310,7 @@
             "image": "{{ product.featured_image }}",
             "media_scale": 100,
             "heading": "Ameda GLO Wearable Breast Pumps (2)",
-            "text": "<p><a href=\"https://www.ameda.com/products/glo-wearable-breast-pump\" title=\"https://www.ameda.com/products/glo-wearable-breast-pump\">SKU: 120G01</a></p>",
+            "text": "<p>SKU: 120G01</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -322,9 +322,9 @@
             "image": "shopify://shop_images/collection-cup.jpg",
             "media_scale": 100,
             "heading": "Ameda GLO Collection Cup (2)",
-            "text": "<p><a href=\"https://www.ameda.com/products/ameda-glo-collection-cup-replacement\" title=\"https://www.ameda.com/products/ameda-glo-collection-cup-replacement\">SKU: 120G15</a></p>",
+            "text": "<p>SKU: 120G15</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-collection-cup-replacement"
           }
         },
         "column_hXcxrq": {
@@ -334,9 +334,9 @@
             "image": "shopify://shop_images/glo-flange_e8855c1f-9576-4730-afca-88f844e00a47.jpg",
             "media_scale": 100,
             "heading": "24mm GLO Flanges (2)",
-            "text": "<p><a href=\"https://www.ameda.com/products/ameda-glo-flange\" title=\"https://www.ameda.com/products/ameda-glo-flange\">SKU: 120G03</a></p>",
+            "text": "<p>SKU: 120G03</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-flange"
           }
         },
         "column_gypRMQ": {
@@ -346,9 +346,9 @@
             "image": "shopify://shop_images/glo-flange.jpg",
             "media_scale": 100,
             "heading": "17, 19, 21mm Soft Flange Inserts (2 each)",
-            "text": "<p><a href=\"https://www.ameda.com/products/soft-breast-pump-flange-inserts\" title=\"https://www.ameda.com/products/soft-breast-pump-flange-inserts\">SKUs: 120G12 | 120G13 | 120G14</a></p>",
+            "text": "<p>SKUs: 120G12 | 120G13 | 120G14</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/soft-breast-pump-flange-inserts"
           }
         },
         "column_xp38tA": {
@@ -358,9 +358,9 @@
             "image": "shopify://shop_images/valve.jpg",
             "media_scale": 100,
             "heading": "Ameda GLO Valves (4)",
-            "text": "<p><a href=\"https://www.ameda.com/products/ameda-glo-valves\" title=\"https://www.ameda.com/products/ameda-glo-valves\">SKU: 120G06</a></p>",
+            "text": "<p>SKU: 120G06</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-valves"
           }
         },
         "column_cQwJpY": {
@@ -370,9 +370,9 @@
             "image": "shopify://shop_images/diaphragm.jpg",
             "media_scale": 100,
             "heading": "Ameda GLO Diaphragm (2)",
-            "text": "<p><a href=\"https://www.ameda.com/products/ameda-glo-diaphragm\" title=\"https://www.ameda.com/products/ameda-glo-diaphragm\">SKU: 120G05</a></p>",
+            "text": "<p>SKU: 120G05</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-diaphragm"
           }
         },
         "column_xFeQKa": {
@@ -382,9 +382,9 @@
             "image": "shopify://shop_images/amedaglo-product-7512-v2.jpg",
             "media_scale": 100,
             "heading": "Ameda GLO Bra Adjustment Buckles (2)",
-            "text": "<p><a href=\"https://www.ameda.com/products/ameda-glo-bra-adjustment-buckles\" title=\"https://www.ameda.com/products/ameda-glo-bra-adjustment-buckles\">SKU: 120G08</a></p>",
+            "text": "<p>SKU: 120G08</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-bra-adjustment-buckles"
           }
         },
         "column_bNwmHb": {
@@ -394,9 +394,9 @@
             "image": "shopify://shop_images/usb-charger.jpg",
             "media_scale": 100,
             "heading": "Ameda Glo USB Charging Cable (2)",
-            "text": "<p><a href=\"https://www.ameda.com/products/ameda-glo-usb-charging-cable\" title=\"https://www.ameda.com/products/ameda-glo-usb-charging-cable\">SKU: 120G07</a></p>",
+            "text": "<p>SKU: 120G07</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-usb-charging-cable"
           }
         }
       },
@@ -415,7 +415,10 @@
         ".card {flex-direction: row; gap: 2rem;}",
         ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
         ".card .card__info {padding: 1rem !important; justify-content: center !important;}",
-        ".card .card__info h3 + div {flex-grow: 0;}"
+        ".card .card__info h3 + div {flex-grow: 0;}",
+        ".card .card__info a {color: inherit;}",
+        ".card .card__info a .card__title {text-decoration: underline;}",
+        ".card .card__info div.mt-8.mb-8 {display: none;}"
       ],
       "settings": {
         "title": "Included With Every Purchase",
@@ -430,7 +433,7 @@
         "image_ratio": "1",
         "color_scheme": "none",
         "baby_patterns": false,
-        "button_style": "btn btn--secondary"
+        "button_style": "link"
       }
     },
     "multi_column_9fzzGN": {
