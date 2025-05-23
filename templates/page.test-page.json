@@ -17,60 +17,6 @@
         "heading_align": "text-start"
       }
     },
-    "image_banner_exQf78": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_ckKq9w": {
-          "type": "heading",
-          "settings": {
-            "heading": "This is my test page",
-            "heading_size": "h0",
-            "heading_h1": true
-          }
-        },
-        "text_wn6p4A": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "enlarge_text": true
-          }
-        },
-        "button_LL7C3P": {
-          "type": "button",
-          "settings": {
-            "button_1_label": "Optional button",
-            "button_1_link": "#",
-            "button_1_style": "btn btn--primary",
-            "button_2_label": "Optional button",
-            "button_2_link": "#",
-            "button_2_style": "btn btn--secondary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_ckKq9w",
-        "text_wn6p4A",
-        "button_LL7C3P"
-      ],
-      "settings": {
-        "url": "",
-        "breadcrumbs": false,
-        "breadcrumb_align": "justify-center",
-        "height_mode": "auto",
-        "fixed_height_desktop": 600,
-        "fixed_height_mobile": 350,
-        "overlay_position": "justify-center items-center",
-        "overlay_text_align": "text-center",
-        "mob_center_text": false,
-        "mobile_stacked": false,
-        "color_scheme": "white",
-        "full_width": true,
-        "transparent_content_color": "#ffffff",
-        "tint_color": "#000000",
-        "tint_opacity": 40,
-        "prevent_animation": false
-      }
-    },
     "slideshow_X7ecHw": {
       "type": "slideshow",
       "blocks": {
@@ -145,6 +91,9 @@
         "slide_CViXV6",
         "slide_XRC7pR"
       ],
+      "custom_css": [
+        "slide-show {aspect-ratio: 16 / 9; border-radius: 2rem; overflow: hidden;}"
+      ],
       "name": "Slideshow",
       "settings": {
         "height_mode": "auto",
@@ -179,7 +128,6 @@
   "order": [
     "main",
     "slideshow_X7ecHw",
-    "image_banner_exQf78",
     "wave_section_eT6bA3"
   ]
 }
