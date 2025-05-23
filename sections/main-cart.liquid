@@ -178,12 +178,18 @@
       sessionStorage.removeItem(MESSAGE_KEY);
     }
 
-    // Fetch cart and conditionally add gift
     fetch('/cart.js')
       .then(response => response.json())
       .then(cart => {
         const alreadyHasFreeGift = cart.items.some(item => item.variant_id === FREE_GIFT_VARIANT_ID);
         const hasOtherItems = cart.items.some(item => item.variant_id !== FREE_GIFT_VARIANT_ID);
+        const isCartEmpty = cart.items.length === 0;
+
+        // Reset attempt if cart is empty
+        if (isCartEmpty) {
+          sessionStorage.removeItem(ATTEMPTED_KEY);
+        }
+
         const alreadyAttempted = sessionStorage.getItem(ATTEMPTED_KEY);
 
         if (hasOtherItems && !alreadyHasFreeGift && !alreadyAttempted) {
@@ -207,11 +213,12 @@
             }).catch(error => {
               console.error('Error adding free gift:', error);
             });
-          }, 1500); // Slight delay to avoid Shopify timing issues
+          }, 1500);
         }
       });
   });
 </script>
+
 
 
 
