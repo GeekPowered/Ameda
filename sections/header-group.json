@@ -94,7 +94,6 @@
     },
     "timed_custom_liquid_TcQa6P": {
       "type": "timed-custom-liquid",
-      "disabled": true,
       "name": "Timed Custom HTML/Liquid",
       "settings": {
         "custom_liquid": "<div style=\"display: flex; gap: 0rem 3rem;justify-content: center;align-items:center;text-align:center;flex-wrap:wrap;\">\n<p class=\"mb-0 h4\">Memorial Day Sale</p>\n<p class=\"mb-0\">\nGet <strong>10% OFF</strong> through May 11th during checkout!\n</p>\n</div>",
