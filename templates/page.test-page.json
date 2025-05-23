@@ -13,7 +13,7 @@
       "type": "custom-liquid",
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<div>\n10% Off!\n</div>",
+        "custom_liquid": "<div style=\"display: flex; gap: 0rem 3rem;justify-content: center;align-items:center;text-align:center;flex-wrap:wrap;\">\n<p class=\"mb-0 h4\">Memorial Day Sale</p>\n<p class=\"mb-0\">\nGet <strong>10% OFF</strong> through May 11th during checkout!\n</p>\n</div>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",
