@@ -544,7 +544,7 @@
             "heading": "Ameda GLO Collection Cup (1)",
             "text": "<p>SKU: 120G15<br/><strong>Retail Price: $13.99</strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-collection-cup-replacement"
           }
         },
         "column_zNGhUE": {
@@ -556,7 +556,7 @@
             "heading": "Ameda GLO Valves (2)",
             "text": "<p>SKU: 120G06<br/><strong>Retail Price: $3.99 </strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-valves"
           }
         },
         "column_L9a6Ep": {
@@ -568,7 +568,7 @@
             "heading": "24 & 27mm Flange (2 each)",
             "text": "<p>SKU: 120G03 | 120G04<br/><strong>Retail Price: $12.99</strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-flange"
           }
         },
         "column_ewgQwL": {
@@ -580,7 +580,7 @@
             "heading": "Ameda GLO Bra Adjustment Buckles (2)",
             "text": "<p>SKU: 120G08<br/><strong>Retail Price: $6.99</strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-bra-adjustment-buckles"
           }
         },
         "column_9qUpzk": {
@@ -592,7 +592,7 @@
             "heading": "Ameda GLO Diaphragm (1)",
             "text": "<p>SKU: 120G05<br/><strong>Retail Price: $4.49</strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-diaphragm"
           }
         },
         "column_HKGPfb": {
@@ -604,7 +604,7 @@
             "heading": "Ameda GLO USB Charging Cable (1)",
             "text": "<p>SKU: 120G07<br/><strong>Retail Price: $9.99</strong></p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "shopify://products/ameda-glo-usb-charging-cable"
           }
         }
       },
