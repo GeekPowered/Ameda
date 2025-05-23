@@ -163,6 +163,43 @@
   <script src="{{ 'cart-terms.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const FREE_GIFT_VARIANT_ID = 10044555395387;
+    const MESSAGE_KEY = 'freeGiftAdded';
+
+    // Show message if gift was just added
+    if (sessionStorage.getItem(MESSAGE_KEY)) {
+      const msg = document.createElement('div');
+      msg.textContent = '🎁 Free gift added!';
+      msg.style.cssText = 'background: #E6FFE6; color: #207E20; padding: 12px; margin: 16px 0; text-align: center; font-weight: bold; border: 2px solid #207E20; border-radius: 4px;';
+      document.body.prepend(msg);
+      sessionStorage.removeItem(MESSAGE_KEY);
+    }
+
+    fetch('/cart.js')
+      .then(response => response.json())
+      .then(cart => {
+        const alreadyHasFreeGift = cart.items.some(item => item.variant_id === FREE_GIFT_VARIANT_ID);
+        const hasOtherItems = cart.items.some(item => item.variant_id !== FREE_GIFT_VARIANT_ID);
+        if (hasOtherItems && !alreadyHasFreeGift) {
+          fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              id: FREE_GIFT_VARIANT_ID,
+              quantity: 1
+            })
+          }).then(() => {
+            sessionStorage.setItem(MESSAGE_KEY, 'true');
+            location.reload();
+          });
+        }
+      });
+  });
+</script>
+
+
 {% schema %}
 {
   "name": "Cart",
