@@ -96,7 +96,7 @@
       "type": "timed-custom-liquid",
       "custom_css": [
         "p {line-height: 1;}",
-        ".container > div {gap: .5rem 3rem;}"
+        ".container > div {gap: 0.5rem 3rem !important;}"
       ],
       "name": "Timed Custom HTML/Liquid",
       "settings": {
