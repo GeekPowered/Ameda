@@ -184,10 +184,9 @@
       .then(cart => {
         const alreadyHasFreeGift = cart.items.some(item => item.variant_id === FREE_GIFT_VARIANT_ID);
         const hasTriggerProduct = cart.items.some(item => item.variant_id === TRIGGER_VARIANT_ID);
-        const isCartEmpty = cart.items.length === 0;
 
-        // Reset attempt if cart is empty
-        if (isCartEmpty) {
+        // Reset the attempt flag if the trigger product is not in the cart
+        if (!hasTriggerProduct) {
           sessionStorage.removeItem(ATTEMPTED_KEY);
         }
 
