@@ -172,15 +172,17 @@
       .then(response => response.json())
       .then(cart => {
         const alreadyHasFreeGift = cart.items.some(item => item.variant_id === FREE_GIFT_VARIANT_ID);
-        const hasTriggerProduct = cart.items.some(item => item.variant_id === TRIGGER_VARIANT_ID);
 
-        if (hasTriggerProduct && !alreadyHasFreeGift) {
+        const triggerItem = cart.items.find(item => item.variant_id === TRIGGER_VARIANT_ID);
+        const triggerQuantity = triggerItem ? triggerItem.quantity : 0;
+
+        if (triggerQuantity > 0 && !alreadyHasFreeGift) {
           fetch('/cart/add.js', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               id: FREE_GIFT_VARIANT_ID,
-              quantity: 1
+              quantity: triggerQuantity
             })
           }).then(response => {
             if (response.ok) {
@@ -188,7 +190,6 @@
               msg.textContent = '🎁 Free gift added!';
               msg.style.cssText = 'background: #E6FFE6; color: #207E20; padding: 12px; margin: 16px 0; text-align: center; font-weight: bold; border: 2px solid #207E20; border-radius: 4px;';
               document.body.prepend(msg);
-              // Optionally reload cart page:
               location.reload();
             } else {
               console.error('Failed to add free gift:', response);
