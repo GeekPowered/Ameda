@@ -163,10 +163,10 @@
   <script src="{{ 'cart-terms.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-{% comment %}
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const FREE_GIFT_VARIANT_ID = 50114903310651;
+    const TRIGGER_VARIANT_ID = 49796200726843;
     const MESSAGE_KEY = 'freeGiftAdded';
     const ATTEMPTED_KEY = 'freeGiftAttempted';
 
@@ -183,7 +183,7 @@
       .then(response => response.json())
       .then(cart => {
         const alreadyHasFreeGift = cart.items.some(item => item.variant_id === FREE_GIFT_VARIANT_ID);
-        const hasOtherItems = cart.items.some(item => item.variant_id !== FREE_GIFT_VARIANT_ID);
+        const hasTriggerProduct = cart.items.some(item => item.variant_id === TRIGGER_VARIANT_ID);
         const isCartEmpty = cart.items.length === 0;
 
         // Reset attempt if cart is empty
@@ -193,7 +193,7 @@
 
         const alreadyAttempted = sessionStorage.getItem(ATTEMPTED_KEY);
 
-        if (hasOtherItems && !alreadyHasFreeGift && !alreadyAttempted) {
+        if (hasTriggerProduct && !alreadyHasFreeGift && !alreadyAttempted) {
           sessionStorage.setItem(ATTEMPTED_KEY, 'true');
 
           setTimeout(() => {
@@ -219,7 +219,7 @@
       });
   });
 </script>
-{% endcomment %}
+
 
 
 {% schema %}
