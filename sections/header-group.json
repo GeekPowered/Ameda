@@ -95,7 +95,8 @@
     "timed_custom_liquid_TcQa6P": {
       "type": "timed-custom-liquid",
       "custom_css": [
-        ".h4 {line-height: 1;}"
+        "p {line-height: 1;}",
+        ".container > div {gap: .5rem 3rem;}"
       ],
       "name": "Timed Custom HTML/Liquid",
       "settings": {
