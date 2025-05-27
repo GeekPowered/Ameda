@@ -118,7 +118,6 @@
         "slide_m8WTh8",
         "slide_VC4kwd"
       ],
-      "disabled": true,
       "custom_css": [
         "slide-show {aspect-ratio: 16 / 9; border-radius: 2rem; overflow: hidden;}",
         ".slideshow-section {margin: 3rem auto;}",
@@ -180,6 +179,7 @@
         "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-text-1",
         "template--21856551764283__a2669460-8635-4e2e-b686-0b839f32114c-button-1"
       ],
+      "disabled": true,
       "custom_css": [
         "h1 {margin-bottom: 1rem;}"
       ],
