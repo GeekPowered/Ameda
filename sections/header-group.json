@@ -96,7 +96,7 @@
       "type": "timed-custom-liquid",
       "name": "Timed Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<div style=\"display: flex; gap: 0rem 3rem;justify-content: center;align-items:center;text-align:center;flex-wrap:wrap;\">\n<p class=\"mb-0 h4\">FREE Universal Pump Carrying Case</p>\n<p class=\"mb-0\">\nUntil June 1st With Purchase of the <a href=\"/collections/breast-pumps/products/glo-wearable-breast-pump\" style=\"text-decoration:underline;\">GLO Wearable Breast Pump</a></p>\n</div>",
+        "custom_liquid": "<div style=\"display: flex; gap: 0rem 3rem;justify-content: center;align-items:center;text-align:center;flex-wrap:wrap;\">\n<p class=\"mb-0 h4\">FREE Universal Pump Carrying Case</p>\n<p class=\"mb-0\">\nNow Through June 1st With Purchase of the <a href=\"/collections/breast-pumps/products/glo-wearable-breast-pump\" style=\"text-decoration:underline;\">GLO Wearable Breast Pump</a></p>\n</div>",
         "iso_start_date_time": "2025-05-25T05:00:02.000Z",
         "iso_end_date_time": "2025-06-02T04:59:18.000Z",
         "section_height": "xsmall",
