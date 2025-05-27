@@ -9,6 +9,142 @@
  */
 {
   "sections": {
+    "slideshow_LnUCXw": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_rdbmPX": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/ameda-glo-banner-1.jpg",
+            "url": "shopify://products/glo-wearable-breast-pump",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#fff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
+        "slide_m8WTh8": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/ameda-glo-banner-1.jpg",
+            "url": "shopify://products/glo-wearable-breast-pump",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#fff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
+        "slide_VC4kwd": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/breastfeeding-hero-d.jpg",
+            "image_mobile": "shopify://shop_images/breastfeeding-hero-m.jpg",
+            "url": "",
+            "overlay_position": "justify-start items-end",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "Breastfeeding Solutions From Hospital To Home",
+            "heading_size": "h1",
+            "heading_h1": true,
+            "text": "<p>Mom-Approved, Hospital-Grade Breast Pumps, Accessories, and Supplies.</p>",
+            "enlarge_text": true,
+            "button_1_label": "Shop Now",
+            "button_1_link": "shopify://products/glo-wearable-breast-pump",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Get A Pump With Insurance",
+            "button_2_link": "shopify://pages/insurance",
+            "button_2_style": "btn btn--secondary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#fff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_rdbmPX",
+        "slide_m8WTh8",
+        "slide_VC4kwd"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "slide-show {aspect-ratio: 16 / 9; border-radius: 2rem; overflow: hidden;}",
+        ".slideshow-section {margin: 3rem auto;}",
+        "@media (max-width: 749px) {slide-show:has(.is-active h1) {aspect-ratio: auto !important; }}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height_mode": "auto",
+        "fixed_height_desktop": 600,
+        "fixed_height_mobile": 350,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-center",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 7,
+        "color_scheme": "white",
+        "full_width": false,
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
     "a2669460-8635-4e2e-b686-0b839f32114c": {
       "type": "image-banner",
       "blocks": {
@@ -675,6 +811,7 @@
     }
   },
   "order": [
+    "slideshow_LnUCXw",
     "a2669460-8635-4e2e-b686-0b839f32114c",
     "99ad067f-b38f-4c8e-873d-dea943226a60",
     "timed_custom_liquid_ib3aTn",
