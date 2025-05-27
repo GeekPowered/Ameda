@@ -84,7 +84,7 @@
             "image_desktop": "shopify://shop_images/breastfeeding-hero-d.jpg",
             "image_mobile": "shopify://shop_images/breastfeeding-hero-m.jpg",
             "url": "",
-            "overlay_position": "justify-start items-end",
+            "overlay_position": "justify-start items-center",
             "overlay_text_align": "text-start",
             "mob_center_text": false,
             "subheading": "",
