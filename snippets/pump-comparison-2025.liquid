@@ -1,46 +1,73 @@
 <style>
-    .table-wrapper table {
-      background: rgba(255, 255, 255, 0.5);
-      border: 1px solid rgba(0, 0, 0, 0.1);
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .table-wrapper table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .table-wrapper table th,
+  .table-wrapper table td {
+    border: none;
+    padding: 1rem;
+    vertical-align: top;
+    width: 16.66%; /* 6 columns (1 label + 5 pump columns) */
+    text-align: center;
+  }
+
+  .table-wrapper table thead tr.pink {
+    background: rgb(var(--link-color));
+    color: #fff;
+  }
+
+  .table-wrapper table thead th {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .table-wrapper table tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  .table-wrapper table tbody tr img {
+    width: 100%;
+    max-width: 12rem;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 1rem;
+  }
+
+  .table-wrapper .pink-check {
+    font-size: 1.5em;
+    color: rgb(var(--link-color));
+    font-weight: 900;
+  }
+
+  @media (max-width: 768px) {
+    .table-wrapper {
+      overflow-x: auto;
     }
+
+    .table-wrapper table {
+      min-width: 75rem;
+    }
+
     .table-wrapper table td,
     .table-wrapper table th {
-      border: none;
+      min-width: 12rem;
     }
-    .table-wrapper table tbody tr img {
-      width: 20rem;
-      display: block;
-      margin: 0 auto 1rem auto;
-      border-radius: 1rem;
-      aspect-ratio: 3 / 2;
-      object-fit: cover;
-    }
-    .table-wrapper table thead tr.pink {
-      background: rgb(var(--link-color));
-      color: #fff;
-    }
-    .table-wrapper table thead th {
-      font-weight: 900;
-      text-align: center;
-      text-transform: uppercase;
-    }
-    .table-wrapper table tbody tr:nth-child(odd) {
-      background-color: #fff;
-    }
-    .table-wrapper .pink-check {
-      font-size: 1.5em;
-      color: rgb(var(--link-color));
-      font-weight: 900;
-    }
-    @media (max-width: 768px) {
-        .table-wrapper {
-            overflow: auto;
-        }
-        .table-wrapper table {
-            min-width: 75rem;
-        }
-    }
+  }
 </style>
+
 <div class="table-wrapper">
   <table>
     <thead>
