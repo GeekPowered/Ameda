@@ -140,10 +140,11 @@
         "slide_XRC7pR",
         "slide_B6heYh"
       ],
+      "disabled": true,
       "custom_css": [
         "slide-show {aspect-ratio: 16 / 9; border-radius: 2rem; overflow: hidden;}",
         ".slideshow-section {margin: 3rem auto;}",
-        "@media(max-width: 749px) {slide-show:has(.is-active h1) {aspect-ratio: auto !important;; }}"
+        "@media (max-width: 749px) {slide-show:has(.is-active h1) {aspect-ratio: auto !important; }}"
       ],
       "name": "Slideshow",
       "settings": {
@@ -211,6 +212,7 @@
         "column_qbGFtT",
         "column_36eDKh"
       ],
+      "disabled": true,
       "custom_css": [
         ".card {border-radius: 1rem; overflow: hidden;}",
         ".card__info {align-items: center; justify-content: center;}",
@@ -236,6 +238,7 @@
     },
     "wave_section_eT6bA3": {
       "type": "wave-section",
+      "disabled": true,
       "settings": {
         "wavebgcolor": "#ffffff",
         "wavesvgcolor": "#fbf6ef",
@@ -259,6 +262,7 @@
       "block_order": [
         "text_bhQKjh"
       ],
+      "disabled": true,
       "name": "Scrolling banner",
       "settings": {
         "section_height": "medium",
@@ -273,11 +277,25 @@
     },
     "wave_section_6dJ8mj": {
       "type": "wave-section",
+      "disabled": true,
       "settings": {
         "wavebgcolor": "#ffffff",
         "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": ""
+      }
+    },
+    "custom_liquid_MW4QRG": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "{% render 'pump-comparison-2025' %}",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
       }
     }
   },
@@ -288,6 +306,7 @@
     "multi_column_NHndqk",
     "wave_section_eT6bA3",
     "scrolling_banner_3irnGT",
-    "wave_section_6dJ8mj"
+    "wave_section_6dJ8mj",
+    "custom_liquid_MW4QRG"
   ]
 }
