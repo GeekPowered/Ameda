@@ -1209,6 +1209,19 @@
         "full_width": true
       }
     },
+    "custom_liquid_JixGTw": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"reviews\"></div>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "custom_liquid_DnXFqh": {
       "type": "custom-liquid",
       "settings": {
@@ -1272,6 +1285,7 @@
     "wave_section_Hw3QH8",
     "custom_liquid_BWYHhM",
     "faq_WT7f3T",
+    "custom_liquid_JixGTw",
     "custom_liquid_DnXFqh",
     "recommendations",
     "custom_liquid_6FwBVC",
