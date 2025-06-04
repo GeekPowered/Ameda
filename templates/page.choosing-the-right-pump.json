@@ -104,7 +104,7 @@
       "type": "custom-liquid",
       "custom_css": [],
       "settings": {
-        "custom_liquid": "{% render 'pump-comparison' %}",
+        "custom_liquid": "{% render 'pump-comparison-2025' %}",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
