@@ -122,6 +122,137 @@
         "waveposition": ""
       }
     },
+    "media_with_text_HRjwqU": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_7Ba8nM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choosing the Right Breast Pump: A Complete Guide",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_kcEdMX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you’re building a registry, planning to return to work, or preparing for exclusive pumping, finding the right breast pump can be a game-changer. With so many models and features to choose from, it can be hard to know where to start. In this guide, we’ll walk you through how to choose a breast pump that meets your lifestyle, budget, and milk supply needs.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_dmNRAL": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7Ba8nM",
+        "text_kcEdMX",
+        "button_dmNRAL"
+      ],
+      "custom_css": [
+        ".media {border-radius: 1rem;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "multi_column_96pn6L": {
+      "type": "multi-column",
+      "blocks": {
+        "column_CKNDpr": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Manual Breast Pumps",
+            "text": "<p>Manual breast pumps are lightweight, affordable, and a great choice if you only pump occasionally. These pumps rely on hand-powered suction and don’t require a wall outlet or batteries. For some parents, a manual pump like the Ameda Portable Manual Breast Pump serves as a reliable backup pump or travel option.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_kQapVi": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Electric Breast Pumps",
+            "text": "<p>Electric pumps are the most common choice for parents who need to pump breast milk regularly. These pumps are powered by electricity or batteries and are generally more efficient than manual options. Electric pumps can be single or double.</p><ul><li><strong>Single Electric Pump:</strong> Pumps one breast at a time. Great for occasional use or for parents who plan to nurse mostly.</li><li><strong>Double Electric Pump: </strong>Pumps both breasts simultaneously. Ideal for building milk supply and saving time. The Ameda Mya Joy and the Ameda Mya Joy PLUS are both compact, powerful double electric models.</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_wkbTqf": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Hospital Grade Breast Pumps",
+            "text": "<p>Hospital-strength pumps like the Ameda Pearl and Platinum are durable, multi-user pumps designed to support moms with medical needs, low milk supply, or those establishing milk production.  Often used by parents with premature babies, low milk supply, or special medical circumstances, these pumps are known for their efficiency and comfort. The Ameda Pearl and the Ameda Platinum are trusted by hospitals and lactation consultants for their proven performance and reliability.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_xCABnx": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Wearable Breast Pumps",
+            "text": "<p>Wearable pumps like the Ameda GLO Wearable Breast Pump allow you to pump discreetly and hands-free. These lightweight pumps fit into a bra and are ideal for multitasking, traveling, or returning to work. Portable and quiet, wearable pumps are increasingly popular among busy parents. While wearable pumps offer unmatched convenience, many parents also use a traditional pump to support their full pumping routine.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CKNDpr",
+        "column_kQapVi",
+        "column_wkbTqf",
+        "column_xCABnx"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
+        ".card {flex-direction: row; gap: 2rem;}",
+        ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
+        ".card .card__info {padding: 1rem !important; justify-content: center !important;}",
+        ".card .card__info h3 + div {flex-grow: 0;}",
+        ".card .card__info a {color: inherit;}",
+        ".card .card__info .card__title {margin-top: 0;}",
+        ".card .card__info div.mt-8.mb-8 {display: none;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "Understanding the Types of Breast Pumps",
+        "use_h4_class": false,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
     "d8605b73-ead8-467e-8dcb-0d0815eee53e": {
       "type": "video",
       "blocks": {
@@ -283,6 +414,8 @@
     "bc1078ed-9567-4b5a-b59a-28b7f2c68429",
     "594f1d1c-eef1-42cc-aa90-334feaf306cc",
     "952363d9-bc01-4d2a-ab65-03f4974f6a63",
+    "media_with_text_HRjwqU",
+    "multi_column_96pn6L",
     "d8605b73-ead8-467e-8dcb-0d0815eee53e",
     "b6c7bfed-784b-49c0-bef0-f8abcacc7c03",
     "b4ac1ed9-6195-4f5b-bc49-69c3bb239c4c",
