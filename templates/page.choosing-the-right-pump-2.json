@@ -407,6 +407,9 @@
         "column_LKJyRE",
         "column_PAw3RM"
       ],
+      "custom_css": [
+        ".card__info ul {padding-left: 0;}"
+      ],
       "name": "Multi-column",
       "settings": {
         "title": "Comparing Popular Ameda Pumps",
