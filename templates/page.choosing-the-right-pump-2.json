@@ -269,7 +269,7 @@
             "title": "Lifestyle and Frequency",
             "icon": "",
             "content": "",
-            "custom_liquid": "<ul style=\"list-style: disc;\">\n<li><strong>Occasional pumping</strong>: If you only pump occasionally, a manual pump or single electric pump can be a simple and affordable choice.</li>\n<li><strong>Pump regularly</strong>: If you pump regularly, consider a double electric, wearable, or hospital-strength pump to save time and support supply.</li>\n<li><strong>Exclusively pumping</strong>: If you exclusively pump, choose a hospital-strength or high-performance double electric pump made for frequent use.</li>\n</ul>",
+            "custom_liquid": "<ul style=\"list-style: disc;\npadding-left: 1.2em;\">\n<li><strong>Occasional pumping</strong>: If you only pump occasionally, a manual pump or single electric pump can be a simple and affordable choice.</li>\n<li><strong>Pump regularly</strong>: If you pump regularly, consider a double electric, wearable, or hospital-strength pump to save time and support supply.</li>\n<li><strong>Exclusively pumping</strong>: If you exclusively pump, choose a hospital-strength or high-performance double electric pump made for frequent use.</li>\n</ul>",
             "link_text": "",
             "url": "",
             "link_text_2": "",
@@ -341,6 +341,7 @@
         "link_HH8GRR",
         "link_kiHBqL"
       ],
+      "custom_css": [],
       "name": "Help Links",
       "settings": {
         "section_heading": "Factors to Consider When Choosing the Right Breast Pump",
