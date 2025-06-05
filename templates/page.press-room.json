@@ -29,9 +29,81 @@
         "prevent_animation": false
       }
     },
+    "wave_section_BXRtEy": {
+      "type": "wave-section",
+      "name": "Wave Section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "bottom",
+        "waveposition": "bottom"
+      }
+    },
+    "media_with_text_9HNzXt": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_LbarUD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ameda Launches GLO™ Wearable Breast Pump",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_U8bjFV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The GLO is the breast pump we all wish existed sooner. Check out the press release and learn why 90% of Moms prefer the GLO Wearable Breast Pump.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_wnidG4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Press Release",
+            "button_link": "https://www.prweb.com/releases/ameda-launches-glo-wearable-breast-pump--hospital-strength-meets-true-hands-free-freedom-302470404.html",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LbarUD",
+        "text_U8bjFV",
+        "button_wnidG4"
+      ],
+      "custom_css": [
+        ".media {border-radius: 1rem;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/glo-gallery-16.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "wave_section_xbpwdf": {
+      "type": "wave-section",
+      "name": "Wave Section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "top",
+        "waveposition": ""
+      }
+    },
     "custom_liquid_68z4DL": {
       "type": "custom-liquid",
       "custom_css": [
+        ".section--padded-default {padding-bottom: 0;}",
         ".flex img {width: auto; height: 7rem;}",
         ".flex > a {flex: 0 0 auto;}"
       ],
@@ -40,7 +112,7 @@
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
-        "color_scheme": "1",
+        "color_scheme": "none",
         "baby_patterns": false,
         "prevent_animation": false
       }
@@ -111,6 +183,16 @@
         "button_style": "btn btn--secondary"
       }
     },
+    "wave_section_6C4PxD": {
+      "type": "wave-section",
+      "name": "Wave Section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
     "custom_liquid_HXEMkC": {
       "type": "custom-liquid",
       "custom_css": [
@@ -138,8 +220,12 @@
   "order": [
     "main",
     "custom_liquid_wC7CPb",
+    "wave_section_BXRtEy",
+    "media_with_text_9HNzXt",
+    "wave_section_xbpwdf",
     "custom_liquid_68z4DL",
     "multi_column_ghd66j",
+    "wave_section_6C4PxD",
     "custom_liquid_HXEMkC",
     "global_footer_cta_FxqaHN"
   ]
