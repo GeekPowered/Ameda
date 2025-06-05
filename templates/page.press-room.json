@@ -31,7 +31,6 @@
     },
     "wave_section_BXRtEy": {
       "type": "wave-section",
-      "disabled": true,
       "name": "Wave Section",
       "settings": {
         "wavebgcolor": "#ffffff",
@@ -72,7 +71,6 @@
         "text_U8bjFV",
         "button_wnidG4"
       ],
-      "disabled": true,
       "custom_css": [
         ".media {border-radius: 1rem;}"
       ],
@@ -94,7 +92,6 @@
     },
     "wave_section_xbpwdf": {
       "type": "wave-section",
-      "disabled": true,
       "name": "Wave Section",
       "settings": {
         "wavebgcolor": "#ffffff",
@@ -106,7 +103,7 @@
     "custom_liquid_68z4DL": {
       "type": "custom-liquid",
       "custom_css": [
-        ".section--padded-default {padding-bottom: 0; padding-top: 0;}",
+        ".section--padded-default {padding-bottom: 0;}",
         ".flex img {width: auto; height: 7rem;}",
         ".flex > a {flex: 0 0 auto;}"
       ],
