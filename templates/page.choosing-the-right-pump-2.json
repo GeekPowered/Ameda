@@ -253,6 +253,94 @@
         "button_style": "btn btn--secondary"
       }
     },
+    "help_links_AcbeTW": {
+      "type": "help-links",
+      "blocks": {
+        "link_iW4y8p": {
+          "type": "link",
+          "settings": {
+            "title": "Lifestyle and Frequency",
+            "icon": "",
+            "content": "",
+            "custom_liquid": "<ul style=\"list-style: disc;\">\n<li><strong>Occasional pumping</strong>: If you only pump occasionally, a manual pump or single electric pump can be a simple and affordable choice.</li>\n<li><strong>Pump regularly</strong>: If you pump regularly, consider a double electric, wearable, or hospital-strength pump to save time and support supply.</li>\n<li><strong>Exclusively pumping</strong>: If you exclusively pump, choose a hospital-strength or high-performance double electric pump made for frequent use.</li>\n</ul>",
+            "link_text": "",
+            "url": "",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_NxV66U": {
+          "type": "link",
+          "settings": {
+            "title": "Portability and Power Source",
+            "icon": "",
+            "content": "<p>Consistent, effective pumping is important for maintaining milk supply—especially when exclusively pumping or supplementing breastfeeding.  If you plan to pump away from home, look for a portable or wearable pump with a rechargeable battery or USB charging.  Pumps that require a wall outlet are best for at-home or bedside use.</p>",
+            "custom_liquid": "",
+            "link_text": "",
+            "url": "",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_LJdre7": {
+          "type": "link",
+          "settings": {
+            "title": "Pumping Comfort",
+            "icon": "",
+            "content": "<p>Choose a pump with adjustable suction levels and cycle speeds to help personalize your comfort.  This can help mimic your baby’s natural nursing rhythm and support better milk flow.  Using a hands-free pumping bra can make pumping more comfortable and convenient—especially if you pump often. </p>",
+            "custom_liquid": "",
+            "link_text": "",
+            "url": "",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_HH8GRR": {
+          "type": "link",
+          "settings": {
+            "title": "Suction Strength and Efficiency",
+            "icon": "",
+            "content": "<p>Understanding how a pump works—whether it uses single or two-phase suction—can help you find a model that better mimics your baby’s natural nursing rhythm. Suction strength varies by pump, so if you're trying to build or maintain milk supply, look for a pump with strong, adjustable suction. Hospital-strength and high-performance double electric pumps typically offer the best support for milk production.</p>",
+            "custom_liquid": "",
+            "link_text": "",
+            "url": "",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "link_kiHBqL": {
+          "type": "link",
+          "settings": {
+            "title": "Insurance Coverage",
+            "icon": "",
+            "content": "",
+            "custom_liquid": "<p>Many insurance plans cover breast pumps. Before purchasing, check whether your insurance covers breast pumps and which models are included. Your lactation consultant or OBGYN can also help with documentation.</p>",
+            "link_text": "Insurance Plans",
+            "url": "shopify://pages/insurance",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_iW4y8p",
+        "link_NxV66U",
+        "link_LJdre7",
+        "link_HH8GRR",
+        "link_kiHBqL"
+      ],
+      "name": "Help Links",
+      "settings": {
+        "section_heading": "Factors to Consider When Choosing the Right Breast Pump",
+        "heading_align": "text-left",
+        "section_content": ""
+      }
+    },
     "d8605b73-ead8-467e-8dcb-0d0815eee53e": {
       "type": "video",
       "blocks": {
@@ -416,6 +504,7 @@
     "952363d9-bc01-4d2a-ab65-03f4974f6a63",
     "media_with_text_HRjwqU",
     "multi_column_96pn6L",
+    "help_links_AcbeTW",
     "d8605b73-ead8-467e-8dcb-0d0815eee53e",
     "b6c7bfed-784b-49c0-bef0-f8abcacc7c03",
     "b4ac1ed9-6195-4f5b-bc49-69c3bb239c4c",
