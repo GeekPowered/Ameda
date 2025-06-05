@@ -94,7 +94,7 @@
     "594f1d1c-eef1-42cc-aa90-334feaf306cc": {
       "type": "custom-liquid",
       "custom_css": [
-        "table {background: #fbf6ef;}"
+        "table {background: #fbf6ef; border-radius: 1rem; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,.1);}"
       ],
       "settings": {
         "custom_liquid": "{% render 'pump-comparison-2025' %}",
