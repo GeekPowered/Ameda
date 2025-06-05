@@ -239,7 +239,8 @@
         ".card .card__info h3 + div {flex-grow: 0;}",
         ".card .card__info a {color: inherit;}",
         ".card .card__info .card__title {margin-top: 0;}",
-        ".card .card__info div.mt-8.mb-8 {display: none;}"
+        ".card .card__info div.mt-8.mb-8 {display: none;}",
+        "@media (max-width: 500px) {.card {flex-direction: column; }}"
       ],
       "name": "Multi-column",
       "settings": {
