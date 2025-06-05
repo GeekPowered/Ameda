@@ -93,7 +93,9 @@
     },
     "594f1d1c-eef1-42cc-aa90-334feaf306cc": {
       "type": "custom-liquid",
-      "custom_css": [],
+      "custom_css": [
+        "table {background: #fbf6ef;}"
+      ],
       "settings": {
         "custom_liquid": "{% render 'pump-comparison-2025' %}",
         "section_height": "default",
@@ -223,17 +225,17 @@
         "column_xCABnx"
       ],
       "custom_css": [
-        "[id*=\"multi_column\"]{margin:0;padding-top:calc(var(--section-gap)*var(--fluid-1-5))}",
-        ".card{flex-direction:row;gap:2rem}",
-        ".card img{object-fit:contain!important;background:#fff}",
-        ".card__media{padding-top:0!important;height:14rem;width:14rem;flex-shrink:0;margin-top:1rem}",
-        ".card__info{padding:1rem!important}",
-        ".card__info h3+div{flex-grow:0}",
-        ".card__info a{color:inherit}",
-        ".card__title{margin-top:0}",
-        ".card__info ul{padding-left:0}",
-        ".mt-8.mb-8{display:none}",
-        "@media(max-width:500px){.card{flex-direction:column}}"
+        "[id*=\"multi_column\"] {margin: 0; padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
+        ".card {flex-direction: row; gap: 2rem;}",
+        ".card img {object-fit: contain !important; background: #fff;}",
+        ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
+        ".card__info {padding: 1rem !important;}",
+        ".card__info h3 + div {flex-grow: 0;}",
+        ".card__info a {color: inherit;}",
+        ".card__title {margin-top: 0;}",
+        ".card__info ul {padding-left: 0;}",
+        ".mt-8.mb-8 {display: none;}",
+        "@media (max-width: 500px) {.card {flex-direction: column; }}"
       ],
       "name": "Multi-column",
       "settings": {
