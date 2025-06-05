@@ -159,6 +159,7 @@
       ],
       "name": "Media with text",
       "settings": {
+        "image": "shopify://shop_images/glo-gallery-14.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -179,6 +180,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
             "media_scale": 100,
             "heading": "Manual Breast Pumps",
             "text": "<p>Manual breast pumps are lightweight, affordable, and a great choice if you only pump occasionally. These pumps rely on hand-powered suction and don’t require a wall outlet or batteries. For some parents, a manual pump like the Ameda Portable Manual Breast Pump serves as a reliable backup pump or travel option.</p>",
@@ -190,6 +192,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/joy-plus-on.jpg",
             "media_scale": 100,
             "heading": "Electric Breast Pumps",
             "text": "<p>Electric pumps are the most common choice for parents who need to pump breast milk regularly. These pumps are powered by electricity or batteries and are generally more efficient than manual options. Electric pumps can be single or double.</p><ul><li><strong>Single Electric Pump:</strong> Pumps one breast at a time. Great for occasional use or for parents who plan to nurse mostly.</li><li><strong>Double Electric Pump: </strong>Pumps both breasts simultaneously. Ideal for building milk supply and saving time. The Ameda Mya Joy and the Ameda Mya Joy PLUS are both compact, powerful double electric models.</li></ul>",
@@ -201,6 +204,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/PlatinumPump1.jpg",
             "media_scale": 100,
             "heading": "Hospital Grade Breast Pumps",
             "text": "<p>Hospital-strength pumps like the Ameda Pearl and Platinum are durable, multi-user pumps designed to support moms with medical needs, low milk supply, or those establishing milk production.  Often used by parents with premature babies, low milk supply, or special medical circumstances, these pumps are known for their efficiency and comfort. The Ameda Pearl and the Ameda Platinum are trusted by hospitals and lactation consultants for their proven performance and reliability.</p>",
@@ -212,6 +216,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/ameda-glo-2.jpg",
             "media_scale": 100,
             "heading": "Wearable Breast Pumps",
             "text": "<p>Wearable pumps like the Ameda GLO Wearable Breast Pump allow you to pump discreetly and hands-free. These lightweight pumps fit into a bra and are ideal for multitasking, traveling, or returning to work. Portable and quiet, wearable pumps are increasingly popular among busy parents. While wearable pumps offer unmatched convenience, many parents also use a traditional pump to support their full pumping routine.</p>",
@@ -348,6 +353,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/sku_131a40_027_rgb_2_d948ac57-57ac-492e-b405-2a5a4299ec99.jpg",
             "media_scale": 100,
             "heading": "Ameda Mya Joy",
             "text": "<ul><li><strong>Type</strong>: Portable Double Electric Pump</li><li><strong>Use</strong>: Daily or occasional use</li><li><strong>Features</strong>: Lightweight, quiet, powerful suction performance, powered by AC adapter or 4 AA batteries</li><li><strong>Ideal for</strong>: Moms looking for a reliable, affordable pump they can use at home or on the go</li></ul>",
@@ -359,6 +365,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/joy-plus-on.jpg",
             "media_scale": 100,
             "heading": "Ameda Mya Joy PLUS",
             "text": "<ul><li><strong>Type</strong>: Portable Double Electric Pump with Rechargeable Battery</li><li><strong>Use</strong>: Daily or frequent use</li><li><strong>Features</strong>: Lightweight, quiet, powerful suction performance, powered with a built-in rechargeable battery for added convenience</li><li><strong>Ideal for</strong>: Moms who want portable, hassle-free pumping without being tied to a wall outlet.</li></ul>",
@@ -370,6 +377,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/ameda-glo-2.jpg",
             "media_scale": 100,
             "heading": "GLO Wearable Breast Pump",
             "text": "<ul><li><strong>Type</strong>: Wearable Double Electric Pump with Rechargeable Battery</li><li><strong>Use</strong>: On-the-go/multitasking</li><li><strong>Features</strong>: Compact, quiet, fits discreetly inside a bra for hands-free pumping</li><li><strong>Ideal for</strong>: Moms who want to stay mobile and pump discreetly—whether they’re working, commuting, chasing toddlers, or getting things done on the go.</li></ul>",
@@ -381,6 +389,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/AMED_Pearl_Product.jpg",
             "media_scale": 100,
             "heading": "Ameda Pearl",
             "text": "<ul><li><strong>Type:</strong> Lightweight Tabletop Multi-User Pump (Rental or Purchase)</li><li><strong>Use:</strong> Daily or exclusive pumping</li><li><strong>Features:</strong> Award-winning design, quiet motor, closed system, adjustable suction and cycle settings, integrated dual bottle holders</li><li><strong>Ideal for:</strong> Moms who need hospital-strength performance at home—available for rental or purchase through select providers</li></ul>",
@@ -392,9 +401,21 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/PlatinumPump2.jpg",
             "media_scale": 100,
             "heading": "Ameda Platinum",
             "text": "<ul><li><strong>Type</strong>: Hospital-Strength Multi-User Pump (Rental Only)</li><li><strong>Use</strong>: Frequent or exclusive pumping</li><li><strong>Features</strong>:  Industry-leading clinical performance, consistent suction, closed system, integrated dual bottle holders, trusted in hospitals worldwide</li><li><strong>Ideal for</strong>: Moms with serious pumping needs—such as low supply, NICU discharge, or long-term exclusive pumping</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_CPQUBp": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -405,7 +426,8 @@
         "column_R4RVhj",
         "column_CVh7mz",
         "column_LKJyRE",
-        "column_PAw3RM"
+        "column_PAw3RM",
+        "column_CPQUBp"
       ],
       "custom_css": [
         ".card__info ul {padding-left: 0;}"
@@ -427,6 +449,68 @@
         "button_style": "btn btn--secondary"
       }
     },
+    "multi_column_pjfpaD": {
+      "type": "multi-column",
+      "blocks": {
+        "column_t66VjX": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/SBS_4.png",
+            "media_scale": 100,
+            "heading": "Pumping Bra",
+            "text": "<p>A hands-free pumping bra holds flanges in place so you can pump without using your hands—ideal for multitasking, working, or longer pumping sessions.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_8TmmAh": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/41wWM9bPXLL._SX466.jpg",
+            "media_scale": 100,
+            "heading": "Breast Shields",
+            "text": "<p>Also known as flanges, breast shields come in various sizes to match different nipple widths and breast sizes. Using the right size can improve comfort and milk flow. Ameda offers a free Flange Sizing Guide to help you get started.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_xzxKbU": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/01_e187629e-5b77-408d-b285-53b899410ac5.jpg",
+            "media_scale": 100,
+            "heading": "Pump Parts",
+            "text": "<p>Parts like valves and membranes are designed to be replaced regularly for best performance. Ameda’s tubing stays dry thanks to our patented HygieniKit® closed system, so it typically doesn’t require routine replacement. Always use compatible parts and follow Ameda’s recommendations.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_t66VjX",
+        "column_8TmmAh",
+        "column_xzxKbU"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "Pumping Accessories to Consider",
+        "use_h4_class": false,
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "medium",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
     "wave_section_QnFWkp": {
       "type": "wave-section",
       "name": "Wave Section",
@@ -435,6 +519,159 @@
         "wavesvgcolor": "#FBF6EF",
         "wavetype": "bottom",
         "waveposition": ""
+      }
+    },
+    "media_with_text_xBw8Wi": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_aJwVig": {
+          "type": "heading",
+          "settings": {
+            "heading": "How To Pump Milk Efficiently",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_nXDbxf": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Pump consistently to support your milk supply—especially if you're not breastfeeding.</li><li>Use a double electric pump to express both breasts at once - this can save time and help increase output.</li><li>Adjust suction to your <strong>maximum comfort vacuum</strong>—the highest level that’s effective without causing discomfort.</li></ul><p>Refer to your pump’s instruction manual for cleaning and usage guidelines.  All Ameda breast pumps include a printed instruction manual, and digital versions are also available at<a href=\"https://www.ameda.com\"> <span style=\"text-decoration:underline\"><strong>www.ameda.com</strong></span></a> for easy access.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_aJwVig",
+        "text_nXDbxf"
+      ],
+      "custom_css": [
+        ".media {border-radius: 1rem;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/glo-gallery-7.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "faq_qUaL4b": {
+      "type": "faq",
+      "blocks": {
+        "question_TYwtNm": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How much milk should I expect to pump?",
+            "text": "<p>Milk output varies by mom and by session. Many moms express 2–4 ounces total, while others may pump more or less depending on the time of day, frequency of pumping, and baby’s nursing habits. If you're returning to work or need more flexibility, a reliable pump can help you express efficiently and support your feeding routine.</p>"
+          }
+        },
+        "question_BdAP3K": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Can I use my pump at work?",
+            "text": "<p>Yes—many moms use a <strong>wearable</strong> or <strong>portable double electric pump</strong> at work. Choosing a quiet pump can make sessions easier and more discreet during a busy workday. Ameda also offers a <strong>Universal Breast Pump Carrying Case</strong> to help keep your pump and parts organized and ready to go.</p>"
+          }
+        },
+        "question_P8f3Uf": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What if I only pump one breast?",
+            "text": "<p>All Ameda pumps can be used for single or double pumping. Thanks to our pump design and HygieniKit® system, you can easily pump one side while nursing on the other or when full expression from both sides isn’t needed.</p>"
+          }
+        },
+        "question_xhkRje": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What are good backup options?",
+            "text": "<p>A <strong>manual</strong>, <strong>wearable</strong>, or <strong>portable pump</strong> can all serve as reliable backup options for travel, work, or unexpected situations. Ameda’s <strong>wearable pump</strong> is fully hands-free with no tubes or power cords, while our <strong>portable pumps</strong> (like Mya Joy and Mya Joy PLUS) offer strong performance in a lightweight, travel-ready design.</p>"
+          }
+        },
+        "question_JXMdjh": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "What are the best pumps for comfort?",
+            "text": "<p>A good breast pump offers adjustable suction power, quiet operation, and customizable settings. Look for one that fits well with your breast shield size and has minimal parts to clean.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_TYwtNm",
+        "question_BdAP3K",
+        "question_P8f3Uf",
+        "question_xhkRje",
+        "question_JXMdjh"
+      ],
+      "name": "Collapsible content",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "use_h4_class": false,
+        "heading_align": "text-start",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "media_with_text_6kzL3h": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_tbMdGG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find the Perfect Breast Pump with Ameda",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_F88jjm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choosing the right breast pump depends on your lifestyle, comfort, and feeding goals. Whether you’re exclusively pumping, returning to work, or building a freezer stash, Ameda offers a range of pumps to match your needs. From the powerful <strong>Ameda Platinum</strong> hospital-grade pump to the portable <strong>Mya Joy or Mya Joy Plus</strong> and hands-free <strong>GLO Wearable Pump</strong>, Ameda supports you at every stage.</p><p>Need help deciding? Our team is here to guide you. Let us help you find the right pump, so you can focus on what matters most—your baby and your well-being.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_LkGQAk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tbMdGG",
+        "text_F88jjm",
+        "button_LkGQAk"
+      ],
+      "custom_css": [
+        ".media {border-radius: 1rem;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/glo-gallery-7.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
       }
     },
     "d8605b73-ead8-467e-8dcb-0d0815eee53e": {
@@ -540,7 +777,7 @@
         "template--21958283886907__4834d5e2-56fc-4512-b05e-13be869642c4-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Giving Moms<br>Peace Of Mind",
+            "heading": "Giving MomsPeace Of Mind",
             "heading_size": "h1",
             "heading_h1": false
           }
@@ -602,7 +839,11 @@
     "multi_column_96pn6L",
     "help_links_AcbeTW",
     "multi_column_a6L8Hw",
+    "multi_column_pjfpaD",
     "wave_section_QnFWkp",
+    "media_with_text_xBw8Wi",
+    "faq_qUaL4b",
+    "media_with_text_6kzL3h",
     "d8605b73-ead8-467e-8dcb-0d0815eee53e",
     "b6c7bfed-784b-49c0-bef0-f8abcacc7c03",
     "b4ac1ed9-6195-4f5b-bc49-69c3bb239c4c",
