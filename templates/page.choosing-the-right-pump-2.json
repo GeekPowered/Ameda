@@ -476,6 +476,9 @@
         "column_8TmmAh",
         "column_xzxKbU"
       ],
+      "custom_css": [
+        ".section__header {padding-top: 6rem;}"
+      ],
       "name": "Multi-column",
       "settings": {
         "title": "Pumping Accessories to Consider",
