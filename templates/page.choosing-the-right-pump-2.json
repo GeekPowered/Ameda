@@ -341,6 +341,99 @@
         "section_content": ""
       }
     },
+    "multi_column_a6L8Hw": {
+      "type": "multi-column",
+      "blocks": {
+        "column_YRB4rq": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda Mya Joy",
+            "text": "<ul><li><strong>Type</strong>: Portable Double Electric Pump</li><li><strong>Use</strong>: Daily or occasional use</li><li><strong>Features</strong>: Lightweight, quiet, powerful suction performance, powered by AC adapter or 4 AA batteries</li><li><strong>Ideal for</strong>: Moms looking for a reliable, affordable pump they can use at home or on the go</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_R4RVhj": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda Mya Joy PLUS",
+            "text": "<ul><li><strong>Type</strong>: Portable Double Electric Pump with Rechargeable Battery</li><li><strong>Use</strong>: Daily or frequent use</li><li><strong>Features</strong>: Lightweight, quiet, powerful suction performance, powered with a built-in rechargeable battery for added convenience</li><li><strong>Ideal for</strong>: Moms who want portable, hassle-free pumping without being tied to a wall outlet.</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_CVh7mz": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "GLO Wearable Breast Pump",
+            "text": "<ul><li><strong>Type</strong>: Wearable Double Electric Pump with Rechargeable Battery</li><li><strong>Use</strong>: On-the-go/multitasking</li><li><strong>Features</strong>: Compact, quiet, fits discreetly inside a bra for hands-free pumping</li><li><strong>Ideal for</strong>: Moms who want to stay mobile and pump discreetly—whether they’re working, commuting, chasing toddlers, or getting things done on the go.</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_LKJyRE": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda Pearl",
+            "text": "<ul><li><strong>Type:</strong> Lightweight Tabletop Multi-User Pump (Rental or Purchase)</li><li><strong>Use:</strong> Daily or exclusive pumping</li><li><strong>Features:</strong> Award-winning design, quiet motor, closed system, adjustable suction and cycle settings, integrated dual bottle holders</li><li><strong>Ideal for:</strong> Moms who need hospital-strength performance at home—available for rental or purchase through select providers</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_PAw3RM": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Ameda Platinum",
+            "text": "<ul><li><strong>Type</strong>: Hospital-Strength Multi-User Pump (Rental Only)</li><li><strong>Use</strong>: Frequent or exclusive pumping</li><li><strong>Features</strong>:  Industry-leading clinical performance, consistent suction, closed system, integrated dual bottle holders, trusted in hospitals worldwide</li><li><strong>Ideal for</strong>: Moms with serious pumping needs—such as low supply, NICU discharge, or long-term exclusive pumping</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_YRB4rq",
+        "column_R4RVhj",
+        "column_CVh7mz",
+        "column_LKJyRE",
+        "column_PAw3RM"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "Comparing Popular Ameda Pumps",
+        "use_h4_class": false,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "small",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "wave_section_QnFWkp": {
+      "type": "wave-section",
+      "name": "Wave Section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#FBF6EF",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
     "d8605b73-ead8-467e-8dcb-0d0815eee53e": {
       "type": "video",
       "blocks": {
@@ -505,6 +598,8 @@
     "media_with_text_HRjwqU",
     "multi_column_96pn6L",
     "help_links_AcbeTW",
+    "multi_column_a6L8Hw",
+    "wave_section_QnFWkp",
     "d8605b73-ead8-467e-8dcb-0d0815eee53e",
     "b6c7bfed-784b-49c0-bef0-f8abcacc7c03",
     "b4ac1ed9-6195-4f5b-bc49-69c3bb239c4c",
