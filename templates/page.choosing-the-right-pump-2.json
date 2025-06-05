@@ -91,15 +91,6 @@
         "prevent_animation": false
       }
     },
-    "bc1078ed-9567-4b5a-b59a-28b7f2c68429": {
-      "type": "wave-section",
-      "settings": {
-        "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#fbf6ef",
-        "wavetype": "top",
-        "waveposition": ""
-      }
-    },
     "594f1d1c-eef1-42cc-aa90-334feaf306cc": {
       "type": "custom-liquid",
       "custom_css": [],
@@ -108,17 +99,17 @@
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
-        "color_scheme": "none",
+        "color_scheme": "1",
         "baby_patterns": false,
         "prevent_animation": false
       }
     },
-    "952363d9-bc01-4d2a-ab65-03f4974f6a63": {
+    "bc1078ed-9567-4b5a-b59a-28b7f2c68429": {
       "type": "wave-section",
       "settings": {
         "wavebgcolor": "#ffffff",
         "wavesvgcolor": "#fbf6ef",
-        "wavetype": "bottom",
+        "wavetype": "top",
         "waveposition": ""
       }
     },
@@ -159,16 +150,16 @@
       ],
       "name": "Media with text",
       "settings": {
-        "image": "shopify://shop_images/glo-gallery-14.jpg",
+        "image": "shopify://shop_images/mya-joy-plus-baby.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "left",
-        "image_fit": "contain",
+        "image_fit": "cover",
         "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
-        "color_scheme": "1",
+        "color_scheme": "none",
         "only_content_color_scheme": false,
         "baby_patterns": false
       }
@@ -411,17 +402,6 @@
             "button_label": "",
             "button_link": ""
           }
-        },
-        "column_CPQUBp": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
@@ -429,8 +409,7 @@
         "column_R4RVhj",
         "column_CVh7mz",
         "column_LKJyRE",
-        "column_PAw3RM",
-        "column_CPQUBp"
+        "column_PAw3RM"
       ],
       "custom_css": [
         ".card__info ul {padding-left: 0;}"
@@ -443,7 +422,7 @@
         "button_label": "",
         "button_link": "",
         "layout": "carousel",
-        "column_size": "small",
+        "column_size": "medium",
         "column_align": "left",
         "media_align": "text-center",
         "image_ratio": "1",
@@ -556,7 +535,7 @@
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
-        "layout": "right",
+        "layout": "left",
         "image_fit": "cover",
         "media_width": 50,
         "media_scale": 100,
@@ -617,6 +596,9 @@
         "question_xhkRje",
         "question_JXMdjh"
       ],
+      "custom_css": [
+        ".reading-width {max-width: 1100px; width: 100%;}"
+      ],
       "name": "Collapsible content",
       "settings": {
         "heading": "Frequently Asked Questions",
@@ -663,11 +645,11 @@
       ],
       "name": "Media with text",
       "settings": {
-        "image": "shopify://shop_images/glo-gallery-7.jpg",
+        "image": "shopify://shop_images/glo-gallery-15.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
-        "layout": "left",
+        "layout": "right",
         "image_fit": "cover",
         "media_width": 50,
         "media_scale": 100,
@@ -835,9 +817,8 @@
     "main",
     "b58f02cc-fabc-4622-acfb-8050bf44f593",
     "df1b65c6-e69c-414d-aefc-7ff949381f08",
-    "bc1078ed-9567-4b5a-b59a-28b7f2c68429",
     "594f1d1c-eef1-42cc-aa90-334feaf306cc",
-    "952363d9-bc01-4d2a-ab65-03f4974f6a63",
+    "bc1078ed-9567-4b5a-b59a-28b7f2c68429",
     "media_with_text_HRjwqU",
     "multi_column_96pn6L",
     "help_links_AcbeTW",
