@@ -223,16 +223,17 @@
         "column_xCABnx"
       ],
       "custom_css": [
-        "[id*=\"multi_column\"] {margin: 0rem; padding-top: calc(var(--section-gap) * var(--fluid-1-5));}",
-        ".card {flex-direction: row; gap: 2rem;}",
-        ".card__media {padding-top: 0 !important; height: 14rem; width: 14rem; flex-shrink: 0; margin-top: 1rem;}",
-        ".card .card__info {padding: 1rem !important;}",
-        ".card .card__info h3 + div {flex-grow: 0;}",
-        ".card .card__info a {color: inherit;}",
-        ".card .card__info .card__title {margin-top: 0;}",
-        ".card__info ul {padding-left: 0;}",
-        ".card .card__info div.mt-8.mb-8 {display: none;}",
-        "@media (max-width: 500px) {.card {flex-direction: column; }}"
+        "[id*=\"multi_column\"]{margin:0;padding-top:calc(var(--section-gap)*var(--fluid-1-5))}",
+        ".card{flex-direction:row;gap:2rem}",
+        ".card img{object-fit:contain!important;background:#fff}",
+        ".card__media{padding-top:0!important;height:14rem;width:14rem;flex-shrink:0;margin-top:1rem}",
+        ".card__info{padding:1rem!important}",
+        ".card__info h3+div{flex-grow:0}",
+        ".card__info a{color:inherit}",
+        ".card__title{margin-top:0}",
+        ".card__info ul{padding-left:0}",
+        ".mt-8.mb-8{display:none}",
+        "@media(max-width:500px){.card{flex-direction:column}}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -501,7 +502,7 @@
       "name": "Wave Section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": ""
       }
