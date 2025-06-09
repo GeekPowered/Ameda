@@ -383,6 +383,19 @@
         "products_to_show": 8
       }
     },
+    "custom_liquid_7CQKDk": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Will the Ameda Universal Breast Pump Travel Bag fit all Ameda pumps?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"It’s designed to fit multiple Ameda breast pump models, including the Ameda GLO Wearable Breast Pump, Ameda Mya Joy PLUS, and Ameda Mya Joy.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Can I use the insulated compartment without ice packs?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes, but using ice packs (sold separately) helps keep milk cooler for longer.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Is the material easy to clean?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes, the case is made from durable polyester and nylon that wipes down easily after use.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Is the case easy to carry?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes, it features both a comfortable, adjustable shoulder strap and sturdy handles, making it easy to carry wherever you go.\"\n      }\n    }\n  ]\n}\n</script>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "faq_WT7f3T": {
       "type": "faq",
       "blocks": {
@@ -488,6 +501,7 @@
     "multi_column_E8cVUb",
     "wave_section_xKwxKb",
     "compatible_products_783dhj",
+    "custom_liquid_7CQKDk",
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
     "recommendations",
