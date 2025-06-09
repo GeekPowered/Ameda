@@ -417,22 +417,13 @@
             "heading": "Is the case easy to carry?",
             "text": "<p>Yes, it features both a comfortable, adjustable shoulder strap and sturdy handles, making it easy to carry wherever you go.</p>"
           }
-        },
-        "question_wKMAtC": {
-          "type": "question",
-          "settings": {
-            "icon": "none",
-            "heading": "What’s the advantage of having a universal fit case?",
-            "text": "<p>A universal fit allows you to continue using the same case even if you switch breast pumps in the future. Whether you upgrade your pump or change brands, your Ameda Universal Breast Pump Travel Case will remain your go-to for organized, discreet transport—making it a worthwhile purchase for the long term.</p>"
-          }
         }
       },
       "block_order": [
         "question_PTJrBd",
         "question_UyiqeJ",
         "question_HeCVrf",
-        "question_YVK7m7",
-        "question_wKMAtC"
+        "question_YVK7m7"
       ],
       "custom_css": [
         ".color-scheme--1 {background: none;}",
