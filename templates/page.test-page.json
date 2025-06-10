@@ -297,19 +297,6 @@
         "baby_patterns": false,
         "prevent_animation": false
       }
-    },
-    "custom_liquid_AtW4zm": {
-      "type": "custom-liquid",
-      "name": "Custom HTML/Liquid",
-      "settings": {
-        "custom_liquid": "{% render 'joy-joyplus-chart' %}",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
-      }
     }
   },
   "order": [
@@ -320,7 +307,6 @@
     "wave_section_eT6bA3",
     "scrolling_banner_3irnGT",
     "wave_section_6dJ8mj",
-    "custom_liquid_MW4QRG",
-    "custom_liquid_AtW4zm"
+    "custom_liquid_MW4QRG"
   ]
 }
