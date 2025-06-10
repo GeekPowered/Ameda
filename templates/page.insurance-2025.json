@@ -535,8 +535,9 @@
         "button_r79CXP"
       ],
       "custom_css": [
-        ".section--padded {background: #fff; padding-top: 0;}",
-        "img {border-radius: 1rem; object-fit: contain;}"
+        ".section--padded {background: #fff;}",
+        "img {border-radius: 1rem; object-fit: contain !important;}",
+        ".media-with-text {max-width: 100% !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
