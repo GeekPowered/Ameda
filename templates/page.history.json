@@ -225,7 +225,7 @@
         "timeline_block_Fxj3rY": {
           "type": "timeline_block",
           "settings": {
-            "image": "shopify://shop_images/ameda-glo_edffa913-bc8d-429a-8d27-503d4facbe46.jpg",
+            "image": "shopify://shop_images/glo-timeline.png",
             "title": "2025",
             "content": "Ameda introduces the GLO™—a true hands-free, tubing-free wearable pump built for modern moms seeking comfort, discretion, and performance."
           }
@@ -247,6 +247,7 @@
         "timeline_block_V7N9HJ",
         "timeline_block_Fxj3rY"
       ],
+      "custom_css": [],
       "settings": {
         "section_title": "Supporting Breastfeeding Moms for 80+ Years"
       }
