@@ -319,12 +319,12 @@
         "img {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/productshot-259200_1.png",
+        "image": "shopify://shop_images/glo-gallery-20.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
         "layout": "right",
-        "image_fit": "contain",
+        "image_fit": "cover",
         "media_width": 40,
         "media_scale": 100,
         "text_align": "text-start",
