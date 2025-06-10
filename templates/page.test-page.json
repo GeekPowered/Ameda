@@ -302,7 +302,7 @@
       "type": "custom-liquid",
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "{% render 'pump-comparison-2025' %}",
+        "custom_liquid": "{% render 'joy-joyplus-chart' %}",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
