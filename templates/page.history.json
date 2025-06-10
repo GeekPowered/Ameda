@@ -221,6 +221,14 @@
             "title": "2022",
             "content": "Pearl® was launched – Ameda’s most mobile Hospital Grade Pump designed for use in the hospital and at home."
           }
+        },
+        "timeline_block_Fxj3rY": {
+          "type": "timeline_block",
+          "settings": {
+            "image": "shopify://shop_images/ameda-glo_edffa913-bc8d-429a-8d27-503d4facbe46.jpg",
+            "title": "2025",
+            "content": "Ameda introduces the GLO™—a true hands-free, tubing-free wearable pump built for modern moms seeking comfort, discretion, and performance."
+          }
         }
       },
       "block_order": [
@@ -236,7 +244,8 @@
         "timeline_block_rXTpdb",
         "timeline_block_nqrppa",
         "timeline_block_r3frCA",
-        "timeline_block_V7N9HJ"
+        "timeline_block_V7N9HJ",
+        "timeline_block_Fxj3rY"
       ],
       "settings": {
         "section_title": "Supporting Breastfeeding Moms for 80+ Years"
