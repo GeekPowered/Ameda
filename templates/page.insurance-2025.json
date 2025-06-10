@@ -660,7 +660,7 @@
       "type": "custom-liquid",
       "custom_css": [],
       "settings": {
-        "custom_liquid": "<h2 id=\"options\" style=\"margin-bottom: 3rem;\">Meet Mya Joy: Pump On-The-Go</h2>\n{% render 'glo-joy-joyplus-chart' %}\n<p style=\"margin-top:2rem;\">*Only use the diaphragms and valves that come inside the Joy pumps with Joy models.</p>",
+        "custom_liquid": "<h2 id=\"options\" style=\"margin-bottom: 3rem;\">Compare Our Top Rated Breast Pumps</h2>\n{% render 'glo-joy-joyplus-chart' %}\n<p style=\"margin-top:2rem;\">*Only use the diaphragms and valves that come inside the Joy pumps with Joy models.</p>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
