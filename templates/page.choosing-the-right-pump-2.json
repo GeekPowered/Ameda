@@ -354,8 +354,8 @@
             "media_scale": 100,
             "heading": "Ameda Mya Joy",
             "text": "<ul><li><strong>Type</strong>: Portable Double Electric Pump</li><li><strong>Use</strong>: Daily or occasional use</li><li><strong>Features</strong>: Lightweight, quiet, powerful suction performance, powered by AC adapter or 4 AA batteries</li><li><strong>Ideal for</strong>: Moms looking for a reliable, affordable pump they can use at home or on the go</li></ul>",
-            "button_label": "",
-            "button_link": ""
+            "button_label": "View Product",
+            "button_link": "shopify://products/ameda-mya-joy-hospital-strength-portable-electric-breast-pump"
           }
         },
         "column_R4RVhj": {
@@ -366,8 +366,8 @@
             "media_scale": 100,
             "heading": "Ameda Mya Joy PLUS",
             "text": "<ul><li><strong>Type</strong>: Portable Double Electric Pump with Rechargeable Battery</li><li><strong>Use</strong>: Daily or frequent use</li><li><strong>Features</strong>: Lightweight, quiet, powerful suction performance, powered with a built-in rechargeable battery for added convenience</li><li><strong>Ideal for</strong>: Moms who want portable, hassle-free pumping without being tied to a wall outlet.</li></ul>",
-            "button_label": "",
-            "button_link": ""
+            "button_label": "View Product",
+            "button_link": "shopify://products/ameda-mya-joy-plus-rechargeable-quiet-and-portable-double-breast-pump"
           }
         },
         "column_CVh7mz": {
@@ -378,8 +378,8 @@
             "media_scale": 100,
             "heading": "GLO Wearable Breast Pump",
             "text": "<ul><li><strong>Type</strong>: Wearable Double Electric Pump with Rechargeable Battery</li><li><strong>Use</strong>: On-the-go/multitasking</li><li><strong>Features</strong>: Compact, quiet, fits discreetly inside a bra for hands-free pumping</li><li><strong>Ideal for</strong>: Moms who want to stay mobile and pump discreetly—whether they’re working, commuting, chasing toddlers, or getting things done on the go.</li></ul>",
-            "button_label": "",
-            "button_link": ""
+            "button_label": "View Product",
+            "button_link": "shopify://products/glo-wearable-breast-pump"
           }
         },
         "column_LKJyRE": {
@@ -390,8 +390,8 @@
             "media_scale": 100,
             "heading": "Ameda Pearl",
             "text": "<ul><li><strong>Type:</strong> Lightweight Tabletop Multi-User Pump (Rental or Purchase)</li><li><strong>Use:</strong> Daily or exclusive pumping</li><li><strong>Features:</strong> Award-winning design, quiet motor, closed system, adjustable suction and cycle settings, integrated dual bottle holders</li><li><strong>Ideal for:</strong> Moms who need hospital-strength performance at home—available for rental or purchase through select providers</li></ul>",
-            "button_label": "",
-            "button_link": ""
+            "button_label": "View Product",
+            "button_link": "shopify://products/ameda-pearl-hospital-grade-breast-pump"
           }
         },
         "column_PAw3RM": {
@@ -402,8 +402,8 @@
             "media_scale": 100,
             "heading": "Ameda Platinum",
             "text": "<ul><li><strong>Type</strong>: Hospital-Strength Multi-User Pump (Rental Only)</li><li><strong>Use</strong>: Frequent or exclusive pumping</li><li><strong>Features</strong>:  Industry-leading clinical performance, consistent suction, closed system, integrated dual bottle holders, trusted in hospitals worldwide</li><li><strong>Ideal for</strong>: Moms with serious pumping needs—such as low supply, NICU discharge, or long-term exclusive pumping</li></ul>",
-            "button_label": "",
-            "button_link": ""
+            "button_label": "View Product",
+            "button_link": "shopify://products/ameda-platinum-multi-user-hospital-grade-electric-breast-pump"
           }
         }
       },
@@ -415,7 +415,7 @@
         "column_PAw3RM"
       ],
       "custom_css": [
-        ".card__info ul {padding-left: 0;}"
+        ".card__info ul {padding-left: 0; color: #000;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -431,7 +431,7 @@
         "image_ratio": "1",
         "color_scheme": "none",
         "baby_patterns": false,
-        "button_style": "btn btn--secondary"
+        "button_style": "btn btn--primary"
       }
     },
     "multi_column_pjfpaD": {
