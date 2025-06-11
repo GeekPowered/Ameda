@@ -94,7 +94,7 @@
     "594f1d1c-eef1-42cc-aa90-334feaf306cc": {
       "type": "custom-liquid",
       "custom_css": [
-        "table {background: #fbf6ef; border-radius: 1rem; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,.1);}"
+        "table {background: #fbf6ef; border-radius: 1rem; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);}"
       ],
       "settings": {
         "custom_liquid": "{% render 'pump-comparison-2025' %}",
@@ -176,7 +176,7 @@
             "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
             "media_scale": 100,
             "heading": "Manual Breast Pumps",
-            "text": "<p>Manual breast pumps are lightweight, affordable, and a great choice if you only pump occasionally. These pumps rely on hand-powered suction and don’t require a wall outlet or batteries. For some parents, a manual pump like the Ameda Portable Manual Breast Pump serves as a reliable backup pump or travel option.</p>",
+            "text": "<p>Manual breast pumps are lightweight, affordable, and a great choice if you only pump occasionally. These pumps rely on hand-powered suction and don’t require a wall outlet or batteries. For some parents, a manual pump like the <a href=\"https://www.ameda.com/collections/breast-pumps/products/ameda-portable-manual-breast-pump\"><span style=\"text-decoration:underline\">Ameda Portable Manual Breast Pump</span></a> serves as a reliable backup pump or travel option.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -188,7 +188,7 @@
             "image": "shopify://shop_images/joy-plus-on.jpg",
             "media_scale": 100,
             "heading": "Electric Breast Pumps",
-            "text": "<p>Electric pumps are the most common choice for parents who need to pump breast milk regularly. These pumps are powered by electricity or batteries and are generally more efficient than manual options. Electric pumps can be single or double.</p><ul><li><strong>Single Electric Pump:</strong> Pumps one breast at a time. Great for occasional use or for parents who plan to nurse mostly.</li><li><strong>Double Electric Pump: </strong>Pumps both breasts simultaneously. Ideal for building milk supply and saving time. The Ameda Mya Joy and the Ameda Mya Joy PLUS are both compact, powerful double electric models.</li></ul>",
+            "text": "<p>Electric pumps are the most common choice for parents who need to pump breast milk regularly. These pumps are powered by electricity or batteries and are generally more efficient than manual options. Electric pumps can be single or double.</p><ul><li><strong>Single Electric Pump:</strong> Pumps one breast at a time. Great for occasional use or for parents who plan to nurse mostly.</li><li><strong>Double Electric Pump</strong>: Pumps both breasts simultaneously. Ideal for building milk supply and saving time. The <a href=\"https://www.ameda.com/collections/breast-pumps/products/ameda-mya-joy-hospital-strength-portable-electric-breast-pump\"><span style=\"text-decoration:underline\">Ameda Mya Joy</span></a> and the <a href=\"https://www.ameda.com/collections/breast-pumps/products/ameda-mya-joy-plus-rechargeable-quiet-and-portable-double-breast-pump\"><span style=\"text-decoration:underline\">Ameda Mya Joy PLUS</span></a> are both compact, powerful double electric models.</li></ul>",
             "button_label": "",
             "button_link": ""
           }
@@ -212,7 +212,7 @@
             "image": "shopify://shop_images/ameda-glo-2.jpg",
             "media_scale": 100,
             "heading": "Wearable Breast Pumps",
-            "text": "<p>Wearable pumps like the Ameda GLO Wearable Breast Pump allow you to pump discreetly and hands-free. These lightweight pumps fit into a bra and are ideal for multitasking, traveling, or returning to work. Portable and quiet, wearable pumps are increasingly popular among busy parents. While wearable pumps offer unmatched convenience, many parents also use a traditional pump to support their full pumping routine.</p>",
+            "text": "<p>Wearable pumps like the <a href=\"https://www.ameda.com/collections/breast-pumps/products/glo-wearable-breast-pump\"><span style=\"text-decoration:underline\">Ameda GLO Wearable Breast Pump</span></a> allow you to pump discreetly and hands-free. These lightweight pumps fit into a bra and are ideal for multitasking, traveling, or returning to work. Portable and quiet, wearable pumps are increasingly popular among busy parents. While wearable pumps offer unmatched convenience, many parents also use a traditional pump to support their full pumping routine.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -456,7 +456,7 @@
             "image": "shopify://shop_images/41wWM9bPXLL._SX466.jpg",
             "media_scale": 100,
             "heading": "Breast Shields",
-            "text": "<p>Also known as flanges, breast shields come in various sizes to match different nipple widths and breast sizes. Using the right size can improve comfort and milk flow. Ameda offers a free Flange Sizing Guide to help you get started.</p>",
+            "text": "<p>Also known as flanges, breast shields come in various sizes to match different nipple widths and breast sizes. Using the right size can improve comfort and milk flow. Ameda offers a free <a href=\"https://www.ameda.com/cdn/shop/files/Ameda_Flange_Size_Guide.pdf?v=8656739755394763194\"><span style=\"text-decoration:underline\">Flange Sizing Guide</span></a> to help you get started</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -567,7 +567,7 @@
           "settings": {
             "icon": "none",
             "heading": "Can I use my pump at work?",
-            "text": "<p>Yes—many moms use a <strong>wearable</strong> or <strong>portable double electric pump</strong> at work. Choosing a quiet pump can make sessions easier and more discreet during a busy workday. Ameda also offers a <strong>Universal Breast Pump Carrying Case</strong> to help keep your pump and parts organized and ready to go.</p>"
+            "text": "<p>Yes—many moms use a <strong>wearable</strong> or <strong>portable double electric pump</strong> at work. Choosing a quiet pump can make sessions easier and more discreet during a busy workday. Ameda also offers a <a href=\"https://www.ameda.com/collections/accessories/products/universal-breast-pump-carrying-case\"><span style=\"text-decoration:underline\">Universal Breast Pump Carrying Case</span></a> to help keep your pump and parts organized and ready to go.</p>"
           }
         },
         "question_P8f3Uf": {
