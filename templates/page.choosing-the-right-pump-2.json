@@ -200,7 +200,7 @@
             "image": "shopify://shop_images/PlatinumPump1.jpg",
             "media_scale": 100,
             "heading": "Hospital Grade Breast Pumps",
-            "text": "<p>Hospital-strength pumps like the Ameda Pearl and Platinum are durable, multi-user pumps designed to support moms with medical needs, low milk supply, or those establishing milk production.  Often used by parents with premature babies, low milk supply, or special medical circumstances, these pumps are known for their efficiency and comfort. The Ameda Pearl and the Ameda Platinum are trusted by hospitals and lactation consultants for their proven performance and reliability.</p>",
+            "text": "<p>Hospital-strength pumps like the <a href=\"/products/ameda-pearl-hospital-grade-breast-pump\" title=\"Ameda® Pearl® Multi-User Hospital Grade Breast Pump\">Ameda Pearl</a> and <a href=\"/products/ameda-platinum-multi-user-hospital-grade-electric-breast-pump\" title=\"Ameda Platinum® Multi-User Hospital Grade Electric Breast Pump\">Platinum</a> are durable, multi-user pumps designed to support moms with medical needs, low milk supply, or those establishing milk production.  Often used by parents with premature babies, low milk supply, or special medical circumstances, these pumps are known for their efficiency and comfort. The Ameda Pearl and the Ameda Platinum are trusted by hospitals and lactation consultants for their proven performance and reliability.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -276,7 +276,7 @@
           "settings": {
             "title": "Portability and Power Source",
             "icon": "",
-            "content": "<p>Consistent, effective pumping is important for maintaining milk supply—especially when exclusively pumping or supplementing breastfeeding.  If you plan to pump away from home, look for a portable or wearable pump with a rechargeable battery or USB charging.  Pumps that require a wall outlet are best for at-home or bedside use.</p>",
+            "content": "<p class=\"mb-0\">Consistent, effective pumping is important for maintaining milk supply—especially when exclusively pumping or supplementing breastfeeding.  If you plan to pump away from home, look for a portable or wearable pump with a rechargeable battery or USB charging.  Pumps that require a wall outlet are best for at-home or bedside use.</p>",
             "custom_liquid": "",
             "link_text": "",
             "url": "",
@@ -290,7 +290,7 @@
           "settings": {
             "title": "Pumping Comfort",
             "icon": "",
-            "content": "<p>Choose a pump with adjustable suction levels and cycle speeds to help personalize your comfort.  This can help mimic your baby’s natural nursing rhythm and support better milk flow.  Using a hands-free pumping bra can make pumping more comfortable and convenient—especially if you pump often. </p>",
+            "content": "<p class=\"mb-0\">Choose a pump with adjustable suction levels and cycle speeds to help personalize your comfort.  This can help mimic your baby’s natural nursing rhythm and support better milk flow.  Using a hands-free pumping bra can make pumping more comfortable and convenient—especially if you pump often. </p>",
             "custom_liquid": "",
             "link_text": "",
             "url": "",
@@ -304,7 +304,7 @@
           "settings": {
             "title": "Suction Strength and Efficiency",
             "icon": "",
-            "content": "<p>Understanding how a pump works—whether it uses single or two-phase suction—can help you find a model that better mimics your baby’s natural nursing rhythm. Suction strength varies by pump, so if you're trying to build or maintain milk supply, look for a pump with strong, adjustable suction. Hospital-strength and high-performance double electric pumps typically offer the best support for milk production.</p>",
+            "content": "<p class=\"mb-0\">Understanding how a pump works—whether it uses single or two-phase suction—can help you find a model that better mimics your baby’s natural nursing rhythm. Suction strength varies by pump, so if you're trying to build or maintain milk supply, look for a pump with strong, adjustable suction. Hospital-strength and high-performance double electric pumps typically offer the best support for milk production.</p>",
             "custom_liquid": "",
             "link_text": "",
             "url": "",
