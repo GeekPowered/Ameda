@@ -551,6 +551,19 @@
         "baby_patterns": false
       }
     },
+    "custom_liquid_9qWtT8": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"How much milk should I expect to pump?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Milk output varies by mom and by session. Many moms express 2–4 ounces total, while others may pump more or less depending on the time of day, frequency of pumping, and baby’s nursing habits. If you're returning to work or need more flexibility, a reliable pump can help you express efficiently and support your feeding routine.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Can I use my pump at work?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes—many moms use a wearable or portable double electric pump at work. Choosing a quiet pump can make sessions easier and more discreet during a busy workday. Ameda also offers a Universal Breast Pump Carrying Case to help keep your pump and parts organized and ready to go.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"What if I only pump one breast?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"All Ameda pumps can be used for single or double pumping. Thanks to our pump design and HygieniKit® system, you can easily pump one side while nursing on the other or when full expression from both sides isn’t needed.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"What are good backup options?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"A manual, wearable, or portable pump can all serve as reliable backup options for travel, work, or unexpected situations. Ameda’s wearable pump is fully hands-free with no tubes or power cords, while our portable pumps (like Mya Joy and Mya Joy PLUS) offer strong performance in a lightweight, travel-ready design.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"What are the best pumps for comfort?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"A good breast pump offers adjustable suction power, quiet operation, and customizable settings. Look for one that fits well with your breast shield size and has minimal parts to clean.\"\n      }\n    }\n  ]\n}\n</script>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
     "faq_qUaL4b": {
       "type": "faq",
       "blocks": {
@@ -832,6 +845,7 @@
     "multi_column_pjfpaD",
     "wave_section_QnFWkp",
     "media_with_text_xBw8Wi",
+    "custom_liquid_9qWtT8",
     "faq_qUaL4b",
     "media_with_text_6kzL3h",
     "d8605b73-ead8-467e-8dcb-0d0815eee53e",
