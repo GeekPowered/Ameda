@@ -39,65 +39,6 @@
         "waveposition": "bottom"
       }
     },
-    "media_with_text_9HNzXt": {
-      "type": "media-with-text",
-      "blocks": {
-        "subheading_BEiCC6": {
-          "type": "subheading",
-          "settings": {
-            "text": "Jun 26, 2025"
-          }
-        },
-        "heading_LbarUD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ameda GLO™ Wearable Breast Pump Wins 2025 Baby Innovation Award",
-            "heading_size": "h2",
-            "heading_h1": false
-          }
-        },
-        "text_U8bjFV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This honor recognizes the most forward-thinking advancements in baby care, and GLO was selected for its breakthrough design, comfort, and performance.</p>",
-            "enlarge_text": true
-          }
-        },
-        "button_wnidG4": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Press Release",
-            "button_link": "",
-            "button_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_BEiCC6",
-        "heading_LbarUD",
-        "text_U8bjFV",
-        "button_wnidG4"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".media {border-radius: 1rem;}"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "image": "shopify://shop_images/2025-baby-innovation-award.png",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "left",
-        "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "1",
-        "only_content_color_scheme": false,
-        "baby_patterns": false
-      }
-    },
     "media_with_text_7KC3Gt": {
       "type": "media-with-text",
       "blocks": {
@@ -287,7 +228,6 @@
     "main",
     "custom_liquid_wC7CPb",
     "wave_section_BXRtEy",
-    "media_with_text_9HNzXt",
     "media_with_text_7KC3Gt",
     "wave_section_xbpwdf",
     "custom_liquid_68z4DL",
