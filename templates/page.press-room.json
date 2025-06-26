@@ -45,13 +45,13 @@
         "subheading_BEiCC6": {
           "type": "subheading",
           "settings": {
-            "text": "Jun 02, 2025"
+            "text": "Jun 26, 2025"
           }
         },
         "heading_LbarUD": {
           "type": "heading",
           "settings": {
-            "heading": "Ameda Launches GLO™ Wearable Breast Pump",
+            "heading": "Ameda GLO™ Wearable Breast Pump Wins 2025 Baby Innovation Award",
             "heading_size": "h2",
             "heading_h1": false
           }
@@ -59,7 +59,7 @@
         "text_U8bjFV": {
           "type": "text",
           "settings": {
-            "text": "<p>The GLO™ is the breast pump we all wish existed sooner. Check out the press release and learn why 90% of Moms prefer the GLO™ Wearable Breast Pump.</p>",
+            "text": "<p>This honor recognizes the most forward-thinking advancements in baby care, and GLO was selected for its breakthrough design, comfort, and performance.</p>",
             "enlarge_text": true
           }
         },
@@ -67,7 +67,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read Press Release",
-            "button_link": "https://www.prweb.com/releases/ameda-launches-glo-wearable-breast-pump--hospital-strength-meets-true-hands-free-freedom-302470404.html",
+            "button_link": "",
             "button_style": "btn btn--primary"
           }
         }
@@ -78,8 +78,64 @@
         "text_U8bjFV",
         "button_wnidG4"
       ],
+      "disabled": true,
       "custom_css": [
         ".media {border-radius: 1rem;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/2025-baby-innovation-award.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_7KC3Gt": {
+      "type": "media-with-text",
+      "blocks": {
+        "subheading_n7pz4V": {
+          "type": "subheading",
+          "settings": {
+            "text": "Jun 02, 2025"
+          }
+        },
+        "heading_3Hq8My": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ameda Launches GLO™ Wearable Breast Pump",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_UzhzEG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The GLO™ is the breast pump we all wish existed sooner. Check out the press release and learn why 90% of Moms prefer the GLO™ Wearable Breast Pump.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_Q8qj7i": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Press Release",
+            "button_link": "https://www.prweb.com/releases/ameda-launches-glo-wearable-breast-pump--hospital-strength-meets-true-hands-free-freedom-302470404.html",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_n7pz4V",
+        "heading_3Hq8My",
+        "text_UzhzEG",
+        "button_Q8qj7i"
       ],
       "name": "Media with text",
       "settings": {
@@ -229,6 +285,7 @@
     "custom_liquid_wC7CPb",
     "wave_section_BXRtEy",
     "media_with_text_9HNzXt",
+    "media_with_text_7KC3Gt",
     "wave_section_xbpwdf",
     "custom_liquid_68z4DL",
     "multi_column_ghd66j",
