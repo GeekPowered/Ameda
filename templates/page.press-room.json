@@ -34,7 +34,7 @@
       "name": "Wave Section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": "bottom"
       }
@@ -42,6 +42,12 @@
     "media_with_text_9HNzXt": {
       "type": "media-with-text",
       "blocks": {
+        "subheading_BEiCC6": {
+          "type": "subheading",
+          "settings": {
+            "text": "Jun 02, 2025"
+          }
+        },
         "heading_LbarUD": {
           "type": "heading",
           "settings": {
@@ -67,6 +73,7 @@
         }
       },
       "block_order": [
+        "subheading_BEiCC6",
         "heading_LbarUD",
         "text_U8bjFV",
         "button_wnidG4"
@@ -95,7 +102,7 @@
       "name": "Wave Section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "top",
         "waveposition": ""
       }
@@ -188,7 +195,7 @@
       "name": "Wave Section",
       "settings": {
         "wavebgcolor": "#ffffff",
-        "wavesvgcolor": "#FBF6EF",
+        "wavesvgcolor": "#fbf6ef",
         "wavetype": "bottom",
         "waveposition": ""
       }
