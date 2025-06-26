@@ -137,6 +137,9 @@
         "text_UzhzEG",
         "button_Q8qj7i"
       ],
+      "custom_css": [
+        ".media {border-radius: 1rem;}"
+      ],
       "name": "Media with text",
       "settings": {
         "image": "shopify://shop_images/glo-gallery-16.jpg",
