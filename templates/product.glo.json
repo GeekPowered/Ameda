@@ -182,7 +182,7 @@
     "featured_image_PJG3Rw": {
       "type": "featured-image",
       "settings": {
-        "featured_image": "shopify://shop_images/glo-disassembled.png",
+        "featured_image": "shopify://shop_images/glo-disassembled-badge.png",
         "title": "<h2>Pumping Just Got A <strong>GLO Up.</strong></h2>",
         "section_height": "default",
         "full_width": false,
