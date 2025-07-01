@@ -191,7 +191,8 @@
       ],
       "custom_css": [
         ".media {border-radius: 1rem;}",
-        ".section--padded {padding-top: 0 !important;}"
+        ".section--padded {padding-top: 0 !important;}",
+        ".media img {object-fit: contain;}"
       ],
       "settings": {
         "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
