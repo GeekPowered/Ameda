@@ -22,6 +22,12 @@
             "show_weight": false
           }
         },
+        "custom_liquid_6eKQ6h": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "{% render 'confetti-award' %}"
+          }
+        },
         "9d3c5612-e12c-4f60-bc00-70a90a414745": {
           "type": "description",
           "settings": {
@@ -107,6 +113,7 @@
       "block_order": [
         "product-labels",
         "title",
+        "custom_liquid_6eKQ6h",
         "9d3c5612-e12c-4f60-bc00-70a90a414745",
         "vendor-sku",
         "price",
