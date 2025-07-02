@@ -1,0 +1,94 @@
+<!-- your markup: just add the two attributes -->
+<div confetti-target
+     style="margin-top:-1.5rem;margin-bottom:-1rem;font-size:.85em">
+  <span confetti-trigger
+        style="padding:.5rem 1.5rem;display:inline-block;
+               background:#fff;border-radius:1.75rem;
+               border:1px solid pink;font-weight:bold;
+               text-align:center;">
+    🏆 Winner of the 2025 Baby Innovation Award
+  </span>
+</div>
+
+<style>
+  [confetti-target] {
+    position: relative;
+    overflow: hidden;
+  }
+  [confetti-target] > .particle {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+  }
+  [confetti-target].active > .particle {
+    animation: confetti 3s ease-out forwards;
+  }
+  [confetti-target].infinite > .particle {
+    animation: confetti 3s ease-out infinite;
+  }
+  [confetti-target] > .particle.c1 { background: #EF9AA0; }
+  [confetti-target] > .particle.c2 { background: #f9d7d9; }
+
+  @keyframes confetti {
+    0%   { opacity: 0; transform: translateY(0)    rotate(0deg); }
+    10%  { opacity: 1; }
+    35%  { transform: translateY(-800%) rotate(270deg); }
+    80%  { opacity: 1; }
+    100% { opacity: 0; transform: translateY(2000%) rotate(1440deg); }
+  }
+</style>
+
+<script>
+  // simple rnd helper
+  function rnd(min, max) {
+    return Math.floor(Math.random()*(max-min+1)) + min;
+  }
+
+  // create N particles inside el
+  function initParticles(el) {
+    var count = Math.round(el.offsetWidth / 10);
+    for (var i = 0; i < count; i++) {
+      var p = document.createElement('span');
+      p.className = 'particle c' + rnd(1,2);
+      p.style.cssText = [
+        'top:'   + rnd(0,100) + '%;',
+        'left:'  + rnd(0,100) + '%;',
+        'width:' + rnd(6,8)   + 'px;',
+        'height:'+ rnd(3,4)   + 'px;',
+        'animation-delay:' + (rnd(0,30)/10) + 's;'
+      ].join('');
+      el.appendChild(p);
+    }
+  }
+
+  // remove old particles
+  function clearParticles(el) {
+    el.querySelectorAll('.particle').forEach(function(p){ p.remove(); });
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    var target  = document.querySelector('[confetti-target]');
+    var trigger = document.querySelector('[confetti-trigger]');
+    if (!target || !trigger) return;
+
+    // 1) one-time burst on load
+    clearParticles(target);
+    target.classList.add('active');
+    initParticles(target);
+    setTimeout(function(){
+      target.classList.remove('active');
+      clearParticles(target);
+    }, 3000);
+
+    // 2) click to toggle infinite loop
+    trigger.addEventListener('click', function(){
+      clearParticles(target);
+      if (target.classList.contains('infinite')) {
+        target.classList.remove('infinite');
+      } else {
+        target.classList.add('infinite');
+        initParticles(target);
+      }
+    });
+  });
+</script>
