@@ -16,7 +16,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify://shop_images/amazon-prime-day-2025.jpg",
-            "url": "/amazon-store",
+            "url": "/amazon",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
