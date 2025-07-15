@@ -91,11 +91,26 @@
         "text_type_scale": "small",
         "read_time": 7
       }
+    },
+    "custom_liquid_WyprGH": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"/collections/accessories/products/universal-breast-pump-travel-bag\" style=\"text-decoration: underline;\">FREE Breast Pump Travel Bag</a> with purchase of <a href=\"/collections/breast-pumps/products/glo-wearable-breast-pump\" style=\"text-decoration: underline;\">Glo Wearable Breast Pump</a></p>",
+        "section_height": "xsmall",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "3",
+        "baby_patterns": true,
+        "prevent_animation": false
+      }
     }
   },
   "order": [
     "promo-strip",
     "header",
-    "announcement"
+    "announcement",
+    "custom_liquid_WyprGH"
   ]
 }

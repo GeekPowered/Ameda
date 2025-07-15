@@ -14,10 +14,9 @@
       "blocks": {
         "slide_Mg6HN9": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/amazon-prime-day-2025.jpg",
-            "url": "/amazon",
+            "image_desktop": "shopify://shop_images/ameda-glo-banner-2.jpg",
+            "url": "shopify://products/universal-breast-pump-travel-bag",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
