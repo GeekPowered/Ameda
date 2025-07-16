@@ -45,39 +45,6 @@
             "bg_grad": ""
           }
         },
-        "slide_zGdakq": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify://shop_images/Baby_Innovation_2025_Instagram_Post_Web_Banner_1.jpg",
-            "url": "shopify://products/glo-wearable-breast-pump",
-            "overlay_position": "justify-center items-center",
-            "overlay_text_align": "text-center",
-            "mob_center_text": false,
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h0",
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_1_label": "",
-            "button_1_link": "",
-            "button_1_style": "btn btn--primary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary",
-            "transparent_content_color": "#ffffff",
-            "countdown_show": false,
-            "countdown_end_date": "",
-            "countdown_end_time": "",
-            "countdown_end_text": "",
-            "enlarge_end_text": false,
-            "countdown_hide_on_end": false,
-            "use_custom_colors": false,
-            "count_color": "#ffffff",
-            "bg_color": "#070707",
-            "bg_grad": ""
-          }
-        },
         "slide_rdbmPX": {
           "type": "slide",
           "settings": {
@@ -148,7 +115,6 @@
       },
       "block_order": [
         "slide_Mg6HN9",
-        "slide_zGdakq",
         "slide_rdbmPX",
         "slide_VC4kwd"
       ],
