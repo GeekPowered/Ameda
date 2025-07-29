@@ -22,7 +22,7 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% if rtl %}rtl{% else %}ltr{% endif %}">
 <head>
-  {% if request.path contains 'thank-you' %}
+  {% if request.path contains 'thank-you' or request.path contains 'cart' %}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
