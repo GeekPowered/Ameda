@@ -378,7 +378,7 @@
     "custom_liquid_9fkegJ": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"What Happens If My Flange Doesn’t Fit Correctly?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"An ill-fitting flange can cause discomfort, soreness, and reduced milk output. If your nipple rubs against the sides, or if your areola is being pulled into the flange tunnel, it’s time to try a different size. Having the right flange size helps maintain a secure vacuum seal and prevent nipple pain.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Can I Use Ameda Flanges with Other Pumps?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Ameda flanges are specifically designed to work with Ameda breast pumps, ensuring the best performance and compatibility. Using them with non-Ameda pumps may not produce optimal results, as they might not fit directly or maintain the appropriate suction level.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Are Soft Inserts Necessary?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Soft inserts, like the Ameda Universal Soft Breast Pump Flange Inserts, are especially helpful for new moms, those with sensitive skin, or anyone struggling with elastic nipples and nipple pain. They can add comfort without compromising pumping efficiency.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Why Choose Ameda for Breast Pump Flanges?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Ameda has supported breastfeeding moms for decades with high-quality products designed to make every step of the pumping journey more comfortable and efficient. From CustomFit Flanges™ to Comfort Fit Angled Flanges, every product is developed to help you reach your breastfeeding goals and maintain confidence in your routine. With Ameda breast pump flanges, you can pump knowing your equipment is specifically designed to fit your body and lifestyle.\"\n      }\n    }\n  ]\n}\n</script>",
+        "custom_liquid": "<script type=\"application/ld+json\"> { \"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [ { \"@type\": \"Question\", \"name\": \"What Happens If My Flange Doesn’t Fit Correctly?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"If your flange doesn't fit correctly, it can cause discomfort and reduced milk flow. To check the fit, observe your nipple during pumping:\\n\\nGood Fit: Your nipple moves freely, and you see space around it with minimal areola drawn into the flange tunnel.\\n\\nToo Small: Your nipple rubs against the sides of the flange tunnel.\\n\\nToo Large: More of your areola is drawn into the tunnel, and your areola may rub against the flange.\\n\\nIf your flange is too small or too large, try a different size.\" } }, { \"@type\": \"Question\", \"name\": \"Can I Use Ameda Flanges with Other Pumps?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Ameda flanges are designed specifically for use with Ameda breast pumps. Soft Flange Inserts are compatible only with Ameda standard 24mm flanges.\" } }, { \"@type\": \"Question\", \"name\": \"Are Soft Inserts Necessary?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Soft inserts are not required but are a great option for moms who experience nipple discomfort or friction during pumping. These inserts come in a wide range of sizes from 11mm to 21mm, offering flexibility for a more customized and comfortable fit. They help minimize discomfort while maintaining suction strength.\" } }, { \"@type\": \"Question\", \"name\": \"Why Choose Ameda for Breast Pump Flanges?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Ameda breast pump flanges are designed for comfort, durability, and a customizable fit. With a variety of sizes and options, we ensure that you can find the right fit for better milk flow and a more comfortable pumping experience.\" } }, { \"@type\": \"Question\", \"name\": \"What Are Some Breast Pump Care and Maintenance Tips?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"To ensure your Ameda breast pump flanges stay in good condition:\\n\\nClean before first use and after each use by washing in warm, soapy water or by placing them on the top rack of the dishwasher (following product guidelines).\\n\\nInspect for cracks or chips, as this can affect performance—if damaged, contact Ameda for replacements.\\n\\nStore on a clean surface to avoid contamination.\" } } ] } </script>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
@@ -395,7 +395,7 @@
           "settings": {
             "icon": "none",
             "heading": "What Happens If My Flange Doesn’t Fit Correctly?",
-            "text": "<p>An ill-fitting flange can cause discomfort, soreness, and reduced milk output. If your nipple rubs against the sides, or if your areola is being pulled into the flange tunnel, it’s time to try a different size. Having the right flange size helps maintain a secure vacuum seal and prevent nipple pain.</p>"
+            "text": "<p>If your flange doesn't fit correctly, it can cause discomfort and reduced milk flow. To check the fit, observe your nipple during pumping:</p><ul><li><strong>Good Fit:</strong> Your nipple moves freely, and you see space around it with minimal areola drawn into the flange tunnel.</li><li><strong>Too Small:</strong> Your nipple rubs against the sides of the flange tunnel.</li><li><strong>Too Large:</strong> More of your areola is drawn into the tunnel, and your areola may rub against the flange.</li></ul><p>If your flange is too small or too large, try a different size.</p>"
           }
         },
         "question_RqnkCj": {
@@ -403,7 +403,7 @@
           "settings": {
             "icon": "none",
             "heading": "Can I Use Ameda Flanges with Other Pumps?",
-            "text": "<p>Ameda flanges are specifically designed to work with Ameda breast pumps, ensuring the best performance and compatibility. Using them with non-Ameda pumps may not produce optimal results, as they might not fit directly or maintain the appropriate suction level.</p>"
+            "text": "<p>Ameda flanges are designed specifically for use with Ameda breast pumps. Soft Flange Inserts are compatible only with Ameda standard 24mm flanges.</p>"
           }
         },
         "question_PjjkWj": {
@@ -411,7 +411,7 @@
           "settings": {
             "icon": "none",
             "heading": "Are Soft Inserts Necessary?",
-            "text": "<p>Soft inserts, like the Ameda Universal Soft Breast Pump Flange Inserts, are especially helpful for new moms, those with sensitive skin, or anyone struggling with elastic nipples and nipple pain. They can add comfort without compromising pumping efficiency.</p>"
+            "text": "<p>Soft inserts are not required but are a great option for moms who experience nipple discomfort or friction during pumping. These inserts come in a wide range of sizes from 11mm to 21mm, offering flexibility for a more customized and comfortable fit. They help minimize discomfort while maintaining suction strength.</p>"
           }
         },
         "question_7RQk6w": {
@@ -419,7 +419,7 @@
           "settings": {
             "icon": "none",
             "heading": "Why Choose Ameda for Breast Pump Flanges?",
-            "text": "<p>Ameda has supported breastfeeding moms for decades with high-quality products designed to make every step of the pumping journey more comfortable and efficient. From CustomFit Flanges™ to Comfort Fit Angled Flanges, every product is developed to help you reach your breastfeeding goals and maintain confidence in your routine. With Ameda breast pump flanges, you can pump knowing your equipment is specifically designed to fit your body and lifestyle.</p>"
+            "text": "<p>Ameda breast pump flanges are designed for comfort, durability, and a customizable fit. With a variety of sizes and options, we ensure that you can find the right fit for better milk flow and a more comfortable pumping experience.<br/></p>"
           }
         },
         "question_7gF6zq": {
@@ -427,7 +427,7 @@
           "settings": {
             "icon": "none",
             "heading": "What Are Some Breast Pump Care and Maintenance Tips? ",
-            "text": "<p>Proper cleaning and sanitizing of breast pump parts are crucial for maintaining hygiene and preventing the growth of harmful bacteria. Ameda breast pumps feature dishwasher-safe parts, making cleaning quick and convenient. For more delicate components, hand-washing with warm soapy water is an effective alternative, ensuring that every piece is cleaned thoroughly without damage.</p><p>Sanitizing pump parts can be easily done using Ameda’s CleanEase Microwaveable Steam Sanitization Bags or a sanitizing solution designed specifically for breast pumps. Regular sanitization helps to protect your baby by eliminating bacteria and mold while also extending the lifespan of your pump. It’s important to allow all parts to air dry completely after cleaning to prevent moisture build-up, which could lead to bacterial growth.</p><p>Many Ameda breast pumps come with cleaning accessories, such as brushes, to help you clean those hard-to-reach areas. By maintaining a consistent cleaning routine, you ensure that your breast pump remains in optimal working condition, providing a safe, hygienic pumping experience for both you and your baby.</p>"
+            "text": "<p>To ensure your Ameda breast pump flanges stay in good condition:</p><ul><li>Clean before first use and after each use by washing in warm, soapy water or by placing them on the top rack of the dishwasher (following product guidelines).</li><li>Inspect for cracks or chips, as this can affect performance—if damaged, contact Ameda for replacements.</li><li>Store on a clean surface to avoid contamination.</li></ul>"
           }
         }
       },
