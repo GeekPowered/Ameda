@@ -95,7 +95,7 @@
         ".baby-pattern > div {padding-top: 5rem !important; padding-bottom: 5rem !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/flanges.jpg",
+        "image": "shopify://shop_images/flange-adjustment.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -132,7 +132,7 @@
         "text_rDzkTQ": {
           "type": "text",
           "settings": {
-            "text": "<p>The Universal Soft Breast Pump Flange Inserts are made from soft, flexible material to conform gently to your breast shape. These silicone insert pieces fit snugly into the standard Ameda flange, offering a cushioned surface that can help minimize discomfort during pumping. Ideal for new moms or anyone who experiences nipple pain or friction, these inserts support comfortable pumping sessions without compromising suction strength.</p>",
+            "text": "<p>The Universal Soft Breast Pump Flange Inserts are made from flexible silicone and are designed to fit inside Ameda’s standard 24mm flanges. Available in a wide range of sizes—from 11mm to 21mm—these inserts provide moms with a customized fit to ensure a more comfortable and efficient pumping session.</p>",
             "enlarge_text": false
           }
         }
@@ -145,7 +145,7 @@
         ".media {border-radius: 1rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/flange-blob-2.png",
+        "image": "shopify://shop_images/D._21mm_inserts_without_size.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -187,7 +187,7 @@
         ".section--padded {padding-top: 0 !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/flange-blob.png",
+        "image": "shopify://shop_images/custom_fit_flanges_2xl-2xxl-500x500.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -255,20 +255,8 @@
             "enable_media": true,
             "image": "shopify://shop_images/measure.jpg",
             "media_scale": 100,
-            "heading": "Start with the Right Fit",
-            "text": "<p>Begin by taking a measurement of your nipple size (diameter) and comparing it to <a href=\"https://www.ameda.com/cdn/shop/files/Ameda_Flange_Size_Guide.pdf?v=8656739755394763194\" target=\"_blank\" title=\"https://www.ameda.com/cdn/shop/files/Ameda_Flange_Size_Guide.pdf?v=8656739755394763194\">Ameda’s flange sizing chart</a>. Remember, your nipple should move freely within the flange tunnel without rubbing against the sides. If your breast tissue or areola is pulled in, or if the elastic causes your nipples to stretch uncomfortably, the flange may be too large.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_FzyVi9": {
-          "type": "column",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/position.jpg",
-            "media_scale": 100,
-            "heading": "Consider Comfort & Positioning",
-            "text": "<p>If pumping feels uncomfortable or painful, even with the proper size, soft silicone piece inserts like the Universal Soft Breast Pump Flange Inserts can add an extra layer of cushioning. Angled flanges also improve your posture during pumping, helping you maintain a relaxed and effective position.</p>",
+            "heading": "Find your custom fit",
+            "text": "<p>Begin by taking a measurement of your nipple size (diameter) and comparing it to <a href=\"https://www.ameda.com/cdn/shop/files/Ameda_Flange_Size_Guide.pdf?v=8656739755394763194\" target=\"_blank\" title=\"https://www.ameda.com/cdn/shop/files/Ameda_Flange_Size_Guide.pdf?v=8656739755394763194\">Ameda’s flange sizing chart</a>. Remember, your nipple should move freely within the flange tunnel without rubbing against the sides. If your breast tissue or areola is pulled in, or your nipples are stretched uncomfortably, the flange may be too large.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -288,7 +276,6 @@
       },
       "block_order": [
         "column_46tWVB",
-        "column_FzyVi9",
         "column_YwUGqD"
       ],
       "custom_css": [
@@ -302,7 +289,7 @@
         "button_label": "",
         "button_link": "",
         "layout": "carousel",
-        "column_size": "medium",
+        "column_size": "large",
         "column_align": "left",
         "media_align": "text-left",
         "image_ratio": "1",
@@ -314,7 +301,7 @@
     "custom_liquid_t9aVJm": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"background:#fff;padding:1.5rem 2rem;border-radius:1rem;border:2px dashed #ef8d96;\"><h2 class=\"mb-0\">Material Matters: Hard Plastic vs. Soft Silicone\n</h2>\n<p class=\"mb-0\">Most Ameda flanges use a combination of hard plastic outer shells with silicone insert options to ensure a vacuum seal without sacrificing comfort. The silicone piece is specifically designed to offer a gentle surface against your skin, reducing friction and the likelihood of nipple pain. Meanwhile, the hard plastic structure provides durability and helps the flange maintain its shape.\n</p></div>",
+        "custom_liquid": "<div style=\"background:#fff;padding:1.5rem 2rem;border-radius:1rem;border:2px dashed #ef8d96; text-align:center;\"><h2 class=\"mb-2\">Material Matters: Hard Plastic vs. Soft Silicone\n</h2>\n<p class=\"font-bold h6\">Ameda offers a variety of flange options, each designed with the perfect balance of comfort and durability.</p><p class=\"mb-0\">Ameda's hard plastic flanges provide durable, consistent suction and a secure vacuum seal. The soft silicone inserts fit inside Ameda’s 24mm flanges to provide a customized and comfortable fit.\n</p></div>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
@@ -333,7 +320,7 @@
             "image": "shopify://shop_images/clean.jpg",
             "media_scale": 100,
             "heading": "Clean Before First Use",
-            "text": "<p>Always wash your breast pump flanges, inserts, and other parts before the first use and after every pumping session. Many moms find it convenient that Ameda flanges and inserts can be placed on the top rack of a dishwasher (check product guidelines) or simply hand-washed. Follow Ameda’s cleaning steps to keep your equipment safe for your baby.</p>",
+            "text": "<p>Before using any of Ameda’s breast pump flanges, always wash them with warm, soapy water and rinse them well in clean water. You can either hand-wash or place them on the top rack of a dishwasher (following product guidelines). Boiling parts for is also an option for sterilization before first use.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -342,10 +329,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/re-check-fit.jpg",
+            "image": "shopify://shop_images/position.jpg",
             "media_scale": 100,
             "heading": "Check the Fit Regularly",
-            "text": "<p>Your breast size can change throughout your breastfeeding journey — typically as your milk supply adjusts post-pregnancy. Reassess your flange size if pumping becomes uncomfortable or if milk flow decreases. Making sure the flange fits directly around your areola without tugging too much breast tissue can protect against damage.</p>",
+            "text": "<p>Your breast flange size can change as your body adjusts post-pregnancy or if your milk supply fluctuates. Regularly reassess your flange fit to ensure comfort and efficient milk flow. Check that the flange fits directly around your nipple, with minimal areola drawn into the tunnel. If discomfort occurs, or suction weakens, a size adjustment may be needed.<br/></p>",
             "button_label": "",
             "button_link": ""
           }
@@ -354,10 +341,10 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/options.jpg",
+            "image": "shopify://shop_images/cycle.jpg",
             "media_scale": 100,
             "heading": "Try Different Options",
-            "text": "<p>If one flange type isn’t working for you, don’t hesitate to try Ameda’s CustomFit Flanges™ or the Comfort Fit Angled Flange. This can ensure the proper size and maintain optimal pumping efficiency as you progress in your breastfeeding journey.</p>",
+            "text": "<p>If your current flange option isn’t providing the comfort or performance you need, consider exploring other styles or fits. Each option offers unique benefits, from flexible sizing to a more secure seal, helping you achieve better milk flow and comfort throughout your pumping journey.</p>",
             "button_label": "",
             "button_link": ""
           }
