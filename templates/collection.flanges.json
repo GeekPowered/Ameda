@@ -142,7 +142,8 @@
         "text_rDzkTQ"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem;}"
+        ".media {border-radius: 1rem;}",
+        ".section--padded {padding-bottom: 0; margin-bottom: 0;}"
       ],
       "settings": {
         "image": "shopify://shop_images/D._21mm_inserts_without_size.png",
@@ -184,7 +185,7 @@
       ],
       "custom_css": [
         ".media {border-radius: 1rem;}",
-        ".section--padded {padding-top: 0 !important;}"
+        ".section--padded {padding-top: 0 !important; padding-bottom: 0 !important; margin-bottom: 0 !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/custom_fit_flanges_2xl-2xxl-500x500.jpg",
@@ -192,6 +193,45 @@
         "video_description": "",
         "video_autoplay": false,
         "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "1",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_QzL8BA": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_PdCE3X": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ameda GLO Flange",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_V4fgDC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed exclusively for use with the Ameda GLO Wearable Breast Pump, the GLO Flange provides a soft, secure fit to support better comfort and milk flow. Made from flexible, BPA-free materials, these replacement flanges are available in multiple sizes to help users achieve an effective seal and avoid discomfort during pumping. A well-fitting flange is key to optimal suction and milk expression, and the GLO Flange gives pumping parents the option to personalize their setup for a more efficient and comfortable experience. Whether you’re replacing a worn part or adjusting your fit, the GLO Flange helps keep your pumping routine smooth and reliable.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PdCE3X",
+        "text_V4fgDC"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/glo-flange_e8855c1f-9576-4730-afca-88f844e00a47.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
         "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
@@ -651,6 +691,7 @@
     "wave_section_VnEjMB",
     "media_with_text_pqTeFf",
     "media_with_text_CKF9Tw",
+    "media_with_text_QzL8BA",
     "wave_section_xjhnQC",
     "video_URYbRD",
     "multi_column_eEEejx",
