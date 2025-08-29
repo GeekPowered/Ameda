@@ -61,15 +61,6 @@ if (!customElements.get('variant-picker')) {
           product: this.data.product
         }
       }));
-
-      // Read the flag from Liquid to skip initial swap
-      this._skipInitialMedia = this.dataset.skipInitialMedia === 'true';
-      this._allowMediaSwap = !this._skipInitialMedia;
-
-      // When the shopper changes an option, allow swaps from now on
-      this.form?.addEventListener('change', () => {
-        this._allowMediaSwap = true;
-      });
     }
 
     /**
