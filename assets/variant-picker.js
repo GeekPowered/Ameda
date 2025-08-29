@@ -20,6 +20,8 @@ if (!customElements.get('variant-picker')) {
       this.optionSelectors = this.querySelectorAll('.option-selector');
       this.data = this.getProductData();
 
+      this.variant = null;
+
       this.updateAvailability();
       this.addEventListener('change', this.handleVariantChange.bind(this));
     }
@@ -43,16 +45,20 @@ if (!customElements.get('variant-picker')) {
         this.updateVariantInput();
       }
 
-      this.updateAddToCartButton();
-      this.updateAvailability();
-      this.updatePrice();
-      this.updateWeight();
-      this.updateBarcode();
-      this.updateBackorderText();
-      this.updatePickupAvailability();
-      this.updateSku();
-      VariantPicker.updateLabelText(evt);
+      // Only update if a variant is selected
+      if (this.variant) {
+        this.updateAddToCartButton();
+        this.updateAvailability();
+        this.updatePrice();
+        this.updateWeight();
+        this.updateBarcode();
+        this.updateBackorderText();
+        this.updatePickupAvailability();
+        this.updateSku();
+        VariantPicker.updateLabelText(evt);
+      }
 
+      // Dispatch event after user selects variant
       this.dispatchEvent(new CustomEvent('on:variant:change', {
         bubbles: true,
         detail: {
