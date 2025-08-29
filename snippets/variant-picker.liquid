@@ -32,7 +32,7 @@
   endif
 -%}
 
-<variant-picker class="no-js-hidden" data-url="{{ product.url }}" data-update-url="{{ update_url }}" data-show-availability="{{ block.settings.enable_dynamic_availability }}">
+<variant-picker class="no-js-hidden" data-url="{{ product.url }}" data-update-url="{{ update_url }}" data-show-availability="{{ block.settings.enable_dynamic_availability }}" data-skip-initial-media="true">
   {%- for option in product.options_with_values -%}
     {%- capture option_id %}{{ section.id }}-{{ option.name | handle }}{% endcapture -%}
     {%- liquid

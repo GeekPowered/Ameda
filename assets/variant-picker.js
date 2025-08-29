@@ -61,6 +61,15 @@ if (!customElements.get('variant-picker')) {
           product: this.data.product
         }
       }));
+
+      // Read the flag from Liquid to skip initial swap
+      this._skipInitialMedia = this.dataset.skipInitialMedia === 'true';
+      this._allowMediaSwap = !this._skipInitialMedia;
+
+      // When the shopper changes an option, allow swaps from now on
+      this.form?.addEventListener('change', () => {
+        this._allowMediaSwap = true;
+      });
     }
 
     /**
@@ -194,8 +203,26 @@ if (!customElements.get('variant-picker')) {
     /**
      * Updates the product media.
      */
+    // updateMedia() {
+    //   if (!this.variant.featured_media) return;
+
+    //   if (this.section.matches('quick-add-drawer')) {
+    //     this.section.updateMedia(this.variant.featured_media.id);
+    //   } else {
+    //     this.mediaGallery = this.mediaGallery || this.section.querySelector('media-gallery');
+    //     if (!this.mediaGallery) return;
+
+    //     const variantMedia = this.mediaGallery.querySelector(
+    //       `[data-media-id="${this.variant.featured_media.id}"]`
+    //     );
+    //     this.mediaGallery.setActiveMedia(variantMedia, true, true);
+    //   }
+    // }
     updateMedia() {
-      if (!this.variant.featured_media) return;
+      // Keep the first gallery image on initial load
+      if (!this._allowMediaSwap) return;
+
+      if (!this.variant?.featured_media) return;
 
       if (this.section.matches('quick-add-drawer')) {
         this.section.updateMedia(this.variant.featured_media.id);
@@ -206,7 +233,9 @@ if (!customElements.get('variant-picker')) {
         const variantMedia = this.mediaGallery.querySelector(
           `[data-media-id="${this.variant.featured_media.id}"]`
         );
-        this.mediaGallery.setActiveMedia(variantMedia, true, true);
+        if (variantMedia) {
+          this.mediaGallery.setActiveMedia(variantMedia, true, true, true);
+        }
       }
     }
 
