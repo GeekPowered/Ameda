@@ -38,7 +38,8 @@
   assign breakpoint_lg = 1024
 
   assign product_form_id = 'product-form-' | append: section.id
-  assign current_variant = product.selected_or_first_available_variant
+  assign current_variant_backup = product.selected_or_first_available_variant
+  assign current_variant = null
   assign first_3d_model = product.media | where: 'media_type', 'model' | first
   assign media_ratio = section.settings.media_ratio
   assign thumb_ratio = section.settings.thumb_ratio
