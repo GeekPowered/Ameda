@@ -50,8 +50,16 @@ if (!customElements.get('media-gallery')) {
         this.resizeInitHandler = this.resizeInitHandler || this.initGallery.bind(this);
         window.addEventListener('on:debounced-resize', this.resizeInitHandler);
         this.setVisibleItems();
-        this.previousMediaItem = this.querySelector('.media-viewer__item.is-current-variant');
-        setTimeout(() => this.customSetActiveMedia(this.previousMediaItem, this.stackedScroll === 'always'), 200);
+        // OLD
+        // this.previousMediaItem = this.querySelector('.media-viewer__item.is-current-variant');
+        // setTimeout(() => this.customSetActiveMedia(this.previousMediaItem, this.stackedScroll === 'always'), 200);
+
+        // NEW
+        setTimeout(() => {
+          this.setVisibleItems();
+          const firstItem = this.visibleItems?.[0];
+          if (firstItem) this.customSetActiveMedia(firstItem, this.stackedScroll === 'always');
+        }, 200);
       } else {
         this.initGallery();
       }
@@ -254,8 +262,13 @@ if (!customElements.get('media-gallery')) {
         });
       }
 
-      const currentItem = this.querySelector('.media-viewer__item.is-current-variant');
-      this.customSetActiveMedia(currentItem, true);
+      // OLD
+      // const currentItem = this.querySelector('.media-viewer__item.is-current-variant');
+      // this.customSetActiveMedia(currentItem, true);
+
+      // NEW
+      const firstItem = this.visibleItems?.[0];
+      if (firstItem) this.customSetActiveMedia(firstItem, true);
     }
 
     addListeners() {
