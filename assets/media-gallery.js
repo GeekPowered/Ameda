@@ -207,10 +207,10 @@ if (!customElements.get('media-gallery')) {
           });
           this.setVisibleItems();
 
-          // // If current item is not in this group, set it as the active item
-          // if (!currentItemIsVisible) {
-          //   this.customSetActiveMedia(selectedGroup.items[0].main, true);
-          // }
+          // If current item is not in this group, set it as the active item
+          if (!currentItemIsVisible) {
+            this.customSetActiveMedia(selectedGroup.items[0].main, true);
+          }
 
           // Handle single images on stacked view
           if (selectedGroup.items.length === 1) {
