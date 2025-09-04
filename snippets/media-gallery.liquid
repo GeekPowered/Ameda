@@ -86,7 +86,7 @@
             assign lazy_load = false
           endif
         -%}
-        <li class="media-viewer__item{% if media.id == featured_media.id or select_first_image %} is-current-variant{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} media-viewer__item--variant{% endif %}{% if section.settings.media_layout == 'stacked' and media.id == featured_media.id %}{% if underline_active and section.settings.enable_media_grouping == false %} is-active{% endif %}{% endif %}{% if media_count == 1 %} media-viewer__item--single{% endif %}" data-media-id="{{ media.id }}" data-media-type="{{ media.media_type }}">
+        <li class="media-viewer__item{% if media.id == featured_media.id %} is-current-variant{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} media-viewer__item--variant{% endif %}{% if section.settings.media_layout == 'stacked' and media.id == featured_media.id %}{% if underline_active and section.settings.enable_media_grouping == false %} is-active{% endif %}{% endif %}{% if media_count == 1 %} media-viewer__item--single{% endif %}" data-media-id="{{ media.id }}" data-media-type="{{ media.media_type }}">
           {% render 'product-media',
             media: media,
             media_ratio: media_ratio,
