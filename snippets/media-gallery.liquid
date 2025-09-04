@@ -71,7 +71,7 @@
     {%- for media in product.media -%}
         {%- liquid
           assign lazy_load = true
-          assign select_first_image = false
+          assign select_first_image = true
 
           if featured_media == null and forloop.index == 1
             assign lazy_load = false
