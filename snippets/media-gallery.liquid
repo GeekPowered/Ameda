@@ -24,6 +24,7 @@
 <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
+  assign current_variant = product.selected_or_first_available_variant
   assign current_variant = product.media[0]
   assign featured_media = current_variant.featured_media
   assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
