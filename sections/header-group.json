@@ -106,27 +106,12 @@
         "baby_patterns": true,
         "prevent_animation": false
       }
-    },
-    "custom_liquid_txECnG": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "name": "Custom HTML/Liquid",
-      "settings": {
-        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\">Happy World Breastfeeding Week! Celebrate with <strong>20% OFF</strong> August 1st-7th.</p>",
-        "section_height": "xsmall",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "3",
-        "baby_patterns": true,
-        "prevent_animation": false
-      }
     }
   },
   "order": [
     "promo-strip",
     "header",
     "announcement",
-    "custom_liquid_WyprGH",
-    "custom_liquid_txECnG"
+    "custom_liquid_WyprGH"
   ]
 }
