@@ -63,11 +63,9 @@
   <link rel="canonical" href="{{ canonical_url | split: '?' | first }}">
 {%- endif -%}
 
-{% if template == 'page' %}
-  {% if page.metafields.page.noindex.value == true %}
-    <meta name="robots" content="noindex, nofollow" />
-  {% endif %}
-{% endif %}
+{%- if template.name == 'page' and page.metafields.page.noindex.value -%}
+  <meta name="robots" content="noindex, nofollow">
+{%- endif -%}
 
 {% if template == 'collection' %}
   {% if collection.metafields.seo.hidden %}
