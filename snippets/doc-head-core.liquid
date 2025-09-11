@@ -64,7 +64,7 @@
 {%- endif -%}
 
 {% if template == 'page' %}
-  {% if page.metafields.page.noindex == true %}
+  {% if page.metafields.page.noindex.value == true %}
     <meta name="robots" content="noindex, nofollow" />
   {% endif %}
 {% endif %}
