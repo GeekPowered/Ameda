@@ -17,6 +17,41 @@
         "heading_align": "text-start"
       }
     },
+    "image_banner_kdEXkQ": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_6mGxah": {
+          "type": "heading",
+          "settings": {
+            "heading": "Free Flange Size Guide",
+            "heading_size": "h0",
+            "heading_h1": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_6mGxah"
+      ],
+      "settings": {
+        "image_desktop": "shopify://shop_images/xCMrVZRk.jpg",
+        "url": "",
+        "breadcrumbs": true,
+        "breadcrumb_align": "justify-center",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
     "custom_liquid_Ai6zxD": {
       "type": "custom-liquid",
       "settings": {
@@ -32,6 +67,7 @@
   },
   "order": [
     "main",
+    "image_banner_kdEXkQ",
     "custom_liquid_Ai6zxD"
   ]
 }
