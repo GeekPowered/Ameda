@@ -33,7 +33,7 @@
         "heading_6mGxah"
       ],
       "settings": {
-        "image_desktop": "shopify://shop_images/flange-pattern.jpg",
+        "image_desktop": "shopify://shop_images/flange-pattern_39855377-b1fb-4468-acc8-ec1a6ae0ee39.jpg",
         "url": "",
         "breadcrumbs": true,
         "breadcrumb_align": "justify-center",
@@ -48,7 +48,7 @@
         "full_width": true,
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
-        "tint_opacity": 40,
+        "tint_opacity": 30,
         "prevent_animation": false
       }
     },
