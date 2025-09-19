@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -5,8 +14,7 @@
       "blocks": {
         "product-labels": {
           "type": "product-labels",
-          "settings": {
-          }
+          "settings": {}
         },
         "title": {
           "type": "title",
@@ -76,7 +84,7 @@
           "disabled": true,
           "settings": {
             "icon": "price_tag",
-            "title": "<p><strong>Selling fast!<br\/><\/strong>Grab yours while you can<\/p>",
+            "title": "<p><strong>Selling fast!<br/></strong>Grab yours while you can</p>",
             "close": "once",
             "show_over_media": true,
             "visibility_duration": 5,
@@ -90,7 +98,6 @@
             "heading": "Package Includes",
             "icon": "none",
             "text": "{{ product.metafields.product.package_includes | metafield_tag }}",
-            "custom_liquid": "",
             "page": "",
             "open": false
           }
@@ -101,7 +108,6 @@
             "heading": "Key Features",
             "icon": "none",
             "text": "{{ product.metafields.product.key_features | metafield_tag }}",
-            "custom_liquid": "Replace",
             "page": "",
             "open": false
           }
@@ -112,7 +118,6 @@
             "heading": "Technical Features",
             "icon": "none",
             "text": "{{ product.metafields.product.technical_features | metafield_tag }}",
-            "custom_liquid": "Replace",
             "page": "",
             "open": false
           }
@@ -123,7 +128,6 @@
             "heading": "FAQs",
             "icon": "none",
             "text": "{{ product.metafields.product.faq | metafield_tag }}",
-            "custom_liquid": "Replace",
             "page": "",
             "open": false
           }
@@ -134,15 +138,13 @@
             "heading": "Resources",
             "icon": "none",
             "text": "{{ product.metafields.product.resources | metafield_tag }}",
-            "custom_liquid": "Replace",
             "page": "",
             "open": false
           }
         },
         "share": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -206,7 +208,19 @@
       "block_order": [
         "custom_liquid_x4cYxH"
       ],
+      "settings": {}
+    },
+    "custom_liquid_H896ki": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
       "settings": {
+        "custom_liquid": "{% render 'product-banner' %}",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
       }
     },
     "compatible_products_783dhj": {
@@ -223,7 +237,7 @@
     "custom_liquid_DnXFqh": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h3 class=\"text-center\">Product Reviews<\/h3>\n<div style=\"padding: 2rem; background: #fff; border-radius: 1rem;\">\n{% render 'okendo-reviews-widget' %}\n<\/div>",
+        "custom_liquid": "<h3 class=\"text-center\">Product Reviews</h3>\n<div style=\"padding: 2rem; background: #fff; border-radius: 1rem;\">\n{% render 'okendo-reviews-widget' %}\n</div>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",
@@ -265,6 +279,7 @@
   "order": [
     "main",
     "details",
+    "custom_liquid_H896ki",
     "compatible_products_783dhj",
     "custom_liquid_DnXFqh",
     "recommendations",
