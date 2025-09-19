@@ -212,9 +212,7 @@
     },
     "custom_liquid_H896ki": {
       "type": "custom-liquid",
-      "custom_css": [
-        "img {width: 100%;}"
-      ],
+      "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
         "custom_liquid": "{% render 'product-banner' %}",
