@@ -1,0 +1,12 @@
+{% if product.custom.product_banner %}
+  <section style="margin: calc(var(--section-gap) * var(--fluid-1-5)) auto;">
+    {% render 'image',
+      image: product.custom.product_banner,
+      src_width: src_width,
+      srcset_2x: true,
+      lazy_load: false,
+      class: img_class,
+      disable_focal_point: true
+    %}
+  </section>
+{% endif %}
