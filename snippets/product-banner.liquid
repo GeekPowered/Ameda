@@ -1,7 +1,7 @@
-{% if product.custom.product_banner %}
+{% if product.custom.product_banner.value %}
   <section style="margin: calc(var(--section-gap) * var(--fluid-1-5)) auto;">
     {% render 'image',
-      image: product.custom.product_banner,
+      image: product.custom.product_banner.value,
       src_width: 1200,
       srcset_2x: true,
       lazy_load: false
