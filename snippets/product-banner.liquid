@@ -1,9 +1,17 @@
 {% if product.metafields.custom.product_banner.value %}
-  <section style="margin: calc(var(--section-gap) * var(--fluid-1-5)) auto;">
+  <style>
+    .product-banner-img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+  </style>
+    <section style="margin: calc(var(--section-gap) * var(--fluid-1-5)) auto;">
     {% render 'image',
       image: product.metafields.custom.product_banner.value,
+      src_width: 1500,
       srcset_2x: true,
-      lazy_load: false
+      lazy_load: false,
+      class: 'product-banner-img'
     %}
   </section>
 {% endif %}
