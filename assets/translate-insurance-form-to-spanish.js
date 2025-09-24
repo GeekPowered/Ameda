@@ -19,7 +19,11 @@
   // Ensure the DOM is fully loaded before running the script
   document.addEventListener("DOMContentLoaded", function() {
     sendTranslateMessage();
+    const iframe = document.getElementById('frame_S6JyNwYUyN12xu6yEI_d8Q');
+    const originalHeight = iframe.style.height; // Store original height
+    iframe.style.height = 'auto';
     setTimeout(() => {
+        iframe.style.height = originalHeight
         sendTranslateMessage();
     }, 1000);
   });
