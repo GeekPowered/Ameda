@@ -19,5 +19,7 @@
   // Ensure the DOM is fully loaded before running the script
   document.addEventListener("DOMContentLoaded", function() {
     sendTranslateMessage();
-    console.log('heard')
+    setTimeout(() => {
+        sendTranslateMessage();
+    }, 2000);
   });
