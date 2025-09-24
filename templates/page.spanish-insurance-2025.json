@@ -40,10 +40,10 @@
           "settings": {
             "button_1_label": "Comparar opciones",
             "button_1_link": "#options",
-            "button_1_style": "btn btn--secondary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary"
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "English",
+            "button_2_link": "shopify://pages/insurance",
+            "button_2_style": "btn btn--secondary"
           }
         }
       },
