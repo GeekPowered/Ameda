@@ -19,7 +19,10 @@
   // Ensure the DOM is fully loaded before running the script
   document.addEventListener("DOMContentLoaded", function() {
     sendTranslateMessage();
+    const originalHeight = parent.style.height; // Store original height
+    parent.style.height = 'auto';
     setTimeout(() => {
+        parent.style.height = originalHeight;
         sendTranslateMessage();
     }, 1000);
   });
