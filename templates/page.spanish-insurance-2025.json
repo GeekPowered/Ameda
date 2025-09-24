@@ -1,0 +1,764 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-start"
+      }
+    },
+    "329e5978-de6e-4b2d-9322-d45d0e244c4b": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get A Free Breast Pump Through Insurance",
+            "heading_size": "h1",
+            "heading_h1": true
+          }
+        },
+        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Receive A Free or Discounted Ameda Breast Pump Through Your Insurance Provider</p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-button-1": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Compare Options",
+            "button_1_link": "#options",
+            "button_1_style": "btn btn--secondary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-heading-1",
+        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1",
+        "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-button-1"
+      ],
+      "settings": {
+        "image_desktop": "shopify://shop_images/inscopy.jpg",
+        "url": "",
+        "breadcrumbs": true,
+        "breadcrumb_align": "justify-center",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 250,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "prevent_animation": false
+      }
+    },
+    "custom_liquid_tRmdKP": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.section:has(h2 + a) .multi-column::before {\n  content: '1';\n  position: absolute;\n  top: -1rem;\n  left: -1rem;\n  z-index: 1;\n  padding: 0.5rem;\n  width: 3rem;\n  height: 3rem;\n  text-align: center;\n  background: rgba(var(--link-color));\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #fff;\n  font-weight: bold;\n  border-radius: 50%;\n}\n\n.section:has(h2 + a) .multi-column:nth-child(2)::before {\n  content: '2';\n}\n\n.section:has(h2 + a) .multi-column:nth-child(3)::before {\n  content: '3';\n}\n</style>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "70b6796a-4aa7-4791-9ea6-72e90afed64c": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Submit The Contact Form Below",
+            "text": "<p>The first step in obtaining your insurance-covered breast pump is to fill out our contact form. This form is simple and quick to complete and helps us gather your basic information to start the process. By providing your contact details, we can understand your needs and determine how best to support you. Once submitted, our team will begin reviewing your details to help expedite your order.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Supply Additional Patient Insurance Information",
+            "text": "<p>Once we receive your contact form, we may need some additional patient information to proceed with your insurance verification. Our team will handle all insurance-related paperwork once you provide everything we need. This may include your insurance policy details, prescription information if required, and any other relevant personal details. Rest assured, our process is secure, and we take privacy seriously. Providing accurate and complete information ensures that we can verify your eligibility smoothly and without delays.<br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Our Providers Will Contact You!",
+            "text": "<p>After receiving and reviewing all necessary information, one of our dedicated providers will reach out to you directly. During this contact, we’ll discuss your options, confirm your insurance eligibility, and help you choose the best breast pump for your needs. Our providers will be there to answer any questions and guide you through the final steps to ensure you get your breast pump quickly and without hassle. We are committed to making this process as seamless as possible, so you can focus on what matters most—caring for your baby.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-1",
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-2",
+        "template--21965917618491__70b6796a-4aa7-4791-9ea6-72e90afed64c-column-3"
+      ],
+      "custom_css": [
+        ".multi-column .card {border-radius: 1rem; max-width: none;}",
+        ".multi-column {width: 100% !important; position: relative;}",
+        "h2 + a {display: none;}"
+      ],
+      "settings": {
+        "title": "See If You Qualify For A Free Breast Pump Through Insurance Immediately",
+        "use_h4_class": true,
+        "heading_align": "text-start",
+        "button_label": "link",
+        "button_link": "#",
+        "layout": "grid",
+        "column_size": "large",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "custom_liquid_pPMXFH": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".section--padded-default {padding-top: 0;}"
+      ],
+      "settings": {
+        "custom_liquid": "<h3 class=\"text-center mb-10\">The journey to an insurance-covered pump starts here.</h3>\n<div style=\"width: 80rem;\n    max-width: 100%;\n    margin: auto;\n    background: #fff;\n    padding: 4rem;\n    border-radius: 1.75rem;\n    border: 1px solid rgba(0,0,0,.2)\">\n<div style=\"margin:0 auto -5rem auto;\" class=\"pxFormGenerator\" id=\"S6JyNwYUyN12xu6yEI_d8Q\"></div>\n<p style=\"\n    margin-bottom: 0;\n    opacity: .75;\n    font-style: italic;\n\">*By clicking \"Complete Step 1\", you are agreeing that Ameda can contact you with updates about qualifying for your free pump.</p>\n</div>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "611733a1-7260-4231-a0db-d622d34c311f": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#ffffff",
+        "wavesvgcolor": "#fbf6ef",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "custom_liquid_U8iDYi": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".section--padded-default {background: #fff;}",
+        ".section--padded-default {padding-bottom: 0; margin-bottom: 0;}"
+      ],
+      "settings": {
+        "custom_liquid": "<h2>Why Choose Ameda For Your Breast Pump?</h2>\n<p style=\"margin: 0;\">Ameda was founded by the inventor of the hospital-grade breast pump over 80 years ago, and we’re still dedicated to supporting breastfeeding mothers with high-quality, innovative products. Here are a few reasons why Ameda is the best choice for your breast pump needs:</p>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "multi_column_BfTGiE": {
+      "type": "multi-column",
+      "blocks": {
+        "column_93aeMy": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/icons-healthcare.png",
+            "media_scale": 100,
+            "heading": "Hospital-Grade Quality",
+            "text": "<p>Ameda pumps are inspired by our award-winning hospital-grade technology, ensuring that you get the best quality for efficient and comfortable milk expression.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_hbBNTe": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/icons-settings.png",
+            "media_scale": 100,
+            "heading": "Customizable Comfort",
+            "text": "<p>Our pumps feature adjustable suction levels and multiple pumping modes, allowing you to tailor your experience to meet your comfort needs.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_hbE97U": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/icons-doctor.png",
+            "media_scale": 100,
+            "heading": "Trusted by Healthcare Professionals",
+            "text": "<p>Ameda breast pumps are trusted by healthcare providers worldwide, with a reputation for reliability and efficiency. Over 1,000 hospitals use Ameda pumps to support breastfeeding moms.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_qkDmjb": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/icons-support.png",
+            "media_scale": 100,
+            "heading": "Comprehensive Support",
+            "text": "<p>In addition to our high-quality breast pumps, Ameda offers award-winning customer support through our ParentCare program, providing you with guidance and assistance whenever you need it.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_XTKzc8": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/icons-shield.png",
+            "media_scale": 100,
+            "heading": "Commitment to Safety",
+            "text": "<p>All Ameda products are designed with safety in mind, using BPA-free materials to ensure that your milk remains pure and healthy for your baby.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_xjpcMg": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/icons-approved.png",
+            "media_scale": 100,
+            "heading": "Insurance Compatibility",
+            "text": "<p>We work with a wide range of providers to help moms obtain their breast pumps at little to no cost, making it easier for you to access the tools you need for successful breastfeeding.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_93aeMy",
+        "column_hbBNTe",
+        "column_hbE97U",
+        "column_qkDmjb",
+        "column_XTKzc8",
+        "column_xjpcMg"
+      ],
+      "custom_css": [
+        "[id*=\"multi_column\"] {margin: 0rem; padding-top: 2rem; padding-bottom: calc(var(--section-gap) * var(--fluid-1-5)); background: #fff;}",
+        ".card {flex-direction: row; gap: 2rem;}",
+        ".card__media {padding-top: 0 !important; height: 5rem; width: 5rem; flex-shrink: 0; margin-top: 0.5em;}"
+      ],
+      "settings": {
+        "title": "",
+        "use_h4_class": true,
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-left",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "media_with_text_rpzKKz": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_La6Lww": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choosing the Right Breast Pump",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_pt9KDz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Selecting the right breast pump can feel overwhelming, especially for first-time mothers. It’s important to consider factors such as how often you’ll be using the pump, its portability, and your comfort. Hands-free breast pumps are a fantastic option for busy moms who need to pump while multitasking or have limited time. These pumps allow you to express milk without using your hands, providing complete mobility. Additionally, many insurance plans cover the cost of breast pumps, making it easier to obtain a high-quality device with minimal out-of-pocket expenses. Explore the kinds of breast pumps offered by Ameda below. </p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_La6Lww",
+        "text_pt9KDz"
+      ],
+      "custom_css": [
+        "img {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/glo-gallery-20.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 40,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "3",
+        "only_content_color_scheme": false,
+        "baby_patterns": true
+      }
+    },
+    "custom_liquid_DNwP9D": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".section--padded-default {background: #fff;}",
+        "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<h2>Types of Breast Pumps Available Through Insurance Coverage</h2>\n<p style=\"margin: 0;\">Navigating the types of breast pumps that are available through insurance can feel overwhelming, but Ameda makes it easy by offering a variety of options that cater to different needs and lifestyles. Here’s a breakdown of the different types of breast pumps available through insurance from Ameda:\n</p>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "media_with_text_ArF8qh": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_RX86CE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hands-Free Breast Pumps Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_LttrHb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hands-free pumps offer the ultimate convenience for moms who are always on the move. These pumps are designed to be worn inside your bra, allowing you to go about your day with complete mobility. Ameda’s hands-free breast pumps offer powerful suction, comfort, and discretion, making them ideal for multitasking moms.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_eH7yER": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Hands Free Breast Pumps",
+            "button_link": "shopify://collections/breast-pumps",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RX86CE",
+        "text_LttrHb",
+        "button_eH7yER"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff; padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/simone-barros-sibarros_-CD188523-3C-278201_4401bfeb-c630-4641-a44d-20d7f6093495.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_QWrBef": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_7whQpe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wearable Breast Pumps Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_w9idEN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wearable breast pumps provide freedom and flexibility to pump whenever and wherever you need to. With lightweight and compact designs, wearable pumps fit seamlessly under clothing, allowing you to express milk discreetly. Ameda's wearable breast pumps are covered by many insurance plans, ensuring moms can enjoy hands-free pumping with hospital-grade efficiency.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_J4ahQN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Wearable Breast Pumps",
+            "button_link": "shopify://collections/breast-pumps",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7whQpe",
+        "text_w9idEN",
+        "button_J4ahQN"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff; padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/glo-gallery-18.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_aYH4hm": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_Bc9tUi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Double Breast Pumps Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_t7AQac": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Double breast pumps allow moms to pump from both breasts simultaneously, significantly reducing pumping time. These pumps are perfect for moms who need to express milk quickly and efficiently. Ameda’s double breast pumps provide customizable suction levels and pumping modes, making it easy to find the perfect settings for comfort and effective milk expression.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_jDyj9n": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Double Breast Pumps",
+            "button_link": "shopify://products/ameda-mya-joy-plus-rechargeable-quiet-and-portable-double-breast-pump",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Bc9tUi",
+        "text_t7AQac",
+        "button_jDyj9n"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff; padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/MJP_8.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_HV7TEm": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_9BQfaj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Manual Breast Pumps Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_pWnxkT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Manual breast pumps are a great option for moms who need a simple, portable solution for occasional pumping. These pumps are lightweight, easy to use, and do not require electricity, making them convenient for travel or when on the go. Ameda’s manual pumps are designed for comfort and ease, providing an affordable and effective way to express milk through insurance.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_r79CXP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Manual Breast Pumps",
+            "button_link": "shopify://products/ameda-portable-manual-breast-pump",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9BQfaj",
+        "text_pWnxkT",
+        "button_r79CXP"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff;}",
+        "img {border-radius: 1rem; object-fit: contain !important;}",
+        ".media-with-text {max-width: 100% !important;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "cover",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_yV9YpV": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_gHNfEw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Other Breastfeeding Essentials Through Insurance",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_QcALed": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In addition to breast pumps, many breastfeeding essentials are also available through insurance to help support your breastfeeding journey. These essentials include accessories like extra breast milk storage bottles, breast pump flanges in different sizes, silicone inserts, valves, and cleaning supplies. Having the right accessories can make a significant difference in the comfort and efficiency of your pumping sessions. Ameda works with insurance companies to help you get these essential items covered, making sure you have everything you need for a successful breastfeeding experience.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_RdwcmT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Breastfeeding Accessories",
+            "button_link": "shopify://collections/accessories",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gHNfEw",
+        "text_QcALed",
+        "button_RdwcmT"
+      ],
+      "custom_css": [
+        ".section--padded {background: #fff; padding-top: 0;}",
+        "img {border-radius: 1rem;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Other_Breastfeeding_Essentials_Through_Insurance.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "cover",
+        "media_width": 47,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "wave_section_ntFccT": {
+      "type": "wave-section",
+      "settings": {
+        "wavebgcolor": "#fbf6ef",
+        "wavesvgcolor": "#ffffff",
+        "wavetype": "bottom",
+        "waveposition": ""
+      }
+    },
+    "1ff950cf-34b7-4e69-b8e2-53d2fadb9987": {
+      "type": "help-links",
+      "blocks": {
+        "e37a882a-f355-4d2b-a7c2-b81f8dc58268": {
+          "type": "link",
+          "settings": {
+            "title": "Milk 101",
+            "icon": "",
+            "content": "The easy guide to getting a free breast pump through insurance.",
+            "custom_liquid": "",
+            "link_text": "Learn More",
+            "url": "https://www.ameda.com/blogs/posts",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        },
+        "49895fd3-000e-42d9-b379-e4cc79369f0f": {
+          "type": "link",
+          "settings": {
+            "title": "FAQS",
+            "icon": "",
+            "content": "Got questions? We got answers! Check some of our most common questions and answers.",
+            "custom_liquid": "",
+            "link_text": "Learn More",
+            "url": "https://www.ameda.com/pages/faq",
+            "link_text_2": "",
+            "url_2": "",
+            "hash": ""
+          }
+        }
+      },
+      "block_order": [
+        "e37a882a-f355-4d2b-a7c2-b81f8dc58268",
+        "49895fd3-000e-42d9-b379-e4cc79369f0f"
+      ],
+      "settings": {
+        "section_heading": "We're Here For You",
+        "heading_align": "text-center",
+        "section_content": ""
+      }
+    },
+    "4e60b54a-b466-4694-9f93-58db2af8ec6d": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "settings": {
+        "custom_liquid": "<h2 id=\"options\" style=\"margin-bottom: 3rem;\">Compare Our Top Rated Breast Pumps</h2>\n{% render 'glo-joy-joyplus-chart' %}\n<p style=\"margin-top:2rem;\">*Only use the diaphragms and valves that come inside the Joy pumps with Joy models.</p>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "featured_collection_jTcgdm": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Experience powerful pumping on the go with the Ameda family of breast pumps.",
+        "heading_align": "text-start",
+        "show_view_all": false,
+        "collection": "insurance-pumps",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "large",
+        "products_to_show": 8,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "faq_JPpizx": {
+      "type": "faq",
+      "blocks": {
+        "question_q4wELk": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How Are Breast Pumps & The Affordable Care Act (ACA) Related?",
+            "text": "<p>The Affordable Care Act (ACA), established in March 2010, mandates that most health insurance plans cover breastfeeding support, counseling, and supplies. This includes access to a free insurance-covered breast pump, lactation consultant services, and pregnancy counseling. The ACA aims to support breastfeeding mothers by ensuring they have the necessary tools and resources throughout their breastfeeding journey. By working with your insurance company, you can take advantage of these benefits and receive the support you need to breastfeed your baby successfully.</p>"
+          }
+        },
+        "question_Lz7pyL": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Are Breast Pumps Covered By Most Insurance Plans?",
+            "text": "<p>Yes, under the Affordable Care Act (ACA), most health insurance plans are required to cover the cost of a breast pump for new mothers. Coverage may vary depending on your specific insurance provider and plan, but Ameda works with a wide range of insurance companies to help you get a breast pump at little to no cost. We recommend contacting your insurance company to understand your specific benefits and eligibility.</p>"
+          }
+        },
+        "question_J7hNmL": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Do I Have to Pay Any Out-of-Pocket Expenses for My Breast Pump?",
+            "text": "<p>In most cases, insurance will cover the full cost of your breast pump. However, depending on your specific insurance plan, there may be some out-of-pocket expenses such as co-pays or deductibles. Our team will work with you and your insurance company to minimize any costs and help ensure you receive your breast pump with as little expense as possible. We recommend checking with your insurance company for more details on potential costs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_q4wELk",
+        "question_Lz7pyL",
+        "question_J7hNmL"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "use_h4_class": true,
+        "heading_align": "text-start",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "global_footer_cta_tD8LVQ": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "329e5978-de6e-4b2d-9322-d45d0e244c4b",
+    "custom_liquid_tRmdKP",
+    "70b6796a-4aa7-4791-9ea6-72e90afed64c",
+    "custom_liquid_pPMXFH",
+    "611733a1-7260-4231-a0db-d622d34c311f",
+    "custom_liquid_U8iDYi",
+    "multi_column_BfTGiE",
+    "media_with_text_rpzKKz",
+    "custom_liquid_DNwP9D",
+    "media_with_text_ArF8qh",
+    "media_with_text_QWrBef",
+    "media_with_text_aYH4hm",
+    "media_with_text_HV7TEm",
+    "media_with_text_yV9YpV",
+    "wave_section_ntFccT",
+    "1ff950cf-34b7-4e69-b8e2-53d2fadb9987",
+    "4e60b54a-b466-4694-9f93-58db2af8ec6d",
+    "featured_collection_jTcgdm",
+    "faq_JPpizx",
+    "global_footer_cta_tD8LVQ"
+  ]
+}
