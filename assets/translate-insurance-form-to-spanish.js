@@ -21,5 +21,5 @@
     sendTranslateMessage();
     setTimeout(() => {
         sendTranslateMessage();
-    }, 2000);
+    }, 1000);
   });
