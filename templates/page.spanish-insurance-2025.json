@@ -597,7 +597,7 @@
         "video_autoplay": false,
         "layout": "left",
         "image_fit": "cover",
-        "media_width": 47,
+        "media_width": 50,
         "media_scale": 100,
         "text_align": "text-start",
         "color_scheme": "none",
@@ -620,11 +620,11 @@
         "e37a882a-f355-4d2b-a7c2-b81f8dc58268": {
           "type": "link",
           "settings": {
-            "title": "Milk 101",
+            "title": "Leche 101",
             "icon": "",
-            "content": "The easy guide to getting a free breast pump through insurance.",
+            "content": "La guía sencilla para conseguir un extractor de leche gratis a través de un seguro.",
             "custom_liquid": "",
-            "link_text": "Learn More",
+            "link_text": "Más información",
             "url": "https://www.ameda.com/blogs/posts",
             "link_text_2": "",
             "url_2": "",
@@ -634,12 +634,12 @@
         "49895fd3-000e-42d9-b379-e4cc79369f0f": {
           "type": "link",
           "settings": {
-            "title": "FAQS",
+            "title": "Preguntas frecuentes",
             "icon": "",
-            "content": "Got questions? We got answers! Check some of our most common questions and answers.",
+            "content": "¿Tienes preguntas? ¡Tenemos respuestas! Consulte algunas de nuestras preguntas y respuestas más comunes.",
             "custom_liquid": "",
-            "link_text": "Learn More",
-            "url": "https://www.ameda.com/pages/faq",
+            "link_text": "Más información",
+            "url": "#spanish-faq",
             "link_text_2": "",
             "url_2": "",
             "hash": ""
@@ -651,7 +651,7 @@
         "49895fd3-000e-42d9-b379-e4cc79369f0f"
       ],
       "settings": {
-        "section_heading": "We're Here For You",
+        "section_heading": "Nosotras estamos aqui para ti",
         "heading_align": "text-center",
         "section_content": ""
       }
@@ -694,7 +694,7 @@
       "type": "custom-liquid",
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"¿Cómo están relacionadas las extractoras de leche con la Ley de Cuidado de Salud Asequible (Affordable Care Act, ACA)?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"La ACA, establecida en marzo de 2010, exige que la mayoría de los planes de seguro de salud cubran el soporte para la lactancia, consejería y suministros. Esto incluye acceso a un extractor de leche cubierta por el seguro, servicios de consultoría de lactancia y consejería durante el embarazo.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"¿La mayoría de los planes de seguro cubren los extractores de leche?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Sí, bajo la ACA la mayoría de los planes están obligados a cubrir el costo de un extractor para madres nuevas. La cobertura puede variar dependiendo de tu aseguradora y plan específico, pero Ameda trabaja con muchas compañías de seguros para ayudarte a conseguir un extractor con poco o ningún costo. Te recomendamos contactar a tu aseguradora para entender tus beneficios específicos y elegibilidad.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"¿Tengo que pagar algún costo de mi bolsillo por el extractor de leche?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"En la mayoría de los casos, el seguro cubrirá el costo completo del extractor. Sin embargo, según tu plan podría haber costos de bolsillo, como copagos (co-pays) o deducibles. Nuestro equipo trabajará contigo y tu aseguradora para minimizar cualquier costo y asegurarse de que obtengas tu extractor con el menor gasto posible. Te sugerimos verificar con tu seguro los posibles costos.\"\n      }\n    }\n  ]\n}\n</script>",
+        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"¿Cómo están relacionadas las extractoras de leche con la Ley de Cuidado de Salud Asequible (Affordable Care Act, ACA)?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"La ACA, establecida en marzo de 2010, exige que la mayoría de los planes de seguro de salud cubran el soporte para la lactancia, consejería y suministros. Esto incluye acceso a un extractor de leche cubierta por el seguro, servicios de consultoría de lactancia y consejería durante el embarazo.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"¿La mayoría de los planes de seguro cubren los extractores de leche?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Sí, bajo la ACA la mayoría de los planes están obligados a cubrir el costo de un extractor para madres nuevas. La cobertura puede variar dependiendo de tu aseguradora y plan específico, pero Ameda trabaja con muchas compañías de seguros para ayudarte a conseguir un extractor con poco o ningún costo. Te recomendamos contactar a tu aseguradora para entender tus beneficios específicos y elegibilidad.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"¿Tengo que pagar algún costo de mi bolsillo por el extractor de leche?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"En la mayoría de los casos, el seguro cubrirá el costo completo del extractor. Sin embargo, según tu plan podría haber costos de bolsillo, como copagos (co-pays) o deducibles. Nuestro equipo trabajará contigo y tu aseguradora para minimizar cualquier costo y asegurarse de que obtengas tu extractor con el menor gasto posible. Te sugerimos verificar con tu seguro los posibles costos.\"\n      }\n    }\n  ]\n}\n</script>\n<div id=\"spanish-faq\"></div>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
