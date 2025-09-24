@@ -39,7 +39,7 @@
           "type": "button",
           "settings": {
             "button_1_label": "Comparar opciones",
-            "button_1_link": "#options",
+            "button_1_link": "#es-options",
             "button_1_style": "btn btn--primary",
             "button_2_label": "English",
             "button_2_link": "shopify://pages/insurance",
@@ -660,7 +660,7 @@
       "type": "custom-liquid",
       "custom_css": [],
       "settings": {
-        "custom_liquid": "<h2 id=\"options\" style=\"margin-bottom: 3rem;\">Compare nuestros extractores de leche mejor valorados</h2>\n{% render 'glo-joy-joyplus-chart', show_spanish: true %}\n<p style=\"margin-top:2rem;\">*Utilice únicamente los diafragmas y válvulas que vienen dentro de las bombas Joy con los modelos Joy.</p>",
+        "custom_liquid": "<h2 id=\"es-options\" style=\"margin-bottom: 3rem;\">Compare nuestros extractores de leche mejor valorados</h2>\n{% render 'glo-joy-joyplus-chart', show_spanish: true %}\n<p style=\"margin-top:2rem;\">*Utilice únicamente los diafragmas y válvulas que vienen dentro de las bombas Joy con los modelos Joy.</p>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
