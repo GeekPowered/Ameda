@@ -18,10 +18,10 @@ function sendTranslateMessage() {
 
     // Ensure the DOM is fully loaded before running the script
     document.addEventListener("DOMContentLoaded", function() {
-    const iframe = document.getElementById('frame_S6JyNwYUyN12xu6yEI_d8Q');
+        const iframe = document.getElementById('frame_S6JyNwYUyN12xu6yEI_d8Q');
 
-    // Check if iframe is loaded, and then send the message
-    iframe.onload = function() {
+        // Check if iframe is loaded, and then send the message
+        iframe.onload = function() {
         sendTranslateMessage();
     };
 });
