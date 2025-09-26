@@ -298,7 +298,7 @@
         "heading_La6Lww": {
           "type": "heading",
           "settings": {
-            "heading": "Cómo elegir la extractor de leche adecuada",
+            "heading": "Cómo elegir el extractor de leche adecuado",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -340,7 +340,7 @@
         "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
       ],
       "settings": {
-        "custom_liquid": "<h2>Tipos de Extractores de Leche Disponibles a Través del Seguro Médico</h2>\n<p style=\"margin: 0;\">Navegar entre los tipos de extractores de leche disponibles a través del seguro puede parecer abrumador, pero Ameda lo hace fácil al ofrecer una variedad de opciones que se adaptan a diferentes necesidades y estilos de vida. Aquí tienes un desglose de los diferentes tipos de extractoresde leche disponibles a través del seguro de Ameda:\n</p>",
+        "custom_liquid": "<h2>Tipos de extractores de leche disponibles a través del seguro médico</h2>\n<p style=\"margin: 0;\">Navegar entre los tipos de extractores de leche disponibles a través del seguro puede parecer abrumador, pero Ameda lo hace fácil al ofrecer una variedad de opciones que se adaptan a diferentes necesidades y estilos de vida. Aquí tienes un desglose de los diferentes tipos de extractoresde leche disponibles a través del seguro de Ameda:\n</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -355,7 +355,7 @@
         "heading_RX86CE": {
           "type": "heading",
           "settings": {
-            "heading": "Extractores de Leche Manos Libres a Través del Seguro",
+            "heading": "Extractores de leche manos libres a través del seguro",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -406,7 +406,7 @@
         "heading_7whQpe": {
           "type": "heading",
           "settings": {
-            "heading": "Extractores de Leche Portátiles (Wearables) a Través del Seguro",
+            "heading": "Extractores de leche portátiles (wearables) a través del seguro",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -457,7 +457,7 @@
         "heading_Bc9tUi": {
           "type": "heading",
           "settings": {
-            "heading": "Extractores de Leche Dobles a Través del Seguro",
+            "heading": "Extractores de leche dobles a través del seguro",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -508,7 +508,7 @@
         "heading_9BQfaj": {
           "type": "heading",
           "settings": {
-            "heading": "Extractores de Leche Manuales a Través del Seguro",
+            "heading": "Extractores de leche manuales a través del seguro",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -536,8 +536,7 @@
       ],
       "custom_css": [
         ".section--padded {background: #fff;}",
-        "img {border-radius: 1rem; object-fit: contain !important;}",
-        ".media-with-text {max-width: 100% !important;}"
+        "img {border-radius: 1rem; object-fit: contain !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/big-ameda-manual-pump-1000x1000.jpg",
@@ -560,7 +559,7 @@
         "heading_gHNfEw": {
           "type": "heading",
           "settings": {
-            "heading": "Otros Esenciales para la Lactancia a Través del Seguro",
+            "heading": "Otros esenciales para la lactancia a través del seguro",
             "heading_size": "h3",
             "heading_h1": false
           }
