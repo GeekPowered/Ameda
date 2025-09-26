@@ -340,7 +340,7 @@
         "@media (min-width: 1132px) {.section--padded-default .container {margin: auto; max-width: 1088px; width: 100%; padding: 0; }}"
       ],
       "settings": {
-        "custom_liquid": "<h2>Tipos de extractores de leche disponibles a través del seguro médico</h2>\n<p style=\"margin: 0;\">Navegar entre los tipos de extractores de leche disponibles a través del seguro puede parecer abrumador, pero Ameda lo hace fácil al ofrecer una variedad de opciones que se adaptan a diferentes necesidades y estilos de vida. Aquí tienes un desglose de los diferentes tipos de extractoresde leche disponibles a través del seguro de Ameda:\n</p>",
+        "custom_liquid": "<h2>Tipos de extractores de leche disponibles a través del seguro médico</h2>\n<p style=\"margin: 0;\">Navegar entre los tipos de extractores de leche disponibles a través del seguro puede parecer abrumador, pero Ameda lo hace fácil al ofrecer una variedad de opciones que se adaptan a diferentes necesidades y estilos de vida. Aquí tienes un desglose de los diferentes tipos de extractores de leche disponibles a través del seguro de Ameda:\n</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
