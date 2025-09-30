@@ -25,4 +25,7 @@
     setTimeout(() => {
         sendTranslateMessage();
     }, 3000);
+    setTimeout(() => {
+        sendTranslateMessage();
+    }, 5000);
   });
