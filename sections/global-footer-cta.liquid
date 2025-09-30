@@ -10,9 +10,21 @@
         <div style="padding-top:4rem;"></div>
         <div class="flex justify-center text-center">
             <div class="text-center" data-cc-animate="">
-                <h2 class="section__block section__block--heading h2 mb-0">{{ settings.footer_cta_title }}</h2>
+                <h2 class="section__block section__block--heading h2 mb-0">
+                  {% if settings.footer_cta_title_override %}
+                    {{ settings.footer_cta_title_override }}
+                  {% else %}
+                    {{ settings.footer_cta_title }}
+                  {% endif %}
+                </h2>
                 <div class="section__block reading-width rte  mx-auto">
-                    <p>{{ settings.footer_cta_subtitle }}</p>
+                    <p>
+                      {% if settings.footer_cta_subtitle_override %}
+                        {{ settings.footer_cta_subtitle_override }}
+                      {% else %}
+                        {{ settings.footer_cta_subtitle }}
+                      {% endif %}
+                    </p>
                 </div>
                 <div style="margin:0 auto;" class="pxFormGenerator" id="{{ settings.footer_cta_hulkapp_form_id }}">
                     <iframe src="https://formbuilder.hulkapps.com/corepage/customform?id={{ settings.footer_cta_hulkapp_form_id }}&amp;referrer_url=https://ameda-dev.myshopify.com/" title="Form Builder - {{ settings.footer_cta_hulkapp_form_id }}" id="frame_{{ settings.footer_cta_hulkapp_form_id }}" frameborder="0" width="100%" style="height: 115px;"></iframe>
@@ -37,6 +49,16 @@
       "id": "svg_fill_override",
       "label": "Wave Color",
       "default": "#fbf6ef"
+    },
+    {
+      "type": "text",
+      "id": "footer_cta_title_override",
+      "label": "Footer CTA Title Override"
+    },
+    {
+      "type": "text",
+      "id": "footer_cta_subtitle_override",
+      "label": "Footer CTA Subtitle Override"
     }
   ]
 }
