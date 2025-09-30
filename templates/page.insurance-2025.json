@@ -40,10 +40,10 @@
           "settings": {
             "button_1_label": "Compare Options",
             "button_1_link": "#options",
-            "button_1_style": "btn btn--secondary",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary"
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Español",
+            "button_2_link": "shopify://pages/insurance-spanish",
+            "button_2_style": "btn btn--secondary"
           }
         }
       },
@@ -734,7 +734,9 @@
     "global_footer_cta_tD8LVQ": {
       "type": "global-footer-cta",
       "settings": {
-        "svg_fill_override": "#fbf6ef"
+        "svg_fill_override": "#fbf6ef",
+        "footer_cta_title_override": "",
+        "footer_cta_subtitle_override": ""
       }
     }
   },
