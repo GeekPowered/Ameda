@@ -11,16 +11,16 @@
         <div class="flex justify-center text-center">
             <div class="text-center" data-cc-animate="">
                 <h2 class="section__block section__block--heading h2 mb-0">
-                  {% if settings.footer_cta_title_override != blank %}
-                    {{ settings.footer_cta_title_override }}
+                  {% if section.settings.footer_cta_title_override != blank %}
+                    {{ section.settings.footer_cta_title_override }}
                   {% else %}
                     {{ settings.footer_cta_title }}
                   {% endif %}
                 </h2>
                 <div class="section__block reading-width rte  mx-auto">
                     <p>
-                      {% if settings.footer_cta_subtitle_override != blank %}
-                        {{ settings.footer_cta_subtitle_override }}
+                      {% if section.settings.footer_cta_subtitle_override != blank %}
+                        {{ section.settings.footer_cta_subtitle_override }}
                       {% else %}
                         {{ settings.footer_cta_subtitle }}
                       {% endif %}
