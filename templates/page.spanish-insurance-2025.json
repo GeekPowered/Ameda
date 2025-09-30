@@ -746,7 +746,9 @@
     "global_footer_cta_tD8LVQ": {
       "type": "global-footer-cta",
       "settings": {
-        "svg_fill_override": "#fbf6ef"
+        "svg_fill_override": "#fbf6ef",
+        "footer_cta_title_override": "Suscríbete al boletín de Ameda",
+        "footer_cta_subtitle_override": "¡Manténgase actualizado con lanzamientos de productos, eventos y guías útiles!"
       }
     }
   },
