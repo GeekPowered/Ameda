@@ -145,13 +145,48 @@
             "bg_color": "#070707",
             "bg_grad": ""
           }
+        },
+        "slide_dFgWAy": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify://shop_images/ameda-25-off-accessories-banner_a3624035-217e-4ff5-9809-a7ab8c7961f1.jpg",
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
         }
       },
       "block_order": [
         "slide_Mg6HN9",
         "slide_MnGNrB",
         "slide_rdbmPX",
-        "slide_VC4kwd"
+        "slide_VC4kwd",
+        "slide_dFgWAy"
       ],
       "custom_css": [
         "slide-show {aspect-ratio: 16 / 9; border-radius: 2rem; overflow: hidden;}",
@@ -841,7 +876,9 @@
     "global_footer_cta_zaGD9D": {
       "type": "global-footer-cta",
       "settings": {
-        "svg_fill_override": "#fbf6ef"
+        "svg_fill_override": "#fbf6ef",
+        "footer_cta_title_override": "",
+        "footer_cta_subtitle_override": ""
       }
     }
   },
