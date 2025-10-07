@@ -163,7 +163,16 @@
              {{ block.shopify_attributes }}>
 
           {%- if block.settings.url != blank -%}
-            <a href="{{ block.settings.url }}" class="image-banner__image media media--has-overlay block absolute top-0 left-0 w-full h-full has-motion">
+            {% assign first_two = block.settings.url | slice: 0, 2 %}
+            <a href="
+              {% if block.settings.url contains '://' %}
+                {{ block.settings.url }}
+              {% elsif first_two == '//' %}
+                {{ block.settings.url }}
+              {% else %}
+                {{ shop.url }}{{ block.settings.url }}
+              {% endif %}
+            " class="image-banner__image media media--has-overlay block absolute top-0 left-0 w-full h-full has-motion">
           {%- else -%}
             <div class="image-banner__image media media--has-overlay absolute top-0 left-0 w-full h-full has-motion">
           {%- endif -%}
