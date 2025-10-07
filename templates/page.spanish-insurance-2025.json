@@ -635,7 +635,7 @@
           "settings": {
             "title": "Preguntas frecuentes",
             "icon": "",
-            "content": "¿Tienes preguntas? ¡Tenemos respuestas! Consulte algunas de nuestras preguntas y respuestas más comunes.",
+            "content": "¿Tienes preguntas? ¡Tenemos respuestas! Consulta algunas de nuestras preguntas y respuestas más comunes.",
             "custom_liquid": "",
             "link_text": "Más información",
             "url": "#spanish-faq",
