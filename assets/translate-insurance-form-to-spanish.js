@@ -8,7 +8,7 @@
           "First Name": "Nombre",
           "Last Name": "Apellido",
           "Email": "Correo Electrónico",
-          "Baby’s Birth/Due Date": "Fecha de Nacimiento/Fecha de Vencimiento del Bebé"
+          "Baby’s Birth/Due Date": "Fecha de Nacimiento del Bebé"
         }
       };
       // Sending the message to the iframe
