@@ -48,6 +48,7 @@
         },
         "slide_dFgWAy": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/ameda-25-off-accessories-banner_a3624035-217e-4ff5-9809-a7ab8c7961f1.jpg",
             "url": "https://www.amazon.com/stores/page/886BCDC3-0034-409C-B91C-33DD433666B0?maas=maas_adg_7B2BFDDFB3ACAA3F0ADF353D0ABF1627_afap_abs&ref_=aa_maas&tag=maas&ingress=0&visitId=3dac3379-3e8e-49c4-959d-df218952e77c",
