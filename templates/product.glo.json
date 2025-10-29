@@ -1097,7 +1097,6 @@
         "heading_wwMiPm",
         "text_Fg9qEW"
       ],
-      "disabled": true,
       "custom_css": [
         ".media {border-radius: 1rem;}"
       ],
@@ -1149,7 +1148,6 @@
         "text_RwCYUq",
         "button_DYBCjG"
       ],
-      "disabled": true,
       "custom_css": [
         ".media {border-radius: 1rem;}",
         ".section--padded {padding-top: 0;}"
