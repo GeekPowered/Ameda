@@ -1149,7 +1149,7 @@
         "button_DYBCjG"
       ],
       "custom_css": [
-        ".media {border-radius: 1rem;}",
+        ".media {border-radius: 1rem; transform: rotateY(180deg);}",
         ".section--padded {padding-top: 0;}"
       ],
       "name": "Media with text",
