@@ -82,7 +82,6 @@
         },
         "slide_MnGNrB": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/hero-banner.jpg",
             "url": "shopify://collections/all",
