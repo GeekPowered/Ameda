@@ -82,6 +82,7 @@
         },
         "slide_MnGNrB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/ameda-glo-banner-2.jpg",
             "url": "shopify://products/glo-wearable-breast-pump",
