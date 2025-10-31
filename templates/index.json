@@ -84,8 +84,8 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/ameda-glo-banner-2.jpg",
-            "url": "shopify://products/glo-wearable-breast-pump",
+            "image_desktop": "shopify://shop_images/hero-banner.jpg",
+            "url": "shopify://collections/all",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
