@@ -209,34 +209,46 @@ FREE GLO BAG WITH GLO IN CART
 
 <!-- Add ComfortGels to cart over $50 total -->
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const FREE_GIFT_VARIANT_ID = 47621969707323; // Gift variant
+document.addEventListener('DOMContentLoaded', async function () {
+  const FREE_GIFT_VARIANT_ID = 47621969707323; // gift variant
   const CART_THRESHOLD = 50; // dollars
 
-  fetch('/cart.js')
-    .then(r => r.json())
-    .then(cart => {
-      const subtotal = (cart.items_subtotal_price ?? cart.total_price) / 100;
-      const hasGift = cart.items.some(item => item.properties && item.properties._gift === '1');
+  try {
+    const cart = await fetch('/cart.js', { cache: 'no-store', credentials: 'same-origin' })
+      .then(r => r.json());
 
-      if (subtotal >= CART_THRESHOLD && !hasGift) {
-        return fetch('/cart/add.js', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            id: FREE_GIFT_VARIANT_ID,
-            quantity: 1,
-            properties: { _gift: '1' } // no extra fields
-          })
-        });
+    // Use subtotal (cents). Fallback to total if needed.
+    const subtotal = (cart.items_subtotal_price ?? cart.total_price) / 100;
+
+    // Only treat it as present if the line item has the _gift flag.
+    const hasGift = cart.items.some(i => i.properties && i.properties._gift === '1');
+
+    if (subtotal >= CART_THRESHOLD && !hasGift) {
+      const addRes = await fetch('/cart/add.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify({
+          id: FREE_GIFT_VARIANT_ID,
+          quantity: 1,
+          properties: { _gift: '1' }
+        })
+      });
+
+      if (!addRes.ok) {
+        // Log Shopify error payload for debugging (inventory, channel, etc.)
+        const err = await addRes.json().catch(() => ({}));
+        console.error('Failed to add free gift', err);
+        return;
       }
-    })
-    .then(res => {
-      if (!res) return;
-      if (res.ok) location.reload();
-      else res.json().then(err => console.error('Failed to add free gift:', err));
-    })
-    .catch(err => console.error('Gift script error:', err));
+
+      // Confirm server has updated cart, then reload UI
+      await fetch('/cart.js', { cache: 'no-store', credentials: 'same-origin' });
+      location.reload();
+    }
+  } catch (e) {
+    console.error('Gift script error:', e);
+  }
 });
 </script>
 
