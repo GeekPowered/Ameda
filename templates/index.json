@@ -280,7 +280,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/glo-gallery-15.jpg",
+            "image": "shopify://shop_images/support-for-moms-hero.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
@@ -304,7 +304,7 @@
           "type": "column",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/mother-holding-pump.jpg",
+            "image": "shopify://shop_images/insurance-hero.jpg",
             "media_scale": 100,
             "heading": "",
             "text": "",
