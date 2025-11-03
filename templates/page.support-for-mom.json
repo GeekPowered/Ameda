@@ -36,7 +36,7 @@
         ".img-fit {object-position: 50% 40% !important;}"
       ],
       "settings": {
-        "image_desktop": "shopify://shop_images/support-for-moms-hero.jpg",
+        "image_desktop": "shopify://shop_images/inscopy.jpg",
         "url": "",
         "breadcrumbs": true,
         "breadcrumb_align": "justify-center",
@@ -51,7 +51,7 @@
         "full_width": true,
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
-        "tint_opacity": 50,
+        "tint_opacity": 0,
         "prevent_animation": false
       }
     },
