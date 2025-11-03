@@ -213,41 +213,38 @@ document.addEventListener('DOMContentLoaded', async function () {
   const FREE_GIFT_VARIANT_ID = 47621969707323; // gift variant
   const CART_THRESHOLD = 50; // dollars
 
-  try {
-    const cart = await fetch('/cart.js', { cache: 'no-store', credentials: 'same-origin' })
-      .then(r => r.json());
+  const cart = await fetch('/cart.js', { cache: 'no-store', credentials: 'same-origin' }).then(r=>r.json());
+  const items = cart.items || [];
 
-    // Use subtotal (cents). Fallback to total if needed.
-    const subtotal = (cart.items_subtotal_price ?? cart.total_price) / 100;
+  const hasGift = items.some(i => i.properties && i.properties._gift === '1');
 
-    // Only treat it as present if the line item has the _gift flag.
-    const hasGift = cart.items.some(i => i.properties && i.properties._gift === '1');
+  // subtotal excluding any gift lines and excluding the gift variant itself
+  const nonGiftSubtotalCents = items
+    .filter(i => !(i.properties && i.properties._gift === '1') && i.variant_id !== FREE_GIFT_VARIANT_ID)
+    .reduce((sum, i) => sum + i.final_line_price, 0);
 
-    if (subtotal >= CART_THRESHOLD && !hasGift) {
-      const addRes = await fetch('/cart/add.js', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'same-origin',
-        body: JSON.stringify({
-          id: FREE_GIFT_VARIANT_ID,
-          quantity: 1,
-          properties: { _gift: '1' }
-        })
-      });
+  const nonGiftSubtotal = nonGiftSubtotalCents / 100;
 
-      if (!addRes.ok) {
-        // Log Shopify error payload for debugging (inventory, channel, etc.)
-        const err = await addRes.json().catch(() => ({}));
-        console.error('Failed to add free gift', err);
-        return;
-      }
-
-      // Confirm server has updated cart, then reload UI
-      await fetch('/cart.js', { cache: 'no-store', credentials: 'same-origin' });
-      location.reload();
-    }
-  } catch (e) {
-    console.error('Gift script error:', e);
+  if (nonGiftSubtotal >= CART_THRESHOLD && !hasGift) {
+    await fetch('/cart/add.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
+      body: JSON.stringify({ id: FREE_GIFT_VARIANT_ID, quantity: 1, properties: { _gift: '1' } })
+    });
+    location.reload();
+  } else if (nonGiftSubtotal < CART_THRESHOLD && hasGift) {
+    // If your theme or staff manually added the gift, remove it to prevent charging for it
+    // (Optional safeguard)
+    // await fetch('/cart/change.js', { method:'POST', headers:{'Content-Type':'application/json'},
+    //   body: JSON.stringify({ id: items.find(i => i.properties && i.properties._gift === '1').key, quantity: 0 }) });
+  } else if (nonGiftSubtotal < CART_THRESHOLD && !hasGift) {
+    // Show "Spend $X more" message
+    const remaining = (CART_THRESHOLD - nonGiftSubtotal).toFixed(2);
+    const msg = document.createElement('div');
+    msg.textContent = `Add $${remaining} more to get your free gift.`;
+    msg.style.cssText = 'background:#FFF2E8;color:#B54708;padding:12px;margin:16px 0;text-align:center;font-weight:600;border:1px solid #F4D0B8;border-radius:6px;';
+    document.body.prepend(msg);
   }
 });
 </script>
