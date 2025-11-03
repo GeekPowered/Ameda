@@ -209,45 +209,36 @@ FREE GLO BAG WITH GLO IN CART
 
 <!-- Add ComfortGels to cart over $50 total -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const FREE_GIFT_VARIANT_ID = 47621969707323; // ComfortGels ID
-    const CART_THRESHOLD = 50; // $50 threshold
+document.addEventListener('DOMContentLoaded', function () {
+  const FREE_GIFT_VARIANT_ID = 47621969707323; // or a dedicated $0 variant
+  const CART_THRESHOLD = 50;
 
-    fetch('/cart.js')
-      .then(response => response.json())
-      .then(cart => {
-        const alreadyHasFreeGift = cart.items.some(item => item.variant_id === FREE_GIFT_VARIANT_ID);
+  fetch('/cart.js')
+    .then(r => r.json())
+    .then(cart => {
+      const cartTotal = cart.total_price / 100;
 
-        // Shopify's cart.total_price is in cents, so divide by 100
-        const cartTotal = cart.total_price / 100;
+      // Only treat it as already present if it has our free-gift flag
+      const hasFreeGift = cart.items.some(
+        item => item.properties && item.properties._free_gift === 'true'
+      );
 
-        if (cartTotal >= CART_THRESHOLD && !alreadyHasFreeGift) {
-          fetch('/cart/add.js', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              id: FREE_GIFT_VARIANT_ID,
-              quantity: 1
-            })
+      if (cartTotal >= CART_THRESHOLD && !hasFreeGift) {
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            id: FREE_GIFT_VARIANT_ID,
+            quantity: 1,
+            properties: { _free_gift: 'true' } // flag to distinguish from paid line
           })
-          .then(response => {
-            if (response.ok) {
-              const msg = document.createElement('div');
-              msg.textContent = '🎁 Free gift added for spending $50+!';
-              msg.style.cssText = 'background: #E6FFE6; color: #207E20; padding: 12px; margin: 16px 0; text-align: center; font-weight: bold; border: 2px solid #207E20; border-radius: 4px;';
-              document.body.prepend(msg);
-              location.reload();
-            } else {
-              console.error('Failed to add free gift:', response);
-            }
-          })
-          .catch(error => {
-            console.error('Error adding free gift:', error);
-          });
-        }
-      })
-      .catch(error => console.error('Error fetching cart:', error));
-  });
+        }).then(res => {
+          if (res.ok) location.reload();
+          else console.error('Failed to add free gift', res);
+        });
+      }
+    });
+});
 </script>
 
 
