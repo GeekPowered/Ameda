@@ -210,61 +210,42 @@ FREE GLO BAG WITH GLO IN CART
 <!-- Add ComfortGels to cart over $50 total -->
 <script>
 document.addEventListener('DOMContentLoaded', async function () {
-  const FREE_GIFT_VARIANT_ID = 47621969707323; // your gift variant
+  const FREE_GIFT_VARIANT_ID = 47621969707323; // gift variant
   const CART_THRESHOLD = 50; // dollars
 
-  const getCart = () => fetch('/cart.js', { cache: 'no-store', credentials: 'same-origin' }).then(r => r.json());
-
   try {
-    const cart = await getCart();
-    const items = cart.items || [];
+    const cart = await fetch('/cart.js', { cache: 'no-store', credentials: 'same-origin' })
+      .then(r => r.json());
 
-    // Gift line (flagged only)
-    const giftLine = items.find(i => i.properties && i.properties._gift === '1');
+    // Use subtotal (cents). Fallback to total if needed.
+    const subtotal = (cart.items_subtotal_price ?? cart.total_price) / 100;
 
-    // Subtotal counting only *paid* items (no gift-flagged lines, and not the gift variant if it isn't flagged)
-    const nonGiftSubtotalCents = items
-      .filter(i => !(i.properties && i.properties._gift === '1') && i.variant_id !== FREE_GIFT_VARIANT_ID)
-      .reduce((sum, i) => sum + i.final_line_price, 0);
+    // Only treat it as present if the line item has the _gift flag.
+    const hasGift = cart.items.some(i => i.properties && i.properties._gift === '1');
 
-    const eligible = (nonGiftSubtotalCents / 100) >= CART_THRESHOLD;
+    if (subtotal >= CART_THRESHOLD && !hasGift) {
+      const addRes = await fetch('/cart/add.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify({
+          id: FREE_GIFT_VARIANT_ID,
+          quantity: 1,
+          properties: { _gift: '1' }
+        })
+      });
 
-    // Desired gift quantity based on eligibility
-    const desiredGiftQty = eligible ? 1 : 0;
-    const currentGiftQty = giftLine ? giftLine.quantity : 0;
-
-    if (currentGiftQty !== desiredGiftQty) {
-      if (giftLine) {
-        // Update or remove existing gift line by key
-        await fetch('/cart/change.js', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          credentials: 'same-origin',
-          body: JSON.stringify({ id: giftLine.key, quantity: desiredGiftQty })
-        });
-      } else if (desiredGiftQty > 0) {
-        // Add the gift as a flagged line so it stays separate from paid lines
-        const addRes = await fetch('/cart/add.js', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          credentials: 'same-origin',
-          body: JSON.stringify({
-            id: FREE_GIFT_VARIANT_ID,
-            quantity: 1,
-            properties: { _gift: '1' }
-          })
-        });
-        // If add fails (inventory/channel), log payload to debug
-        if (!addRes.ok) {
-          const err = await addRes.json().catch(() => ({}));
-          console.error('Failed to add free gift:', err);
-        }
+      if (!addRes.ok) {
+        // Log Shopify error payload for debugging (inventory, channel, etc.)
+        const err = await addRes.json().catch(() => ({}));
+        console.error('Failed to add free gift', err);
+        return;
       }
-      // Re-fetch to ensure UI reflects server state, then reload
-      await getCart();
+
+      // Confirm server has updated cart, then reload UI
+      await fetch('/cart.js', { cache: 'no-store', credentials: 'same-origin' });
       location.reload();
     }
-
   } catch (e) {
     console.error('Gift script error:', e);
   }
