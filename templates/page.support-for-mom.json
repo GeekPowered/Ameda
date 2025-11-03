@@ -17,10 +17,10 @@
         "heading_align": "text-start"
       }
     },
-    "image_banner_rF8Kp7": {
+    "image_banner_CWxmdV": {
       "type": "image-banner",
       "blocks": {
-        "heading_PmHgAe": {
+        "heading_HY8ez6": {
           "type": "heading",
           "settings": {
             "heading": "Support For Mom",
@@ -30,10 +30,7 @@
         }
       },
       "block_order": [
-        "heading_PmHgAe"
-      ],
-      "custom_css": [
-        ".img-fit {object-position: 50% 30% !important;}"
+        "heading_HY8ez6"
       ],
       "settings": {
         "image_desktop": "shopify://shop_images/support-for-moms-hero.jpg",
@@ -345,7 +342,7 @@
   },
   "order": [
     "main",
-    "image_banner_rF8Kp7",
+    "image_banner_CWxmdV",
     "rich_text_bYfRq8",
     "wave_section_QpchNa",
     "education_pdfs_prdQ9c",
