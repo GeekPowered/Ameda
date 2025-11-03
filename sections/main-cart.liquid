@@ -210,36 +210,43 @@ FREE GLO BAG WITH GLO IN CART
 <!-- Add ComfortGels to cart over $50 total -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const FREE_GIFT_VARIANT_ID = 47621969707323; // or a dedicated $0 variant
-  const CART_THRESHOLD = 50;
+  const FREE_GIFT_VARIANT_ID = 47621969707323; // Gift variant (or dedicated free gift product)
+  const CART_THRESHOLD = 50; // dollars
 
   fetch('/cart.js')
     .then(r => r.json())
     .then(cart => {
-      const cartTotal = cart.total_price / 100;
+      // Use subtotal in cents (no shipping/tax). Divide by 100 to compare dollars.
+      const subtotal = (cart.items_subtotal_price ?? cart.total_price) / 100;
 
-      // Only treat it as already present if it has our free-gift flag
-      const hasFreeGift = cart.items.some(
-        item => item.properties && item.properties._free_gift === 'true'
-      );
+      // Only consider items that were previously added as gifts
+      const hasGift = cart.items.some(item => item.properties && item.properties._gift === '1');
 
-      if (cartTotal >= CART_THRESHOLD && !hasFreeGift) {
-        fetch('/cart/add.js', {
+      if (subtotal >= CART_THRESHOLD && !hasGift) {
+        return fetch('/cart/add.js', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             id: FREE_GIFT_VARIANT_ID,
             quantity: 1,
-            properties: { _free_gift: 'true' } // flag to distinguish from paid line
+            properties: { _gift: '1', Reason: 'Free gift for $50+ order' }
           })
-        }).then(res => {
-          if (res.ok) location.reload();
-          else console.error('Failed to add free gift', res);
         });
       }
-    });
+    })
+    .then(res => {
+      if (!res) return; // no add needed
+      if (res.ok) {
+        location.reload();
+      } else {
+        // Surface the actual Shopify error so you can see issues like inventory/unpublished variant
+        res.json().then(err => console.error('Failed to add free gift:', err));
+      }
+    })
+    .catch(err => console.error('Gift script error:', err));
 });
 </script>
+
 
 
 {% schema %}
