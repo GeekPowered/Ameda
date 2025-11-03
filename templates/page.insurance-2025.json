@@ -52,8 +52,9 @@
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-text-1",
         "template--21965917618491__329e5978-de6e-4b2d-9322-d45d0e244c4b-button-1"
       ],
+      "custom_css": [],
       "settings": {
-        "image_desktop": "shopify://shop_images/inscopy.jpg",
+        "image_desktop": "shopify://shop_images/insurance-hero.jpg",
         "url": "",
         "breadcrumbs": true,
         "breadcrumb_align": "justify-center",
@@ -68,7 +69,7 @@
         "full_width": true,
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
-        "tint_opacity": 0,
+        "tint_opacity": 50,
         "prevent_animation": false
       }
     },

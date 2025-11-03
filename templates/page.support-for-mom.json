@@ -32,8 +32,11 @@
       "block_order": [
         "heading_PmHgAe"
       ],
+      "custom_css": [
+        ".img-fit {object-position: 50% 30% !important;}"
+      ],
       "settings": {
-        "image_desktop": "shopify://shop_images/support-for-mom-banner.jpg",
+        "image_desktop": "shopify://shop_images/support-for-moms-hero.jpg",
         "url": "",
         "breadcrumbs": true,
         "breadcrumb_align": "justify-center",
@@ -48,7 +51,7 @@
         "full_width": true,
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
-        "tint_opacity": 40,
+        "tint_opacity": 50,
         "prevent_animation": false
       }
     },
