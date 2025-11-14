@@ -16,8 +16,8 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/WBW_2025_web_banner.jpg",
-            "url": "shopify://collections/all",
+            "image_desktop": "shopify://shop_images/Black-Friday-2025-3.jpg",
+            "url": "https://www.amazon.com/stores/page/886BCDC3-0034-409C-B91C-33DD433666B0?maas=maas_adg_4BE7D0A12ADF91180D61501FE5255660_afap_abs&ref_=aa_maas&tag=maas&ingress=0&visitId=df443ec6-685a-4452-a447-4e124a826fa8",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
