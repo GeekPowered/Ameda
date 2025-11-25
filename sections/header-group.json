@@ -97,7 +97,7 @@
       "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/products/ameda-comfortgel-hydrogel-pads\" style=\"text-decoration: underline;\">Free ComfortGel Pads</a> With Cart Total Over $50 | <a href=\"https://www.ameda.com/collections/all\" style=\"text-decoration: underline;\">Start Shopping!</a></p>",
+        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\">BFCM: 25% Off Select Products | <a href=\"https://www.ameda.com/collections/ameda-breast-pump-black-friday-sale-2025\" style=\"text-decoration: underline;\">Start Shopping!</a></p>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",
