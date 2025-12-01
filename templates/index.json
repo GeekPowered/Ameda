@@ -47,6 +47,7 @@
         },
         "slide_brpgWH": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/ameda-black-friday-sale-2025-home-banner.webp",
             "url": "https://www.ameda.com/collections/ameda-breast-pump-black-friday-sale-2025",
