@@ -22,6 +22,9 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% if rtl %}rtl{% else %}ltr{% endif %}">
 <head>
+
+  <script>!function(){window.semaphore=window.semaphore||[],window.ketch=function(){window.semaphore.push(arguments)};var e=document.createElement("script");e.type="text/javascript",e.src="https://global.ketchcdn.com/web/v3/config/ameda/website_smart_tag/boot.js",e.defer=e.async=!0,document.getElementsByTagName("head")[0].appendChild(e)}();</script>
+
   {% if request.path contains 'thank-you' or request.path contains 'cart' %}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
