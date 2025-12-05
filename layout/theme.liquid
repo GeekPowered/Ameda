@@ -23,6 +23,38 @@
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% if rtl %}rtl{% else %}ltr{% endif %}">
 <head>
 
+  {% if page.handle == 'pages/lactation-support' %}
+    <!-- Google Tag Manager -->
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+    })(window,document,'script','dataLayer','GTM-NS76MQ6Q');</script>
+
+    <!-- End Google Tag Manager -->
+  {% endif %}
+
+  {% if page.handle == 'pages/support-for-moms' %}
+    <!-- Google Tag Manager -->
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+    })(window,document,'script','dataLayer','GTM-NS76MQ6Q');</script>
+
+    <!-- End Google Tag Manager -->
+  {% endif %}  
+
   <script>!function(){window.semaphore=window.semaphore||[],window.ketch=function(){window.semaphore.push(arguments)};var e=document.createElement("script");e.type="text/javascript",e.src="https://global.ketchcdn.com/web/v3/config/ameda/website_smart_tag/boot.js",e.defer=e.async=!0,document.getElementsByTagName("head")[0].appendChild(e)}();</script>
 
   {% if request.path contains 'thank-you' or request.path contains 'cart' %}
@@ -311,6 +343,27 @@
 </head>
 
 <body{% if settings.animations_enabled != "disabled" %} class="cc-animate-enabled"{% endif %}>
+
+  {% if page.handle == 'pages/lactation-support' %}
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS76MQ6Q"
+
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
+  {% endif %}
+
+  {% if page.handle == 'pages/support-for-moms' %}
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS76MQ6Q"
+
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
+  {% endif %} 
+
   <a class="skip-link btn btn--primary visually-hidden" href="#main-content">
     {{- 'accessibility.skip_to_content' | t -}}
   </a>
