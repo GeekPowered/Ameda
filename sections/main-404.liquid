@@ -21,3 +21,15 @@
   "class": "cc-main-404 section section--template"
 }
 {% endschema %}
+
+{% comment %}
+Catch old /blogs/posts/tagged/ URLs and redirect to the main blog
+{% endcomment %}
+
+{% assign path_parts = request.path | split: "/" %}
+
+{% if path_parts.size >= 4 and path_parts[1] == "blogs" and path_parts[3] == "tagged" %}
+  <script>
+    window.location.href = "/blogs/{{ path_parts[2] }}";
+  </script>
+{% endif %}
