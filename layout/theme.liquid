@@ -743,6 +743,18 @@
       }
     });
   </script>
+
+  <script>
+    (function () {
+      var p = window.location.pathname || "";
+
+      // Catch /blogs/posts/tagged/ and /blogs/posts/tagged/{anything}
+      if (p.indexOf("/blogs/posts/tagged") === 0) {
+        // Send them to the main blog (adjust handle if needed)
+        window.location.replace("/blogs/posts");
+      }
+    })();
+  </script>
   
   
 </body>
