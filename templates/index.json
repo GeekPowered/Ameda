@@ -16,8 +16,8 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/12-days-of-holidays-announcement.jpg",
-            "url": "https://www.instagram.com/myameda/?hl=en",
+            "image_desktop": "shopify://shop_images/ameda-new-year-10-percent-off-website.webp",
+            "url": "https://www.ameda.com/collections",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
