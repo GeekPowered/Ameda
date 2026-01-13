@@ -1468,6 +1468,9 @@
         "category_Xg8JKQ",
         "question_xbgVFf"
       ],
+      "custom_css": [
+        ".reading-width {max-width: 100%;}"
+      ],
       "name": "Collapsible content",
       "settings": {
         "heading": "GLO Troubleshooting Guide",
