@@ -340,6 +340,11 @@
     {{- settings.custom_html_head -}}
     <!-- CC Custom Head End -->
   {%- endif -%}
+
+  {% if template == 'product.glo.staging' %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+
 </head>
 
 <body{% if settings.animations_enabled != "disabled" %} class="cc-animate-enabled"{% endif %}>
