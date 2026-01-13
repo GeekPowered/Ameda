@@ -1473,14 +1473,14 @@
         "heading": "GLO Troubleshooting Guide",
         "use_h4_class": false,
         "heading_align": "text-start",
-        "color_scheme": "1",
+        "color_scheme": "none",
         "full_width": true
       }
     },
     "global_footer_cta_GKPbqF": {
       "type": "global-footer-cta",
       "settings": {
-        "svg_fill_override": "#ffffff",
+        "svg_fill_override": "#fbf6ef",
         "footer_cta_title_override": "",
         "footer_cta_subtitle_override": ""
       }
