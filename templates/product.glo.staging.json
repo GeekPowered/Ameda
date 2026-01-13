@@ -68,14 +68,6 @@
             "size_chart_page": ""
           }
         },
-        "divider-1": {
-          "type": "divider",
-          "disabled": true,
-          "settings": {
-            "show_line": true,
-            "spacing": "mt-8 mb-8"
-          }
-        },
         "buy-buttons": {
           "type": "buy-buttons",
           "disabled": true,
@@ -120,7 +112,6 @@
         "price",
         "divider-0",
         "variant-picker",
-        "divider-1",
         "buy-buttons",
         "collapsible_content_LYD7Jj",
         "collapsible_content_4RKpYW",
@@ -163,6 +154,7 @@
       "blocks": {
         "custom_liquid_x4cYxH": {
           "type": "custom-liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% render 'product-instruction-card' %}"
           }
@@ -656,20 +648,6 @@
         "color_scheme": "none",
         "baby_patterns": false,
         "button_style": "link"
-      }
-    },
-    "featured_image_pg4z9Q": {
-      "type": "featured-image",
-      "disabled": true,
-      "settings": {
-        "featured_image": "shopify://shop_images/glo-bag.png",
-        "title": "",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "color_scheme": "none",
-        "baby_patterns": false,
-        "prevent_animation": false
       }
     },
     "multi_column_6hYJ3x": {
@@ -1343,10 +1321,166 @@
         "products_to_show": 8
       }
     },
+    "faq_ewbhVy": {
+      "type": "faq",
+      "blocks": {
+        "category_pGycXx": {
+          "type": "category",
+          "settings": {
+            "text": "Power & Battery Issues"
+          }
+        },
+        "question_GDW339": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "My pump won’t turn on. What should I do?",
+            "text": "<ul><li>Press and hold the power button for <strong>at least 3 seconds</strong> (it will not turn on with a quick press).</li><li>Make sure the pump is <strong>fully charged</strong>.</li><li>Disconnect the charging cable before trying to turn it on.</li></ul><p>If it still won’t power on, try a <strong>hard reset</strong> by holding the power button for <strong>15 seconds</strong>.</p>"
+          }
+        },
+        "question_EqqiHz": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "My pump turns off by itself. Is it broken?",
+            "text": "<p>Not necessarily. The pump is designed to shut off automatically:</p><ul><li>After <strong>30 minutes of continuous pumping.</strong></li><li>After <strong>15 minutes in pause mode.</strong></li></ul>"
+          }
+        },
+        "question_7EccBC": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "My battery won’t charge or doesn’t last long.",
+            "text": "<ul><li>Use a standard 1 or 2 amp charging block (maximum 2 amps). Fast-charging or high-output power blocks may damage the pump motor and should not be used.</li><li>Make sure the <strong>cup is removed</strong> from the motor while charging.</li><li>Charge for a full <strong>2 hours</strong> until you see <strong>3 solid bars</strong> on the display.</li><li>If charging fails, try a hard reset (hold power for 15 seconds).</li><li>The GLO needs to be recharged in between uses, a fully charged battery will only last approximately 100 minutes.</li></ul>"
+          }
+        },
+        "category_QEHKe3": {
+          "type": "category",
+          "settings": {
+            "text": "Suction Problems"
+          }
+        },
+        "question_XfikrD": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "I have low suction or no suction at all.",
+            "text": "<p>Please check the following:</p><ul><li>Make sure <strong>all parts are assembled correctly</strong>, especially the valve and diaphragm.</li><li>Confirm the diaphragm and valve are fully seated to create a tight seal.</li><li>Inspect parts for <strong>tears, holes, or warping</strong> from cleaning.</li></ul><p>If both pumps have the same issue, it’s more likely related to <strong>fit, assembly, or cleaning</strong> than a motor problem.</p>"
+          }
+        },
+        "question_Qh7NtB": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "The suction feels uneven or “erratic.”",
+            "text": "<p>This is often normal:</p><ul><li>The pump starts in <strong>Stimulation Mode</strong> for 2 minutes, then automatically switches to <strong>Expression Mode</strong>.</li><li>This transition can feel like a suction change.</li><li>The pump remembers your last suction level and may return to it automatically.</li></ul>"
+          }
+        },
+        "question_BRgDJV": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "The pump changes suction level, or the suction level is too high.",
+            "text": "<p>The pump suction level is automatically set to the previously used level.  Consider adjusting suction level to a lower setting before use if a previous setting may be too high.</p>"
+          }
+        },
+        "category_qLXihc": {
+          "type": "category",
+          "settings": {
+            "text": "Milk Expression & Leaks"
+          }
+        },
+        "question_N8FCHw": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "I’m not expressing much milk.",
+            "text": "<ul><li>Double-check that the pump is assembled correctly and sealed.</li><li>Make sure the <strong>flange size fits properly</strong>.</li><li>Try to relax and give yourself time — milk expression often improves with practice.</li></ul>"
+          }
+        },
+        "question_f9fPdk": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Milk is leaking while I pump.",
+            "text": "<p>Milk leakage can happen if:</p><ul><li>The flange size or fit is incorrect.</li><li>You are pumping while <strong>lying down or reclined</strong>.</li><li>The flange is not sealed properly to the collection cup.<br/><br/></li><li>Always pump in an <strong>upright position</strong> and ensure a secure fit.</li><li>Proper valve orientation is critical. Please refer to the IFU for correct valve placement.</li></ul>"
+          }
+        },
+        "category_WiJwzy": {
+          "type": "category",
+          "settings": {
+            "text": "Pain or Discomfort"
+          }
+        },
+        "question_bDnpiR": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Pumping is uncomfortable or painful.",
+            "text": "<ul><li>Lower the suction level — the pump is adjustable for comfort.</li><li>Recheck your flange size; an incorrect size can cause pain or irritation.</li></ul>"
+          }
+        },
+        "category_DAEGhg": {
+          "type": "category",
+          "settings": {
+            "text": "Missing or Damaged Parts"
+          }
+        },
+        "question_QcW7yd": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "I think I’m missing parts from my box.",
+            "text": "<p>Your GLO package should include:</p><ul><li>2 motors, 2 cups, 24mm flanges, diaphragms, valves, USB-C cables, bra straps, flange inserts, and a nipple sizer.</li><li>If something is missing, contact customer support for assistance.</li></ul>"
+          }
+        },
+        "category_Xg8JKQ": {
+          "type": "category",
+          "settings": {
+            "text": "Important Use & Care Tips"
+          }
+        },
+        "question_xbgVFf": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "How can I prevent damage to my pump?",
+            "text": "<ul><li>Never pour milk out of the cup <strong>while the motor is attached</strong>.</li><li>Do not pump while lying down or reclined.</li><li>Do not submerge the motor or allow milk or water to spill onto it.</li><li>Always remove the cup before charging.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "category_pGycXx",
+        "question_GDW339",
+        "question_EqqiHz",
+        "question_7EccBC",
+        "category_QEHKe3",
+        "question_XfikrD",
+        "question_Qh7NtB",
+        "question_BRgDJV",
+        "category_qLXihc",
+        "question_N8FCHw",
+        "question_f9fPdk",
+        "category_WiJwzy",
+        "question_bDnpiR",
+        "category_DAEGhg",
+        "question_QcW7yd",
+        "category_Xg8JKQ",
+        "question_xbgVFf"
+      ],
+      "name": "Collapsible content",
+      "settings": {
+        "heading": "GLO Troubleshooting Guide",
+        "use_h4_class": false,
+        "heading_align": "text-start",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
     "global_footer_cta_GKPbqF": {
       "type": "global-footer-cta",
       "settings": {
-        "svg_fill_override": "#fbf6ef",
+        "svg_fill_override": "#ffffff",
         "footer_cta_title_override": "",
         "footer_cta_subtitle_override": ""
       }
@@ -1362,7 +1496,6 @@
     "featured_testimonial_Fn3weA",
     "multi_column_MmQ4Pc",
     "multi_column_9fzzGN",
-    "featured_image_pg4z9Q",
     "multi_column_6hYJ3x",
     "wave_section_xKwxKb",
     "custom_liquid_xwRMbB",
@@ -1377,6 +1510,7 @@
     "faq_WT7f3T",
     "custom_liquid_DnXFqh",
     "recommendations",
+    "faq_ewbhVy",
     "global_footer_cta_GKPbqF"
   ]
 }
