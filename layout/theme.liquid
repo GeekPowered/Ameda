@@ -556,76 +556,62 @@
   {% endif %}
 
   {% unless request.path contains 'instructions-for-use' or request.path contains 'product-locator' %}
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // edited script
-          // Select all anchor links with a hash but ignore empty "#" links
-          const links = document.querySelectorAll('a[href^="#"]:not([href="#"])');
-          // Select the sticky header element
-          const header = document.querySelector('.cc-header');
+<script>
+document.addEventListener('DOMContentLoaded', function() {
 
-          // Function to get the height of the sticky header
-          function getHeaderHeight() {
-              return header ? header.offsetHeight : 0;
-          }
+    // Handle clicks on anchor links (event delegation)
+    document.addEventListener('click', function(event) {
+        const link = event.target.closest('a[href^="#"]:not([href="#"])');
+        if (!link) return;
 
-          // Function to scroll to a target element with header offset and navbar adjustment
-          function scrollToElement(targetElement) {
-              const headerHeight = getHeaderHeight();
-              // Calculate the target element's position relative to the top of the page
-              const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        event.preventDefault();
+        const targetId = link.getAttribute('href').slice(1);
+        const targetElement = document.getElementById(targetId);
+        if (!targetElement) return;
 
-              // Scroll to the element, adjusted for sticky header
-              window.scrollTo({
-                  top: elementPosition - headerHeight - 16, // 16px extra spacing
-                  behavior: 'smooth' // smooth scrolling
-              });
+        const header = document.querySelector('.cc-header');
+        const headerHeight = header ? header.offsetHeight : 0;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-              // Small scroll adjustment to trigger navbar shrink animation if applicable
-              setTimeout(() => {
-                  window.scrollBy({ top: 1, behavior: 'smooth' });
-              }, 500);
-          }
+        window.scrollTo({
+            top: elementPosition - headerHeight - 16,
+            behavior: 'smooth'
+        });
 
-          // Add click event listeners to all anchor links
-          links.forEach(link => {
-              link.addEventListener('click', function(event) {
-                  event.preventDefault(); // Prevent default jump-to behavior
-                  const targetId = this.getAttribute('href').slice(1);
-                  const targetElement = document.getElementById(targetId);
-                  if (targetElement) scrollToElement(targetElement);
+        setTimeout(() => {
+            window.scrollBy({ top: 1, behavior: 'smooth' });
+        }, 500);
 
-                  // Update the URL hash without triggering another scroll
-                  history.pushState(null, '', `#${targetId}`);
-              });
-          });
+        history.pushState(null, '', `#${targetId}`);
+    });
 
-          // Function to handle scrolling when page loads or URL hash changes
-          function adjustScrollForHash() {
-              if (window.location.hash) {
-                  const targetId = window.location.hash.slice(1);
-                  const targetElement = document.getElementById(targetId);
-                  if (!targetElement) return;
+    // Adjust scroll for hash on page load or history navigation
+    function adjustScrollForHash() {
+        if (window.location.hash) {
+            const targetId = window.location.hash.slice(1);
+            const targetElement = document.getElementById(targetId);
+            if (!targetElement) return;
 
-                  // Wait for the entire page (images, fonts, etc.) to finish loading
-                  window.addEventListener('load', () => {
-                      setTimeout(() => {
-                          scrollToElement(targetElement); // Scroll to element safely
-                      }, 200); // Slight delay to ensure layout is fully settled
-                  });
-              }
-          }
+            const header = document.querySelector('.cc-header');
+            const headerHeight = header ? header.offsetHeight : 0;
+            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-          // Run scroll adjustment on page load
-          adjustScrollForHash();
+            window.scrollTo({
+                top: elementPosition - headerHeight - 16,
+                behavior: 'smooth'
+            });
 
-          // Listen for browser back/forward navigation
-          window.addEventListener('popstate', adjustScrollForHash);
+            setTimeout(() => {
+                window.scrollBy({ top: 1, behavior: 'smooth' });
+            }, 500);
+        }
+    }
 
-          // Listen for hash changes after page load (hash routing)
-          window.addEventListener('hashchange', adjustScrollForHash);
-      });
-    </script>
+    window.addEventListener('load', adjustScrollForHash);
+    window.addEventListener('popstate', adjustScrollForHash);
+    window.addEventListener('hashchange', adjustScrollForHash);
+});
+</script>
   {% endunless %}
 
   {% if request.path contains 'product-locator' %}
