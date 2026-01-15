@@ -558,6 +558,7 @@
   {% unless request.path contains 'instructions-for-use' or request.path contains 'product-locator' %}
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // edited script
           // Select all anchor links with a hash but ignore empty "#" links
           const links = document.querySelectorAll('a[href^="#"]:not([href="#"])');
           // Select the sticky header element
