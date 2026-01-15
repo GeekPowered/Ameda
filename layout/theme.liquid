@@ -565,47 +565,50 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function scrollToElement(element) {
-        const headerHeight = getHeaderHeight();
-        const y = element.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+        const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() - 16;
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
-    function openAccordion(targetElement) {
-        // Find the closest <details> parent and open it if closed
-        const details = targetElement.closest('details');
-        if (details && !details.hasAttribute('open')) {
-            details.setAttribute('open', '');
-            // Some Shopify accordions have animations, wait for panel to expand
-            return new Promise(resolve => setTimeout(resolve, 350)); // adjust if your animation is longer
+    function openParentAccordions(element) {
+        // Open all <details> ancestors (in case of nested accordions)
+        const detailsAncestors = element.closest('details');
+        if (detailsAncestors) {
+            const allDetails = [];
+            let current = element.closest('details');
+            while (current) {
+                allDetails.push(current);
+                current = current.parentElement.closest('details');
+            }
+            allDetails.forEach(d => d.setAttribute('open', ''));
+            // Wait for animation to finish
+            return new Promise(resolve => setTimeout(resolve, 400));
         }
         return Promise.resolve();
     }
 
     function handleAnchor(anchor) {
+        // 1. Find target section by hash, not by anchor's parent
         const targetId = anchor.getAttribute('href').replace('#', '');
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
+        const targetSection = document.getElementById(targetId);
+        if (!targetSection) return;
 
-        openAccordion(targetElement).then(() => {
-            // Scroll after the accordion opens
-            scrollToElement(targetElement);
+        // 2. Open any parent accordions of the anchor itself (to make click visible)
+        openParentAccordions(anchor).then(() => {
+            // 3. Scroll to the actual section
+            requestAnimationFrame(() => scrollToElement(targetSection));
         });
     }
 
-    // Clicks on anchor links
+    // Handle clicks on anchors
     document.addEventListener('click', function(e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
 
-        const targetId = anchor.getAttribute('href').replace('#', '');
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
-
         e.preventDefault();
         handleAnchor(anchor);
 
-        // Update URL hash without jumping
-        history.pushState(null, '', `#${targetId}`);
+        // Update URL hash without jump
+        history.pushState(null, '', anchor.getAttribute('href'));
     });
 
     // Scroll on page load if there is a hash
@@ -621,6 +624,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('hashchange', scrollOnLoad);
 });
 </script>
+
 
   {% endunless %}
 
