@@ -555,7 +555,7 @@
     <!-- End Google Tag Manager (noscript) -->
   {% endif %}
 
-  {% unless request.path contains 'instructions-for-use' or request.path contains 'product-locator' %}
+  {% unless request.path contains 'instructions-for-use' or request.path contains 'product-locator' or request.path contains 'glo-wearable-breast-pump-staging' %}
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // Select all anchor links with a hash but ignore those that are just "#"
@@ -637,56 +637,79 @@
         window.addEventListener('hashchange', adjustScrollForHash);
     });
     </script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-
-    // ✅ ONLY run on this specific product URL
-    const path = window.location.pathname;
-    if (!path.endsWith('glo-wearable-breast-pump-staging')) return;
-
-    const header = document.querySelector('.cc-header');
-
-    function getHeaderHeight() {
-        return header ? header.offsetHeight : 0;
-    }
-
-    function getPreviousSectionHeight(element) {
-        const section = element.closest('.shopify-section');
-        if (!section) return 0;
-
-        const prev = section.previousElementSibling;
-        return prev ? prev.offsetHeight : 0;
-    }
-
-    function scrollToElement(element) {
-        const headerHeight = getHeaderHeight();
-        const prevSectionHeight = getPreviousSectionHeight(element);
-
-        const y =
-            element.getBoundingClientRect().top +
-            window.pageYOffset -
-            headerHeight -
-            prevSectionHeight -
-            16; // small visual padding
-
-        window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-
-    function openAccordion(targetElement) {
-        const details = targetElement.closest('details');
-        if (details && !details.hasAttribute('open')) {
-            details.setAttribute('open', '');
-            return new Promise(resolve => setTimeout(resolve, 350));
-        }
-        return Promise.resolve();
-    }
-
-    function handleAnchor(anchor) {
-        const targetId = anchor.getAttribute('href').repl
-
-
   {% endunless %}
+
+  {% if request.path contains 'glo-wearable-breast-pump-staging' %}
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+      const header = document.querySelector('.cc-header');
+
+      function getHeaderHeight() {
+          return header ? header.offsetHeight : 0;
+      }
+
+      function getPreviousSectionHeight(element) {
+          const section = element.closest('.shopify-section');
+          if (!section) return 0;
+
+          const prev = section.previousElementSibling;
+          return prev ? prev.offsetHeight : 0;
+      }
+
+      function scrollToElement(element) {
+          const y =
+              element.getBoundingClientRect().top +
+              window.pageYOffset -
+              getHeaderHeight() -
+              getPreviousSectionHeight(element) -
+              16;
+
+          window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+
+      function openAccordion(anchor) {
+          const details = anchor.closest('details');
+          if (details && !details.hasAttribute('open')) {
+              details.setAttribute('open', '');
+              return new Promise(resolve => setTimeout(resolve, 350));
+          }
+          return Promise.resolve();
+      }
+
+      function handleAnchor(anchor) {
+          const targetId = anchor.getAttribute('href').slice(1);
+          const targetElement = document.getElementById(targetId);
+          if (!targetElement) return;
+
+          openAccordion(anchor).then(() => {
+              requestAnimationFrame(() => scrollToElement(targetElement));
+          });
+      }
+
+      document.addEventListener('click', function(e) {
+          const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
+          if (!anchor) return;
+
+          const targetId = anchor.getAttribute('href').slice(1);
+          if (!document.getElementById(targetId)) return;
+
+          e.preventDefault();
+          handleAnchor(anchor);
+          history.pushState(null, '', `#${targetId}`);
+      });
+
+      function scrollOnLoad() {
+          if (!window.location.hash) return;
+          const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
+          if (anchor) handleAnchor(anchor);
+      }
+
+      window.addEventListener('load', scrollOnLoad);
+      window.addEventListener('hashchange', scrollOnLoad);
+  });
+  </script>
+  {% endif %}  
 
   {% if request.path contains 'product-locator' %}
     <script>
