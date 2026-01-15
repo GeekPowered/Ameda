@@ -574,29 +574,10 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
 
-        // Small scroll to trigger navbar shrink
+        // Optional tiny scroll for navbar shrink
         setTimeout(() => {
             window.scrollBy({ top: 1, behavior: 'smooth' });
         }, 500);
-    }
-
-    // Wait until element is in the DOM and visible, then scroll
-    function scrollWhenReady(targetElement) {
-        const checkInterval = 50; // ms
-        const maxAttempts = 20;    // stop after 1 second (20*50ms)
-        let attempts = 0;
-
-        const interval = setInterval(() => {
-            if (!targetElement) return clearInterval(interval);
-
-            const rect = targetElement.getBoundingClientRect();
-            // Check if element has a stable height/position
-            if (rect.height > 0 || attempts >= maxAttempts) {
-                scrollToTarget(targetElement);
-                clearInterval(interval);
-            }
-            attempts++;
-        }, checkInterval);
     }
 
     // Event delegation for anchor links
@@ -604,32 +585,38 @@ document.addEventListener('DOMContentLoaded', function() {
         const link = event.target.closest('a[href^="#"]:not([href="#"])');
         if (!link) return;
 
+        // Prevent default jump
         event.preventDefault();
 
         const targetId = link.getAttribute('href').slice(1);
         const targetElement = document.getElementById(targetId);
         if (!targetElement) return;
 
-        scrollWhenReady(targetElement);
-        history.pushState(null, '', `#${targetId}`);
+        // Use requestAnimationFrame to ensure scroll runs after any browser hash handling
+        requestAnimationFrame(() => scrollToTarget(targetElement));
+
+        // Let the browser update the hash naturally — do NOT call history.pushState here
+        link.setAttribute('href', `#${targetId}`);
     });
 
-    // Scroll on page load with hash
+    // Scroll on page load if there is a hash
     function adjustScrollForHash() {
         if (window.location.hash) {
             const targetId = window.location.hash.slice(1);
             const targetElement = document.getElementById(targetId);
             if (!targetElement) return;
 
-            scrollWhenReady(targetElement);
+            scrollToTarget(targetElement);
         }
     }
 
     window.addEventListener('load', adjustScrollForHash);
     window.addEventListener('popstate', adjustScrollForHash);
     window.addEventListener('hashchange', adjustScrollForHash);
+
 });
 </script>
+
 
   {% endunless %}
 
