@@ -559,18 +559,14 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Handle clicks on anchor links (event delegation)
-    document.addEventListener('click', function(event) {
-        const link = event.target.closest('a[href^="#"]:not([href="#"])');
-        if (!link) return;
+    const header = document.querySelector('.cc-header');
 
-        event.preventDefault();
-        const targetId = link.getAttribute('href').slice(1);
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
+    }
 
-        const header = document.querySelector('.cc-header');
-        const headerHeight = header ? header.offsetHeight : 0;
+    function scrollToTarget(targetElement) {
+        const headerHeight = getHeaderHeight();
         const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
         window.scrollTo({
@@ -578,32 +574,54 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
 
+        // Small scroll to trigger navbar shrink
         setTimeout(() => {
             window.scrollBy({ top: 1, behavior: 'smooth' });
         }, 500);
+    }
 
+    // Wait until element is in the DOM and visible, then scroll
+    function scrollWhenReady(targetElement) {
+        const checkInterval = 50; // ms
+        const maxAttempts = 20;    // stop after 1 second (20*50ms)
+        let attempts = 0;
+
+        const interval = setInterval(() => {
+            if (!targetElement) return clearInterval(interval);
+
+            const rect = targetElement.getBoundingClientRect();
+            // Check if element has a stable height/position
+            if (rect.height > 0 || attempts >= maxAttempts) {
+                scrollToTarget(targetElement);
+                clearInterval(interval);
+            }
+            attempts++;
+        }, checkInterval);
+    }
+
+    // Event delegation for anchor links
+    document.addEventListener('click', function(event) {
+        const link = event.target.closest('a[href^="#"]:not([href="#"])');
+        if (!link) return;
+
+        event.preventDefault();
+
+        const targetId = link.getAttribute('href').slice(1);
+        const targetElement = document.getElementById(targetId);
+        if (!targetElement) return;
+
+        scrollWhenReady(targetElement);
         history.pushState(null, '', `#${targetId}`);
     });
 
-    // Adjust scroll for hash on page load or history navigation
+    // Scroll on page load with hash
     function adjustScrollForHash() {
         if (window.location.hash) {
             const targetId = window.location.hash.slice(1);
             const targetElement = document.getElementById(targetId);
             if (!targetElement) return;
 
-            const header = document.querySelector('.cc-header');
-            const headerHeight = header ? header.offsetHeight : 0;
-            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-
-            window.scrollTo({
-                top: elementPosition - headerHeight - 16,
-                behavior: 'smooth'
-            });
-
-            setTimeout(() => {
-                window.scrollBy({ top: 1, behavior: 'smooth' });
-            }, 500);
+            scrollWhenReady(targetElement);
         }
     }
 
@@ -612,6 +630,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('hashchange', adjustScrollForHash);
 });
 </script>
+
   {% endunless %}
 
   {% if request.path contains 'product-locator' %}
