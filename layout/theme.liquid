@@ -641,62 +641,63 @@
 
 {% if request.path contains 'glo-wearable-breast-pump-staging' %}
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const EXTRA_OFFSET = 600; // ✅ fixed offset
-    const header = document.querySelector('.cc-header');
+document.addEventListener('DOMContentLoaded', function () {
 
-    function getHeaderHeight() {
-        return header ? header.offsetHeight : 0;
-    }
+  // ✅ Desktop only
+  if (!window.matchMedia('(min-width: 1024px)').matches) return;
 
-    function scrollToElement(element) {
-        const y =
-            element.getBoundingClientRect().top +
-            window.pageYOffset -
-            getHeaderHeight() +
-            EXTRA_OFFSET;
+  const header = document.querySelector('.cc-header');
 
-        window.scrollTo({ top: y, behavior: 'smooth' });
-    }
+  function getHeaderHeight() {
+    return header ? header.offsetHeight : 0;
+  }
 
-    function openAccordion(anchor) {
-        const details = anchor.closest('details');
-        if (details && !details.hasAttribute('open')) {
-            details.setAttribute('open', '');
-            return new Promise(resolve => setTimeout(resolve, 350));
-        }
-        return Promise.resolve();
-    }
+  function scrollToElement(element) {
+    const EXTRA_OFFSET = 300; // desktop-only correction
 
-    function handleAnchor(anchor) {
-        const targetId = anchor.getAttribute('href').slice(1);
-        const target = document.getElementById(targetId);
-        if (!target) return;
+    const y =
+      element.getBoundingClientRect().top +
+      window.pageYOffset -
+      getHeaderHeight() -
+      EXTRA_OFFSET;
 
-        openAccordion(anchor).then(() => {
-            requestAnimationFrame(() => scrollToElement(target));
-        });
-    }
-
-    document.addEventListener('click', function(e) {
-        const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
-        if (!anchor) return;
-
-        const targetId = anchor.getAttribute('href').slice(1);
-        if (!document.getElementById(targetId)) return;
-
-        e.preventDefault();
-        handleAnchor(anchor);
-        history.pushState(null, '', `#${targetId}`);
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
     });
+  }
 
-    function scrollOnLoad() {
-        if (!window.location.hash) return;
-        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
-        if (anchor) handleAnchor(anchor);
+  function openAccordion(anchor) {
+    const details = anchor.closest('details');
+    if (details && !details.hasAttribute('open')) {
+      details.setAttribute('open', '');
+      return new Promise(resolve => setTimeout(resolve, 350));
     }
+    return Promise.resolve();
+  }
 
-    window.addEventListener('load', scrollOnLoad);
+  function handleAnchor(anchor) {
+    const targetId = anchor.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+    if (!target) return;
+
+    openAccordion(anchor).then(() => {
+      requestAnimationFrame(() => scrollToElement(target));
+    });
+  }
+
+  document.addEventListener('click', function (e) {
+    const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
+    if (!anchor) return;
+
+    const targetId = anchor.getAttribute('href').slice(1);
+    if (!document.getElementById(targetId)) return;
+
+    e.preventDefault();
+    handleAnchor(anchor);
+    history.pushState(null, '', `#${targetId}`);
+  });
+
 });
 </script>
 {% endif %}
