@@ -639,77 +639,67 @@
     </script>
   {% endunless %}
 
-  {% if request.path contains 'glo-wearable-breast-pump-staging' %}
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
+{% if request.path contains 'glo-wearable-breast-pump-staging' %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const EXTRA_OFFSET = 550; // ✅ fixed offset
+    const header = document.querySelector('.cc-header');
 
-      const header = document.querySelector('.cc-header');
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
+    }
 
-      function getHeaderHeight() {
-          return header ? header.offsetHeight : 0;
-      }
+    function scrollToElement(element) {
+        const y =
+            element.getBoundingClientRect().top +
+            window.pageYOffset -
+            getHeaderHeight() +
+            EXTRA_OFFSET;
 
-      function getPreviousSectionHeight(element) {
-          const section = element.closest('.shopify-section');
-          if (!section) return 0;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
 
-          const prev = section.previousElementSibling;
-          return prev ? prev.offsetHeight : 0;
-      }
+    function openAccordion(anchor) {
+        const details = anchor.closest('details');
+        if (details && !details.hasAttribute('open')) {
+            details.setAttribute('open', '');
+            return new Promise(resolve => setTimeout(resolve, 350));
+        }
+        return Promise.resolve();
+    }
 
-      function scrollToElement(element) {
-          const y =
-              element.getBoundingClientRect().top +
-              window.pageYOffset -
-              getHeaderHeight() -
-              getPreviousSectionHeight(element) -
-              16;
+    function handleAnchor(anchor) {
+        const targetId = anchor.getAttribute('href').slice(1);
+        const target = document.getElementById(targetId);
+        if (!target) return;
 
-          window.scrollTo({ top: y, behavior: 'smooth' });
-      }
+        openAccordion(anchor).then(() => {
+            requestAnimationFrame(() => scrollToElement(target));
+        });
+    }
 
-      function openAccordion(anchor) {
-          const details = anchor.closest('details');
-          if (details && !details.hasAttribute('open')) {
-              details.setAttribute('open', '');
-              return new Promise(resolve => setTimeout(resolve, 350));
-          }
-          return Promise.resolve();
-      }
+    document.addEventListener('click', function(e) {
+        const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
+        if (!anchor) return;
 
-      function handleAnchor(anchor) {
-          const targetId = anchor.getAttribute('href').slice(1);
-          const targetElement = document.getElementById(targetId);
-          if (!targetElement) return;
+        const targetId = anchor.getAttribute('href').slice(1);
+        if (!document.getElementById(targetId)) return;
 
-          openAccordion(anchor).then(() => {
-              requestAnimationFrame(() => scrollToElement(targetElement));
-          });
-      }
+        e.preventDefault();
+        handleAnchor(anchor);
+        history.pushState(null, '', `#${targetId}`);
+    });
 
-      document.addEventListener('click', function(e) {
-          const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
-          if (!anchor) return;
+    function scrollOnLoad() {
+        if (!window.location.hash) return;
+        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
+        if (anchor) handleAnchor(anchor);
+    }
 
-          const targetId = anchor.getAttribute('href').slice(1);
-          if (!document.getElementById(targetId)) return;
-
-          e.preventDefault();
-          handleAnchor(anchor);
-          history.pushState(null, '', `#${targetId}`);
-      });
-
-      function scrollOnLoad() {
-          if (!window.location.hash) return;
-          const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
-          if (anchor) handleAnchor(anchor);
-      }
-
-      window.addEventListener('load', scrollOnLoad);
-      window.addEventListener('hashchange', scrollOnLoad);
-  });
-  </script>
-  {% endif %}  
+    window.addEventListener('load', scrollOnLoad);
+});
+</script>
+{% endif %}
 
   {% if request.path contains 'product-locator' %}
     <script>
