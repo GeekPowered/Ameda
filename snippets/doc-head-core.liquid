@@ -121,8 +121,6 @@
 
 {% if template == 'collection' %}
 
-    {% comment %}
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -183,8 +181,8 @@
     ]
   }
   </script>
-  {% endcomment %}
 
+  {% comment %}
     <script type="application/ld+json">
     {
         "@context": "https://schema.org/",
@@ -273,5 +271,5 @@
         ]
     }
     </script>
-
+    {% endcomment %}
 {% endif %}
