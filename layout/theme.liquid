@@ -557,61 +557,58 @@
 
   {% unless request.path contains 'instructions-for-use' or request.path contains 'product-locator' %}
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.cc-header');
 
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    function scrollToElement(element) {
-        const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() - 16;
+    function scrollToSection(section) {
+        const y = section.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight();
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
-    function openParentAccordions(element) {
-        // Open all <details> ancestors (in case of nested accordions)
-        const detailsAncestors = element.closest('details');
-        if (detailsAncestors) {
-            const allDetails = [];
-            let current = element.closest('details');
-            while (current) {
-                allDetails.push(current);
-                current = current.parentElement.closest('details');
-            }
-            allDetails.forEach(d => d.setAttribute('open', ''));
-            // Wait for animation to finish
-            return new Promise(resolve => setTimeout(resolve, 400));
+    function openAllParentAccordions(element) {
+        // Collect all <details> ancestors of the element
+        const detailsAncestors = [];
+        let current = element.closest('details');
+        while (current) {
+            detailsAncestors.push(current);
+            current = current.parentElement.closest('details');
         }
-        return Promise.resolve();
+
+        detailsAncestors.forEach(d => d.setAttribute('open', ''));
+
+        // Wait for CSS transitions to complete
+        return new Promise(resolve => setTimeout(resolve, 450)); // 450ms to be safe
     }
 
     function handleAnchor(anchor) {
-        // 1. Find target section by hash, not by anchor's parent
         const targetId = anchor.getAttribute('href').replace('#', '');
         const targetSection = document.getElementById(targetId);
         if (!targetSection) return;
 
-        // 2. Open any parent accordions of the anchor itself (to make click visible)
-        openParentAccordions(anchor).then(() => {
-            // 3. Scroll to the actual section
-            requestAnimationFrame(() => scrollToElement(targetSection));
+        // Open accordions first (anchor may be inside one)
+        openAllParentAccordions(anchor).then(() => {
+            // Scroll after layout has fully updated
+            requestAnimationFrame(() => scrollToSection(targetSection));
         });
     }
 
-    // Handle clicks on anchors
-    document.addEventListener('click', function(e) {
+    // Handle clicks on anchor links
+    document.addEventListener('click', e => {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
 
         e.preventDefault();
         handleAnchor(anchor);
 
-        // Update URL hash without jump
+        // Update URL hash without jumping
         history.pushState(null, '', anchor.getAttribute('href'));
     });
 
-    // Scroll on page load if there is a hash
+    // Scroll on page load if there’s a hash
     function scrollOnLoad() {
         if (window.location.hash) {
             const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
@@ -624,6 +621,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('hashchange', scrollOnLoad);
 });
 </script>
+
 
 
   {% endunless %}
