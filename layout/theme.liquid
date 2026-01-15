@@ -641,50 +641,62 @@
 
 {% if request.path contains 'glo-wearable-breast-pump-staging' %}
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
+    const EXTRA_OFFSET = 550; // ✅ fixed offset
+    const header = document.querySelector('.cc-header');
 
-  const header = document.querySelector('.cc-header');
-
-  function getHeaderHeight() {
-    return header ? header.offsetHeight : 0;
-  }
-
-  function openAccordion(anchor) {
-    const details = anchor.closest('details');
-    if (details && !details.hasAttribute('open')) {
-      details.setAttribute('open', '');
-      return new Promise(resolve => setTimeout(resolve, 400));
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
     }
-    return Promise.resolve();
-  }
 
-  function scrollToTarget(target) {
-    const y =
-      target.getBoundingClientRect().top +
-      window.pageYOffset -
-      getHeaderHeight() -
-      16;
+    function scrollToElement(element) {
+        const y =
+            element.getBoundingClientRect().top +
+            window.pageYOffset -
+            getHeaderHeight() +
+            EXTRA_OFFSET;
 
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
 
-  document.addEventListener('click', function (e) {
-    const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
-    if (!anchor) return;
+    function openAccordion(anchor) {
+        const details = anchor.closest('details');
+        if (details && !details.hasAttribute('open')) {
+            details.setAttribute('open', '');
+            return new Promise(resolve => setTimeout(resolve, 350));
+        }
+        return Promise.resolve();
+    }
 
-    const id = anchor.getAttribute('href').slice(1);
-    const target = document.getElementById(id);
-    if (!target) return;
+    function handleAnchor(anchor) {
+        const targetId = anchor.getAttribute('href').slice(1);
+        const target = document.getElementById(targetId);
+        if (!target) return;
 
-    e.preventDefault();
+        openAccordion(anchor).then(() => {
+            requestAnimationFrame(() => scrollToElement(target));
+        });
+    }
 
-    openAccordion(anchor).then(() => {
-      requestAnimationFrame(() => scrollToTarget(target));
+    document.addEventListener('click', function(e) {
+        const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
+        if (!anchor) return;
+
+        const targetId = anchor.getAttribute('href').slice(1);
+        if (!document.getElementById(targetId)) return;
+
+        e.preventDefault();
+        handleAnchor(anchor);
+        history.pushState(null, '', `#${targetId}`);
     });
 
-    history.pushState(null, '', `#${id}`);
-  });
+    function scrollOnLoad() {
+        if (!window.location.hash) return;
+        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
+        if (anchor) handleAnchor(anchor);
+    }
 
+    window.addEventListener('load', scrollOnLoad);
 });
 </script>
 {% endif %}
