@@ -563,7 +563,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
-        // latest
+        //latest
     }
 
     function scrollToTarget(targetElement) {
@@ -581,22 +581,44 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }
 
+    // Wait until element is visible before scrolling
+    function scrollWhenVisible(targetElement) {
+        const checkInterval = 50;
+        const maxAttempts = 30;
+        let attempts = 0;
+
+        const interval = setInterval(() => {
+            if (!targetElement) return clearInterval(interval);
+
+            // offsetParent is null if element or its parent is hidden
+            if (targetElement.offsetParent !== null || attempts >= maxAttempts) {
+                scrollToTarget(targetElement);
+                clearInterval(interval);
+            }
+
+            attempts++;
+        }, checkInterval);
+    }
+
     // Event delegation for anchor links
     document.addEventListener('click', function(event) {
         const link = event.target.closest('a[href^="#"]:not([href="#"])');
         if (!link) return;
 
-        // Prevent default jump
         event.preventDefault();
 
         const targetId = link.getAttribute('href').slice(1);
         const targetElement = document.getElementById(targetId);
         if (!targetElement) return;
 
-        // Use requestAnimationFrame to ensure scroll runs after any browser hash handling
-        requestAnimationFrame(() => scrollToTarget(targetElement));
+        // If the section is inside a tab, trigger it to open first here
+        // Example: add your tab-opening code if necessary
+        // openTabContaining(targetElement);
 
-        // Let the browser update the hash naturally — do NOT call history.pushState here
+        // Scroll after the element is visible
+        scrollWhenVisible(targetElement);
+
+        // Let browser update hash naturally
         link.setAttribute('href', `#${targetId}`);
     });
 
@@ -607,7 +629,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.getElementById(targetId);
             if (!targetElement) return;
 
-            scrollToTarget(targetElement);
+            scrollWhenVisible(targetElement);
         }
     }
 
@@ -617,6 +639,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 </script>
+
 
 
   {% endunless %}
