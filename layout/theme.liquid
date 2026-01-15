@@ -571,74 +571,42 @@ document.addEventListener('DOMContentLoaded', function() {
         const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
         window.scrollTo({
-            top: elementPosition - headerHeight - 16,
+            top: elementPosition - headerHeight - 16, // adjust for sticky header
             behavior: 'smooth'
         });
 
-        // Optional tiny scroll for navbar shrink
+        // tiny adjustment for navbar shrink
         setTimeout(() => {
             window.scrollBy({ top: 1, behavior: 'smooth' });
         }, 500);
     }
 
-    // Wait until element is visible before scrolling
-    function scrollWhenVisible(targetElement) {
-        const checkInterval = 50;
-        const maxAttempts = 30;
-        let attempts = 0;
+    // Adjust scroll after browser jump has completed
+    function adjustScrollForHash() {
+        if (!window.location.hash) return;
 
-        const interval = setInterval(() => {
-            if (!targetElement) return clearInterval(interval);
-
-            // offsetParent is null if element or its parent is hidden
-            if (targetElement.offsetParent !== null || attempts >= maxAttempts) {
-                scrollToTarget(targetElement);
-                clearInterval(interval);
-            }
-
-            attempts++;
-        }, checkInterval);
-    }
-
-    // Event delegation for anchor links
-    document.addEventListener('click', function(event) {
-        const link = event.target.closest('a[href^="#"]:not([href="#"])');
-        if (!link) return;
-
-        event.preventDefault();
-
-        const targetId = link.getAttribute('href').slice(1);
+        const targetId = window.location.hash.slice(1);
         const targetElement = document.getElementById(targetId);
         if (!targetElement) return;
 
-        // If the section is inside a tab, trigger it to open first here
-        // Example: add your tab-opening code if necessary
-        // openTabContaining(targetElement);
-
-        // Scroll after the element is visible
-        scrollWhenVisible(targetElement);
-
-        // Let browser update hash naturally
-        link.setAttribute('href', `#${targetId}`);
-    });
-
-    // Scroll on page load if there is a hash
-    function adjustScrollForHash() {
-        if (window.location.hash) {
-            const targetId = window.location.hash.slice(1);
-            const targetElement = document.getElementById(targetId);
-            if (!targetElement) return;
-
-            scrollWhenVisible(targetElement);
-        }
+        // Let the browser perform the default jump first
+        setTimeout(() => {
+            scrollToTarget(targetElement);
+        }, 0); // minimal delay ensures browser jump finishes
     }
 
+    // Run on page load
     window.addEventListener('load', adjustScrollForHash);
+
+    // Run on back/forward navigation
     window.addEventListener('popstate', adjustScrollForHash);
+
+    // Run on hash changes
     window.addEventListener('hashchange', adjustScrollForHash);
 
 });
 </script>
+
 
 
 
