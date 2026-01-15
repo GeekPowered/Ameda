@@ -637,73 +637,54 @@
         window.addEventListener('hashchange', adjustScrollForHash);
     });
     </script>
-    
+
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Only run on pages containing both "glo" and "staging"
-  const path = window.location.pathname;
-  if (!path.includes('glo') || !path.includes('staging')) return;
+document.addEventListener('DOMContentLoaded', function() {
 
-  const header = document.querySelector('.cc-header');
+    // ✅ ONLY run on this specific product URL
+    const path = window.location.pathname;
+    if (!path.endsWith('glo-wearable-breast-pump-staging')) return;
 
-  function getHeaderHeight() {
-    return header ? header.offsetHeight : 0;
-  }
+    const header = document.querySelector('.cc-header');
 
-  function scrollToSection(targetSection) {
-    // Dynamically get the previous block height
-    let previousBlock = targetSection.previousElementSibling;
-    let offset = previousBlock ? previousBlock.offsetHeight : 0;
-
-    const y = targetSection.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + offset;
-
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
-
-  function openAllParentAccordions(element) {
-    const detailsAncestors = [];
-    let current = element.closest('details');
-    while (current) {
-      detailsAncestors.push(current);
-      current = current.parentElement.closest('details');
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
     }
-    detailsAncestors.forEach(d => d.setAttribute('open', ''));
-    return new Promise(resolve => setTimeout(resolve, 450));
-  }
 
-  function handleAnchor(anchor) {
-    const targetId = anchor.getAttribute('href').replace('#', '');
-    const targetSection = document.getElementById(targetId);
-    if (!targetSection) return;
+    function getPreviousSectionHeight(element) {
+        const section = element.closest('.shopify-section');
+        if (!section) return 0;
 
-    openAllParentAccordions(anchor).then(() => {
-      requestAnimationFrame(() => scrollToSection(targetSection));
-    });
-  }
-
-  // Click handler for anchor links
-  document.addEventListener('click', e => {
-    const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
-    if (!anchor) return;
-
-    e.preventDefault();
-    handleAnchor(anchor);
-    history.pushState(null, '', anchor.getAttribute('href'));
-  });
-
-  // Scroll if there’s a hash on page load
-  function scrollOnLoad() {
-    if (window.location.hash) {
-      const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
-      if (anchor) handleAnchor(anchor);
+        const prev = section.previousElementSibling;
+        return prev ? prev.offsetHeight : 0;
     }
-  }
 
-  window.addEventListener('load', scrollOnLoad);
-  window.addEventListener('popstate', scrollOnLoad);
-  window.addEventListener('hashchange', scrollOnLoad);
-});
-</script>
+    function scrollToElement(element) {
+        const headerHeight = getHeaderHeight();
+        const prevSectionHeight = getPreviousSectionHeight(element);
+
+        const y =
+            element.getBoundingClientRect().top +
+            window.pageYOffset -
+            headerHeight -
+            prevSectionHeight -
+            16; // small visual padding
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+
+    function openAccordion(targetElement) {
+        const details = targetElement.closest('details');
+        if (details && !details.hasAttribute('open')) {
+            details.setAttribute('open', '');
+            return new Promise(resolve => setTimeout(resolve, 350));
+        }
+        return Promise.resolve();
+    }
+
+    function handleAnchor(anchor) {
+        const targetId = anchor.getAttribute('href').repl
+
 
   {% endunless %}
 
