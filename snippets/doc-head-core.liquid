@@ -120,6 +120,69 @@
 <!-- End Meta Pixel Code -->
 
 {% if template == 'collection' %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "ItemList",
+    "name": {{ collection.title | strip_html | strip | json }},
+    "description": {{ collection.description | strip_html | strip | json }},
+    "numberOfItems": {{ collection.products.size }},
+    "itemListElement": [
+      {% assign position = 0 %}
+      {% for product in collection.products %}
+        {% assign position = position | plus: 1 %}
+        {
+          "@type": "ListItem",
+          "position": {{ position }},
+          "item": {
+            "@type": "Product",
+            "name": {{ product.title | strip_html | strip | json }},
+            "url": "{{ shop.url }}{{ product.url }}",
+            "image": {% if product.featured_image %}"https:{{ product.featured_image | product_img_url: '450x450' }}"{% else %}""{% endif %},
+            "description": {{ product.description | strip_html | strip | json }},
+            "sku": {% if product.variants.first and product.variants.first.sku != blank %}"{{ product.variants.first.sku }}"{% else %}""{% endif %},
+            "mpn": "{{ product.id }}",
+            "brand": {
+              "@type": "Brand",
+              "name": "Ameda"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "{{ shop.currency }}",
+              "price": {% if product.price > 0 %}"{{ product.price | money_without_currency | remove: ',' }}"{% else %}""{% endif %},
+              "priceValidUntil": "{{ 'now' | date: '%Y-%m-%d' }}",
+              "itemCondition": "https://schema.org/NewCondition",
+              "availability": "https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+              "url": "{{ shop.url }}{{ product.url }}"
+            }
+            {% if product.metafields.okendo.summaryData.reviewCount > 0 %}
+            ,"aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "{{ product.metafields.okendo.summaryData.reviewAverageValue }}",
+              "ratingCount": "{{ product.metafields.okendo.summaryData.reviewCount }}"
+            }
+            {% endif %}
+          }
+        }
+        {% if forloop.last == false %},{% endif %}
+      {% endfor %}
+      {% if collection.products.size == 0 %}
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Coming Soon",
+          "url": "{{ shop.url }}/collections/{{ collection.handle }}"
+        }
+      }
+      {% endif %}
+    ]
+  }
+  </script>
+
+  {% comment %}
     <script type="application/ld+json">
     {
         "@context": "https://schema.org/",
@@ -208,4 +271,5 @@
         ]
     }
     </script>
+    {% endcomment %}
 {% endif %}
