@@ -558,84 +558,72 @@
   {% unless request.path contains 'instructions-for-use' or request.path contains 'product-locator' %}
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Select all anchor links with a hash but ignore those that are just "#"
-        const links = document.querySelectorAll('a[href^="#"]:not([href="#"])');
-        const header = document.querySelector('.cc-header');
+          // Select all anchor links with a hash but ignore empty "#" links
+          const links = document.querySelectorAll('a[href^="#"]:not([href="#"])');
+          // Select the sticky header element
+          const header = document.querySelector('.cc-header');
 
-        // Function to get the height of the sticky header
-        function getHeaderHeight() {
-            return header ? header.offsetHeight : 0;
-        }
+          // Function to get the height of the sticky header
+          function getHeaderHeight() {
+              return header ? header.offsetHeight : 0;
+          }
 
-        // Adjust scroll when clicking on a hash link
-        links.forEach(link => {
-            link.addEventListener('click', function(event) {
-                // Prevent the default jump to the hash
-                event.preventDefault();
+          // Function to scroll to a target element with header offset and navbar adjustment
+          function scrollToElement(targetElement) {
+              const headerHeight = getHeaderHeight();
+              // Calculate the target element's position relative to the top of the page
+              const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-                const targetId = this.getAttribute('href').slice(1);
-                const targetElement = document.getElementById(targetId);
+              // Scroll to the element, adjusted for sticky header
+              window.scrollTo({
+                  top: elementPosition - headerHeight - 16, // 16px extra spacing
+                  behavior: 'smooth' // smooth scrolling
+              });
 
-                if (targetElement) {
-                    const headerHeight = getHeaderHeight();
-                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+              // Small scroll adjustment to trigger navbar shrink animation if applicable
+              setTimeout(() => {
+                  window.scrollBy({ top: 1, behavior: 'smooth' });
+              }, 500);
+          }
 
-                    // Scroll to the element, adjusted for header height
-                    window.scrollTo({
-                        top: elementPosition - headerHeight - 16,
-                        behavior: 'smooth'
-                    });
+          // Add click event listeners to all anchor links
+          links.forEach(link => {
+              link.addEventListener('click', function(event) {
+                  event.preventDefault(); // Prevent default jump-to behavior
+                  const targetId = this.getAttribute('href').slice(1);
+                  const targetElement = document.getElementById(targetId);
+                  if (targetElement) scrollToElement(targetElement);
 
-                    // Scroll down 1px to trigger navbar shrink
-                    setTimeout(() => {
-                        window.scrollBy({ top: 1, behavior: 'smooth' });
-                    }, 500);
+                  // Update the URL hash without triggering another scroll
+                  history.pushState(null, '', `#${targetId}`);
+              });
+          });
 
-                    // Update the URL hash without scrolling
-                    history.pushState(null, '', `#${targetId}`);
-                }
-            });
-        });
+          // Function to handle scrolling when page loads or URL hash changes
+          function adjustScrollForHash() {
+              if (window.location.hash) {
+                  const targetId = window.location.hash.slice(1);
+                  const targetElement = document.getElementById(targetId);
+                  if (!targetElement) return;
 
-        // Adjust scroll position when navigating to a hash directly (e.g., page load or link click from another page)
-        function adjustScrollForHash() {
-            if (window.location.hash) {
-                const targetId = window.location.hash.slice(1);
-                const targetElement = document.getElementById(targetId);
+                  // Wait for the entire page (images, fonts, etc.) to finish loading
+                  window.addEventListener('load', () => {
+                      setTimeout(() => {
+                          scrollToElement(targetElement); // Scroll to element safely
+                      }, 200); // Slight delay to ensure layout is fully settled
+                  });
+              }
+          }
 
-                if (targetElement) {
-                    const headerHeight = getHeaderHeight();
-                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+          // Run scroll adjustment on page load
+          adjustScrollForHash();
 
-                    // Scroll after a brief delay to ensure the page is fully loaded
-                    setTimeout(() => {
-                        window.scrollTo({
-                            top: elementPosition - headerHeight - 16,
-                            behavior: 'smooth'
-                        });
-                        // Scroll down 1px to trigger navbar shrink
-                        setTimeout(() => {
-                            window.scrollBy({ top: 1, behavior: 'smooth' });
-                        }, 500);
-                    }, 100);
-                }
-            }
-        }
+          // Listen for browser back/forward navigation
+          window.addEventListener('popstate', adjustScrollForHash);
 
-        // Run the adjustment on page load
-        adjustScrollForHash();
-
-        // Immediate adjustment if the page is already scrolled to a hash on load
-        if (window.location.hash) {
-            window.addEventListener('load', adjustScrollForHash);
-        }
-
-        // Listen for popstate events (e.g., navigating through browser history)
-        window.addEventListener('popstate', adjustScrollForHash);
-
-        // Listen for hashchange events (e.g., hash routing happening after page load)
-        window.addEventListener('hashchange', adjustScrollForHash);
-    });
+          // Listen for hash changes after page load (hash routing)
+          window.addEventListener('hashchange', adjustScrollForHash);
+      });
     </script>
   {% endunless %}
 
