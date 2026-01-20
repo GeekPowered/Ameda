@@ -1,0 +1,56 @@
+<a href="{{ section.settings.link }}" class="collapsible-link">
+  <div class="collapsible-link__inner">
+    <span>{{ section.settings.title }}</span>
+    <span class="collapsible-link__icon">+</span>
+  </div>
+</a>
+
+<style>
+.collapsible-link {
+  display: block;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 16px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.collapsible-link__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible-link__icon {
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.collapsible-link:hover .collapsible-link__icon {
+  transform: rotate(45deg);
+}
+</style>
+
+{% schema %}
+{
+  "name": "Collapsible Style Link",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "More information"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collapsible Link"
+    }
+  ]
+}
+{% endschema %}
