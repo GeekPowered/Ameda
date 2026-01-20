@@ -323,6 +323,15 @@
               {%- endif -%}
             </div>
 
+          {% when 'collapsible_link' %}
+          <a href="{{ block.settings.link }}" class="collapsible-link">
+            <div class="collapsible-link__inner">
+              <span>{{ block.settings.title }}</span>
+              <span class="collapsible-link__icon">+</span>
+            </div>
+          </a>
+
+
           {%- when 'complementary' -%}
             <div class="product-info__block" {{ block.shopify_attributes }}>
               {%- liquid
