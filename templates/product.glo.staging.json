@@ -91,11 +91,11 @@
             "open": false
           }
         },
-        "collapsible_link_troubleshooting": {
+        "collapsible_link_bhGMTQ": {
           "type": "collapsible_link",
           "settings": {
             "title": "Troubleshooting Guide",
-            "link": "/"
+            "link": ""
           }
         },
         "divider-0": {
@@ -121,6 +121,7 @@
         "buy-buttons",
         "collapsible_content_LYD7Jj",
         "collapsible_content_4RKpYW",
+        "collapsible_link_bhGMTQ",
         "divider-0",
         "share"
       ],
