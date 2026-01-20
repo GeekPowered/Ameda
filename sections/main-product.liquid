@@ -323,15 +323,6 @@
               {%- endif -%}
             </div>
 
-          {% when 'collapsible_link' %}
-            <a href="{{ block.settings.link }}" class="collapsible-link">
-              <div class="collapsible-link__inner">
-                <span>{{ block.settings.title }}</span>
-                <span class="collapsible-link__icon">+</span>
-              </div>
-            </a>
-
-
           {%- when 'complementary' -%}
             <div class="product-info__block" {{ block.shopify_attributes }}>
               {%- liquid
@@ -378,6 +369,23 @@
                 </details>
               </details-disclosure>
             {%- endif -%}
+
+            {% when 'collapsible_link' %}
+            <a href="{{ block.settings.link }}" class="disclosure disclosure--row collapsible-link">
+              <div class="flex justify-between items-center">
+                <h2 class="disclosure__title product-info__disclosure font-body font-bold text-body flex flex-auto items-center mb-0">
+                  {{ block.settings.title }}
+                </h2>
+                <span class="disclosure__toggle">
+                  {% if settings.disclosure_toggle == 'plus' %}
+                    {% render 'icon-plus' %}
+                  {% else %}
+                    {% render 'icon-chevron-down' %}
+                  {% endif %}
+                </span>
+              </div>
+            </a>
+
           {%- when 'product-signup' -%}
             {%- liquid
               assign show_block = true
