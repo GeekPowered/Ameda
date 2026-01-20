@@ -330,6 +330,30 @@ quantity-input + .product-info__add-button {
   margin-bottom: 0;
 }
 
+/* Collapsible link block */
+.collapsible-link {
+  display: block;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e5e5;
+  text-decoration: none;
+  color: inherit;
+}
+
+.collapsible-link__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible-link__icon {
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.collapsible-link:hover .collapsible-link__icon {
+  transform: rotate(45deg);
+}
+
 @media (max-width: 768.98px) {
   .product-info.media-with-text__text {
     padding-top: 0;
