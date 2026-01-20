@@ -91,11 +91,11 @@
             "open": false
           }
         },
-        "richtext_VjYazY": {
-          "type": "richtext",
-          "disabled": true,
+        "collapsible_link_troubleshooting": {
+          "type": "collapsible_link",
           "settings": {
-            "text": "<p><a href=\"#shopify-section-template--25358993326395__faq_ewbhVy\" title=\"#shopify-section-template--25358993326395__faq_ewbhVy\">Troubleshooting Guide</a></p>"
+            "title": "Troubleshooting Guide",
+            "link": "/"
           }
         },
         "divider-0": {
@@ -121,7 +121,6 @@
         "buy-buttons",
         "collapsible_content_LYD7Jj",
         "collapsible_content_4RKpYW",
-        "richtext_VjYazY",
         "divider-0",
         "share"
       ],
