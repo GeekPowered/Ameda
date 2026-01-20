@@ -641,8 +641,12 @@
 
 {% if request.path contains 'glo-wearable-breast-pump-staging' %}
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const EXTRA_OFFSET = 550; // ✅ fixed offset
+document.addEventListener('DOMContentLoaded', function () {
+
+    // ✅ ONLY run on screens wider than 1200px
+    if (!window.matchMedia('(min-width: 1200px)').matches) return;
+
+    const EXTRA_OFFSET = 600; // ✅ fixed offset
     const header = document.querySelector('.cc-header');
 
     function getHeaderHeight() {
@@ -678,7 +682,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
 
@@ -692,11 +696,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function scrollOnLoad() {
         if (!window.location.hash) return;
-        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
-        if (anchor) handleAnchor(anchor);
+
+        const anchor = document.querySelector(
+            `a[href="${window.location.hash}"]`
+        );
+
+        if (anchor) {
+            handleAnchor(anchor);
+        }
     }
 
-    window.addEventListener('load', scrollOnLoad);
+    // ✅ run on initial page load
+    scrollOnLoad();
+
+    // ✅ run when navigating browser history
+    window.addEventListener('popstate', scrollOnLoad);
+
 });
 </script>
 {% endif %}
