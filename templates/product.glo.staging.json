@@ -71,6 +71,14 @@
             "show_gift_card_recipient": false
           }
         },
+        "divider-0": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
         "collapsible_content_LYD7Jj": {
           "type": "collapsible-content",
           "settings": {
@@ -98,13 +106,6 @@
             "link": "#shopify-section-template--25358993326395__faq_ewbhVy"
           }
         },
-        "divider-0": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
-            "spacing": "mt-8 mb-8"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {}
@@ -119,10 +120,10 @@
         "price",
         "variant-picker",
         "buy-buttons",
+        "divider-0",
         "collapsible_content_LYD7Jj",
         "collapsible_content_4RKpYW",
         "collapsible_link_bhGMTQ",
-        "divider-0",
         "share"
       ],
       "custom_css": [
