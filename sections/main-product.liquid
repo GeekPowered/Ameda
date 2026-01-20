@@ -370,21 +370,12 @@
               </details-disclosure>
             {%- endif -%}
 
-            {% when 'collapsible_link' %}
-            <a href="{{ block.settings.link }}" class="disclosure disclosure--row collapsible-link">
-              <div class="flex justify-between items-center">
-                <h2 class="disclosure__title product-info__disclosure font-body font-bold text-body flex flex-auto items-center mb-0">
-                  {{ block.settings.title }}
-                </h2>
-                <span class="disclosure__toggle">
-                  {% if settings.disclosure_toggle == 'plus' %}
-                    {% render 'icon-plus' %}
-                  {% else %}
-                    {% render 'icon-chevron-down' %}
-                  {% endif %}
-                </span>
-              </div>
-            </a>
+    {% when 'collapsible_link' %}
+      <a href="{{ block.settings.link }}" class="disclosure disclosure--row collapsible-link">
+        <div>
+          <h2>{{ block.settings.title }}</h2>
+        </div>
+      </a>
 
           {%- when 'product-signup' -%}
             {%- liquid
