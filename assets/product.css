@@ -333,7 +333,6 @@ quantity-input + .product-info__add-button {
 /* Collapsible link block */
 .collapsible-link {
   display: block;
-  padding: 1rem 0;
   border-top: 1px solid #e5e5e5;
   text-decoration: none;
   color: inherit;
