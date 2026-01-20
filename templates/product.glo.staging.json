@@ -50,13 +50,6 @@
             "show_tax_and_shipping": true
           }
         },
-        "divider-0": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
-            "spacing": "mt-8 mb-8"
-          }
-        },
         "variant-picker": {
           "type": "variant-picker",
           "settings": {
@@ -98,6 +91,20 @@
             "open": false
           }
         },
+        "richtext_VjYazY": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "text": "<p><a href=\"#shopify-section-template--25358993326395__faq_ewbhVy\" title=\"#shopify-section-template--25358993326395__faq_ewbhVy\">Troubleshooting Guide</a></p>"
+          }
+        },
+        "divider-0": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {}
@@ -110,11 +117,12 @@
         "9d3c5612-e12c-4f60-bc00-70a90a414745",
         "vendor-sku",
         "price",
-        "divider-0",
         "variant-picker",
         "buy-buttons",
         "collapsible_content_LYD7Jj",
         "collapsible_content_4RKpYW",
+        "richtext_VjYazY",
+        "divider-0",
         "share"
       ],
       "custom_css": [
