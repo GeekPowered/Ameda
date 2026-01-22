@@ -1,7 +1,7 @@
 {%- comment -%}
   Parameters:
-  - product {Object} - Product object.
-  - current_variant {Object} - Current variant object.
+  - product {Object}
+  - current_variant {Object}
 
   Usage:
   {% render 'structured-data-product',
@@ -18,29 +18,38 @@
   endif
 -%}
 
+{% assign variant = current_variant | default: product.selected_or_first_available_variant %}
+
 <script type="application/ld+json">
 {
-  "@type": "Offer",
-  {% if variant.sku != blank %}
-  "sku": {{ variant.sku | json }},
-  {% endif %}
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ request.origin | append: product.url | json }},
+  "image": {{ media | image_url | json }},
 
-  {% if variant.barcode.size == 12 %}
-  "gtin12": {{ variant.barcode | json }},
-  {% elsif variant.barcode.size == 13 %}
-  "gtin13": {{ variant.barcode | json }},
-  {% elsif variant.barcode.size == 14 %}
-  "gtin14": {{ variant.barcode | json }},
-  {% endif %}
+  "offers": {
+    "@type": "Offer",
 
-  "availability": "https://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-  "price": {{ variant.price | divided_by: 100.00 | json }},
-  "priceCurrency": {{ cart.currency.iso_code | json }},
-  "priceValidUntil": "{{ 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d' }}",
-  "url": {{ request.origin | append: variant.url | json }},
+    {% if variant.sku != blank %}
+    "sku": {{ variant.sku | json }},
+    {% endif %}
 
-  "shippingDetails": [
-    {
+    {% if variant.barcode.size == 12 %}
+    "gtin12": {{ variant.barcode | json }},
+    {% elsif variant.barcode.size == 13 %}
+    "gtin13": {{ variant.barcode | json }},
+    {% elsif variant.barcode.size == 14 %}
+    "gtin14": {{ variant.barcode | json }},
+    {% endif %}
+
+    "availability": "https://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+    "price": {{ variant.price | divided_by: 100.0 | json }},
+    "priceCurrency": {{ cart.currency.iso_code | json }},
+    "priceValidUntil": "{{ 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d' }}",
+    "url": {{ request.origin | append: variant.url | json }},
+
+    "shippingDetails": [{
       "@type": "OfferShippingDetails",
       "shippingRate": {
         "@type": "MonetaryAmount",
@@ -66,22 +75,22 @@
           "unitCode": "DAY"
         }
       }
+    }],
+
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "applicableCountry": "US",
+      "merchantReturnDays": 7,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility",
+      "url": "https://www.ameda.com/pages/return-policy"
+    },
+
+    "seller": {
+      "@type": "Organization",
+      "name": {{ shop.name | json }}
     }
-  ],
-
-  "hasMerchantReturnPolicy": {
-    "@type": "MerchantReturnPolicy",
-    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-    "applicableCountry": "US",
-    "merchantReturnDays": 7,
-    "returnMethod": "https://schema.org/ReturnByMail",
-    "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility",
-    "url": "https://www.ameda.com/pages/return-policy"
-  },
-
-  "seller": {
-    "@type": "Organization",
-    "name": {{ shop.name | json }}
   }
 }
 </script>
