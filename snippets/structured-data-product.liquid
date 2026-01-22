@@ -29,27 +29,20 @@
   "url": {{ request.origin | append: product.url | json }},
   "image": {{ media | image_url | json }},
 
-{% if product.metafields.okendo.summaryData %}
+{% assign okendo_rating =
+  product.metafields.okendo.summaryData.ratingValue
+  | default: product.metafields.okendo.summaryData.averageRating
+  | default: product.metafields.okendo.summaryData.rating_average
+%}
+
+{% if okendo_rating != blank and product.metafields.okendo.summaryData.reviewCount > 0 %}
 "aggregateRating": {
   "@type": "AggregateRating",
-  "ratingValue": "{{ product.metafields.okendo.summaryData.ratingAverage }}",
+  "ratingValue": "{{ okendo_rating }}",
   "reviewCount": "{{ product.metafields.okendo.summaryData.reviewCount }}"
 },
 {% endif %}
 
-{% if product.metafields.okendo.reviews and product.metafields.okendo.reviews.value.size > 0 %}
-"review": [{
-  "@type": "Review",
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "{{ product.metafields.okendo.reviews.value[0].rating }}"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "{{ product.metafields.okendo.reviews.value[0].author.name }}"
-  }
-}],
-{% endif %}
 
 
   "offers": {
