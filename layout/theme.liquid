@@ -649,42 +649,33 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
+    // Live smooth scroll to element that adjusts if element moves
     function smoothScrollToElement(element) {
-        const headerOffset = getHeaderHeight();
         const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
 
-        let targetY =
-            element.getBoundingClientRect().top +
-            window.pageYOffset -
-            headerOffset +
-            extraOffset;
+        function step() {
+            const targetY =
+                element.getBoundingClientRect().top +
+                window.pageYOffset -
+                getHeaderHeight() +
+                extraOffset;
 
-        const maxScroll =
-            document.documentElement.scrollHeight - window.innerHeight;
+            const maxScroll =
+                document.documentElement.scrollHeight - window.innerHeight;
 
-        targetY = Math.max(0, Math.min(targetY, maxScroll));
+            const finalTargetY = Math.max(0, Math.min(targetY, maxScroll));
+            const currentY = window.pageYOffset;
+            const diff = finalTargetY - currentY;
 
-        const startY = window.pageYOffset;
-        const distance = targetY - startY;
-        const duration = 500;
-        const startTime = performance.now();
+            // Stop when close enough
+            if (Math.abs(diff) < 1) return;
 
-        function easeOutCubic(t) {
-            return 1 - Math.pow(1 - t, 3);
-        }
-
-        function step(now) {
-            const elapsed = now - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = easeOutCubic(progress);
-
+            // Move 20% of remaining distance
             window.scrollTo({
-                top: startY + distance * eased
+                top: currentY + diff * 0.2
             });
 
-            if (progress < 1) {
-                requestAnimationFrame(step);
-            }
+            requestAnimationFrame(step);
         }
 
         requestAnimationFrame(step);
@@ -699,8 +690,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    function waitForTargetStable(target, callback, maxWait = 4000) {
-        // Increased frames for stability
+    function waitForTargetStable(target, callback, maxWait = 5000) {
         let lastTop = target.getBoundingClientRect().top;
         let stableFrames = 0;
         const startTime = Date.now();
@@ -715,8 +705,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 lastTop = currentTop;
             }
 
-            // Require 10 stable frames (~166ms) or timeout
-            if (stableFrames >= 10 || Date.now() - startTime > maxWait) {
+            // Require 15 stable frames (~250ms) or timeout
+            if (stableFrames >= 15 || Date.now() - startTime > maxWait) {
                 callback();
             } else {
                 requestAnimationFrame(check);
@@ -765,6 +755,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
+
 
 
 
