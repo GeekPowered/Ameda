@@ -797,7 +797,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 {% endif %}
 
-
 {% if request.path contains 'glo-wearable-breast-pump' %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -814,7 +813,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    // Smooth scroll to target with adaptive mobile behavior
+    // Adaptive smooth scroll for mobile
     function adaptiveScroll(target, extraOffset = 50) {
         if (!target) return;
         if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
@@ -837,7 +836,7 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollAnimation = requestAnimationFrame(step);
     }
 
-    // Open accordion if anchor inside one
+    // Open accordion if anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -847,13 +846,12 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // Wait for images in dynamic sections
+    // Wait for images in sections
     function waitForImages(sections) {
         const promises = [];
         sections.forEach(section => {
             if (!section) return;
-            const imgs = Array.from(section.querySelectorAll('img'));
-            imgs.forEach(img => {
+            Array.from(section.querySelectorAll('img')).forEach(img => {
                 if (!img.complete) {
                     promises.push(new Promise(res => img.addEventListener('load', res)));
                 }
@@ -862,7 +860,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.all(promises);
     }
 
-    // Wait for dynamic sections to stabilize (mutations + images)
+    // Wait for dynamic sections to stabilize
     function waitForDynamicSections(sections) {
         return new Promise(resolve => {
             let lastMutation = Date.now();
@@ -900,7 +898,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        // Include the section immediately above the target for mobile
         const dynamicSections = [
             document.querySelector('section:nth-of-type(2)'),
             document.querySelector('section:nth-of-type(3)'),
@@ -908,42 +905,55 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('section:nth-of-type(6)'),
             document.querySelector('section:nth-of-type(9)'),
             document.querySelector('section:nth-of-type(16)'),
-            document.querySelector('section:nth-of-type(17)'), // <-- immediately above target
+            document.querySelector('section:nth-of-type(17)') // section above target
         ];
 
         openAccordion(anchor)
         .then(() => waitForDynamicSections(dynamicSections))
         .then(() => waitForImages(dynamicSections))
+        .then(() => new Promise(res => setTimeout(res, 50))) // small buffer to settle layout
         .then(() => adaptiveScroll(target, 50));
+
+        // Avoid duplicate history entries
+        if (window.location.hash !== `#${targetId}`) {
+            history.pushState(null, '', `#${targetId}`);
+        }
     }
 
-    // Click listener
+    // Click listener for anchors
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
-
-        const targetId = anchor.getAttribute('href').slice(1);
-        if (!document.getElementById(targetId)) return;
+        if (!document.getElementById(anchor.getAttribute('href').slice(1))) return;
 
         e.preventDefault();
         handleAnchor(anchor);
-        history.pushState(null, '', `#${targetId}`);
     });
 
-    // Scroll on page load hash
-    function scrollOnLoad() {
+    // Handle hash on page load without browser jumping
+    (function scrollOnLoad() {
         if (!window.location.hash) return;
-        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
-        if (anchor) handleAnchor(anchor);
-    }
 
-    scrollOnLoad();
-    window.addEventListener('popstate', scrollOnLoad);
+        // Temporarily remove hash to prevent browser auto-scroll
+        const hash = window.location.hash;
+        history.replaceState(null, '', ' ');
+
+        const anchor = document.querySelector(`a[href="${hash}"]`);
+        if (anchor) handleAnchor(anchor);
+    })();
+
+    // Handle back/forward buttons
+    window.addEventListener('popstate', function () {
+        const hash = window.location.hash;
+        if (!hash) return;
+
+        const anchor = document.querySelector(`a[href="${hash}"]`);
+        if (anchor) handleAnchor(anchor);
+    });
 
 });
 </script>
 {% endif %}
-
 
 
   {% if request.path contains 'product-locator' %}
