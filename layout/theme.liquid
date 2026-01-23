@@ -652,30 +652,43 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    function smoothScrollDesktop(target, extraOffset) {
+    // Smooth adaptive scroll toward target
+    function adaptiveScroll(target, extraOffset = 50, duration = 700) {
         if (!target) return;
         if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
 
-        const targetY = Math.min(
-            window.pageYOffset + target.getBoundingClientRect().top - getHeaderHeight() + extraOffset,
-            document.documentElement.scrollHeight - window.innerHeight
-        );
+        const startTime = performance.now();
+        const startY = window.pageYOffset;
 
-        function step() {
-            const currentY = window.pageYOffset;
-            const diff = targetY - currentY;
-            if (Math.abs(diff) < 1) {
-                window.scrollTo(0, targetY);
+        function step(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            const headerHeight = getHeaderHeight();
+            const targetRect = target.getBoundingClientRect();
+            let targetY = window.pageYOffset + targetRect.top - headerHeight - extraOffset;
+
+            // Clamp to bottom of page
+            targetY = Math.min(targetY, document.documentElement.scrollHeight - window.innerHeight);
+
+            // Smooth easing toward current targetY
+            const distance = targetY - window.pageYOffset;
+            const eased = distance * (1 - Math.pow(1 - progress, 3));
+
+            window.scrollTo(0, window.pageYOffset + eased);
+
+            if (Math.abs(distance) > 0.5 && progress < 1) {
+                scrollAnimation = requestAnimationFrame(step);
+            } else {
                 scrollAnimation = null;
-                return;
+                window.scrollTo(0, targetY); // ensure exact final position
             }
-            window.scrollTo(0, currentY + diff * 0.2);
-            scrollAnimation = requestAnimationFrame(step);
         }
 
         scrollAnimation = requestAnimationFrame(step);
     }
 
+    // Open accordion if anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -685,24 +698,44 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
+    // Wait for images in dynamic sections
+    function waitForImages(sections) {
+        const promises = [];
+        sections.forEach(section => {
+            if (!section) return;
+            const imgs = Array.from(section.querySelectorAll('img'));
+            imgs.forEach(img => {
+                if (!img.complete) {
+                    promises.push(new Promise(res => img.addEventListener('load', res)));
+                }
+            });
+        });
+        return Promise.all(promises);
+    }
+
+    // Wait for dynamic sections to stabilize (mutations + images)
     function waitForDynamicSections(sections) {
         return new Promise(resolve => {
-            let lastOffset = 0;
-            let stableFrames = 0;
-            const maxWait = 3000;
-            const startTime = Date.now();
+            let lastMutation = Date.now();
+            const observers = [];
+
+            function cleanup() {
+                observers.forEach(o => o.disconnect());
+                resolve();
+            }
+
+            sections.forEach(section => {
+                if (!section) return;
+                const observer = new MutationObserver(() => lastMutation = Date.now());
+                observer.observe(section, { childList: true, subtree: true, attributes: true, characterData: true });
+                observers.push(observer);
+            });
 
             function check() {
-                const currentOffset = sections[sections.length - 1].offsetTop || 0;
-                if (currentOffset === lastOffset) {
-                    stableFrames++;
-                } else {
-                    stableFrames = 0;
-                    lastOffset = currentOffset;
-                }
-
-                if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
-                    resolve();
+                const now = Date.now();
+                const imagesLoaded = sections.every(sec => !sec || Array.from(sec.querySelectorAll('img')).every(img => img.complete));
+                if (now - lastMutation > 200 && imagesLoaded) {
+                    cleanup();
                 } else {
                     requestAnimationFrame(check);
                 }
@@ -712,18 +745,28 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Handle anchor click
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        openAccordion(anchor).then(() => {
-            // Adjust this large offset for sticky header
-            const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
-            smoothScrollDesktop(target, extraOffset);
-        });
+        const dynamicSections = [
+            document.querySelector('section:nth-of-type(2)'),
+            document.querySelector('section:nth-of-type(3)'),
+            document.querySelector('section:nth-of-type(5)'),
+            document.querySelector('section:nth-of-type(6)'),
+            document.querySelector('section:nth-of-type(9)'),
+            document.querySelector('section:nth-of-type(16)')
+        ];
+
+        openAccordion(anchor)
+        .then(() => waitForDynamicSections(dynamicSections))
+        .then(() => waitForImages(dynamicSections))
+        .then(() => adaptiveScroll(target, 50, 700));
     }
 
+    // Click listener
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
@@ -736,6 +779,7 @@ document.addEventListener('DOMContentLoaded', function () {
         history.pushState(null, '', `#${targetId}`);
     });
 
+    // Scroll on page load hash
     function scrollOnLoad() {
         if (!window.location.hash) return;
         const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
@@ -749,6 +793,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 {% endif %}
 {% endif %}
+
 {% if screen width < 1200px %}
 {% if request.path contains 'glo-wearable-breast-pump' %}
 <script>
