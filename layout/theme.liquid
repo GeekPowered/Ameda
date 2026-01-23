@@ -650,47 +650,49 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    // Smooth scroll function (glitch-free)
-function smoothScrollToElement(element, extraOffset) {
-    const headerOffset = getHeaderHeight();
+    // Smooth scroll function (safe, clamped, one-shot)
+    function smoothScrollToElement(element) {
+        const headerOffset = getHeaderHeight();
 
-    let targetY =
-        element.getBoundingClientRect().top +
-        window.pageYOffset -
-        headerOffset +
-        extraOffset;
+        // Fixed offset for PDP sections
+        const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
 
-    const maxScroll =
-        document.documentElement.scrollHeight - window.innerHeight;
+        // Calculate target position
+        let targetY =
+            element.getBoundingClientRect().top +
+            window.pageYOffset -
+            headerOffset +
+            extraOffset;
 
-    targetY = Math.max(0, Math.min(targetY, maxScroll));
+        // Clamp to valid scroll range
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        targetY = Math.max(0, Math.min(targetY, maxScroll));
 
-    const startY = window.pageYOffset;
-    const distance = targetY - startY;
-    const duration = 500;
-    const startTime = performance.now();
+        const startY = window.pageYOffset;
+        const distance = targetY - startY;
+        const duration = 500; // ms
+        const startTime = performance.now();
 
-    function easeOutCubic(t) {
-        return 1 - Math.pow(1 - t, 3);
-    }
-
-    function step(now) {
-        const elapsed = now - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const eased = easeOutCubic(progress);
-
-        window.scrollTo({
-            top: startY + distance * eased
-        });
-
-        if (progress < 1) {
-            requestAnimationFrame(step);
+        function easeOutCubic(t) {
+            return 1 - Math.pow(1 - t, 3);
         }
+
+        function step(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = easeOutCubic(progress);
+
+            window.scrollTo({
+                top: startY + distance * eased
+            });
+
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            }
+        }
+
+        requestAnimationFrame(step);
     }
-
-    requestAnimationFrame(step);
-}
-
 
     // Open an accordion if the anchor is inside one
     function openAccordion(anchor) {
@@ -702,20 +704,20 @@ function smoothScrollToElement(element, extraOffset) {
         return Promise.resolve();
     }
 
-    // Wait until the target element's offsetTop stabilizes
+    // Wait until the target element's position stabilizes
     function waitForTargetStable(target, callback, maxWait = 3000) {
-        let lastOffset = target.offsetTop;
+        let lastTop = target.getBoundingClientRect().top;
         let stableFrames = 0;
         const startTime = Date.now();
 
         function check() {
-            const currentOffset = target.offsetTop;
+            const currentTop = target.getBoundingClientRect().top;
 
-            if (currentOffset === lastOffset) {
+            if (Math.abs(currentTop - lastTop) < 0.5) {
                 stableFrames++;
             } else {
                 stableFrames = 0;
-                lastOffset = currentOffset;
+                lastTop = currentTop;
             }
 
             if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
@@ -736,11 +738,7 @@ function smoothScrollToElement(element, extraOffset) {
 
         openAccordion(anchor).then(() => {
             waitForTargetStable(target, () => {
-                // Use different offset depending on screen size
-const baseOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
-const maxOffset = window.innerHeight * 0.6;
-const extraOffset = Math.min(baseOffset, maxOffset);
-
+                smoothScrollToElement(target);
             });
         });
     }
@@ -774,6 +772,7 @@ const extraOffset = Math.min(baseOffset, maxOffset);
 });
 </script>
 {% endif %}
+
 
   {% if request.path contains 'product-locator' %}
     <script>
