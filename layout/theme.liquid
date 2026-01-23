@@ -647,7 +647,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
     const header = document.querySelector('.cc-header');
-    const EXTRA_OFFSET = 600; // ✅ fixed offset for tall dynamic content
+    const EXTRA_OFFSET = 600; // ✅ fixed offset to account for tall dynamic content
 
     // ✅ Get header height
     function getHeaderHeight() {
@@ -685,32 +685,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 lastHeight = currentHeight;
             }
 
+            // ✅ Consider stable after 5 frames (~83ms)
             if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
-                callback();
-            } else {
-                requestAnimationFrame(check);
-            }
-        }
-
-        check();
-    }
-
-    // ✅ Wait until the target element's position is stable
-    function waitForTargetPositionStable(target, callback, maxWait = 2000) {
-        let lastTop = target.getBoundingClientRect().top;
-        let stableFrames = 0;
-        const startTime = Date.now();
-
-        function check() {
-            const currentTop = target.getBoundingClientRect().top;
-            if (currentTop === lastTop) {
-                stableFrames++;
-            } else {
-                stableFrames = 0;
-                lastTop = currentTop;
-            }
-
-            if (stableFrames >= 3 || Date.now() - startTime > maxWait) {
                 callback();
             } else {
                 requestAnimationFrame(check);
@@ -728,9 +704,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         openAccordion(anchor).then(() => {
             waitForPageHeightStable(() => {
-                waitForTargetPositionStable(target, () => {
-                    scrollToElement(target);
-                });
+                scrollToElement(target); // ✅ single scroll after content is stable
             });
         });
     }
