@@ -641,8 +641,7 @@
 
 {% if request.path contains 'glo-wearable-breast-pump' %}
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-
+(function() {
     // ✅ ONLY run on screens wider than 1200px
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
@@ -670,43 +669,15 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // ✅ Wait until the target element’s vertical position stabilizes
-    function waitForStablePosition(target, callback, timeout = 2000) {
-        let lastTop = null;
-        let stableFrames = 0;
-        const start = Date.now();
-
-        function check() {
-            const rect = target.getBoundingClientRect();
-            if (lastTop === rect.top) {
-                stableFrames++;
-            } else {
-                stableFrames = 0;
-                lastTop = rect.top;
-            }
-
-            // ✅ Consider stable if position hasn’t changed for 3 frames (~50ms)
-            if (stableFrames >= 3 || Date.now() - start > timeout) {
-                callback();
-            } else {
-                requestAnimationFrame(check);
-            }
-        }
-
-        check();
-    }
-
-    // ✅ Handle anchor click or page load hash
+    // ✅ Handle anchor click or hash navigation
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        // Open accordion first, then wait for target to stabilize
         openAccordion(anchor).then(() => {
-            waitForStablePosition(target, () => {
-                scrollToElement(target);
-            });
+            // ✅ Scroll after layout is fully loaded
+            requestAnimationFrame(() => scrollToElement(target));
         });
     }
 
@@ -720,8 +691,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         e.preventDefault();
         handleAnchor(anchor);
-
-        // ✅ Update URL hash without jumping
         history.pushState(null, '', `#${targetId}`);
     });
 
@@ -729,24 +698,22 @@ document.addEventListener('DOMContentLoaded', function () {
     function scrollOnLoad() {
         if (!window.location.hash) return;
 
-        const anchor = document.querySelector(
-            `a[href="${window.location.hash}"]`
-        );
-
+        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
         if (anchor) {
             handleAnchor(anchor);
         }
     }
 
-    // ✅ Run on initial page load
-    scrollOnLoad();
+    // ✅ Wait for the full page load (images, widgets, etc.) before scrolling on initial load
+    window.addEventListener('load', scrollOnLoad);
 
     // ✅ Run when navigating browser history (back/forward)
     window.addEventListener('popstate', scrollOnLoad);
 
-});
+})();
 </script>
 {% endif %}
+
 
   {% if request.path contains 'product-locator' %}
     <script>
