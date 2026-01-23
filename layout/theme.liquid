@@ -792,10 +792,16 @@ document.addEventListener('DOMContentLoaded', function () {
             const isMobile = window.matchMedia('(max-width: 1199px)').matches;
 
             if (isMobile) {
-                smoothScrollMobile(target, 50); // mobile small offset
+                smoothScrollMobile(target, 50); // mobile unchanged
             } else {
-                const desktopOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
-                smoothScrollDesktop(target, desktopOffset); // desktop large offset
+                // -------------------------------
+                // Desktop: fixed offset to prevent overshoot
+                // -------------------------------
+                const baseOffset = window.matchMedia('(min-width: 1200px)').matches ? 580 : 480; // slightly reduced
+                const maxOffset = document.documentElement.scrollHeight - window.innerHeight;
+                const desktopOffset = Math.min(baseOffset, maxOffset);
+
+                smoothScrollDesktop(target, desktopOffset);
             }
         });
     }
@@ -830,6 +836,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
+
 
 
   {% if request.path contains 'product-locator' %}
