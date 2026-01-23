@@ -643,17 +643,16 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-    if (!window.matchMedia('(min-width: 1200px)').matches) return;
-
     const header = document.querySelector('.cc-header');
-    const EXTRA_OFFSET = 600; // fixed offset for tall dynamic content
 
+    // Get header height to offset scrolling
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    function smoothScrollToElement(element) {
-        const targetY = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + EXTRA_OFFSET;
+    // Smooth scroll function (glitch-free)
+    function smoothScrollToElement(element, extraOffset) {
+        const targetY = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + extraOffset;
 
         function step() {
             const currentY = window.pageYOffset;
@@ -668,6 +667,7 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(step);
     }
 
+    // Open an accordion if the anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -677,6 +677,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
+    // Wait until the target element's offsetTop stabilizes
     function waitForTargetStable(target, callback, maxWait = 3000) {
         let lastOffset = target.offsetTop;
         let stableFrames = 0;
@@ -702,16 +703,22 @@ document.addEventListener('DOMContentLoaded', function () {
         check();
     }
 
+    // Handle anchor click or page load hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            waitForTargetStable(target, () => smoothScrollToElement(target));
+            waitForTargetStable(target, () => {
+                // Use different offset depending on screen size
+                const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 400;
+                smoothScrollToElement(target, extraOffset);
+            });
         });
     }
 
+    // Click listener for internal anchor links
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
@@ -724,6 +731,7 @@ document.addEventListener('DOMContentLoaded', function () {
         history.pushState(null, '', `#${targetId}`);
     });
 
+    // Scroll to hash on page load
     function scrollOnLoad() {
         if (!window.location.hash) return;
 
