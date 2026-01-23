@@ -105,6 +105,13 @@
             "open": false
           }
         },
+        "collapsible_link_bhGMTQ": {
+          "type": "collapsible_link",
+          "settings": {
+            "title": "Troubleshooting Guide",
+            "link": "#shopify-section-template--24298767319355__faq_x9zLJM"
+          }
+        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -124,6 +131,7 @@
         "buy-buttons",
         "collapsible_content_LYD7Jj",
         "collapsible_content_4RKpYW",
+        "collapsible_link_bhGMTQ",
         "share"
       ],
       "custom_css": [
