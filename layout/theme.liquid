@@ -644,13 +644,16 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const header = document.querySelector('.cc-header');
+    let currentAnimation = null;
 
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // Standard smooth scroll easing
+    // Smooth scroll easing
     function smoothScrollTo(targetY, duration = 500) {
+        if (currentAnimation) cancelAnimationFrame(currentAnimation);
+
         const startY = window.pageYOffset;
         const distance = targetY - startY;
         const startTime = performance.now();
@@ -665,10 +668,14 @@ document.addEventListener('DOMContentLoaded', function () {
             window.scrollTo({
                 top: startY + distance * easeOutCubic(progress)
             });
-            if (progress < 1) requestAnimationFrame(step);
+            if (progress < 1) {
+                currentAnimation = requestAnimationFrame(step);
+            } else {
+                currentAnimation = null;
+            }
         }
 
-        requestAnimationFrame(step);
+        currentAnimation = requestAnimationFrame(step);
     }
 
     // Open accordion if needed
@@ -681,50 +688,48 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // Scroll after target is fully stable and dynamic content above has finished loading
-    function scrollWhenReady(target) {
-        return new Promise(resolve => {
+    // Wait until target is stable and dynamic content settles
+    function waitForTargetStable(target, callback, maxWait = 1500) {
+        const startTime = Date.now();
+        let lastTop = target.getBoundingClientRect().top;
+        let stableFrames = 0;
 
-            // Track if DOM mutations are still happening
-            let timeout;
-            const observer = new MutationObserver(() => {
-                clearTimeout(timeout);
-                // Wait 200ms after last mutation
-                timeout = setTimeout(() => {
-                    observer.disconnect();
-                    resolve();
-                }, 200);
-            });
+        function check() {
+            const currentTop = target.getBoundingClientRect().top;
+            if (Math.abs(currentTop - lastTop) < 0.5) stableFrames++;
+            else stableFrames = 0;
 
-            // Observe changes in the entire body above target
-            const body = document.body;
-            observer.observe(body, {
-                childList: true,
-                subtree: true,
-                attributes: true,
-                characterData: true
-            });
+            lastTop = currentTop;
 
-            // Initial delay in case no mutations occur
-            timeout = setTimeout(() => {
-                observer.disconnect();
-                resolve();
-            }, 500);
-        });
+            if (stableFrames >= 15 || Date.now() - startTime > maxWait) {
+                callback();
+            } else {
+                requestAnimationFrame(check);
+            }
+        }
+
+        check();
     }
 
+    // Handle the anchor scroll
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            scrollWhenReady(target).then(() => {
-                const extraOffset = window.matchMedia('(min-width:1200px)').matches ? 600 : 500;
-                const targetY = Math.min(
-                    target.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + extraOffset,
-                    document.documentElement.scrollHeight - window.innerHeight
-                );
+            waitForTargetStable(target, () => {
+                const headerHeight = getHeaderHeight();
+                const targetRect = target.getBoundingClientRect();
+
+                // Calculate dynamic offset to consistently position target just below header
+                const extraOffset = Math.min(600, window.innerHeight * 0.6);
+
+                let targetY = window.pageYOffset + targetRect.top - headerHeight + extraOffset;
+
+                // Clamp so we don't scroll past bottom of page
+                targetY = Math.min(targetY, document.documentElement.scrollHeight - window.innerHeight);
+
                 smoothScrollTo(targetY);
             });
         });
