@@ -643,20 +643,20 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Only run on screens wider than 1200px
+    // ONLY run on screens wider than 1200px
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
     const header = document.querySelector('.cc-header');
-    const EXTRA_OFFSET = 600; // fixed offset to account for header + any spacing
+    const EXTRA_OFFSET = 600; // fixed offset to account for tall dynamic content
 
-    // Get the height of the header
+    // Get header height to offset scrolling
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // Scroll to the element accounting for header and fixed offset
+    // Scroll to element accounting for header and fixed offset
     function scrollToElement(element) {
-        const y = element.offsetTop - getHeaderHeight() + EXTRA_OFFSET;
+        const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + EXTRA_OFFSET;
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
@@ -665,34 +665,29 @@ document.addEventListener('DOMContentLoaded', function () {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
             details.setAttribute('open', '');
-            // Wait for the accordion animation to finish
+            // Wait for the accordion animation to finish before scrolling
             return new Promise(resolve => setTimeout(resolve, 350));
         }
         return Promise.resolve();
     }
 
-    // Wait for the reviews widget to finish rendering (height stabilizes)
-    function waitForReviewsWidget(callback, maxWait = 5000) {
-        const widget = document.getElementById('shopify-section-template--24298767319355__custom_liquid_DnXFqh');
-        if (!widget) {
-            callback();
-            return;
-        }
-
-        let lastHeight = widget.offsetHeight;
+    // Wait until the target element's offsetTop stabilizes
+    function waitForTargetStable(target, callback, maxWait = 3000) {
+        let lastOffset = target.offsetTop;
         let stableFrames = 0;
         const startTime = Date.now();
 
         function check() {
-            const currentHeight = widget.offsetHeight;
-            if (currentHeight === lastHeight) {
+            const currentOffset = target.offsetTop;
+
+            if (currentOffset === lastOffset) {
                 stableFrames++;
             } else {
                 stableFrames = 0;
-                lastHeight = currentHeight;
+                lastOffset = currentOffset;
             }
 
-            // Consider stable after 5 frames or timeout
+            // Consider stable after 5 consecutive frames (~83ms)
             if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
                 callback();
             } else {
@@ -710,9 +705,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            waitForReviewsWidget(() => {
-                scrollToElement(target);
-            });
+            waitForTargetStable(target, () => scrollToElement(target));
         });
     }
 
@@ -744,7 +737,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Run on initial page load
     scrollOnLoad();
 
-    // Run when navigating browser history
+    // Run when navigating browser history (back/forward)
     window.addEventListener('popstate', scrollOnLoad);
 
 });
