@@ -681,40 +681,45 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // Wait a short time for target to visually stabilize
-    function waitForTargetReady(target, callback, maxWait = 1000) {
-        const startTime = Date.now();
-        let lastTop = target.getBoundingClientRect().top;
-        let stableFrames = 0;
+    // Scroll after target is fully stable and dynamic content above has finished loading
+    function scrollWhenReady(target) {
+        return new Promise(resolve => {
 
-        function check() {
-            const currentTop = target.getBoundingClientRect().top;
+            // Track if DOM mutations are still happening
+            let timeout;
+            const observer = new MutationObserver(() => {
+                clearTimeout(timeout);
+                // Wait 200ms after last mutation
+                timeout = setTimeout(() => {
+                    observer.disconnect();
+                    resolve();
+                }, 200);
+            });
 
-            if (Math.abs(currentTop - lastTop) < 0.5) stableFrames++;
-            else stableFrames = 0;
+            // Observe changes in the entire body above target
+            const body = document.body;
+            observer.observe(body, {
+                childList: true,
+                subtree: true,
+                attributes: true,
+                characterData: true
+            });
 
-            lastTop = currentTop;
-
-            // Wait for ~15 stable frames (~250ms) OR maxWait
-            if (stableFrames >= 15 || Date.now() - startTime > maxWait) {
-                callback();
-            } else {
-                requestAnimationFrame(check);
-            }
-        }
-
-        check();
+            // Initial delay in case no mutations occur
+            timeout = setTimeout(() => {
+                observer.disconnect();
+                resolve();
+            }, 500);
+        });
     }
 
-    // Handle anchor click
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            // Wait short time for layout to stabilize
-            waitForTargetReady(target, () => {
+            scrollWhenReady(target).then(() => {
                 const extraOffset = window.matchMedia('(min-width:1200px)').matches ? 600 : 500;
                 const targetY = Math.min(
                     target.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + extraOffset,
