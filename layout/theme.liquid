@@ -646,42 +646,69 @@ document.addEventListener('DOMContentLoaded', function () {
     // ✅ ONLY run on screens wider than 1200px
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
-    const EXTRA_OFFSET = 3600; // ✅ fixed offset
     const header = document.querySelector('.cc-header');
 
+    // ✅ Get the header height to offset scrolling
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
+    // ✅ Scroll to the element, accounting for header and dynamic content
     function scrollToElement(element) {
-        const y =
-            element.getBoundingClientRect().top +
-            window.pageYOffset -
-            getHeaderHeight() +
-            EXTRA_OFFSET;
-
-        window.scrollTo({ top: y, behavior: 'smooth' });
+        // Use requestAnimationFrame in case layout changes during this frame
+        requestAnimationFrame(() => {
+            const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight();
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        });
     }
 
+    // ✅ Open an accordion if the anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
             details.setAttribute('open', '');
+            // Wait for the accordion animation to finish before scrolling
             return new Promise(resolve => setTimeout(resolve, 350));
         }
         return Promise.resolve();
     }
 
+    // ✅ Wait for dynamic content (like reviews widget) above the target to finish loading
+    function waitForLayout(target, callback) {
+        // Use MutationObserver to detect DOM changes
+        const observer = new MutationObserver(() => {
+            // Recalculate position after layout changes
+            const rect = target.getBoundingClientRect();
+            if (rect.top !== 0) { // crude check that element is positioned
+                observer.disconnect();
+                callback();
+            }
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+
+        // Fallback: also scroll after a short delay in case no mutations fire
+        setTimeout(() => {
+            observer.disconnect();
+            callback();
+        }, 1000); // tweak if necessary
+    }
+
+    // ✅ Handle anchor click or page load hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            requestAnimationFrame(() => scrollToElement(target));
+            // Wait for layout (dynamic content, widgets) to stabilize before scrolling
+            waitForLayout(target, () => {
+                scrollToElement(target);
+            });
         });
     }
 
+    // ✅ Click listener for internal anchor links
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
@@ -691,9 +718,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         e.preventDefault();
         handleAnchor(anchor);
+        // ✅ Update URL hash without jumping
         history.pushState(null, '', `#${targetId}`);
     });
 
+    // ✅ Scroll to hash on page load
     function scrollOnLoad() {
         if (!window.location.hash) return;
 
@@ -706,15 +735,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // ✅ run on initial page load
+    // ✅ Run on initial page load
     scrollOnLoad();
 
-    // ✅ run when navigating browser history
+    // ✅ Run when navigating browser history (back/forward)
     window.addEventListener('popstate', scrollOnLoad);
 
 });
 </script>
 {% endif %}
+
 
   {% if request.path contains 'product-locator' %}
     <script>
