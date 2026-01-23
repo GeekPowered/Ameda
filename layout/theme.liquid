@@ -639,34 +639,27 @@
     </script>
   {% endunless %}
 
-
-
-
-
 {% if request.path contains 'glo-wearable-breast-pump' %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-    // ONLY run on screens wider than 1200px
+    // ✅ ONLY run on screens wider than 1200px
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
     const header = document.querySelector('.cc-header');
-    const reviewsWidget = document.querySelector('#shopify-section-template--24298767319355__custom_liquid_DnXFqh'); // Replace with actual reviews widget ID/class
 
-    // Get header height to offset scrolling
+    // ✅ Get the header height to offset scrolling
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // Smooth scroll to an element
+    // ✅ Smooth scroll to the element
     function scrollToElement(element) {
-        requestAnimationFrame(() => {
-            const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight();
-            window.scrollTo({ top: y, behavior: 'smooth' });
-        });
+        const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight();
+        window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
-    // Open accordion if the anchor is inside one
+    // ✅ Open an accordion if the anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -677,52 +670,47 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // Wait for reviews widget (dynamic content) to load
-    function waitForReviewsWidget(callback) {
-        if (!reviewsWidget) {
-            // If no reviews widget, proceed immediately
-            callback();
-            return;
-        }
+    // ✅ Wait until the target element’s vertical position stabilizes
+    function waitForStablePosition(target, callback, timeout = 2000) {
+        let lastTop = null;
+        let stableFrames = 0;
+        const start = Date.now();
 
-        // If widget is already loaded (height > 0), call callback immediately
-        if (reviewsWidget.offsetHeight > 0) {
-            callback();
-            return;
-        }
-
-        // Otherwise, listen for it to finish loading
-        const observer = new MutationObserver(() => {
-            if (reviewsWidget.offsetHeight > 0) {
-                observer.disconnect();
-                callback();
+        function check() {
+            const rect = target.getBoundingClientRect();
+            if (lastTop === rect.top) {
+                stableFrames++;
+            } else {
+                stableFrames = 0;
+                lastTop = rect.top;
             }
-        });
 
-        observer.observe(reviewsWidget, { childList: true, subtree: true });
+            // ✅ Consider stable if position hasn’t changed for 3 frames (~50ms)
+            if (stableFrames >= 3 || Date.now() - start > timeout) {
+                callback();
+            } else {
+                requestAnimationFrame(check);
+            }
+        }
 
-        // Fallback in case MutationObserver misses it
-        setTimeout(() => {
-            observer.disconnect();
-            callback();
-        }, 2000); // tweak if widget loads slowly
+        check();
     }
 
-    // Handle anchor click or page load hash
+    // ✅ Handle anchor click or page load hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        // Open accordion first, then wait for reviews widget
+        // Open accordion first, then wait for target to stabilize
         openAccordion(anchor).then(() => {
-            waitForReviewsWidget(() => {
+            waitForStablePosition(target, () => {
                 scrollToElement(target);
             });
         });
     }
 
-    // Click listener for internal anchor links
+    // ✅ Click listener for internal anchor links
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
@@ -733,11 +721,11 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         handleAnchor(anchor);
 
-        // Update URL hash without jumping
+        // ✅ Update URL hash without jumping
         history.pushState(null, '', `#${targetId}`);
     });
 
-    // Scroll to hash on page load
+    // ✅ Scroll to hash on page load
     function scrollOnLoad() {
         if (!window.location.hash) return;
 
@@ -750,17 +738,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Run on initial page load
+    // ✅ Run on initial page load
     scrollOnLoad();
 
-    // Run when navigating browser history (back/forward)
+    // ✅ Run when navigating browser history (back/forward)
     window.addEventListener('popstate', scrollOnLoad);
 
 });
 </script>
 {% endif %}
-
-
 
   {% if request.path contains 'product-locator' %}
     <script>
