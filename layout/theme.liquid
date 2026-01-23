@@ -641,9 +641,13 @@
 
 
 {% if request.path contains 'glo-wearable-breast-pump' %}
-  {% if screen width >= 1200px %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+
+    // ---------------------------
+    // DESKTOP ONLY: >= 1200px
+    // ---------------------------
+    if (window.innerWidth < 1200) return;
 
     const header = document.querySelector('.cc-header');
     let scrollAnimation = null;
@@ -792,7 +796,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
-{% endif %}
+
 
 
   {% if request.path contains 'product-locator' %}
