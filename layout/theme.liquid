@@ -651,46 +651,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // -------------------------------
-    // Desktop smooth scroll (legacy fraction-based)
+    // Adaptive scroll (desktop & mobile)
     // -------------------------------
-    function smoothScrollDesktop(target, extraOffset) {
-        if (!target) return;
-        if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
-
-        const targetY = Math.min(
-            window.pageYOffset + target.getBoundingClientRect().top - getHeaderHeight() + extraOffset,
-            document.documentElement.scrollHeight - window.innerHeight
-        );
-
-        function step() {
-            const currentY = window.pageYOffset;
-            const diff = targetY - currentY;
-            if (Math.abs(diff) < 1) {
-                window.scrollTo(0, targetY); // ensure exact final position
-                scrollAnimation = null;
-                return;
-            }
-            window.scrollTo(0, currentY + diff * 0.2);
-            scrollAnimation = requestAnimationFrame(step);
-        }
-
-        scrollAnimation = requestAnimationFrame(step);
-    }
-
-    // -------------------------------
-    // Mobile adaptive incremental scroll
-    // -------------------------------
-    function smoothScrollMobile(target, extraOffset = 50) {
+    function adaptiveScroll(target, extraOffset) {
         if (!target) return;
         if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
 
         function step() {
+            // Recalculate target position every frame
             const targetY = Math.min(
                 window.pageYOffset + target.getBoundingClientRect().top - getHeaderHeight() - extraOffset,
                 document.documentElement.scrollHeight - window.innerHeight
             );
 
             const distance = targetY - window.pageYOffset;
+
             if (Math.abs(distance) < 1) {
                 window.scrollTo(0, targetY);
                 scrollAnimation = null;
@@ -790,19 +765,8 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(() => waitForImages(dynamicSections))
         .then(() => {
             const isMobile = window.matchMedia('(max-width: 1199px)').matches;
-
-            if (isMobile) {
-                smoothScrollMobile(target, 50); // mobile unchanged
-            } else {
-                // -------------------------------
-                // Desktop: fixed offset to prevent overshoot
-                // -------------------------------
-                const baseOffset = window.matchMedia('(min-width: 1200px)').matches ? 580 : 480; // slightly reduced
-                const maxOffset = document.documentElement.scrollHeight - window.innerHeight;
-                const desktopOffset = Math.min(baseOffset, maxOffset);
-
-                smoothScrollDesktop(target, desktopOffset);
-            }
+            const extraOffset = isMobile ? 50 : 600; // mobile small, desktop large
+            adaptiveScroll(target, extraOffset);
         });
     }
 
@@ -836,8 +800,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
-
-
 
   {% if request.path contains 'product-locator' %}
     <script>
