@@ -639,6 +639,8 @@
     </script>
   {% endunless %}
 
+{% if screen width >= 1200px %}
+
 {% if request.path contains 'glo-wearable-breast-pump' %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -650,22 +652,126 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    // -------------------------------
-    // Adaptive scroll (desktop & mobile)
-    // -------------------------------
-    function adaptiveScroll(target, extraOffset) {
+    function smoothScrollDesktop(target, extraOffset) {
+        if (!target) return;
+        if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
+
+        const targetY = Math.min(
+            window.pageYOffset + target.getBoundingClientRect().top - getHeaderHeight() + extraOffset,
+            document.documentElement.scrollHeight - window.innerHeight
+        );
+
+        function step() {
+            const currentY = window.pageYOffset;
+            const diff = targetY - currentY;
+            if (Math.abs(diff) < 1) {
+                window.scrollTo(0, targetY);
+                scrollAnimation = null;
+                return;
+            }
+            window.scrollTo(0, currentY + diff * 0.2);
+            scrollAnimation = requestAnimationFrame(step);
+        }
+
+        scrollAnimation = requestAnimationFrame(step);
+    }
+
+    function openAccordion(anchor) {
+        const details = anchor.closest('details');
+        if (details && !details.hasAttribute('open')) {
+            details.setAttribute('open', '');
+            return new Promise(resolve => setTimeout(resolve, 350));
+        }
+        return Promise.resolve();
+    }
+
+    function waitForDynamicSections(sections) {
+        return new Promise(resolve => {
+            let lastOffset = 0;
+            let stableFrames = 0;
+            const maxWait = 3000;
+            const startTime = Date.now();
+
+            function check() {
+                const currentOffset = sections[sections.length - 1].offsetTop || 0;
+                if (currentOffset === lastOffset) {
+                    stableFrames++;
+                } else {
+                    stableFrames = 0;
+                    lastOffset = currentOffset;
+                }
+
+                if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
+                    resolve();
+                } else {
+                    requestAnimationFrame(check);
+                }
+            }
+
+            check();
+        });
+    }
+
+    function handleAnchor(anchor) {
+        const targetId = anchor.getAttribute('href').slice(1);
+        const target = document.getElementById(targetId);
+        if (!target) return;
+
+        openAccordion(anchor).then(() => {
+            // Adjust this large offset for sticky header
+            const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
+            smoothScrollDesktop(target, extraOffset);
+        });
+    }
+
+    document.addEventListener('click', function (e) {
+        const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
+        if (!anchor) return;
+
+        const targetId = anchor.getAttribute('href').slice(1);
+        if (!document.getElementById(targetId)) return;
+
+        e.preventDefault();
+        handleAnchor(anchor);
+        history.pushState(null, '', `#${targetId}`);
+    });
+
+    function scrollOnLoad() {
+        if (!window.location.hash) return;
+        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
+        if (anchor) handleAnchor(anchor);
+    }
+
+    scrollOnLoad();
+    window.addEventListener('popstate', scrollOnLoad);
+
+});
+</script>
+{% endif %}
+{% endif %}
+{% if screen width < 1200px %}
+{% if request.path contains 'glo-wearable-breast-pump' %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const header = document.querySelector('.cc-header');
+    let scrollAnimation = null;
+
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
+    }
+
+    function smoothScrollMobile(target, extraOffset = 50) {
         if (!target) return;
         if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
 
         function step() {
-            // Recalculate target position every frame
             const targetY = Math.min(
                 window.pageYOffset + target.getBoundingClientRect().top - getHeaderHeight() - extraOffset,
                 document.documentElement.scrollHeight - window.innerHeight
             );
 
             const distance = targetY - window.pageYOffset;
-
             if (Math.abs(distance) < 1) {
                 window.scrollTo(0, targetY);
                 scrollAnimation = null;
@@ -679,9 +785,6 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollAnimation = requestAnimationFrame(step);
     }
 
-    // -------------------------------
-    // Open accordion if anchor is inside one
-    // -------------------------------
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -691,26 +794,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // -------------------------------
-    // Wait for images in dynamic sections
-    // -------------------------------
-    function waitForImages(sections) {
-        const promises = [];
-        sections.forEach(section => {
-            if (!section) return;
-            const imgs = Array.from(section.querySelectorAll('img'));
-            imgs.forEach(img => {
-                if (!img.complete) {
-                    promises.push(new Promise(res => img.addEventListener('load', res)));
-                }
-            });
-        });
-        return Promise.all(promises);
-    }
-
-    // -------------------------------
-    // Wait for dynamic sections to stabilize (mutations + images)
-    // -------------------------------
     function waitForDynamicSections(sections) {
         return new Promise(resolve => {
             let lastMutation = Date.now();
@@ -742,15 +825,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // -------------------------------
-    // Handle anchor click
-    // -------------------------------
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        // Sections above the target that are dynamic
         const dynamicSections = [
             document.querySelector('section:nth-of-type(2)'),
             document.querySelector('section:nth-of-type(3)'),
@@ -762,17 +841,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         openAccordion(anchor)
         .then(() => waitForDynamicSections(dynamicSections))
-        .then(() => waitForImages(dynamicSections))
-        .then(() => {
-            const isMobile = window.matchMedia('(max-width: 1199px)').matches;
-            const extraOffset = isMobile ? 50 : 600; // mobile small, desktop large
-            adaptiveScroll(target, extraOffset);
-        });
+        .then(() => smoothScrollMobile(target, 50));
     }
 
-    // -------------------------------
-    // Click listener
-    // -------------------------------
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
@@ -785,9 +856,6 @@ document.addEventListener('DOMContentLoaded', function () {
         history.pushState(null, '', `#${targetId}`);
     });
 
-    // -------------------------------
-    // Scroll on page load hash
-    // -------------------------------
     function scrollOnLoad() {
         if (!window.location.hash) return;
         const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
@@ -800,6 +868,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
+{% endif %}
+
 
   {% if request.path contains 'product-locator' %}
     <script>
