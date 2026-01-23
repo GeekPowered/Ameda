@@ -671,21 +671,19 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // ✅ Wait for the reviews widget to load explicitly
+    // ✅ Wait for reviews widget to load (if present)
     function waitForReviewsWidget(callback, maxWait = 5000) {
-        const widget = document.querySelector('#shopify-section-sections--21856551633211__custom_liquid_WyprGH'); // ✅ Replace with actual selector
+        const widget = document.querySelector('#shopify-section-template--24298767319355__custom_liquid_DnXFqh'); // ✅ replace with actual selector
         if (!widget) {
-            callback(); // no widget, proceed immediately
+            callback();
             return;
         }
 
-        // If the widget has already loaded, proceed
         if (widget.complete || widget.innerHTML.trim().length > 0) {
             callback();
             return;
         }
 
-        // ✅ Listen for DOM changes inside the widget
         const observer = new MutationObserver(() => {
             if (widget.innerHTML.trim().length > 0) {
                 observer.disconnect();
@@ -695,11 +693,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
         observer.observe(widget, { childList: true, subtree: true });
 
-        // ✅ Fallback: max wait
+        // Fallback: max wait
         setTimeout(() => {
             observer.disconnect();
             callback();
         }, maxWait);
+    }
+
+    // ✅ Wait for page height to stabilize to ensure all dynamic content loaded
+    function waitForPageHeightStable(callback, maxWait = 3000) {
+        let lastHeight = document.body.scrollHeight;
+        let stableFrames = 0;
+        const startTime = Date.now();
+
+        function check() {
+            const currentHeight = document.body.scrollHeight;
+
+            if (currentHeight === lastHeight) {
+                stableFrames++;
+            } else {
+                stableFrames = 0;
+                lastHeight = currentHeight;
+            }
+
+            // ✅ Consider stable after 3 consecutive frames (~50ms)
+            if (stableFrames >= 3 || Date.now() - startTime > maxWait) {
+                callback();
+            } else {
+                requestAnimationFrame(check);
+            }
+        }
+
+        check();
     }
 
     // ✅ Handle anchor click or hash
@@ -709,8 +734,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            // ✅ Wait for the reviews widget explicitly before scrolling
-            waitForReviewsWidget(() => scrollToElement(target));
+            waitForReviewsWidget(() => {
+                waitForPageHeightStable(() => {
+                    scrollToElement(target);
+                });
+            });
         });
     }
 
@@ -748,7 +776,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
-
 
   {% if request.path contains 'product-locator' %}
     <script>
