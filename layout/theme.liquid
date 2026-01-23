@@ -649,6 +649,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
+    // Smooth scroll easing function
     function smoothScrollTo(targetY, duration = 500) {
         const startY = window.pageYOffset;
         const distance = targetY - startY;
@@ -670,6 +671,7 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(step);
     }
 
+    // Open accordion if anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -679,8 +681,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // Wait until the target element is visually stable and page load has completed
-    function waitForTargetReady(target, callback, maxWait = 5000) {
+    // Wait until target element is visually stable
+    function waitForTargetStable(target, callback, maxWait = 5000) {
         let stableFrames = 0;
         let lastTop = target.getBoundingClientRect().top;
         const startTime = Date.now();
@@ -691,8 +693,7 @@ document.addEventListener('DOMContentLoaded', function () {
             else stableFrames = 0;
             lastTop = currentTop;
 
-            // Require 20 stable frames (~333ms) AND window load completed
-            if ((stableFrames >= 20 || Date.now() - startTime > maxWait) && document.readyState === 'complete') {
+            if (stableFrames >= 20 || Date.now() - startTime > maxWait) {
                 callback();
             } else {
                 requestAnimationFrame(check);
@@ -702,13 +703,41 @@ document.addEventListener('DOMContentLoaded', function () {
         check();
     }
 
+    // Wait for all images on the page to finish loading, then check target stability
+    function waitForImagesAndTarget(target, callback, maxWait = 7000) {
+        const imgs = Array.from(document.images);
+        let loaded = 0;
+
+        function checkDone() {
+            loaded++;
+            if (loaded >= imgs.length) startCheck();
+        }
+
+        function startCheck() {
+            waitForTargetStable(target, callback, maxWait);
+        }
+
+        if (imgs.length === 0) {
+            startCheck();
+        } else {
+            imgs.forEach(img => {
+                if (img.complete) checkDone();
+                else {
+                    img.addEventListener('load', checkDone);
+                    img.addEventListener('error', checkDone);
+                }
+            });
+        }
+    }
+
+    // Handle anchor click or page load hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            waitForTargetReady(target, () => {
+            waitForImagesAndTarget(target, () => {
                 const extraOffset = window.matchMedia('(min-width:1200px)').matches ? 600 : 500;
                 const targetY = Math.min(
                     target.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + extraOffset,
@@ -719,9 +748,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Click listener for internal anchors
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
+
         const targetId = anchor.getAttribute('href').slice(1);
         if (!document.getElementById(targetId)) return;
 
@@ -730,6 +761,7 @@ document.addEventListener('DOMContentLoaded', function () {
         history.pushState(null, '', `#${targetId}`);
     });
 
+    // Scroll to hash on page load
     function scrollOnLoad() {
         if (!window.location.hash) return;
         const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
@@ -742,9 +774,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
-
-
-
 
   {% if request.path contains 'product-locator' %}
     <script>
