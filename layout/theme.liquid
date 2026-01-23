@@ -798,6 +798,155 @@ document.addEventListener('DOMContentLoaded', function () {
 {% endif %}
 
 
+{% if request.path contains 'glo-wearable-breast-pump' %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    // ---------------------------
+    // MOBILE ONLY: < 1200px
+    // ---------------------------
+    if (window.innerWidth >= 1200) return;
+
+    const header = document.querySelector('.cc-header');
+    let scrollAnimation = null;
+
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
+    }
+
+    // Smooth scroll to target with adaptive mobile behavior
+    function adaptiveScroll(target, extraOffset = 50, duration = 700) {
+        if (!target) return;
+        if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
+
+        // Mobile: incremental adaptive scroll
+        function step() {
+            const targetRect = target.getBoundingClientRect();
+            const targetY = window.pageYOffset + targetRect.top - getHeaderHeight() - extraOffset;
+            const distance = targetY - window.pageYOffset;
+
+            // Stop when target is close enough
+            if (Math.abs(distance) < 1) {
+                window.scrollTo(0, targetY);
+                scrollAnimation = null;
+                return;
+            }
+
+            // Scroll a fraction of the distance
+            window.scrollBy(0, distance * 0.3);
+            scrollAnimation = requestAnimationFrame(step);
+        }
+
+        scrollAnimation = requestAnimationFrame(step);
+    }
+
+    // Open accordion if anchor inside one
+    function openAccordion(anchor) {
+        const details = anchor.closest('details');
+        if (details && !details.hasAttribute('open')) {
+            details.setAttribute('open', '');
+            return new Promise(resolve => setTimeout(resolve, 350));
+        }
+        return Promise.resolve();
+    }
+
+    // Wait for images in dynamic sections
+    function waitForImages(sections) {
+        const promises = [];
+        sections.forEach(section => {
+            if (!section) return;
+            const imgs = Array.from(section.querySelectorAll('img'));
+            imgs.forEach(img => {
+                if (!img.complete) {
+                    promises.push(new Promise(res => img.addEventListener('load', res)));
+                }
+            });
+        });
+        return Promise.all(promises);
+    }
+
+    // Wait for dynamic sections to stabilize (mutations + images)
+    function waitForDynamicSections(sections) {
+        return new Promise(resolve => {
+            let lastMutation = Date.now();
+            const observers = [];
+
+            function cleanup() {
+                observers.forEach(o => o.disconnect());
+                resolve();
+            }
+
+            sections.forEach(section => {
+                if (!section) return;
+                const observer = new MutationObserver(() => lastMutation = Date.now());
+                observer.observe(section, { childList: true, subtree: true, attributes: true, characterData: true });
+                observers.push(observer);
+            });
+
+            function check() {
+                const now = Date.now();
+                const imagesLoaded = sections.every(sec => !sec || Array.from(sec.querySelectorAll('img')).every(img => img.complete));
+                if (now - lastMutation > 200 && imagesLoaded) {
+                    cleanup();
+                } else {
+                    requestAnimationFrame(check);
+                }
+            }
+
+            check();
+        });
+    }
+
+    // Handle anchor click
+    function handleAnchor(anchor) {
+        const targetId = anchor.getAttribute('href').slice(1);
+        const target = document.getElementById(targetId);
+        if (!target) return;
+
+        const dynamicSections = [
+            document.querySelector('section:nth-of-type(2)'),
+            document.querySelector('section:nth-of-type(3)'),
+            document.querySelector('section:nth-of-type(5)'),
+            document.querySelector('section:nth-of-type(6)'),
+            document.querySelector('section:nth-of-type(9)'),
+            document.querySelector('section:nth-of-type(16)')
+        ];
+
+        openAccordion(anchor)
+        .then(() => waitForDynamicSections(dynamicSections))
+        .then(() => waitForImages(dynamicSections))
+        .then(() => adaptiveScroll(target, 50, 700));
+    }
+
+    // Click listener
+    document.addEventListener('click', function (e) {
+        const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
+        if (!anchor) return;
+
+        const targetId = anchor.getAttribute('href').slice(1);
+        if (!document.getElementById(targetId)) return;
+
+        e.preventDefault();
+        handleAnchor(anchor);
+        history.pushState(null, '', `#${targetId}`);
+    });
+
+    // Scroll on page load hash
+    function scrollOnLoad() {
+        if (!window.location.hash) return;
+        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
+        if (anchor) handleAnchor(anchor);
+    }
+
+    scrollOnLoad();
+    window.addEventListener('popstate', scrollOnLoad);
+
+});
+</script>
+{% endif %}
+
+
+
 
   {% if request.path contains 'product-locator' %}
     <script>
