@@ -671,36 +671,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // ✅ Wait for reviews widget to load (if present)
-    function waitForReviewsWidget(callback, maxWait = 5000) {
-        const widget = document.querySelector('#shopify-section-template--24298767319355__custom_liquid_DnXFqh'); // ✅ replace with actual selector
-        if (!widget) {
-            callback();
-            return;
-        }
-
-        if (widget.complete || widget.innerHTML.trim().length > 0) {
-            callback();
-            return;
-        }
-
-        const observer = new MutationObserver(() => {
-            if (widget.innerHTML.trim().length > 0) {
-                observer.disconnect();
-                callback();
-            }
-        });
-
-        observer.observe(widget, { childList: true, subtree: true });
-
-        // Fallback: max wait
-        setTimeout(() => {
-            observer.disconnect();
-            callback();
-        }, maxWait);
-    }
-
-    // ✅ Wait for page height to stabilize to ensure all dynamic content loaded
+    // ✅ Wait until the page's scrollable height stabilizes
     function waitForPageHeightStable(callback, maxWait = 3000) {
         let lastHeight = document.body.scrollHeight;
         let stableFrames = 0;
@@ -716,8 +687,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 lastHeight = currentHeight;
             }
 
-            // ✅ Consider stable after 3 consecutive frames (~50ms)
-            if (stableFrames >= 3 || Date.now() - startTime > maxWait) {
+            // ✅ Consider stable after 5 consecutive frames (~83ms)
+            if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
                 callback();
             } else {
                 requestAnimationFrame(check);
@@ -727,18 +698,14 @@ document.addEventListener('DOMContentLoaded', function () {
         check();
     }
 
-    // ✅ Handle anchor click or hash
+    // ✅ Handle anchor click or page load hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            waitForReviewsWidget(() => {
-                waitForPageHeightStable(() => {
-                    scrollToElement(target);
-                });
-            });
+            waitForPageHeightStable(() => scrollToElement(target));
         });
     }
 
