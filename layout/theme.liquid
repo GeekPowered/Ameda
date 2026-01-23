@@ -656,7 +656,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ✅ Scroll to element accounting for header and offset
     function scrollToElement(element) {
-        const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + EXTRA_OFFSET;
+        const y = element.offsetTop - getHeaderHeight() + EXTRA_OFFSET;
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
@@ -670,20 +670,43 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
+    // ✅ Wait until the target's offsetTop stops changing (true layout stabilization)
+    function waitForTargetOffsetStable(target, callback, maxWait = 3000) {
+        let lastOffset = target.offsetTop;
+        let stableFrames = 0;
+        const startTime = Date.now();
+
+        function check() {
+            const currentOffset = target.offsetTop;
+            if (currentOffset === lastOffset) {
+                stableFrames++;
+            } else {
+                stableFrames = 0;
+                lastOffset = currentOffset;
+            }
+
+            // ✅ Consider stable after 5 frames (~83ms)
+            if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
+                callback();
+            } else {
+                requestAnimationFrame(check);
+            }
+        }
+
+        check();
+    }
+
     // ✅ Handle anchor click or hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        // ✅ Wait for window.onload to ensure all dynamic content is loaded
-        if (document.readyState === 'complete') {
-            openAccordion(anchor).then(() => scrollToElement(target));
-        } else {
-            window.addEventListener('load', () => {
-                openAccordion(anchor).then(() => scrollToElement(target));
+        openAccordion(anchor).then(() => {
+            waitForTargetOffsetStable(target, () => {
+                scrollToElement(target);
             });
-        }
+        });
     }
 
     // ✅ Click listener for internal anchor links
