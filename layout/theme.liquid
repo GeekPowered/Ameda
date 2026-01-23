@@ -645,32 +645,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const header = document.querySelector('.cc-header');
 
-    // Get header height to offset scrolling
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // Smooth scroll function (safe, clamped, one-shot)
     function smoothScrollToElement(element) {
         const headerOffset = getHeaderHeight();
-
-        // Fixed offset for PDP sections
         const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
 
-        // Calculate target position
         let targetY =
             element.getBoundingClientRect().top +
             window.pageYOffset -
             headerOffset +
             extraOffset;
 
-        // Clamp to valid scroll range
-        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const maxScroll =
+            document.documentElement.scrollHeight - window.innerHeight;
+
         targetY = Math.max(0, Math.min(targetY, maxScroll));
 
         const startY = window.pageYOffset;
         const distance = targetY - startY;
-        const duration = 500; // ms
+        const duration = 500;
         const startTime = performance.now();
 
         function easeOutCubic(t) {
@@ -694,7 +690,6 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(step);
     }
 
-    // Open an accordion if the anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -704,8 +699,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // Wait until the target element's position stabilizes
-    function waitForTargetStable(target, callback, maxWait = 3000) {
+    function waitForTargetStable(target, callback, maxWait = 4000) {
+        // Increased frames for stability
         let lastTop = target.getBoundingClientRect().top;
         let stableFrames = 0;
         const startTime = Date.now();
@@ -720,7 +715,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 lastTop = currentTop;
             }
 
-            if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
+            // Require 10 stable frames (~166ms) or timeout
+            if (stableFrames >= 10 || Date.now() - startTime > maxWait) {
                 callback();
             } else {
                 requestAnimationFrame(check);
@@ -730,7 +726,6 @@ document.addEventListener('DOMContentLoaded', function () {
         check();
     }
 
-    // Handle anchor click or page load hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
@@ -743,7 +738,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Click listener for internal anchor links
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
@@ -756,7 +750,6 @@ document.addEventListener('DOMContentLoaded', function () {
         history.pushState(null, '', `#${targetId}`);
     });
 
-    // Scroll to hash on page load
     function scrollOnLoad() {
         if (!window.location.hash) return;
 
@@ -772,6 +765,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
+
 
 
   {% if request.path contains 'product-locator' %}
