@@ -814,12 +814,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    // Smooth scroll to target with mobile adaptive behavior
-    function adaptiveScroll(target, extraOffset = 50, duration = 700) {
+    // Smooth scroll to target with adaptive mobile behavior
+    function adaptiveScroll(target, extraOffset = 50) {
         if (!target) return;
         if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
 
-        // Mobile: incremental adaptive scroll
         function step() {
             const targetRect = target.getBoundingClientRect();
             const targetY = window.pageYOffset + targetRect.top - getHeaderHeight() - extraOffset;
@@ -901,19 +900,21 @@ document.addEventListener('DOMContentLoaded', function () {
         const target = document.getElementById(targetId);
         if (!target) return;
 
+        // Include the section immediately above the target for mobile
         const dynamicSections = [
             document.querySelector('section:nth-of-type(2)'),
             document.querySelector('section:nth-of-type(3)'),
             document.querySelector('section:nth-of-type(5)'),
             document.querySelector('section:nth-of-type(6)'),
             document.querySelector('section:nth-of-type(9)'),
-            document.querySelector('section:nth-of-type(16)')
+            document.querySelector('section:nth-of-type(16)'),
+            document.querySelector('section:nth-of-type(17)'), // <-- immediately above target
         ];
 
         openAccordion(anchor)
         .then(() => waitForDynamicSections(dynamicSections))
         .then(() => waitForImages(dynamicSections))
-        .then(() => adaptiveScroll(target, 50, 700));
+        .then(() => adaptiveScroll(target, 50));
     }
 
     // Click listener
@@ -942,6 +943,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
+
 
 
   {% if request.path contains 'product-locator' %}
