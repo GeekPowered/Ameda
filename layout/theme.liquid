@@ -639,76 +639,90 @@
     </script>
   {% endunless %}
 
+
+
+
+
 {% if request.path contains 'glo-wearable-breast-pump' %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-    // ✅ ONLY run on screens wider than 1200px
+    // ONLY run on screens wider than 1200px
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
     const header = document.querySelector('.cc-header');
+    const reviewsWidget = document.querySelector('#shopify-section-template--24298767319355__custom_liquid_DnXFqh'); // Replace with actual reviews widget ID/class
 
-    // ✅ Get the header height to offset scrolling
+    // Get header height to offset scrolling
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // ✅ Scroll to the element, accounting for header and dynamic content
+    // Smooth scroll to an element
     function scrollToElement(element) {
-        // Use requestAnimationFrame in case layout changes during this frame
         requestAnimationFrame(() => {
             const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight();
             window.scrollTo({ top: y, behavior: 'smooth' });
         });
     }
 
-    // ✅ Open an accordion if the anchor is inside one
+    // Open accordion if the anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
             details.setAttribute('open', '');
-            // Wait for the accordion animation to finish before scrolling
+            // Wait for the accordion animation to finish
             return new Promise(resolve => setTimeout(resolve, 350));
         }
         return Promise.resolve();
     }
 
-    // ✅ Wait for dynamic content (like reviews widget) above the target to finish loading
-    function waitForLayout(target, callback) {
-        // Use MutationObserver to detect DOM changes
+    // Wait for reviews widget (dynamic content) to load
+    function waitForReviewsWidget(callback) {
+        if (!reviewsWidget) {
+            // If no reviews widget, proceed immediately
+            callback();
+            return;
+        }
+
+        // If widget is already loaded (height > 0), call callback immediately
+        if (reviewsWidget.offsetHeight > 0) {
+            callback();
+            return;
+        }
+
+        // Otherwise, listen for it to finish loading
         const observer = new MutationObserver(() => {
-            // Recalculate position after layout changes
-            const rect = target.getBoundingClientRect();
-            if (rect.top !== 0) { // crude check that element is positioned
+            if (reviewsWidget.offsetHeight > 0) {
                 observer.disconnect();
                 callback();
             }
         });
 
-        observer.observe(document.body, { childList: true, subtree: true });
+        observer.observe(reviewsWidget, { childList: true, subtree: true });
 
-        // Fallback: also scroll after a short delay in case no mutations fire
+        // Fallback in case MutationObserver misses it
         setTimeout(() => {
             observer.disconnect();
             callback();
-        }, 1000); // tweak if necessary
+        }, 2000); // tweak if widget loads slowly
     }
 
-    // ✅ Handle anchor click or page load hash
+    // Handle anchor click or page load hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
+        // Open accordion first, then wait for reviews widget
         openAccordion(anchor).then(() => {
-            // Wait for layout (dynamic content, widgets) to stabilize before scrolling
-            waitForLayout(target, () => {
+            waitForReviewsWidget(() => {
                 scrollToElement(target);
             });
         });
     }
 
-    // ✅ Click listener for internal anchor links
+    // Click listener for internal anchor links
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
@@ -718,11 +732,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         e.preventDefault();
         handleAnchor(anchor);
-        // ✅ Update URL hash without jumping
+
+        // Update URL hash without jumping
         history.pushState(null, '', `#${targetId}`);
     });
 
-    // ✅ Scroll to hash on page load
+    // Scroll to hash on page load
     function scrollOnLoad() {
         if (!window.location.hash) return;
 
@@ -735,15 +750,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // ✅ Run on initial page load
+    // Run on initial page load
     scrollOnLoad();
 
-    // ✅ Run when navigating browser history (back/forward)
+    // Run when navigating browser history (back/forward)
     window.addEventListener('popstate', scrollOnLoad);
 
 });
 </script>
 {% endif %}
+
 
 
   {% if request.path contains 'product-locator' %}
