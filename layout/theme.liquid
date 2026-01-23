@@ -641,32 +641,58 @@
 
 {% if request.path contains 'glo-wearable-breast-pump' %}
 <script>
-(function() {
+document.addEventListener('DOMContentLoaded', function () {
+
     // ✅ ONLY run on screens wider than 1200px
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
     const header = document.querySelector('.cc-header');
 
-    // ✅ Get the header height to offset scrolling
+    // ✅ Get header height for fixed header offset
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // ✅ Smooth scroll to the element
+    // ✅ Smooth scroll to element accounting for header
     function scrollToElement(element) {
         const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight();
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
-    // ✅ Open an accordion if the anchor is inside one
+    // ✅ Open accordion if the anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
             details.setAttribute('open', '');
-            // Wait for the accordion animation to finish
+            // Wait for accordion animation to finish
             return new Promise(resolve => setTimeout(resolve, 350));
         }
         return Promise.resolve();
+    }
+
+    // ✅ Wait for the element to reach a stable vertical position
+    function waitForElementStable(target, callback, maxWait = 3000) {
+        let lastTop = target.getBoundingClientRect().top;
+        let stableCount = 0;
+        const interval = 50; // check every 50ms
+        const startTime = Date.now();
+
+        const timer = setInterval(() => {
+            const currentTop = target.getBoundingClientRect().top;
+            if (Math.abs(currentTop - lastTop) < 2) { 
+                // position changed <2px, consider stable
+                stableCount++;
+            } else {
+                stableCount = 0;
+                lastTop = currentTop;
+            }
+
+            // ✅ Require 3 consecutive stable measurements
+            if (stableCount >= 3 || Date.now() - startTime > maxWait) {
+                clearInterval(timer);
+                callback();
+            }
+        }, interval);
     }
 
     // ✅ Handle anchor click or hash navigation
@@ -676,8 +702,8 @@
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            // ✅ Scroll after layout is fully loaded
-            requestAnimationFrame(() => scrollToElement(target));
+            // Wait for the element to stabilize after all dynamic content
+            waitForElementStable(target, () => scrollToElement(target));
         });
     }
 
@@ -691,6 +717,8 @@
 
         e.preventDefault();
         handleAnchor(anchor);
+
+        // ✅ Update URL hash without jumping
         history.pushState(null, '', `#${targetId}`);
     });
 
@@ -704,15 +732,16 @@
         }
     }
 
-    // ✅ Wait for the full page load (images, widgets, etc.) before scrolling on initial load
-    window.addEventListener('load', scrollOnLoad);
+    // ✅ Run on initial page load
+    scrollOnLoad();
 
     // ✅ Run when navigating browser history (back/forward)
     window.addEventListener('popstate', scrollOnLoad);
 
-})();
+});
 </script>
 {% endif %}
+
 
 
   {% if request.path contains 'product-locator' %}
