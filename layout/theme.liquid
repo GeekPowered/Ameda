@@ -643,49 +643,56 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-    // ✅ ONLY run on screens wider than 1200px
+    // Only run on screens wider than 1200px
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
     const header = document.querySelector('.cc-header');
-    const EXTRA_OFFSET = 600; // ✅ fixed offset for tall dynamic content
+    const EXTRA_OFFSET = 600; // fixed offset to account for header + any spacing
 
-    // ✅ Get header height
+    // Get the height of the header
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // ✅ Scroll to element accounting for header and offset
+    // Scroll to the element accounting for header and fixed offset
     function scrollToElement(element) {
         const y = element.offsetTop - getHeaderHeight() + EXTRA_OFFSET;
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
-    // ✅ Open accordion if needed
+    // Open an accordion if the anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
             details.setAttribute('open', '');
+            // Wait for the accordion animation to finish
             return new Promise(resolve => setTimeout(resolve, 350));
         }
         return Promise.resolve();
     }
 
-    // ✅ Wait until the target's offsetTop stops changing (true layout stabilization)
-    function waitForTargetOffsetStable(target, callback, maxWait = 3000) {
-        let lastOffset = target.offsetTop;
+    // Wait for the reviews widget to finish rendering (height stabilizes)
+    function waitForReviewsWidget(callback, maxWait = 5000) {
+        const widget = document.getElementById('shopify-section-template--24298767319355__custom_liquid_DnXFqh');
+        if (!widget) {
+            callback();
+            return;
+        }
+
+        let lastHeight = widget.offsetHeight;
         let stableFrames = 0;
         const startTime = Date.now();
 
         function check() {
-            const currentOffset = target.offsetTop;
-            if (currentOffset === lastOffset) {
+            const currentHeight = widget.offsetHeight;
+            if (currentHeight === lastHeight) {
                 stableFrames++;
             } else {
                 stableFrames = 0;
-                lastOffset = currentOffset;
+                lastHeight = currentHeight;
             }
 
-            // ✅ Consider stable after 5 frames (~83ms)
+            // Consider stable after 5 frames or timeout
             if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
                 callback();
             } else {
@@ -696,20 +703,20 @@ document.addEventListener('DOMContentLoaded', function () {
         check();
     }
 
-    // ✅ Handle anchor click or hash
+    // Handle anchor click or page load hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            waitForTargetOffsetStable(target, () => {
+            waitForReviewsWidget(() => {
                 scrollToElement(target);
             });
         });
     }
 
-    // ✅ Click listener for internal anchor links
+    // Click listener for internal anchor links
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
@@ -720,11 +727,11 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         handleAnchor(anchor);
 
-        // ✅ Update URL hash without jumping
+        // Update URL hash without jumping
         history.pushState(null, '', `#${targetId}`);
     });
 
-    // ✅ Scroll to hash on page load
+    // Scroll to hash on page load
     function scrollOnLoad() {
         if (!window.location.hash) return;
 
@@ -734,10 +741,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // ✅ Run on initial page load
+    // Run on initial page load
     scrollOnLoad();
 
-    // ✅ Run when navigating browser history
+    // Run when navigating browser history
     window.addEventListener('popstate', scrollOnLoad);
 
 });
