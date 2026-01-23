@@ -677,7 +677,7 @@ document.addEventListener('DOMContentLoaded', function () {
         currentAnimation = requestAnimationFrame(step);
     }
 
-    // Open any accordion if anchor inside one
+    // Open accordion if anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -687,47 +687,49 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // Wait until dynamic sections above the target stabilize
-    function waitForDynamicSections(sections, callback, maxWait = 2000) {
-        const observers = [];
-        let settled = false;
-
-        function cleanup() {
-            observers.forEach(o => o.disconnect());
-            settled = true;
-        }
-
-        // Fallback timeout in case some section never triggers mutations
-        const timeout = setTimeout(() => {
-            if (!settled) {
-                cleanup();
-                callback();
-            }
-        }, maxWait);
-
-        let lastMutationTime = Date.now();
-
-        sections.forEach(section => {
-            if (!section) return;
-            const observer = new MutationObserver(() => {
-                lastMutationTime = Date.now();
-            });
-            observer.observe(section, { childList: true, subtree: true, attributes: true, characterData: true });
-            observers.push(observer);
+    // Wait for all images in a section to load
+    function waitForImages(section) {
+        if (!section) return Promise.resolve();
+        const imgs = Array.from(section.querySelectorAll('img'));
+        const promises = imgs.map(img => {
+            if (img.complete) return Promise.resolve();
+            return new Promise(resolve => img.addEventListener('load', resolve));
         });
+        return Promise.all(promises);
+    }
 
-        // Polling to check if 200ms have passed since last mutation
-        function check() {
-            if (Date.now() - lastMutationTime > 200) {
-                clearTimeout(timeout);
-                cleanup();
-                callback();
-            } else {
-                requestAnimationFrame(check);
+    // Wait until dynamic sections above the anchor stabilize
+    function waitForDynamicSections(sections) {
+        return new Promise(resolve => {
+            let lastMutation = Date.now();
+            const observers = [];
+
+            function cleanup() {
+                observers.forEach(o => o.disconnect());
+                resolve();
             }
-        }
 
-        check();
+            // Observe DOM changes in dynamic sections
+            sections.forEach(section => {
+                if (!section) return;
+                const observer = new MutationObserver(() => lastMutation = Date.now());
+                observer.observe(section, { childList: true, subtree: true, attributes: true, characterData: true });
+                observers.push(observer);
+            });
+
+            // Poll until no mutations + all images loaded
+            function check() {
+                const now = Date.now();
+                const imagesLoaded = sections.every(sec => !sec || Array.from(sec.querySelectorAll('img')).every(img => img.complete));
+                if (now - lastMutation > 200 && imagesLoaded) {
+                    cleanup();
+                } else {
+                    requestAnimationFrame(check);
+                }
+            }
+
+            check();
+        });
     }
 
     function handleAnchor(anchor) {
@@ -735,7 +737,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        // Define dynamic sections that can affect scroll
+        // Define all dynamic sections that can affect layout above anchor
         const dynamicSections = [
             document.querySelector('section:nth-of-type(2)'),
             document.querySelector('section:nth-of-type(3)'),
@@ -745,19 +747,18 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('section:nth-of-type(16)')
         ];
 
-        openAccordion(anchor).then(() => {
-            waitForDynamicSections(dynamicSections, () => {
-                const headerHeight = getHeaderHeight();
-                const targetRect = target.getBoundingClientRect();
-                const extraOffset = 50; // small buffer so target not flush to header
+        openAccordion(anchor)
+        .then(() => waitForDynamicSections(dynamicSections))
+        .then(() => {
+            const headerHeight = getHeaderHeight();
+            const targetRect = target.getBoundingClientRect();
+            const extraOffset = 50; // small buffer so target isn't flush with header
 
-                let targetY = window.pageYOffset + targetRect.top - headerHeight - extraOffset;
+            let targetY = window.pageYOffset + targetRect.top - headerHeight - extraOffset;
+            // Clamp to bottom of page
+            targetY = Math.min(targetY, document.documentElement.scrollHeight - window.innerHeight);
 
-                // Clamp to bottom of page
-                targetY = Math.min(targetY, document.documentElement.scrollHeight - window.innerHeight);
-
-                smoothScrollTo(targetY);
-            });
+            smoothScrollTo(targetY);
         });
     }
 
@@ -787,7 +788,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
-
 
 
   {% if request.path contains 'product-locator' %}
