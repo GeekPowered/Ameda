@@ -647,65 +647,66 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
     const header = document.querySelector('.cc-header');
+    const EXTRA_OFFSET = 600; // ✅ fixed offset to account for tall dynamic content
 
-    // ✅ Get header height for fixed header offset
+    // ✅ Get the header height to offset scrolling
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // ✅ Scroll to element accounting for header
+    // ✅ Scroll to the element, accounting for header and dynamic content
     function scrollToElement(element) {
-        const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight();
-        window.scrollTo({ top: y, behavior: 'smooth' });
+        // Use requestAnimationFrame in case layout changes during this frame
+        requestAnimationFrame(() => {
+            // ✅ Added EXTRA_OFFSET here
+            const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + EXTRA_OFFSET;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        });
     }
 
-    // ✅ Open accordion if the anchor is inside one
+    // ✅ Open an accordion if the anchor is inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
             details.setAttribute('open', '');
-            return new Promise(resolve => setTimeout(resolve, 350)); // wait for animation
+            // Wait for the accordion animation to finish before scrolling
+            return new Promise(resolve => setTimeout(resolve, 350));
         }
         return Promise.resolve();
     }
 
-    // ✅ Continuously adjust scroll until the element is at its final position
-    function scrollUntilTarget(element, maxAttempts = 60) {
-        let attempts = 0;
-        let lastTop = null;
-
-        function step() {
-            const rect = element.getBoundingClientRect();
-            const currentTop = rect.top;
-
-            // If top hasn’t changed (or very small delta), stop
-            if (lastTop !== null && Math.abs(currentTop - lastTop) < 1) {
-                return;
+    // ✅ Wait for dynamic content (like reviews widget) above the target to finish loading
+    function waitForLayout(target, callback) {
+        // Use MutationObserver to detect DOM changes
+        const observer = new MutationObserver(() => {
+            // Recalculate position after layout changes
+            const rect = target.getBoundingClientRect();
+            if (rect.top !== 0) { // crude check that element is positioned
+                observer.disconnect();
+                callback();
             }
+        });
 
-            lastTop = currentTop;
-            scrollToElement(element);
+        observer.observe(document.body, { childList: true, subtree: true });
 
-            attempts++;
-            if (attempts < maxAttempts) {
-                requestAnimationFrame(step);
-            }
-        }
-
-        step();
+        // Fallback: also scroll after a short delay in case no mutations fire
+        setTimeout(() => {
+            observer.disconnect();
+            callback();
+        }, 1000); // tweak if necessary
     }
 
-    // ✅ Handle anchor click or hash
+    // ✅ Handle anchor click or page load hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            // Phase 1: scroll immediately
-            scrollToElement(target);
-            // Phase 2: continuously adjust until final position
-            scrollUntilTarget(target);
+            // Wait for layout (dynamic content, widgets) to stabilize before scrolling
+            waitForLayout(target, () => {
+                scrollToElement(target);
+            });
         });
     }
 
@@ -719,7 +720,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         e.preventDefault();
         handleAnchor(anchor);
-
         // ✅ Update URL hash without jumping
         history.pushState(null, '', `#${targetId}`);
     });
@@ -728,7 +728,10 @@ document.addEventListener('DOMContentLoaded', function () {
     function scrollOnLoad() {
         if (!window.location.hash) return;
 
-        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
+        const anchor = document.querySelector(
+            `a[href="${window.location.hash}"]`
+        );
+
         if (anchor) {
             handleAnchor(anchor);
         }
@@ -737,7 +740,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // ✅ Run on initial page load
     scrollOnLoad();
 
-    // ✅ Run when navigating browser history
+    // ✅ Run when navigating browser history (back/forward)
     window.addEventListener('popstate', scrollOnLoad);
 
 });
