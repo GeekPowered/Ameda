@@ -644,37 +644,46 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const header = document.querySelector('.cc-header');
-    let currentAnimation = null;
+    let scrollAnimation = null;
 
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    function smoothScrollTo(targetY, duration = 500) {
-        if (currentAnimation) cancelAnimationFrame(currentAnimation);
+    // Smooth adaptive scroll toward target
+    function adaptiveScroll(target, extraOffset = 50, duration = 700) {
+        if (!target) return;
+        if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
 
-        const startY = window.pageYOffset;
-        const distance = targetY - startY;
         const startTime = performance.now();
-
-        function easeOutCubic(t) {
-            return 1 - Math.pow(1 - t, 3);
-        }
+        const startY = window.pageYOffset;
 
         function step(now) {
             const elapsed = now - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            window.scrollTo({
-                top: startY + distance * easeOutCubic(progress)
-            });
-            if (progress < 1) {
-                currentAnimation = requestAnimationFrame(step);
+
+            const headerHeight = getHeaderHeight();
+            const targetRect = target.getBoundingClientRect();
+            let targetY = window.pageYOffset + targetRect.top - headerHeight - extraOffset;
+
+            // Clamp to bottom of page
+            targetY = Math.min(targetY, document.documentElement.scrollHeight - window.innerHeight);
+
+            // Smooth easing toward current targetY
+            const distance = targetY - window.pageYOffset;
+            const eased = distance * (1 - Math.pow(1 - progress, 3));
+
+            window.scrollTo(0, window.pageYOffset + eased);
+
+            if (Math.abs(distance) > 0.5 && progress < 1) {
+                scrollAnimation = requestAnimationFrame(step);
             } else {
-                currentAnimation = null;
+                scrollAnimation = null;
+                window.scrollTo(0, targetY); // ensure exact final position
             }
         }
 
-        currentAnimation = requestAnimationFrame(step);
+        scrollAnimation = requestAnimationFrame(step);
     }
 
     // Open accordion if anchor is inside one
@@ -687,18 +696,22 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // Wait for all images in a section to load
-    function waitForImages(section) {
-        if (!section) return Promise.resolve();
-        const imgs = Array.from(section.querySelectorAll('img'));
-        const promises = imgs.map(img => {
-            if (img.complete) return Promise.resolve();
-            return new Promise(resolve => img.addEventListener('load', resolve));
+    // Wait for images in dynamic sections
+    function waitForImages(sections) {
+        const promises = [];
+        sections.forEach(section => {
+            if (!section) return;
+            const imgs = Array.from(section.querySelectorAll('img'));
+            imgs.forEach(img => {
+                if (!img.complete) {
+                    promises.push(new Promise(res => img.addEventListener('load', res)));
+                }
+            });
         });
         return Promise.all(promises);
     }
 
-    // Wait until dynamic sections above the anchor stabilize
+    // Wait for dynamic sections to stabilize (mutations + images)
     function waitForDynamicSections(sections) {
         return new Promise(resolve => {
             let lastMutation = Date.now();
@@ -709,7 +722,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 resolve();
             }
 
-            // Observe DOM changes in dynamic sections
             sections.forEach(section => {
                 if (!section) return;
                 const observer = new MutationObserver(() => lastMutation = Date.now());
@@ -717,7 +729,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 observers.push(observer);
             });
 
-            // Poll until no mutations + all images loaded
             function check() {
                 const now = Date.now();
                 const imagesLoaded = sections.every(sec => !sec || Array.from(sec.querySelectorAll('img')).every(img => img.complete));
@@ -732,12 +743,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Handle anchor click
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        // Define all dynamic sections that can affect layout above anchor
         const dynamicSections = [
             document.querySelector('section:nth-of-type(2)'),
             document.querySelector('section:nth-of-type(3)'),
@@ -749,17 +760,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         openAccordion(anchor)
         .then(() => waitForDynamicSections(dynamicSections))
-        .then(() => {
-            const headerHeight = getHeaderHeight();
-            const targetRect = target.getBoundingClientRect();
-            const extraOffset = 50; // small buffer so target isn't flush with header
-
-            let targetY = window.pageYOffset + targetRect.top - headerHeight - extraOffset;
-            // Clamp to bottom of page
-            targetY = Math.min(targetY, document.documentElement.scrollHeight - window.innerHeight);
-
-            smoothScrollTo(targetY);
-        });
+        .then(() => waitForImages(dynamicSections))
+        .then(() => adaptiveScroll(target, 50, 700));
     }
 
     // Click listener
