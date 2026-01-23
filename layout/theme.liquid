@@ -737,8 +737,10 @@ function smoothScrollToElement(element, extraOffset) {
         openAccordion(anchor).then(() => {
             waitForTargetStable(target, () => {
                 // Use different offset depending on screen size
-                const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
-                smoothScrollToElement(target, extraOffset);
+const baseOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
+const maxOffset = window.innerHeight * 0.6;
+const extraOffset = Math.min(baseOffset, maxOffset);
+
             });
         });
     }
