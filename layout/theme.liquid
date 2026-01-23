@@ -803,7 +803,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
 
     // ---------------------------
-    // MOBILE ONLY: <1200px
+    // MOBILE ONLY: < 1200px
     // ---------------------------
     if (window.innerWidth >= 1200) return;
 
@@ -814,7 +814,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    // Smooth scroll to target with adaptive mobile behavior
+    // Smooth scroll to target with mobile adaptive behavior
     function adaptiveScroll(target, extraOffset = 50, duration = 700) {
         if (!target) return;
         if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
@@ -825,14 +825,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetY = window.pageYOffset + targetRect.top - getHeaderHeight() - extraOffset;
             const distance = targetY - window.pageYOffset;
 
-            // Stop when target is close enough
             if (Math.abs(distance) < 1) {
                 window.scrollTo(0, targetY);
                 scrollAnimation = null;
                 return;
             }
 
-            // Scroll a fraction of the distance
             window.scrollBy(0, distance * 0.3);
             scrollAnimation = requestAnimationFrame(step);
         }
