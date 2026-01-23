@@ -650,43 +650,72 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    // Smooth adaptive scroll toward target
+    // Smooth scroll to target with adaptive mobile behavior
     function adaptiveScroll(target, extraOffset = 50, duration = 700) {
         if (!target) return;
         if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
 
-        const startTime = performance.now();
+        const isMobile = window.matchMedia('(max-width: 1199px)').matches;
+
+        if (!isMobile) {
+            // Desktop: single smooth scroll (already stable)
+            const startY = window.pageYOffset;
+            const targetRect = target.getBoundingClientRect();
+            const targetY = Math.min(
+                window.pageYOffset + targetRect.top - getHeaderHeight() - extraOffset,
+                document.documentElement.scrollHeight - window.innerHeight
+            );
+            smoothScrollSingle(targetY, duration);
+            return;
+        }
+
+        // Mobile: incremental adaptive scroll
+        function step() {
+            const targetRect = target.getBoundingClientRect();
+            const targetY = window.pageYOffset + targetRect.top - getHeaderHeight() - extraOffset;
+            const distance = targetY - window.pageYOffset;
+
+            // Stop when target is close enough
+            if (Math.abs(distance) < 1) {
+                window.scrollTo(0, targetY);
+                scrollAnimation = null;
+                return;
+            }
+
+            // Scroll a fraction of the distance
+            window.scrollBy(0, distance * 0.3);
+            scrollAnimation = requestAnimationFrame(step);
+        }
+
+        scrollAnimation = requestAnimationFrame(step);
+    }
+
+    // Desktop smooth single scroll helper
+    function smoothScrollSingle(targetY, duration = 700) {
         const startY = window.pageYOffset;
+        const distance = targetY - startY;
+        const startTime = performance.now();
+
+        function easeOutCubic(t) {
+            return 1 - Math.pow(1 - t, 3);
+        }
 
         function step(now) {
             const elapsed = now - startTime;
             const progress = Math.min(elapsed / duration, 1);
-
-            const headerHeight = getHeaderHeight();
-            const targetRect = target.getBoundingClientRect();
-            let targetY = window.pageYOffset + targetRect.top - headerHeight - extraOffset;
-
-            // Clamp to bottom of page
-            targetY = Math.min(targetY, document.documentElement.scrollHeight - window.innerHeight);
-
-            // Smooth easing toward current targetY
-            const distance = targetY - window.pageYOffset;
-            const eased = distance * (1 - Math.pow(1 - progress, 3));
-
-            window.scrollTo(0, window.pageYOffset + eased);
-
-            if (Math.abs(distance) > 0.5 && progress < 1) {
+            window.scrollTo(0, startY + distance * easeOutCubic(progress));
+            if (progress < 1) {
                 scrollAnimation = requestAnimationFrame(step);
             } else {
                 scrollAnimation = null;
-                window.scrollTo(0, targetY); // ensure exact final position
+                window.scrollTo(0, targetY); // exact final position
             }
         }
 
         scrollAnimation = requestAnimationFrame(step);
     }
 
-    // Open accordion if anchor is inside one
+    // Open accordion if anchor inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -790,7 +819,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
-
 
   {% if request.path contains 'product-locator' %}
     <script>
