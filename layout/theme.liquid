@@ -651,29 +651,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Smooth scroll function (glitch-free)
-function smoothScrollToElement(element, extraOffset) {
-    function step() {
+    function smoothScrollToElement(element, extraOffset) {
+        const startY = window.pageYOffset;
         const targetY =
             element.getBoundingClientRect().top +
             window.pageYOffset -
             getHeaderHeight() +
             extraOffset;
 
-        const currentY = window.pageYOffset;
-        const diff = targetY - currentY;
+        const distance = targetY - startY;
+        const duration = 500; // ms
+        const startTime = performance.now();
 
-        if (Math.abs(diff) < 1) {
-            window.scrollTo({ top: targetY });
-            return;
+        function easeOutCubic(t) {
+            return 1 - Math.pow(1 - t, 3);
         }
 
-        window.scrollTo({ top: currentY + diff * 0.2 });
+        function step(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = easeOutCubic(progress);
+
+            window.scrollTo({
+                top: startY + distance * eased
+            });
+
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            }
+        }
+
         requestAnimationFrame(step);
     }
-
-    requestAnimationFrame(step);
-}
-
 
     // Open an accordion if the anchor is inside one
     function openAccordion(anchor) {
