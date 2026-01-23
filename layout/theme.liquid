@@ -651,38 +651,46 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Smooth scroll function (glitch-free)
-    function smoothScrollToElement(element, extraOffset) {
-        const startY = window.pageYOffset;
-        const targetY =
-            element.getBoundingClientRect().top +
-            window.pageYOffset -
-            getHeaderHeight() +
-            extraOffset;
+function smoothScrollToElement(element, extraOffset) {
+    const headerOffset = getHeaderHeight();
 
-        const distance = targetY - startY;
-        const duration = 500; // ms
-        const startTime = performance.now();
+    let targetY =
+        element.getBoundingClientRect().top +
+        window.pageYOffset -
+        headerOffset +
+        extraOffset;
 
-        function easeOutCubic(t) {
-            return 1 - Math.pow(1 - t, 3);
-        }
+    const maxScroll =
+        document.documentElement.scrollHeight - window.innerHeight;
 
-        function step(now) {
-            const elapsed = now - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = easeOutCubic(progress);
+    targetY = Math.max(0, Math.min(targetY, maxScroll));
 
-            window.scrollTo({
-                top: startY + distance * eased
-            });
+    const startY = window.pageYOffset;
+    const distance = targetY - startY;
+    const duration = 500;
+    const startTime = performance.now();
 
-            if (progress < 1) {
-                requestAnimationFrame(step);
-            }
-        }
-
-        requestAnimationFrame(step);
+    function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
     }
+
+    function step(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = easeOutCubic(progress);
+
+        window.scrollTo({
+            top: startY + distance * eased
+        });
+
+        if (progress < 1) {
+            requestAnimationFrame(step);
+        }
+    }
+
+    requestAnimationFrame(step);
+}
+
 
     // Open an accordion if the anchor is inside one
     function openAccordion(anchor) {
