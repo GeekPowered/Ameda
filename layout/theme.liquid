@@ -647,21 +647,17 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
     const header = document.querySelector('.cc-header');
-    const EXTRA_OFFSET = 600; // ✅ fixed offset to account for tall dynamic content
+    const EXTRA_OFFSET = 600; // ✅ fixed offset for tall dynamic content
 
-    // ✅ Get the header height to offset scrolling
+    // ✅ Get header height to offset scrolling
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // ✅ Scroll to the element, accounting for header and dynamic content
+    // ✅ Scroll to element accounting for header and fixed offset
     function scrollToElement(element) {
-        // Use requestAnimationFrame in case layout changes during this frame
-        requestAnimationFrame(() => {
-            // ✅ Added EXTRA_OFFSET here
-            const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + EXTRA_OFFSET;
-            window.scrollTo({ top: y, behavior: 'smooth' });
-        });
+        const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + EXTRA_OFFSET;
+        window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
     // ✅ Open an accordion if the anchor is inside one
@@ -669,44 +665,49 @@ document.addEventListener('DOMContentLoaded', function () {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
             details.setAttribute('open', '');
-            // Wait for the accordion animation to finish before scrolling
+            // Wait for the accordion animation to finish
             return new Promise(resolve => setTimeout(resolve, 350));
         }
         return Promise.resolve();
     }
 
-    // ✅ Wait for dynamic content (like reviews widget) above the target to finish loading
-    function waitForLayout(target, callback) {
-        // Use MutationObserver to detect DOM changes
-        const observer = new MutationObserver(() => {
-            // Recalculate position after layout changes
+    // ✅ Wait for the target element to stabilize before scrolling
+    function waitForStablePosition(target, callback, maxWait = 2000) {
+        let lastTop = null;
+        let stableFrames = 0;
+        const startTime = Date.now();
+
+        function check() {
             const rect = target.getBoundingClientRect();
-            if (rect.top !== 0) { // crude check that element is positioned
-                observer.disconnect();
-                callback();
+            const currentTop = rect.top;
+
+            if (lastTop === currentTop) {
+                stableFrames++;
+            } else {
+                stableFrames = 0;
+                lastTop = currentTop;
             }
-        });
 
-        observer.observe(document.body, { childList: true, subtree: true });
+            // ✅ Consider stable after 5 consecutive frames (~83ms)
+            if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
+                callback();
+            } else {
+                requestAnimationFrame(check);
+            }
+        }
 
-        // Fallback: also scroll after a short delay in case no mutations fire
-        setTimeout(() => {
-            observer.disconnect();
-            callback();
-        }, 1000); // tweak if necessary
+        check();
     }
 
-    // ✅ Handle anchor click or page load hash
+    // ✅ Handle anchor click or hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            // Wait for layout (dynamic content, widgets) to stabilize before scrolling
-            waitForLayout(target, () => {
-                scrollToElement(target);
-            });
+            // ✅ Wait for element to reach final position before scrolling
+            waitForStablePosition(target, () => scrollToElement(target));
         });
     }
 
@@ -720,6 +721,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         e.preventDefault();
         handleAnchor(anchor);
+
         // ✅ Update URL hash without jumping
         history.pushState(null, '', `#${targetId}`);
     });
@@ -728,10 +730,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function scrollOnLoad() {
         if (!window.location.hash) return;
 
-        const anchor = document.querySelector(
-            `a[href="${window.location.hash}"]`
-        );
-
+        const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
         if (anchor) {
             handleAnchor(anchor);
         }
