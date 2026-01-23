@@ -650,7 +650,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    // Smooth scroll easing
     function smoothScrollTo(targetY, duration = 500) {
         if (currentAnimation) cancelAnimationFrame(currentAnimation);
 
@@ -678,7 +677,7 @@ document.addEventListener('DOMContentLoaded', function () {
         currentAnimation = requestAnimationFrame(step);
     }
 
-    // Open accordion if needed
+    // Open any accordion if anchor inside one
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -688,20 +687,40 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // Wait until target is stable and dynamic content settles
-    function waitForTargetStable(target, callback, maxWait = 1500) {
-        const startTime = Date.now();
-        let lastTop = target.getBoundingClientRect().top;
-        let stableFrames = 0;
+    // Wait until dynamic sections above the target stabilize
+    function waitForDynamicSections(sections, callback, maxWait = 2000) {
+        const observers = [];
+        let settled = false;
 
+        function cleanup() {
+            observers.forEach(o => o.disconnect());
+            settled = true;
+        }
+
+        // Fallback timeout in case some section never triggers mutations
+        const timeout = setTimeout(() => {
+            if (!settled) {
+                cleanup();
+                callback();
+            }
+        }, maxWait);
+
+        let lastMutationTime = Date.now();
+
+        sections.forEach(section => {
+            if (!section) return;
+            const observer = new MutationObserver(() => {
+                lastMutationTime = Date.now();
+            });
+            observer.observe(section, { childList: true, subtree: true, attributes: true, characterData: true });
+            observers.push(observer);
+        });
+
+        // Polling to check if 200ms have passed since last mutation
         function check() {
-            const currentTop = target.getBoundingClientRect().top;
-            if (Math.abs(currentTop - lastTop) < 0.5) stableFrames++;
-            else stableFrames = 0;
-
-            lastTop = currentTop;
-
-            if (stableFrames >= 15 || Date.now() - startTime > maxWait) {
+            if (Date.now() - lastMutationTime > 200) {
+                clearTimeout(timeout);
+                cleanup();
                 callback();
             } else {
                 requestAnimationFrame(check);
@@ -711,23 +730,30 @@ document.addEventListener('DOMContentLoaded', function () {
         check();
     }
 
-    // Handle the anchor scroll
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
+        // Define dynamic sections that can affect scroll
+        const dynamicSections = [
+            document.querySelector('section:nth-of-type(2)'),
+            document.querySelector('section:nth-of-type(3)'),
+            document.querySelector('section:nth-of-type(5)'),
+            document.querySelector('section:nth-of-type(6)'),
+            document.querySelector('section:nth-of-type(9)'),
+            document.querySelector('section:nth-of-type(16)')
+        ];
+
         openAccordion(anchor).then(() => {
-            waitForTargetStable(target, () => {
+            waitForDynamicSections(dynamicSections, () => {
                 const headerHeight = getHeaderHeight();
                 const targetRect = target.getBoundingClientRect();
+                const extraOffset = 50; // small buffer so target not flush to header
 
-                // Calculate dynamic offset to consistently position target just below header
-                const extraOffset = Math.min(600, window.innerHeight * 0.6);
+                let targetY = window.pageYOffset + targetRect.top - headerHeight - extraOffset;
 
-                let targetY = window.pageYOffset + targetRect.top - headerHeight + extraOffset;
-
-                // Clamp so we don't scroll past bottom of page
+                // Clamp to bottom of page
                 targetY = Math.min(targetY, document.documentElement.scrollHeight - window.innerHeight);
 
                 smoothScrollTo(targetY);
@@ -761,6 +787,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
+
 
 
   {% if request.path contains 'product-locator' %}
