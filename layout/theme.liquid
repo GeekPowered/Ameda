@@ -712,7 +712,7 @@ document.addEventListener('DOMContentLoaded', function () {
         openAccordion(anchor).then(() => {
             waitForTargetStable(target, () => {
                 // Use different offset depending on screen size
-                const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
+                const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 520;
                 smoothScrollToElement(target, extraOffset);
             });
         });
