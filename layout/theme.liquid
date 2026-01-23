@@ -649,31 +649,22 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    // Live smooth scroll with soft stop threshold
-    function smoothScrollToElement(element) {
-        const extraOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
+    function smoothScrollTo(targetY, duration = 500) {
+        const startY = window.pageYOffset;
+        const distance = targetY - startY;
+        const startTime = performance.now();
 
-        function step() {
-            const targetY =
-                element.getBoundingClientRect().top +
-                window.pageYOffset -
-                getHeaderHeight() +
-                extraOffset;
+        function easeOutCubic(t) {
+            return 1 - Math.pow(1 - t, 3);
+        }
 
-            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-            const finalTargetY = Math.max(0, Math.min(targetY, maxScroll));
-
-            const currentY = window.pageYOffset;
-            let diff = finalTargetY - currentY;
-
-            // Stop if within 2px
-            if (Math.abs(diff) < 2) return;
-
-            // Move 20% of remaining distance, max 40px per frame
-            const move = Math.sign(diff) * Math.min(Math.abs(diff * 0.2), 40);
-            window.scrollTo({ top: currentY + move });
-
-            requestAnimationFrame(step);
+        function step(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            window.scrollTo({
+                top: startY + distance * easeOutCubic(progress)
+            });
+            if (progress < 1) requestAnimationFrame(step);
         }
 
         requestAnimationFrame(step);
@@ -688,22 +679,20 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    function waitForTargetStable(target, callback, maxWait = 5000) {
-        let lastTop = target.getBoundingClientRect().top;
+    // Wait until the target element is visually stable and page load has completed
+    function waitForTargetReady(target, callback, maxWait = 5000) {
         let stableFrames = 0;
+        let lastTop = target.getBoundingClientRect().top;
         const startTime = Date.now();
 
         function check() {
             const currentTop = target.getBoundingClientRect().top;
+            if (Math.abs(currentTop - lastTop) < 0.5) stableFrames++;
+            else stableFrames = 0;
+            lastTop = currentTop;
 
-            if (Math.abs(currentTop - lastTop) < 0.5) {
-                stableFrames++;
-            } else {
-                stableFrames = 0;
-                lastTop = currentTop;
-            }
-
-            if (stableFrames >= 15 || Date.now() - startTime > maxWait) {
+            // Require 20 stable frames (~333ms) AND window load completed
+            if ((stableFrames >= 20 || Date.now() - startTime > maxWait) && document.readyState === 'complete') {
                 callback();
             } else {
                 requestAnimationFrame(check);
@@ -719,8 +708,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!target) return;
 
         openAccordion(anchor).then(() => {
-            waitForTargetStable(target, () => {
-                smoothScrollToElement(target);
+            waitForTargetReady(target, () => {
+                const extraOffset = window.matchMedia('(min-width:1200px)').matches ? 600 : 500;
+                const targetY = Math.min(
+                    target.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + extraOffset,
+                    document.documentElement.scrollHeight - window.innerHeight
+                );
+                smoothScrollTo(targetY);
             });
         });
     }
@@ -728,7 +722,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
-
         const targetId = anchor.getAttribute('href').slice(1);
         if (!document.getElementById(targetId)) return;
 
@@ -739,7 +732,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function scrollOnLoad() {
         if (!window.location.hash) return;
-
         const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
         if (anchor) handleAnchor(anchor);
     }
@@ -750,6 +742,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
+
 
 
 
