@@ -650,72 +650,63 @@ document.addEventListener('DOMContentLoaded', function () {
         return header ? header.offsetHeight : 0;
     }
 
-    // Smooth scroll to target with adaptive mobile behavior
-    function adaptiveScroll(target, extraOffset = 50, duration = 700) {
+    // -------------------------------
+    // Desktop smooth scroll (legacy fraction-based)
+    // -------------------------------
+    function smoothScrollDesktop(target, extraOffset) {
         if (!target) return;
         if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
 
-        const isMobile = window.matchMedia('(max-width: 1199px)').matches;
+        const targetY = Math.min(
+            window.pageYOffset + target.getBoundingClientRect().top - getHeaderHeight() + extraOffset,
+            document.documentElement.scrollHeight - window.innerHeight
+        );
 
-        if (!isMobile) {
-            // Desktop: single smooth scroll (already stable)
-            const startY = window.pageYOffset;
-            const targetRect = target.getBoundingClientRect();
-            const targetY = Math.min(
-                window.pageYOffset + targetRect.top - getHeaderHeight() - extraOffset,
-                document.documentElement.scrollHeight - window.innerHeight
-            );
-            smoothScrollSingle(targetY, duration);
-            return;
-        }
-
-        // Mobile: incremental adaptive scroll
         function step() {
-            const targetRect = target.getBoundingClientRect();
-            const targetY = window.pageYOffset + targetRect.top - getHeaderHeight() - extraOffset;
-            const distance = targetY - window.pageYOffset;
-
-            // Stop when target is close enough
-            if (Math.abs(distance) < 1) {
-                window.scrollTo(0, targetY);
+            const currentY = window.pageYOffset;
+            const diff = targetY - currentY;
+            if (Math.abs(diff) < 1) {
+                window.scrollTo(0, targetY); // ensure exact final position
                 scrollAnimation = null;
                 return;
             }
-
-            // Scroll a fraction of the distance
-            window.scrollBy(0, distance * 0.3);
+            window.scrollTo(0, currentY + diff * 0.2);
             scrollAnimation = requestAnimationFrame(step);
         }
 
         scrollAnimation = requestAnimationFrame(step);
     }
 
-    // Desktop smooth single scroll helper
-    function smoothScrollSingle(targetY, duration = 700) {
-        const startY = window.pageYOffset;
-        const distance = targetY - startY;
-        const startTime = performance.now();
+    // -------------------------------
+    // Mobile adaptive incremental scroll
+    // -------------------------------
+    function smoothScrollMobile(target, extraOffset = 50) {
+        if (!target) return;
+        if (scrollAnimation) cancelAnimationFrame(scrollAnimation);
 
-        function easeOutCubic(t) {
-            return 1 - Math.pow(1 - t, 3);
-        }
+        function step() {
+            const targetY = Math.min(
+                window.pageYOffset + target.getBoundingClientRect().top - getHeaderHeight() - extraOffset,
+                document.documentElement.scrollHeight - window.innerHeight
+            );
 
-        function step(now) {
-            const elapsed = now - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            window.scrollTo(0, startY + distance * easeOutCubic(progress));
-            if (progress < 1) {
-                scrollAnimation = requestAnimationFrame(step);
-            } else {
+            const distance = targetY - window.pageYOffset;
+            if (Math.abs(distance) < 1) {
+                window.scrollTo(0, targetY);
                 scrollAnimation = null;
-                window.scrollTo(0, targetY); // exact final position
+                return;
             }
+
+            window.scrollBy(0, distance * 0.3); // fraction scroll
+            scrollAnimation = requestAnimationFrame(step);
         }
 
         scrollAnimation = requestAnimationFrame(step);
     }
 
-    // Open accordion if anchor inside one
+    // -------------------------------
+    // Open accordion if anchor is inside one
+    // -------------------------------
     function openAccordion(anchor) {
         const details = anchor.closest('details');
         if (details && !details.hasAttribute('open')) {
@@ -725,7 +716,9 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
+    // -------------------------------
     // Wait for images in dynamic sections
+    // -------------------------------
     function waitForImages(sections) {
         const promises = [];
         sections.forEach(section => {
@@ -740,7 +733,9 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.all(promises);
     }
 
+    // -------------------------------
     // Wait for dynamic sections to stabilize (mutations + images)
+    // -------------------------------
     function waitForDynamicSections(sections) {
         return new Promise(resolve => {
             let lastMutation = Date.now();
@@ -772,12 +767,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // -------------------------------
     // Handle anchor click
+    // -------------------------------
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
+        // Sections above the target that are dynamic
         const dynamicSections = [
             document.querySelector('section:nth-of-type(2)'),
             document.querySelector('section:nth-of-type(3)'),
@@ -790,10 +788,21 @@ document.addEventListener('DOMContentLoaded', function () {
         openAccordion(anchor)
         .then(() => waitForDynamicSections(dynamicSections))
         .then(() => waitForImages(dynamicSections))
-        .then(() => adaptiveScroll(target, 50, 700));
+        .then(() => {
+            const isMobile = window.matchMedia('(max-width: 1199px)').matches;
+
+            if (isMobile) {
+                smoothScrollMobile(target, 50); // mobile small offset
+            } else {
+                const desktopOffset = window.matchMedia('(min-width: 1200px)').matches ? 600 : 500;
+                smoothScrollDesktop(target, desktopOffset); // desktop large offset
+            }
+        });
     }
 
+    // -------------------------------
     // Click listener
+    // -------------------------------
     document.addEventListener('click', function (e) {
         const anchor = e.target.closest('a[href^="#"]:not([href="#"])');
         if (!anchor) return;
@@ -806,7 +815,9 @@ document.addEventListener('DOMContentLoaded', function () {
         history.pushState(null, '', `#${targetId}`);
     });
 
+    // -------------------------------
     // Scroll on page load hash
+    // -------------------------------
     function scrollOnLoad() {
         if (!window.location.hash) return;
         const anchor = document.querySelector(`a[href="${window.location.hash}"]`);
@@ -819,6 +830,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 {% endif %}
+
 
   {% if request.path contains 'product-locator' %}
     <script>
