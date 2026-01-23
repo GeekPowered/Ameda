@@ -647,14 +647,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
     const header = document.querySelector('.cc-header');
-    const EXTRA_OFFSET = 600; // ✅ fixed offset to account for tall dynamic content
+    const EXTRA_OFFSET = 600; // ✅ fixed offset for tall dynamic content
 
     // ✅ Get header height
     function getHeaderHeight() {
         return header ? header.offsetHeight : 0;
     }
 
-    // ✅ Scroll to element accounting for header and fixed offset
+    // ✅ Scroll to element accounting for header and offset
     function scrollToElement(element) {
         const y = element.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() + EXTRA_OFFSET;
         window.scrollTo({ top: y, behavior: 'smooth' });
@@ -670,43 +670,20 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve();
     }
 
-    // ✅ Wait until page height is stable
-    function waitForPageHeightStable(callback, maxWait = 3000) {
-        let lastHeight = document.body.scrollHeight;
-        let stableFrames = 0;
-        const startTime = Date.now();
-
-        function check() {
-            const currentHeight = document.body.scrollHeight;
-            if (currentHeight === lastHeight) {
-                stableFrames++;
-            } else {
-                stableFrames = 0;
-                lastHeight = currentHeight;
-            }
-
-            // ✅ Consider stable after 5 frames (~83ms)
-            if (stableFrames >= 5 || Date.now() - startTime > maxWait) {
-                callback();
-            } else {
-                requestAnimationFrame(check);
-            }
-        }
-
-        check();
-    }
-
     // ✅ Handle anchor click or hash
     function handleAnchor(anchor) {
         const targetId = anchor.getAttribute('href').slice(1);
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        openAccordion(anchor).then(() => {
-            waitForPageHeightStable(() => {
-                scrollToElement(target); // ✅ single scroll after content is stable
+        // ✅ Wait for window.onload to ensure all dynamic content is loaded
+        if (document.readyState === 'complete') {
+            openAccordion(anchor).then(() => scrollToElement(target));
+        } else {
+            window.addEventListener('load', () => {
+                openAccordion(anchor).then(() => scrollToElement(target));
             });
-        });
+        }
     }
 
     // ✅ Click listener for internal anchor links
