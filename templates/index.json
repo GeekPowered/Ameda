@@ -47,6 +47,7 @@
         },
         "slide_Mg6HN9": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/Valentine_Web_Banner_1.png",
             "url": "https://www.ameda.com/collections/breast-care",
