@@ -12,11 +12,12 @@
     "slideshow_LnUCXw": {
       "type": "slideshow",
       "blocks": {
-        "slide_Mg6HN9": {
+        "slide_brpgWH": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/Valentine_Web_Banner_1.png",
-            "url": "https://www.ameda.com/collections/breast-care",
+            "image_desktop": "shopify://shop_images/Spring-Sale-Web-Banner-2026.webp",
+            "url": "https://www.ameda.com/collections",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
@@ -45,12 +46,11 @@
             "bg_grad": ""
           }
         },
-        "slide_brpgWH": {
+        "slide_Mg6HN9": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/ameda-black-friday-sale-2025-home-banner.webp",
-            "url": "https://www.ameda.com/collections/ameda-breast-pump-black-friday-sale-2025",
+            "image_desktop": "shopify://shop_images/Valentine_Web_Banner_1.png",
+            "url": "https://www.ameda.com/collections/breast-care",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
@@ -182,8 +182,8 @@
         }
       },
       "block_order": [
-        "slide_Mg6HN9",
         "slide_brpgWH",
+        "slide_Mg6HN9",
         "slide_dFgWAy",
         "slide_rdbmPX",
         "slide_VC4kwd"
