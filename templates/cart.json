@@ -19,7 +19,7 @@
         "show_order_note": true,
         "show_tax_and_shipping": true,
         "show_additional_checkout_buttons": true,
-        "cart_terms_page": "https://www.ameda.com/pages/terms-of-use",
+        "cart_terms_page": "",
         "continue_shopping_page": "",
         "show_shipping_calculator": false,
         "shipping_calculator_default_country": "United States"
