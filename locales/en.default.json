@@ -410,7 +410,7 @@
       "continue_shopping": "Continue shopping"
     },
     "terms": {
-      "agreement_html": "I agree to the  <a href=\"{{ shop.terms_of_service.url }}\" target=\"_blank\">Terms of Service</a>  and  <a href=\"{{ shop.refund_policy.url }}\" target=\"_blank\">Refund Policy</a>",
+      "agreement_html": "I agree to the <a href=\"{{ terms_url }}\" target=\"_blank\">terms and refund policy</a>",
       "confirmation": "You must agree to the terms and conditions before continuing."
     }
   },
