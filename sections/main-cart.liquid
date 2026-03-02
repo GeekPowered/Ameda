@@ -120,14 +120,19 @@
             <p class="mb-0 h6">{%- render 'price-as-money', price: cart.total_price, show_money_with_currency: true -%}</p>
           </div>
 
-          {%- if section.settings.cart_terms_page != blank -%}
-            <cart-terms class="block mt-6">
-              <input type="checkbox" class="checkbox js-cart-terms-checkbox" id="cart-terms" form="cart">
-              <label for="cart-terms">
-                <span class="rte">{{ 'cart.terms.agreement_html' | t: terms_url: section.settings.cart_terms_page }}</span>
-              </label>
-            </cart-terms>
-          {%- endif -%}
+          <cart-terms class="block mt-6">
+            <input type="checkbox" class="checkbox js-cart-terms-checkbox" id="cart-terms" form="cart">
+            <label for="cart-terms">
+              <span class="rte">
+                I agree to the 
+                <a href="{{ shop.policies.terms_of_service.url }}" target="_blank">Terms of Service</a> 
+                and 
+                <a href="{{ shop.policies.refund_policy.url }}" target="_blank">Refund Policy</a>
+              </span>
+            </label>
+          </cart-terms>
+
+          <script src="{{ 'cart-terms.js' | asset_url }}" defer="defer"></script>
 
           <div class="mt-6">
             <button class="btn btn--primary btn--icon-with-text w-full" name="checkout">
