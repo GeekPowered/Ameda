@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
   checkbox.addEventListener("change", function () {
 
     if (checkbox.checked) {
-      const now = new Date().toISOString();
+      const now = new Date().toLocaleString();
       timestampInput.value = now;
     } else {
       timestampInput.value = "";
