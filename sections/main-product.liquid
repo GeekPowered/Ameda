@@ -620,46 +620,7 @@
         </div>
       </sticky-scroll-direction>
       {%- endif -%}
-    </div>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const productEl = document.querySelector('.js-product');
-  if (!productEl) return;
-
-  // Grab the variant JSON from the product section
-  const productDataEl = productEl.querySelector('script[type="application/json"]');
-  if (!productDataEl) return;
-
-  const productData = JSON.parse(productDataEl.textContent);
-  const variants = productData.variants;
-
-  // Helper to dispatch variant change
-  function triggerVariantChange(variantId) {
-    const variant = variants.find(v => v.id === parseInt(variantId, 10));
-    if (variant) {
-      productEl.dispatchEvent(new CustomEvent('on:variant:change', { detail: { variant } }));
-    }
-  }
-
-  // 1️⃣ Detect ?variant= in URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const variantFromURL = urlParams.get('variant');
-  if (variantFromURL) triggerVariantChange(variantFromURL);
-
-  // 2️⃣ Listen to variant selection changes
-  const optionSelectors = productEl.querySelectorAll('.single-option-selector, .option-selector');
-  optionSelectors.forEach((selector) => {
-    selector.addEventListener('change', (evt) => {
-      const selectedVariantIdEl = productEl.querySelector('[name="id"]');
-      if (selectedVariantIdEl && selectedVariantIdEl.value) {
-        triggerVariantChange(selectedVariantIdEl.value);
-      }
-    });
-  });
-});
-</script>    
+    </div>   
 
   </div><!--//js-product-->
 </div><!--//container-->
