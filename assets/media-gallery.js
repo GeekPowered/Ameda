@@ -22,108 +22,71 @@ if (!customElements.get('media-gallery')) {
       }
     }
 
-init() {
-  this.section = this.closest('.js-product');
-  this.mediaGroupingEnabled = this.hasAttribute('data-media-grouping-enabled')
-    && this.getMediaGroupData();
-  this.stackedScroll = this.dataset.stackedScroll;
-  this.stackedUnderline = this.dataset.stackedUnderline === 'true' && !this.mediaGroupingEnabled;
-  this.isFeatured = this.dataset.isFeatured === 'true';
-  this.viewer = this.querySelector('.media-viewer');
-  this.thumbs = this.querySelector('.media-thumbs');
-  this.thumbsItems = this.querySelectorAll('.media-thumbs__item');
-  this.controls = this.querySelector('.media-ctrl');
-  this.prevBtn = this.querySelector('.media-ctrl__btn[name="prev"]');
-  this.nextBtn = this.querySelector('.media-ctrl__btn[name="next"]');
-  this.counterCurrent = this.querySelector('.media-ctrl__current-item');
-  this.counterTotal = this.querySelector('.media-ctrl__total-items');
-  this.liveRegion = this.querySelector('.media-gallery__status');
-  this.zoomLinks = this.querySelectorAll('.js-zoom-link');
-  this.loadingSpinner = this.querySelector('.loading-spinner');
-  this.xrButton = this.querySelector('.media-xr-button');
+    init() {
+      this.section = this.closest('.js-product');
+      this.mediaGroupingEnabled = this.hasAttribute('data-media-grouping-enabled')
+        && this.getMediaGroupData();
+      this.stackedScroll = this.dataset.stackedScroll;
+      this.stackedUnderline = this.dataset.stackedUnderline === 'true' && !this.mediaGroupingEnabled;
+      this.isFeatured = this.dataset.isFeatured === 'true';
+      this.viewer = this.querySelector('.media-viewer');
+      this.thumbs = this.querySelector('.media-thumbs');
+      this.thumbsItems = this.querySelectorAll('.media-thumbs__item');
+      this.controls = this.querySelector('.media-ctrl');
+      this.prevBtn = this.querySelector('.media-ctrl__btn[name="prev"]');
+      this.nextBtn = this.querySelector('.media-ctrl__btn[name="next"]');
+      this.counterCurrent = this.querySelector('.media-ctrl__current-item');
+      this.counterTotal = this.querySelector('.media-ctrl__total-items');
+      this.liveRegion = this.querySelector('.media-gallery__status');
+      this.zoomLinks = this.querySelectorAll('.js-zoom-link');
+      this.loadingSpinner = this.querySelector('.loading-spinner');
+      this.xrButton = this.querySelector('.media-xr-button');
 
-  if (this.mediaGroupingEnabled) {
-    this.setActiveMediaGroup(this.getMediaGroupFromOptionSelectors());
-  }
-
-  if (this.dataset.layout === 'stacked' && theme.mediaMatches.md) {
-    this.resizeInitHandler = this.resizeInitHandler || this.initGallery.bind(this);
-    window.addEventListener('on:debounced-resize', this.resizeInitHandler);
-    this.setVisibleItems();
-    this.previousMediaItem = this.querySelector('.media-viewer__item.is-current-variant');
-    setTimeout(() => this.customSetActiveMedia(this.previousMediaItem, this.stackedScroll === 'always'), 200);
-  } else {
-    this.initGallery();
-  }
-
-  if (this.zoomLinks) {
-    this.zoomInitHandler = this.zoomInitHandler || this.initZoom.bind(this);
-    this.zoomEventListener = this.zoomEventListener || this.handleZoomMouseMove.bind(this);
-    window.addEventListener('on:debounced-resize', this.zoomInitHandler);
-    this.initZoom();
-    this.zoomLinks.forEach((el) => {
-      el.addEventListener('click', (evt) => {
-        evt.preventDefault();
-      });
-    });
-  }
-
-  // --- VARIANT SELECTOR LISTENER ---
-  const optionSelectors = this.section.querySelectorAll('.single-option-selector');
-  optionSelectors.forEach((selector) => {
-    selector.addEventListener('change', () => {
-      const selectedVariant = this.section.querySelector('[name="id"]').value;
-      const variant = window.theme.variants.find(v => v.id == selectedVariant);
-      if (variant) {
-        this.onVariantChange({ detail: { variant } });
+      if (this.mediaGroupingEnabled) {
+        this.setActiveMediaGroup(this.getMediaGroupFromOptionSelectors());
       }
-    });
-  });
 
-  this.section.addEventListener('on:variant:change', this.onVariantChange.bind(this));
-}
+      if (this.dataset.layout === 'stacked' && theme.mediaMatches.md) {
+        this.resizeInitHandler = this.resizeInitHandler || this.initGallery.bind(this);
+        window.addEventListener('on:debounced-resize', this.resizeInitHandler);
+        this.setVisibleItems();
+        this.previousMediaItem = this.querySelector('.media-viewer__item.is-current-variant');
+        setTimeout(() => this.customSetActiveMedia(this.previousMediaItem, this.stackedScroll === 'always'), 200);
+      } else {
+        this.initGallery();
+      }
+
+      if (this.zoomLinks) {
+        this.zoomInitHandler = this.zoomInitHandler || this.initZoom.bind(this);
+        this.zoomEventListener = this.zoomEventListener || this.handleZoomMouseMove.bind(this);
+        window.addEventListener('on:debounced-resize', this.zoomInitHandler);
+        this.initZoom();
+        this.zoomLinks.forEach((el) => {
+          el.addEventListener('click', (evt) => {
+            evt.preventDefault();
+          });
+        });
+      }
+
+      this.section.addEventListener('on:variant:change', this.onVariantChange.bind(this));
+    }
 
     /**
      * Handle a change in variant on the page.
      * @param {Event} evt - variant change event dispatched by variant-picker
      */
-onVariantChange(evt) {
-  if (this.mediaGroupingEnabled) {
-    this.setActiveMediaGroup(this.getMediaGroupFromOptionSelectors());
-  }
+    onVariantChange(evt) {
+      if (this.mediaGroupingEnabled) {
+        this.setActiveMediaGroup(this.getMediaGroupFromOptionSelectors());
+      }
 
-  if (!evt.detail.variant) return;
-
-  const variant = evt.detail.variant;
-
-  // Step 2: Use featured_media, fallback to variant.image_id, then fallback to first thumbnail
-  let mediaId = variant.featured_media?.id || variant.image_id;
-
-  // Try to find matching gallery item
-  let variantMedia = mediaId
-    ? this.viewer.querySelector(`[data-media-id="${mediaId}"]`)
-    : null;
-
-  // If no matching media found, fallback to first thumbnail / gallery item
-  if (!variantMedia) {
-    // If thumbs exist, pick the first one
-    if (this.thumbs && this.thumbsItems.length) {
-      const firstThumb = this.thumbsItems[0];
-      const firstMediaId = firstThumb.dataset.mediaId;
-      variantMedia = this.viewer.querySelector(`[data-media-id="${firstMediaId}"]`);
+      if (evt.detail.variant && evt.detail.variant.featured_media) {
+        const variantMedia = this.viewer.querySelector(
+          `[data-media-id="${evt.detail.variant.featured_media.id}"]`
+        );
+        this.customSetActiveMedia(variantMedia, true);
+      }
     }
-
-    // Fallback to first visible gallery item
-    if (!variantMedia) {
-      variantMedia = this.visibleItems[0];
-    }
-  }
-
-  // Activate the gallery item
-  if (variantMedia) {
-    this.customSetActiveMedia(variantMedia, true);
-  }
-}
 
     /**
      * Gets the media group from currently selected variant options.
