@@ -621,6 +621,32 @@
       </sticky-scroll-direction>
       {%- endif -%}
     </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const productSection = document.querySelector('.js-product');
+  if (!productSection) return;
+
+  const mediaGallery = productSection.querySelector('media-gallery');
+  if (!mediaGallery) return;
+
+  // Listen for Shopify variant changes
+  productSection.addEventListener('on:variant:change', (evt) => {
+    const variant = evt.detail.variant;
+    if (!variant) return;
+
+    // Use featured_media if available, otherwise fallback to first image
+    const mediaId = variant.featured_media?.id || variant.image_id;
+    let mediaItem = mediaGallery.querySelector(`[data-media-id="${mediaId}"]`);
+
+    if (!mediaItem) mediaItem = mediaGallery.querySelector('.media-viewer__item');
+
+    if (mediaItem) {
+      mediaGallery.customSetActiveMedia(mediaItem, true);
+    }
+  });
+});
+</script>
+
   </div>
 </div>
 
