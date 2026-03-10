@@ -80,20 +80,26 @@ onVariantChange(evt) {
     this.setActiveMediaGroup(this.getMediaGroupFromOptionSelectors());
   }
 
-  if (evt.detail.variant) {
-    // Try featured_media first
-    let mediaId = evt.detail.variant.featured_media?.id;
+  if (!evt.detail.variant) return;
 
-    // Fallback to first variant image if featured_media not set
-    if (!mediaId && evt.detail.variant.image_id) {
-      mediaId = evt.detail.variant.image_id;
-    }
+  const variant = evt.detail.variant;
 
-    const variantMedia = this.viewer.querySelector(`[data-media-id="${mediaId}"]`);
-    if (variantMedia) {
-      this.customSetActiveMedia(variantMedia, true);
-    }
+  // Prefer featured_media, fallback to variant.image_id
+  let mediaId = variant.featured_media?.id || variant.image_id;
+
+  // Find the gallery item that matches the mediaId
+  let variantMedia = null;
+  if (mediaId) {
+    variantMedia = this.viewer.querySelector(`[data-media-id="${mediaId}"]`);
   }
+
+  // If no matching media found, fallback to first visible gallery item
+  if (!variantMedia) {
+    variantMedia = this.visibleItems[0];
+  }
+
+  // Activate the gallery item
+  this.customSetActiveMedia(variantMedia, true);
 }
 
     /**
