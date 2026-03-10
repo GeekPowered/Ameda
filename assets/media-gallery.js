@@ -75,18 +75,26 @@ if (!customElements.get('media-gallery')) {
      * Handle a change in variant on the page.
      * @param {Event} evt - variant change event dispatched by variant-picker
      */
-    onVariantChange(evt) {
-      if (this.mediaGroupingEnabled) {
-        this.setActiveMediaGroup(this.getMediaGroupFromOptionSelectors());
-      }
+onVariantChange(evt) {
+  if (this.mediaGroupingEnabled) {
+    this.setActiveMediaGroup(this.getMediaGroupFromOptionSelectors());
+  }
 
-      if (evt.detail.variant && evt.detail.variant.featured_media) {
-        const variantMedia = this.viewer.querySelector(
-          `[data-media-id="${evt.detail.variant.featured_media.id}"]`
-        );
-        this.customSetActiveMedia(variantMedia, true);
-      }
+  if (evt.detail.variant) {
+    // Try featured_media first
+    let mediaId = evt.detail.variant.featured_media?.id;
+
+    // Fallback to first variant image if featured_media not set
+    if (!mediaId && evt.detail.variant.image_id) {
+      mediaId = evt.detail.variant.image_id;
     }
+
+    const variantMedia = this.viewer.querySelector(`[data-media-id="${mediaId}"]`);
+    if (variantMedia) {
+      this.customSetActiveMedia(variantMedia, true);
+    }
+  }
+}
 
     /**
      * Gets the media group from currently selected variant options.
