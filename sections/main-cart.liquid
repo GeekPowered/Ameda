@@ -141,7 +141,7 @@
   </label>
 </cart-terms>
 
-<!-- hidden timestamp field OUTSIDE cart-terms -->
+<!-- hidden timestamp -->
 <input
   type="hidden"
   name="attributes[Terms Accepted Timestamp]"
@@ -150,14 +150,12 @@
 >
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+(function () {
 
-  const checkbox = document.getElementById("cart-terms");
-  const timestampInput = document.getElementById("terms-accepted-timestamp");
+  function updateTimestamp(checkbox) {
 
-  if (!checkbox || !timestampInput) return;
-
-  checkbox.addEventListener("change", function () {
+    const timestampInput = document.getElementById("terms-accepted-timestamp");
+    if (!timestampInput) return;
 
     if (checkbox.checked) {
       const now = new Date().toLocaleString();
@@ -166,9 +164,18 @@ document.addEventListener("DOMContentLoaded", function () {
       timestampInput.value = "";
     }
 
+  }
+
+  // event delegation (survives ajax cart refresh)
+  document.addEventListener("change", function (event) {
+
+    if (event.target && event.target.id === "cart-terms") {
+      updateTimestamp(event.target);
+    }
+
   });
 
-});
+})();
 </script>
 
 <script src="{{ 'cart-terms.js' | asset_url }}" defer="defer"></script>
