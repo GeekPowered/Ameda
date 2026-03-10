@@ -622,19 +622,27 @@
       {%- endif -%}
     </div>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const productSection = document.querySelector('.js-product');
   if (!productSection) return;
 
-  const mediaGallery = productSection.querySelector('media-gallery');
-  if (!mediaGallery) return;
+  const galleryEl = productSection.querySelector('media-gallery');
 
-  // Listen for Shopify variant changes
+  if (galleryEl && typeof galleryEl.customSetActiveMedia === 'function') {
+    initGalleryListener(galleryEl, productSection);
+  } else {
+    customElements.whenDefined('media-gallery').then(() => {
+      const gallery = productSection.querySelector('media-gallery');
+      if (gallery) initGalleryListener(gallery, productSection);
+    });
+  }
+});
+
+function initGalleryListener(mediaGallery, productSection) {
   productSection.addEventListener('on:variant:change', (evt) => {
     const variant = evt.detail.variant;
     if (!variant) return;
 
-    // Use featured_media if available, otherwise fallback to first image
     const mediaId = variant.featured_media?.id || variant.image_id;
     let mediaItem = mediaGallery.querySelector(`[data-media-id="${mediaId}"]`);
 
@@ -644,11 +652,11 @@ document.addEventListener('DOMContentLoaded', function() {
       mediaGallery.customSetActiveMedia(mediaItem, true);
     }
   });
-});
+}
 </script>
 
-  </div>
-</div>
+  </div><!--//js-product-->
+</div><!--//container-->
 
 {%- render 'product-popups' -%}
 
