@@ -628,31 +628,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const galleryEl = productSection.querySelector('media-gallery');
 
-  if (galleryEl && typeof galleryEl.customSetActiveMedia === 'function') {
-    initGalleryListener(galleryEl, productSection);
-  } else {
-    customElements.whenDefined('media-gallery').then(() => {
-      const gallery = productSection.querySelector('media-gallery');
-      if (gallery) initGalleryListener(gallery, productSection);
-    });
-  }
-});
+  if (!galleryEl) return;
 
-function initGalleryListener(mediaGallery, productSection) {
-  productSection.addEventListener('on:variant:change', (evt) => {
-    const variant = evt.detail.variant;
+  // Listen for Shopify variant changes
+  productSection.addEventListener('on:variant:change', (event) => {
+    const variant = event.detail.variant;
     if (!variant) return;
 
+    // Choose featured_media first, fallback to first image
     const mediaId = variant.featured_media?.id || variant.image_id;
-    let mediaItem = mediaGallery.querySelector(`[data-media-id="${mediaId}"]`);
 
-    if (!mediaItem) mediaItem = mediaGallery.querySelector('.media-viewer__item');
+    let mediaItem = galleryEl.querySelector(`[data-media-id="${mediaId}"]`);
 
-    if (mediaItem) {
-      mediaGallery.customSetActiveMedia(mediaItem, true);
+    // Fallback to first gallery item
+    if (!mediaItem) mediaItem = galleryEl.querySelector('.media-viewer__item');
+
+    if (mediaItem && typeof galleryEl.customSetActiveMedia === 'function') {
+      galleryEl.customSetActiveMedia(mediaItem, true);
     }
   });
-}
+});
 </script>
 
   </div><!--//js-product-->
