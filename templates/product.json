@@ -380,7 +380,7 @@
         "text_khBdar": {
           "type": "text",
           "settings": {
-            "text": "<p>Hard 2-Piece: “Rigid tunnel + close fit can help limit over-draw with elastic nipples.” → <a href=\"https://geekpowered.zendesk.com/agent/tickets/1\">#1</a>, <a href=\"https://geekpowered.zendesk.com/agent/tickets/2\">#2</a>, <a href=\"https://geekpowered.zendesk.com/agent/tickets/3\">#3</a>, <a href=\"https://geekpowered.zendesk.com/agent/tickets/5\">#5</a> (fit first with hard flange; poor fit causes tissue draw/trauma; individualized sizing).</p><p>Soft Inserts: “Soft silicone cushions the tunnel, reducing friction and helping limit pull-through.” → <a href=\"https://geekpowered.zendesk.com/agent/tickets/1\">#1</a>, <a href=\"https://geekpowered.zendesk.com/agent/tickets/4\">#4</a> (compare silicone for comfort; friction/rubbing guidance).</p>",
+            "text": "<p><strong>Hard 2-Piece: </strong>“Rigid tunnel + close fit can help limit over-draw with elastic nipples.” → #1, #2, #3, #5 (fit first with hard flange; poor fit causes tissue draw/trauma; individualized sizing).<br/><br/><strong>Soft Inserts:</strong> “Soft silicone cushions the tunnel, reducing friction and helping limit pull-through.” → #1, #4 (compare silicone for comfort; friction/rubbing guidance).</p>",
             "enlarge_text": true
           }
         },
