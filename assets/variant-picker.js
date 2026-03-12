@@ -19,8 +19,10 @@ if (!customElements.get('variant-picker')) {
       this.productForm = this.section.querySelector('.js-product-form-main');
       this.optionSelectors = this.querySelectorAll('.option-selector');
       this.data = this.getProductData();
+      this.variant = this.getSelectedVariant();
 
       this.updateAvailability();
+      this.updateAddToCartButton();
       this.addEventListener('change', this.handleVariantChange.bind(this));
     }
 
@@ -29,13 +31,10 @@ if (!customElements.get('variant-picker')) {
      * @param {object} evt - Event object.
      */
     handleVariantChange(evt) {
-      const selectedOptions = this.getSelectedOptions();
       this.variant = null;
 
       // Get selected variant data (if variant exists).
-      this.variant = this.data.product.variants.find((v) =>
-        v.options.every((val, index) => val === selectedOptions[index])
-      );
+      this.variant = this.getSelectedVariant();
 
       if (this.variant) {
         this.updateMedia();
@@ -354,6 +353,17 @@ if (!customElements.get('variant-picker')) {
     getProductData() {
       const dataEl = this.querySelector('[type="application/json"]');
       return JSON.parse(dataEl.textContent);
+    }
+
+    /**
+     * Get selected variant data.
+     * @returns {?object} Variant object, or null if one is not selected.
+     */
+    getSelectedVariant() {
+      const selectedOptions = this.getSelectedOptions();
+      return this.data.product.variants.find(
+        (v) => v.options.every((val, index) => val === selectedOptions[index])
+      );
     }
   }
 
