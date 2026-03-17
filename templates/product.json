@@ -411,6 +411,19 @@
         "full_width": true,
         "prevent_animation": false
       }
+    },
+    "custom_liquid_QigQfm": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/2-piece-flange-brochure-clinical_Page_1.webp?v=1773765160\" />\n<img src=\"https://cdn.shopify.com/s/files/1/0849/8062/9819/files/2-piece-flange-brochure-clinical_Page_2.webp?v=1773764844\" />",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
     }
   },
   "order": [
@@ -423,6 +436,7 @@
     "custom_liquid_6FwBVC",
     "global_footer_cta_GKPbqF",
     "help_links_EHH8nc",
-    "rich_text_cPFdEK"
+    "rich_text_cPFdEK",
+    "custom_liquid_QigQfm"
   ]
 }
