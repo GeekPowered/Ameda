@@ -365,52 +365,6 @@
         "heading_align": "text-center",
         "section_content": ""
       }
-    },
-    "rich_text_cPFdEK": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_JtceXA": {
-          "type": "heading",
-          "settings": {
-            "heading": "How these support your two lines",
-            "heading_size": "h2",
-            "heading_h1": false
-          }
-        },
-        "text_khBdar": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Hard 2-Piece: </strong>“Rigid tunnel + close fit can help limit over-draw with elastic nipples.” → #1, #2, #3, #5 (fit first with hard flange; poor fit causes tissue draw/trauma; individualized sizing).<br/><br/><strong>Soft Inserts:</strong> “Soft silicone cushions the tunnel, reducing friction and helping limit pull-through.” → #1, #4 (compare silicone for comfort; friction/rubbing guidance).</p>",
-            "enlarge_text": true
-          }
-        },
-        "button_PmbhRD": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_1_label": "Optional button",
-            "button_1_link": "",
-            "button_1_style": "btn--primary",
-            "button_2_label": "Optional button",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_JtceXA",
-        "text_khBdar",
-        "button_PmbhRD"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
-        "color_scheme": "none",
-        "full_width": true,
-        "prevent_animation": false
-      }
     }
   },
   "order": [
@@ -421,8 +375,7 @@
     "custom_liquid_DnXFqh",
     "recommendations",
     "custom_liquid_6FwBVC",
-    "global_footer_cta_GKPbqF",
     "help_links_EHH8nc",
-    "rich_text_cPFdEK"
+    "global_footer_cta_GKPbqF"
   ]
 }
