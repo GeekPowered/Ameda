@@ -275,6 +275,7 @@
       "blocks": {
         "link_6TpmKE": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "title": "Washington State DOH – WIC Flange FITS™ Guide (adapted from IBCLC Jeanette Mesite Frem)",
             "icon": "",
@@ -289,6 +290,7 @@
         },
         "link_VjXqhH": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "title": "Academy of Breastfeeding Medicine (ABM) Clinical Protocol #36 (2022) – Mastitis spectrum",
             "icon": "",
@@ -303,6 +305,7 @@
         },
         "link_JBMtAe": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "title": "ABM Clinical Protocol #26 (2016) – Persistent pain with breastfeeding",
             "icon": "",
@@ -317,6 +320,7 @@
         },
         "link_WefVi4": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "title": "Lactation Network (IBCLC-authored): How to master breast pump flange fit",
             "icon": "",
@@ -331,6 +335,7 @@
         },
         "link_nWcnmQ": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "title": "PubMed (2025) – “Flange Size Matters: A Comparative Pilot Study …”",
             "icon": "",
@@ -351,10 +356,9 @@
         "link_WefVi4",
         "link_nWcnmQ"
       ],
-      "disabled": true,
       "name": "Help Links",
       "settings": {
-        "section_heading": "Clinical References & Educational Resources:",
+        "section_heading": "",
         "heading_align": "text-center",
         "section_content": ""
       }
