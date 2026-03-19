@@ -270,14 +270,6 @@
         "prevent_animation": false
       }
     },
-    "global_footer_cta_GKPbqF": {
-      "type": "global-footer-cta",
-      "settings": {
-        "svg_fill_override": "#fbf6ef",
-        "footer_cta_title_override": "",
-        "footer_cta_subtitle_override": ""
-      }
-    },
     "help_links_EHH8nc": {
       "type": "help-links",
       "blocks": {
@@ -359,11 +351,20 @@
         "link_WefVi4",
         "link_nWcnmQ"
       ],
+      "disabled": true,
       "name": "Help Links",
       "settings": {
         "section_heading": "Clinical References & Educational Resources:",
         "heading_align": "text-center",
         "section_content": ""
+      }
+    },
+    "global_footer_cta_GKPbqF": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef",
+        "footer_cta_title_override": "",
+        "footer_cta_subtitle_override": ""
       }
     }
   },
