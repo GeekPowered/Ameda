@@ -1,134 +1,58 @@
 <link rel="stylesheet" href="{{ 'help-links.css' | asset_url }}" media="print" onload="this.media='all'">
 
+{% assign heading = product.metafields.custom.help_links_heading %}
+{% assign content = product.metafields.custom.help_links_intro_content %}
+{% assign items = product.metafields.custom.help_links_item_list.value %}
+
+{% if heading != blank or content != blank or items != blank %}
+
 <div class="section section--padded helpful-links">
-    <div class="container">
-        <h2 class="section__heading {{ section.settings.heading_align }}{% if section.settings.section_content != blank %}{{ ' mb-0' }}{% endif %}">{{ section.settings.section_heading }}</h2>
-        {% if section.settings.section_content %}<p class="enlarge-text {{ section.settings.heading_align }} mb-10">{{ section.settings.section_content }}</p>{% endif %}
-        <div class="helpful-links_list">
-            {% for block in section.blocks %}
-                <div class="helpful-links_item"{% if block.settings.hash != blank %} id="{{ block.settings.hash }}"{% endif %}>
-                    <div class="helpful-links_item_content left">
-                      {% if block.settings.icon != blank %}<div class="svg-wrapper">{{ block.settings.icon }}</div>{% endif %}
-                      <h3>{{ block.settings.title }}</h3>
-                    </div>
-                    <div class="helpful-links_item_content right">
-                        <p>{{ block.settings.content }}</p>
-                        {% if block.settings.custom_liquid != blank %}{{ block.settings.custom_liquid }}{% endif %}
-                        {% if block.settings.url != blank %}
-                        <a href="{{ block.settings.url }}" class="inline-flex card__collection--arrow">
-                            {{ block.settings.link_text }}
-                            <span class="has-ltr-icon flex items-center mis-2">{% render 'icon-arrow-right' %}</span>
-                        </a>
-                        {% endif %}
-                        {% if block.settings.url_2 != blank %}
-                        <br/>
-                        <a href="{{ block.settings.url_2 }}" class="inline-flex card__collection--arrow">
-                            {{ block.settings.link_text_2 }}
-                            <span class="has-ltr-icon flex items-center mis-2">{% render 'icon-arrow-right' %}</span>
-                        </a>
-                        {% endif %}
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
+  <div class="container">
+
+    {% if heading != blank %}
+      <h2 class="section__heading {{ section.settings.heading_align }}">
+        {{ heading }}
+      </h2>
+    {% endif %}
+
+    {% if content != blank %}
+      <p class="enlarge-text {{ section.settings.heading_align }} mb-10">
+        {{ content }}
+      </p>
+    {% endif %}
+
+    {% if items != blank %}
+      <div class="helpful-links_list">
+        {% for item in items %}
+          <div class="helpful-links_item">
+
+            <div class="helpful-links_item_content left">
+              <h3>{{ item.link_title }}</h3>
+            </div>
+
+            <div class="helpful-links_item_content right">
+
+              {% if item.description != blank %}
+                <p>{{ item.description }}</p>
+              {% endif %}
+
+              {% if item.hyperlink_url != blank %}
+                <a href="{{ item.hyperlink_url }}" class="inline-flex card__collection--arrow">
+                  {{ item.hyperlink_text | default: 'Learn more' }}
+                  <span class="has-ltr-icon flex items-center mis-2">
+                    {% render 'icon-arrow-right' %}
+                  </span>
+                </a>
+              {% endif %}
+
+            </div>
+
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </div>
 </div>
 
-
-{% schema %}
-{
-  "name": "Help Links",
-  "presets": [
-    {
-      "name": "Help Links",
-      "category": "Template"
-    }
-  ],
-  "settings": [
-    {
-      "type": "text",
-      "label": "Section Heading",
-      "id": "section_heading",
-      "default": "We're Here For You"
-    },
-    {
-      "type": "select",
-      "id": "heading_align",
-      "label": "Heading alignment",
-      "options": [
-        {
-          "value": "text-left",
-          "label": "Left"
-        },
-        {
-          "value": "text-center",
-          "label": "Center"
-        },
-        {
-          "value": "text-right",
-          "label": "Right"
-        }
-      ],
-      "default": "text-center"
-    },
-    {
-      "type": "text",
-      "label": "Subtitle Content",
-      "id": "section_content"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "link",
-      "name": "Link",
-      "settings": [
-        {
-          "type": "text",
-          "label": "Title",
-          "id": "title"
-        },
-        {
-          "type": "liquid",
-          "id": "icon",
-          "label": "SVG Icon"
-        },
-        {
-          "type": "textarea",
-          "label": "Content",
-          "id": "content"
-        },
-        {
-          "type": "liquid",
-          "label": "Custom Liquid",
-          "id": "custom_liquid"
-        },
-        {
-          "type": "text",
-          "label": "Link Text",
-          "id": "link_text"
-        },
-        {
-          "type": "url",
-          "label": "Link URL",
-          "id": "url"
-        },
-                {
-          "type": "text",
-          "label": "Link Text 2",
-          "id": "link_text_2"
-        },
-        {
-          "type": "url",
-          "label": "Link URL 2",
-          "id": "url_2"
-        },
-        {
-          "type": "text",
-          "label": "Hash Route",
-          "id": "hash"
-        }
-      ]
-    }
-  ]
-}
-{% endschema %}
+{% endif %}
