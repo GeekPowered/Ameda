@@ -22,7 +22,10 @@
 
 /* Remove excess spacing from headings */
 .helpful-links_item_content.left h3 {
+    font-size: 1.3rem;
+    line-height: 1.4;
     margin: 0;
+    font-weight: 600;
 }
 
 /* RIGHT SIDE */
