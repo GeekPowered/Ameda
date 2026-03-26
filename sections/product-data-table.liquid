@@ -1,13 +1,24 @@
 {{ 'product-data-table.css' | asset_url | stylesheet_tag }}
 
+{% assign heading = product.metafields.custom.product_data_table_heading %}
 {% assign table = product.metafields.custom.product_data_table %}
 
-{% if table != blank %}
+{% if heading != blank or table != blank %}
   <div class="section section--padded product-data-table">
     <div class="container">
-      <div class="product-data-table__wrapper">
-        {{ table.value | raw }}
-      </div>
+
+      {% if heading != blank %}
+        <h2 class="h4 section__heading text-center">
+          {{ heading }}
+        </h2>
+      {% endif %}
+
+      {% if table != blank %}
+        <div class="product-data-table__wrapper">
+          {{ table.value | raw }}
+        </div>
+      {% endif %}
+
     </div>
   </div>
 {% endif %}
