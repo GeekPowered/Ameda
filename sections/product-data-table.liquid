@@ -1,0 +1,9 @@
+{% assign table = product.metafields.custom.product_data_table %}
+
+{% if table != blank %}
+  <div class="section section--padded product-data-table">
+    <div class="container">
+      {{ table | metafield_tag }}
+    </div>
+  </div>
+{% endif %}
