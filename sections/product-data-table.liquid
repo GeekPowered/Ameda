@@ -2,8 +2,9 @@
 
 {% assign heading = product.metafields.custom.product_data_table_heading %}
 {% assign table = product.metafields.custom.product_data_table %}
+{% assign lower_text = product.metafields.custom.product_data_table_lower_text %}
 
-{% if heading != blank or table != blank %}
+{% if heading != blank or table != blank or lower_text != blank %}
   <div class="section section--padded product-data-table">
     <div class="container">
 
@@ -16,6 +17,12 @@
       {% if table != blank %}
         <div class="product-data-table__wrapper">
           {{ table.value | raw }}
+        </div>
+      {% endif %}
+
+      {% if lower_text != blank %}
+        <div class="product-data-table__lower-text">
+          {{ lower_text }}
         </div>
       {% endif %}
 
