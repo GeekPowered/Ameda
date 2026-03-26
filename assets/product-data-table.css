@@ -1,39 +1,34 @@
-/* WRAPPER (handles mobile scroll) */
 .product-data-table__wrapper {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-/* TABLE BASE */
 .product-data-table table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 500px; /* prevents squishing on mobile */
+  min-width: 500px;
   color: #1A4147;
 }
 
-/* CELLS */
-.product-data-table th,
-.product-data-table td {
+.product-data-table table th,
+.product-data-table table td {
   padding: 0.75rem 1rem;
   text-align: left;
   border-bottom: 1px solid #e5e5e5;
   font-size: 1rem;
 }
 
-/* HEADER */
-.product-data-table th {
+.product-data-table table th {
   font-weight: 600;
-  background-color: #F68C94;
+  background-color: #F48C94;
+  color: #fff;
 }
 
-/* LAST ROW CLEANUP */
 .product-data-table tbody tr:last-child td {
   border-bottom: none;
 }
 
-/* MOBILE IMPROVEMENT */
 @media (max-width: 767px) {
   .product-data-table th,
   .product-data-table td {
