@@ -1,3 +1,8 @@
+.helpful-links .section__heading,
+.helpful-links .enlarge-text {
+    text-align: center;
+}
+
 .helpful-links .helpful-links_item {
     display: flex;
     border-bottom: 1px solid #e5e5e5;
