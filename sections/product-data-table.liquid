@@ -3,7 +3,9 @@
 {% if table != blank %}
   <div class="section section--padded product-data-table">
     <div class="container">
-      {{ table.value | raw }}
+      <div class="product-data-table__wrapper">
+        {{ table.value | raw }}
+        </div>
     </div>
   </div>
 {% endif %}
