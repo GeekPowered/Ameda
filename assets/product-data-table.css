@@ -29,11 +29,6 @@
   color: inherit; /* prevents forced white text */
 }
 
-/* LAST ROW CLEANUP */
-.product-data-table table tbody tr:last-child td {
-  border-bottom: none;
-}
-
 /* MOBILE IMPROVEMENT */
 @media (max-width: 767px) {
   .product-data-table table th,
