@@ -282,11 +282,17 @@
         "footer_cta_title_override": "",
         "footer_cta_subtitle_override": ""
       }
+    },
+    "product_data_table_6LDR8R": {
+      "type": "product-data-table",
+      "name": "Product Data Table",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "details",
+    "product_data_table_6LDR8R",
     "custom_liquid_H896ki",
     "compatible_products_783dhj",
     "custom_liquid_DnXFqh",
