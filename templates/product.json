@@ -210,6 +210,11 @@
       ],
       "settings": {}
     },
+    "product_data_table_6LDR8R": {
+      "type": "product-data-table",
+      "name": "Product Data Table",
+      "settings": {}
+    },
     "custom_liquid_H896ki": {
       "type": "custom-liquid",
       "custom_css": [],
@@ -260,6 +265,7 @@
     },
     "custom_liquid_6FwBVC": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "",
         "section_height": "medium",
@@ -282,11 +288,6 @@
         "footer_cta_title_override": "",
         "footer_cta_subtitle_override": ""
       }
-    },
-    "product_data_table_6LDR8R": {
-      "type": "product-data-table",
-      "name": "Product Data Table",
-      "settings": {}
     }
   },
   "order": [
