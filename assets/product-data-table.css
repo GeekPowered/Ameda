@@ -30,6 +30,20 @@
   color: inherit; /* prevents forced white text */
 }
 
+.product-data-table__mobile-note {
+  display: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Show ONLY on mobile */
+@media (max-width: 767px) {
+  .product-data-table__mobile-note {
+    display: block;
+  }
+}
+
 /* MOBILE IMPROVEMENT */
 @media (max-width: 767px) {
   .product-data-table table th,

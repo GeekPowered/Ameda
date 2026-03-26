@@ -15,6 +15,9 @@
       {% endif %}
 
       {% if table != blank %}
+        <p class="product-data-table__mobile-note">
+            Swipe to view full table →
+        </p>
         <div class="product-data-table__wrapper">
           {{ table.value | raw }}
         </div>
