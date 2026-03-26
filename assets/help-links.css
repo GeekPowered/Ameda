@@ -1,7 +1,7 @@
 .helpful-links .helpful-links_item {
     display: flex;
     border-bottom: 1px solid #e5e5e5;
-    gap: 1rem; /* keep comfortable spacing */
+    gap: 1rem; /* keep readable spacing */
 }
 
 .helpful-links .helpful-links_item:first-child {
@@ -10,39 +10,29 @@
 
 .helpful-links_item_content {
     width: 50%;
-    padding: 1rem 0; /* reduced from large spacing but still readable */
+    padding: 1rem 0; /* reduced from original but not cramped */
 }
 
-/* LEFT SIDE (TITLE) */
+/* LEFT SIDE */
 .helpful-links_item_content.left {
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
+/* Remove excess spacing from headings */
 .helpful-links_item_content.left h3 {
-    font-size: 1.05rem; /* slightly above base */
-    line-height: 1.4;
     margin: 0;
-    font-weight: 600;
 }
 
-/* RIGHT SIDE (DESCRIPTION) */
+/* RIGHT SIDE */
 .helpful-links_item_content.right p {
-    margin: 0 0 0.4rem 0;
-    font-size: 1rem; /* never below 16px */
-    line-height: 1.5;
-}
-
-/* LINK */
-.helpful-links_item_content.right a {
-    font-size: 1rem; /* keep readable */
-    line-height: 1.4;
+    margin: 0 0 0.5rem 0;
 }
 
 /* ICON */
 .helpful-links .svg-wrapper {
-    height: 1.25rem;
+    height: calc(var(--h3-font-size) * 1); /* slightly smaller than before */
     aspect-ratio: 1 / 1;
 }
 
