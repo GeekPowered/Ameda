@@ -10,7 +10,8 @@
   width: 100%;
   border-collapse: collapse;
   min-width: 500px;
-  color: #1A4147; /* keep your theme text color */
+  color: #1A4147;
+  margin-bottom:1rem;
 }
 
 /* CELLS */
