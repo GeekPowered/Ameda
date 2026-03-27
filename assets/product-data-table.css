@@ -1,3 +1,8 @@
+
+.product-data-table .section__heading a {
+  color: rgb(var(--heading-color));
+}
+
 /* WRAPPER (handles mobile scroll) */
 .product-data-table__wrapper {
   width: 100%;
