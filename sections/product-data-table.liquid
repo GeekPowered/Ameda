@@ -1,6 +1,7 @@
 {{ 'product-data-table.css' | asset_url | stylesheet_tag }}
 
 {% assign heading = product.metafields.custom.product_data_table_heading %}
+{% assign heading_link = product.metafields.custom.product_data_table_heading_link %}
 {% assign table = product.metafields.custom.product_data_table %}
 {% assign lower_text = product.metafields.custom.product_data_table_lower_text %}
 
@@ -10,7 +11,13 @@
 
       {% if heading != blank %}
         <h2 class="h4 section__heading text-center">
-          {{ heading }}
+          {% if heading_link != blank %}
+            <a href="{{ heading_link.value }}" class="product-data-table__heading-link">
+              {{ heading }}
+            </a>
+          {% else %}
+            {{ heading }}
+          {% endif %}
         </h2>
       {% endif %}
 
