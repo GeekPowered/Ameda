@@ -1078,6 +1078,59 @@ document.addEventListener('DOMContentLoaded', function () {
     })();
   </script>
   
+<script>
+(function() {
+  var isThankYou = window.location.href.indexOf('thank-you') > -1;
+  if (!isThankYou) return;
+
+  // --- GTM ---
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+
+    var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),
+        dl=l!='dataLayer'?'&l='+l:'';
+
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NS76MQ6Q');
+
+  console.log('GTM loaded on thank you');
+
+  // --- Facebook Purchase ---
+  try {
+    var purchaseData = {
+      value: {{ checkout.total_price | default: 0 | divided_by: 100.0 }},
+      currency: '{{ checkout.currency | default: "USD" }}',
+      contents: [
+        {% if checkout and checkout.line_items %}
+          {% for line_item in checkout.line_items %}
+          {
+            id: '{{ line_item.product_id }}',
+            quantity: {{ line_item.quantity }},
+            item_price: {{ line_item.price | divided_by: 100.0 }}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        {% endif %}
+      ],
+      content_type: 'product'
+    };
+
+    if (typeof fbq === 'function') {
+      fbq('track', 'Purchase', purchaseData);
+    }
+
+    console.log('FB Purchase fired', purchaseData);
+
+  } catch (e) {
+    console.log('FB script error', e);
+  }
+
+})();
+</script>  
   
 </body>
 </html>
