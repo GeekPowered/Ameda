@@ -1076,35 +1076,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.replace("/blogs/posts");
       }
     })();
-  </script>
-  
-<script>
-(function() {
-  var isThankYou = window.location.href.indexOf('thank-you') > -1;
-  if (!isThankYou) return;
-
-  console.log('Thank you page detected');
-
-  // HARD RESET fbq to override broken pixel
-  window.fbq = function() {
-    window.fbq.callMethod ?
-      window.fbq.callMethod.apply(window.fbq, arguments) :
-      window.fbq.queue.push(arguments);
-  };
-  if (!window.fbq.queue) window.fbq.queue = [];
-
-  // Re-init pixel cleanly
-  fbq('init', '1088129289662061');
-
-  // Fire purchase
-  fbq('track', 'Purchase', {
-    value: 1.00,
-    currency: 'USD'
-  });
-
-  console.log('FB Purchase FORCED');
-})();
-</script>  
+  </script> 
   
 </body>
 </html>
