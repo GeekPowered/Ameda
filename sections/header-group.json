@@ -97,7 +97,7 @@
       "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\">Introducing our new CustomFit™  2-Piece Flanges</p>",
+        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/products/custom-fit-2-piece-flange\">Introducing our new CustomFit™ 2-Piece Flanges | More Choices | Smaller Sizes</a></p>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",
