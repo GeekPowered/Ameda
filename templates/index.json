@@ -47,6 +47,7 @@
         },
         "slide_brpgWH": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/Spring-Sale-Web-Banner-2026.webp",
             "url": "https://www.ameda.com/collections",

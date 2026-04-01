@@ -97,7 +97,7 @@
       "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\">Spring Sale 15% Off Sitewide | March 1-31 | Discount Applied At Checkout</p>",
+        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\">Introducing our new CustomFit™  2-Piece Flanges</p>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",
