@@ -1,0 +1,465 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product-labels": {
+          "type": "product-labels",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_weight": false
+          }
+        },
+        "9d3c5612-e12c-4f60-bc00-70a90a414745": {
+          "type": "description",
+          "settings": {
+            "show_as_collapsible_content": false,
+            "icon": "none",
+            "open": false
+          }
+        },
+        "vendor-sku": {
+          "type": "vendor-sku",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": true,
+            "show_barcode": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true
+          }
+        },
+        "divider-0": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "selector_style": "buttons",
+            "enable_dynamic_availability": true,
+            "show_backorder_text": true,
+            "enable_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "divider-1": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_qty_selector": true,
+            "enable_dynamic_checkout": true,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "message-2": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "icon": "price_tag",
+            "title": "<p><strong>Selling fast!<br/></strong>Grab yours while you can</p>",
+            "close": "once",
+            "show_over_media": true,
+            "visibility_duration": 5,
+            "bg_color": "#e4edfa",
+            "text_color": "#1a66d2"
+          }
+        },
+        "31d2610e-0024-4377-b9d0-8bda2ca7b310": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Package Includes",
+            "icon": "none",
+            "text": "{{ product.metafields.product.package_includes | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible-content-1": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Key Features",
+            "icon": "none",
+            "text": "{{ product.metafields.product.key_features | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible-content-2": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Technical Features",
+            "icon": "none",
+            "text": "{{ product.metafields.product.technical_features | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_content_7hHFzf": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Item Specifications",
+            "icon": "none",
+            "text": "{{ product.metafields.custom.item_specifications | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_content_kz7QM6": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Resources",
+            "icon": "none",
+            "text": "{{ product.metafields.product.resources | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product-labels",
+        "title",
+        "9d3c5612-e12c-4f60-bc00-70a90a414745",
+        "vendor-sku",
+        "price",
+        "divider-0",
+        "variant-picker",
+        "divider-1",
+        "buy-buttons",
+        "message-2",
+        "31d2610e-0024-4377-b9d0-8bda2ca7b310",
+        "collapsible-content-1",
+        "collapsible-content-2",
+        "collapsible_content_7hHFzf",
+        "collapsible_content_kz7QM6",
+        "share"
+      ],
+      "custom_css": [
+        ".qty-input--secondary-btn .qty-input {border-color: rgb(var(--btn-bg-color));}",
+        ".qty-input__input,.qty-input__btn {color: rgb(var(--btn-bg-color));}",
+        ".media-gallery__viewer {border-radius: 1rem; overflow: hidden;}",
+        ".media-thumbs__btn {border-radius: 0.5rem;}"
+      ],
+      "settings": {
+        "stick_on_scroll": true,
+        "sticky_atc_panel": false,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": false,
+        "media_layout": "slider",
+        "media_size": "default",
+        "media_ratio": "1",
+        "media_crop": "none",
+        "hover_zoom": "large",
+        "enable_video_looping": false,
+        "stacked_scroll": "never",
+        "underline_active": true,
+        "media_thumbs": "always",
+        "thumb_ratio": "1",
+        "thumb_crop": "none",
+        "media_arrows": "always",
+        "show_slide_count": true,
+        "border_color": "rgba(0,0,0,0)",
+        "bg_color": "#ffffff",
+        "enable_media_grouping": false,
+        "media_grouping_option": "Bundle"
+      }
+    },
+    "details": {
+      "type": "product-details",
+      "blocks": {
+        "custom_liquid_x4cYxH": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product-instruction-card' %}"
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_x4cYxH"
+      ],
+      "settings": {}
+    },
+    "media_with_text_hzPFM4": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_mFMxC9": {
+          "type": "heading",
+          "settings": {
+            "heading": "How the Ameda Manual Pump Works",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_M4z3WF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Ameda Manual Breast Pump uses a simple squeeze mechanism to create suction. As you squeeze the ergonomic handle, the diaphragm creates a vacuum that draws milk from the breast. Releasing the handle resets the pump, repeating the cycle.</p><p>By adjusting how quickly and firmly you squeeze the handle, you can control the rhythm and intensity of pumping. This allows you to mimic your baby’s natural nursing pattern and support a comfortable, effective pumping session.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mFMxC9",
+        "text_M4z3WF"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/cecelialucyphotographyamedafeb2026-8.webp",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_a3GPdX": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_KNg8TK": {
+          "type": "heading",
+          "settings": {
+            "heading": "When to Use a Manual Breast Pump",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_jHq6dp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A manual pump is a practical option in many situations, especially when flexibility and simplicity matter.</p><ul><li>When you need to express occasionally </li><li>As a backup to your electric breast pump</li><li>During travel when carrying a powered device is not ideal</li><li>For quick relief from engorgement</li><li>When you want a quiet, discreet way to pump</li></ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KNg8TK",
+        "text_jHq6dp"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/cecelialucyphotographyamedafeb2026-13.webp",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_34NjF4": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_yxBPKU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Benefits of Using a Manual Breast Pump",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_TrVJFe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Manual breast pumps offer a different experience compared to electric pumps, with added control and simplicity.</p><ul><li>Full control over suction and rhythm</li><li>Quiet operation for discreet use</li><li>No reliance on batteries or power sources</li><li>Easy to clean and assemble</li><li>Lightweight and portable for everyday use</li><li>Ideal for occasional pumping or short sessions</li></ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yxBPKU",
+        "text_TrVJFe"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/3-cecelialucyphotographyamedafeb2026-1.webp",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_6MCweG": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_JB9WAA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cleaning and Care",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_XXkQ6q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Proper cleaning helps protect milk quality and supports safe use for both mother and baby. To ensure your pump performs properly, sterilize all parts that come into contact with breast milk before and after each use.</p><ul><li>Disassemble all pump parts before cleaning</li><li>Wash with warm water and mild dish soap</li><li>Rinse thoroughly and allow to air dry</li><li>Sanitize regularly according to instructions</li></ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JB9WAA",
+        "text_XXkQ6q"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/1-cecelialucyphotographyamedafeb2026-17.webp",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "product_data_table_6LDR8R": {
+      "type": "product-data-table",
+      "name": "Product Data Table",
+      "settings": {}
+    },
+    "custom_liquid_H896ki": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-banner' %}",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "compatible_products_783dhj": {
+      "type": "compatible-products",
+      "settings": {
+        "heading": "Compatible Products",
+        "heading_align": "text-center",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8
+      }
+    },
+    "custom_liquid_DnXFqh": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h3 class=\"text-center\">Product Reviews</h3>\n<div style=\"padding: 2rem; background: #fff; border-radius: 1rem;\">\n{% render 'okendo-reviews-widget' %}\n</div>",
+        "section_height": "xsmall",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You May Also Like",
+        "heading_align": "text-center",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8
+      }
+    },
+    "custom_liquid_6FwBVC": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "",
+        "section_height": "medium",
+        "full_width": false,
+        "dividers": "none",
+        "color_scheme": "none",
+        "baby_patterns": false,
+        "prevent_animation": false
+      }
+    },
+    "help_links_EHH8nc": {
+      "type": "help-links",
+      "name": "Help Links",
+      "settings": {}
+    },
+    "global_footer_cta_GKPbqF": {
+      "type": "global-footer-cta",
+      "settings": {
+        "svg_fill_override": "#fbf6ef",
+        "footer_cta_title_override": "",
+        "footer_cta_subtitle_override": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "details",
+    "media_with_text_hzPFM4",
+    "media_with_text_a3GPdX",
+    "media_with_text_34NjF4",
+    "media_with_text_6MCweG",
+    "product_data_table_6LDR8R",
+    "custom_liquid_H896ki",
+    "compatible_products_783dhj",
+    "custom_liquid_DnXFqh",
+    "recommendations",
+    "custom_liquid_6FwBVC",
+    "help_links_EHH8nc",
+    "global_footer_cta_GKPbqF"
+  ]
+}
