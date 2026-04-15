@@ -216,15 +216,15 @@
         "heading_mFMxC9": {
           "type": "heading",
           "settings": {
-            "heading": "How the Ameda Manual Pump Works",
-            "heading_size": "h3",
+            "heading": "How Collection Cups Work",
+            "heading_size": "h4",
             "heading_h1": false
           }
         },
         "text_M4z3WF": {
           "type": "text",
           "settings": {
-            "text": "<p>The Ameda Manual Breast Pump uses a simple squeeze mechanism to create suction. As you squeeze the ergonomic handle, the diaphragm creates a vacuum that draws milk from the breast. Releasing the handle resets the pump, repeating the cycle.</p><p>By adjusting how quickly and firmly you squeeze the handle, you can control the rhythm and intensity of pumping. This allows you to mimic your baby’s natural nursing pattern and support a comfortable, effective pumping session.</p>",
+            "text": "<p>Collection cups connect directly to compatible breast pumps via tubing, replacing traditional external bottles with a more compact in-bra collection setup. Once attached, the cups sit securely inside your bra, allowing discreet milk collection.</p><p>As the pump creates suction, milk flows into the cup, where it is stored until the session is complete. A built-in pour spout allows for easy transfer into milk storage containers or bags after pumping.</p><p>This setup simplifies milk collection and reduces the need to handle multiple components during your routine.</p>",
             "enlarge_text": false
           }
         }
@@ -255,15 +255,15 @@
         "heading_KNg8TK": {
           "type": "heading",
           "settings": {
-            "heading": "When to Use a Manual Breast Pump",
-            "heading_size": "h3",
+            "heading": "Why Moms Choose Collection Cups",
+            "heading_size": "h4",
             "heading_h1": false
           }
         },
         "text_jHq6dp": {
           "type": "text",
           "settings": {
-            "text": "<p>A manual pump is a practical option in many situations, especially when flexibility and simplicity matter.</p><ul><li>When you need to express occasionally </li><li>As a backup to your electric breast pump</li><li>During travel when carrying a powered device is not ideal</li><li>For quick relief from engorgement</li><li>When you want a quiet, discreet way to pump</li></ul>",
+            "text": "<p>Collection cups offer a more flexible approach to pumping compared to traditional setups.</p><ul><li>Hands-free design allows for more mobility</li><li>Reduces the need to hold bottles during pumping</li><li>Supports discreet pumping in different environments</li><li>Simplifies milk collection and transfer</li><li>Helps maintain a consistent routine across pumping sessions</li></ul>",
             "enlarge_text": false
           }
         }
@@ -294,15 +294,15 @@
         "heading_yxBPKU": {
           "type": "heading",
           "settings": {
-            "heading": "Benefits of Using a Manual Breast Pump",
-            "heading_size": "h3",
+            "heading": "Cleaning and Care",
+            "heading_size": "h4",
             "heading_h1": false
           }
         },
         "text_TrVJFe": {
           "type": "text",
           "settings": {
-            "text": "<p>Manual breast pumps offer a different experience compared to electric pumps, with added control and simplicity.</p><ul><li>Full control over suction and rhythm</li><li>Quiet operation for discreet use</li><li>No reliance on batteries or power sources</li><li>Easy to clean and assemble</li><li>Lightweight and portable for everyday use</li><li>Ideal for occasional pumping or short sessions</li></ul>",
+            "text": "<p>To maintain performance, hygiene, and safety, sterilize all parts before and after each use.</p><ul><li>Fully disassemble all components before cleaning</li><li>Wash with warm water and mild dish soap</li><li>Rinse thoroughly and allow to air dry</li><li>Top rack dishwasher safe</li><li>Suitable for boiling water sanitization for up to 10 minutes</li><li>Compatible with CleanEase steam sanitization bags</li></ul>",
             "enlarge_text": false
           }
         }
@@ -318,45 +318,6 @@
         "video_description": "",
         "video_autoplay": false,
         "layout": "right",
-        "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "none",
-        "only_content_color_scheme": false,
-        "baby_patterns": false
-      }
-    },
-    "media_with_text_6MCweG": {
-      "type": "media-with-text",
-      "blocks": {
-        "heading_JB9WAA": {
-          "type": "heading",
-          "settings": {
-            "heading": "Cleaning and Care",
-            "heading_size": "h3",
-            "heading_h1": false
-          }
-        },
-        "text_XXkQ6q": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Proper cleaning helps protect milk quality and supports safe use for both mother and baby. To ensure your pump performs properly, sterilize all parts that come into contact with breast milk before and after each use.</p><ul><li>Disassemble all pump parts before cleaning</li><li>Wash with warm water and mild dish soap</li><li>Rinse thoroughly and allow to air dry</li><li>Sanitize regularly according to instructions</li></ul>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_JB9WAA",
-        "text_XXkQ6q"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "image": "shopify://shop_images/1-cecelialucyphotographyamedafeb2026-17.webp",
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "left",
         "image_fit": "contain",
         "media_width": 50,
         "media_scale": 100,
@@ -452,7 +413,6 @@
     "media_with_text_hzPFM4",
     "media_with_text_a3GPdX",
     "media_with_text_34NjF4",
-    "media_with_text_6MCweG",
     "product_data_table_6LDR8R",
     "custom_liquid_H896ki",
     "compatible_products_783dhj",
