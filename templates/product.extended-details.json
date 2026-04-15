@@ -288,11 +288,17 @@
         "footer_cta_title_override": "",
         "footer_cta_subtitle_override": ""
       }
+    },
+    "extended_product_description_W9Fg8e": {
+      "type": "extended-product-description",
+      "name": "Extended Description",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "details",
+    "extended_product_description_W9Fg8e",
     "product_data_table_6LDR8R",
     "custom_liquid_H896ki",
     "compatible_products_783dhj",
