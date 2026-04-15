@@ -1,0 +1,26 @@
+{% assign extended = product.metafields.custom.extended_product_description %}
+
+{% if extended != blank %}
+  <div class="section extended-product-description">
+    <div class="container">
+      
+      <div class="extended-product-description__content rte">
+        {{ extended | metafield_tag }}
+      </div>
+
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Extended Description",
+  "tag": "section",
+  "class": "section extended-product-description",
+  "presets": [
+    {
+      "name": "Extended Description"
+    }
+  ]
+}
+{% endschema %}
