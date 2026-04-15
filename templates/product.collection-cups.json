@@ -137,7 +137,7 @@
           "settings": {
             "heading": "Resources",
             "icon": "none",
-            "text": "{{ product.metafields.product.resources | metafield_tag }}",
+            "text": "{{ product.metafields.product.faq | metafield_tag }}",
             "page": "",
             "open": false
           }
