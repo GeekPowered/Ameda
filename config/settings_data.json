@@ -516,7 +516,7 @@
       ".main-nav__item--back {color: currentColor !important;}",
       ".okeReviews[data-oke-container] .oke-reviewCarousel-header-title,div.okeReviews .oke-reviewCarousel-header-title {font-size: var(--h2-font-size); margin: 0 0 0.5em; color: rgb(var(--heading-color)); font-family: var(--heading-font-family); font-style: var(--heading-font-style); font-weight: var(--heading-font-weight); line-height: calc(4px + 2.4ex); text-transform: var(--heading-text-transform);}",
       ".oke-reviewCard.oke-reviewCard--below {background: #fff; border: none !important; border-radius: 1rem;}",
-      "#template--25705283322171__rich_text_fypXwH .max-w-text-overlay {max-width: 100%;}",
+      "#template--25705283322171__rich_text_fypXwH .max-w-text-overlay, #template--25705283322171__rich_text_fypXwH .reading-width--inline {max-width: 100%;}",
       "#template--25705283322171__rich_text_fypXwH .container {padding: 0 15px;}"
     ]
   }
