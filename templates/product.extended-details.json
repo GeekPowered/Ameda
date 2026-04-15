@@ -210,42 +210,6 @@
       ],
       "settings": {}
     },
-    "rich_text_fypXwH": {
-      "type": "rich-text",
-      "blocks": {
-        "text_VKTXtr": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>How the Ameda Manual Pump Works</h2><p>The Ameda Manual Breast Pump uses a simple squeeze mechanism to create suction. As you squeeze the ergonomic handle, the diaphragm creates a vacuum that draws milk from the breast. Releasing the handle resets the pump, repeating the cycle.</p><p>By adjusting how quickly and firmly you squeeze the handle, you can control the rhythm and intensity of pumping. This allows you to mimic your baby’s natural nursing pattern and support a comfortable, effective pumping session.</p><h2><strong>When to Use a Manual Breast Pump</strong></h2><p>A manual pump is a practical option in many situations, especially when flexibility and simplicity matter.</p><ul><li>When you need to express occasionally </li><li>As a backup to your electric breast pump</li><li>During travel when carrying a powered device is not ideal</li><li>For quick relief from engorgement</li><li>When you want a quiet, discreet way to pump</li></ul><h2><strong>Benefits of Using a Manual Breast Pump</strong></h2><p>Manual breast pumps offer a different experience compared to electric pumps, with added control and simplicity.</p><ul><li>Full control over suction and rhythm</li><li>Quiet operation for discreet use</li><li>No reliance on batteries or power sources</li><li>Easy to clean and assemble</li><li>Lightweight and portable for everyday use</li><li>Ideal for occasional pumping or short sessions</li></ul><h2><strong>What’s Included</strong></h2><ul><li>(1) Ameda manual pump body</li><li>(2) 4 oz standard milk storage bottles</li><li>(2) bottle caps</li><li>(2) valves</li><li>(2) diaphragms</li></ul><h2><strong>Cleaning and Care</strong></h2><p>Proper cleaning helps protect milk quality and supports safe use for both mother and baby. To ensure your pump performs properly, sterilize all parts that come into contact with breast milk before and after each use.</p><ul><li>Disassemble all pump parts before cleaning</li><li>Wash with warm water and mild dish soap</li><li>Rinse thoroughly and allow to air dry</li><li>Sanitize regularly according to instructions</li></ul><h2><strong>Compatible Products</strong></h2><ul><li>Ameda Universal Soft Flange Inserts</li><li>Replacement pump parts, including valves and diaphragms</li></ul>",
-            "enlarge_text": false
-          }
-        },
-        "button_xzdthg": {
-          "type": "button",
-          "settings": {
-            "button_1_label": "Optional button",
-            "button_1_link": "",
-            "button_1_style": "btn--primary",
-            "button_2_label": "Optional button",
-            "button_2_link": "",
-            "button_2_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "text_VKTXtr",
-        "button_xzdthg"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
-        "color_scheme": "none",
-        "full_width": true,
-        "prevent_animation": false
-      }
-    },
     "product_data_table_6LDR8R": {
       "type": "product-data-table",
       "name": "Product Data Table",
@@ -329,7 +293,6 @@
   "order": [
     "main",
     "details",
-    "rich_text_fypXwH",
     "product_data_table_6LDR8R",
     "custom_liquid_H896ki",
     "compatible_products_783dhj",
