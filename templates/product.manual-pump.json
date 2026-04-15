@@ -127,7 +127,7 @@
           "settings": {
             "heading": "Item Specifications",
             "icon": "none",
-            "text": "{{ block.settings.page.metafields.custom.item_specifications | metafield_tag }}",
+            "text": "{{ product.metafields.custom.item_specifications | metafield_tag }}",
             "page": "",
             "open": false
           }
