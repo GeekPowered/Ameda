@@ -125,9 +125,9 @@
         "collapsible_content_7hHFzf": {
           "type": "collapsible-content",
           "settings": {
-            "heading": "FAQs",
+            "heading": "Item Specifications",
             "icon": "none",
-            "text": "{{ product.metafields.product.faq | metafield_tag }}",
+            "text": "{{ block.settings.page.metafields.custom.item_specifications | metafield_tag }}",
             "page": "",
             "open": false
           }
