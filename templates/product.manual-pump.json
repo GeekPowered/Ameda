@@ -135,9 +135,9 @@
         "collapsible_content_kz7QM6": {
           "type": "collapsible-content",
           "settings": {
-            "heading": "Resources",
+            "heading": "FAQs",
             "icon": "none",
-            "text": "{{ product.metafields.product.resources | metafield_tag }}",
+            "text": "{{ product.metafields.product.faq | metafield_tag }}",
             "page": "",
             "open": false
           }
