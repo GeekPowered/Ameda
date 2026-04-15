@@ -210,6 +210,198 @@
       ],
       "settings": {}
     },
+    "media_with_text_hzPFM4": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_mFMxC9": {
+          "type": "heading",
+          "settings": {
+            "heading": "How the Ameda Manual Pump Works",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_M4z3WF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Ameda Manual Breast Pump uses a simple squeeze mechanism to create suction. As you squeeze the ergonomic handle, the diaphragm creates a vacuum that draws milk from the breast. Releasing the handle resets the pump, repeating the cycle.</p><p>By adjusting how quickly and firmly you squeeze the handle, you can control the rhythm and intensity of pumping. This allows you to mimic your baby’s natural nursing pattern and support a comfortable, effective pumping session.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_R8CGLc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Optional button",
+            "button_link": "",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mFMxC9",
+        "text_M4z3WF",
+        "button_R8CGLc"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/cecelialucyphotographyamedafeb2026-8.webp",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_a3GPdX": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_KNg8TK": {
+          "type": "heading",
+          "settings": {
+            "heading": "When to Use a Manual Breast Pump",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_jHq6dp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A manual pump is a practical option in many situations, especially when flexibility and simplicity matter.</p><ul><li>When you need to express occasionally </li><li>As a backup to your electric breast pump</li><li>During travel when carrying a powered device is not ideal</li><li>For quick relief from engorgement</li><li>When you want a quiet, discreet way to pump</li></ul>",
+            "enlarge_text": false
+          }
+        },
+        "button_JrbCYt": {
+          "type": "button",
+          "settings": {
+            "button_label": "Optional button",
+            "button_link": "",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KNg8TK",
+        "text_jHq6dp",
+        "button_JrbCYt"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/cecelialucyphotographyamedafeb2026-13.webp",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_34NjF4": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_yxBPKU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Benefits of Using a Manual Breast Pump",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_TrVJFe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Manual breast pumps offer a different experience compared to electric pumps, with added control and simplicity.</p><ul><li>Full control over suction and rhythm</li><li>Quiet operation for discreet use</li><li>No reliance on batteries or power sources</li><li>Easy to clean and assemble</li><li>Lightweight and portable for everyday use</li><li>Ideal for occasional pumping or short sessions</li></ul>",
+            "enlarge_text": false
+          }
+        },
+        "button_6D7QTQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Optional button",
+            "button_link": "",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yxBPKU",
+        "text_TrVJFe",
+        "button_6D7QTQ"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/3-cecelialucyphotographyamedafeb2026-1.webp",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
+    "media_with_text_6MCweG": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_JB9WAA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cleaning and Care",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_XXkQ6q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Proper cleaning helps protect milk quality and supports safe use for both mother and baby. To ensure your pump performs properly, sterilize all parts that come into contact with breast milk before and after each use.</p><ul><li>Disassemble all pump parts before cleaning</li><li>Wash with warm water and mild dish soap</li><li>Rinse thoroughly and allow to air dry</li><li>Sanitize regularly according to instructions</li></ul>",
+            "enlarge_text": false
+          }
+        },
+        "button_RqF73b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Optional button",
+            "button_link": "",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JB9WAA",
+        "text_XXkQ6q",
+        "button_RqF73b"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/1-cecelialucyphotographyamedafeb2026-17.webp",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false,
+        "baby_patterns": false
+      }
+    },
     "product_data_table_6LDR8R": {
       "type": "product-data-table",
       "name": "Product Data Table",
@@ -293,6 +485,10 @@
   "order": [
     "main",
     "details",
+    "media_with_text_hzPFM4",
+    "media_with_text_a3GPdX",
+    "media_with_text_34NjF4",
+    "media_with_text_6MCweG",
     "product_data_table_6LDR8R",
     "custom_liquid_H896ki",
     "compatible_products_783dhj",
