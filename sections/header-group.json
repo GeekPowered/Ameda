@@ -97,7 +97,7 @@
       "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/products/custom-fit-2-piece-flange\">Introducing our new CustomFit™ 2-Piece Flanges | More Choices | Smaller Sizes</a></p>",
+        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/collections\">20% OFF Mother's Day Sale&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;For Moms Who Give It All</a></p>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",

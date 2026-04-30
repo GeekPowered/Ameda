@@ -12,11 +12,11 @@
     "slideshow_LnUCXw": {
       "type": "slideshow",
       "blocks": {
-        "slide_Mg6HN9": {
+        "slide_brpgWH": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify://shop_images/2_Piece_Flange_Web_Banner.webp",
-            "url": "https://www.ameda.com/products/custom-fit-2-piece-flange",
+            "image_desktop": "shopify://shop_images/ameda-mothers-day-website-banner.webp",
+            "url": "https://www.ameda.com/collections",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
@@ -45,12 +45,11 @@
             "bg_grad": ""
           }
         },
-        "slide_brpgWH": {
+        "slide_Mg6HN9": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/ameda-mothers-day-website-banner.webp",
-            "url": "https://www.ameda.com/collections",
+            "image_desktop": "shopify://shop_images/2_Piece_Flange_Web_Banner.webp",
+            "url": "https://www.ameda.com/products/custom-fit-2-piece-flange",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
@@ -182,8 +181,8 @@
         }
       },
       "block_order": [
-        "slide_Mg6HN9",
         "slide_brpgWH",
+        "slide_Mg6HN9",
         "slide_dFgWAy",
         "slide_rdbmPX",
         "slide_VC4kwd"
