@@ -97,7 +97,7 @@
       "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/collections\">20% OFF Mother's Day Sale&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;For Moms Who Give It All&nbsp;&nbsp;&nbsp;| Discount Applied At Checkout</a></p>",
+        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/collections\">20% OFF Mother's Day Sale&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;For Moms Who Give It All&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Discount Applied At Checkout</a></p>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",
