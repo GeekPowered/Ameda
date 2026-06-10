@@ -224,7 +224,7 @@
         "text_M4z3WF": {
           "type": "text",
           "settings": {
-            "text": "<p>The Ameda Manual Breast Pump uses a simple squeeze mechanism to create suction. As you squeeze the ergonomic handle, the diaphragm creates a vacuum that draws milk from the breast. Releasing the handle resets the pump, repeating the cycle.</p><p>By adjusting how quickly and firmly you squeeze the handle, you can control the rhythm and intensity of pumping. This allows you to mimic your baby’s natural nursing pattern and support a comfortable, effective pumping session.</p>",
+            "text": "<p>The Ameda Manual Breast Pump uses a simple squeeze mechanism to create suction. As you squeeze the ergonomic handle, the diaphragm creates a vacuum that draws milk from the breast. Releasing the handle resets the pump, repeating the cycle.</p><p>By adjusting how quickly and firmly you squeeze the handle, you can control the rhythm and intensity of pumping. This allows you to adjust rhythm and intensity for a more comfortable pumping experience.</p>",
             "enlarge_text": false
           }
         }
@@ -341,7 +341,7 @@
         "text_XXkQ6q": {
           "type": "text",
           "settings": {
-            "text": "<p>Proper cleaning helps protect milk quality and supports safe use for both mother and baby. To ensure your pump performs properly, sterilize all parts that come into contact with breast milk before and after each use.</p><ul><li>Disassemble all pump parts before cleaning</li><li>Wash with warm water and mild dish soap</li><li>Rinse thoroughly and allow to air dry</li><li>Sanitize regularly according to instructions</li></ul>",
+            "text": "<p>Proper cleaning helps protect milk quality and supports safe use for both mother and baby. To ensure your pump performs properly, sterilize all parts that come into contact with breast milk before each use.</p><ul><li>Disassemble all pump parts before cleaning</li><li>Wash with warm water and mild dish soap</li><li>Rinse thoroughly and allow to air dry</li><li>Sanitize regularly according to instructions</li></ul>",
             "enlarge_text": false
           }
         }
