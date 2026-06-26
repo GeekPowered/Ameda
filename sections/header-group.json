@@ -97,7 +97,7 @@
       "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.amazon.com/stores/page/886BCDC3-0034-409C-B91C-33DD433666B0?maas=maas_adg_25F43608936AE11CE0F004040051B2DA_afap_abs&ref_=aa_maas&tag=maas\">Prime Day is Here! 25% Off Your Pumping Essentials! June 23–June 26</a></p>",
+        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/collections\">Celebrate Freedom | Save 15% Off Sitewide | June 28 - July 5</a></p>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",

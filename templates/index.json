@@ -15,8 +15,8 @@
         "slide_brpgWH": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify://shop_images/Prime_Day_2026_Web_Banner_1.png",
-            "url": "https://www.amazon.com/stores/page/886BCDC3-0034-409C-B91C-33DD433666B0?maas=maas_adg_25F43608936AE11CE0F004040051B2DA_afap_abs&ref_=aa_maas&tag=maas",
+            "image_desktop": "shopify://shop_images/July_3_Website_Banner.webp",
+            "url": "https://www.ameda.com/collections",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
