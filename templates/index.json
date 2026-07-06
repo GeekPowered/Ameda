@@ -14,6 +14,7 @@
       "blocks": {
         "slide_brpgWH": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/July_3_Website_Banner.webp",
             "url": "https://www.ameda.com/collections",

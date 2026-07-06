@@ -94,6 +94,7 @@
     },
     "custom_liquid_WyprGH": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
