@@ -16,8 +16,8 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/July_3_Website_Banner.webp",
-            "url": "https://www.ameda.com/collections",
+            "image_desktop": "shopify://shop_images/Soccer_Web_Banner.webp",
+            "url": "https://www.ameda.com/collections/breast-pumps",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,

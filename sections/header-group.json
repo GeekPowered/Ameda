@@ -98,7 +98,7 @@
       "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/collections\">Celebrate Freedom | Save 15% Off Sitewide | June 28 - July 5</a></p>",
+        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/collections/breast-pumps\">Take 25% Off | Ameda Pearl, GLO, Mya Joy & Mya Joy PLUS | July 13 - 20 | Discount Applied At Checkout</a></p>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",
