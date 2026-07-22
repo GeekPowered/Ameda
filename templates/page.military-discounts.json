@@ -379,7 +379,7 @@
         "text_LttrHb": {
           "type": "text",
           "settings": {
-            "text": "<p>For busy moms who need the ultimate mobility, our hands-free pumps fit seamlessly into your bra, allowing you to pump while on the go. These pumps are perfect for military spouses balancing multiple responsibilities or active-duty mothers returning to work.</p>",
+            "text": "<p>For moms who want greater mobility, our hands-free pumps fit comfortably inside your bra, allowing you to pump wherever your day takes you. They’re a convenient option for active-duty service members, military spouses and busy moms balancing work, family and everyday responsibilities.<br/></p>",
             "enlarge_text": false
           }
         },
@@ -431,7 +431,7 @@
         "text_w9idEN": {
           "type": "text",
           "settings": {
-            "text": "<p>Our wearable breast pumps offer a lightweight and compact design, making them ideal for moms who need discreet, on-the-go pumping. These pumps provide powerful suction while fitting comfortably under clothing, ensuring flexibility and freedom.</p>",
+            "text": "<p>Wearable breast pumps combine the pump motor and collection cup in a compact, in-bra design with no external tubing. They provide adjustable suction and hands-free freedom for discreet pumping at home, at work or on the go.</p>",
             "enlarge_text": false
           }
         },
@@ -483,14 +483,14 @@
         "text_t7AQac": {
           "type": "text",
           "settings": {
-            "text": "<p>Ameda’s double electric breast pumps allow for simultaneous pumping from both breasts, reducing the time needed for milk expression. These hospital-strength pumps are ideal for moms who need to pump frequently or establish a strong milk supply.</p>",
+            "text": "<p>Ameda’s double electric breast pumps allow you to pump both breasts simultaneously, helping reduce the time needed for milk expression. With hospital-strength performance, they’re ideal for moms who pump exclusively or frequently and want reliable support for establishing and maintaining milk supply.</p>",
             "enlarge_text": false
           }
         },
         "button_jDyj9n": {
           "type": "button",
           "settings": {
-            "button_label": "Explore Double Breast Pumps",
+            "button_label": "Explore Double Electric Breast Pumps",
             "button_link": "shopify://products/ameda-mya-joy-plus-rechargeable-quiet-and-portable-double-breast-pump",
             "button_style": "btn btn--primary"
           }
@@ -535,7 +535,7 @@
         "text_pWnxkT": {
           "type": "text",
           "settings": {
-            "text": "<p>For moms who prefer a lightweight, travel-friendly solution, our manual breast pumps provide an easy-to-use, affordable option. These pumps are perfect for occasional pumping or backup use when away from an electric pump.</p>",
+            "text": "<p>For moms who prefer a lightweight, travel-friendly option, manual breast pumps are easy to use and require no electricity or batteries. They’re ideal for occasional pumping, travel or backup use when an electric pump isn’t available.</p>",
             "enlarge_text": false
           }
         },
@@ -579,7 +579,7 @@
         "heading_gHNfEw": {
           "type": "heading",
           "settings": {
-            "heading": "Other Military Breastfeeding Essentials Available",
+            "heading": "Breastfeeding Essentials and Pump Supplies",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -587,7 +587,7 @@
         "text_QcALed": {
           "type": "text",
           "settings": {
-            "text": "<p>In addition to breast pumps, TRICARE and other military insurance plans may cover breastfeeding and breast pump accessories, such as:</p><ul><li><strong>Extra breast milk storage bottles</strong></li><li><strong>Replacement pump parts (valves, tubing, flanges)</strong></li><li><strong>Silicone inserts for personalized comfort</strong></li><li><strong>Cleaning supplies to maintain pump hygiene</strong></li></ul><p>Having these essentials ensures that you’re fully equipped for a successful breastfeeding journey, whether at home, on base, or during deployments.</p>",
+            "text": "<p>In addition to breast pumps, TRICARE may cover certain replacement supplies for up to three years after the birth event. Ameda also offers accessories designed to support comfortable, convenient pumping, including:</p><ul><li>Breast milk storage bags</li><li>Replacement bottles, caps and locking rings</li><li>Replacement valves, membranes and tubing</li><li>Silicone flange inserts for a more personalized fit</li><li>Cleaning products to help maintain pump hygiene</li><li>Breast pump kits and other replacement components</li></ul><p>Coverage and replacement limits vary by item. An Ameda representative can help you understand your benefits and identify the supplies and accessories that best fit your needs.</p>",
             "enlarge_text": false
           }
         },
@@ -627,6 +627,7 @@
     },
     "wave_section_ntFccT": {
       "type": "wave-section",
+      "custom_css": [],
       "settings": {
         "wavebgcolor": "#ffffff",
         "wavesvgcolor": "#fbf6ef",
@@ -642,7 +643,7 @@
       "type": "custom-liquid",
       "custom_css": [],
       "settings": {
-        "custom_liquid": "<h2 id=\"options\" style=\"margin-bottom: 3rem;\">Compare Our Top Rated Breast Pumps</h2>\n{% render 'glo-joy-joyplus-chart' %}\n<p style=\"margin-top:2rem;\">*Only use the diaphragms and valves that come inside the Joy pumps with Joy models.</p>",
+        "custom_liquid": "<h2 id=\"options\" style=\"margin-bottom: 3rem;\">Compare Our Top Rated Breast Pumps</h2>\n{% render 'glo-joy-joyplus-chart' %}\n<p style=\"margin-top:2rem;>*Only use the diaphragms and valves that come inside the Joy pumps with Joy models.</p>",
         "section_height": "tight",
         "full_width": false,
         "dividers": "none",
