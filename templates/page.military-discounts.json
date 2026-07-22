@@ -154,7 +154,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Provide Military Insurance Information",
-            "text": "<p>After we receive your form, we may need additional details to confirm your TRICARE breast pump coverage. This may include:</p><ul><li><strong>Proof of TRICARE coverage, such as an ID or policy details</strong></li><li><strong>A breast pump prescription from a TRICARE-authorized doctor, nurse practitioner, or midwife</strong></li><li><strong>Listing your OBGYN or midwife</strong></li></ul><p>Our team will handle all the necessary paperwork, working together with a TRICARE authorized provider, to ensure a smooth process while maintaining your privacy and security.</p>",
+            "text": "<p>After we receive your form, we may contact you for additional information to confirm your TRICARE breast pump coverage. This may include:<br/><br/>Your TRICARE member ID or plan informationA breast pump prescription from a TRICARE-authorized doctor, physician assistant, nurse practitioner or nurse midwifeContact information for your OB/GYN or nurse midwifeOur team will guide you through the required paperwork and coordinate with your TRICARE-authorized healthcare provider as needed, while protecting your privacy and personal information.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -165,7 +165,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "We Contact You with Your Options",
-            "text": "<p>Once approved, an Ameda will reach out to you to discuss your options, including all Ameda breast pumps available through TRICARE coverage. Whether you need a hospital-grade pump, a standard electric pump, or a portable pump, we’ll help you select the best option for your breastfeeding needs. Your TRICARE-covered breast pump will then be shipped directly to you at no cost.</p>",
+            "text": "<p>Once approved, an Ameda representative will contact you to discuss your options, including all Ameda breast pumps available through TRICARE coverage. Whether you need a hospital-grade pump, a standard electric pump or a portable pump, we’ll help you select the best option for your breastfeeding needs. Your TRICARE-covered breast pump will then be shipped directly to you at no cost.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -232,7 +232,7 @@
         "@media (max-width: 768px) {.split-text {flex-direction: column; gap: 0; } .split-text h2 {width: auto; }}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"split-text\">\n    <h2>Why Choose Ameda for Your Military Breast Pump?</h2>\n    <div>\n        <p style=\"margin: 0;\">For over 80 years, Ameda has been a trusted name in hospital-grade breast pumps,\n            supporting military families, new mothers, and healthcare providers worldwide. Our pumps are designed for\n            efficiency, comfort, portability, and durability, ensuring that you get the best quality for your breastfeeding needs.\n        </p>\n    </div>\n</div>",
+        "custom_liquid": "<div class=\"split-text\">\n    <h2>Why Choose Ameda for Your TRICARE-Covered Breast Pump?</h2>\n    <div>\n        <p style=\"margin: 0;\">For more than 80 years, Ameda has been a trusted leader in breast pump innovation. From\n            hospitals to homes, we're committed to helping military families meet their breastfeeding goals with\n            clinically inspired breast pumps, exceptional customer support and a simple insurance fulfillment process.\n        </p>\n    </div>\n</div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
