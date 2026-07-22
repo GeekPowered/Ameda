@@ -251,7 +251,7 @@
             "image": "shopify://shop_images/icons-healthcare.png",
             "media_scale": 100,
             "heading": "Hospital-Grade Technology",
-            "text": "<p>Ameda breast pumps are inspired by our award-winning hospital-grade designs, ensuring that you receive the most advanced, high-performance pump available.</p>",
+            "text": "<p>Ameda personal breast pumps are built on technology inspired by our trusted hospital pumps, delivering dependable performance to support your breastfeeding goals.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -263,7 +263,7 @@
             "image": "shopify://shop_images/icons-settings.png",
             "media_scale": 100,
             "heading": "Customizable Pumping Experience",
-            "text": "<p>With adjustable suction levels and multiple pumping modes, Ameda pumps allow you to tailor your pump operation and overall breastfeeding experience for maximum comfort and efficiency.</p>",
+            "text": "<p>Adjustable suction levels and pumping settings let you tailor each session for comfort and efficiency.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -275,7 +275,7 @@
             "image": "shopify://shop_images/icons-doctor.png",
             "media_scale": 100,
             "heading": "Trusted by Military Healthcare Providers",
-            "text": "<p>Our hospital-grade pumps are trusted by TRICARE-authorized doctors, nurse practitioners, and lactation consultants. We are dedicated to supporting U.S. Family Health Plan beneficiaries, active-duty service members, and military families with the best breastfeeding solutions.</p>",
+            "text": "<p>Ameda breast pumps have a long history of use in hospitals and are trusted by healthcare professionals supporting military families. We’re committed to providing dependable breastfeeding solutions for U.S. Family Health Plan beneficiaries, active-duty service members and military families.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -287,7 +287,7 @@
             "image": "shopify://shop_images/icons-support.png",
             "media_scale": 100,
             "heading": "Comprehensive Parent Support",
-            "text": "<p>Our ParentCare program provides expert customer support, ensuring that military families have access to the guidance and assistance they need at every stage of their breastfeeding journey in addition to receiving a breast pump through insurance.</p>",
+            "text": "<p>Our ParentCare team provides expert guidance throughout your breastfeeding journey—from selecting and receiving your breast pump through insurance to answering questions about pumping and product use.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -299,7 +299,7 @@
             "image": "shopify://shop_images/icons-shield.png",
             "media_scale": 100,
             "heading": "Safe and BPA-Free Materials",
-            "text": "<p>Ameda breast pumps and breast pump supplies are made with BPA-free, medical-grade materials, guaranteeing that your baby’s milk remains pure, safe, and free from harmful chemicals.</p>",
+            "text": "<p>All Ameda breast pump components that come into contact with breast milk are BPA-free, helping protect the purity and safety of expressed milk.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -311,7 +311,7 @@
             "image": "shopify://shop_images/icons-approved.png",
             "media_scale": 100,
             "heading": "Covered by Military Insurance Plans",
-            "text": "<p>We work directly with TRICARE and other military insurance providers to ensure that moms receive their breast pumps at little to no cost.</p>",
+            "text": "<p>We work directly with eligible TRICARE beneficiaries to simplify the process of obtaining a covered Ameda breast pump. Our team will verify your eligibility, coordinate the required documentation and guide you through every step of the process.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -356,7 +356,7 @@
         "@media (max-width: 768px) {.split-text {flex-direction: column; gap: 0; } .split-text h2 {width: auto; }}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"split-text\">\n    <h2>Types of Breast Pumps Available</h2>\n    <div>\n        <p style=\"margin: 0;\">Choosing the right breast pump is essential to your breastfeeding success. Ameda offers a variety of pumps, including hands-free, wearable, double electric, and manual pumps.\n        </p>\n    </div>\n</div>",
+        "custom_liquid": "<div class=\"split-text\">\n    <h2>Breast Pump Options Available Through TRICARE</h2>\n    <div>\n        <p style=\"margin: 0;\">Every breastfeeding journey is different. Whether you're pumping occasionally, returning to work, or exclusively pumping, Ameda offers a variety of breast pumps designed to fit your lifestyle and feeding goals.\n\n        </p>\n    </div>\n</div>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
