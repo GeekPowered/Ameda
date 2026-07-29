@@ -1,10 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "aside",
   "name": "Overlay group",
   "sections": {
     "cart-drawer": {
       "type": "cart-drawer",
-      "disabled": true,
       "settings": {
         "show_cart_page_link": true,
         "show_backorder_text": true,
@@ -20,15 +28,13 @@
         "shipping_calculator_default_country": "United States",
         "promoted_products_visibility": "always",
         "promoted_products_heading": "Promoted products",
-        "promoted_products_list": [
-
-        ],
+        "promoted_products_list": [],
         "promoted_products_layout": "carousel",
         "show_media_promotion": false,
         "media_promotion_visibility": "always",
         "link_url": "",
         "media_promotion_min_height": 150,
-        "content": "<p>Promotion text<\/p>",
+        "content": "<p>Promotion text</p>",
         "text_type_scale": "1em",
         "text_width": 400,
         "text_alignment": "justify-center items-center text-center",
@@ -90,8 +96,7 @@
         "compare-6"
       ],
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
