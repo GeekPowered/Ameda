@@ -14,9 +14,8 @@
       "blocks": {
         "slide_brpgWH": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/Soccer_Web_Banner.webp",
+            "image_desktop": "shopify://shop_images/WBW_Banner.jpg",
             "url": "https://www.ameda.com/collections/breast-pumps",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
