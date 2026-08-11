@@ -97,7 +97,7 @@
       "custom_css": [],
       "name": "Custom HTML/Liquid",
       "settings": {
-        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/collections\">Celebrate World Breastfeeding Week | 20% Off Sitewide All Month Long | 8/1-8/31</a></p>",
+        "custom_liquid": "<p style=\"margin-bottom: 0; text-align: center; font-weight: bold; line-height: 1.25;\"><a href=\"https://www.ameda.com/collections\">Celebrate Breastfeeding Month | 20% Off Sitewide All Month Long | 8/1-8/31</a></p>",
         "section_height": "xsmall",
         "full_width": false,
         "dividers": "none",

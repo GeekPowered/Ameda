@@ -15,7 +15,7 @@
         "slide_brpgWH": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify://shop_images/WBW_Banner.jpg",
+            "image_desktop": "shopify://shop_images/WBW_Banner_2.jpg",
             "url": "https://www.ameda.com/collections",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
