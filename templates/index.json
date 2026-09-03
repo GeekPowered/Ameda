@@ -14,9 +14,8 @@
       "blocks": {
         "slide_brpgWH": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/WBW_Banner_2.jpg",
+            "image_desktop": "shopify://shop_images/Labor-of-Love.jpg",
             "url": "https://www.ameda.com/collections",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-center",
